@@ -1,13 +1,14 @@
 package main
 
 import (
-	"Leetcode/Leetcode/solutions"
 	"fmt"
+
+	"leetcode.com/Leetcode/solutions"
 )
 
 func main() {
 	fmt.Println("..............................................................................................................................................")
 	fmt.Println("Golang LeetCode...")
-	solutions.Leetcode_Two_Sum()
+	solutions.LeetCode_Max_Depth()
 	fmt.Println("..............................................................................................................................................")
 }
