@@ -1,6 +1,8 @@
 package solutions
 
-import T "leetcode.com/Leetcode/types"
+import (
+	T "leetcode.com/Leetcode/types"
+)
 
 // Given an array of integers nums and an integer target, return indices of the two numbers such that they add up to target.
 // Reference: https://leetcode.com/problems/two-sum/
@@ -28,4 +30,17 @@ func maxDepth(root *T.TreeNode) int {
 		return 1 + l
 	}
 	return 1 + r
+}
+
+// Given an integer x, return true if x is a palindrome, and false otherwise.
+// Reference: https://leetcode.com/problems/palindrome-number/description/
+func isPalindrome(x int) bool {
+	r := 0
+	t := x
+	for x > 0 {
+		r = (r * 10) + (x % 10)
+		x = x / 10
+
+	}
+	return t == r
 }
