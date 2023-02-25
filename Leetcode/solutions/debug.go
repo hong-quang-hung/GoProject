@@ -4,6 +4,7 @@ import (
 	"fmt"
 
 	T "leetcode.com/Leetcode/types"
+	U "leetcode.com/Leetcode/utils"
 )
 
 func Leetcode_Two_Sum() {
@@ -55,4 +56,19 @@ func LeetCode_Max_Profit() {
 	fmt.Println("Input: x = [2, 1, 2, 1, 0, 1, 2]")
 	fmt.Println("Output: ", maxProfit(prices))
 	fmt.Println()
+}
+
+func Leetcode_max_Distance() {
+	grid := [][]int{{1, 0, 1}, {0, 0, 0}, {1, 0, 1}}
+	fmt.Println("Input: grid = \"[[1,0,1],[0,0,0],[1,0,1]]\"")
+	fmt.Println("Output: ", maxDistance(grid))
+
+	grid = [][]int{{1, 0, 0}, {0, 0, 0}, {0, 0, 0}}
+	fmt.Println("Input: grid = \"[[1,0,0],[0,0,0],[0,0,0]]\"")
+	fmt.Println("Output: ", maxDistance(grid))
+
+	grid = [][]int{{0, 0, 1, 1, 1}, {0, 1, 1, 0, 0}, {0, 0, 1, 1, 0}, {1, 0, 0, 0, 0}, {1, 1, 0, 0, 1}}
+	fmt.Println("Input: grid = \"[[0,0,1,1,1],[0,1,1,0,0],[0,0,1,1,0],[1,0,0,0,0],[1,1,0,0,1]]\"")
+	fmt.Println("Output: ", maxDistance(grid))
+	U.PrintMatrix(grid)
 }
