@@ -48,3 +48,11 @@ func LeetCode_Is_Palindrome() {
 	fmt.Println("Input: x = 5")
 	fmt.Println("Output: ", isPalindrome(x))
 }
+
+func LeetCode_Max_Profit() {
+	prices := []int{2, 1, 2, 1, 0, 1, 2}
+
+	fmt.Println("Input: x = [2, 1, 2, 1, 0, 1, 2]")
+	fmt.Println("Output: ", maxProfit(prices))
+	fmt.Println()
+}

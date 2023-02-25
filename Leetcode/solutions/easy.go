@@ -44,3 +44,17 @@ func isPalindrome(x int) bool {
 	}
 	return t == r
 }
+
+// Return the maximum profit you can achieve from this transaction. If you cannot achieve any profit, return 0.
+// Reference: https://leetcode.com/problems/best-time-to-buy-and-sell-stock/description/
+func maxProfit(prices []int) int {
+	maxPrices, minPrices := 0, prices[0]
+	for i := 1; i < len(prices); i++ {
+		if minPrices > prices[i] {
+			minPrices = prices[i]
+		} else if maxPrices < prices[i]-minPrices {
+			maxPrices = prices[i] - minPrices
+		}
+	}
+	return maxPrices
+}
