@@ -58,7 +58,7 @@ func LeetCode_Max_Profit() {
 	fmt.Println()
 }
 
-func Leetcode_max_Distance() {
+func Leetcode_Max_Distance() {
 	grid := [][]int{{1, 0, 1}, {0, 0, 0}, {1, 0, 1}}
 	fmt.Println("Input: grid = \"[[1,0,1],[0,0,0],[1,0,1]]\"")
 	fmt.Println("Output: ", maxDistance(grid))
@@ -71,4 +71,14 @@ func Leetcode_max_Distance() {
 	fmt.Println("Input: grid = \"[[0,0,1,1,1],[0,1,1,0,0],[0,0,1,1,0],[1,0,0,0,0],[1,1,0,0,1]]\"")
 	fmt.Println("Output: ", maxDistance(grid))
 	U.PrintMatrix(grid)
+}
+
+func Leetcode_Minimum_Deviation() {
+	grid := []int{1, 2, 3, 4}
+	fmt.Println("Input: nums = [1,2,3,4]")
+	fmt.Println("Output: ", minimumDeviation(grid))
+
+	grid = []int{4, 1, 5, 20, 3}
+	fmt.Println("Input: nums = [4,1,5,20,3]")
+	fmt.Println("Output: ", minimumDeviation(grid))
 }
