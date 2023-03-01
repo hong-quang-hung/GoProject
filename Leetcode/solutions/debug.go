@@ -82,3 +82,9 @@ func Leetcode_Minimum_Deviation() {
 	fmt.Println("Input: nums = [4,1,5,20,3]")
 	fmt.Println("Output: ", minimumDeviation(grid))
 }
+
+func Leetcode_RemoveDuplicates() {
+	nums := []int{0, 0, 1, 1, 1, 2, 2, 3, 3, 4}
+	fmt.Println("Input: nums = [0,0,1,1,1,2,2,3,3,4]")
+	fmt.Println("Output: ", removeDuplicates(nums))
+}
