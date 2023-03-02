@@ -83,8 +83,14 @@ func Leetcode_Minimum_Deviation() {
 	fmt.Println("Output: ", minimumDeviation(grid))
 }
 
-func Leetcode_RemoveDuplicates() {
+func Leetcode_Remove_Duplicates() {
 	nums := []int{0, 0, 1, 1, 1, 2, 2, 3, 3, 4}
 	fmt.Println("Input: nums = [0,0,1,1,1,2,2,3,3,4]")
 	fmt.Println("Output: ", removeDuplicates(nums))
+}
+
+func Leetcode_Sort_Array() {
+	nums := []int{5, 1, 1, 2, 0, 0}
+	fmt.Println("Input: nums = [5,1,1,2,0,0]")
+	fmt.Println("Output: ", fmt.Sprint(sortArray(nums)))
 }
