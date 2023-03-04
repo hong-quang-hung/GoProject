@@ -8,7 +8,7 @@ import (
 
 func main() {
 	fmt.Println("..............................................................................................................................................")
-	fmt.Println("Golang LeetCode...")
-	solutions.Leetcode_Sort_Array()
+	fmt.Println("Golang Leetcode...")
+	solutions.Leetcode_Length_Of_Longest_Substring()
 	fmt.Println("..............................................................................................................................................")
 }

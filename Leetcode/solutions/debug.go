@@ -94,3 +94,14 @@ func Leetcode_Sort_Array() {
 	fmt.Println("Input: nums = [5,1,1,2,0,0]")
 	fmt.Println("Output: ", fmt.Sprint(sortArray(nums)))
 }
+
+func Leetcode_Length_Of_Longest_Substring() {
+	var s string
+
+	s = "abcabcbb"
+	fmt.Println("Input: s = 'abcabcbb'")
+	fmt.Println("Output: ", lengthOfLongestSubstring(s))
+	s = "abcdc"
+	fmt.Println("Input: s = 'abcdc'")
+	fmt.Println("Output: ", lengthOfLongestSubstring(s))
+}
