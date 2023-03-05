@@ -88,3 +88,8 @@ func lengthOfLongestSubstring(s string) int {
 	}
 	return res
 }
+
+// Reference:https://leetcode.com/problems/count-total-number-of-colored-cells/
+func coloredCells(n int) int64 {
+	return int64(2*n*n - 2*n + 1)
+}

@@ -105,3 +105,23 @@ func Leetcode_Length_Of_Longest_Substring() {
 	fmt.Println("Input: s = 'abcdc'")
 	fmt.Println("Output: ", lengthOfLongestSubstring(s))
 }
+
+func Leetcode_Count_Subarrays() {
+	nums := []int{1, 3, 5, 2, 7, 5}
+	minK := 1
+	maxK := 5
+	fmt.Println("Input: nums = [1,3,5,2,7,5], minK = 1, maxK = 5")
+	fmt.Println("Output: ", countSubarrays(nums, minK, maxK))
+
+	nums = []int{1, 1, 1, 1}
+	minK = 1
+	maxK = 1
+	fmt.Println("Input: nums = [1,1,1,1], minK = 1, maxK = 1")
+	fmt.Println("Output: ", countSubarrays(nums, minK, maxK))
+}
+
+func Leetcode_Colored_Cells() {
+	n := 3
+	fmt.Println("Input: n = 1")
+	fmt.Println("Output: ", coloredCells(n))
+}
