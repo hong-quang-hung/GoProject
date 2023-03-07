@@ -1,6 +1,8 @@
 package solutions
 
 import (
+	"strings"
+
 	T "leetcode.com/Leetcode/types"
 )
 
@@ -69,4 +71,16 @@ func removeDuplicates(nums []int) int {
 		}
 	}
 	return i + 1
+}
+
+// Reference: https://leetcode.com/problems/length-of-last-word/
+func lengthOfLastWord(s string) int {
+	s = strings.TrimRight(s, " ")
+	var r int = 0
+	var i int = len(s) - 1
+	for s[i] != ' ' {
+		i--
+		r++
+	}
+	return r
 }

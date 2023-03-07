@@ -125,3 +125,9 @@ func Leetcode_Colored_Cells() {
 	fmt.Println("Input: n = 1")
 	fmt.Println("Output: ", coloredCells(n))
 }
+
+func Leetcode_length_Of_Last_Word() {
+	s := "   fly me   to   the moon  "
+	fmt.Println("Input: s = '   fly me   to   the moon  '")
+	fmt.Println("Output: ", lengthOfLastWord(s))
+}
