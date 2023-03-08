@@ -1,11 +1,11 @@
 package solutions
 
 import (
+	"math"
+
 	U "leetcode.com/Leetcode/utils"
 )
 
-// Given an n x n grid containing only values 0 and 1, where 0 represents water and 1 represents land, find a water cell such that its distance to the nearest land cell is maximized, and return the distance.If no land or water exists in the grid, return -1.
-// The distance used in this problem is the Manhattan distance: the distance between two cells (x0, y0) and (x1, y1) is |x0 - x1| + |y0 - y1|.
 // Reference: https://leetcode.com/problems/as-far-from-land-as-possible/
 func maxDistance(grid [][]int) int {
 	var max int = -1
@@ -62,7 +62,6 @@ func maxDistance(grid [][]int) int {
 	return max
 }
 
-// Given an array of integers nums, sort the array in ascending order and return it.
 // Reference: https://leetcode.com/problems/sort-an-array/
 func sortArray(nums []int) []int {
 	U.CountingSort(nums)
@@ -89,7 +88,35 @@ func lengthOfLongestSubstring(s string) int {
 	return res
 }
 
-// Reference:https://leetcode.com/problems/count-total-number-of-colored-cells/
+// Reference: https://leetcode.com/problems/count-total-number-of-colored-cells/
 func coloredCells(n int) int64 {
 	return int64(2*n*n - 2*n + 1)
+}
+
+// Reference: https://leetcode.com/problems/koko-eating-bananas/
+func minEatingSpeed(piles []int, h int) int {
+	var left int = 1
+	var right int = 0
+	for _, p := range piles {
+		if right < p {
+			right = p
+		}
+	}
+	var res int = right
+	for left <= right {
+		var hours int64 = 0
+		var mid = left + (right-left)/2
+		for _, p := range piles {
+			hours += int64(math.Ceil(float64(p) / float64(mid)))
+		}
+		if hours <= int64(h) {
+			if res > mid {
+				res = mid
+			}
+			right = mid - 1
+		} else {
+			left = mid + 1
+		}
+	}
+	return res
 }

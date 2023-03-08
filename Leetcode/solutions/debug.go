@@ -8,10 +8,8 @@ import (
 )
 
 func Leetcode_Two_Sum() {
-	target := 9
-	nums := [...]int{2, 7, 11, 15}
 	fmt.Println("Input: nums = [2,7,11,15], target = 9")
-	fmt.Println("Output:", twoSum(nums[:], target))
+	fmt.Println("Output:", twoSum([]int{2, 7, 11, 15}, 9))
 }
 
 func LeetCode_Max_Depth() {
@@ -28,34 +26,17 @@ func LeetCode_Max_Depth() {
 }
 
 func LeetCode_Is_Palindrome() {
-	var x int
 
-	x = 0
 	fmt.Println("Input: x = 0")
-	fmt.Println("Output: ", isPalindrome(x))
+	fmt.Println("Output: ", isPalindrome(0))
 	fmt.Println()
-
-	x = 2552
 	fmt.Println("Input: x = 2552")
-	fmt.Println("Output: ", isPalindrome(x))
-	fmt.Println()
-
-	x = 21120
-	fmt.Println("Input: x = 21120")
-	fmt.Println("Output: ", isPalindrome(x))
-	fmt.Println()
-
-	x = 5
-	fmt.Println("Input: x = 5")
-	fmt.Println("Output: ", isPalindrome(x))
+	fmt.Println("Output: ", isPalindrome(2552))
 }
 
 func LeetCode_Max_Profit() {
-	prices := []int{2, 1, 2, 1, 0, 1, 2}
-
 	fmt.Println("Input: x = [2, 1, 2, 1, 0, 1, 2]")
-	fmt.Println("Output: ", maxProfit(prices))
-	fmt.Println()
+	fmt.Println("Output: ", maxProfit([]int{2, 1, 2, 1, 0, 1, 2}))
 }
 
 func Leetcode_Max_Distance() {
@@ -74,60 +55,53 @@ func Leetcode_Max_Distance() {
 }
 
 func Leetcode_Minimum_Deviation() {
-	grid := []int{1, 2, 3, 4}
 	fmt.Println("Input: nums = [1,2,3,4]")
-	fmt.Println("Output: ", minimumDeviation(grid))
+	fmt.Println("Output: ", minimumDeviation([]int{1, 2, 3, 4}))
 
-	grid = []int{4, 1, 5, 20, 3}
 	fmt.Println("Input: nums = [4,1,5,20,3]")
-	fmt.Println("Output: ", minimumDeviation(grid))
+	fmt.Println("Output: ", minimumDeviation([]int{4, 1, 5, 20, 3}))
 }
 
 func Leetcode_Remove_Duplicates() {
-	nums := []int{0, 0, 1, 1, 1, 2, 2, 3, 3, 4}
 	fmt.Println("Input: nums = [0,0,1,1,1,2,2,3,3,4]")
-	fmt.Println("Output: ", removeDuplicates(nums))
+	fmt.Println("Output: ", removeDuplicates([]int{0, 0, 1, 1, 1, 2, 2, 3, 3, 4}))
 }
 
 func Leetcode_Sort_Array() {
-	nums := []int{5, 1, 1, 2, 0, 0}
 	fmt.Println("Input: nums = [5,1,1,2,0,0]")
-	fmt.Println("Output: ", fmt.Sprint(sortArray(nums)))
+	fmt.Println("Output: ", fmt.Sprint(sortArray([]int{5, 1, 1, 2, 0, 0})))
 }
 
 func Leetcode_Length_Of_Longest_Substring() {
-	var s string
-
-	s = "abcabcbb"
 	fmt.Println("Input: s = 'abcabcbb'")
-	fmt.Println("Output: ", lengthOfLongestSubstring(s))
-	s = "abcdc"
+	fmt.Println("Output: ", lengthOfLongestSubstring("abcabcbb"))
+
 	fmt.Println("Input: s = 'abcdc'")
-	fmt.Println("Output: ", lengthOfLongestSubstring(s))
+	fmt.Println("Output: ", lengthOfLongestSubstring("abcdc"))
 }
 
 func Leetcode_Count_Subarrays() {
-	nums := []int{1, 3, 5, 2, 7, 5}
-	minK := 1
-	maxK := 5
 	fmt.Println("Input: nums = [1,3,5,2,7,5], minK = 1, maxK = 5")
-	fmt.Println("Output: ", countSubarrays(nums, minK, maxK))
+	fmt.Println("Output: ", countSubarrays([]int{1, 3, 5, 2, 7, 5}, 1, 5))
 
-	nums = []int{1, 1, 1, 1}
-	minK = 1
-	maxK = 1
 	fmt.Println("Input: nums = [1,1,1,1], minK = 1, maxK = 1")
-	fmt.Println("Output: ", countSubarrays(nums, minK, maxK))
+	fmt.Println("Output: ", countSubarrays([]int{1, 1, 1, 1}, 1, 1))
 }
 
 func Leetcode_Colored_Cells() {
-	n := 3
 	fmt.Println("Input: n = 1")
-	fmt.Println("Output: ", coloredCells(n))
+	fmt.Println("Output: ", coloredCells(1))
 }
 
-func Leetcode_length_Of_Last_Word() {
-	s := "   fly me   to   the moon  "
+func Leetcode_Length_Of_Last_Word() {
 	fmt.Println("Input: s = '   fly me   to   the moon  '")
-	fmt.Println("Output: ", lengthOfLastWord(s))
+	fmt.Println("Output: ", lengthOfLastWord("   fly me   to   the moon  "))
+}
+
+func Leetcode_minEatingSpeed() {
+	fmt.Println("Input: piles = [3,6,7,11], h = 8")
+	fmt.Println("Output: ", minEatingSpeed([]int{3, 6, 7, 11}, 8))
+	fmt.Println()
+	fmt.Println("Input: ppiles = [30,11,23,4,20], h = 6")
+	fmt.Println("Output: ", minEatingSpeed([]int{30, 11, 23, 4, 20}, 6))
 }

@@ -6,7 +6,6 @@ import (
 	T "leetcode.com/Leetcode/types"
 )
 
-// Given an array of integers nums and an integer target, return indices of the two numbers such that they add up to target.
 // Reference: https://leetcode.com/problems/two-sum/
 func twoSum(nums []int, target int) []int {
 	m := make(map[int]int)
@@ -19,8 +18,6 @@ func twoSum(nums []int, target int) []int {
 	return nil
 }
 
-// Given the root of a binary tree, return its maximum depth.
-// A binary tree's maximum depth is the number of nodes along the longest path from the root node down to the farthest leaf node.
 // Reference: https://leetcode.com/problems/maximum-depth-of-binary-tree/description/
 func maxDepth(root *T.TreeNode) int {
 	if root == nil {
@@ -34,7 +31,6 @@ func maxDepth(root *T.TreeNode) int {
 	return 1 + r
 }
 
-// Given an integer x, return true if x is a palindrome, and false otherwise.
 // Reference: https://leetcode.com/problems/palindrome-number/description/
 func isPalindrome(x int) bool {
 	r := 0
@@ -47,7 +43,6 @@ func isPalindrome(x int) bool {
 	return t == r
 }
 
-// Return the maximum profit you can achieve from this transaction. If you cannot achieve any profit, return 0.
 // Reference: https://leetcode.com/problems/best-time-to-buy-and-sell-stock/description/
 func maxProfit(prices []int) int {
 	maxPrices, minPrices := 0, prices[0]
@@ -78,7 +73,7 @@ func lengthOfLastWord(s string) int {
 	s = strings.TrimRight(s, " ")
 	var r int = 0
 	var i int = len(s) - 1
-	for s[i] != ' ' {
+	for i >= 0 && s[i] != ' ' {
 		i--
 		r++
 	}
