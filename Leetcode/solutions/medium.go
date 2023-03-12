@@ -2,6 +2,7 @@ package solutions
 
 import (
 	"math"
+	"sort"
 
 	U "leetcode.com/Leetcode/utils"
 )
@@ -117,6 +118,42 @@ func minEatingSpeed(piles []int, h int) int {
 		} else {
 			left = mid + 1
 		}
+	}
+	return res
+}
+
+// Reference: https://leetcode.com/problems/rearrange-array-to-maximize-prefix-score/
+func maxScore(nums []int) int {
+	var res int = 0
+	var prefix int64 = 0
+	sort.SliceStable(nums, func(i, j int) bool {
+		return nums[i] > nums[j]
+	})
+	for _, num := range nums {
+		prefix += int64(num)
+		if prefix > 0 {
+			res++
+		} else {
+			break
+		}
+	}
+	return res
+}
+
+// Reference: https://leetcode.com/problems/count-the-number-of-beautiful-subarrays/
+func beautifulSubarrays(nums []int) int64 {
+	var res int64 = 0
+	var xor int64 = 0
+
+	m := make(map[int64]int)
+	m[0] = 1
+	for _, num := range nums {
+		xor ^= int64(num)
+		x, v := m[xor]
+		if v {
+			res += int64(x)
+		}
+		m[xor] = x + 1
 	}
 	return res
 }

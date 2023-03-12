@@ -4,7 +4,6 @@ import (
 	"fmt"
 
 	T "leetcode.com/Leetcode/types"
-	U "leetcode.com/Leetcode/utils"
 )
 
 func Leetcode_Two_Sum() {
@@ -47,11 +46,6 @@ func Leetcode_Max_Distance() {
 	grid = [][]int{{1, 0, 0}, {0, 0, 0}, {0, 0, 0}}
 	fmt.Println("Input: grid = \"[[1,0,0],[0,0,0],[0,0,0]]\"")
 	fmt.Println("Output: ", maxDistance(grid))
-
-	grid = [][]int{{0, 0, 1, 1, 1}, {0, 1, 1, 0, 0}, {0, 0, 1, 1, 0}, {1, 0, 0, 0, 0}, {1, 1, 0, 0, 1}}
-	fmt.Println("Input: grid = \"[[0,0,1,1,1],[0,1,1,0,0],[0,0,1,1,0],[1,0,0,0,0],[1,1,0,0,1]]\"")
-	fmt.Println("Output: ", maxDistance(grid))
-	U.PrintMatrix(grid)
 }
 
 func Leetcode_Minimum_Deviation() {
@@ -98,10 +92,25 @@ func Leetcode_Length_Of_Last_Word() {
 	fmt.Println("Output: ", lengthOfLastWord("   fly me   to   the moon  "))
 }
 
-func Leetcode_minEatingSpeed() {
+func Leetcode_Min_Eating_Speed() {
 	fmt.Println("Input: piles = [3,6,7,11], h = 8")
 	fmt.Println("Output: ", minEatingSpeed([]int{3, 6, 7, 11}, 8))
 	fmt.Println()
 	fmt.Println("Input: ppiles = [30,11,23,4,20], h = 6")
 	fmt.Println("Output: ", minEatingSpeed([]int{30, 11, 23, 4, 20}, 6))
+}
+
+func Leetcode_Max_Score() {
+	fmt.Println("Input: nums = [2,-1,0,1,-3,3,-3]")
+	fmt.Println("Output: ", maxScore([]int{2, -1, 0, 1, -3, 3, -3}))
+}
+
+func Leetcode_Vowel_Strings() {
+	fmt.Println("Input: words = ['hey', 'aeo', 'mu', 'ooo', 'artro'], left = 1, right = 4")
+	fmt.Println("Output: ", vowelStrings([]string{"hey", "aeo", "mu", "ooo", "artro"}, 1, 4))
+}
+
+func Leetcode_Beautiful_Subarrays() {
+	fmt.Println("Input: nums = [4,3,1,2,4]")
+	fmt.Println("Output: ", beautifulSubarrays([]int{4, 3, 1, 2, 4}))
 }

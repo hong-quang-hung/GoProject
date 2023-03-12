@@ -79,3 +79,19 @@ func lengthOfLastWord(s string) int {
 	}
 	return r
 }
+
+// Reference: https://leetcode.com/problems/length-of-last-word/
+func vowelStrings(words []string, left int, right int) int {
+	isVowel := func(c byte) bool {
+		return c == 'a' || c == 'e' || c == 'i' || c == 'u' || c == 'o'
+	}
+	var res int = 0
+	for i := left; i <= right; i++ {
+		w := words[i]
+		l := len(w)
+		if (l == 1 && isVowel(w[0])) || (isVowel(w[0]) && isVowel(w[l-1])) {
+			res++
+		}
+	}
+	return res
+}
