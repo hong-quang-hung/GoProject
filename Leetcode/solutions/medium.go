@@ -4,6 +4,7 @@ import (
 	"math"
 	"sort"
 
+	T "leetcode.com/Leetcode/types"
 	U "leetcode.com/Leetcode/utils"
 )
 
@@ -156,4 +157,20 @@ func beautifulSubarrays(nums []int) int64 {
 		m[xor] = x + 1
 	}
 	return res
+}
+
+func sumNumbers(root *T.TreeNode) int {
+	if root == nil {
+		return 0
+	}
+	if root.Left == nil && root.Right == nil {
+		return root.Val
+	}
+	if root.Left != nil {
+		root.Left.Val += 10 * root.Val
+	}
+	if root.Right != nil {
+		root.Right.Val += 10 * root.Val
+	}
+	return sumNumbers(root.Left) + sumNumbers(root.Right)
 }

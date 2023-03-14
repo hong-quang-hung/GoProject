@@ -114,3 +114,8 @@ func Leetcode_Beautiful_Subarrays() {
 	fmt.Println("Input: nums = [4,3,1,2,4]")
 	fmt.Println("Output: ", beautifulSubarrays([]int{4, 3, 1, 2, 4}))
 }
+
+func Leetcode_Sum_Numbers() {
+	fmt.Println("Input: root = [1,2,3]")
+	fmt.Println("Output: ", sumNumbers(&T.TreeNode{Val: 1, Left: T.TreeNodeBase(2), Right: T.TreeNodeBase(3)}))
+}
