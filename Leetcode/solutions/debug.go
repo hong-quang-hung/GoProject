@@ -30,12 +30,8 @@ func LeetCode_Max_Depth() {
 }
 
 func LeetCode_Is_Palindrome() {
-
 	fmt.Println("Input: x = 0")
 	fmt.Println("Output: ", isPalindrome(0))
-	fmt.Println()
-	fmt.Println("Input: x = 2552")
-	fmt.Println("Output: ", isPalindrome(2552))
 }
 
 func LeetCode_Max_Profit() {
@@ -44,19 +40,14 @@ func LeetCode_Max_Profit() {
 }
 
 func Leetcode_Max_Distance() {
-	grid := [][]int{{1, 0, 1}, {0, 0, 0}, {1, 0, 1}}
-	fmt.Println("Input: grid = \"[[1,0,1],[0,0,0],[1,0,1]]\"")
-	fmt.Println("Output: ", maxDistance(grid))
-
-	grid = [][]int{{1, 0, 0}, {0, 0, 0}, {0, 0, 0}}
 	fmt.Println("Input: grid = \"[[1,0,0],[0,0,0],[0,0,0]]\"")
-	fmt.Println("Output: ", maxDistance(grid))
+	fmt.Println("Output: ", maxDistance([][]int{{1, 0, 0}, {0, 0, 0}, {0, 0, 0}}))
 }
 
 func Leetcode_Minimum_Deviation() {
 	fmt.Println("Input: nums = [1,2,3,4]")
 	fmt.Println("Output: ", minimumDeviation([]int{1, 2, 3, 4}))
-
+	fmt.Println()
 	fmt.Println("Input: nums = [4,1,5,20,3]")
 	fmt.Println("Output: ", minimumDeviation([]int{4, 1, 5, 20, 3}))
 }
@@ -74,7 +65,7 @@ func Leetcode_Sort_Array() {
 func Leetcode_Length_Of_Longest_Substring() {
 	fmt.Println("Input: s = 'abcabcbb'")
 	fmt.Println("Output: ", lengthOfLongestSubstring("abcabcbb"))
-
+	fmt.Println()
 	fmt.Println("Input: s = 'abcdc'")
 	fmt.Println("Output: ", lengthOfLongestSubstring("abcdc"))
 }
@@ -123,4 +114,9 @@ func Leetcode_Beautiful_Subarrays() {
 func Leetcode_Sum_Numbers() {
 	fmt.Println("Input: root = [1,2,3]")
 	fmt.Println("Output: ", sumNumbers(&T.TreeNode{Val: 1, Left: T.TreeNodeBase(2), Right: T.TreeNodeBase(3)}))
+}
+
+func Leetcode_StrStr() {
+	fmt.Println("Input: haystack = \"sadbutsad\", needle = \"sad\"")
+	fmt.Println("Output: ", strStr("sadbutsad", "sad"))
 }

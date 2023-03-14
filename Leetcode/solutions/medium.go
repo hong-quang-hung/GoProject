@@ -95,6 +95,24 @@ func coloredCells(n int) int64 {
 	return int64(2*n*n - 2*n + 1)
 }
 
+// Reference: https://leetcode.com/problems/find-the-index-of-the-first-occurrence-in-a-string/
+func strStr(haystack string, needle string) int {
+	for i := 0; i <= len(haystack)-len(needle); i++ {
+		if haystack[i] == needle[0] {
+			var j int = 1
+			for ; j < len(needle); j++ {
+				if haystack[i+j] != needle[j] {
+					break
+				}
+			}
+			if j == len(needle) {
+				return i
+			}
+		}
+	}
+	return -1
+}
+
 // Reference: https://leetcode.com/problems/koko-eating-bananas/
 func minEatingSpeed(piles []int, h int) int {
 	var left int = 1
