@@ -11,6 +11,11 @@ func Leetcode_Two_Sum() {
 	fmt.Println("Output:", twoSum([]int{2, 7, 11, 15}, 9))
 }
 
+func Leetcode_Unique_Occurrences() {
+	fmt.Println("Input: nums = [1,2,2,1,1,3]")
+	fmt.Println("Output:", uniqueOccurrences([]int{1, 2, 2, 1, 1, 3}))
+}
+
 func LeetCode_Max_Depth() {
 	var root *T.TreeNode
 

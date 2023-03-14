@@ -18,6 +18,23 @@ func twoSum(nums []int, target int) []int {
 	return nil
 }
 
+// Reference: https://leetcode.com/problems/unique-number-of-occurrences/
+func uniqueOccurrences(arr []int) bool {
+	m := make(map[int]int)
+	for _, num := range arr {
+		m[num]++
+	}
+	s := make(map[int]bool)
+	for _, v := range m {
+		if _, ok := s[v]; ok {
+			return false
+		} else {
+			s[v] = true
+		}
+	}
+	return true
+}
+
 // Reference: https://leetcode.com/problems/maximum-depth-of-binary-tree/description/
 func maxDepth(root *T.TreeNode) int {
 	if root == nil {
