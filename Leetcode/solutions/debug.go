@@ -127,6 +127,6 @@ func Leetcode_Is_Complete_Tree() {
 }
 
 func Leetcode_Find_Median_Sorted_Arrays() {
-	fmt.Println("Input: nums1 = [1,2], nums2 = [3,4]")
-	fmt.Println("Output: ", findMedianSortedArrays([]int{1, 2}, []int{3, 4}))
+	fmt.Println("Input: nums1 = [1], nums2 = [2,3,4,5,6]")
+	fmt.Println("Output: ", findMedianSortedArrays([]int{1}, []int{2, 3, 4, 5, 6}))
 }

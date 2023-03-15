@@ -1,4 +1,4 @@
-package ultis
+package utils
 
 func CountingSort(nums []int) {
 	counts := make(map[int]int)
