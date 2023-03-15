@@ -6,6 +6,14 @@ type TreeNode struct {
 	Right *TreeNode
 }
 
-func TreeNodeBase(val int) *TreeNode {
+func LazyNode(val int) *TreeNode {
 	return &TreeNode{val, nil, nil}
+}
+
+func LazyNodeValue(val int, valf int, valr int) *TreeNode {
+	return &TreeNode{Val: val, Left: LazyNode(valf), Right: LazyNode(valr)}
+}
+
+func LazyNodeAll(val int, left *TreeNode, right *TreeNode) *TreeNode {
+	return &TreeNode{Val: val, Left: left, Right: right}
 }

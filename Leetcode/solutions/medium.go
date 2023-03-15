@@ -174,3 +174,24 @@ func sumNumbers(root *T.TreeNode) int {
 	}
 	return sumNumbers(root.Left) + sumNumbers(root.Right)
 }
+
+// Reference: https://leetcode.com/problems/check-completeness-of-a-binary-tree/
+func isCompleteTree(root *T.TreeNode) bool {
+	queue := make([]*T.TreeNode, 0)
+	queue = append(queue, root)
+	check := false
+	for len(queue) > 0 {
+		node := queue[0]
+		queue = queue[1:]
+
+		if node == nil {
+			check = true
+		} else {
+			if check {
+				return false
+			}
+			queue = append(queue, node.Left, node.Right)
+		}
+	}
+	return true
+}

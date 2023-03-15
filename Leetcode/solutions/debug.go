@@ -19,12 +19,12 @@ func Leetcode_Unique_Occurrences() {
 func LeetCode_Max_Depth() {
 	var root *T.TreeNode
 
-	root = &T.TreeNode{Val: 3, Left: T.TreeNodeBase(9), Right: &T.TreeNode{Val: 20, Left: T.TreeNodeBase(15), Right: T.TreeNodeBase(7)}}
+	root = &T.TreeNode{Val: 3, Left: T.LazyNode(9), Right: &T.TreeNode{Val: 20, Left: T.LazyNode(15), Right: T.LazyNode(7)}}
 	fmt.Println("Input: root = [3,9,20,null,null,15,7]")
 	fmt.Println("Output: ", maxDepth(root))
 	fmt.Println()
 
-	root = &T.TreeNode{Val: 1, Left: nil, Right: T.TreeNodeBase(9)}
+	root = &T.TreeNode{Val: 1, Left: nil, Right: T.LazyNode(9)}
 	fmt.Println("Input: root = [1,null,2]")
 	fmt.Println("Output: ", maxDepth(root))
 }
@@ -113,10 +113,15 @@ func Leetcode_Beautiful_Subarrays() {
 
 func Leetcode_Sum_Numbers() {
 	fmt.Println("Input: root = [1,2,3]")
-	fmt.Println("Output: ", sumNumbers(&T.TreeNode{Val: 1, Left: T.TreeNodeBase(2), Right: T.TreeNodeBase(3)}))
+	fmt.Println("Output: ", sumNumbers(T.LazyNodeAll(1, T.LazyNode(2), T.LazyNode(3))))
 }
 
 func Leetcode_StrStr() {
 	fmt.Println("Input: haystack = \"sadbutsad\", needle = \"sad\"")
 	fmt.Println("Output: ", strStr("sadbutsad", "sad"))
+}
+
+func Leetcode_Is_Complete_Tree() {
+	fmt.Println("Input: root = [1,2,3,5,null,7,8]")
+	fmt.Println("Output: ", isCompleteTree(T.LazyNodeAll(1, T.LazyNodeAll(2, T.LazyNode(5), nil), T.LazyNodeValue(3, 7, 8))))
 }
