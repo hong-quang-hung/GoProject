@@ -4,6 +4,7 @@ import (
 	"math"
 	"sort"
 
+	"leetcode.com/Leetcode/types"
 	T "leetcode.com/Leetcode/types"
 	U "leetcode.com/Leetcode/utils"
 )
@@ -194,4 +195,28 @@ func isCompleteTree(root *T.TreeNode) bool {
 		}
 	}
 	return true
+}
+
+// Reference: https://leetcode.com/problems/construct-binary-tree-from-inorder-and-postorder-traversal/
+func buildTree(inorder []int, postorder []int) *types.TreeNode {
+	return buildTreeConstruct(inorder, postorder, 0, len(inorder)-1, 0, len(postorder)-1)
+}
+
+func buildTreeConstruct(inorder []int, postorder []int, i1 int, i2 int, p1 int, p2 int) *types.TreeNode {
+	mid, rootVal := i1, postorder[p2]
+	for mid <= i2 && inorder[mid] != rootVal {
+		mid++
+	}
+	root := &types.TreeNode{Val: rootVal}
+	if mid-i1 == 1 {
+		root.Left = &types.TreeNode{Val: inorder[i1]}
+	} else if mid-i1 > 1 {
+		root.Left = buildTreeConstruct(inorder, postorder, i1, mid-1, p1, p1+mid-i1-1)
+	}
+	if i2-mid == 1 {
+		root.Right = &types.TreeNode{Val: postorder[p2-1]}
+	} else if i2-mid > 1 {
+		root.Right = buildTreeConstruct(inorder, postorder, mid+1, i2, p1+mid-i1, p2-1)
+	}
+	return root
 }

@@ -1,12 +1,18 @@
 package types
 
-import "fmt"
+import (
+	"fmt"
+	"strconv"
+	"strings"
+)
 
 type TreeNode struct {
 	Val   int
 	Left  *TreeNode
 	Right *TreeNode
 }
+
+var nilStr string = "null"
 
 func LazyNode(val int) *TreeNode {
 	return &TreeNode{val, nil, nil}
@@ -20,6 +26,36 @@ func LazyNodeAll(val int, left *TreeNode, right *TreeNode) *TreeNode {
 	return &TreeNode{Val: val, Left: left, Right: right}
 }
 
-func (root TreeNode) Println() {
-	fmt.Println("[]")
+var maxDepth int
+var strDepth []string
+
+func (root *TreeNode) Println() {
+	strDepth = strDepth[:cap(strDepth)]
+	maxDepth = 0
+	getNode(root, 0)
+	strDepth = strDepth[0 : maxDepth+1]
+	fmt.Println("[" + strings.Join(strDepth, ",") + "]")
+}
+
+func getNode(node *TreeNode, depth int) {
+	var val string
+	if node == nil {
+		val = nilStr
+	} else {
+		val = strconv.Itoa(node.Val)
+	}
+
+	if len(strDepth) > depth {
+		strDepth[depth] = strDepth[depth] + "," + val
+	} else {
+		strDepth = append(strDepth, val)
+	}
+
+	if node == nil {
+		return
+	}
+
+	maxDepth = depth
+	getNode(node.Left, depth+1)
+	getNode(node.Right, depth+1)
 }

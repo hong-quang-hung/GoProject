@@ -129,6 +129,10 @@ func Leetcode_Is_Complete_Tree() {
 func Leetcode_Find_Median_Sorted_Arrays() {
 	fmt.Println("Input: nums1 = [1], nums2 = [2,3,4,5,6]")
 	fmt.Println("Output: ", findMedianSortedArrays([]int{1}, []int{2, 3, 4, 5, 6}))
+}
 
-	types.LazyNodeAll(1, types.LazyNodeAll(2, types.LazyNode(5), nil), types.LazyNodeValue(3, 7, 8)).Println()
+func Leetcode_Build_Trees() {
+	fmt.Println("Input: inorder = [9,3,15,20,7], postorder = [9,15,7,20,3]")
+	fmt.Println("Output: ")
+	buildTree([]int{9, 3, 15, 20, 7}, []int{9, 15, 7, 20, 3}).Println()
 }
