@@ -1,5 +1,7 @@
 package types
 
+import "fmt"
+
 type TreeNode struct {
 	Val   int
 	Left  *TreeNode
@@ -16,4 +18,8 @@ func LazyNodeValue(val int, valf int, valr int) *TreeNode {
 
 func LazyNodeAll(val int, left *TreeNode, right *TreeNode) *TreeNode {
 	return &TreeNode{Val: val, Left: left, Right: right}
+}
+
+func (root TreeNode) Println() {
+	fmt.Println("[]")
 }

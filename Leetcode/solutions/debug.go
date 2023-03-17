@@ -3,7 +3,7 @@ package solutions
 import (
 	"fmt"
 
-	T "leetcode.com/Leetcode/types"
+	"leetcode.com/Leetcode/types"
 )
 
 func Leetcode_Two_Sum() {
@@ -17,14 +17,14 @@ func Leetcode_Unique_Occurrences() {
 }
 
 func LeetCode_Max_Depth() {
-	var root *T.TreeNode
+	var root *types.TreeNode
 
-	root = &T.TreeNode{Val: 3, Left: T.LazyNode(9), Right: &T.TreeNode{Val: 20, Left: T.LazyNode(15), Right: T.LazyNode(7)}}
+	root = types.LazyNodeAll(3, types.LazyNode(9), types.LazyNodeValue(20, 15, 7))
 	fmt.Println("Input: root = [3,9,20,null,null,15,7]")
 	fmt.Println("Output: ", maxDepth(root))
 	fmt.Println()
 
-	root = &T.TreeNode{Val: 1, Left: nil, Right: T.LazyNode(9)}
+	root = types.LazyNodeAll(1, nil, types.LazyNode(9))
 	fmt.Println("Input: root = [1,null,2]")
 	fmt.Println("Output: ", maxDepth(root))
 }
@@ -113,7 +113,7 @@ func Leetcode_Beautiful_Subarrays() {
 
 func Leetcode_Sum_Numbers() {
 	fmt.Println("Input: root = [1,2,3]")
-	fmt.Println("Output: ", sumNumbers(T.LazyNodeAll(1, T.LazyNode(2), T.LazyNode(3))))
+	fmt.Println("Output: ", sumNumbers(types.LazyNodeAll(1, types.LazyNode(2), types.LazyNode(3))))
 }
 
 func Leetcode_StrStr() {
@@ -123,10 +123,12 @@ func Leetcode_StrStr() {
 
 func Leetcode_Is_Complete_Tree() {
 	fmt.Println("Input: root = [1,2,3,5,null,7,8]")
-	fmt.Println("Output: ", isCompleteTree(T.LazyNodeAll(1, T.LazyNodeAll(2, T.LazyNode(5), nil), T.LazyNodeValue(3, 7, 8))))
+	fmt.Println("Output: ", isCompleteTree(types.LazyNodeAll(1, types.LazyNodeAll(2, types.LazyNode(5), nil), types.LazyNodeValue(3, 7, 8))))
 }
 
 func Leetcode_Find_Median_Sorted_Arrays() {
 	fmt.Println("Input: nums1 = [1], nums2 = [2,3,4,5,6]")
 	fmt.Println("Output: ", findMedianSortedArrays([]int{1}, []int{2, 3, 4, 5, 6}))
+
+	types.LazyNodeAll(1, types.LazyNodeAll(2, types.LazyNode(5), nil), types.LazyNodeValue(3, 7, 8)).Println()
 }

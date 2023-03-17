@@ -3,7 +3,7 @@ package solutions
 import (
 	"strings"
 
-	T "leetcode.com/Leetcode/types"
+	"leetcode.com/Leetcode/types"
 )
 
 // Reference: https://leetcode.com/problems/two-sum/
@@ -36,7 +36,7 @@ func uniqueOccurrences(arr []int) bool {
 }
 
 // Reference: https://leetcode.com/problems/maximum-depth-of-binary-tree/description/
-func maxDepth(root *T.TreeNode) int {
+func maxDepth(root *types.TreeNode) int {
 	if root == nil {
 		return 0
 	}
