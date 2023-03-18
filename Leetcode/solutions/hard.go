@@ -43,7 +43,6 @@ func findMedianSortedArrays(nums1 []int, nums2 []int) float64 {
 
 	l, r := 0, 0
 	for i := 0; i < len(res); i++ {
-
 		if l == len(nums1) && r < len(nums2) {
 			res[i] = nums2[r]
 			r++

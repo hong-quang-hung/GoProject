@@ -141,3 +141,8 @@ func Leetcode_Remove_Element() {
 	fmt.Println("Input: nums = [3,2,2,3], val = 3")
 	fmt.Println("Output: ", removeElement([]int{3, 2, 2, 3}, 3))
 }
+
+func Leetcode_Maximize_Greatness() {
+	fmt.Println("Input: nums = [42,8,75,28,35,21,13,21]")
+	fmt.Println("Output: ", maximizeGreatness([]int{42, 8, 75, 28, 35, 21, 13, 21}))
+}

@@ -220,3 +220,18 @@ func buildTreeConstruct(inorder []int, postorder []int, i1 int, i2 int, p1 int, 
 	}
 	return root
 }
+
+// Reference: https://leetcode.com/problems/construct-binary-tree-from-inorder-and-postorder-traversal/
+func maximizeGreatness(nums []int) int {
+	sort.Slice(nums, func(i, j int) bool {
+		return nums[j] > nums[i]
+	})
+
+	var res int = 0
+	for i := 1; i < len(nums); i++ {
+		if nums[i] > nums[res] {
+			res++
+		}
+	}
+	return res
+}
