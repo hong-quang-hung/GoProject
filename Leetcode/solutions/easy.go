@@ -130,3 +130,15 @@ func strStr(haystack string, needle string) int {
 	}
 	return -1
 }
+
+// Reference: https://leetcode.com/problems/remove-element/
+func removeElement(nums []int, val int) int {
+	var res int = 0
+	for _, num := range nums {
+		if num != val {
+			nums[res] = num
+			res++
+		}
+	}
+	return res
+}

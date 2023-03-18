@@ -136,3 +136,8 @@ func Leetcode_Build_Trees() {
 	fmt.Println("Output: ")
 	buildTree([]int{9, 3, 15, 20, 7}, []int{9, 15, 7, 20, 3}).Println()
 }
+
+func Leetcode_Remove_Element() {
+	fmt.Println("Input: nums = [3,2,2,3], val = 3")
+	fmt.Println("Output: ", removeElement([]int{3, 2, 2, 3}, 3))
+}
