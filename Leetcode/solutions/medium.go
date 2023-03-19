@@ -5,8 +5,7 @@ import (
 	"sort"
 
 	"leetcode.com/Leetcode/types"
-	T "leetcode.com/Leetcode/types"
-	U "leetcode.com/Leetcode/utils"
+	"leetcode.com/Leetcode/utils"
 )
 
 // Reference: https://leetcode.com/problems/as-far-from-land-as-possible/
@@ -67,7 +66,7 @@ func maxDistance(grid [][]int) int {
 
 // Reference: https://leetcode.com/problems/sort-an-array/
 func sortArray(nums []int) []int {
-	U.CountingSort(nums)
+	utils.CountingSort(nums)
 	return nums
 }
 
@@ -160,7 +159,7 @@ func beautifulSubarrays(nums []int) int64 {
 }
 
 // Reference: https://leetcode.com/problems/sum-root-to-leaf-numbers/
-func sumNumbers(root *T.TreeNode) int {
+func sumNumbers(root *types.TreeNode) int {
 	if root == nil {
 		return 0
 	}
@@ -177,8 +176,8 @@ func sumNumbers(root *T.TreeNode) int {
 }
 
 // Reference: https://leetcode.com/problems/check-completeness-of-a-binary-tree/
-func isCompleteTree(root *T.TreeNode) bool {
-	queue := make([]*T.TreeNode, 0)
+func isCompleteTree(root *types.TreeNode) bool {
+	queue := make([]*types.TreeNode, 0)
 	queue = append(queue, root)
 	check := false
 	for len(queue) > 0 {
@@ -224,7 +223,7 @@ func buildTreeConstruct(inorder []int, postorder []int, i1 int, i2 int, p1 int, 
 // Reference: https://leetcode.com/problems/construct-binary-tree-from-inorder-and-postorder-traversal/
 func maximizeGreatness(nums []int) int {
 	sort.Slice(nums, func(i, j int) bool {
-		return nums[j] > nums[i]
+		return nums[i] < nums[j]
 	})
 
 	var res int = 0
@@ -234,4 +233,42 @@ func maximizeGreatness(nums []int) int {
 		}
 	}
 	return res
+}
+
+// Reference: https://leetcode.com/problems/maximize-greatness-of-an-array
+func beautifulSubsets(nums []int, k int) int {
+	sort.Slice(nums, func(i, j int) bool {
+		return nums[i] < nums[j]
+	})
+
+	count := make([](map[int]int), k)
+	for i := 0; i < k; i++ {
+		count[i] = map[int]int{}
+	}
+	for _, num := range nums {
+		if v, c := count[num%k][num]; c {
+			count[num%k][num] = v + 1
+		} else {
+			count[num%k][num] = 1
+		}
+	}
+
+	var res int = 1
+	for j := 0; j < k; j++ {
+		prev, dp0, dp1 := 0, 1, 0
+		s := count[j]
+		for s1, s2 := range s {
+			var temp int = dp0
+			var pow int = int(math.Pow(2, float64(s2)))
+			dp0 += dp1
+			if prev+k == s1 {
+				dp1 = temp * (pow - 1)
+			} else {
+				dp1 = (temp + dp1) * (pow - 1)
+			}
+			prev = s1
+		}
+		res = res * (dp0 + dp1)
+	}
+	return res - 1
 }

@@ -146,3 +146,13 @@ func Leetcode_Maximize_Greatness() {
 	fmt.Println("Input: nums = [42,8,75,28,35,21,13,21]")
 	fmt.Println("Output: ", maximizeGreatness([]int{42, 8, 75, 28, 35, 21, 13, 21}))
 }
+
+func Leetcode_Even_Odd_Bit() {
+	fmt.Println("Input: n = 11")
+	fmt.Println("Output: ", evenOddBit(11))
+}
+
+func Leetcode_Beautiful_Subsets() {
+	fmt.Println("Inums = [10,4,5,7,2,1], k = 3")
+	fmt.Println("Output: ", beautifulSubsets([]int{10, 4, 5, 7, 2, 1}, 3))
+}

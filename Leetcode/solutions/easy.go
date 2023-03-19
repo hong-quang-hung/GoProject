@@ -142,3 +142,17 @@ func removeElement(nums []int, val int) int {
 	}
 	return res
 }
+
+// Reference: https://leetcode.com/problems/number-of-even-and-odd-bits/
+func evenOddBit(n int) []int {
+	arr := []int{0, 0}
+	var p int = 0
+	for n > 0 {
+		if n%2 == 1 {
+			arr[p%2]++
+		}
+		p++
+		n /= 2
+	}
+	return arr
+}
