@@ -272,3 +272,22 @@ func beautifulSubsets(nums []int, k int) int {
 	}
 	return res - 1
 }
+
+// Reference: https://leetcode.com/problems/number-of-zero-filled-subarrays/
+func zeroFilledSubarray(nums []int) int64 {
+	var res int64 = 0
+	var size int64 = 0
+	for _, num := range nums {
+		if num == 0 {
+			size++
+		} else {
+			res += (size * (size + 1) / 2)
+			size = 0
+		}
+	}
+	if size == 0 {
+		return res
+	} else {
+		return res + (size * (size + 1) / 2)
+	}
+}
