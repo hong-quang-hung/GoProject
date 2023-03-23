@@ -4,6 +4,7 @@ import (
 	"fmt"
 
 	"leetcode.com/Leetcode/types"
+	"leetcode.com/Leetcode/utils"
 )
 
 func Leetcode_Two_Sum() {
@@ -49,7 +50,7 @@ func Leetcode_Minimum_Deviation() {
 	fmt.Println("Output: ", minimumDeviation([]int{1, 2, 3, 4}))
 	fmt.Println()
 	fmt.Println("Input: nums = [4,1,5,20,3]")
-	fmt.Println("Output: ", minimumDeviation([]int{4, 1, 5, 20, 3}))
+	fmt.Println("Output: ", minimumDeviation(utils.Slice(4, 1, 5, 20, 3)))
 }
 
 func Leetcode_Remove_Duplicates() {
@@ -153,11 +154,11 @@ func Leetcode_Even_Odd_Bit() {
 }
 
 func Leetcode_Beautiful_Subsets() {
-	fmt.Println("Inums = [10,4,5,7,2,1], k = 3")
+	fmt.Println("Input: nums = [10,4,5,7,2,1], k = 3")
 	fmt.Println("Output: ", beautifulSubsets([]int{10, 4, 5, 7, 2, 1}, 3))
 }
 
 func Leetcode_Zero_Filled_Subarray() {
-	fmt.Println("nums = [0,0,0,2,0,0]")
+	fmt.Println("Input: nums = [0,0,0,2,0,0]")
 	fmt.Println("Output: ", zeroFilledSubarray([]int{0, 0, 0, 2, 0, 0}))
 }
