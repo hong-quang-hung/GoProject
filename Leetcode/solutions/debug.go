@@ -162,3 +162,10 @@ func Leetcode_Zero_Filled_Subarray() {
 	fmt.Println("Input: nums = [0,0,0,2,0,0]")
 	fmt.Println("Output: ", zeroFilledSubarray([]int{0, 0, 0, 2, 0, 0}))
 }
+
+func Test_Pattern() {
+	fmt.Println("Input: nums = [0,0,0,2,0,0]")
+	fmt.Println("Output:", utils.Sslice([]int{0, 0, 0, 2, 0, 0}))
+	fmt.Println("Input: grid = \"[[1,0,0],[0,0,0],[0,0,0]]\"")
+	fmt.Println("Output:", utils.SsoSlice([][]int{{1, 0, 0}, {0, 0, 0}, {0, 0, 0}}))
+}
