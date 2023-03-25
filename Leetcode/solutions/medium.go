@@ -307,3 +307,22 @@ func makeConnected(n int, connections [][]int) int {
 	}
 	return numberOfConnectedComponents - 1
 }
+
+// https://leetcode.com/problems/minimum-score-of-a-path-between-two-cities/
+func minScore(n int, roads [][]int) int {
+	union := types.NewUnionFind(n + 1)
+	var answer int = math.MaxInt16
+
+	for _, road := range roads {
+		union.UnionSet(road[0], road[1])
+	}
+
+	for _, road := range roads {
+		if union.Find(1) == union.Find(road[0]) {
+			if answer > road[2] {
+				answer = road[2]
+			}
+		}
+	}
+	return answer
+}

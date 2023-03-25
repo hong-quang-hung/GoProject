@@ -174,3 +174,10 @@ func Leetcode_Make_Connected() {
 	fmt.Println("Input: n = 4, connections = [[0,1],[0,2],[1,2]]")
 	fmt.Println("Output: ", makeConnected(4, [][]int{{0, 1}, {0, 2}, {1, 2}}))
 }
+
+func Leetcode_Min_Score() {
+	fmt.Println("n = 4, roads = [[1,2,9],[2,3,6],[2,4,5],[1,4,7]]")
+	fmt.Println("Output: ", minScore(4, [][]int{{1, 2, 9}, {2, 3, 6}, {2, 4, 5}, {1, 4, 7}}))
+	fmt.Println("n = 4, roads = [[1,2,2],[1,3,4],[3,4,7]]")
+	fmt.Println("Output: ", minScore(4, [][]int{{1, 2, 2}, {1, 3, 4}, {3, 4, 7}}))
+}
