@@ -291,3 +291,19 @@ func zeroFilledSubarray(nums []int) int64 {
 		return res + (size * (size + 1) / 2)
 	}
 }
+
+// https://leetcode.com/problems/number-of-operations-to-make-network-connected/
+func makeConnected(n int, connections [][]int) int {
+	if len(connections) < n-1 {
+		return -1
+	}
+	union := types.NewUnionFind(n)
+	var numberOfConnectedComponents int = n
+	for _, connection := range connections {
+		if union.Find(connection[0]) != union.Find(connection[1]) {
+			numberOfConnectedComponents--
+			union.UnionSet(connection[0], connection[1])
+		}
+	}
+	return numberOfConnectedComponents - 1
+}

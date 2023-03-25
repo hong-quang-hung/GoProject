@@ -169,3 +169,8 @@ func Test_Pattern() {
 	fmt.Println("Input: grid = \"[[1,0,0],[0,0,0],[0,0,0]]\"")
 	fmt.Println("Output:", utils.SsoSlice([][]int{{1, 0, 0}, {0, 0, 0}, {0, 0, 0}}))
 }
+
+func Leetcode_Make_Connected() {
+	fmt.Println("Input: n = 4, connections = [[0,1],[0,2],[1,2]]")
+	fmt.Println("Output: ", makeConnected(4, [][]int{{0, 1}, {0, 2}, {1, 2}}))
+}
