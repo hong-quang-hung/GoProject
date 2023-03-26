@@ -176,8 +176,18 @@ func Leetcode_Make_Connected() {
 }
 
 func Leetcode_Min_Score() {
-	fmt.Println("n = 4, roads = [[1,2,9],[2,3,6],[2,4,5],[1,4,7]]")
+	fmt.Println("Input: n = 4, roads = [[1,2,9],[2,3,6],[2,4,5],[1,4,7]]")
 	fmt.Println("Output: ", minScore(4, [][]int{{1, 2, 9}, {2, 3, 6}, {2, 4, 5}, {1, 4, 7}}))
-	fmt.Println("n = 4, roads = [[1,2,2],[1,3,4],[3,4,7]]")
+	fmt.Println("Input: n = 4, roads = [[1,2,2],[1,3,4],[3,4,7]]")
 	fmt.Println("Output: ", minScore(4, [][]int{{1, 2, 2}, {1, 3, 4}, {3, 4, 7}}))
+}
+
+func Leetcode_K_Items_With_Maximum_Sum() {
+	fmt.Println("Input: numOnes = 6, numZeros = 6, numNegOnes = 6, k = 13")
+	fmt.Println("Output: ", kItemsWithMaximumSum(6, 6, 6, 13))
+}
+
+func Leetcode_Min_Operations() {
+	fmt.Println("Input: nums = [3,1,6,8], queries = [1,5]")
+	fmt.Println("Output: ", minOperations([]int{3, 1, 6, 8}, []int{1, 5}))
 }

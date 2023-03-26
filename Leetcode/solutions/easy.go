@@ -156,3 +156,14 @@ func evenOddBit(n int) []int {
 	}
 	return arr
 }
+
+// Reference: https://leetcode.com/problems/k-items-with-the-maximum-sum/
+func kItemsWithMaximumSum(numOnes int, numZeros int, numNegOnes int, k int) int {
+	if numOnes >= k {
+		return k
+	}
+	if numZeros >= k-numOnes {
+		return numOnes
+	}
+	return 2*numOnes - k + numZeros
+}
