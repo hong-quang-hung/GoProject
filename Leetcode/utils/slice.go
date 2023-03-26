@@ -2,6 +2,14 @@ package utils
 
 import "strings"
 
+func Make[T any](size int, init T) []T {
+	slice := make([]T, size)
+	for i := range slice {
+		slice[i] = init
+	}
+	return slice
+}
+
 func Remove[T any](s []T, index int) []T {
 	return append(s[:index], s[index+1:]...)
 }
