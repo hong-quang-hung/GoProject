@@ -195,6 +195,11 @@ func Leetcode_Prime_Sub_Operation() {
 	fmt.Println("Output: ", primeSubOperation([]int{4, 9, 6, 10}))
 }
 
+func Leetcode_Longest_Palindrome() {
+	fmt.Println("Input: s = 'babad'")
+	fmt.Println("Output: ", longestPalindrome("babad"))
+}
+
 func Leetcode_Longest_Cycle() {
 	fmt.Println("Input: edges = [3,3,4,2,3]")
 	fmt.Println("Output: ", longestCycle([]int{3, 3, 4, 2, 3}))
