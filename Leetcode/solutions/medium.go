@@ -235,42 +235,23 @@ func maximizeGreatness(nums []int) int {
 	return res
 }
 
-// Reference: https://leetcode.com/problems/maximize-greatness-of-an-array
+// Reference: https://leetcode.com/problems/the-number-of-beautiful-subsets/
 func beautifulSubsets(nums []int, k int) int {
-	sort.Slice(nums, func(i, j int) bool {
-		return nums[i] < nums[j]
-	})
+	sort.Ints(nums)
+	return counter(0, map[int]int{}, nums, k) - 1
+}
 
-	count := make([](map[int]int), k)
-	for i := 0; i < k; i++ {
-		count[i] = map[int]int{}
+func counter(index int, m map[int]int, nums []int, k int) int {
+	if index == len(nums) {
+		return 1
 	}
-	for _, num := range nums {
-		if v, c := count[num%k][num]; c {
-			count[num%k][num] = v + 1
-		} else {
-			count[num%k][num] = 1
-		}
+	count := counter(index+1, m, nums, k)
+	if m[nums[index]-k] == 0 {
+		m[nums[index]]++
+		count += counter(index+1, m, nums, k)
+		m[nums[index]]--
 	}
-
-	var res int = 1
-	for j := 0; j < k; j++ {
-		prev, dp0, dp1 := 0, 1, 0
-		s := count[j]
-		for s1, s2 := range s {
-			var temp int = dp0
-			var pow int = int(math.Pow(2, float64(s2)))
-			dp0 += dp1
-			if prev+k == s1 {
-				dp1 = temp * (pow - 1)
-			} else {
-				dp1 = (temp + dp1) * (pow - 1)
-			}
-			prev = s1
-		}
-		res = res * (dp0 + dp1)
-	}
-	return res - 1
+	return count
 }
 
 // Reference: https://leetcode.com/problems/number-of-zero-filled-subarrays/
