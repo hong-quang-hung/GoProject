@@ -244,3 +244,9 @@ func gcdOfStrings(str1 string, str2 string) string {
 		return gcdOfStrings(str1, l)
 	}
 }
+
+// Reference: https://leetcode.com/problems/contains-duplicate-ii/
+func containsNearbyDuplicate(nums []int, k int) bool {
+	i, j := 0, 1
+	return false
+}

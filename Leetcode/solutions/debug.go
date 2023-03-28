@@ -227,6 +227,13 @@ func Leetcode_Is_Valid() {
 func Leetcode_Gcd_Of_Strings() {
 	fmt.Println("Input: str1 = 'ABCABC', str2 = 'ABC")
 	fmt.Println("Output: ", gcdOfStrings("ABCABC", "ABC"))
-	fmt.Println("Input: str1 = 'ABABAB', str2 = 'ABAB")
-	fmt.Println("Output: ", gcdOfStrings("ABABAB", "ABAB"))
+}
+
+func Leetcode_Contains_Near_By_Duplicate() {
+	fmt.Println("Input: nums = [1,2,3,1], k = 3")
+	fmt.Println("Output: ", containsNearbyDuplicate([]int{1, 2, 3, 1}, 3))
+	fmt.Println("Input: nums = [1,0,1,1], k = 1")
+	fmt.Println("Output: ", containsNearbyDuplicate([]int{1, 0, 1, 1}, 1))
+	fmt.Println("Input: nums = [1,2,3,1,2,3], k = 2")
+	fmt.Println("Output: ", containsNearbyDuplicate([]int{1, 2, 3, 1, 2, 3}, 3))
 }
