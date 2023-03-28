@@ -167,3 +167,28 @@ func kItemsWithMaximumSum(numOnes int, numZeros int, numNegOnes int, k int) int 
 	}
 	return 2*numOnes - k + numZeros
 }
+
+// Reference: https://leetcode.com/problems/verifying-an-alien-dictionary/
+func isAlienSorted(words []string, order string) bool {
+	hash := make(map[byte]int)
+	for i := 0; i < 26; i++ {
+		hash[order[i]] = i
+	}
+
+	for i := 0; i < len(words)-1; i++ {
+		for j := 0; j < len(words[i]); j++ {
+			if j >= len(words[i+1]) {
+				return false
+			}
+
+			if words[i][j] != words[i+1][j] {
+				if hash[words[i][j]] > hash[words[i+1][j]] {
+					return false
+				} else {
+					break
+				}
+			}
+		}
+	}
+	return true
+}

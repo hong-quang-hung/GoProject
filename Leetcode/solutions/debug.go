@@ -213,3 +213,8 @@ func Leetcode_Min_Cost_Tickets() {
 	fmt.Println("Input: days = [1,2,3,4,5,6,7,8,9,10,30,31], costs = [2,7,15]")
 	fmt.Println("Output: ", mincostTickets([]int{1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 30, 31}, []int{2, 7, 15}))
 }
+
+func Leetcode_Is_Alien_Sorted() {
+	fmt.Println("Input: words = ['hello','leetcode'], order = 'hlabcdefgijkmnopqrstuvwxyz'")
+	fmt.Println("Output: ", isAlienSorted([]string{"hello", "leetcode"}, "hlabcdefgijkmnopqrstuvwxyz"))
+}

@@ -273,7 +273,7 @@ func zeroFilledSubarray(nums []int) int64 {
 	}
 }
 
-// https://leetcode.com/problems/number-of-operations-to-make-network-connected/
+// Reference: https://leetcode.com/problems/number-of-operations-to-make-network-connected/
 func makeConnected(n int, connections [][]int) int {
 	if len(connections) < n-1 {
 		return -1
@@ -289,7 +289,7 @@ func makeConnected(n int, connections [][]int) int {
 	return numberOfConnectedComponents - 1
 }
 
-// https://leetcode.com/problems/minimum-score-of-a-path-between-two-cities/
+// Reference: https://leetcode.com/problems/minimum-score-of-a-path-between-two-cities/
 func minScore(n int, roads [][]int) int {
 	union := types.NewUnionFind(n + 1)
 	var answer int = math.MaxInt16
@@ -308,7 +308,7 @@ func minScore(n int, roads [][]int) int {
 	return answer
 }
 
-// https://leetcode.com/problems/minimum-operations-to-make-all-array-elements-equal/
+// Reference: https://leetcode.com/problems/minimum-operations-to-make-all-array-elements-equal/
 func minOperations(nums []int, queries []int) []int64 {
 	var n int = len(nums)
 	res := make([]int64, len(queries))
@@ -349,7 +349,7 @@ func findIndexMinOperations(nums []int, find int) int {
 	return left
 }
 
-// https://leetcode.com/problems/prime-subtraction-operation/description/
+// Reference: https://leetcode.com/problems/prime-subtraction-operation/description/
 func primeSubOperation(nums []int) bool {
 	isPrime := utils.Make(1005, true)
 	prime := make([]int, 0)
@@ -395,7 +395,7 @@ func seive(v []bool, n int) {
 	}
 }
 
-// https://leetcode.com/problems/longest-palindromic-substring/
+// Reference: https://leetcode.com/problems/longest-palindromic-substring/
 func longestPalindrome(s string) string {
 	if len(s) < 1 {
 		return ""
@@ -429,7 +429,7 @@ func expandAroundCenter(s string, left int, right int) int {
 	return r - l - 1
 }
 
-// https://leetcode.com/problems/minimum-path-sum/
+// Reference: https://leetcode.com/problems/minimum-path-sum/
 func minPathSum(grid [][]int) int {
 	r, c := len(grid), len(grid[0])
 	dp := make([][]int, r)
@@ -459,7 +459,7 @@ func minPathSum(grid [][]int) int {
 	return dp[r-1][c-1]
 }
 
-// https://leetcode.com/problems/minimum-cost-for-tickets/
+// Reference: https://leetcode.com/problems/minimum-cost-for-tickets/
 func mincostTickets(days []int, costs []int) int {
 	dp := make([]int, len(days))
 	dur := []int{1, 7, 30}
