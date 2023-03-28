@@ -458,3 +458,34 @@ func minPathSum(grid [][]int) int {
 	}
 	return dp[r-1][c-1]
 }
+
+// https://leetcode.com/problems/minimum-cost-for-tickets/
+func mincostTickets(days []int, costs []int) int {
+	dp := make([]int, len(days))
+	dur := []int{1, 7, 30}
+	return mincostTicketsDP(days, costs, dur, dp, 0)
+}
+
+func mincostTicketsDP(days []int, costs []int, dur []int, dp []int, i int) int {
+	if i >= len(dp) {
+		return 0
+	}
+
+	if dp[i] != 0 {
+		return dp[i]
+	}
+
+	var min int = math.MaxInt16
+	var j int = i
+	for c, cost := range costs {
+		for (j < len(days)) && (days[j] < days[i]+dur[c]) {
+			j++
+		}
+		dp := mincostTicketsDP(days, costs, dur, dp, j) + cost
+		if min > dp {
+			min = dp
+		}
+	}
+	dp[i] = min
+	return min
+}

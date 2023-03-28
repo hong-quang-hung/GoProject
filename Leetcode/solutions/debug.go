@@ -206,3 +206,10 @@ func Leetcode_Min_Path_Sum() {
 	fmt.Println("Input: grid = [[1,2,3],[4,5,6]]")
 	fmt.Println("Output: ", minPathSum([][]int{{1, 2, 3}, {4, 5, 6}}))
 }
+
+func Leetcode_Min_Cost_Tickets() {
+	fmt.Println("Input: days = [1,4,6,7,8,20], costs = [2,7,15]")
+	fmt.Println("Output: ", mincostTickets([]int{1, 4, 6, 7, 8, 20}, []int{2, 7, 15}))
+	fmt.Println("Input: days = [1,2,3,4,5,6,7,8,9,10,30,31], costs = [2,7,15]")
+	fmt.Println("Output: ", mincostTickets([]int{1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 30, 31}, []int{2, 7, 15}))
+}
