@@ -218,3 +218,8 @@ func Leetcode_Is_Alien_Sorted() {
 	fmt.Println("Input: words = ['hello','leetcode'], order = 'hlabcdefgijkmnopqrstuvwxyz'")
 	fmt.Println("Output: ", isAlienSorted([]string{"hello", "leetcode"}, "hlabcdefgijkmnopqrstuvwxyz"))
 }
+
+func Leetcode_Is_Valid() {
+	fmt.Println("Input: s = '()[]{}'")
+	fmt.Println("Output: ", isValid("()[]{}"))
+}
