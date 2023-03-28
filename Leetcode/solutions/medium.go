@@ -395,7 +395,7 @@ func seive(v []bool, n int) {
 	}
 }
 
-// https://leetcode.com/problems/longest-palindromic-substring/editorial/
+// https://leetcode.com/problems/longest-palindromic-substring/
 func longestPalindrome(s string) string {
 	if len(s) < 1 {
 		return ""
@@ -427,4 +427,34 @@ func expandAroundCenter(s string, left int, right int) int {
 		r++
 	}
 	return r - l - 1
+}
+
+// https://leetcode.com/problems/minimum-path-sum/
+func minPathSum(grid [][]int) int {
+	r, c := len(grid), len(grid[0])
+	dp := make([][]int, r)
+
+	for i := range dp {
+		dp[i] = make([]int, c)
+	}
+
+	dp[0][0] += grid[0][0]
+	for i := 1; i < c; i++ {
+		dp[0][i] += dp[0][i-1] + grid[0][i]
+	}
+
+	for i := 1; i < r; i++ {
+		dp[i][0] += dp[i-1][0] + grid[i][0]
+	}
+
+	for i := 1; i < r; i++ {
+		for j := 1; j < c; j++ {
+			if dp[i-1][j] < dp[i][j-1] {
+				dp[i][j] = dp[i-1][j] + grid[i][j]
+			} else {
+				dp[i][j] = dp[i][j-1] + grid[i][j]
+			}
+		}
+	}
+	return dp[r-1][c-1]
 }

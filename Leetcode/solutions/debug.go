@@ -163,13 +163,6 @@ func Leetcode_Zero_Filled_Subarray() {
 	fmt.Println("Output: ", zeroFilledSubarray([]int{0, 0, 0, 2, 0, 0}))
 }
 
-func Test_Pattern() {
-	fmt.Println("Input: nums = [0,0,0,2,0,0]")
-	fmt.Println("Output:", utils.Sslice([]int{0, 0, 0, 2, 0, 0}))
-	fmt.Println("Input: grid = \"[[1,0,0],[0,0,0],[0,0,0]]\"")
-	fmt.Println("Output:", utils.SsoSlice([][]int{{1, 0, 0}, {0, 0, 0}, {0, 0, 0}}))
-}
-
 func Leetcode_Make_Connected() {
 	fmt.Println("Input: n = 4, connections = [[0,1],[0,2],[1,2]]")
 	fmt.Println("Output: ", makeConnected(4, [][]int{{0, 1}, {0, 2}, {1, 2}}))
@@ -205,4 +198,11 @@ func Leetcode_Longest_Cycle() {
 	fmt.Println("Output: ", longestCycle([]int{3, 3, 4, 2, 3}))
 	fmt.Println("Input: edges = [2,-1,3,1]")
 	fmt.Println("Output: ", longestCycle([]int{2, -1, 3, 1}))
+}
+
+func Leetcode_Min_Path_Sum() {
+	fmt.Println("Input: grid = [[1,3,1],[1,5,1],[4,2,1]]")
+	fmt.Println("Output: ", minPathSum([][]int{{1, 3, 1}, {1, 5, 1}, {4, 2, 1}}))
+	fmt.Println("Input: grid = [[1,2,3],[4,5,6]]")
+	fmt.Println("Output: ", minPathSum([][]int{{1, 2, 3}, {4, 5, 6}}))
 }
