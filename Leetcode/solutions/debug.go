@@ -223,3 +223,10 @@ func Leetcode_Is_Valid() {
 	fmt.Println("Input: s = '()[]{}'")
 	fmt.Println("Output: ", isValid("()[]{}"))
 }
+
+func Leetcode_Gcd_Of_Strings() {
+	fmt.Println("Input: str1 = 'ABCABC', str2 = 'ABC")
+	fmt.Println("Output: ", gcdOfStrings("ABCABC", "ABC"))
+	fmt.Println("Input: str1 = 'ABABAB', str2 = 'ABAB")
+	fmt.Println("Output: ", gcdOfStrings("ABABAB", "ABAB"))
+}

@@ -26,11 +26,14 @@ func (L *Leetcode) SetSolved(s ...int) {
 }
 
 func (L *Leetcode) GetRandom() int {
-	random := rand.Intn(L.total) + 1
-	for L.IsSolved(random) {
-		random = rand.Intn(L.total) + 1
+	if len(L.solved) == L.total {
+		return -1
 	}
-	return random
+	random := rand.Intn(L.total)
+	for L.IsSolved(random) {
+		random = rand.Intn(L.total)
+	}
+	return random + 1
 }
 
 func (L *Leetcode) Solved() int {
