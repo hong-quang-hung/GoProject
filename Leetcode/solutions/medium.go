@@ -502,3 +502,20 @@ func removeStars(s string) string {
 	}
 	return string(stack)
 }
+
+// Reference: https://leetcode.com/problems/max-chunks-to-make-sorted/
+func maxChunksToSorted(arr []int) int {
+	monotonic := []int{}
+	for _, a := range arr {
+		max := a
+		for len(monotonic) > 0 && monotonic[len(monotonic)-1] > a {
+			pop := monotonic[len(monotonic)-1]
+			monotonic = monotonic[:len(monotonic)-1]
+			if pop > max {
+				max = pop
+			}
+		}
+		monotonic = append(monotonic, max)
+	}
+	return len(monotonic)
+}

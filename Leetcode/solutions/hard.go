@@ -138,7 +138,7 @@ func maxSatisfaction(satisfaction []int) int {
 }
 
 // Reference: https://leetcode.com/problems/max-chunks-to-make-sorted-ii/
-func maxChunksToSorted(arr []int) int {
+func maxChunksToSorted_ii(arr []int) int {
 	monotonic := []int{}
 	for _, a := range arr {
 		max := a

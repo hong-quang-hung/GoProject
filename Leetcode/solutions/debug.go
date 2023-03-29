@@ -248,11 +248,18 @@ func Leetcode_Remove_Stars() {
 	fmt.Println("Output:", removeStars("erase*****"))
 }
 
-func Leetcode_Max_Chunks_To_Sorted() {
+func Leetcode_Max_Chunks_To_Sorted_II() {
 	fmt.Println("Input: arr = [4,2,2,1,1]")
-	fmt.Println("Output:", maxChunksToSorted([]int{4, 2, 2, 1, 1}))
+	fmt.Println("Output:", maxChunksToSorted_ii([]int{4, 2, 2, 1, 1}))
 	fmt.Println("Input: arr = [0,0,1,1,1]")
-	fmt.Println("Output:", maxChunksToSorted([]int{0, 0, 1, 1, 1}))
+	fmt.Println("Output:", maxChunksToSorted_ii([]int{0, 0, 1, 1, 1}))
 	fmt.Println("Input: arr = [0,3,0,3,2]")
-	fmt.Println("Output:", maxChunksToSorted([]int{0, 3, 0, 3, 2}))
+	fmt.Println("Output:", maxChunksToSorted_ii([]int{0, 3, 0, 3, 2}))
+}
+
+func Leetcode_Max_Chunks_To_Sorted() {
+	fmt.Println("Input: arr = [4,3,2,1,0]")
+	fmt.Println("Output:", maxChunksToSorted([]int{4, 3, 2, 1, 0}))
+	fmt.Println("Input: arr = [1,0,2,3,4]")
+	fmt.Println("Output:", maxChunksToSorted([]int{1, 0, 2, 3, 4}))
 }
