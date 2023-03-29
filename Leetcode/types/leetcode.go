@@ -2,6 +2,7 @@ package types
 
 import (
 	"math/rand"
+	"time"
 )
 
 type Leetcode struct {
@@ -29,6 +30,7 @@ func (L *Leetcode) GetRandom() int {
 	if len(L.solved) == L.total {
 		return -1
 	}
+	rand.Seed(time.Now().UnixNano())
 	random := rand.Intn(L.total)
 	for L.IsSolved(random) {
 		random = rand.Intn(L.total)

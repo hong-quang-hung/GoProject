@@ -263,3 +263,10 @@ func Leetcode_Max_Chunks_To_Sorted() {
 	fmt.Println("Input: arr = [1,0,2,3,4]")
 	fmt.Println("Output:", maxChunksToSorted([]int{1, 0, 2, 3, 4}))
 }
+
+func Leetcode_Can_See_Persons_Count() {
+	fmt.Println("Input: heights = [10,6,8,5,11,9]")
+	fmt.Println("Output:", canSeePersonsCount([]int{10, 6, 8, 5, 11, 9}))
+	fmt.Println("Input: heights = [5,1,2,3,10]")
+	fmt.Println("Output:", canSeePersonsCount([]int{5, 1, 2, 3, 10}))
+}

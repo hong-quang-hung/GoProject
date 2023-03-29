@@ -153,3 +153,21 @@ func maxChunksToSorted_ii(arr []int) int {
 	}
 	return len(monotonic)
 }
+
+// Reference: https://leetcode.com/problems/number-of-visible-people-in-a-queue/
+func canSeePersonsCount(heights []int) []int {
+	monotonic := []int{}
+	for i := len(heights) - 1; i >= 0; i-- {
+		count, height := 0, heights[i]
+		for len(monotonic) > 0 && monotonic[len(monotonic)-1] < height {
+			monotonic = monotonic[:len(monotonic)-1]
+			count++
+		}
+		if len(monotonic) > 0 {
+			count++
+		}
+		heights[i] = count
+		monotonic = append(monotonic, height)
+	}
+	return heights
+}
