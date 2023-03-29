@@ -127,18 +127,12 @@ func longestCycle(edges []int) int {
 
 // Reference: https://leetcode.com/problems/reducing-dishes/
 func maxSatisfaction(satisfaction []int) int {
-	n := len(satisfaction)
 	sort.Slice(satisfaction, func(i, j int) bool { return satisfaction[i] < satisfaction[j] })
+	n, max, total := len(satisfaction), 0, 0
 
-	var max int = 0
-	for i := 0; i < n; i++ {
-		m, p := 0, n-1-i
-		for j := 0; j <= i; j++ {
-			m += (j + 1) * satisfaction[p+j]
-		}
-		if max < m {
-			max = m
-		}
+	for i := n - 1; i >= 0 && satisfaction[i]+total > 0; i-- {
+		total += satisfaction[i]
+		max += total
 	}
 	return max
 }
