@@ -1,5 +1,9 @@
 package solutions
 
+import (
+	"sort"
+)
+
 // Reference: https://leetcode.com/problems/minimize-deviation-in-array/
 func minimumDeviation(nums []int) int {
 	return 0
@@ -119,4 +123,22 @@ func longestCycle(edges []int) int {
 		}
 	}
 	return answer
+}
+
+// Reference: https://leetcode.com/problems/reducing-dishes/
+func maxSatisfaction(satisfaction []int) int {
+	n := len(satisfaction)
+	sort.Slice(satisfaction, func(i, j int) bool { return satisfaction[i] < satisfaction[j] })
+
+	var max int = 0
+	for i := 0; i < n; i++ {
+		m, p := 0, n-1-i
+		for j := 0; j <= i; j++ {
+			m += (j + 1) * satisfaction[p+j]
+		}
+		if max < m {
+			max = m
+		}
+	}
+	return max
 }
