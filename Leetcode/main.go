@@ -19,7 +19,7 @@ func main() {
 
 func SolveProblem() {
 	fmt.Println("Golang Leetcode...")
-	solutions.Leetcode_Remove_Stars()
+	solutions.Leetcode_Max_Chunks_To_Sorted()
 }
 
 func PrintLine() {
@@ -34,7 +34,7 @@ func GetRandomProblem() {
 	Leetcode.SetSolved(3, 2567, 912, 2570, 2574, 2575, 9, 1129, 2576, 2578, 2579, 2580, 2583, 2586, 2587, 2588, 2591, 2592, 2595, 2596, 2597, 2600, 2601, 2602, 64, 983, 219, 1402, 2390)
 
 	fmt.Println("There are", Leetcode.Solved(), "/", Leetcode.Total(), "problems has been solved in Leetcode.")
-	// fmt.Println("Today, Number of Leetcode Problem is:", Leetcode.GetRandom())
+	fmt.Println("Today, Number of Leetcode Problem is:", Leetcode.GetRandom())
 }
 
 func TestPattern() {

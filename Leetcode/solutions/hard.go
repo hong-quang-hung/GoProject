@@ -136,3 +136,8 @@ func maxSatisfaction(satisfaction []int) int {
 	}
 	return max
 }
+
+// Reference: https://leetcode.com/problems/reducing-dishes/
+func maxChunksToSorted(arr []int) int {
+	return 0
+}

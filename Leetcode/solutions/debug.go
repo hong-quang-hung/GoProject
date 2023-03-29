@@ -247,3 +247,10 @@ func Leetcode_Remove_Stars() {
 	fmt.Println("Input: s = 'erase*****'")
 	fmt.Println("Output:", removeStars("erase*****"))
 }
+
+func Leetcode_Max_Chunks_To_Sorted() {
+	fmt.Println("Input: arr = [5,4,3,2,1]")
+	fmt.Println("Output:", maxChunksToSorted([]int{5, 4, 3, 2, 1}))
+	fmt.Println("Input: arr = [2,1,3,4,4]")
+	fmt.Println("Output:", maxChunksToSorted([]int{2, 1, 3, 4, 4}))
+}
