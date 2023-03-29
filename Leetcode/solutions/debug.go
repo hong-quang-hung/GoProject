@@ -240,3 +240,10 @@ func Leetcode_Max_Satisfaction() {
 	fmt.Println("Input: satisfaction = [-1,-4,-5]")
 	fmt.Println("Output:", maxSatisfaction([]int{-1, -4, -5}))
 }
+
+func Leetcode_Remove_Stars() {
+	fmt.Println("Input: s = 'leet**cod*e'")
+	fmt.Println("Output:", removeStars("leet**cod*e"))
+	fmt.Println("Input: s = 'erase*****'")
+	fmt.Println("Output:", removeStars("erase*****"))
+}

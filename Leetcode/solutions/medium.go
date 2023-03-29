@@ -489,3 +489,16 @@ func mincostTicketsDP(days []int, costs []int, dur []int, dp []int, i int) int {
 	dp[i] = min
 	return min
 }
+
+// Reference: https://leetcode.com/problems/removing-stars-from-a-string/
+func removeStars(s string) string {
+	stack := []rune{}
+	for _, r := range s {
+		if r == '*' {
+			stack = stack[:len(stack)-1]
+		} else {
+			stack = append(stack, r)
+		}
+	}
+	return string(stack)
+}
