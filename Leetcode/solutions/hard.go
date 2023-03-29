@@ -137,7 +137,19 @@ func maxSatisfaction(satisfaction []int) int {
 	return max
 }
 
-// Reference: https://leetcode.com/problems/reducing-dishes/
+// Reference: https://leetcode.com/problems/max-chunks-to-make-sorted-ii/
 func maxChunksToSorted(arr []int) int {
-	return 0
+	monotonic := []int{}
+	for _, a := range arr {
+		max := a
+		for len(monotonic) > 0 && monotonic[len(monotonic)-1] > a {
+			pop := monotonic[len(monotonic)-1]
+			monotonic = monotonic[:len(monotonic)-1]
+			if pop > max {
+				max = pop
+			}
+		}
+		monotonic = append(monotonic, max)
+	}
+	return len(monotonic)
 }

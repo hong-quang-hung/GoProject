@@ -249,8 +249,10 @@ func Leetcode_Remove_Stars() {
 }
 
 func Leetcode_Max_Chunks_To_Sorted() {
-	fmt.Println("Input: arr = [5,4,3,2,1]")
-	fmt.Println("Output:", maxChunksToSorted([]int{5, 4, 3, 2, 1}))
-	fmt.Println("Input: arr = [2,1,3,4,4]")
-	fmt.Println("Output:", maxChunksToSorted([]int{2, 1, 3, 4, 4}))
+	fmt.Println("Input: arr = [4,2,2,1,1]")
+	fmt.Println("Output:", maxChunksToSorted([]int{4, 2, 2, 1, 1}))
+	fmt.Println("Input: arr = [0,0,1,1,1]")
+	fmt.Println("Output:", maxChunksToSorted([]int{0, 0, 1, 1, 1}))
+	fmt.Println("Input: arr = [0,3,0,3,2]")
+	fmt.Println("Output:", maxChunksToSorted([]int{0, 3, 0, 3, 2}))
 }
