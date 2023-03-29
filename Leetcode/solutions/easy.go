@@ -247,6 +247,13 @@ func gcdOfStrings(str1 string, str2 string) string {
 
 // Reference: https://leetcode.com/problems/contains-duplicate-ii/
 func containsNearbyDuplicate(nums []int, k int) bool {
-	i, j := 0, 1
+	distinct := make(map[int]int)
+	for i, num := range nums {
+		if d, c := distinct[num]; c && i-d <= k {
+			return true
+		} else {
+			distinct[num] = i
+		}
+	}
 	return false
 }

@@ -230,10 +230,6 @@ func Leetcode_Gcd_Of_Strings() {
 }
 
 func Leetcode_Contains_Near_By_Duplicate() {
-	fmt.Println("Input: nums = [1,2,3,1], k = 3")
-	fmt.Println("Output: ", containsNearbyDuplicate([]int{1, 2, 3, 1}, 3))
-	fmt.Println("Input: nums = [1,0,1,1], k = 1")
-	fmt.Println("Output: ", containsNearbyDuplicate([]int{1, 0, 1, 1}, 1))
 	fmt.Println("Input: nums = [1,2,3,1,2,3], k = 2")
-	fmt.Println("Output: ", containsNearbyDuplicate([]int{1, 2, 3, 1, 2, 3}, 3))
+	fmt.Println("Output: ", containsNearbyDuplicate([]int{1, 2, 3, 1, 2, 3}, 2))
 }
