@@ -270,3 +270,12 @@ func Leetcode_Can_See_Persons_Count() {
 	fmt.Println("Input: heights = [5,1,2,3,10]")
 	fmt.Println("Output:", canSeePersonsCount([]int{5, 1, 2, 3, 10}))
 }
+
+func Leetcode_Is_Scramble() {
+	fmt.Println("Input: s1 = 'great', s2 = 'rgeat'")
+	fmt.Println("Output:", isScramble("great", "rgeat"))
+	fmt.Println("Input: s1 = 'abcde', s2 = 'caebd'")
+	fmt.Println("Output:", isScramble("abcde", "caebd"))
+	fmt.Println("Input: s1 = 'a', s2 = 'a'")
+	fmt.Println("Output:", isScramble("a", "a"))
+}

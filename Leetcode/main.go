@@ -19,7 +19,7 @@ func main() {
 
 func SolveProblem() {
 	fmt.Println("Golang Leetcode...")
-	solutions.Leetcode_Can_See_Persons_Count()
+	solutions.Leetcode_Is_Scramble()
 }
 
 func PrintLine() {
@@ -35,7 +35,7 @@ func GetRandomProblem() {
 	Leetcode.SetSolved(769, 1944)
 
 	fmt.Println("There are", Leetcode.Solved(), "/", Leetcode.Total(), "problems has been solved in Leetcode.")
-	fmt.Println("Today, Number of Leetcode Problem is:", Leetcode.GetRandom())
+	// fmt.Println("Today, Number of Leetcode Problem is:", Leetcode.GetRandom())
 }
 
 func TestPattern() {
