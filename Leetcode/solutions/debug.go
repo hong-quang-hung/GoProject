@@ -284,3 +284,10 @@ func Leetcode_Number_Of_Arrays() {
 	fmt.Println("Input: differences = [3,-4,5,1,-2], lower = -4, upper = 5")
 	fmt.Println("Output:", numberOfArrays([]int{3, -4, 5, 1, -2}, -4, 5))
 }
+
+func Leetcode_Min_Cost() {
+	fmt.Println("Input: nums = [1,2,1,2,1], k = 2")
+	fmt.Println("Output:", minCost([]int{1, 2, 1, 2, 1}, 2))
+	fmt.Println("Input: nums = [1,2,1,2,1], k = 5")
+	fmt.Println("Output:", minCost([]int{1, 2, 1, 2, 1}, 5))
+}

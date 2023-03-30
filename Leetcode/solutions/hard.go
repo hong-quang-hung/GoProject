@@ -205,3 +205,8 @@ func isScramble(s1 string, s2 string) bool {
 	}
 	return dp[n][0][0]
 }
+
+// Reference: https://leetcode.com/problems/minimum-cost-to-split-an-array/
+func minCost(nums []int, k int) int {
+	return 0
+}
