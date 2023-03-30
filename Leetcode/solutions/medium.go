@@ -519,3 +519,27 @@ func maxChunksToSorted(arr []int) int {
 	}
 	return len(monotonic)
 }
+
+// Reference: https://leetcode.com/problems/count-the-hidden-sequences/
+func numberOfArrays(differences []int, lower int, upper int) int {
+	prefix := make([]int, len(differences))
+	prefix[0] = differences[0]
+	max, min := prefix[0], prefix[0]
+	for i := 1; i < len(differences); i++ {
+		prefix[i] = prefix[i-1] + differences[i]
+		if prefix[i] > max {
+			max = prefix[i]
+		}
+		if prefix[i] < min {
+			min = prefix[i]
+		}
+	}
+
+	res := 0
+	for i := lower; i <= upper; i++ {
+		if max+i >= lower && max+i <= upper && min+i >= lower && min+i <= upper {
+			res++
+		}
+	}
+	return res
+}

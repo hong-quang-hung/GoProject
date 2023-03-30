@@ -276,6 +276,17 @@ func Leetcode_Is_Scramble() {
 	fmt.Println("Output:", isScramble("great", "rgeat"))
 	fmt.Println("Input: s1 = 'abcde', s2 = 'caebd'")
 	fmt.Println("Output:", isScramble("abcde", "caebd"))
-	fmt.Println("Input: s1 = 'a', s2 = 'a'")
-	fmt.Println("Output:", isScramble("a", "a"))
+}
+
+func Leetcode_Number_Of_Arrays() {
+	fmt.Println("Input: differences = [1,-3,4], lower = 1, upper = 6")
+	fmt.Println("Output:", numberOfArrays([]int{1, -3, 4}, 1, 6))
+	fmt.Println("Input: differences = [3,-4,5,1,-2], lower = -4, upper = 5")
+	fmt.Println("Output:", numberOfArrays([]int{3, -4, 5, 1, -2}, -4, 5))
+	fmt.Println("Input: differences = [4,-7,2], lower = 3, upper = 6")
+	fmt.Println("Output:", numberOfArrays([]int{4, -7, 2}, 3, 6))
+	fmt.Println("Input: differences = [-40], lower = -46, upper = 53")
+	fmt.Println("Output:", numberOfArrays([]int{-40}, -46, 53))
+	fmt.Println("Input: differences = [1,1,1], lower = 1, upper = 6")
+	fmt.Println("Output:", numberOfArrays([]int{1, 1, 1}, 1, 6))
 }
