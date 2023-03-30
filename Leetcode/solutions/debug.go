@@ -283,10 +283,4 @@ func Leetcode_Number_Of_Arrays() {
 	fmt.Println("Output:", numberOfArrays([]int{1, -3, 4}, 1, 6))
 	fmt.Println("Input: differences = [3,-4,5,1,-2], lower = -4, upper = 5")
 	fmt.Println("Output:", numberOfArrays([]int{3, -4, 5, 1, -2}, -4, 5))
-	fmt.Println("Input: differences = [4,-7,2], lower = 3, upper = 6")
-	fmt.Println("Output:", numberOfArrays([]int{4, -7, 2}, 3, 6))
-	fmt.Println("Input: differences = [-40], lower = -46, upper = 53")
-	fmt.Println("Output:", numberOfArrays([]int{-40}, -46, 53))
-	fmt.Println("Input: differences = [1,1,1], lower = 1, upper = 6")
-	fmt.Println("Output:", numberOfArrays([]int{1, 1, 1}, 1, 6))
 }
