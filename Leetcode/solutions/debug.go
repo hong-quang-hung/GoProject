@@ -291,3 +291,12 @@ func Leetcode_Min_Cost() {
 	fmt.Println("Input: nums = [1,2,1,2,1], k = 5")
 	fmt.Println("Output:", minCost([]int{1, 2, 1, 2, 1}, 5))
 }
+
+func Leetcode_Ways() {
+	fmt.Println("pizza = ['A..','AAA,'...'], k = 3")
+	fmt.Println("Output:", ways([]string{"A..", "AAA", "..."}, 3))
+	fmt.Println("pizza = ['A..','AA.,'...'], k = 3")
+	fmt.Println("Output:", ways([]string{"A..", "AA.", "..."}, 3))
+	fmt.Println("Input: pizza = ['A..','A..','...'], k = 1")
+	fmt.Println("Output:", ways([]string{"A..", "A..", "..."}, 1))
+}

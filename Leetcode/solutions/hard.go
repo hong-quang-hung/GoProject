@@ -210,3 +210,8 @@ func isScramble(s1 string, s2 string) bool {
 func minCost(nums []int, k int) int {
 	return 0
 }
+
+// Reference: https://leetcode.com/problems/number-of-ways-of-cutting-a-pizza/
+func ways(pizza []string, k int) int {
+	return 3
+}
