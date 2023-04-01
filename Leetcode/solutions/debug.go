@@ -308,3 +308,17 @@ func Leetcode_Zigzag_Level_Order() {
 	fmt.Println("Input: root = [3,9,20,null,null,15,7]")
 	fmt.Println("Output:", zigzagLevelOrder(types.LazyNodeAll(3, types.LazyNode(9), types.LazyNodeValue(20, 15, 7))))
 }
+
+func Leetcode_Min_Number() {
+	fmt.Println("Input: nums1 = [4,1,3], nums2 = [5,7]")
+	fmt.Println("Output:", minNumber([]int{1, 3}, []int{5, 7}))
+}
+
+func Leetcode_Maximum_Cost_Substring() {
+	fmt.Println("Input: s = 'adaa', chars = 'd', vals = [-1000]")
+	fmt.Println("Output:", maximumCostSubstring("adaa", "d", []int{-1000}))
+	fmt.Println("Input: s = 'abc', chars = 'abc', vals = [-1,-1,-1]")
+	fmt.Println("Output:", maximumCostSubstring("abc", "abc", []int{-1, -1, -1}))
+	fmt.Println("Input: s = 'hghhghgghh', chars = 'hg', vals = [2,3]")
+	fmt.Println("Output:", maximumCostSubstring("hghhghgghh", "hg", []int{2, 3}))
+}

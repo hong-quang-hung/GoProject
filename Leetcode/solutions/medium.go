@@ -578,3 +578,29 @@ func zigzagLevelOrder(root *types.TreeNode) [][]int {
 	}
 	return res
 }
+
+// Reference: https://leetcode.com/problems/find-the-substring-with-maximum-cost/
+func maximumCostSubstring(s string, chars string, vals []int) int {
+	m := make(map[rune]int)
+	for i, ch := range chars {
+		m[ch] = vals[i]
+	}
+
+	max, cost := 0, 0
+	for _, ch := range s {
+		var val int
+		if v, c := m[ch]; c {
+			val = v
+		} else {
+			val = int(ch-'a') + 1
+		}
+		cost += val
+		if cost < 0 {
+			cost = 0
+		}
+		if max < cost {
+			max = cost
+		}
+	}
+	return max
+}

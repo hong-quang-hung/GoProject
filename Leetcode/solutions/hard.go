@@ -255,7 +255,16 @@ func isScramble(s1 string, s2 string) bool {
 
 // Reference: https://leetcode.com/problems/minimum-cost-to-split-an-array/
 func minCost(nums []int, k int) int {
-	return 0
+	n := len(nums)
+	dp := make([]int, n+1)
+	// for i := 0; i < n; i++ {
+	// 	if f, c := m[nums[i]]; c {
+
+	// 	} else {
+
+	// 	}
+	// }
+	return dp[n]
 }
 
 // Reference: https://leetcode.com/problems/number-of-ways-of-cutting-a-pizza/
