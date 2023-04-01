@@ -293,8 +293,13 @@ func Leetcode_Min_Cost() {
 }
 
 func Leetcode_Ways() {
-	fmt.Println("pizza = ['A..','AAA,'...'], k = 3")
+	fmt.Println("Input: pizza = ['A..','AAA,'...'], k = 3")
 	fmt.Println("Output:", ways([]string{"A..", "AAA", "..."}, 3))
-	fmt.Println("pizza = ['A..','AA.,'...'], k = 3")
+	fmt.Println("Input: pizza = ['A..','AA.,'...'], k = 3")
 	fmt.Println("Output:", ways([]string{"A..", "AA.", "..."}, 3))
+}
+
+func Leetcode_Search() {
+	fmt.Println("Input: nums = [-1,0,3,5,9,12], target = 9")
+	fmt.Println("Output:", search([]int{-1, 0, 3, 5, 9, 12}, 9))
 }
