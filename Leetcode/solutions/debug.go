@@ -303,3 +303,8 @@ func Leetcode_Search() {
 	fmt.Println("Input: nums = [-1,0,3,5,9,12], target = 9")
 	fmt.Println("Output:", search([]int{-1, 0, 3, 5, 9, 12}, 9))
 }
+
+func Leetcode_Zigzag_Level_Order() {
+	fmt.Println("Input: root = [3,9,20,null,null,15,7]")
+	fmt.Println("Output:", zigzagLevelOrder(types.LazyNodeAll(3, types.LazyNode(9), types.LazyNodeValue(20, 15, 7))))
+}

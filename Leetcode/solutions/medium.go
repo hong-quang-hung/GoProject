@@ -543,3 +543,15 @@ func numberOfArrays(differences []int, lower int, upper int) int {
 	}
 	return res
 }
+
+// Reference: https://leetcode.com/problems/binary-tree-zigzag-level-order-traversal/
+func zigzagLevelOrder(root *types.TreeNode) [][]int {
+	res := make([][]int, 0)
+	if root == nil {
+		return res
+	}
+
+	// queue := []types.TreeNode{}
+	// nodes := []int{}
+	return res
+}
