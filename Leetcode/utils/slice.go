@@ -10,6 +10,12 @@ func Make[T any](size int, init T) []T {
 	return slice
 }
 
+func Reverse[T any](s []T) {
+	for i, j := 0, len(s)-1; i < j; i, j = i+1, j-1 {
+		s[i], s[j] = s[j], s[i]
+	}
+}
+
 func Remove[T any](s []T, index int) []T {
 	return append(s[:index], s[index+1:]...)
 }

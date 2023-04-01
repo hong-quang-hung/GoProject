@@ -19,7 +19,7 @@ func main() {
 
 func SolveProblem() {
 	fmt.Println("Golang Leetcode...")
-	solutions.Leetcode_Minimum_Deviation()
+	solutions.Leetcode_Zigzag_Level_Order()
 }
 
 func PrintLine() {
@@ -39,8 +39,9 @@ func GetRandomProblem() {
 }
 
 func TestPattern() {
-	fmt.Println("Input: nums = [0,0,0,2,0,0]")
-	fmt.Println("Output:", utils.Sslice([]int{0, 0, 0, 2, 0, 0}))
-	fmt.Println("Input: grid = [[1,0,0],[0,0,0],[0,0,0]]")
-	fmt.Println("Output:", utils.SsoSlice([][]int{{1, 0, 0}, {0, 0, 0}, {0, 0, 0}}))
+	fmt.Println("Input: nums = [1,2,3,4,5]")
+	nums := []int{1, 2, 3, 4, 5}
+	fmt.Println("Output:", utils.Sslice(nums))
+	utils.Reverse(nums)
+	fmt.Println("Reverse:", utils.Sslice(nums))
 }
