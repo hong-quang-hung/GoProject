@@ -19,7 +19,7 @@ func main() {
 
 func SolveProblem() {
 	fmt.Println("Golang Leetcode...")
-	solutions.Leetcode_Search()
+	solutions.Leetcode_Minimum_Deviation()
 }
 
 func PrintLine() {

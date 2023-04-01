@@ -1,12 +1,59 @@
 package solutions
 
 import (
+	"container/heap"
+	"math"
 	"sort"
 )
 
 // Reference: https://leetcode.com/problems/minimize-deviation-in-array/
+type minimumDeviationHeap []int
+
+func (h minimumDeviationHeap) Less(i, j int) bool { return h[i] > h[j] }
+func (h minimumDeviationHeap) Len() int           { return len(h) }
+func (h minimumDeviationHeap) Swap(i, j int)      { h[i], h[j] = h[j], h[i] }
+func (h minimumDeviationHeap) Empty() bool        { return len(h) == 0 }
+
+func (h *minimumDeviationHeap) Pop() interface{} {
+	r := (*h)[(*h).Len()-1]
+	*h = (*h)[0 : (*h).Len()-1]
+	return r
+}
+
+func (h *minimumDeviationHeap) Push(i interface{}) {
+	*h = append(*h, i.(int))
+}
+
 func minimumDeviation(nums []int) int {
-	return 0
+	set := new(minimumDeviationHeap)
+	min := math.MaxInt32
+	for _, num := range nums {
+		if num%2 == 1 {
+			num *= 2
+		}
+		if min > num {
+			min = num
+		}
+		heap.Push(set, num)
+	}
+
+	res := math.MaxInt32
+	for !set.Empty() {
+		pop := heap.Pop(set).(int)
+		if res > pop-min {
+			res = pop - min
+		}
+		if pop%2 == 0 {
+			pop /= 2
+			if min > pop {
+				min = pop
+			}
+			heap.Push(set, pop)
+		} else {
+			break
+		}
+	}
+	return res
 }
 
 // Reference: https://leetcode.com/problems/count-subarrays-with-fixed-bounds/
