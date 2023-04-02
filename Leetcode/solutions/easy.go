@@ -292,3 +292,16 @@ func minNumber(nums1 []int, nums2 []int) int {
 	}
 	return nums2[0]*10 + nums1[0]
 }
+
+// Reference: https://leetcode.com/problems/find-the-longest-balanced-substring-of-a-binary-string/
+func findTheLongestBalancedSubstring(s string) int {
+	res := 0
+	temp := "01"
+	for len(temp) <= len(s) {
+		if strings.Contains(s, temp) {
+			res = len(temp)
+		}
+		temp = "0" + temp + "1"
+	}
+	return res
+}

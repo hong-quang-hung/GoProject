@@ -26,28 +26,22 @@ func (h *minimumDeviationHeap) Push(i interface{}) {
 
 func minimumDeviation(nums []int) int {
 	set := new(minimumDeviationHeap)
-	min := math.MaxInt32
+	minDev := math.MaxInt32
 	for _, num := range nums {
 		if num%2 == 1 {
 			num *= 2
 		}
-		if min > num {
-			min = num
-		}
+		minDev = min(minDev, num)
 		heap.Push(set, num)
 	}
 
 	res := math.MaxInt32
 	for !set.Empty() {
 		pop := heap.Pop(set).(int)
-		if res > pop-min {
-			res = pop - min
-		}
+		res = min(res, pop-minDev)
 		if pop%2 == 0 {
 			pop /= 2
-			if min > pop {
-				min = pop
-			}
+			minDev = min(minDev, pop)
 			heap.Push(set, pop)
 		} else {
 			break
@@ -188,15 +182,13 @@ func maxSatisfaction(satisfaction []int) int {
 func maxChunksToSorted_ii(arr []int) int {
 	monotonic := []int{}
 	for _, a := range arr {
-		max := a
+		maxChunk := a
 		for len(monotonic) > 0 && monotonic[len(monotonic)-1] > a {
 			pop := monotonic[len(monotonic)-1]
 			monotonic = monotonic[:len(monotonic)-1]
-			if pop > max {
-				max = pop
-			}
+			maxChunk = max(maxChunk, pop)
 		}
-		monotonic = append(monotonic, max)
+		monotonic = append(monotonic, maxChunk)
 	}
 	return len(monotonic)
 }
@@ -318,4 +310,23 @@ func ways(pizza []string, k int) int {
 		copy(f, g)
 	}
 	return f[0][0]
+}
+
+// Reference: https://leetcode.com/problems/longest-valid-parentheses/
+func longestValidParentheses(s string) int {
+	res := 0
+	st := []int{-1}
+	for i := 0; i < len(s); i++ {
+		if s[i] == '(' {
+			st = append(st, i)
+		} else {
+			st = st[:len(st)-1]
+			if len(st) == 0 {
+				st = []int{i}
+			} else {
+				res = max(res, i-st[len(st)-1])
+			}
+		}
+	}
+	return res
 }

@@ -475,19 +475,17 @@ func mincostTicketsDP(days []int, costs []int, dur []int, dp []int, i int) int {
 		return dp[i]
 	}
 
-	var min int = math.MaxInt16
 	var j int = i
+	var mincost int = math.MaxInt16
 	for c, cost := range costs {
 		for (j < len(days)) && (days[j] < days[i]+dur[c]) {
 			j++
 		}
 		dp := mincostTicketsDP(days, costs, dur, dp, j) + cost
-		if min > dp {
-			min = dp
-		}
+		mincost = min(mincost, dp)
 	}
-	dp[i] = min
-	return min
+	dp[i] = mincost
+	return mincost
 }
 
 // Reference: https://leetcode.com/problems/removing-stars-from-a-string/
@@ -586,7 +584,7 @@ func maximumCostSubstring(s string, chars string, vals []int) int {
 		m[ch] = vals[i]
 	}
 
-	max, cost := 0, 0
+	maxCost, cost := 0, 0
 	for _, ch := range s {
 		var val int
 		if v, c := m[ch]; c {
@@ -594,13 +592,27 @@ func maximumCostSubstring(s string, chars string, vals []int) int {
 		} else {
 			val = int(ch-'a') + 1
 		}
-		cost += val
-		if cost < 0 {
-			cost = 0
-		}
-		if max < cost {
-			max = cost
+		cost = max(0, cost+val)
+		maxCost = max(maxCost, cost)
+	}
+	return maxCost
+}
+
+// Reference: https://leetcode.com/problems/find-the-substring-with-maximum-cost/
+func findMatrix(nums []int) [][]int {
+	res := make([][]int, 1)
+	m := make(map[int]int)
+	for _, num := range nums {
+		if count, c := m[num]; c {
+			if len(res) < count+1 {
+				res = append(res, []int{})
+			}
+			res[count] = append(res[count], num)
+			m[num] = count + 1
+		} else {
+			res[0] = append(res[0], num)
+			m[num] = 1
 		}
 	}
-	return max
+	return res
 }

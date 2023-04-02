@@ -319,6 +319,23 @@ func Leetcode_Maximum_Cost_Substring() {
 	fmt.Println("Output:", maximumCostSubstring("adaa", "d", []int{-1000}))
 	fmt.Println("Input: s = 'abc', chars = 'abc', vals = [-1,-1,-1]")
 	fmt.Println("Output:", maximumCostSubstring("abc", "abc", []int{-1, -1, -1}))
-	fmt.Println("Input: s = 'hghhghgghh', chars = 'hg', vals = [2,3]")
-	fmt.Println("Output:", maximumCostSubstring("hghhghgghh", "hg", []int{2, 3}))
+}
+
+func Leetcode_Find_The_Longest_Balanced_Substring() {
+	fmt.Println("Input: s = '01011'")
+	fmt.Println("Output:", findTheLongestBalancedSubstring("01011"))
+}
+
+func Leetcode_Find_Matrix() {
+	fmt.Println("Input: nums = [1,3,4,1,2,3,1]")
+	fmt.Println("Output:", findMatrix([]int{1, 3, 4, 1, 2, 3, 1}))
+	fmt.Println("Input: nums = [1,2,3,4]")
+	fmt.Println("Output:", findMatrix([]int{1, 2, 3, 4}))
+}
+
+func Leetcode_Longest_Valid_Parentheses() {
+	fmt.Println("Input: s = '(()'")
+	fmt.Println("Output:", longestValidParentheses("(()"))
+	fmt.Println("Input: s = ')()())'")
+	fmt.Println("Output:", longestValidParentheses(")()())"))
 }
