@@ -505,15 +505,13 @@ func removeStars(s string) string {
 func maxChunksToSorted(arr []int) int {
 	monotonic := []int{}
 	for _, a := range arr {
-		max := a
+		maxChunk := a
 		for len(monotonic) > 0 && monotonic[len(monotonic)-1] > a {
 			pop := monotonic[len(monotonic)-1]
 			monotonic = monotonic[:len(monotonic)-1]
-			if pop > max {
-				max = pop
-			}
+			maxChunk = max(maxChunk, pop)
 		}
-		monotonic = append(monotonic, max)
+		monotonic = append(monotonic, maxChunk)
 	}
 	return len(monotonic)
 }
@@ -522,20 +520,16 @@ func maxChunksToSorted(arr []int) int {
 func numberOfArrays(differences []int, lower int, upper int) int {
 	prefix := make([]int, len(differences))
 	prefix[0] = differences[0]
-	max, min := prefix[0], prefix[0]
+	maxP, minP := prefix[0], prefix[0]
 	for i := 1; i < len(differences); i++ {
 		prefix[i] = prefix[i-1] + differences[i]
-		if prefix[i] > max {
-			max = prefix[i]
-		}
-		if prefix[i] < min {
-			min = prefix[i]
-		}
+		maxP = max(maxP, prefix[i])
+		minP = min(minP, prefix[i])
 	}
 
 	res := 0
 	for i := lower; i <= upper; i++ {
-		if max+i >= lower && max+i <= upper && min+i >= lower && min+i <= upper {
+		if maxP+i >= lower && maxP+i <= upper && minP+i >= lower && minP+i <= upper {
 			res++
 		}
 	}
@@ -613,6 +607,19 @@ func findMatrix(nums []int) [][]int {
 			res[0] = append(res[0], num)
 			m[num] = 1
 		}
+	}
+	return res
+}
+
+// Reference: https://leetcode.com/problems/successful-pairs-of-spells-and-potions/
+func successfulPairs(spells []int, potions []int, success int64) []int {
+	res := make([]int, len(spells))
+	sort.Ints(potions)
+
+	m := len(potions)
+	for i, spell := range spells {
+		j := sort.SearchInts(potions, int((success+int64(spell)-1)/int64(spell)))
+		res[i] = m - j
 	}
 	return res
 }

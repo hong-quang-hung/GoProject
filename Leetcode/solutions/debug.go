@@ -48,7 +48,6 @@ func Leetcode_Max_Distance() {
 func Leetcode_Minimum_Deviation() {
 	fmt.Println("Input: nums = [1,2,3,4]")
 	fmt.Println("Output:", minimumDeviation([]int{1, 2, 3, 4}))
-	fmt.Println()
 	fmt.Println("Input: nums = [4,1,5,20,3]")
 	fmt.Println("Output:", minimumDeviation(utils.Slice(4, 1, 5, 20, 3)))
 }
@@ -253,8 +252,6 @@ func Leetcode_Max_Chunks_To_Sorted_II() {
 	fmt.Println("Output:", maxChunksToSorted_ii([]int{4, 2, 2, 1, 1}))
 	fmt.Println("Input: arr = [0,0,1,1,1]")
 	fmt.Println("Output:", maxChunksToSorted_ii([]int{0, 0, 1, 1, 1}))
-	fmt.Println("Input: arr = [0,3,0,3,2]")
-	fmt.Println("Output:", maxChunksToSorted_ii([]int{0, 3, 0, 3, 2}))
 }
 
 func Leetcode_Max_Chunks_To_Sorted() {
@@ -338,4 +335,11 @@ func Leetcode_Longest_Valid_Parentheses() {
 	fmt.Println("Output:", longestValidParentheses("(()"))
 	fmt.Println("Input: s = ')()())'")
 	fmt.Println("Output:", longestValidParentheses(")()())"))
+}
+
+func Leetcode_Successful_Pairs() {
+	fmt.Println("Input: spells = [5,1,3], potions = [1,2,3,4,5], success = 7")
+	fmt.Println("Output:", successfulPairs([]int{5, 1, 3}, []int{1, 2, 3, 4, 5}, 7))
+	fmt.Println("Input: spells = [3,1,2], potions = [8,5,8], success = 16")
+	fmt.Println("Output:", successfulPairs([]int{3, 1, 2}, []int{8, 5, 8}, 16))
 }
