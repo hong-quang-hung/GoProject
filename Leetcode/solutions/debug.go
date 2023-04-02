@@ -343,3 +343,17 @@ func Leetcode_Successful_Pairs() {
 	fmt.Println("Input: spells = [3,1,2], potions = [8,5,8], success = 16")
 	fmt.Println("Output:", successfulPairs([]int{3, 1, 2}, []int{8, 5, 8}, 16))
 }
+
+func Leetcode_Distinct_Names() {
+	fmt.Println("Input: ideas = ['coffee','donuts','time','toffee']")
+	fmt.Println("Output:", distinctNames([]string{"coffee", "donuts", "time", "toffee"}))
+	fmt.Println("Input: ideas = ['aaa','baa', 'caa', 'bbb', 'cbb', 'dbb']")
+	fmt.Println("Output:", distinctNames([]string{"aaa", "baa", "caa", "bbb", "cbb", "dbb"}))
+}
+
+func Leetcode_Jumb_Game_II() {
+	fmt.Println("Input: nums = [2,3,1,1,4]")
+	fmt.Println("Output:", jump_ii([]int{2, 3, 1, 1, 4}))
+	fmt.Println("Input: nums = [2,3,0,1,4]]")
+	fmt.Println("Output:", jump_ii([]int{2, 3, 0, 1, 4}))
+}

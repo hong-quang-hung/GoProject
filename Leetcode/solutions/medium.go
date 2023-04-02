@@ -623,3 +623,20 @@ func successfulPairs(spells []int, potions []int, success int64) []int {
 	}
 	return res
 }
+
+// Reference: https://leetcode.com/problems/jump-game-ii/
+func jump_ii(nums []int) int {
+	res, last, next, n := 0, 0, 0, len(nums)
+	for i := 0; i < n-1; i++ {
+		next = max(next, i+nums[i])
+		if next >= n-1 {
+			res++
+			break
+		}
+		if i == last {
+			res++
+			last = next
+		}
+	}
+	return res
+}
