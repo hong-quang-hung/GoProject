@@ -654,3 +654,41 @@ func numRescueBoats(people []int, limit int) int {
 	}
 	return res
 }
+
+// Reference: https://leetcode.com/problems/count-unreachable-pairs-of-nodes-in-an-undirected-graph/
+func countPairs(n int, edges [][]int) int64 {
+	union := types.NewUnionFind(n)
+	for _, edge := range edges {
+		union.UnionSet(edge[0], edge[1])
+	}
+
+	group := make(map[int]int)
+	for i := 0; i < n; i++ {
+		root := union.Find(i)
+		group[root]++
+	}
+	remainingNodes, numberOfPairs := int64(n), int64(0)
+	for _, v := range group {
+		numberOfPairs += int64(v) * (remainingNodes - int64(v))
+		remainingNodes -= int64(v)
+	}
+	return numberOfPairs
+}
+
+// Reference: https://leetcode.com/problems/count-unreachable-pairs-of-nodes-in-an-undirected-graph/
+func detectCycle(head *types.ListNode) *types.ListNode {
+	slow, fast := head, head
+	for fast != nil && fast.Next != nil {
+		slow = slow.Next
+		fast = fast.Next.Next
+		if slow == fast {
+			slow = head
+			for slow != fast {
+				fast = fast.Next
+				slow = slow.Next
+			}
+			return slow
+		}
+	}
+	return nil
+}

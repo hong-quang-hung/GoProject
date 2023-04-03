@@ -364,3 +364,16 @@ func Leetcode_Num_Rescue_Boats() {
 	fmt.Println("Input: people = [5,1,4,2], limit = 6")
 	fmt.Println("Output:", numRescueBoats([]int{5, 1, 4, 2}, 6))
 }
+
+func Leetcode_Count_Pairs() {
+	fmt.Println("Input: n = 7, edges = [[0,2],[0,5],[2,4],[1,6],[5,4]]")
+	fmt.Println("Output:", countPairs(7, [][]int{{0, 2}, {0, 5}, {2, 4}, {1, 6}, {5, 4}}))
+}
+
+func Leetcode_Detect_Cycle() {
+	fmt.Println("Input: head = [3,2,0,-4], pos = 1")
+	node := types.NewListNode(3, 2, 0, -4)
+	pos := node.Next
+	node.Next.Next.Next = pos
+	fmt.Println("Output:", detectCycle(node))
+}
