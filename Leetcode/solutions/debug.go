@@ -384,10 +384,18 @@ func Leetcode_Shuffle() {
 }
 
 func Leetcode_Minimum_Perimeter() {
-	fmt.Println("Input: neededApples = 1")
-	fmt.Println("Output:", minimumPerimeter(1))
-	fmt.Println("Input: neededApples = 13")
-	fmt.Println("Output:", minimumPerimeter(13))
 	fmt.Println("Input: neededApples = 1000000000")
 	fmt.Println("Output:", minimumPerimeter(1000000000))
+}
+
+func Leetcode_Is_Long_PressedName() {
+	fmt.Println("Input: name = 'pyplrz', typed = 'ppyypllr'")
+	fmt.Println("Output:", isLongPressedName("pyplrz", "ppyypllr"))
+}
+
+func Leetcode_minCost_Connect_Points() {
+	fmt.Println("Input: points = [[0,0],[2,2],[3,10],[5,2],[7,0]]")
+	fmt.Println("Output:", minCostConnectPoints([][]int{{0, 0}, {2, 2}, {3, 10}, {5, 2}, {7, 0}}))
+	fmt.Println("Input: points = [[3,12],[-2,5],[-4,1]]")
+	fmt.Println("Output:", minCostConnectPoints([][]int{{3, 12}, {-2, 5}, {-4, 1}}))
 }

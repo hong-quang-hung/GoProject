@@ -702,3 +702,8 @@ func minimumPerimeter(neededApples int64) int64 {
 	}
 	return x * 8
 }
+
+// Reference: https://leetcode.com/problems/min-cost-to-connect-all-points/
+func minCostConnectPoints(points [][]int) int {
+	return 0
+}
