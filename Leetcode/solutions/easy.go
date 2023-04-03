@@ -305,3 +305,12 @@ func findTheLongestBalancedSubstring(s string) int {
 	}
 	return res
 }
+
+// Reference: https://leetcode.com/problems/shuffle-the-array/
+func shuffle(nums []int, n int) []int {
+	res := make([]int, 0, len(nums))
+	for i := 0; i < n; i++ {
+		res = append(res, nums[i], nums[i+len(nums)/2])
+	}
+	return res
+}

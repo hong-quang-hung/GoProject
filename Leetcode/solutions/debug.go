@@ -377,3 +377,17 @@ func Leetcode_Detect_Cycle() {
 	node.Next.Next.Next = pos
 	fmt.Println("Output:", detectCycle(node))
 }
+
+func Leetcode_Shuffle() {
+	fmt.Println("Input: nums = [1,2,3,4,4,3,2,1], n = 4")
+	fmt.Println("Output:", shuffle([]int{1, 2, 3, 4, 4, 3, 2, 1}, 4))
+}
+
+func Leetcode_Minimum_Perimeter() {
+	fmt.Println("Input: neededApples = 1")
+	fmt.Println("Output:", minimumPerimeter(1))
+	fmt.Println("Input: neededApples = 13")
+	fmt.Println("Output:", minimumPerimeter(13))
+	fmt.Println("Input: neededApples = 1000000000")
+	fmt.Println("Output:", minimumPerimeter(1000000000))
+}
