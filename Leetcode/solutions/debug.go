@@ -357,3 +357,12 @@ func Leetcode_Jumb_Game_II() {
 	fmt.Println("Input: nums = [2,3,0,1,4]]")
 	fmt.Println("Output:", jump_ii([]int{2, 3, 0, 1, 4}))
 }
+
+func Leetcode_Num_Rescue_Boats() {
+	fmt.Println("Input: people = [1,2], limit = 3")
+	fmt.Println("Output:", numRescueBoats([]int{1, 2}, 3))
+	fmt.Println("Input: people = [3,2,2,1], limit = 3")
+	fmt.Println("Output:", numRescueBoats([]int{3, 2, 2, 1}, 3))
+	fmt.Println("Input: people = [3,5,3,4], limit = 5")
+	fmt.Println("Output:", numRescueBoats([]int{3, 5, 3, 4}, 5))
+}

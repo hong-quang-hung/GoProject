@@ -19,7 +19,7 @@ func main() {
 
 func SolveProblem() {
 	fmt.Println("Golang Leetcode...")
-	solutions.Leetcode_Jumb_Game_II()
+	solutions.Leetcode_Num_Rescue_Boats()
 }
 
 func PrintLine() {
