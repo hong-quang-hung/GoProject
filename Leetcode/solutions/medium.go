@@ -1,7 +1,6 @@
 package solutions
 
 import (
-	"fmt"
 	"math"
 	"sort"
 
@@ -644,7 +643,14 @@ func jump_ii(nums []int) int {
 
 // Reference: https://leetcode.com/problems/boats-to-save-people/
 func numRescueBoats(people []int, limit int) int {
-	res := 0
-	fmt.Println(people)
+	sort.Ints(people)
+	i, j, res := 0, len(people)-1, 0
+	for i <= j {
+		if people[i]+people[j] <= limit {
+			i++
+		}
+		j--
+		res++
+	}
 	return res
 }

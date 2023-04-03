@@ -359,10 +359,8 @@ func Leetcode_Jumb_Game_II() {
 }
 
 func Leetcode_Num_Rescue_Boats() {
-	fmt.Println("Input: people = [1,2], limit = 3")
-	fmt.Println("Output:", numRescueBoats([]int{1, 2}, 3))
-	fmt.Println("Input: people = [3,2,2,1], limit = 3")
-	fmt.Println("Output:", numRescueBoats([]int{3, 2, 2, 1}, 3))
-	fmt.Println("Input: people = [3,5,3,4], limit = 5")
-	fmt.Println("Output:", numRescueBoats([]int{3, 5, 3, 4}, 5))
+	fmt.Println("Input: people = [3,2,3,2,2], limit = 6")
+	fmt.Println("Output:", numRescueBoats([]int{3, 2, 3, 2, 2}, 6))
+	fmt.Println("Input: people = [5,1,4,2], limit = 6")
+	fmt.Println("Output:", numRescueBoats([]int{5, 1, 4, 2}, 6))
 }
