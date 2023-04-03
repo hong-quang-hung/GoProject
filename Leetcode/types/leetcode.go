@@ -38,6 +38,15 @@ func (L *Leetcode) GetRandom() int {
 	return random + 1
 }
 
+func (L *Leetcode) GetSolved() int {
+	if len(L.solved) == L.total {
+		return -1
+	}
+	rand.Seed(time.Now().UnixNano())
+	random := rand.Intn(L.Solved())
+	return L.solved[random]
+}
+
 func (L *Leetcode) Solved() int {
 	return len(L.solved)
 }
