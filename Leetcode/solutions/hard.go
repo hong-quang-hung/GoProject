@@ -13,13 +13,11 @@ func (h minimumDeviationHeap) Less(i, j int) bool { return h[i] > h[j] }
 func (h minimumDeviationHeap) Len() int           { return len(h) }
 func (h minimumDeviationHeap) Swap(i, j int)      { h[i], h[j] = h[j], h[i] }
 func (h minimumDeviationHeap) Empty() bool        { return len(h) == 0 }
-
 func (h *minimumDeviationHeap) Pop() interface{} {
 	r := (*h)[(*h).Len()-1]
 	*h = (*h)[0 : (*h).Len()-1]
 	return r
 }
-
 func (h *minimumDeviationHeap) Push(i interface{}) {
 	*h = append(*h, i.(int))
 }
