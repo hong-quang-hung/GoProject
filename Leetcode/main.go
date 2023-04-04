@@ -19,7 +19,7 @@ func main() {
 
 func SolveProblem() {
 	fmt.Println("Golang Leetcode...")
-	solutions.Leetcode_Add_Binary()
+	solutions.Leetcode_Kth_Largest_Level_Sum()
 }
 
 func PrintLine() {
