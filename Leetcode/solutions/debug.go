@@ -406,3 +406,8 @@ func Leetcode_Partition_String() {
 	fmt.Println("Input: s = 'hdklqkcssgxlvehva'")
 	fmt.Println("Output:", partitionString("hdklqkcssgxlvehva"))
 }
+
+func Leetcode_Add_Binary() {
+	fmt.Println("Input: a = '1010', b = '1011'")
+	fmt.Println("Output:", addBinary("1010", "1011"))
+}
