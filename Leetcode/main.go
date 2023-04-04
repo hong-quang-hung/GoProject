@@ -19,7 +19,7 @@ func main() {
 
 func SolveProblem() {
 	fmt.Println("Golang Leetcode...")
-	solutions.Leetcode_minCost_Connect_Points()
+	solutions.Leetcode_Partition_String()
 }
 
 func PrintLine() {

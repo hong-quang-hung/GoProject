@@ -707,3 +707,20 @@ func minimumPerimeter(neededApples int64) int64 {
 func minCostConnectPoints(points [][]int) int {
 	return 0
 }
+
+// Reference: https://leetcode.com/problems/optimal-partition-of-string/
+func partitionString(s string) int {
+	i, n, res := 0, len(s), 0
+	for i < n {
+		j, m := i, make([]int, 26)
+		for ; j < n; j++ {
+			m[s[j]-'a']++
+			if m[s[j]-'a'] == 2 {
+				break
+			}
+		}
+		res++
+		i = j
+	}
+	return res
+}

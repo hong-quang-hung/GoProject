@@ -399,3 +399,10 @@ func Leetcode_minCost_Connect_Points() {
 	fmt.Println("Input: points = [[3,12],[-2,5],[-4,1]]")
 	fmt.Println("Output:", minCostConnectPoints([][]int{{3, 12}, {-2, 5}, {-4, 1}}))
 }
+
+func Leetcode_Partition_String() {
+	fmt.Println("Input: s = 'gizfdfri'")
+	fmt.Println("Output:", partitionString("gizfdfri"))
+	fmt.Println("Input: s = 'hdklqkcssgxlvehva'")
+	fmt.Println("Output:", partitionString("hdklqkcssgxlvehva"))
+}
