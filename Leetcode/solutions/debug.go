@@ -416,3 +416,8 @@ func Leetcode_Kth_Largest_Level_Sum() {
 	fmt.Println("Input: root = [5,8,9,2,1,3,7,4,6], k = 2")
 	fmt.Println("Output:", kthLargestLevelSum(types.LazyNodeAll(5, types.LazyNodeAll(8, types.LazyNodeValue(2, 4, 6), types.LazyNode(1)), types.LazyNodeValue(9, 3, 7)), 2))
 }
+
+func Leetcode_Shortest_Alternating_Paths() {
+	fmt.Println("Input: n = 3, redEdges = [[0,1]], blueEdges = [[2,1]]")
+	fmt.Println("Output:", shortestAlternatingPaths(3, [][]int{{0, 1}}, [][]int{{2, 1}}))
+}
