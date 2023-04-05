@@ -1,6 +1,7 @@
 package solutions
 
 import (
+	"fmt"
 	"math"
 	"sort"
 
@@ -757,29 +758,27 @@ func partitionString(s string) int {
 
 // Reference: https://leetcode.com/problems/kth-largest-sum-in-a-binary-tree/
 func kthLargestLevelSum(root *types.TreeNode, k int) int64 {
-	sumk := make(map[int]int64)
-	sumNodeRecursive(root, sumk, 1)
-
-	n := len(sumk)
-	if n < k {
+	sumk := make([]int64, 0)
+	sumNodeRecursive(root, &sumk, 0)
+	if len(sumk) < k {
 		return -1
 	}
 
-	res := int64(math.MinInt64)
-	for _, v := range sumk {
-		if res < v {
-			res = v
-		}
-	}
-	return res
+	sort.Slice(sumk, func(i, j int) bool { return sumk[i] > sumk[j] })
+	fmt.Println(sumk)
+	return sumk[k-1]
 }
 
-func sumNodeRecursive(root *types.TreeNode, sumK map[int]int64, k int) {
+func sumNodeRecursive(root *types.TreeNode, sumK *[]int64, k int) {
 	if root == nil {
 		return
 	}
 
-	sumK[k] += int64(root.Val)
+	if len(*sumK) <= k {
+		*sumK = append(*sumK, 0)
+	}
+	(*sumK)[k] += int64(root.Val)
+
 	if root.Left != nil {
 		sumNodeRecursive(root.Left, sumK, k+1)
 	}
