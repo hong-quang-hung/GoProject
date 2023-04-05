@@ -430,6 +430,11 @@ func Leetcode_Minimize_Array_Value() {
 }
 
 func Leetcode_Search_Insert() {
-	fmt.Println("nums = [1,3,5,6], target = 7")
+	fmt.Println("Input: nums = [1,3,5,6], target = 7")
 	fmt.Println("Output:", searchInsert([]int{1, 3, 5, 6}, 7))
+}
+
+func Leetcode_Merge_Two_Lists() {
+	fmt.Println("Input: list1 = [1,2,4], list2 = [1,3,4]")
+	fmt.Println("Output:", mergeTwoLists(types.NewListNode(1, 2, 4), types.NewListNode(1, 3, 4)))
 }

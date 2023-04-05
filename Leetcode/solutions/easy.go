@@ -388,3 +388,33 @@ func searchInsert(nums []int, target int) int {
 	}
 	return left
 }
+
+// Reference: https://leetcode.com/problems/merge-two-sorted-lists/
+func mergeTwoLists(list1 *types.ListNode, list2 *types.ListNode) *types.ListNode {
+	head := new(types.ListNode)
+	newList := head
+
+	for list1 != nil && list2 != nil {
+		if list1.Val <= list2.Val {
+			newList.Next = &types.ListNode{Val: list1.Val}
+			list1 = list1.Next
+		} else {
+			newList.Next = &types.ListNode{Val: list2.Val}
+			list2 = list2.Next
+		}
+		newList = newList.Next
+	}
+
+	for list1 != nil {
+		newList.Next = &types.ListNode{Val: list1.Val}
+		list1 = list1.Next
+		newList = newList.Next
+	}
+
+	for list2 != nil {
+		newList.Next = &types.ListNode{Val: list2.Val}
+		list2 = list2.Next
+		newList = newList.Next
+	}
+	return head.Next
+}
