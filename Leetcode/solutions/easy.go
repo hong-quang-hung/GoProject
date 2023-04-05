@@ -1,6 +1,7 @@
 package solutions
 
 import (
+	"math"
 	"sort"
 	"strings"
 
@@ -369,4 +370,21 @@ func addBinary(a string, b string) string {
 		return "1" + s
 	}
 	return s
+}
+
+// Reference: https://leetcode.com/problems/search-insert-position/
+func searchInsert(nums []int, target int) int {
+	mid, left, right := 0, 0, len(nums)-1
+	for left <= right {
+		mid = int(math.Floor(float64(left+right) / float64(2)))
+		if target == nums[mid] {
+			return mid
+		}
+		if target < nums[mid] {
+			right = mid - 1
+		} else {
+			left = mid + 1
+		}
+	}
+	return left
 }

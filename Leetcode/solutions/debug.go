@@ -428,3 +428,8 @@ func Leetcode_Minimize_Array_Value() {
 	fmt.Println("Input: nums = [13,13,20,0,8,9,9]")
 	fmt.Println("Output:", minimizeArrayValue([]int{13, 13, 20, 0, 8, 9, 9}))
 }
+
+func Leetcode_Search_Insert() {
+	fmt.Println("nums = [1,3,5,6], target = 7")
+	fmt.Println("Output:", searchInsert([]int{1, 3, 5, 6}, 7))
+}
