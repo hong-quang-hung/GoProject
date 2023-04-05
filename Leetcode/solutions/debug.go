@@ -421,3 +421,10 @@ func Leetcode_Shortest_Alternating_Paths() {
 	fmt.Println("Input: n = 3, redEdges = [[0,1]], blueEdges = [[2,1]]")
 	fmt.Println("Output:", shortestAlternatingPaths(3, [][]int{{0, 1}}, [][]int{{2, 1}}))
 }
+
+func Leetcode_Minimize_Array_Value() {
+	fmt.Println("Input: nums = [3,7,1,6]")
+	fmt.Println("Output:", minimizeArrayValue([]int{3, 7, 1, 6}))
+	fmt.Println("Input: nums = [13,13,20,0,8,9,9]")
+	fmt.Println("Output:", minimizeArrayValue([]int{13, 13, 20, 0, 8, 9, 9}))
+}

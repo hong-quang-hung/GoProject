@@ -838,3 +838,17 @@ func shortestAlternatingPaths(n int, redEdges [][]int, blueEdges [][]int) []int 
 	}
 	return res
 }
+
+// Reference: https://leetcode.com/problems/minimize-maximum-of-array/
+func minimizeArrayValue(nums []int) int {
+	sum, res := 0, 0
+	for i := 0; i < len(nums); i++ {
+		sum += nums[i]
+		if sum%(i+1) == 0 {
+			res = max(res, sum/(i+1))
+		} else {
+			res = max(res, sum/(i+1)+1)
+		}
+	}
+	return res
+}
