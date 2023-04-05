@@ -418,3 +418,27 @@ func mergeTwoLists(list1 *types.ListNode, list2 *types.ListNode) *types.ListNode
 	}
 	return head.Next
 }
+
+// Reference: https://leetcode.com/problems/word-pattern/
+func wordPattern(pattern string, s string) bool {
+	arr := strings.Split(s, " ")
+	if len(arr) != len(pattern) {
+		return false
+	}
+
+	m := make(map[byte]string)
+	for i := range pattern {
+		if v, c := m[pattern[i]]; c {
+			if v != arr[i] {
+				return false
+			}
+
+		} else {
+			if _, c2 := m[arr[i]]; c2 {
+				return false
+			}
+			m[pattern[i]] = arr[i]
+		}
+	}
+	return true
+}

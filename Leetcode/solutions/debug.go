@@ -438,3 +438,8 @@ func Leetcode_Merge_Two_Lists() {
 	fmt.Println("Input: list1 = [1,2,4], list2 = [1,3,4]")
 	fmt.Println("Output:", mergeTwoLists(types.NewListNode(1, 2, 4), types.NewListNode(1, 3, 4)))
 }
+
+func Leetcode_Word_Pattern() {
+	fmt.Println("Input: pattern = 'abba', s = 'dog cat cat dog'")
+	fmt.Println("Output:", wordPattern("abba", "dog cat cat dog"))
+}
