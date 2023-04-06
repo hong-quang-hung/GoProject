@@ -31,7 +31,7 @@ func Slice[T any](a ...T) []T {
 func S2SliceInt(s string) []int {
 	re := regexp.MustCompile(`^\[(.+)\]$`)
 	matched := re.FindAllStringSubmatch(s, -1)
-	if len(matched) == 0 {
+	if len(matched) == 0 || len(strings.TrimSpace(matched[0][1])) == 0 {
 		return []int{}
 	}
 

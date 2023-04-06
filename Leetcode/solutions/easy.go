@@ -445,8 +445,3 @@ func wordPattern(pattern string, s string) bool {
 	}
 	return true
 }
-
-// Reference: https://leetcode.com/problems/number-of-closed-islands/
-func closedIsland(grid [][]int) int {
-	return 0
-}

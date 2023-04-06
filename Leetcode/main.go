@@ -16,6 +16,7 @@ func main() {
 	GetRandomProblem()
 	PrintLine()
 	// TestPattern()
+	// TestRegexGolang()
 }
 
 func SolveProblem() {
@@ -43,8 +44,8 @@ func GetRandomProblem() {
 func TestPattern() {
 	fmt.Println("Input: nums = [1,112,-33,54, 45]")
 	fmt.Println("Output:", utils.S2SliceInt("[1,112,-33,54, 45]"))
-	fmt.Println("Input: nums = [[],[1,112,-33,54, 45]]")
-	fmt.Println("Output:", utils.S2SoSliceInt("[[0],[],[1,112,-33,54, 45]]"))
+	fmt.Println("Input: nums = [[],[1,2,-3,5,4]]")
+	fmt.Println("Output:", utils.S2SoSliceInt("[[0],[],[1,2,-3,5,4],[ ]]"))
 }
 
 func TestRegexGolang() {

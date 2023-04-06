@@ -852,3 +852,49 @@ func minimizeArrayValue(nums []int) int {
 	}
 	return res
 }
+
+// Reference: https://leetcode.com/problems/number-of-closed-islands/
+func closedIsland(grid [][]int) int {
+	res, n, m := 0, len(grid), len(grid[0])
+	visited := make([][]int, n)
+	for i := 0; i < n; i++ {
+		visited[i] = make([]int, m)
+		for j := 0; j < m; j++ {
+			visited[i][j] = -1
+		}
+	}
+
+	for i := 0; i < n; i++ {
+		for j := 0; j < m; j++ {
+			if grid[i][j] == 0 && visited[i][j] == -1 {
+				closedIslandBound(grid, visited, i, j, n, m, &res)
+			}
+		}
+	}
+	return res
+}
+
+func closedIslandBound(grid [][]int, visited [][]int, i int, j int, n int, m int, res *int) int {
+	if i < 0 || i >= n || j >= m || j < 0 {
+		return 0
+	}
+
+	if visited[i][j] != -1 {
+		return visited[i][j]
+	}
+
+	if grid[i][j] == 1 {
+		return 1
+	}
+
+	visited[i][j] = 0
+	up := closedIslandBound(grid, visited, i-1, j, n, m, res)
+	down := closedIslandBound(grid, visited, i+1, j, n, m, res)
+	left := closedIslandBound(grid, visited, i, j-1, n, m, res)
+	right := closedIslandBound(grid, visited, i, j+1, n, m, res)
+	if up == 1 && down == 1 && left == 1 && right == 1 && visited[i][j] == 0 {
+		(*res)++
+		return visited[i][j]
+	}
+	return visited[i][j]
+}
