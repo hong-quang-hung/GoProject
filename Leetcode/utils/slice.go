@@ -1,6 +1,10 @@
 package utils
 
-import "strings"
+import (
+	"regexp"
+	"strconv"
+	"strings"
+)
 
 func Make[T any](size int, init T) []T {
 	slice := make([]T, size)
@@ -24,8 +28,33 @@ func Slice[T any](a ...T) []T {
 	return a
 }
 
-func SliceInt(s string) []int {
-	return nil
+func S2SliceInt(s string) []int {
+	re := regexp.MustCompile(`^\[(.+)\]$`)
+	matched := re.FindAllStringSubmatch(s, -1)
+	if len(matched) == 0 {
+		return []int{}
+	}
+
+	arr := strings.Split(matched[0][1], ",")
+	res := make([]int, len(arr))
+	for i, a := range arr {
+		a = strings.Trim(a, " ")
+		val, _ := strconv.ParseInt(a, 10, 0)
+		res[i] = int(val)
+	}
+	return res
+}
+
+func S2SoSliceInt(s string) [][]int {
+	s = strings.Trim(s, " ")
+	s = s[1 : len(s)-1]
+	re := regexp.MustCompile(`(\[[^\[]*\])`)
+	arr := re.FindAllStringSubmatch(s, -1)
+	res := make([][]int, len(arr))
+	for i, a := range arr {
+		res[i] = S2SliceInt(a[1])
+	}
+	return res
 }
 
 func Sslice[T Number](slice []T) string {

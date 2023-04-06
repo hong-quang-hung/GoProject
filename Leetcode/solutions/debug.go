@@ -41,7 +41,7 @@ func LeetCode_Max_Profit() {
 }
 
 func Leetcode_Max_Distance() {
-	fmt.Println("Input: grid = \"[[1,0,0],[0,0,0],[0,0,0]]\"")
+	fmt.Println("Input: grid = [[1,0,0],[0,0,0],[0,0,0]]")
 	fmt.Println("Output:", maxDistance([][]int{{1, 0, 0}, {0, 0, 0}, {0, 0, 0}}))
 }
 
@@ -164,12 +164,12 @@ func Leetcode_Zero_Filled_Subarray() {
 
 func Leetcode_Make_Connected() {
 	fmt.Println("Input: n = 4, connections = [[0,1],[0,2],[1,2]]")
-	fmt.Println("Output:", makeConnected(4, [][]int{{0, 1}, {0, 2}, {1, 2}}))
+	fmt.Println("Output:", makeConnected(4, utils.S2SoSliceInt("[[0,1],[0,2],[1,2]]")))
 }
 
 func Leetcode_Min_Score() {
 	fmt.Println("Input: n = 4, roads = [[1,2,9],[2,3,6],[2,4,5],[1,4,7]]")
-	fmt.Println("Output:", minScore(4, [][]int{{1, 2, 9}, {2, 3, 6}, {2, 4, 5}, {1, 4, 7}}))
+	fmt.Println("Output:", minScore(4, utils.S2SoSliceInt("[[1,2,9],[2,3,6],[2,4,5],[1,4,7]]")))
 }
 
 func Leetcode_K_Items_With_Maximum_Sum() {
@@ -201,9 +201,9 @@ func Leetcode_Longest_Cycle() {
 
 func Leetcode_Min_Path_Sum() {
 	fmt.Println("Input: grid = [[1,3,1],[1,5,1],[4,2,1]]")
-	fmt.Println("Output:", minPathSum([][]int{{1, 3, 1}, {1, 5, 1}, {4, 2, 1}}))
+	fmt.Println("Output:", minPathSum(utils.S2SoSliceInt("[[1,3,1],[1,5,1],[4,2,1]]")))
 	fmt.Println("Input: grid = [[1,2,3],[4,5,6]]")
-	fmt.Println("Output:", minPathSum([][]int{{1, 2, 3}, {4, 5, 6}}))
+	fmt.Println("Output:", minPathSum(utils.S2SoSliceInt("[[1,2,3],[4,5,6]]")))
 }
 
 func Leetcode_Min_Cost_Tickets() {
@@ -367,7 +367,7 @@ func Leetcode_Num_Rescue_Boats() {
 
 func Leetcode_Count_Pairs() {
 	fmt.Println("Input: n = 7, edges = [[0,2],[0,5],[2,4],[1,6],[5,4]]")
-	fmt.Println("Output:", countPairs(7, [][]int{{0, 2}, {0, 5}, {2, 4}, {1, 6}, {5, 4}}))
+	fmt.Println("Output:", countPairs(7, utils.S2SoSliceInt("[[0,2],[0,5],[2,4],[1,6],[5,4]]")))
 }
 
 func Leetcode_Detect_Cycle() {
@@ -395,9 +395,9 @@ func Leetcode_Is_Long_PressedName() {
 
 func Leetcode_minCost_Connect_Points() {
 	fmt.Println("Input: points = [[0,0],[2,2],[3,10],[5,2],[7,0]]")
-	fmt.Println("Output:", minCostConnectPoints([][]int{{0, 0}, {2, 2}, {3, 10}, {5, 2}, {7, 0}}))
+	fmt.Println("Output:", minCostConnectPoints(utils.S2SoSliceInt("[[0,0],[2,2],[3,10],[5,2],[7,0]]")))
 	fmt.Println("Input: points = [[3,12],[-2,5],[-4,1]]")
-	fmt.Println("Output:", minCostConnectPoints([][]int{{3, 12}, {-2, 5}, {-4, 1}}))
+	fmt.Println("Output:", minCostConnectPoints(utils.S2SoSliceInt("[[3,12],[-2,5],[-4,1]]")))
 }
 
 func Leetcode_Partition_String() {
@@ -442,4 +442,11 @@ func Leetcode_Merge_Two_Lists() {
 func Leetcode_Word_Pattern() {
 	fmt.Println("Input: pattern = 'abba', s = 'dog cat cat dog'")
 	fmt.Println("Output:", wordPattern("abba", "dog cat cat dog"))
+}
+
+func Leetcode_Closed_Island() {
+	fmt.Println("Input: grid = [[1,1,1,1,1,1,1,0],[1,0,0,0,0,1,1,0],[1,0,1,0,1,1,1,0],[1,0,0,0,0,1,0,1],[1,1,1,1,1,1,1,0]]")
+	fmt.Println("Output:", closedIsland(utils.S2SoSliceInt("[[1,1,1,1,1,1,1,0],[1,0,0,0,0,1,1,0],[1,0,1,0,1,1,1,0],[1,0,0,0,0,1,0,1],[1,1,1,1,1,1,1,0]]")))
+	fmt.Println("Input: grid = [[0,0,1,0,0],[0,1,0,1,0],[0,1,1,1,0]]")
+	fmt.Println("Output:", closedIsland(utils.S2SoSliceInt("[[0,0,1,0,0],[0,1,0,1,0],[0,1,1,1,0]]")))
 }

@@ -2,6 +2,7 @@ package main
 
 import (
 	"fmt"
+	"regexp"
 
 	"leetcode.com/Leetcode/solutions"
 	"leetcode.com/Leetcode/types"
@@ -19,7 +20,7 @@ func main() {
 
 func SolveProblem() {
 	fmt.Println("Golang Leetcode...")
-	solutions.Leetcode_Search_Insert()
+	solutions.Leetcode_Closed_Island()
 }
 
 func PrintLine() {
@@ -36,13 +37,22 @@ func GetRandomProblem() {
 
 	fmt.Println("There are", Leetcode.Solved(), "/", Leetcode.Total(), "problem(s) has been solved in Leetcode.")
 	// fmt.Println("Today, Number of Leetcode Problem is:", Leetcode.GetRandom())
-	fmt.Println("Problem is", Leetcode.GetSolved(), "th has been solved.")
+	// fmt.Println("Problem is", Leetcode.GetSolved(), "th has been solved.")
 }
 
 func TestPattern() {
-	fmt.Println("Input: nums = [1,2,3,4,5]")
-	nums := []int{1, 2, 3, 4, 5}
-	fmt.Println("Output:", utils.Sslice(nums))
-	utils.Reverse(nums)
-	fmt.Println("Reverse:", utils.Sslice(nums))
+	fmt.Println("Input: nums = [1,112,-33,54, 45]")
+	fmt.Println("Output:", utils.S2SliceInt("[1,112,-33,54, 45]"))
+	fmt.Println("Input: nums = [[],[1,112,-33,54, 45]]")
+	fmt.Println("Output:", utils.S2SoSliceInt("[[0],[],[1,112,-33,54, 45]]"))
+}
+
+func TestRegexGolang() {
+	re := regexp.MustCompile(`(\[[^\[]*\])`)
+	fmt.Printf("%q\n", re.FindAllStringSubmatch("[0],[],[1,112,-33,54, 45]", -1))
+
+	re = regexp.MustCompile(`^\[(.+)\]$`)
+	fmt.Printf("%q\n", re.FindAllStringSubmatch("[1,112,-33,54, 45]", -1))
+	fmt.Printf("%q\n", re.FindAllStringSubmatch("[]", -1))
+	fmt.Printf("%q\n", re.FindAllStringSubmatch("[ ]", -1))
 }
