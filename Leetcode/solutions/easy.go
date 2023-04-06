@@ -426,18 +426,21 @@ func wordPattern(pattern string, s string) bool {
 		return false
 	}
 
-	m := make(map[byte]string)
+	m1 := make(map[byte]string)
+	m2 := make(map[string]bool)
 	for i := range pattern {
-		if v, c := m[pattern[i]]; c {
+		if v, c := m1[pattern[i]]; c {
 			if v != arr[i] {
 				return false
 			}
 
 		} else {
-			if _, c2 := m[arr[i]]; c2 {
+			if m2[arr[i]] {
 				return false
 			}
-			m[pattern[i]] = arr[i]
+
+			m1[pattern[i]] = arr[i]
+			m2[arr[i]] = true
 		}
 	}
 	return true
