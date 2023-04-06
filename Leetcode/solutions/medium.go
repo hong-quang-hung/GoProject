@@ -856,45 +856,34 @@ func minimizeArrayValue(nums []int) int {
 // Reference: https://leetcode.com/problems/number-of-closed-islands/
 func closedIsland(grid [][]int) int {
 	res, n, m := 0, len(grid), len(grid[0])
-	visited := make([][]int, n)
+	visited := make([][]bool, n)
 	for i := 0; i < n; i++ {
-		visited[i] = make([]int, m)
-		for j := 0; j < m; j++ {
-			visited[i][j] = -1
-		}
+		visited[i] = make([]bool, m)
 	}
 
-	for i := 0; i < n; i++ {
-		for j := 0; j < m; j++ {
-			if grid[i][j] == 0 && visited[i][j] == -1 {
-				closedIslandBound(grid, visited, i, j, n, m, &res)
+	for i := 1; i < n-1; i++ {
+		for j := 1; j < m-1; j++ {
+			if grid[i][j] == 0 && !visited[i][j] && closedIslandDFS(grid, visited, i, j, n, m) {
+				res++
 			}
 		}
 	}
 	return res
 }
 
-func closedIslandBound(grid [][]int, visited [][]int, i int, j int, n int, m int, res *int) int {
+func closedIslandDFS(grid [][]int, visited [][]bool, i int, j int, n int, m int) bool {
 	if i < 0 || i >= n || j >= m || j < 0 {
-		return 0
+		return false
 	}
 
-	if visited[i][j] != -1 {
-		return visited[i][j]
+	if grid[i][j] == 1 || visited[i][j] {
+		return true
 	}
 
-	if grid[i][j] == 1 {
-		return 1
-	}
-
-	visited[i][j] = 0
-	up := closedIslandBound(grid, visited, i-1, j, n, m, res)
-	down := closedIslandBound(grid, visited, i+1, j, n, m, res)
-	left := closedIslandBound(grid, visited, i, j-1, n, m, res)
-	right := closedIslandBound(grid, visited, i, j+1, n, m, res)
-	if up == 1 && down == 1 && left == 1 && right == 1 && visited[i][j] == 0 {
-		(*res)++
-		return visited[i][j]
-	}
-	return visited[i][j]
+	visited[i][j] = true
+	up := closedIslandDFS(grid, visited, i-1, j, n, m)
+	down := closedIslandDFS(grid, visited, i+1, j, n, m)
+	left := closedIslandDFS(grid, visited, i, j-1, n, m)
+	right := closedIslandDFS(grid, visited, i, j+1, n, m)
+	return up && down && left && right
 }
