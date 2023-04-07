@@ -434,7 +434,6 @@ func wordPattern(pattern string, s string) bool {
 			if v != arr[i] {
 				return false
 			}
-
 		} else {
 			if m2[arr[i]] {
 				return false

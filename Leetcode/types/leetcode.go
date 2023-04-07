@@ -67,13 +67,16 @@ func (L *Leetcode) FindNotSubmitProblem() int {
 		return -1
 	}
 
-	rand.Seed(time.Now().UnixNano())
-	random := L.solved[rand.Intn(L.Solved())]
-	for !L.IsSolved(random) || L.submit[random] {
-		rand.Seed(time.Now().UnixNano())
-		random = L.solved[rand.Intn(L.Solved())]
+	notSubmit := []int{}
+	for _, s := range L.solved {
+		if !L.submit[s] {
+			notSubmit = append(notSubmit, s)
+		}
 	}
-	return random
+
+	rand.Seed(time.Now().UnixNano())
+	random := rand.Intn(len(notSubmit))
+	return notSubmit[random]
 }
 
 func (L *Leetcode) Solved() int {

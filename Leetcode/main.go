@@ -21,7 +21,7 @@ func main() {
 
 func SolveProblem() {
 	fmt.Println("Golang Leetcode...")
-	solutions.Leetcode_Left_Rigth_Difference()
+	solutions.Leetcode_Num_Enclaves()
 }
 
 func PrintLine() {
@@ -36,12 +36,12 @@ func GetRandomProblem() {
 	Leetcode.SetSolved(3, 2567, 912, 2570, 2574, 2575, 9, 1129, 2576, 2578, 2579, 2580, 2583, 2586, 2587, 2588, 2591, 2592, 2595, 2596, 2597, 2600, 2601, 2602, 64, 983, 219, 1402, 2390, 768, 87)
 	Leetcode.SetSolved(769, 1944, 2145, 601, 20, 704, 2605, 2606, 2610, 32, 2609, 2300, 2306, 45, 2547, 881, 1954, 925, 2405, 1584, 2439, 1254)
 
-	Leetcode.SetSubmit(2601, 27, 768, 769, 1944, 2145, 601, 20, 704, 2605, 2606, 2610, 32, 2609, 2300, 2306, 45, 2547, 881, 1954, 925, 2405, 1584, 2439, 1254, 2574, 103)
+	Leetcode.SetSubmit(1, 3, 4, 5, 2601, 27, 768, 769, 1944, 2145, 601, 20, 704, 2605, 2606, 2610, 32, 2609, 2300, 2306, 45, 2547, 881, 1954, 925, 2405, 1584, 2439, 1254, 2574, 103, 2575, 20, 13)
+	Leetcode.SetSubmit(2586, 64, 2439, 2578, 87, 704, 45, 2602, 35, 2586, 769)
 
 	fmt.Println("There are", Leetcode.Solved(), "/", Leetcode.Total(), "problem(s) has been solved in Leetcode.", "Golang is", Leetcode.Submit(), "submit(s).")
 	// fmt.Println("Today, Number of Leetcode Problem is:", Leetcode.GetRandom())
-	fmt.Println("Problem is", Leetcode.FindNotSubmitProblem(), "hasn't been submit.")
-	// 2575
+	// fmt.Println("Problem is", Leetcode.FindNotSubmitProblem(), "hasn't been submit.")
 }
 
 func TestPattern() {

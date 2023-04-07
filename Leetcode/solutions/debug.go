@@ -460,3 +460,15 @@ func Leetcode_Left_Rigth_Difference() {
 	fmt.Println("Input: nums = [10,4,8,3]")
 	fmt.Println("Output:", leftRigthDifference(utils.S2SliceInt("[10,4,8,3]")))
 }
+
+func Leetcode_Divisibility_Array() {
+	fmt.Println("Input: word = '998244353', m = 3")
+	fmt.Println("Output:", divisibilityArray("998244353", 3))
+}
+
+func Leetcode_Num_Enclaves() {
+	fmt.Println("Input: grid = [[0,0,0,0],[1,0,1,0],[0,1,1,0],[0,0,0,0]]")
+	fmt.Println("Output:", numEnclaves(utils.S2SoSliceInt("[[0,0,0,0],[1,0,1,0],[0,1,1,0],[0,0,0,0]]")))
+	fmt.Println("Input: grid = [[0,1,1,0],[0,0,1,0],[0,0,1,0],[0,0,0,0]]")
+	fmt.Println("Output:", numEnclaves(utils.S2SoSliceInt("[[0,1,1,0],[0,0,1,0],[0,0,1,0],[0,0,0,0]]")))
+}

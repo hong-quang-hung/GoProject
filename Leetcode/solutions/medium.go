@@ -887,3 +887,23 @@ func closedIslandDFS(grid [][]int, visited [][]bool, i int, j int, n int, m int)
 	right := closedIslandDFS(grid, visited, i, j+1, n, m)
 	return up && down && left && right
 }
+
+// Reference: https://leetcode.com/problems/find-the-divisibility-array-of-a-string/
+func divisibilityArray(word string, m int) []int {
+	res := make([]int, len(word))
+	divisible := 0
+	for i := 0; i < len(word); i++ {
+		divisible = (divisible*10 + int(word[i]-'0')) % m
+		if divisible == 0 {
+			res[i] = 1
+		} else {
+			res[i] = 0
+		}
+	}
+	return res
+}
+
+// Reference: https://leetcode.com/problems/number-of-enclaves/
+func numEnclaves(grid [][]int) int {
+	return 0
+}
