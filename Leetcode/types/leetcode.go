@@ -6,14 +6,17 @@ import (
 )
 
 type Leetcode struct {
-	total    int
-	problems []bool
-	solved   []int
+	total     int
+	submitLen int
+	problems  []bool
+	solved    []int
+	submit    []bool
 }
 
 func (L *Leetcode) SetTotal(size int) {
 	L.total = size
 	L.problems = make([]bool, size)
+	L.submit = make([]bool, size)
 	L.solved = []int{}
 }
 
@@ -26,13 +29,24 @@ func (L *Leetcode) SetSolved(s ...int) {
 	}
 }
 
+func (L *Leetcode) SetSubmit(s ...int) {
+	for _, i := range s {
+		if L.IsSolved(i - 1) {
+			L.submit[i-1] = true
+			L.submitLen++
+		}
+	}
+}
+
 func (L *Leetcode) GetRandom() int {
 	if len(L.solved) == L.total {
 		return -1
 	}
+
 	rand.Seed(time.Now().UnixNano())
 	random := rand.Intn(L.total)
 	for L.IsSolved(random) {
+		rand.Seed(time.Now().UnixNano())
 		random = rand.Intn(L.total)
 	}
 	return random + 1
@@ -42,13 +56,32 @@ func (L *Leetcode) GetSolved() int {
 	if len(L.solved) == L.total {
 		return -1
 	}
+
 	rand.Seed(time.Now().UnixNano())
 	random := rand.Intn(L.Solved())
 	return L.solved[random]
 }
 
+func (L *Leetcode) FindNotSubmitProblem() int {
+	if len(L.solved) == L.total {
+		return -1
+	}
+
+	rand.Seed(time.Now().UnixNano())
+	random := L.solved[rand.Intn(L.Solved())]
+	for !L.IsSolved(random) || L.submit[random] {
+		rand.Seed(time.Now().UnixNano())
+		random = L.solved[rand.Intn(L.Solved())]
+	}
+	return random
+}
+
 func (L *Leetcode) Solved() int {
 	return len(L.solved)
+}
+
+func (L *Leetcode) Submit() int {
+	return L.submitLen
 }
 
 func (L *Leetcode) Total() int {

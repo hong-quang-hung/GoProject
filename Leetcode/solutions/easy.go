@@ -467,3 +467,19 @@ func splitNum(num int) int {
 	}
 	return numA + numB
 }
+
+// Reference: https://leetcode.com/problems/left-and-right-sum-differences/
+func leftRigthDifference(nums []int) []int {
+	leftSum, rightSum := 0, 0
+	for _, num := range nums {
+		rightSum += num
+	}
+
+	ans := make([]int, len(nums))
+	for i, num := range nums {
+		rightSum -= num
+		ans[i] = int(math.Abs(float64(leftSum - rightSum)))
+		leftSum += num
+	}
+	return ans
+}

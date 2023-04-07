@@ -455,3 +455,8 @@ func Leetcode_Split_Num() {
 	fmt.Println("Input: num = 4325")
 	fmt.Println("Output:", splitNum(4325))
 }
+
+func Leetcode_Left_Rigth_Difference() {
+	fmt.Println("Input: nums = [10,4,8,3]")
+	fmt.Println("Output:", leftRigthDifference(utils.S2SliceInt("[10,4,8,3]")))
+}
