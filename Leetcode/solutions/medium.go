@@ -1,6 +1,7 @@
 package solutions
 
 import (
+	"fmt"
 	"math"
 	"sort"
 
@@ -905,5 +906,41 @@ func divisibilityArray(word string, m int) []int {
 
 // Reference: https://leetcode.com/problems/number-of-enclaves/
 func numEnclaves(grid [][]int) int {
-	return 0
+	res, n, m := 0, len(grid), len(grid[0])
+	visited := make([][]bool, n)
+	for i := 0; i < n; i++ {
+		visited[i] = make([]bool, m)
+	}
+
+	for i := 1; i < n-1; i++ {
+		for j := 1; j < m-1; j++ {
+			if grid[i][j] == 1 && !visited[i][j] {
+				numEnclavesDFS(grid, visited, i, j, n, m, &res)
+			}
+		}
+	}
+	return res
+}
+
+func numEnclavesDFS(grid [][]int, visited [][]bool, i int, j int, n int, m int, res *int) bool {
+	if i < 0 || i >= n || j >= m || j < 0 {
+		return false
+	}
+
+	if grid[i][j] == 0 || visited[i][j] {
+		return true
+	}
+
+	visited[i][j] = true
+	bound, moves := true, [][]int{{1, 0}, {-1, 0}, {0, 1}, {0, -1}}
+	for _, move := range moves {
+		if !numEnclavesDFS(grid, visited, i+move[0], j+move[1], n, m, res) {
+			bound = false
+		}
+	}
+	if bound {
+		(*res)++
+		fmt.Println(i, j)
+	}
+	return bound
 }
