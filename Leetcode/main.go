@@ -21,7 +21,7 @@ func main() {
 
 func SolveProblem() {
 	fmt.Println("Golang Leetcode...")
-	solutions.Leetcode_Closed_Island()
+	solutions.Leetcode_Split_Num()
 }
 
 func PrintLine() {
