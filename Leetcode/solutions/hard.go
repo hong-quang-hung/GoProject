@@ -379,3 +379,8 @@ func distinctNames(ideas []string) int64 {
 	}
 	return res
 }
+
+// Reference: https://leetcode.com/problems/largest-color-value-in-a-directed-graph/
+func largestPathValue(colors string, edges [][]int) int {
+	return 0
+}

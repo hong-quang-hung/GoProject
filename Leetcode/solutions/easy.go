@@ -482,3 +482,11 @@ func leftRigthDifference(nums []int) []int {
 	}
 	return ans
 }
+
+// Reference: https://leetcode.com/problems/invert-binary-tree/
+func invertTree(root *types.TreeNode) *types.TreeNode {
+	if root != nil {
+		root.Left, root.Right = invertTree(root.Right), invertTree(root.Left)
+	}
+	return root
+}

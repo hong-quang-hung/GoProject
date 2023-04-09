@@ -1,9 +1,9 @@
 package solutions
 
 import (
-	"fmt"
 	"math"
 	"sort"
+	"strconv"
 
 	"leetcode.com/Leetcode/types"
 	"leetcode.com/Leetcode/utils"
@@ -912,35 +912,118 @@ func numEnclaves(grid [][]int) int {
 		visited[i] = make([]bool, m)
 	}
 
-	for i := 1; i < n-1; i++ {
-		for j := 1; j < m-1; j++ {
+	for i := 0; i < n; i++ {
+		if grid[i][0] == 1 && !visited[i][0] {
+			numEnclavesDFS(grid, visited, i, 0, n, m)
+		}
+		if grid[i][n-1] == 1 && !visited[i][m-1] {
+			numEnclavesDFS(grid, visited, i, m-1, n, m)
+		}
+	}
+
+	for i := 0; i < m; i++ {
+		if grid[0][i] == 1 && !visited[0][i] {
+			numEnclavesDFS(grid, visited, 0, i, n, m)
+		}
+		if grid[n-1][i] == 1 && !visited[n-1][i] {
+			numEnclavesDFS(grid, visited, n-1, i, n, m)
+		}
+	}
+
+	for i := 0; i < n; i++ {
+		for j := 0; j < m; j++ {
 			if grid[i][j] == 1 && !visited[i][j] {
-				numEnclavesDFS(grid, visited, i, j, n, m, &res)
+				res++
 			}
 		}
 	}
 	return res
 }
 
-func numEnclavesDFS(grid [][]int, visited [][]bool, i int, j int, n int, m int, res *int) bool {
-	if i < 0 || i >= n || j >= m || j < 0 {
-		return false
-	}
-
-	if grid[i][j] == 0 || visited[i][j] {
-		return true
+func numEnclavesDFS(grid [][]int, visited [][]bool, i int, j int, n int, m int) {
+	if i < 0 || i >= n || j >= m || j < 0 || grid[i][j] == 0 || visited[i][j] {
+		return
 	}
 
 	visited[i][j] = true
-	bound, moves := true, [][]int{{1, 0}, {-1, 0}, {0, 1}, {0, -1}}
+	moves := [][]int{{1, 0}, {-1, 0}, {0, 1}, {0, -1}}
 	for _, move := range moves {
-		if !numEnclavesDFS(grid, visited, i+move[0], j+move[1], n, m, res) {
-			bound = false
+		numEnclavesDFS(grid, visited, i+move[0], j+move[1], n, m)
+	}
+}
+
+// Reference: https://leetcode.com/problems/check-knight-tour-configuration/
+func checkValidGrid(grid [][]int) bool {
+	if grid[0][0] != 0 {
+		return false
+	}
+
+	m, n, i, j := 1, len(grid), 0, 0
+	max := n*n - 1
+	for m <= max {
+		if i+2 < n && j+1 < n && checkValidGridMove(grid, &m, &i, &j, i+2, j+1) {
+			continue
 		}
+		if i+2 < n && j-1 > -1 && checkValidGridMove(grid, &m, &i, &j, i+2, j-1) {
+			continue
+		}
+		if i-2 > -1 && j+1 < n && checkValidGridMove(grid, &m, &i, &j, i-2, j+1) {
+			continue
+		}
+		if i-2 > -1 && j-1 > -1 && checkValidGridMove(grid, &m, &i, &j, i-2, j-1) {
+			continue
+		}
+		if i+1 < n && j-2 > -1 && checkValidGridMove(grid, &m, &i, &j, i+1, j-2) {
+			continue
+		}
+		if i+1 < n && j+2 < n && checkValidGridMove(grid, &m, &i, &j, i+1, j+2) {
+			continue
+		}
+		if i-1 > -1 && j-2 > -1 && checkValidGridMove(grid, &m, &i, &j, i-1, j-2) {
+			continue
+		}
+		if i-1 > -1 && j+2 < n && checkValidGridMove(grid, &m, &i, &j, i-1, j+2) {
+			continue
+		}
+		return false
 	}
-	if bound {
-		(*res)++
-		fmt.Println(i, j)
+	return true
+}
+
+func checkValidGridMove(grid [][]int, m *int, i *int, j *int, x int, y int) bool {
+	if grid[x][y] != *m {
+		return false
 	}
-	return bound
+
+	*i = x
+	*j = y
+	*m++
+	return true
+}
+
+// Reference: https://leetcode.com/problems/find-duplicate-subtrees/
+func findDuplicateSubtrees(root *types.TreeNode) []*types.TreeNode {
+	res := make([]*types.TreeNode, 0)
+	tripletToID := make(map[string]int)
+	cnt := make(map[int]int)
+	findDuplicateSubtreesTraversal(root, tripletToID, cnt, &res)
+	return res
+}
+
+func findDuplicateSubtreesTraversal(node *types.TreeNode, tripletToID map[string]int, cnt map[int]int, res *[]*types.TreeNode) int {
+	if node == nil {
+		return 0
+	}
+
+	triplet := strconv.Itoa(findDuplicateSubtreesTraversal(node.Left, tripletToID, cnt, res)) + "," + strconv.Itoa(node.Val) + "," + strconv.Itoa(findDuplicateSubtreesTraversal(node.Right, tripletToID, cnt, res))
+	if _, c := tripletToID[triplet]; !c {
+		tripletToID[triplet] = len(tripletToID) + 1
+	}
+
+	id := tripletToID[triplet]
+	cnt[id]++
+	if cnt[id] == 2 {
+		*res = append(*res, node)
+	}
+	return id
 }

@@ -472,3 +472,23 @@ func Leetcode_Num_Enclaves() {
 	fmt.Println("Input: grid = [[0,1,1,0],[0,0,1,0],[0,0,1,0],[0,0,0,0]]")
 	fmt.Println("Output:", numEnclaves(utils.S2SoSliceInt("[[0,1,1,0],[0,0,1,0],[0,0,1,0],[0,0,0,0]]")))
 }
+
+func Leetcode_Invert_Tree() {
+	fmt.Println("Input: root = [4,2,7,1,3,6,9]")
+	fmt.Println("Output:", invertTree(types.LazyNodeAll(4, types.LazyNodeValue(2, 1, 3), types.LazyNodeValue(7, 6, 9))))
+}
+
+func Leetcode_Check_Valid_Grid() {
+	fmt.Println("Input: grid = [[8,3,6],[5,0,1],[2,7,4]]")
+	fmt.Println("Output:", checkValidGrid(utils.S2SoSliceInt("[[8,3,6],[5,0,1],[2,7,4]]")))
+}
+
+func Leetcode_Find_Duplicate_Subtrees() {
+	fmt.Println("Input: root = [1,2,3,4,null,2,4,null,null,4]")
+	fmt.Println("Output:", findDuplicateSubtrees(types.LazyNodeAll(1, types.LazyNodeAll(2, types.LazyNode(4), nil), types.LazyNodeAll(3, types.LazyNodeAll(2, types.LazyNode(4), nil), types.LazyNode(4)))))
+}
+
+func Leetcode_Largest_Path_Value() {
+	fmt.Println("Input: colors = 'abaca', edges = [[0,1],[0,2],[2,3],[3,4]]")
+	fmt.Println("Output:", largestPathValue("abaca", utils.S2SoSliceInt("[[0,1],[0,2],[2,3],[3,4]]")))
+}
