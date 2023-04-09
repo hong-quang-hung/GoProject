@@ -488,6 +488,11 @@ func Leetcode_Find_Duplicate_Subtrees() {
 	fmt.Println("Output:", findDuplicateSubtrees(types.LazyNodeAll(1, types.LazyNodeAll(2, types.LazyNode(4), nil), types.LazyNodeAll(3, types.LazyNodeAll(2, types.LazyNode(4), nil), types.LazyNode(4)))))
 }
 
+func Leetcode_Min_Diff_In_BST() {
+	fmt.Println("Input: root = [4,2,6,1,3]")
+	fmt.Println("Output:", minDiffInBST(types.LazyNodeAll(4, types.LazyNodeValue(2, 1, 3), types.LazyNode(6))))
+}
+
 func Leetcode_Largest_Path_Value() {
 	fmt.Println("Input: colors = 'abaca', edges = [[0,1],[0,2],[2,3],[3,4]]")
 	fmt.Println("Output:", largestPathValue("abaca", utils.S2SoSliceInt("[[0,1],[0,2],[2,3],[3,4]]")))

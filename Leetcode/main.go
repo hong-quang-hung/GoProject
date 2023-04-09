@@ -37,7 +37,7 @@ func GetRandomProblem() {
 	Leetcode.SetSolved(769, 1944, 2145, 601, 20, 704, 2605, 2606, 2610, 32, 2609, 2300, 2306, 45, 2547, 881, 1954, 925, 2405, 1584, 2439, 1254, 1020)
 
 	Leetcode.SetSubmit(1, 3, 4, 5, 2601, 27, 768, 769, 1944, 2145, 601, 20, 704, 2605, 2606, 2610, 32, 2609, 2300, 2306, 45, 2547, 881, 1954, 925, 2405, 1584, 2439, 1254, 2574, 103, 2575, 20, 13)
-	Leetcode.SetSubmit(2586, 64, 2439, 2578, 87, 704, 45, 2602, 35, 2586, 76, 1020, 226, 2596, 2492, 652)
+	Leetcode.SetSubmit(2586, 64, 2439, 2578, 87, 704, 45, 2602, 35, 2586, 76, 1020, 226, 2596, 2492, 652, 1523, 9, 2610, 58, 1319, 783, 28)
 
 	fmt.Println("There are", Leetcode.Solved(), "/", Leetcode.Total(), "problem(s) has been solved in Leetcode.", "Golang is", Leetcode.Submit(), "submit(s).")
 	// fmt.Println("Today, Number of Leetcode Problem is:", Leetcode.GetRandom())

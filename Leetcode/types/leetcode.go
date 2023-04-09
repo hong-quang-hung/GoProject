@@ -31,7 +31,7 @@ func (L *Leetcode) SetSolved(s ...int) {
 
 func (L *Leetcode) SetSubmit(s ...int) {
 	for _, i := range s {
-		if L.IsSolved(i - 1) {
+		if L.IsSolved(i-1) && !L.submit[i-1] {
 			L.submit[i-1] = true
 			L.submitLen++
 		}
@@ -69,7 +69,7 @@ func (L *Leetcode) FindNotSubmitProblem() int {
 
 	notSubmit := []int{}
 	for _, s := range L.solved {
-		if !L.submit[s] {
+		if !L.submit[s-1] {
 			notSubmit = append(notSubmit, s)
 		}
 	}
