@@ -512,3 +512,16 @@ func inorderTraversal(root *types.TreeNode, preValue *int, minDiff *int) {
 	*preValue = root.Val
 	inorderTraversal(root.Right, preValue, minDiff)
 }
+
+// Reference: https://leetcode.com/problems/remove-all-adjacent-duplicates-in-string/
+func removeAdjacentDuplicates(s string) string {
+	stack := []rune{}
+	for _, ch := range s {
+		if len(stack) > 0 && stack[len(stack)-1] == ch {
+			stack = stack[0 : len(stack)-1]
+		} else {
+			stack = append(stack, ch)
+		}
+	}
+	return string(stack)
+}

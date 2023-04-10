@@ -525,3 +525,8 @@ func Leetcode_Max_Num_Of_Marked_Indices() {
 	fmt.Println("Input: nums = [3,5,2,4]")
 	fmt.Println("Output:", maxNumOfMarkedIndices([]int{3, 5, 2, 4}))
 }
+
+func Leetcode_Remove_Adjacent_Duplicates() {
+	fmt.Println("Input: s = 'azxxzy'")
+	fmt.Println("Output:", removeAdjacentDuplicates("azxxzy"))
+}
