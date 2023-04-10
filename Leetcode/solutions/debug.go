@@ -530,3 +530,13 @@ func Leetcode_Remove_Adjacent_Duplicates() {
 	fmt.Println("Input: s = 'azxxzy'")
 	fmt.Println("Output:", removeAdjacentDuplicates("azxxzy"))
 }
+
+func Leetcode_Min_Reorder() {
+	fmt.Println("Input: n = 6, connections = [[0,1],[1,3],[2,3],[4,0],[4,5]]")
+	fmt.Println("Output:", minReorder(6, utils.S2SoSliceInt("[[0,1],[1,3],[2,3],[4,0],[4,5]]")))
+}
+
+func Leetcode_Min_Distance() {
+	fmt.Println("Input: word1 = 'intention', word2 = 'execution'")
+	fmt.Println("Output:", minDistance("intention", "execution"))
+}
