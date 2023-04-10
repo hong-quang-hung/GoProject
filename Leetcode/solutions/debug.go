@@ -552,3 +552,8 @@ func Leetcode_Get_Hint() {
 	fmt.Println("Input: secret = '1122', guess = '2211'")
 	fmt.Println("Output:", getHint("1122", "2211"))
 }
+
+func Leetcode_Add_To_Array_Form() {
+	fmt.Println("Input: num = [1,2,0,0], k = 34")
+	fmt.Println("Output:", addToArrayForm([]int{1, 2, 0, 0}, 34))
+}
