@@ -1161,3 +1161,25 @@ func getHint(secret string, guess string) string {
 	}
 	return fmt.Sprintf("%dA%dB", bulls, cows)
 }
+
+// Reference: https://leetcode.com/problems/minimum-time-to-complete-trips/
+func minimumTime(time []int, totalTrips int) int64 {
+	left, right := int64(0), int64(math.MaxInt64)
+	for left < right {
+		mid := left + (right-left)/2
+		trips := int64(0)
+		for _, t := range time {
+			trips += mid / int64(t)
+			if trips >= int64(totalTrips) {
+				break
+			}
+		}
+
+		if trips < int64(totalTrips) {
+			left = mid + 1
+		} else {
+			right = mid
+		}
+	}
+	return left
+}

@@ -557,3 +557,8 @@ func Leetcode_Add_To_Array_Form() {
 	fmt.Println("Input: num = [1,2,0,0], k = 34")
 	fmt.Println("Output:", addToArrayForm([]int{1, 2, 0, 0}, 34))
 }
+
+func Leetcode_Minimum_Time() {
+	fmt.Println("Input: time = [1,2,3], totalTrips = 5")
+	fmt.Println("Output:", minimumTime([]int{1, 2, 3}, 5))
+}
