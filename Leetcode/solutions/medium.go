@@ -1095,7 +1095,7 @@ func checkInclusion(s1 string, s2 string) bool {
 	return count == 26
 }
 
-// Reference: https://leetcode.com/problems/permutation-in-string/
+// Reference: https://leetcode.com/problems/find-the-maximum-number-of-marked-indices/
 func maxNumOfMarkedIndices(nums []int) int {
 	sort.Ints(nums)
 	i, n := 0, len(nums)
