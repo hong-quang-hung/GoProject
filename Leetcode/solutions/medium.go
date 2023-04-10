@@ -1,6 +1,7 @@
 package solutions
 
 import (
+	"fmt"
 	"math"
 	"sort"
 	"strconv"
@@ -1121,6 +1122,7 @@ func minReorder(n int, connections [][]int) int {
 		}
 		adj[connection[1]] = append(adj[connection[1]], []int{connection[0], 0})
 	}
+
 	minReorderDFS(adj, 0, n, &count)
 	return count
 }
@@ -1137,4 +1139,25 @@ func minReorderDFS(adj map[int][][]int, node int, parent int, count *int) {
 			minReorderDFS(adj, child, node, count)
 		}
 	}
+}
+
+// Reference: https://leetcode.com/problems/bulls-and-cows/
+func getHint(secret string, guess string) string {
+	bulls, cows := 0, 0
+	m := make(map[byte]int)
+	for i := 0; i < len(secret); i++ {
+		if secret[i] == guess[i] {
+			bulls++
+		} else {
+			m[secret[i]]++
+			m[guess[i]]--
+			if m[secret[i]] <= 0 {
+				cows++
+			}
+			if m[guess[i]] >= 0 {
+				cows++
+			}
+		}
+	}
+	return fmt.Sprintf("%dA%dB", bulls, cows)
 }

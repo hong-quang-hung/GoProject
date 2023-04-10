@@ -545,3 +545,10 @@ func Leetcode_Can_Place_Flowers() {
 	fmt.Println("Input: flowerbed = [1,0,0,0,1], n = 1")
 	fmt.Println("Output:", canPlaceFlowers([]int{1, 0, 0, 0, 1}, 1))
 }
+
+func Leetcode_Get_Hint() {
+	fmt.Println("Input: secret = '1234', guess = '0111'")
+	fmt.Println("Output:", getHint("1234", "0111"))
+	fmt.Println("Input: secret = '1122', guess = '2211'")
+	fmt.Println("Output:", getHint("1122", "2211"))
+}
