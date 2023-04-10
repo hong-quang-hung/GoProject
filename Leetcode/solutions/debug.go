@@ -497,3 +497,21 @@ func Leetcode_Largest_Path_Value() {
 	fmt.Println("Input: colors = 'abaca', edges = [[0,1],[0,2],[2,3],[3,4]]")
 	fmt.Println("Output:", largestPathValue("abaca", utils.S2SoSliceInt("[[0,1],[0,2],[2,3],[3,4]]")))
 }
+
+func Leetcode_Clone_Graph() {
+	fmt.Println("Input: adjList = [[2,4],[1,3],[2,4],[1,3]]")
+	adjList1 := new(types.Node)
+	adjList2 := new(types.Node)
+	adjList3 := new(types.Node)
+	adjList4 := new(types.Node)
+
+	adjList1.Val = 1
+	adjList1.Neighbors = []*types.Node{adjList2, adjList4}
+	adjList2.Val = 2
+	adjList2.Neighbors = []*types.Node{adjList1, adjList3}
+	adjList3.Val = 3
+	adjList3.Neighbors = []*types.Node{adjList2, adjList4}
+	adjList4.Val = 4
+	adjList3.Neighbors = []*types.Node{adjList1, adjList3}
+	fmt.Println("Output:", cloneGraph(adjList1))
+}

@@ -1027,3 +1027,27 @@ func findDuplicateSubtreesTraversal(node *types.TreeNode, tripletToID map[string
 	}
 	return id
 }
+
+// Reference: https://leetcode.com/problems/find-duplicate-subtrees/
+func cloneGraph(node *types.Node) *types.Node {
+	if node == nil {
+		return nil
+	}
+
+	visited := make([]*types.Node, 101)
+	return cloneGraphTraversal(node, visited)
+}
+
+func cloneGraphTraversal(node *types.Node, visited []*types.Node) *types.Node {
+	if visited[node.Val] != nil {
+		return visited[node.Val]
+	}
+
+	res := new(types.Node)
+	res.Val = node.Val
+	visited[node.Val] = res
+	for _, neighbor := range node.Neighbors {
+		res.Neighbors = append(res.Neighbors, cloneGraphTraversal(neighbor, visited))
+	}
+	return res
+}
