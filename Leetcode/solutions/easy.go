@@ -525,3 +525,16 @@ func removeAdjacentDuplicates(s string) string {
 	}
 	return string(stack)
 }
+
+// Reference: https://leetcode.com/problems/can-place-flowers/
+func canPlaceFlowers(flowerbed []int, n int) bool {
+	size := len(flowerbed)
+	for i := 0; i < size; i++ {
+		if flowerbed[i] == 0 && (i == 0 || flowerbed[i-1] == 0) && (i == size-1 || flowerbed[i+1] == 0) {
+			flowerbed[i] = 1
+			n--
+			i++
+		}
+	}
+	return n <= 0
+}

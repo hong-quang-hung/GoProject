@@ -540,3 +540,8 @@ func Leetcode_Min_Distance() {
 	fmt.Println("Input: word1 = 'intention', word2 = 'execution'")
 	fmt.Println("Output:", minDistance("intention", "execution"))
 }
+
+func Leetcode_Can_Place_Flowers() {
+	fmt.Println("Input: flowerbed = [1,0,0,0,1], n = 1")
+	fmt.Println("Output:", canPlaceFlowers([]int{1, 0, 0, 0, 1}, 1))
+}
