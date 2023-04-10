@@ -515,3 +515,13 @@ func Leetcode_Clone_Graph() {
 	adjList3.Neighbors = []*types.Node{adjList1, adjList3}
 	fmt.Println("Output:", cloneGraph(adjList1))
 }
+
+func Leetcode_Check_Inclusion() {
+	fmt.Println("Input: s1 = 'ab', s2 = 'eidbaooo'")
+	fmt.Println("Output:", checkInclusion("ab", "eidbaooo"))
+}
+
+func Leetcode_Max_Num_Of_Marked_Indices() {
+	fmt.Println("Input: nums = [3,5,2,4]")
+	fmt.Println("Output:", maxNumOfMarkedIndices([]int{3, 5, 2, 4}))
+}
