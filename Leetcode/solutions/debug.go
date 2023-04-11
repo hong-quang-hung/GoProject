@@ -3,6 +3,7 @@ package solutions
 import (
 	"fmt"
 
+	solutions "leetcode.com/Leetcode/solutions/medium"
 	"leetcode.com/Leetcode/types"
 	"leetcode.com/Leetcode/utils"
 )
@@ -561,4 +562,40 @@ func Leetcode_Add_To_Array_Form() {
 func Leetcode_Minimum_Time() {
 	fmt.Println("Input: time = [1,2,3], totalTrips = 5")
 	fmt.Println("Output:", minimumTime([]int{1, 2, 3}, 5))
+}
+
+func Leetcode_Construct() {
+	fmt.Println("Input: grid = [[0,1],[1,0]]")
+	fmt.Println("Output:", construct(utils.S2SoSliceInt("[[0,1],[1,0]]")))
+}
+
+func Leetcode_Merge_Arrays() {
+	fmt.Println("Input: nums1 = [[1,2],[2,3],[4,5]], nums2 = [[1,4],[3,2],[4,1]]")
+	fmt.Println("Output:", mergeArrays(utils.S2SoSliceInt("[[1,2],[2,3],[4,5]]"), utils.S2SoSliceInt("[[1,4],[3,2],[4,1]]")))
+}
+
+func Leetcode_Minimum_Fuel_Cost() {
+	fmt.Println("Input: roads = [[3,1],[3,2],[1,0],[0,4],[0,5],[4,6]], seats = 2")
+	fmt.Println("Output:", minimumFuelCost(utils.S2SoSliceInt("[[3,1],[3,2],[1,0],[0,4],[0,5],[4,6]]"), 2))
+}
+
+func Leetcode_Is_Symmetric() {
+	fmt.Println("Input: root = [1,2,2,3,4,4,3]")
+	fmt.Println("Output:", isSymmetric(types.LazyNodeAll(1, types.LazyNodeValue(2, 3, 4), types.LazyNodeValue(2, 4, 3))))
+}
+
+func Leetcode_Count_Ways() {
+	fmt.Println("Input: ranges = [[6,10],[5,15]]")
+	fmt.Println("Output:", countWays(utils.S2SoSliceInt("[[6,10],[5,15]]")))
+}
+
+func Leetcode_Word_Dictionary() {
+	wordDictionary := solutions.Constructor()
+	wordDictionary.AddWord("bad")
+	wordDictionary.AddWord("dad")
+	wordDictionary.AddWord("mad")
+	fmt.Println(wordDictionary.Search("pad"))
+	fmt.Println(wordDictionary.Search("bad"))
+	fmt.Println(wordDictionary.Search(".ad"))
+	fmt.Println(wordDictionary.Search("b.."))
 }

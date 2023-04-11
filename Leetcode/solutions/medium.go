@@ -1183,3 +1183,89 @@ func minimumTime(time []int, totalTrips int) int64 {
 	}
 	return left
 }
+
+// Reference: https://leetcode.com/problems/construct-quad-tree/
+type Node struct {
+	Val         bool
+	IsLeaf      bool
+	TopLeft     *Node
+	TopRight    *Node
+	BottomLeft  *Node
+	BottomRight *Node
+}
+
+func construct(grid [][]int) *Node {
+	return solveConstruct(grid, 0, 0, len(grid))
+}
+
+func solveConstruct(grid [][]int, x1, y1, length int) *Node {
+	if length == 1 {
+		return &Node{Val: grid[x1][y1] == 1, IsLeaf: true}
+	}
+
+	topLeft := solveConstruct(grid, x1, y1, length/2)
+	topRight := solveConstruct(grid, x1, y1+length/2, length/2)
+	bottomLeft := solveConstruct(grid, x1+length/2, y1, length/2)
+	bottomRight := solveConstruct(grid, x1+length/2, y1+length/2, length/2)
+	if topLeft.IsLeaf && topRight.IsLeaf && bottomLeft.IsLeaf && bottomRight.IsLeaf && topLeft.Val == topRight.Val && topRight.Val == bottomLeft.Val && bottomLeft.Val == bottomRight.Val {
+		return &Node{Val: topLeft.Val, IsLeaf: true}
+	}
+
+	return &Node{Val: false, IsLeaf: false, TopLeft: topLeft, TopRight: topRight, BottomLeft: bottomLeft, BottomRight: bottomRight}
+}
+
+// Reference: https://leetcode.com/problems/minimum-fuel-cost-to-report-to-the-capital
+func minimumFuelCost(roads [][]int, seats int) int64 {
+	m := make(map[int][]int)
+	fuel := int64(0)
+	for _, road := range roads {
+		if m[road[0]] == nil {
+			m[road[0]] = []int{}
+		}
+		m[road[0]] = append(m[road[0]], road[1])
+
+		if m[road[1]] == nil {
+			m[road[1]] = []int{}
+		}
+		m[road[1]] = append(m[road[1]], road[0])
+	}
+	minimumFuelCostDFS(m, 0, -1, seats, &fuel)
+	return fuel
+}
+
+func minimumFuelCostDFS(m map[int][]int, from, to, seats int, fuel *int64) int64 {
+	if len(m) == 0 {
+		return int64(0)
+	}
+
+	representatives := int64(1)
+	for _, node := range m[from] {
+		if node != to {
+			representatives += minimumFuelCostDFS(m, node, from, seats, fuel)
+		}
+	}
+
+	if from != 0 {
+		*fuel += int64(math.Ceil(float64(representatives) / float64(seats)))
+	}
+	return representatives
+}
+
+// Reference: https://leetcode.com/problems/count-ways-to-group-overlapping-ranges/
+func countWays(ranges [][]int) int {
+	sort.Slice(ranges, func(i, j int) bool { return ranges[i][0] < ranges[j][0] })
+	overlapping, end := 1, ranges[0][1]
+	for i := 1; i < len(ranges); i++ {
+		if end < ranges[i][0] {
+			overlapping++
+		}
+		end = max(end, ranges[i][1])
+	}
+
+	res, mod := int64(1), int64(1_000_000_007)
+	for i := overlapping; i > 0; i-- {
+		res <<= 1
+		res %= mod
+	}
+	return int(res)
+}

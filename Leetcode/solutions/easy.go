@@ -557,3 +557,47 @@ func addToArrayForm(num []int, k int) []int {
 	}
 	return num
 }
+
+// Reference: https://leetcode.com/problems/merge-two-2d-arrays-by-summing-values/
+func mergeArrays(nums1 [][]int, nums2 [][]int) [][]int {
+	m := make(map[int][]int)
+	for _, num := range nums1 {
+		m[num[0]] = num
+	}
+
+	for _, num := range nums2 {
+		if m[num[0]] == nil {
+			m[num[0]] = []int{num[0], num[1]}
+		} else {
+			m[num[0]][1] += num[1]
+		}
+	}
+
+	res := make([][]int, 0)
+	for _, v := range m {
+		res = append(res, v)
+	}
+
+	sort.Slice(res, func(i, j int) bool { return res[i][0] < res[j][0] })
+	return res
+}
+
+// Reference: https://leetcode.com/problems/symmetric-tree/
+func isSymmetric(root *types.TreeNode) bool {
+	return isSymmetricCheck(root.Left, root.Right)
+}
+
+func isSymmetricCheck(left, right *types.TreeNode) bool {
+	if left == nil && right == nil {
+		return true
+	}
+
+	if (left == nil && right != nil) || (left != nil && right == nil) {
+		return false
+	}
+
+	if left.Val != right.Val {
+		return false
+	}
+	return isSymmetricCheck(left.Left, right.Right) && isSymmetricCheck(left.Right, right.Left)
+}
