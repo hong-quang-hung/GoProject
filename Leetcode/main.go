@@ -4,14 +4,15 @@ import (
 	"fmt"
 	"regexp"
 
-	"leetcode.com/Leetcode/solutions"
+	easy "leetcode.com/Leetcode/solutions/easy"
+	medium "leetcode.com/Leetcode/solutions/medium"
 	"leetcode.com/Leetcode/types"
 	"leetcode.com/Leetcode/utils"
 )
 
 func main() {
 	PrintLine()
-	SolveProblem()
+	SolveProblem(101)
 	PrintLine()
 	GetRandomProblem()
 	PrintLine()
@@ -19,9 +20,18 @@ func main() {
 	// TestRegexGolang()
 }
 
-func SolveProblem() {
-	fmt.Println("Golang Leetcode...")
-	solutions.Leetcode_Word_Dictionary()
+func SolveProblem(stt int) {
+	fmt.Println("Golang: Leetcode Start...")
+	switch stt {
+	case 101:
+		easy.Leetcode_Is_Symmetric()
+	case 211:
+		medium.Leetcode_Word_Dictionary()
+	default:
+		fmt.Printf("The problem %d hasn't solved!", stt)
+		fmt.Println()
+	}
+	fmt.Println("Golang: Leetcode End.")
 }
 
 func PrintLine() {
@@ -42,7 +52,7 @@ func GetRandomProblem() {
 
 	fmt.Println("There are", Leetcode.Solved(), "/", Leetcode.Total(), "problem(s) has been solved in Leetcode.", "Golang is", Leetcode.Submit(), "submit(s).")
 	// fmt.Println("Today, Number of Leetcode Problem is:", Leetcode.GetRandom())
-	fmt.Println("Problem is", Leetcode.FindNotSubmitProblem(), "hasn't been submit.")
+	// fmt.Println("Problem is", Leetcode.FindNotSubmitProblem(), "hasn't been submit.")
 }
 
 func TestPattern() {

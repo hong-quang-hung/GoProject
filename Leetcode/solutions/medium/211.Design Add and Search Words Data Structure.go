@@ -1,8 +1,23 @@
 package solutions
 
-import "leetcode.com/Leetcode/types"
+import (
+	"fmt"
+
+	"leetcode.com/Leetcode/types"
+)
 
 // Reference: https://leetcode.com/problems/symmetric-tree/
+func Leetcode_Word_Dictionary() {
+	wordDictionary := Constructor()
+	wordDictionary.AddWord("bad")
+	wordDictionary.AddWord("dad")
+	wordDictionary.AddWord("mad")
+	fmt.Println(wordDictionary.Search("pad"))
+	fmt.Println(wordDictionary.Search("bad"))
+	fmt.Println(wordDictionary.Search(".ad"))
+	fmt.Println(wordDictionary.Search("b.."))
+}
+
 type WordDictionary struct {
 	root *types.TrieNode
 }

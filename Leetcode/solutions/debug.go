@@ -3,7 +3,6 @@ package solutions
 import (
 	"fmt"
 
-	solutions "leetcode.com/Leetcode/solutions/medium"
 	"leetcode.com/Leetcode/types"
 	"leetcode.com/Leetcode/utils"
 )
@@ -579,23 +578,7 @@ func Leetcode_Minimum_Fuel_Cost() {
 	fmt.Println("Output:", minimumFuelCost(utils.S2SoSliceInt("[[3,1],[3,2],[1,0],[0,4],[0,5],[4,6]]"), 2))
 }
 
-func Leetcode_Is_Symmetric() {
-	fmt.Println("Input: root = [1,2,2,3,4,4,3]")
-	fmt.Println("Output:", isSymmetric(types.LazyNodeAll(1, types.LazyNodeValue(2, 3, 4), types.LazyNodeValue(2, 4, 3))))
-}
-
 func Leetcode_Count_Ways() {
 	fmt.Println("Input: ranges = [[6,10],[5,15]]")
 	fmt.Println("Output:", countWays(utils.S2SoSliceInt("[[6,10],[5,15]]")))
-}
-
-func Leetcode_Word_Dictionary() {
-	wordDictionary := solutions.Constructor()
-	wordDictionary.AddWord("bad")
-	wordDictionary.AddWord("dad")
-	wordDictionary.AddWord("mad")
-	fmt.Println(wordDictionary.Search("pad"))
-	fmt.Println(wordDictionary.Search("bad"))
-	fmt.Println(wordDictionary.Search(".ad"))
-	fmt.Println(wordDictionary.Search("b.."))
 }
