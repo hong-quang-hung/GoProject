@@ -3,9 +3,35 @@ package solutions
 import (
 	"fmt"
 
+	"leetcode.com/Leetcode/solutions/easy"
+	"leetcode.com/Leetcode/solutions/hard"
+	"leetcode.com/Leetcode/solutions/medium"
 	"leetcode.com/Leetcode/types"
 	"leetcode.com/Leetcode/utils"
 )
+
+func Leetcode_Debug(problem int) {
+	switch problem {
+	case 4:
+		hard.Leetcode_Find_Median_Sorted_Arrays()
+	case 71:
+		medium.Leetcode_Simplify_Path()
+	case 101:
+		easy.Leetcode_Is_Symmetric()
+	case 211:
+		medium.Leetcode_Word_Dictionary()
+	case 768:
+		hard.Leetcode_Max_Chunks_To_Sorted_II()
+	case 1675:
+		hard.Leetcode_Minimum_Deviation()
+	case 2360:
+		hard.Leetcode_Longest_Cycle()
+	case 2444:
+		medium.Leetcode_Count_Subarrays()
+	default:
+		fmt.Printf("The problem %d hasn't been solved!\n", problem)
+	}
+}
 
 func Leetcode_Two_Sum() {
 	fmt.Println("Input: nums = [2,7,11,15], target = 9")
@@ -111,11 +137,6 @@ func Leetcode_Is_Complete_Tree() {
 	fmt.Println("Output:", isCompleteTree(types.LazyNodeAll(1, types.LazyNodeAll(2, types.LazyNode(5), nil), types.LazyNodeValue(3, 7, 8))))
 }
 
-func Leetcode_Find_Median_Sorted_Arrays() {
-	fmt.Println("Input: nums1 = [1], nums2 = [2,3,4,5,6]")
-	fmt.Println("Output:", findMedianSortedArrays([]int{1}, []int{2, 3, 4, 5, 6}))
-}
-
 func Leetcode_Build_Trees() {
 	fmt.Println("Input: inorder = [9,3,15,20,7], postorder = [9,15,7,20,3]")
 	fmt.Println("Output:")
@@ -175,13 +196,6 @@ func Leetcode_Prime_Sub_Operation() {
 func Leetcode_Longest_Palindrome() {
 	fmt.Println("Input: s = 'babad'")
 	fmt.Println("Output:", longestPalindrome("babad"))
-}
-
-func Leetcode_Longest_Cycle() {
-	fmt.Println("Input: edges = [3,3,4,2,3]")
-	fmt.Println("Output:", longestCycle([]int{3, 3, 4, 2, 3}))
-	fmt.Println("Input: edges = [2,-1,3,1]")
-	fmt.Println("Output:", longestCycle([]int{2, -1, 3, 1}))
 }
 
 func Leetcode_Min_Path_Sum() {

@@ -38,7 +38,7 @@ func (L *Leetcode) SetSubmit(s ...int) {
 	}
 }
 
-func (L *Leetcode) GetRandom() int {
+func (L *Leetcode) PickProblem() int {
 	if len(L.solved) == L.total {
 		return -1
 	}
@@ -62,7 +62,7 @@ func (L *Leetcode) GetSolved() int {
 	return L.solved[random]
 }
 
-func (L *Leetcode) FindNotSubmitProblem() int {
+func (L *Leetcode) PickSolution() int {
 	if len(L.solved) == L.total {
 		return -1
 	}

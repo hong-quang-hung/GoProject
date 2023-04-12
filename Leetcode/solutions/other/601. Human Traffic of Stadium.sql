@@ -1,4 +1,4 @@
-/* https://leetcode.com/problems/human-traffic-of-stadium/description/ */
+/* https://leetcode.com/problems/human-traffic-of-stadium/ */
 /* Write your T-SQL query statement below */
 
 -- create table Stadium (id int, visit_date date, people int)

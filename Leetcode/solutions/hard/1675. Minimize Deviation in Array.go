@@ -5,7 +5,6 @@ import (
 	"fmt"
 	"math"
 
-	"leetcode.com/Leetcode/solutions"
 	"leetcode.com/Leetcode/utils"
 )
 
@@ -40,7 +39,7 @@ func minimumDeviation(nums []int) int {
 			num *= 2
 		}
 
-		minDev = solutions.Min(minDev, num)
+		minDev = min(minDev, num)
 		heap.Push(set, num)
 	}
 

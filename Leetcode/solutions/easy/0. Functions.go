@@ -1,11 +1,13 @@
 package easy
 
-import "leetcode.com/Leetcode/solutions"
+import (
+	"leetcode.com/Leetcode/utils"
+)
 
 func min(a, b int) int {
-	return solutions.Min(a, b)
+	return utils.MinInt(a, b)
 }
 
 func max(a, b int) int {
-	return solutions.Max(a, b)
+	return utils.MaxInt(a, b)
 }

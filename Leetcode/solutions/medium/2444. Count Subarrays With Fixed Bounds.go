@@ -2,7 +2,7 @@ package medium
 
 import "fmt"
 
-// Reference: https://leetcode.com/problems/as-far-from-land-as-possible/
+// Reference: https://leetcode.com/problems/count-subarrays-with-fixed-bounds/
 func Leetcode_Count_Subarrays() {
 	fmt.Println("Input: nums = [1,3,5,2,7,5], minK = 1, maxK = 5")
 	fmt.Println("Output:", countSubarrays([]int{1, 3, 5, 2, 7, 5}, 1, 5))

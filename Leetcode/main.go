@@ -8,24 +8,22 @@ import (
 	"leetcode.com/Leetcode/solutions/hard"
 	"leetcode.com/Leetcode/solutions/medium"
 	"leetcode.com/Leetcode/types"
-	"leetcode.com/Leetcode/utils"
 )
 
 var debugProblem int
 var totalProbem int
 
 func init() {
-	debugProblem = 2444
-	totalProbem = 2617
+	debugProblem = 71
+	totalProbem = 2637
 }
 
 func main() {
 	PrintLine()
-	SolveProblem()
+	LeetcodeDebug()
 	PrintLine()
-	GetRandomProblem()
+	LeetcodeInfomation()
 	PrintLine()
-	// TestPattern()
 	// TestRegexGolang()
 }
 
@@ -33,9 +31,11 @@ func PrintLine() {
 	fmt.Println("..............................................................................................................................................")
 }
 
-func SolveProblem() {
-	fmt.Println("Leetcode Debug Start...")
+func LeetcodeDebug() {
+	fmt.Printf("Leetcode Debug Start...\n")
 	switch debugProblem {
+	case 71:
+		medium.Leetcode_Simplify_Path()
 	case 101:
 		easy.Leetcode_Is_Symmetric()
 	case 211:
@@ -47,13 +47,12 @@ func SolveProblem() {
 	case 2444:
 		medium.Leetcode_Count_Subarrays()
 	default:
-		fmt.Printf("The problem %d hasn't been solved!", debugProblem)
-		fmt.Println()
+		fmt.Printf("The problem %d hasn't been solved!\n", debugProblem)
 	}
-	fmt.Println("Leetcode Debug End.")
+	fmt.Printf("Leetcode Debug End.\n")
 }
 
-func GetRandomProblem() {
+func LeetcodeInfomation() {
 	Leetcode := new(types.Leetcode)
 	Leetcode.SetTotal(totalProbem)
 	Leetcode.SetSolved(1, 2, 4, 5, 13, 14, 15, 1444, 21, 23, 26, 27, 2571, 28, 35, 58, 67, 72, 101, 103, 104, 106, 109, 112, 121, 129, 142, 208, 211, 226, 290, 382, 427, 443, 502, 540, 567, 605)
@@ -63,18 +62,11 @@ func GetRandomProblem() {
 
 	Leetcode.SetSubmit(1, 3, 4, 5, 2601, 27, 768, 769, 1944, 2145, 601, 20, 704, 2605, 2606, 2610, 32, 2609, 2300, 2306, 45, 2547, 881, 1954, 925, 2405, 1584, 2439, 1254, 2574, 103, 2575, 20, 13)
 	Leetcode.SetSubmit(112, 64, 2439, 2578, 87, 704, 45, 2602, 35, 2586, 76, 1020, 226, 2596, 2492, 652, 1523, 9, 2610, 58, 1319, 783, 28, 133, 567, 2316, 2587, 2576, 2597, 129, 1047, 1470, 1466)
-	Leetcode.SetSubmit(2586, 72, 605, 299, 989, 2187, 427, 1207, 2390, 2570, 1444, 2588, 2477, 67, 101, 1162, 2580, 2600, 211)
+	Leetcode.SetSubmit(2586, 72, 605, 299, 989, 2187, 427, 1207, 2390, 2570, 1444, 2588, 2477, 67, 101, 1162, 2580, 2600, 211, 958)
 
 	fmt.Println("There are", Leetcode.Solved(), "/", Leetcode.Total(), "problem(s) has been solved in Leetcode.", "Golang is", Leetcode.Submit(), "submit(s).")
-	// fmt.Println("Today, Number of Leetcode Problem is:", Leetcode.GetRandom())
-	// fmt.Println("Problem is", Leetcode.FindNotSubmitProblem(), "hasn't been submit.")
-}
-
-func TestPattern() {
-	fmt.Println("Input: nums = [1,112,-33,54, 45]")
-	fmt.Println("Output:", utils.S2SliceInt("[1,112,-33,54, 45]"))
-	fmt.Println("Input: nums = [[],[1,2,-3,5,4]]")
-	fmt.Println("Output:", utils.S2SoSliceInt("[[0],[],[1,2,-3,5,4],[ ]]"))
+	// fmt.Println("Today, Number of Leetcode Problem is:", Leetcode.PickProblem())
+	// fmt.Println("Problem is", Leetcode.PickSolution(), "hasn't been submit.")
 }
 
 func TestRegexGolang() {
