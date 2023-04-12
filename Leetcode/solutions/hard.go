@@ -2,38 +2,7 @@ package solutions
 
 import (
 	"math"
-	"sort"
 )
-
-// Reference: https://leetcode.com/problems/reducing-dishes/
-func maxSatisfaction(satisfaction []int) int {
-	sort.Slice(satisfaction, func(i, j int) bool { return satisfaction[i] < satisfaction[j] })
-	n, max, total := len(satisfaction), 0, 0
-
-	for i := n - 1; i >= 0 && satisfaction[i]+total > 0; i-- {
-		total += satisfaction[i]
-		max += total
-	}
-	return max
-}
-
-// Reference: https://leetcode.com/problems/number-of-visible-people-in-a-queue/
-func canSeePersonsCount(heights []int) []int {
-	monotonic := []int{}
-	for i := len(heights) - 1; i >= 0; i-- {
-		count, height := 0, heights[i]
-		for len(monotonic) > 0 && monotonic[len(monotonic)-1] < height {
-			monotonic = monotonic[:len(monotonic)-1]
-			count++
-		}
-		if len(monotonic) > 0 {
-			count++
-		}
-		heights[i] = count
-		monotonic = append(monotonic, height)
-	}
-	return heights
-}
 
 // Reference: https://leetcode.com/problems/scramble-string/
 func isScramble(s1 string, s2 string) bool {

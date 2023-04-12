@@ -17,6 +17,7 @@ func init() {
 	// Easy
 	debugFunc[1] = easy.Leetcode_Two_Sum
 	debugFunc[9] = easy.LeetCode_Is_Palindrome
+	debugFunc[20] = easy.Leetcode_Is_Valid
 	debugFunc[26] = easy.Leetcode_Remove_Duplicates
 	debugFunc[27] = easy.Leetcode_Remove_Element
 	debugFunc[28] = easy.Leetcode_StrStr
@@ -24,6 +25,9 @@ func init() {
 	debugFunc[101] = easy.Leetcode_Is_Symmetric
 	debugFunc[104] = easy.LeetCode_Max_Depth
 	debugFunc[121] = easy.LeetCode_Max_Profit
+	debugFunc[219] = easy.Leetcode_Contains_Near_By_Duplicate
+	debugFunc[953] = easy.Leetcode_Is_Alien_Sorted
+	debugFunc[1071] = easy.Leetcode_Gcd_Of_Strings
 	debugFunc[1207] = easy.Leetcode_Unique_Occurrences
 	debugFunc[2586] = easy.Leetcode_Vowel_Strings
 	debugFunc[2595] = easy.Leetcode_Even_Odd_Bit
@@ -31,16 +35,20 @@ func init() {
 	// Medium
 	debugFunc[3] = medium.Leetcode_Length_Of_Longest_Substring
 	debugFunc[5] = medium.Leetcode_Longest_Palindrome
+	debugFunc[64] = medium.Leetcode_Min_Path_Sum
 	debugFunc[71] = medium.Leetcode_Simplify_Path
 	debugFunc[106] = medium.Leetcode_Build_Trees
 	debugFunc[129] = medium.Leetcode_Sum_Numbers
 	debugFunc[211] = medium.Leetcode_Word_Dictionary
+	debugFunc[769] = medium.Leetcode_Max_Chunks_To_Sorted
 	debugFunc[875] = medium.Leetcode_Min_Eating_Speed
 	debugFunc[912] = medium.Leetcode_Sort_Array
 	debugFunc[958] = medium.Leetcode_Is_Complete_Tree
+	debugFunc[983] = medium.Leetcode_Min_Cost_Tickets
 	debugFunc[1162] = medium.Leetcode_Max_Distance
 	debugFunc[1319] = medium.Leetcode_Make_Connected
 	debugFunc[2348] = medium.Leetcode_Zero_Filled_Subarray
+	debugFunc[2390] = medium.Leetcode_Remove_Stars
 	debugFunc[2444] = medium.Leetcode_Count_Subarrays
 	debugFunc[2492] = medium.Leetcode_Min_Score
 	debugFunc[2579] = medium.Leetcode_Colored_Cells
@@ -53,7 +61,9 @@ func init() {
 	// Hard
 	debugFunc[4] = hard.Leetcode_Find_Median_Sorted_Arrays
 	debugFunc[768] = hard.Leetcode_Max_Chunks_To_Sorted_II
+	debugFunc[1402] = hard.Leetcode_Max_Satisfaction
 	debugFunc[1675] = hard.Leetcode_Minimum_Deviation
+	debugFunc[1944] = hard.Leetcode_Can_See_Persons_Count
 	debugFunc[2360] = hard.Leetcode_Longest_Cycle
 	// Other
 	debugFunc[585] = Leetcode_SQL
@@ -74,68 +84,6 @@ func Leetcode_Empty(problem int) {
 
 func Leetcode_SQL() {
 	fmt.Printf("This is SQL solution!\n")
-}
-
-func Leetcode_Min_Path_Sum() {
-	fmt.Println("Input: grid = [[1,3,1],[1,5,1],[4,2,1]]")
-	fmt.Println("Output:", minPathSum(utils.S2SoSliceInt("[[1,3,1],[1,5,1],[4,2,1]]")))
-	fmt.Println("Input: grid = [[1,2,3],[4,5,6]]")
-	fmt.Println("Output:", minPathSum(utils.S2SoSliceInt("[[1,2,3],[4,5,6]]")))
-}
-
-func Leetcode_Min_Cost_Tickets() {
-	fmt.Println("Input: days = [1,4,6,7,8,20], costs = [2,7,15]")
-	fmt.Println("Output:", mincostTickets([]int{1, 4, 6, 7, 8, 20}, []int{2, 7, 15}))
-	fmt.Println("Input: days = [1,2,3,4,5,6,7,8,9,10,30,31], costs = [2,7,15]")
-	fmt.Println("Output:", mincostTickets([]int{1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 30, 31}, []int{2, 7, 15}))
-}
-
-func Leetcode_Is_Alien_Sorted() {
-	fmt.Println("Input: words = ['hello','leetcode'], order = 'hlabcdefgijkmnopqrstuvwxyz'")
-	fmt.Println("Output:", isAlienSorted([]string{"hello", "leetcode"}, "hlabcdefgijkmnopqrstuvwxyz"))
-}
-
-func Leetcode_Is_Valid() {
-	fmt.Println("Input: s = '()[]{}'")
-	fmt.Println("Output:", isValid("()[]{}"))
-}
-
-func Leetcode_Gcd_Of_Strings() {
-	fmt.Println("Input: str1 = 'ABCABC', str2 = 'ABC")
-	fmt.Println("Output:", gcdOfStrings("ABCABC", "ABC"))
-}
-
-func Leetcode_Contains_Near_By_Duplicate() {
-	fmt.Println("Input: nums = [1,2,3,1,2,3], k = 2")
-	fmt.Println("Output:", containsNearbyDuplicate([]int{1, 2, 3, 1, 2, 3}, 2))
-}
-
-func Leetcode_Max_Satisfaction() {
-	fmt.Println("Input: satisfaction = [-1,-8,0,5,-9]")
-	fmt.Println("Output:", maxSatisfaction([]int{-1, -8, 0, 5, -9}))
-	fmt.Println("Input: satisfaction = [-1,-4,-5]")
-	fmt.Println("Output:", maxSatisfaction([]int{-1, -4, -5}))
-}
-
-func Leetcode_Remove_Stars() {
-	fmt.Println("Input: s = 'leet**cod*e'")
-	fmt.Println("Output:", removeStars("leet**cod*e"))
-	fmt.Println("Input: s = 'erase*****'")
-	fmt.Println("Output:", removeStars("erase*****"))
-}
-
-func Leetcode_Max_Chunks_To_Sorted() {
-	fmt.Println("Input: arr = [4,3,2,1,0]")
-	fmt.Println("Output:", maxChunksToSorted([]int{4, 3, 2, 1, 0}))
-	fmt.Println("Input: arr = [1,0,2,3,4]")
-	fmt.Println("Output:", maxChunksToSorted([]int{1, 0, 2, 3, 4}))
-}
-
-func Leetcode_Can_See_Persons_Count() {
-	fmt.Println("Input: heights = [10,6,8,5,11,9]")
-	fmt.Println("Output:", canSeePersonsCount([]int{10, 6, 8, 5, 11, 9}))
-	fmt.Println("Input: heights = [5,1,2,3,10]")
-	fmt.Println("Output:", canSeePersonsCount([]int{5, 1, 2, 3, 10}))
 }
 
 func Leetcode_Is_Scramble() {
