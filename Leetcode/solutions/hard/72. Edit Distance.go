@@ -1,6 +1,13 @@
-package solutions
+package hard
+
+import "fmt"
 
 // Reference: https://leetcode.com/problems/edit-distance/
+func Leetcode_Min_Distance() {
+	fmt.Println("Input: word1 = 'intention', word2 = 'execution'")
+	fmt.Println("Output:", minDistance("intention", "execution"))
+}
+
 func minDistance(word1 string, word2 string) int {
 	len1, len2 := len(word1)+1, len(word2)+1
 	table := make([][]int, len1)
