@@ -45,13 +45,6 @@ func Leetcode_Max_Distance() {
 	fmt.Println("Output:", maxDistance(utils.S2SoSliceInt("[[1,0,0],[0,0,0],[0,0,0]]")))
 }
 
-func Leetcode_Minimum_Deviation() {
-	fmt.Println("Input: nums = [1,2,3,4]")
-	fmt.Println("Output:", minimumDeviation([]int{1, 2, 3, 4}))
-	fmt.Println("Input: nums = [4,1,5,20,3]")
-	fmt.Println("Output:", minimumDeviation(utils.Slice(4, 1, 5, 20, 3)))
-}
-
 func Leetcode_Remove_Duplicates() {
 	fmt.Println("Input: nums = [0,0,1,1,1,2,2,3,3,4]")
 	fmt.Println("Output:", removeDuplicates([]int{0, 0, 1, 1, 1, 2, 2, 3, 3, 4}))
@@ -68,14 +61,6 @@ func Leetcode_Length_Of_Longest_Substring() {
 	fmt.Println()
 	fmt.Println("Input: s = 'abcdc'")
 	fmt.Println("Output:", lengthOfLongestSubstring("abcdc"))
-}
-
-func Leetcode_Count_Subarrays() {
-	fmt.Println("Input: nums = [1,3,5,2,7,5], minK = 1, maxK = 5")
-	fmt.Println("Output:", countSubarrays([]int{1, 3, 5, 2, 7, 5}, 1, 5))
-
-	fmt.Println("Input: nums = [1,1,1,1], minK = 1, maxK = 1")
-	fmt.Println("Output:", countSubarrays([]int{1, 1, 1, 1}, 1, 1))
 }
 
 func Leetcode_Colored_Cells() {
@@ -245,13 +230,6 @@ func Leetcode_Remove_Stars() {
 	fmt.Println("Output:", removeStars("leet**cod*e"))
 	fmt.Println("Input: s = 'erase*****'")
 	fmt.Println("Output:", removeStars("erase*****"))
-}
-
-func Leetcode_Max_Chunks_To_Sorted_II() {
-	fmt.Println("Input: arr = [4,2,2,1,1]")
-	fmt.Println("Output:", maxChunksToSorted_ii([]int{4, 2, 2, 1, 1}))
-	fmt.Println("Input: arr = [0,0,1,1,1]")
-	fmt.Println("Output:", maxChunksToSorted_ii([]int{0, 0, 1, 1, 1}))
 }
 
 func Leetcode_Max_Chunks_To_Sorted() {

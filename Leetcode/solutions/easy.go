@@ -581,23 +581,3 @@ func mergeArrays(nums1 [][]int, nums2 [][]int) [][]int {
 	sort.Slice(res, func(i, j int) bool { return res[i][0] < res[j][0] })
 	return res
 }
-
-// Reference: https://leetcode.com/problems/symmetric-tree/
-func isSymmetric(root *types.TreeNode) bool {
-	return isSymmetricCheck(root.Left, root.Right)
-}
-
-func isSymmetricCheck(left, right *types.TreeNode) bool {
-	if left == nil && right == nil {
-		return true
-	}
-
-	if (left == nil && right != nil) || (left != nil && right == nil) {
-		return false
-	}
-
-	if left.Val != right.Val {
-		return false
-	}
-	return isSymmetricCheck(left.Left, right.Right) && isSymmetricCheck(left.Right, right.Left)
-}

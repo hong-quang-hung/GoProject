@@ -1,82 +1,9 @@
 package solutions
 
 import (
-	"container/heap"
 	"math"
 	"sort"
 )
-
-// Reference: https://leetcode.com/problems/minimize-deviation-in-array/
-type minimumDeviationHeap []int
-
-func (h minimumDeviationHeap) Less(i, j int) bool { return h[i] > h[j] }
-func (h minimumDeviationHeap) Len() int           { return len(h) }
-func (h minimumDeviationHeap) Swap(i, j int)      { h[i], h[j] = h[j], h[i] }
-func (h minimumDeviationHeap) Empty() bool        { return len(h) == 0 }
-func (h *minimumDeviationHeap) Pop() interface{} {
-	r := (*h)[(*h).Len()-1]
-	*h = (*h)[0 : (*h).Len()-1]
-	return r
-}
-func (h *minimumDeviationHeap) Push(i interface{}) {
-	*h = append(*h, i.(int))
-}
-
-func minimumDeviation(nums []int) int {
-	set := new(minimumDeviationHeap)
-	minDev := math.MaxInt32
-	for _, num := range nums {
-		if num%2 == 1 {
-			num *= 2
-		}
-		minDev = min(minDev, num)
-		heap.Push(set, num)
-	}
-
-	res := math.MaxInt32
-	for !set.Empty() {
-		pop := heap.Pop(set).(int)
-		res = min(res, pop-minDev)
-		if pop%2 == 0 {
-			pop /= 2
-			minDev = min(minDev, pop)
-			heap.Push(set, pop)
-		} else {
-			break
-		}
-	}
-	return res
-}
-
-// Reference: https://leetcode.com/problems/count-subarrays-with-fixed-bounds/
-func countSubarrays(nums []int, minK int, maxK int) int64 {
-	var res int64
-	min, max, left := -1, -1, -1
-	for i := 0; i < len(nums); i++ {
-		if nums[i] < minK || nums[i] > maxK {
-			left = i
-		}
-		if nums[i] == maxK {
-			max = i
-		}
-		if nums[i] == minK {
-			min = i
-		}
-		if min == -1 || max == -1 {
-			continue
-		}
-		var minLeft int
-		if min > max {
-			minLeft = max
-		} else {
-			minLeft = min
-		}
-		if minLeft > left {
-			res += int64(minLeft - left)
-		}
-	}
-	return res
-}
 
 // Reference: https://leetcode.com/problems/median-of-two-sorted-arrays/
 func findMedianSortedArrays(nums1 []int, nums2 []int) float64 {
@@ -174,21 +101,6 @@ func maxSatisfaction(satisfaction []int) int {
 		max += total
 	}
 	return max
-}
-
-// Reference: https://leetcode.com/problems/max-chunks-to-make-sorted-ii/
-func maxChunksToSorted_ii(arr []int) int {
-	monotonic := []int{}
-	for _, a := range arr {
-		maxChunk := a
-		for len(monotonic) > 0 && monotonic[len(monotonic)-1] > a {
-			pop := monotonic[len(monotonic)-1]
-			monotonic = monotonic[:len(monotonic)-1]
-			maxChunk = max(maxChunk, pop)
-		}
-		monotonic = append(monotonic, maxChunk)
-	}
-	return len(monotonic)
 }
 
 // Reference: https://leetcode.com/problems/number-of-visible-people-in-a-queue/
