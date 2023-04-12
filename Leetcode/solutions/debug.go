@@ -26,27 +26,37 @@ func init() {
 	debugFunc[104] = easy.LeetCode_Max_Depth
 	debugFunc[121] = easy.LeetCode_Max_Profit
 	debugFunc[219] = easy.Leetcode_Contains_Near_By_Duplicate
+	debugFunc[704] = easy.Leetcode_Search
 	debugFunc[953] = easy.Leetcode_Is_Alien_Sorted
 	debugFunc[1071] = easy.Leetcode_Gcd_Of_Strings
 	debugFunc[1207] = easy.Leetcode_Unique_Occurrences
 	debugFunc[2586] = easy.Leetcode_Vowel_Strings
 	debugFunc[2595] = easy.Leetcode_Even_Odd_Bit
 	debugFunc[2600] = easy.Leetcode_K_Items_With_Maximum_Sum
+	debugFunc[2605] = easy.Leetcode_Min_Number
+	debugFunc[2609] = easy.Leetcode_Find_The_Longest_Balanced_Substring
 	// Medium
 	debugFunc[3] = medium.Leetcode_Length_Of_Longest_Substring
 	debugFunc[5] = medium.Leetcode_Longest_Palindrome
+	debugFunc[45] = medium.Leetcode_Jumb_Game_II
 	debugFunc[64] = medium.Leetcode_Min_Path_Sum
 	debugFunc[71] = medium.Leetcode_Simplify_Path
+	debugFunc[103] = medium.Leetcode_Zigzag_Level_Order
 	debugFunc[106] = medium.Leetcode_Build_Trees
 	debugFunc[129] = medium.Leetcode_Sum_Numbers
+	debugFunc[142] = medium.Leetcode_Detect_Cycle
 	debugFunc[211] = medium.Leetcode_Word_Dictionary
 	debugFunc[769] = medium.Leetcode_Max_Chunks_To_Sorted
+	debugFunc[881] = medium.Leetcode_Num_Rescue_Boats
 	debugFunc[875] = medium.Leetcode_Min_Eating_Speed
 	debugFunc[912] = medium.Leetcode_Sort_Array
 	debugFunc[958] = medium.Leetcode_Is_Complete_Tree
 	debugFunc[983] = medium.Leetcode_Min_Cost_Tickets
 	debugFunc[1162] = medium.Leetcode_Max_Distance
 	debugFunc[1319] = medium.Leetcode_Make_Connected
+	debugFunc[2145] = medium.Leetcode_Number_Of_Arrays
+	debugFunc[2300] = medium.Leetcode_Successful_Pairs
+	debugFunc[2316] = medium.Leetcode_Count_Pairs
 	debugFunc[2348] = medium.Leetcode_Zero_Filled_Subarray
 	debugFunc[2390] = medium.Leetcode_Remove_Stars
 	debugFunc[2444] = medium.Leetcode_Count_Subarrays
@@ -58,13 +68,19 @@ func init() {
 	debugFunc[2597] = medium.Leetcode_Beautiful_Subsets
 	debugFunc[2601] = medium.Leetcode_Prime_Sub_Operation
 	debugFunc[2602] = medium.Leetcode_Min_Operations
+	debugFunc[2606] = medium.Leetcode_Maximum_Cost_Substring
 	// Hard
 	debugFunc[4] = hard.Leetcode_Find_Median_Sorted_Arrays
+	debugFunc[32] = hard.Leetcode_Longest_Valid_Parentheses
+	debugFunc[87] = hard.Leetcode_Is_Scramble
 	debugFunc[768] = hard.Leetcode_Max_Chunks_To_Sorted_II
 	debugFunc[1402] = hard.Leetcode_Max_Satisfaction
+	debugFunc[1444] = hard.Leetcode_Ways
 	debugFunc[1675] = hard.Leetcode_Minimum_Deviation
 	debugFunc[1944] = hard.Leetcode_Can_See_Persons_Count
+	debugFunc[2306] = hard.Leetcode_Distinct_Names
 	debugFunc[2360] = hard.Leetcode_Longest_Cycle
+	debugFunc[2547] = hard.Leetcode_Min_Cost
 	// Other
 	debugFunc[585] = Leetcode_SQL
 	debugFunc[601] = Leetcode_SQL
@@ -86,114 +102,11 @@ func Leetcode_SQL() {
 	fmt.Printf("This is SQL solution!\n")
 }
 
-func Leetcode_Is_Scramble() {
-	fmt.Println("Input: s1 = 'great', s2 = 'rgeat'")
-	fmt.Println("Output:", isScramble("great", "rgeat"))
-	fmt.Println("Input: s1 = 'abcde', s2 = 'caebd'")
-	fmt.Println("Output:", isScramble("abcde", "caebd"))
-}
-
-func Leetcode_Number_Of_Arrays() {
-	fmt.Println("Input: differences = [1,-3,4], lower = 1, upper = 6")
-	fmt.Println("Output:", numberOfArrays([]int{1, -3, 4}, 1, 6))
-	fmt.Println("Input: differences = [3,-4,5,1,-2], lower = -4, upper = 5")
-	fmt.Println("Output:", numberOfArrays([]int{3, -4, 5, 1, -2}, -4, 5))
-}
-
-func Leetcode_Min_Cost() {
-	fmt.Println("Input: nums = [1,2,1,2,1], k = 2")
-	fmt.Println("Output:", minCost([]int{1, 2, 1, 2, 1}, 2))
-	fmt.Println("Input: nums = [1,2,1,2,1], k = 5")
-	fmt.Println("Output:", minCost([]int{1, 2, 1, 2, 1}, 5))
-}
-
-func Leetcode_Ways() {
-	fmt.Println("Input: pizza = ['A..','AAA,'...'], k = 3")
-	fmt.Println("Output:", ways([]string{"A..", "AAA", "..."}, 3))
-	fmt.Println("Input: pizza = ['A..','AA.,'...'], k = 3")
-	fmt.Println("Output:", ways([]string{"A..", "AA.", "..."}, 3))
-}
-
-func Leetcode_Search() {
-	fmt.Println("Input: nums = [-1,0,3,5,9,12], target = 9")
-	fmt.Println("Output:", search([]int{-1, 0, 3, 5, 9, 12}, 9))
-}
-
-func Leetcode_Zigzag_Level_Order() {
-	fmt.Println("Input: root = [3,9,20,null,null,15,7]")
-	fmt.Println("Output:", zigzagLevelOrder(types.LazyNodeAll(3, types.LazyNode(9), types.LazyNodeValue(20, 15, 7))))
-}
-
-func Leetcode_Min_Number() {
-	fmt.Println("Input: nums1 = [4,1,3], nums2 = [5,7]")
-	fmt.Println("Output:", minNumber([]int{1, 3}, []int{5, 7}))
-}
-
-func Leetcode_Maximum_Cost_Substring() {
-	fmt.Println("Input: s = 'adaa', chars = 'd', vals = [-1000]")
-	fmt.Println("Output:", maximumCostSubstring("adaa", "d", []int{-1000}))
-	fmt.Println("Input: s = 'abc', chars = 'abc', vals = [-1,-1,-1]")
-	fmt.Println("Output:", maximumCostSubstring("abc", "abc", []int{-1, -1, -1}))
-}
-
-func Leetcode_Find_The_Longest_Balanced_Substring() {
-	fmt.Println("Input: s = '01011'")
-	fmt.Println("Output:", findTheLongestBalancedSubstring("01011"))
-}
-
 func Leetcode_Find_Matrix() {
 	fmt.Println("Input: nums = [1,3,4,1,2,3,1]")
 	fmt.Println("Output:", findMatrix([]int{1, 3, 4, 1, 2, 3, 1}))
 	fmt.Println("Input: nums = [1,2,3,4]")
 	fmt.Println("Output:", findMatrix([]int{1, 2, 3, 4}))
-}
-
-func Leetcode_Longest_Valid_Parentheses() {
-	fmt.Println("Input: s = '(()'")
-	fmt.Println("Output:", longestValidParentheses("(()"))
-	fmt.Println("Input: s = ')()())'")
-	fmt.Println("Output:", longestValidParentheses(")()())"))
-}
-
-func Leetcode_Successful_Pairs() {
-	fmt.Println("Input: spells = [5,1,3], potions = [1,2,3,4,5], success = 7")
-	fmt.Println("Output:", successfulPairs([]int{5, 1, 3}, []int{1, 2, 3, 4, 5}, 7))
-	fmt.Println("Input: spells = [3,1,2], potions = [8,5,8], success = 16")
-	fmt.Println("Output:", successfulPairs([]int{3, 1, 2}, []int{8, 5, 8}, 16))
-}
-
-func Leetcode_Distinct_Names() {
-	fmt.Println("Input: ideas = ['coffee','donuts','time','toffee']")
-	fmt.Println("Output:", distinctNames([]string{"coffee", "donuts", "time", "toffee"}))
-	fmt.Println("Input: ideas = ['aaa','baa', 'caa', 'bbb', 'cbb', 'dbb']")
-	fmt.Println("Output:", distinctNames([]string{"aaa", "baa", "caa", "bbb", "cbb", "dbb"}))
-}
-
-func Leetcode_Jumb_Game_II() {
-	fmt.Println("Input: nums = [2,3,1,1,4]")
-	fmt.Println("Output:", jump_ii([]int{2, 3, 1, 1, 4}))
-	fmt.Println("Input: nums = [2,3,0,1,4]]")
-	fmt.Println("Output:", jump_ii([]int{2, 3, 0, 1, 4}))
-}
-
-func Leetcode_Num_Rescue_Boats() {
-	fmt.Println("Input: people = [3,2,3,2,2], limit = 6")
-	fmt.Println("Output:", numRescueBoats([]int{3, 2, 3, 2, 2}, 6))
-	fmt.Println("Input: people = [5,1,4,2], limit = 6")
-	fmt.Println("Output:", numRescueBoats([]int{5, 1, 4, 2}, 6))
-}
-
-func Leetcode_Count_Pairs() {
-	fmt.Println("Input: n = 7, edges = [[0,2],[0,5],[2,4],[1,6],[5,4]]")
-	fmt.Println("Output:", countPairs(7, utils.S2SoSliceInt("[[0,2],[0,5],[2,4],[1,6],[5,4]]")))
-}
-
-func Leetcode_Detect_Cycle() {
-	fmt.Println("Input: head = [3,2,0,-4], pos = 1")
-	node := types.NewListNode(3, 2, 0, -4)
-	pos := node.Next
-	node.Next.Next.Next = pos
-	fmt.Println("Output:", detectCycle(node))
 }
 
 func Leetcode_Shuffle() {

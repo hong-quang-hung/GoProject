@@ -9,53 +9,6 @@ import (
 	"leetcode.com/Leetcode/types"
 )
 
-// Reference: https://leetcode.com/problems/binary-search/
-func search(nums []int, target int) int {
-	l, r := 0, len(nums)-1
-	for l <= r {
-		m := (r + l) / 2
-		if nums[m] == target {
-			return m
-		} else if nums[m] > target {
-			r = m - 1
-		} else {
-			l = m + 1
-		}
-	}
-	return -1
-}
-
-// Reference: https://leetcode.com/problems/form-smallest-number-from-two-digit-arrays/
-func minNumber(nums1 []int, nums2 []int) int {
-	sort.Ints(nums1)
-	sort.Ints(nums2)
-
-	for i := range nums1 {
-		for j := range nums2 {
-			if nums1[i] == nums2[j] {
-				return nums1[i]
-			}
-		}
-	}
-	if nums1[0] < nums2[0] {
-		return nums1[0]*10 + nums2[0]
-	}
-	return nums2[0]*10 + nums1[0]
-}
-
-// Reference: https://leetcode.com/problems/find-the-longest-balanced-substring-of-a-binary-string/
-func findTheLongestBalancedSubstring(s string) int {
-	res := 0
-	temp := "01"
-	for len(temp) <= len(s) {
-		if strings.Contains(s, temp) {
-			res = len(temp)
-		}
-		temp = "0" + temp + "1"
-	}
-	return res
-}
-
 // Reference: https://leetcode.com/problems/shuffle-the-array/
 func shuffle(nums []int, n int) []int {
 	res := make([]int, 0, len(nums))
