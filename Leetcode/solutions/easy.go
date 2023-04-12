@@ -9,52 +9,6 @@ import (
 	"leetcode.com/Leetcode/types"
 )
 
-// Reference: https://leetcode.com/problems/length-of-last-word/
-func vowelStrings(words []string, left int, right int) int {
-	isVowel := func(c byte) bool {
-		return c == 'a' || c == 'e' || c == 'i' || c == 'u' || c == 'o'
-	}
-	var res int = 0
-	for i := left; i <= right; i++ {
-		w := words[i]
-		l := len(w)
-		if (l == 1 && isVowel(w[0])) || (isVowel(w[0]) && isVowel(w[l-1])) {
-			res++
-		}
-	}
-	return res
-}
-
-// Reference: https://leetcode.com/problems/find-the-index-of-the-first-occurrence-in-a-string/
-func strStr(haystack string, needle string) int {
-	for i := 0; i <= len(haystack)-len(needle); i++ {
-		if haystack[i] == needle[0] {
-			var j int = 1
-			for ; j < len(needle); j++ {
-				if haystack[i+j] != needle[j] {
-					break
-				}
-			}
-			if j == len(needle) {
-				return i
-			}
-		}
-	}
-	return -1
-}
-
-// Reference: https://leetcode.com/problems/remove-element/
-func removeElement(nums []int, val int) int {
-	var res int = 0
-	for _, num := range nums {
-		if num != val {
-			nums[res] = num
-			res++
-		}
-	}
-	return res
-}
-
 // Reference: https://leetcode.com/problems/number-of-even-and-odd-bits/
 func evenOddBit(n int) []int {
 	arr := []int{0, 0}

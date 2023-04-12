@@ -18,19 +18,29 @@ func init() {
 	debugFunc[1] = easy.Leetcode_Two_Sum
 	debugFunc[9] = easy.LeetCode_Is_Palindrome
 	debugFunc[26] = easy.Leetcode_Remove_Duplicates
+	debugFunc[27] = easy.Leetcode_Remove_Element
+	debugFunc[28] = easy.Leetcode_StrStr
 	debugFunc[58] = easy.Leetcode_Length_Of_Last_Word
 	debugFunc[101] = easy.Leetcode_Is_Symmetric
 	debugFunc[104] = easy.LeetCode_Max_Depth
 	debugFunc[121] = easy.LeetCode_Max_Profit
 	debugFunc[1207] = easy.Leetcode_Unique_Occurrences
+	debugFunc[2586] = easy.Leetcode_Vowel_Strings
 	// Medium
 	debugFunc[3] = medium.Leetcode_Length_Of_Longest_Substring
 	debugFunc[71] = medium.Leetcode_Simplify_Path
+	debugFunc[106] = medium.Leetcode_Build_Trees
+	debugFunc[129] = medium.Leetcode_Sum_Numbers
 	debugFunc[211] = medium.Leetcode_Word_Dictionary
+	debugFunc[875] = medium.Leetcode_Min_Eating_Speed
 	debugFunc[912] = medium.Leetcode_Sort_Array
+	debugFunc[958] = medium.Leetcode_Is_Complete_Tree
 	debugFunc[1162] = medium.Leetcode_Max_Distance
 	debugFunc[2444] = medium.Leetcode_Count_Subarrays
 	debugFunc[2579] = medium.Leetcode_Colored_Cells
+	debugFunc[2587] = medium.Leetcode_Max_Score
+	debugFunc[2588] = medium.Leetcode_Beautiful_Subarrays
+	debugFunc[2592] = medium.Leetcode_Maximize_Greatness
 	// Hard
 	debugFunc[4] = hard.Leetcode_Find_Median_Sorted_Arrays
 	debugFunc[768] = hard.Leetcode_Max_Chunks_To_Sorted_II
@@ -55,60 +65,6 @@ func Leetcode_Empty(problem int) {
 
 func Leetcode_SQL() {
 	fmt.Printf("This is SQL solution!\n")
-}
-
-func Leetcode_Min_Eating_Speed() {
-	fmt.Println("Input: piles = [3,6,7,11], h = 8")
-	fmt.Println("Output:", minEatingSpeed([]int{3, 6, 7, 11}, 8))
-	fmt.Println()
-	fmt.Println("Input: ppiles = [30,11,23,4,20], h = 6")
-	fmt.Println("Output:", minEatingSpeed([]int{30, 11, 23, 4, 20}, 6))
-}
-
-func Leetcode_Max_Score() {
-	fmt.Println("Input: nums = [2,-1,0,1,-3,3,-3]")
-	fmt.Println("Output:", maxScore([]int{2, -1, 0, 1, -3, 3, -3}))
-}
-
-func Leetcode_Vowel_Strings() {
-	fmt.Println("Input: words = ['hey', 'aeo', 'mu', 'ooo', 'artro'], left = 1, right = 4")
-	fmt.Println("Output:", vowelStrings([]string{"hey", "aeo", "mu", "ooo", "artro"}, 1, 4))
-}
-
-func Leetcode_Beautiful_Subarrays() {
-	fmt.Println("Input: nums = [4,3,1,2,4]")
-	fmt.Println("Output:", beautifulSubarrays([]int{4, 3, 1, 2, 4}))
-}
-
-func Leetcode_Sum_Numbers() {
-	fmt.Println("Input: root = [1,2,3]")
-	fmt.Println("Output:", sumNumbers(types.LazyNodeAll(1, types.LazyNode(2), types.LazyNode(3))))
-}
-
-func Leetcode_StrStr() {
-	fmt.Println("Input: haystack = \"sadbutsad\", needle = \"sad\"")
-	fmt.Println("Output:", strStr("sadbutsad", "sad"))
-}
-
-func Leetcode_Is_Complete_Tree() {
-	fmt.Println("Input: root = [1,2,3,5,null,7,8]")
-	fmt.Println("Output:", isCompleteTree(types.LazyNodeAll(1, types.LazyNodeAll(2, types.LazyNode(5), nil), types.LazyNodeValue(3, 7, 8))))
-}
-
-func Leetcode_Build_Trees() {
-	fmt.Println("Input: inorder = [9,3,15,20,7], postorder = [9,15,7,20,3]")
-	fmt.Println("Output:")
-	buildTree([]int{9, 3, 15, 20, 7}, []int{9, 15, 7, 20, 3}).Println()
-}
-
-func Leetcode_Remove_Element() {
-	fmt.Println("Input: nums = [3,2,2,3], val = 3")
-	fmt.Println("Output:", removeElement([]int{3, 2, 2, 3}, 3))
-}
-
-func Leetcode_Maximize_Greatness() {
-	fmt.Println("Input: nums = [42,8,75,28,35,21,13,21]")
-	fmt.Println("Output:", maximizeGreatness([]int{42, 8, 75, 28, 35, 21, 13, 21}))
 }
 
 func Leetcode_Even_Odd_Bit() {
