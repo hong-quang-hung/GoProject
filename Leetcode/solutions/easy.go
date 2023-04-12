@@ -9,31 +9,6 @@ import (
 	"leetcode.com/Leetcode/types"
 )
 
-// Reference: https://leetcode.com/problems/number-of-even-and-odd-bits/
-func evenOddBit(n int) []int {
-	arr := []int{0, 0}
-	var p int = 0
-	for n > 0 {
-		if n%2 == 1 {
-			arr[p%2]++
-		}
-		p++
-		n /= 2
-	}
-	return arr
-}
-
-// Reference: https://leetcode.com/problems/k-items-with-the-maximum-sum/
-func kItemsWithMaximumSum(numOnes int, numZeros int, numNegOnes int, k int) int {
-	if numOnes >= k {
-		return k
-	}
-	if numZeros >= k-numOnes {
-		return numOnes
-	}
-	return 2*numOnes - k + numZeros
-}
-
 // Reference: https://leetcode.com/problems/verifying-an-alien-dictionary/
 func isAlienSorted(words []string, order string) bool {
 	hash := make(map[byte]int)

@@ -26,8 +26,11 @@ func init() {
 	debugFunc[121] = easy.LeetCode_Max_Profit
 	debugFunc[1207] = easy.Leetcode_Unique_Occurrences
 	debugFunc[2586] = easy.Leetcode_Vowel_Strings
+	debugFunc[2595] = easy.Leetcode_Even_Odd_Bit
+	debugFunc[2600] = easy.Leetcode_K_Items_With_Maximum_Sum
 	// Medium
 	debugFunc[3] = medium.Leetcode_Length_Of_Longest_Substring
+	debugFunc[5] = medium.Leetcode_Longest_Palindrome
 	debugFunc[71] = medium.Leetcode_Simplify_Path
 	debugFunc[106] = medium.Leetcode_Build_Trees
 	debugFunc[129] = medium.Leetcode_Sum_Numbers
@@ -36,11 +39,17 @@ func init() {
 	debugFunc[912] = medium.Leetcode_Sort_Array
 	debugFunc[958] = medium.Leetcode_Is_Complete_Tree
 	debugFunc[1162] = medium.Leetcode_Max_Distance
+	debugFunc[1319] = medium.Leetcode_Make_Connected
+	debugFunc[2348] = medium.Leetcode_Zero_Filled_Subarray
 	debugFunc[2444] = medium.Leetcode_Count_Subarrays
+	debugFunc[2492] = medium.Leetcode_Min_Score
 	debugFunc[2579] = medium.Leetcode_Colored_Cells
 	debugFunc[2587] = medium.Leetcode_Max_Score
 	debugFunc[2588] = medium.Leetcode_Beautiful_Subarrays
 	debugFunc[2592] = medium.Leetcode_Maximize_Greatness
+	debugFunc[2597] = medium.Leetcode_Beautiful_Subsets
+	debugFunc[2601] = medium.Leetcode_Prime_Sub_Operation
+	debugFunc[2602] = medium.Leetcode_Min_Operations
 	// Hard
 	debugFunc[4] = hard.Leetcode_Find_Median_Sorted_Arrays
 	debugFunc[768] = hard.Leetcode_Max_Chunks_To_Sorted_II
@@ -65,51 +74,6 @@ func Leetcode_Empty(problem int) {
 
 func Leetcode_SQL() {
 	fmt.Printf("This is SQL solution!\n")
-}
-
-func Leetcode_Even_Odd_Bit() {
-	fmt.Println("Input: n = 11")
-	fmt.Println("Output:", evenOddBit(11))
-}
-
-func Leetcode_Beautiful_Subsets() {
-	fmt.Println("Input: nums = [10,4,5,7,2,1], k = 3")
-	fmt.Println("Output:", beautifulSubsets([]int{10, 4, 5, 7, 2, 1}, 3))
-}
-
-func Leetcode_Zero_Filled_Subarray() {
-	fmt.Println("Input: nums = [0,0,0,2,0,0]")
-	fmt.Println("Output:", zeroFilledSubarray([]int{0, 0, 0, 2, 0, 0}))
-}
-
-func Leetcode_Make_Connected() {
-	fmt.Println("Input: n = 4, connections = [[0,1],[0,2],[1,2]]")
-	fmt.Println("Output:", makeConnected(4, utils.S2SoSliceInt("[[0,1],[0,2],[1,2]]")))
-}
-
-func Leetcode_Min_Score() {
-	fmt.Println("Input: n = 4, roads = [[1,2,9],[2,3,6],[2,4,5],[1,4,7]]")
-	fmt.Println("Output:", minScore(4, utils.S2SoSliceInt("[[1,2,9],[2,3,6],[2,4,5],[1,4,7]]")))
-}
-
-func Leetcode_K_Items_With_Maximum_Sum() {
-	fmt.Println("Input: numOnes = 6, numZeros = 6, numNegOnes = 6, k = 13")
-	fmt.Println("Output:", kItemsWithMaximumSum(6, 6, 6, 13))
-}
-
-func Leetcode_Min_Operations() {
-	fmt.Println("Input: nums = [3,1,6,8], queries = [1,5]")
-	fmt.Println("Output:", minOperations([]int{3, 1, 6, 8}, []int{1, 5}))
-}
-
-func Leetcode_Prime_Sub_Operation() {
-	fmt.Println("Input: nums = [4,9,6,10]")
-	fmt.Println("Output:", primeSubOperation([]int{4, 9, 6, 10}))
-}
-
-func Leetcode_Longest_Palindrome() {
-	fmt.Println("Input: s = 'babad'")
-	fmt.Println("Output:", longestPalindrome("babad"))
 }
 
 func Leetcode_Min_Path_Sum() {
