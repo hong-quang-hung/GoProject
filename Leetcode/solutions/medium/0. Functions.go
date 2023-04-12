@@ -9,3 +9,7 @@ func min(a, b int) int {
 func max(a, b int) int {
 	return utils.MaxInt(a, b)
 }
+
+func manhattanDistance(p1, p2 []int) int {
+	return utils.ManhattanDistanceInt(p1, p2)
+}

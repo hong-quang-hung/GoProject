@@ -30,6 +30,6 @@ func Min(a, b int) int {
 	return b
 }
 
-func manhattanDistance(p1, p2 []int) int {
+func ManhattanDistance(p1, p2 []int) int {
 	return int(math.Abs(float64(p1[0]-p2[0]))) + int(math.Abs(float64(p1[1]-p2[1])))
 }
