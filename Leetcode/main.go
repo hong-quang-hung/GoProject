@@ -4,9 +4,7 @@ import (
 	"fmt"
 	"regexp"
 
-	"leetcode.com/Leetcode/solutions/easy"
-	"leetcode.com/Leetcode/solutions/hard"
-	"leetcode.com/Leetcode/solutions/medium"
+	"leetcode.com/Leetcode/solutions"
 	"leetcode.com/Leetcode/types"
 )
 
@@ -33,22 +31,7 @@ func PrintLine() {
 
 func LeetcodeDebug() {
 	fmt.Printf("Leetcode Debug Start...\n")
-	switch debugProblem {
-	case 71:
-		medium.Leetcode_Simplify_Path()
-	case 101:
-		easy.Leetcode_Is_Symmetric()
-	case 211:
-		medium.Leetcode_Word_Dictionary()
-	case 768:
-		hard.Leetcode_Max_Chunks_To_Sorted_II()
-	case 1675:
-		hard.Leetcode_Minimum_Deviation()
-	case 2444:
-		medium.Leetcode_Count_Subarrays()
-	default:
-		fmt.Printf("The problem %d hasn't been solved!\n", debugProblem)
-	}
+	solutions.Leetcode_Debug(debugProblem)
 	fmt.Printf("Leetcode Debug End.\n")
 }
 

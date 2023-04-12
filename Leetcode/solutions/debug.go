@@ -10,93 +10,51 @@ import (
 	"leetcode.com/Leetcode/utils"
 )
 
+var debugFunc map[int]func()
+
+func init() {
+	debugFunc = make(map[int]func())
+	// Easy
+	debugFunc[1] = easy.Leetcode_Two_Sum
+	debugFunc[9] = easy.LeetCode_Is_Palindrome
+	debugFunc[26] = easy.Leetcode_Remove_Duplicates
+	debugFunc[58] = easy.Leetcode_Length_Of_Last_Word
+	debugFunc[101] = easy.Leetcode_Is_Symmetric
+	debugFunc[104] = easy.LeetCode_Max_Depth
+	debugFunc[121] = easy.LeetCode_Max_Profit
+	debugFunc[1207] = easy.Leetcode_Unique_Occurrences
+	// Medium
+	debugFunc[3] = medium.Leetcode_Length_Of_Longest_Substring
+	debugFunc[71] = medium.Leetcode_Simplify_Path
+	debugFunc[211] = medium.Leetcode_Word_Dictionary
+	debugFunc[912] = medium.Leetcode_Sort_Array
+	debugFunc[1162] = medium.Leetcode_Max_Distance
+	debugFunc[2444] = medium.Leetcode_Count_Subarrays
+	debugFunc[2579] = medium.Leetcode_Colored_Cells
+	// Hard
+	debugFunc[4] = hard.Leetcode_Find_Median_Sorted_Arrays
+	debugFunc[768] = hard.Leetcode_Max_Chunks_To_Sorted_II
+	debugFunc[1675] = hard.Leetcode_Minimum_Deviation
+	debugFunc[2360] = hard.Leetcode_Longest_Cycle
+	// Other
+	debugFunc[585] = Leetcode_SQL
+	debugFunc[601] = Leetcode_SQL
+}
+
 func Leetcode_Debug(problem int) {
-	switch problem {
-	case 4:
-		hard.Leetcode_Find_Median_Sorted_Arrays()
-	case 71:
-		medium.Leetcode_Simplify_Path()
-	case 101:
-		easy.Leetcode_Is_Symmetric()
-	case 211:
-		medium.Leetcode_Word_Dictionary()
-	case 768:
-		hard.Leetcode_Max_Chunks_To_Sorted_II()
-	case 1675:
-		hard.Leetcode_Minimum_Deviation()
-	case 2360:
-		hard.Leetcode_Longest_Cycle()
-	case 2444:
-		medium.Leetcode_Count_Subarrays()
-	default:
-		fmt.Printf("The problem %d hasn't been solved!\n", problem)
+	if invoke, c := debugFunc[problem]; c {
+		invoke()
+	} else {
+		Leetcode_Empty(problem)
 	}
 }
 
-func Leetcode_Two_Sum() {
-	fmt.Println("Input: nums = [2,7,11,15], target = 9")
-	fmt.Println("Output:", twoSum([]int{2, 7, 11, 15}, 9))
+func Leetcode_Empty(problem int) {
+	fmt.Printf("The problem %d hasn't been solved yet!\n", problem)
 }
 
-func Leetcode_Unique_Occurrences() {
-	fmt.Println("Input: nums = [1,2,2,1,1,3]")
-	fmt.Println("Output:", uniqueOccurrences([]int{1, 2, 2, 1, 1, 3}))
-}
-
-func LeetCode_Max_Depth() {
-	var root *types.TreeNode
-
-	root = types.LazyNodeAll(3, types.LazyNode(9), types.LazyNodeValue(20, 15, 7))
-	fmt.Println("Input: root = [3,9,20,null,null,15,7]")
-	fmt.Println("Output:", maxDepth(root))
-	fmt.Println()
-
-	root = types.LazyNodeAll(1, nil, types.LazyNode(9))
-	fmt.Println("Input: root = [1,null,2]")
-	fmt.Println("Output:", maxDepth(root))
-}
-
-func LeetCode_Is_Palindrome() {
-	fmt.Println("Input: x = 0")
-	fmt.Println("Output:", isPalindrome(0))
-}
-
-func LeetCode_Max_Profit() {
-	fmt.Println("Input: x = [2, 1, 2, 1, 0, 1, 2]")
-	fmt.Println("Output:", maxProfit([]int{2, 1, 2, 1, 0, 1, 2}))
-}
-
-func Leetcode_Max_Distance() {
-	fmt.Println("Input: grid = [[1,0,0],[0,0,0],[0,0,0]]")
-	fmt.Println("Output:", maxDistance(utils.S2SoSliceInt("[[1,0,0],[0,0,0],[0,0,0]]")))
-}
-
-func Leetcode_Remove_Duplicates() {
-	fmt.Println("Input: nums = [0,0,1,1,1,2,2,3,3,4]")
-	fmt.Println("Output:", removeDuplicates([]int{0, 0, 1, 1, 1, 2, 2, 3, 3, 4}))
-}
-
-func Leetcode_Sort_Array() {
-	fmt.Println("Input: nums = [5,1,1,2,0,0]")
-	fmt.Println("Output:", fmt.Sprint(sortArray([]int{5, 1, 1, 2, 0, 0})))
-}
-
-func Leetcode_Length_Of_Longest_Substring() {
-	fmt.Println("Input: s = 'abcabcbb'")
-	fmt.Println("Output:", lengthOfLongestSubstring("abcabcbb"))
-	fmt.Println()
-	fmt.Println("Input: s = 'abcdc'")
-	fmt.Println("Output:", lengthOfLongestSubstring("abcdc"))
-}
-
-func Leetcode_Colored_Cells() {
-	fmt.Println("Input: n = 1")
-	fmt.Println("Output:", coloredCells(1))
-}
-
-func Leetcode_Length_Of_Last_Word() {
-	fmt.Println("Input: s = '   fly me   to   the moon  '")
-	fmt.Println("Output:", lengthOfLastWord("   fly me   to   the moon  "))
+func Leetcode_SQL() {
+	fmt.Printf("This is SQL solution!\n")
 }
 
 func Leetcode_Min_Eating_Speed() {
