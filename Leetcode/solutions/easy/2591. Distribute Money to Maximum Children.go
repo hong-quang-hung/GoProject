@@ -4,7 +4,7 @@ import (
 	"fmt"
 )
 
-// Reference: https://leetcode.com/problems/add-two-numbers/
+// Reference: https://leetcode.com/problems/distribute-money-to-maximum-children/
 func Leetcode_Dist_Money() {
 	fmt.Println("Input: money = 20, children = 3")
 	fmt.Println("Output:", distMoney(20, 3))

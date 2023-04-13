@@ -6,7 +6,7 @@ import (
 	"leetcode.com/Leetcode/types"
 )
 
-// Reference: https://leetcode.com/problems/add-two-numbers/
+// Reference: https://leetcode.com/problems/merge-k-sorted-lists/
 func Leetcode_Merge_K_Lists() {
 	fmt.Println("Input: lists = [[1,4,5],[1,3,4],[2,6]]")
 	fmt.Println("Output:", mergeKLists([]*types.ListNode{types.NewListNode(1, 4, 5), types.NewListNode(1, 3, 4), types.NewListNode(2, 6)}))

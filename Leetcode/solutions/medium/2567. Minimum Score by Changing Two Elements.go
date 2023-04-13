@@ -5,7 +5,7 @@ import (
 	"sort"
 )
 
-// Reference: https://leetcode.com/problems/add-two-numbers/
+// Reference: https://leetcode.com/problems/minimum-score-by-changing-two-elements/
 func Leetcode_Minimize_Sum() {
 	fmt.Println("Input: nums = [1,4,3]")
 	fmt.Println("Output:", minimizeSum([]int{1, 4, 3}))

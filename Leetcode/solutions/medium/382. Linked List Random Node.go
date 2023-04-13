@@ -8,7 +8,7 @@ import (
 	"leetcode.com/Leetcode/types"
 )
 
-// Reference: https://leetcode.com/problems/add-two-numbers/
+// Reference: https://leetcode.com/problems/linked-list-random-node/
 func Leetcode_Constructor() {
 	fmt.Println("['Solution', 'getRandom', 'getRandom', 'getRandom', 'getRandom', 'getRandom']")
 	fmt.Println("[[[1, 2, 3]], [], [], [], [], []]")

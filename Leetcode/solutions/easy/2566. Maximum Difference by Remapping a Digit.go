@@ -6,7 +6,7 @@ import (
 	"strings"
 )
 
-// Reference: https://leetcode.com/problems/add-two-numbers/
+// Reference: https://leetcode.com/problems/maximum-difference-by-remapping-a-digit/
 func Leetcode_Min_Max_Difference() {
 	fmt.Println("Input: num = 11891")
 	fmt.Println("Output:", minMaxDifference(11891))

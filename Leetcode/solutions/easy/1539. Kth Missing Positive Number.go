@@ -4,7 +4,7 @@ import (
 	"fmt"
 )
 
-// Reference: https://leetcode.com/problems/add-two-numbers/
+// Reference: https://leetcode.com/problems/kth-missing-positive-number/
 func Leetcode_Find_Kth_Positive() {
 	fmt.Println("Input: arr = [2,3,4,7,11], k = 5")
 	fmt.Println("Output:", findKthPositive([]int{2, 3, 4, 7, 11}, 5))

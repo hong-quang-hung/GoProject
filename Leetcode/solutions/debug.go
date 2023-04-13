@@ -95,6 +95,7 @@ func init() {
 	debugFunc[2477] = medium.Leetcode_Minimum_Fuel_Cost
 	debugFunc[2492] = medium.Leetcode_Min_Score
 	debugFunc[2567] = medium.Leetcode_Minimize_Sum
+	debugFunc[2571] = medium.Leetcode_Min_Operations
 	debugFunc[2575] = medium.Leetcode_Divisibility_Array
 	debugFunc[2576] = medium.Leetcode_Max_Num_Of_Marked_Indices
 	debugFunc[2579] = medium.Leetcode_Colored_Cells
@@ -106,7 +107,7 @@ func init() {
 	debugFunc[2596] = medium.Leetcode_Check_Valid_Grid
 	debugFunc[2597] = medium.Leetcode_Beautiful_Subsets
 	debugFunc[2601] = medium.Leetcode_Prime_Sub_Operation
-	debugFunc[2602] = medium.Leetcode_Min_Operations
+	debugFunc[2602] = medium.Leetcode_Min_Operations_I
 	debugFunc[2606] = medium.Leetcode_Maximum_Cost_Substring
 	debugFunc[2610] = medium.Leetcode_Find_Matrix
 	// Hard

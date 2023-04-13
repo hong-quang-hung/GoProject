@@ -7,12 +7,12 @@ import (
 )
 
 // Reference: https://leetcode.com/problems/minimum-operations-to-make-all-array-elements-equal/
-func Leetcode_Min_Operations() {
+func Leetcode_Min_Operations_I() {
 	fmt.Println("Input: nums = [3,1,6,8], queries = [1,5]")
-	fmt.Println("Output:", minOperations([]int{3, 1, 6, 8}, []int{1, 5}))
+	fmt.Println("Output:", minOperations_i([]int{3, 1, 6, 8}, []int{1, 5}))
 }
 
-func minOperations(nums []int, queries []int) []int64 {
+func minOperations_i(nums []int, queries []int) []int64 {
 	var n int = len(nums)
 	res := make([]int64, len(queries))
 	sumIndex := make([]int64, n)
