@@ -70,6 +70,7 @@ func init() {
 	debugFunc[382] = medium.Leetcode_Constructor
 	debugFunc[427] = medium.Leetcode_Construct
 	debugFunc[443] = medium.Leetcode_Compress
+	debugFunc[540] = medium.Leetcode_Single_Non_Duplicate
 	debugFunc[567] = medium.Leetcode_Check_Inclusion
 	debugFunc[652] = medium.Leetcode_Find_Duplicate_Subtrees
 	debugFunc[769] = medium.Leetcode_Max_Chunks_To_Sorted
