@@ -48,6 +48,7 @@ func init() {
 	debugFunc[2605] = easy.Leetcode_Min_Number
 	debugFunc[2609] = easy.Leetcode_Find_The_Longest_Balanced_Substring
 	// Medium
+	debugFunc[2] = medium.Leetcode_Add_Two_Numbers
 	debugFunc[3] = medium.Leetcode_Length_Of_Longest_Substring
 	debugFunc[5] = medium.Leetcode_Longest_Palindrome
 	debugFunc[45] = medium.Leetcode_Jumb_Game_II
@@ -61,6 +62,7 @@ func init() {
 	debugFunc[211] = medium.Leetcode_Word_Dictionary
 	debugFunc[299] = medium.Leetcode_Get_Hint
 	debugFunc[427] = medium.Leetcode_Construct
+	debugFunc[443] = medium.Leetcode_Compress
 	debugFunc[567] = medium.Leetcode_Check_Inclusion
 	debugFunc[652] = medium.Leetcode_Find_Duplicate_Subtrees
 	debugFunc[769] = medium.Leetcode_Max_Chunks_To_Sorted
