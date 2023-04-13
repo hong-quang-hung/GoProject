@@ -37,6 +37,7 @@ func init() {
 	debugFunc[989] = easy.Leetcode_Add_To_Array_Form
 	debugFunc[1047] = easy.Leetcode_Remove_Adjacent_Duplicates
 	debugFunc[1071] = easy.Leetcode_Gcd_Of_Strings
+	debugFunc[1137] = easy.Leetcode_Tribonacci
 	debugFunc[1207] = easy.Leetcode_Unique_Occurrences
 	debugFunc[1470] = easy.Leetcode_Shuffle
 	debugFunc[1539] = easy.Leetcode_Find_Kth_Positive
