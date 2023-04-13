@@ -43,10 +43,10 @@ func (L *Leetcode) PickProblem() int {
 		return -1
 	}
 
-	rand.Seed(time.Now().UnixNano())
+	rand.NewSource(time.Now().UnixNano())
 	random := rand.Intn(L.total)
 	for L.IsSolved(random) {
-		rand.Seed(time.Now().UnixNano())
+		rand.NewSource(time.Now().UnixNano())
 		random = rand.Intn(L.total)
 	}
 	return random + 1
@@ -57,7 +57,7 @@ func (L *Leetcode) GetSolved() int {
 		return -1
 	}
 
-	rand.Seed(time.Now().UnixNano())
+	rand.NewSource(time.Now().UnixNano())
 	random := rand.Intn(L.Solved())
 	return L.solved[random]
 }
@@ -74,7 +74,7 @@ func (L *Leetcode) PickSolution() int {
 		}
 	}
 
-	rand.Seed(time.Now().UnixNano())
+	rand.NewSource(time.Now().UnixNano())
 	random := rand.Intn(len(notSubmit))
 	return notSubmit[random]
 }
