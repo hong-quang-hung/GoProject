@@ -92,6 +92,7 @@ func init() {
 	debugFunc[2444] = medium.Leetcode_Count_Subarrays
 	debugFunc[2477] = medium.Leetcode_Minimum_Fuel_Cost
 	debugFunc[2492] = medium.Leetcode_Min_Score
+	debugFunc[2567] = medium.Leetcode_Minimize_Sum
 	debugFunc[2575] = medium.Leetcode_Divisibility_Array
 	debugFunc[2576] = medium.Leetcode_Max_Num_Of_Marked_Indices
 	debugFunc[2579] = medium.Leetcode_Colored_Cells
