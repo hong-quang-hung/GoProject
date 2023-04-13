@@ -39,10 +39,12 @@ func init() {
 	debugFunc[1071] = easy.Leetcode_Gcd_Of_Strings
 	debugFunc[1207] = easy.Leetcode_Unique_Occurrences
 	debugFunc[1470] = easy.Leetcode_Shuffle
+	debugFunc[2566] = easy.Leetcode_Min_Max_Difference
 	debugFunc[2570] = easy.Leetcode_Merge_Arrays
 	debugFunc[2574] = easy.Leetcode_Left_Rigth_Difference
 	debugFunc[2578] = easy.Leetcode_Split_Num
 	debugFunc[2586] = easy.Leetcode_Vowel_Strings
+	debugFunc[2591] = easy.Leetcode_Dist_Money
 	debugFunc[2595] = easy.Leetcode_Even_Odd_Bit
 	debugFunc[2600] = easy.Leetcode_K_Items_With_Maximum_Sum
 	debugFunc[2605] = easy.Leetcode_Min_Number
