@@ -54,6 +54,7 @@ func init() {
 	debugFunc[2] = medium.Leetcode_Add_Two_Numbers
 	debugFunc[3] = medium.Leetcode_Length_Of_Longest_Substring
 	debugFunc[5] = medium.Leetcode_Longest_Palindrome
+	debugFunc[15] = medium.Leetcode_Three_Sum
 	debugFunc[45] = medium.Leetcode_Jumb_Game_II
 	debugFunc[64] = medium.Leetcode_Min_Path_Sum
 	debugFunc[71] = medium.Leetcode_Simplify_Path
