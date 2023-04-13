@@ -108,6 +108,7 @@ func init() {
 	debugFunc[72] = hard.Leetcode_Min_Distance
 	debugFunc[87] = hard.Leetcode_Is_Scramble
 	debugFunc[768] = hard.Leetcode_Max_Chunks_To_Sorted_II
+	debugFunc[1345] = hard.Leetcode_Min_Jumps
 	debugFunc[1402] = hard.Leetcode_Max_Satisfaction
 	debugFunc[1444] = hard.Leetcode_Ways
 	debugFunc[1675] = hard.Leetcode_Minimum_Deviation
