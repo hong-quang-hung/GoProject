@@ -78,6 +78,7 @@ func init() {
 	debugFunc[881] = medium.Leetcode_Num_Rescue_Boats
 	debugFunc[875] = medium.Leetcode_Min_Eating_Speed
 	debugFunc[912] = medium.Leetcode_Sort_Array
+	debugFunc[946] = medium.Leetcode_Validate_Stack_Sequences
 	debugFunc[958] = medium.Leetcode_Is_Complete_Tree
 	debugFunc[983] = medium.Leetcode_Min_Cost_Tickets
 	debugFunc[1011] = medium.Leetcode_Ship_Within_Days

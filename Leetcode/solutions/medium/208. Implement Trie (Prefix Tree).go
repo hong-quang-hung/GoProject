@@ -10,6 +10,7 @@ import (
 func Leetcode_Trie_Constructor() {
 	fmt.Println("Input: ['Trie', 'insert', 'search', 'search', 'startsWith', 'insert', 'search']")
 	fmt.Println("       [[], ['apple'], ['apple'], ['app'], ['app'], ['app'], ['app']]")
+	fmt.Println("Output:")
 
 	trie := TrieConstructor()
 	trie.Insert("apple")
