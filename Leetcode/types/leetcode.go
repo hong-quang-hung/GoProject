@@ -46,7 +46,6 @@ func (L *Leetcode) PickProblem() int {
 	rand.NewSource(time.Now().UnixNano())
 	random := rand.Intn(L.total)
 	for L.IsSolved(random) {
-		rand.NewSource(time.Now().UnixNano())
 		random = rand.Intn(L.total)
 	}
 	return random + 1

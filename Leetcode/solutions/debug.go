@@ -39,6 +39,7 @@ func init() {
 	debugFunc[1071] = easy.Leetcode_Gcd_Of_Strings
 	debugFunc[1207] = easy.Leetcode_Unique_Occurrences
 	debugFunc[1470] = easy.Leetcode_Shuffle
+	debugFunc[1539] = easy.Leetcode_Find_Kth_Positive
 	debugFunc[2566] = easy.Leetcode_Min_Max_Difference
 	debugFunc[2570] = easy.Leetcode_Merge_Arrays
 	debugFunc[2574] = easy.Leetcode_Left_Rigth_Difference
@@ -110,6 +111,7 @@ func init() {
 	debugFunc[2610] = medium.Leetcode_Find_Matrix
 	// Hard
 	debugFunc[4] = hard.Leetcode_Find_Median_Sorted_Arrays
+	debugFunc[23] = hard.Leetcode_Merge_K_Lists
 	debugFunc[32] = hard.Leetcode_Longest_Valid_Parentheses
 	debugFunc[72] = hard.Leetcode_Min_Distance
 	debugFunc[87] = hard.Leetcode_Is_Scramble
