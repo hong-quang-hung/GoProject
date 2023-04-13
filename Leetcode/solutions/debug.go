@@ -45,6 +45,7 @@ func init() {
 	debugFunc[2570] = easy.Leetcode_Merge_Arrays
 	debugFunc[2574] = easy.Leetcode_Left_Rigth_Difference
 	debugFunc[2578] = easy.Leetcode_Split_Num
+	debugFunc[2582] = easy.Leetcode_Pass_The_Pillow
 	debugFunc[2586] = easy.Leetcode_Vowel_Strings
 	debugFunc[2591] = easy.Leetcode_Dist_Money
 	debugFunc[2595] = easy.Leetcode_Even_Odd_Bit
@@ -132,6 +133,7 @@ func init() {
 	// Other
 	debugFunc[585] = Leetcode_SQL
 	debugFunc[601] = Leetcode_SQL
+	//Contest
 }
 
 func Leetcode_Debug(problem int) {
