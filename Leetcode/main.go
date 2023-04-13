@@ -12,7 +12,7 @@ var _PROBLEM_DEBUG_ int
 var _PROBLEM_TOTAL_ int
 
 func init() {
-	_PROBLEM_DEBUG_ = 540
+	_PROBLEM_DEBUG_ = 208
 	_PROBLEM_TOTAL_ = 2638
 }
 

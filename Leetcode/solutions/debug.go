@@ -65,6 +65,7 @@ func init() {
 	debugFunc[129] = medium.Leetcode_Sum_Numbers
 	debugFunc[133] = medium.Leetcode_Clone_Graph
 	debugFunc[142] = medium.Leetcode_Detect_Cycle
+	debugFunc[208] = medium.Leetcode_Trie_Constructor
 	debugFunc[211] = medium.Leetcode_Word_Dictionary
 	debugFunc[299] = medium.Leetcode_Get_Hint
 	debugFunc[382] = medium.Leetcode_Constructor
