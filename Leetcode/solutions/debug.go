@@ -62,6 +62,7 @@ func init() {
 	debugFunc[71] = medium.Leetcode_Simplify_Path
 	debugFunc[103] = medium.Leetcode_Zigzag_Level_Order
 	debugFunc[106] = medium.Leetcode_Build_Trees
+	debugFunc[109] = medium.Leetcode_Sorted_List_To_BST
 	debugFunc[129] = medium.Leetcode_Sum_Numbers
 	debugFunc[133] = medium.Leetcode_Clone_Graph
 	debugFunc[142] = medium.Leetcode_Detect_Cycle
