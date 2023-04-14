@@ -2,8 +2,6 @@ package medium
 
 import (
 	"fmt"
-
-	"leetcode.com/Leetcode/types"
 )
 
 // Reference: https://leetcode.com/problems/implement-trie-prefix-tree/
@@ -21,32 +19,63 @@ func Leetcode_Trie_Constructor() {
 	fmt.Println("trie.Search('app')", trie.Search("app"))
 }
 
-type Trie struct {
-	suffixes [26]*types.TrieNode
+type TrieNode struct {
+	suffixes [26]*TrieNode
 	Tail     bool
 }
 
-func (t *Trie) get(char byte) *types.TreeNode {
-	return nil
+func (tr *TrieNode) get(ch byte) *TrieNode {
+	return tr.suffixes[ch-'a']
 }
 
-func (t *Trie) set(char byte, value *types.TrieNode) {
-	t.suffixes[char-'a'] = value
+func (tr *TrieNode) set(ch byte, value *TrieNode) {
+	tr.suffixes[ch-'a'] = value
+}
+
+type Trie struct {
+	root *TrieNode
+}
+
+func (t *Trie) init() {
+	t.root = new(TrieNode)
 }
 
 func TrieConstructor() Trie {
-	trie := Trie{Tail: false}
+	trie := Trie{}
+	trie.init()
 	return trie
 }
 
 func (t *Trie) Insert(word string) {
-
+	current := t.root
+	for i := range word {
+		if current.get(word[i]) == nil {
+			current.set(word[i], new(TrieNode))
+		}
+		current = current.get(word[i])
+	}
+	current.Tail = true
 }
 
 func (t *Trie) Search(word string) bool {
+	node := t.ToTail(word)
+	if node != nil {
+		return node.Tail
+	}
 	return false
 }
 
 func (t *Trie) StartsWith(prefix string) bool {
-	return false
+	return t.ToTail(prefix) != nil
+}
+
+func (t *Trie) ToTail(prefix string) *TrieNode {
+	current := t.root
+	for i := range prefix {
+		current = current.get(prefix[i])
+		if current == nil {
+			return current
+		}
+	}
+	return current
 }
