@@ -88,6 +88,7 @@ func init() {
 	debugFunc[1254] = medium.Leetcode_Closed_Island
 	debugFunc[1319] = medium.Leetcode_Make_Connected
 	debugFunc[1466] = medium.Leetcode_Min_Reorder
+	debugFunc[1472] = medium.Leetcode_Design_Browser_History
 	debugFunc[1584] = medium.Leetcode_minCost_Connect_Points
 	debugFunc[1954] = medium.Leetcode_Minimum_Perimeter
 	debugFunc[2145] = medium.Leetcode_Number_Of_Arrays

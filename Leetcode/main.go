@@ -12,7 +12,7 @@ var _PROBLEM_DEBUG_ int
 var _PROBLEM_TOTAL_ int
 
 func init() {
-	_PROBLEM_DEBUG_ = 208
+	_PROBLEM_DEBUG_ = 1472
 	_PROBLEM_TOTAL_ = 2638
 }
 
@@ -46,11 +46,11 @@ func LeetcodeInfomation() {
 	Leetcode.SetSubmit(1, 3, 4, 5, 2601, 27, 768, 769, 1944, 2145, 601, 20, 704, 2605, 2606, 2610, 32, 2609, 2300, 2306, 45, 2547, 881, 1954, 925, 2405, 1584, 2439, 1254, 2574, 103, 2575, 20, 13)
 	Leetcode.SetSubmit(112, 64, 2439, 2578, 87, 704, 45, 2602, 35, 2586, 76, 1020, 226, 2596, 2492, 652, 1523, 9, 2610, 58, 1319, 783, 28, 133, 567, 2316, 2587, 2576, 2597, 129, 1047, 1470, 1466)
 	Leetcode.SetSubmit(2586, 2567, 605, 299, 989, 2187, 427, 1207, 2390, 2570, 1444, 2588, 2477, 67, 101, 1162, 2580, 2600, 211, 958, 71, 1345, 2583, 21, 106, 585, 2592, 1071, 443, 2, 2591, 2566)
-	Leetcode.SetSubmit(121, 72, 382, 104, 875, 23, 1539, 2444, 219, 912, 2571, 983, 2360, 1857, 1011, 15, 1137, 953, 2582, 1129, 540, 946)
+	Leetcode.SetSubmit(121, 72, 382, 104, 875, 23, 1539, 2444, 219, 912, 2571, 983, 2360, 1857, 1011, 15, 1137, 953, 2582, 1129, 540, 946, 208, 1402, 1472)
 
 	fmt.Println("There are", Leetcode.Solved(), "/", Leetcode.Total(), "problem(s) has been solved in Leetcode.", "Golang is", Leetcode.Submit(), "submit(s).")
 	// fmt.Println("Today, Number of Leetcode Problem is:", Leetcode.PickProblem())
-	fmt.Println("Problem is", Leetcode.PickSolution(), "hasn't been submit.")
+	// fmt.Println("Problem is", Leetcode.PickSolution(), "hasn't been submit.")
 }
 
 func TestRegexGolang() {
