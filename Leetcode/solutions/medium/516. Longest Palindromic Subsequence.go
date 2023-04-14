@@ -5,7 +5,7 @@ import (
 )
 
 // Reference: https://leetcode.com/problems/longest-palindromic-subsequence/
-func Leetcode_Find_Maximized_Capital() {
+func Leetcode_Longest_Palindrome_Subseq() {
 	fmt.Println("Input: s = 'bbbab'")
 	fmt.Println("Output:", longestPalindromeSubseq("bbbab"))
 	fmt.Println("Input: s = 'abcabcabcabc'")
@@ -15,31 +15,18 @@ func Leetcode_Find_Maximized_Capital() {
 }
 
 func longestPalindromeSubseq(s string) int {
-	n, maxDup := len(s), 0
-	m := make(map[byte]int)
-	for i := range s {
-		m[s[i]]++
-		if maxDup < m[s[i]] {
-			maxDup = m[s[i]]
+	n := len(s)
+	dp, dpPrev := make([]int, n), make([]int, n)
+	for i := n - 1; i >= 0; i-- {
+		dp[i] = 1
+		for j := i + 1; j < n; j++ {
+			if s[i] == s[j] {
+				dp[j] = dpPrev[j-1] + 2
+			} else {
+				dp[j] = max(dpPrev[j], dp[j-1])
+			}
 		}
+		copy(dpPrev, dp)
 	}
-
-	dp := make([][]int, n)
-	for i := 1; i < n; i++ {
-		dp[i] = make([]int, n)
-	}
-	return maxDup
-}
-
-func isPalindromeSubseq(s string, n int) bool {
-	for i := 0; i < n/2; i++ {
-		if s[i] != s[n-i-1] {
-			return false
-		}
-	}
-	return true
-}
-
-func delChar(s []rune, index int) []rune {
-	return append(s[0:index], s[index+1:]...)
+	return dp[n-1]
 }

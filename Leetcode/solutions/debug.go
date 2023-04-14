@@ -73,7 +73,7 @@ func init() {
 	debugFunc[382] = medium.Leetcode_Constructor
 	debugFunc[427] = medium.Leetcode_Construct
 	debugFunc[443] = medium.Leetcode_Compress
-	debugFunc[516] = medium.Leetcode_Find_Maximized_Capital
+	debugFunc[516] = medium.Leetcode_Longest_Palindrome_Subseq
 	debugFunc[540] = medium.Leetcode_Single_Non_Duplicate
 	debugFunc[567] = medium.Leetcode_Check_Inclusion
 	debugFunc[652] = medium.Leetcode_Find_Duplicate_Subtrees
