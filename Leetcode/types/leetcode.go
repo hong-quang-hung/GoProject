@@ -73,6 +73,10 @@ func (L *Leetcode) PickSolution() int {
 		}
 	}
 
+	if len(notSubmit) == 0 {
+		return -1
+	}
+
 	rand.NewSource(time.Now().UnixNano())
 	random := rand.Intn(len(notSubmit))
 	return notSubmit[random]

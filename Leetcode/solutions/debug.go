@@ -15,6 +15,7 @@ func init() {
 	// Easy
 	debugFunc[1] = easy.Leetcode_Two_Sum
 	debugFunc[9] = easy.LeetCode_Is_Palindrome
+	debugFunc[14] = easy.Leetcode_Longest_Common_Prefix
 	debugFunc[20] = easy.Leetcode_Is_Valid
 	debugFunc[21] = easy.Leetcode_Merge_Two_Lists
 	debugFunc[26] = easy.Leetcode_Remove_Duplicates
