@@ -3,9 +3,18 @@ package types
 import "container/heap"
 
 type Item struct {
-	value    string
+	value    int
 	priority int
 	index    int
+}
+
+func (i *Item) Init(value, priority int) {
+	i.value = value
+	i.priority = priority
+}
+
+func (i *Item) Value() int {
+	return i.value
 }
 
 // Reference: https://pkg.go.dev/container/heap@go1.20.1#example-package-PriorityQueue
@@ -40,7 +49,7 @@ func (pq *PriorityQueue) Pop() any {
 	return item
 }
 
-func (pq *PriorityQueue) Update(item *Item, value string, priority int) {
+func (pq *PriorityQueue) Update(item *Item, value int, priority int) {
 	item.value = value
 	item.priority = priority
 	heap.Fix(pq, item.index)

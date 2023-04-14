@@ -126,6 +126,7 @@ func init() {
 	debugFunc[32] = hard.Leetcode_Longest_Valid_Parentheses
 	debugFunc[72] = hard.Leetcode_Min_Distance
 	debugFunc[87] = hard.Leetcode_Is_Scramble
+	debugFunc[502] = hard.Leetcode_Find_Maximized_Capital
 	debugFunc[768] = hard.Leetcode_Max_Chunks_To_Sorted_II
 	debugFunc[1345] = hard.Leetcode_Min_Jumps
 	debugFunc[1402] = hard.Leetcode_Max_Satisfaction
