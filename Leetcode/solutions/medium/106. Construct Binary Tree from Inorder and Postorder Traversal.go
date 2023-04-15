@@ -9,8 +9,8 @@ import (
 // Reference: https://leetcode.com/problems/construct-binary-tree-from-inorder-and-postorder-traversal/
 func Leetcode_Build_Trees() {
 	fmt.Println("Input: inorder = [9,3,15,20,7], postorder = [9,15,7,20,3]")
-	fmt.Println("Output:")
-	buildTree([]int{9, 3, 15, 20, 7}, []int{9, 15, 7, 20, 3}).Println()
+	fmt.Println("Output:", buildTree([]int{9, 3, 15, 20, 7}, []int{9, 15, 7, 20, 3}).Sprint())
+
 }
 
 func buildTree(inorder []int, postorder []int) *types.TreeNode {

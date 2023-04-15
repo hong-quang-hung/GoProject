@@ -6,7 +6,7 @@ import (
 	"leetcode.com/Leetcode/utils"
 )
 
-// Reference:
+// Reference: https://leetcode.com/problems/find-the-width-of-columns-of-a-grid/
 func Leetcode_Find_Prefix_Score() {
 	fmt.Println("Input: nums = [2,3,7,5,10]")
 	fmt.Println("Output:", findPrefixScore(utils.S2SliceInt("[2,3,7,5,10]")))

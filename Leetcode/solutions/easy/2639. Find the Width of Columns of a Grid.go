@@ -7,7 +7,7 @@ import (
 	"leetcode.com/Leetcode/utils"
 )
 
-// Reference:
+// Reference: https://leetcode.com/problems/find-the-score-of-all-prefixes-of-an-array/
 func Leetcode_Max_Value_Of_Coins() {
 	fmt.Println("Input: grid = [[1],[22],[333]]")
 	fmt.Println("Output:", findColumnWidth(utils.S2SoSliceInt("[[1],[22],[333]]")))

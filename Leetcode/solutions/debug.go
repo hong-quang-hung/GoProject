@@ -3,7 +3,6 @@ package solutions
 import (
 	"fmt"
 
-	"leetcode.com/Leetcode/solutions/contest"
 	"leetcode.com/Leetcode/solutions/easy"
 	"leetcode.com/Leetcode/solutions/hard"
 	"leetcode.com/Leetcode/solutions/medium"
@@ -132,6 +131,7 @@ func init() {
 	_SOLUTIONS_[102606] = medium.Leetcode_Maximum_Cost_Substring
 	_SOLUTIONS_[102610] = medium.Leetcode_Find_Matrix
 	_SOLUTIONS_[102640] = medium.Leetcode_Find_Prefix_Score
+	_SOLUTIONS_[102641] = medium.Leetcode_Replace_Value_In_Tree
 	// Hard
 	_SOLUTIONS_[100004] = hard.Leetcode_Find_Median_Sorted_Arrays
 	_SOLUTIONS_[100023] = hard.Leetcode_Merge_K_Lists
@@ -155,7 +155,7 @@ func init() {
 	_SOLUTIONS_[100585] = Leetcode_SQL // Medium
 	_SOLUTIONS_[100601] = Leetcode_SQL // Hard
 	// Contest
-	_SOLUTIONS_[106335] = contest.Leetcode_Replace_Value_In_Tree
+	// _SOLUTIONS_[106335] = contest.Leetcode_Replace_Value_In_Tree
 }
 
 func Leetcode_Debug(problem int) {

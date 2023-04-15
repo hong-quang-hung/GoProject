@@ -1,7 +1,6 @@
 package types
 
 import (
-	"fmt"
 	"strconv"
 	"strings"
 )
@@ -29,12 +28,12 @@ func LazyNodeAll(val int, left *TreeNode, right *TreeNode) *TreeNode {
 var maxDepth int
 var strDepth []string
 
-func (root *TreeNode) Println() {
+func (root *TreeNode) Sprint() string {
 	strDepth = strDepth[:cap(strDepth)]
 	maxDepth = 0
 	getNode(root, 0)
 	strDepth = strDepth[0 : maxDepth+1]
-	fmt.Println("[" + strings.Join(strDepth, ",") + "]")
+	return "[" + strings.Join(strDepth, ",") + "]"
 }
 
 func getNode(node *TreeNode, depth int) {
