@@ -103,7 +103,6 @@ func init() {
 	debugFunc[2390] = medium.Leetcode_Remove_Stars
 	debugFunc[2405] = medium.Leetcode_Partition_String
 	debugFunc[2439] = medium.Leetcode_Minimize_Array_Value
-	debugFunc[2444] = medium.Leetcode_Count_Subarrays
 	debugFunc[2477] = medium.Leetcode_Minimum_Fuel_Cost
 	debugFunc[2492] = medium.Leetcode_Min_Score
 	debugFunc[2567] = medium.Leetcode_Minimize_Sum
@@ -138,10 +137,11 @@ func init() {
 	debugFunc[1944] = hard.Leetcode_Can_See_Persons_Count
 	debugFunc[2306] = hard.Leetcode_Distinct_Names
 	debugFunc[2360] = hard.Leetcode_Longest_Cycle
+	debugFunc[2444] = hard.Leetcode_Count_Subarrays
 	debugFunc[2547] = hard.Leetcode_Min_Cost
 	// Other
-	debugFunc[585] = Leetcode_SQL
-	debugFunc[601] = Leetcode_SQL
+	debugFunc[585] = Leetcode_SQL // Medium
+	debugFunc[601] = Leetcode_SQL // Hard
 	//Contest
 }
 
