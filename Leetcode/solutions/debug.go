@@ -49,6 +49,7 @@ func init() {
 	debugFunc[101470] = easy.Leetcode_Shuffle
 	debugFunc[101539] = easy.Leetcode_Find_Kth_Positive
 	debugFunc[101572] = easy.Leetcode_Diagonal_Sum
+	debugFunc[101925] = easy.Leetcode_Count_Triples
 	debugFunc[102399] = easy.Leetcode_Check_Distances
 	debugFunc[102566] = easy.Leetcode_Min_Max_Difference
 	debugFunc[102570] = easy.Leetcode_Merge_Arrays
