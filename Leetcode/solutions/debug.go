@@ -8,7 +8,9 @@ import (
 	"leetcode.com/Leetcode/solutions/medium"
 )
 
-var debugFunc map[int]func()
+type solutions map[int]func()
+
+var debugFunc solutions
 
 func init() {
 	debugFunc = make(map[int]func())
