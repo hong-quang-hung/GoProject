@@ -12,6 +12,7 @@ var _PROBLEM_DEBUG_ int
 var _PROBLEM_TOTAL_ int
 
 func init() {
+	// _PROBLEM_DEBUG_ = 2218
 	_PROBLEM_DEBUG_ = 2218
 	_PROBLEM_TOTAL_ = 2638
 }
