@@ -15,5 +15,33 @@ func Leetcode_Max_Value_Of_Coins() {
 }
 
 func maxValueOfCoins(piles [][]int, k int) int {
-	return k
+	n := len(piles)
+	dp := make([][]int, n+1)
+
+	for i := 1; i <= n; i++ {
+		dp[i] = make([]int, k+1)
+		for coins := 0; coins <= k; coins++ {
+			dp[i][coins] = -1
+		}
+	}
+	return maxValueOfCoinsFunc(piles, dp, n, k)
+}
+
+func maxValueOfCoinsFunc(piles [][]int, dp [][]int, i, coins int) int {
+	if i == 0 {
+		return 0
+	}
+
+	if dp[i][coins] != -1 {
+		return dp[i][coins]
+	}
+
+	currentSum := 0
+	for currentCoins := 0; currentCoins <= min(len(piles[i-1]), coins); currentCoins++ {
+		if currentCoins > 0 {
+			currentSum += piles[i-1][currentCoins-1]
+		}
+		dp[i][coins] = max(dp[i][coins], maxValueOfCoinsFunc(piles, dp, i-1, coins-currentCoins)+currentSum)
+	}
+	return dp[i][coins]
 }
