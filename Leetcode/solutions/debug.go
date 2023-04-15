@@ -42,6 +42,7 @@ func init() {
 	debugFunc[1207] = easy.Leetcode_Unique_Occurrences
 	debugFunc[1470] = easy.Leetcode_Shuffle
 	debugFunc[1539] = easy.Leetcode_Find_Kth_Positive
+	debugFunc[2399] = easy.Leetcode_Check_Distances
 	debugFunc[2566] = easy.Leetcode_Min_Max_Difference
 	debugFunc[2570] = easy.Leetcode_Merge_Arrays
 	debugFunc[2574] = easy.Leetcode_Left_Rigth_Difference
