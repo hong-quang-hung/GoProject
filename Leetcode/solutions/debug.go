@@ -63,6 +63,8 @@ func init() {
 	_SOLUTIONS_[102605] = easy.Leetcode_Min_Number
 	_SOLUTIONS_[102609] = easy.Leetcode_Find_The_Longest_Balanced_Substring
 	_SOLUTIONS_[102639] = easy.Leetcode_Max_Value_Of_Coins
+	_SOLUTIONS_[102643] = easy.Leetcode_Row_And_Maximum_Ones
+	_SOLUTIONS_[102644] = easy.Leetcode_Max_Div_Score
 	// Medium
 	_SOLUTIONS_[100002] = medium.Leetcode_Add_Two_Numbers
 	_SOLUTIONS_[100003] = medium.Leetcode_Length_Of_Longest_Substring
@@ -132,6 +134,7 @@ func init() {
 	_SOLUTIONS_[102610] = medium.Leetcode_Find_Matrix
 	_SOLUTIONS_[102640] = medium.Leetcode_Find_Prefix_Score
 	_SOLUTIONS_[102641] = medium.Leetcode_Replace_Value_In_Tree
+	_SOLUTIONS_[102645] = medium.Leetcode_Add_Minimum
 	// Hard
 	_SOLUTIONS_[100004] = hard.Leetcode_Find_Median_Sorted_Arrays
 	_SOLUTIONS_[100023] = hard.Leetcode_Merge_K_Lists
@@ -151,11 +154,12 @@ func init() {
 	_SOLUTIONS_[102360] = hard.Leetcode_Longest_Cycle
 	_SOLUTIONS_[102444] = hard.Leetcode_Count_Subarrays
 	_SOLUTIONS_[102547] = hard.Leetcode_Min_Cost
+	_SOLUTIONS_[102646] = hard.Leetcode_Minimum_Total_Price
 	// Other
 	_SOLUTIONS_[100585] = Leetcode_SQL // Medium
 	_SOLUTIONS_[100601] = Leetcode_SQL // Hard
 	// Contest
-	// _SOLUTIONS_[106335] = contest.Leetcode_Replace_Value_In_Tree
+	// _SOLUTIONS_[106378] = contest.Leetcode_Minimum_Total_Price
 }
 
 func Leetcode_Debug(problem int) {
