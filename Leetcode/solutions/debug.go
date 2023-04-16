@@ -79,6 +79,7 @@ func init() {
 	_SOLUTIONS_[100129] = medium.Leetcode_Sum_Numbers
 	_SOLUTIONS_[100133] = medium.Leetcode_Clone_Graph
 	_SOLUTIONS_[100142] = medium.Leetcode_Detect_Cycle
+	_SOLUTIONS_[100198] = medium.Leetcode_House_Robber
 	_SOLUTIONS_[100208] = medium.Leetcode_Trie_Constructor
 	_SOLUTIONS_[100211] = medium.Leetcode_Word_Dictionary
 	_SOLUTIONS_[100299] = medium.Leetcode_Get_Hint
