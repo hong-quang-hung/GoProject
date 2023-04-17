@@ -104,6 +104,7 @@ func init() {
 	_SOLUTIONS_[101162] = medium.Leetcode_Max_Distance
 	_SOLUTIONS_[101254] = medium.Leetcode_Closed_Island
 	_SOLUTIONS_[101319] = medium.Leetcode_Make_Connected
+	_SOLUTIONS_[101348] = medium.Leetcode_Tweet_Counts_Per_Frequency
 	_SOLUTIONS_[101466] = medium.Leetcode_Min_Reorder
 	_SOLUTIONS_[101472] = medium.Leetcode_Design_Browser_History
 	_SOLUTIONS_[101584] = medium.Leetcode_minCost_Connect_Points
