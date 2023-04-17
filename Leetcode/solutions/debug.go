@@ -100,6 +100,7 @@ func init() {
 	_SOLUTIONS_[100983] = medium.Leetcode_Min_Cost_Tickets
 	_SOLUTIONS_[101011] = medium.Leetcode_Ship_Within_Days
 	_SOLUTIONS_[101020] = medium.Leetcode_Num_Enclaves
+	_SOLUTIONS_[101049] = medium.Leetcode_Last_Stone_Weight_II
 	_SOLUTIONS_[101129] = medium.Leetcode_Shortest_Alternating_Paths
 	_SOLUTIONS_[101162] = medium.Leetcode_Max_Distance
 	_SOLUTIONS_[101254] = medium.Leetcode_Closed_Island

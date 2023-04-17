@@ -31,12 +31,16 @@ func (L *Leetcode) PickProblem() int {
 		return -1
 	}
 
-	r := rand.New(rand.NewSource(time.Now().UnixNano()))
-	random := r.Intn(L.total)
-	for L.IsSolved(random) {
-		random = rand.Intn(L.total)
+	prepare := []int{}
+	for i, s := range L.problems {
+		if !s {
+			prepare = append(prepare, i)
+		}
 	}
-	return random + 1
+
+	r := rand.New(rand.NewSource(time.Now().UnixNano()))
+	random := r.Intn(len(prepare))
+	return prepare[random]
 }
 
 func (L *Leetcode) GetSolved() int {

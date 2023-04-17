@@ -13,7 +13,7 @@ var _PROBLEM_TOTAL_ int
 
 func init() {
 	// _PROBLEM_DEBUG_ = 2646
-	_PROBLEM_DEBUG_ = 1348
+	_PROBLEM_DEBUG_ = 1049
 	_PROBLEM_TOTAL_ = 2646
 }
 
@@ -46,7 +46,7 @@ func LeetcodeInfomation() {
 	Leetcode.SetSolved(652, 912, 101, 516, 958, 103, 704, 2399, 1572, 1925, 2639, 2640, 2641, 2218, 2643, 2644, 2645, 198, 1639, 1431, 1348)
 
 	fmt.Println("There are", Leetcode.Solved(), "/", Leetcode.Total(), "problem(s) has been solved in Leetcode.")
-	// fmt.Println("Today, Number of Leetcode Problem is:", Leetcode.PickProblem())
+	fmt.Println("Today, Number of Leetcode Problem is:", Leetcode.PickProblem())
 }
 
 func TestRegexGolang() {
