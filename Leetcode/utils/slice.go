@@ -28,6 +28,26 @@ func Slice[T any](a ...T) []T {
 	return a
 }
 
+func Insert[T any](a []T, index int, value T) []T {
+	if index >= len(a) {
+		a = append(a, value)
+	} else {
+		a = append(a[:index+1], a[index:]...)
+		a[index] = value
+	}
+	return a
+}
+
+func InsertInt(a []int, index int, value int) []int {
+	if index >= len(a) {
+		a = append(a, value)
+	} else {
+		a = append(a[:index+1], a[index:]...)
+		a[index] = value
+	}
+	return a
+}
+
 func S2SliceInt(s string) []int {
 	re := regexp.MustCompile(`^\[(.+)\]$`)
 	matched := re.FindAllStringSubmatch(s, -1)

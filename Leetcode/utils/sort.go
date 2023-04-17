@@ -30,3 +30,16 @@ func CountingSort(nums []int) {
 		}
 	}
 }
+
+func SortedFind(sorted []int, value int) int {
+	low, high := 0, len(sorted)-1
+	for low <= high {
+		median := (low + high) / 2
+		if sorted[median] < value {
+			low = median + 1
+		} else {
+			high = median - 1
+		}
+	}
+	return low
+}
