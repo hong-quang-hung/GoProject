@@ -50,6 +50,7 @@ func init() {
 	_SOLUTIONS_[101470] = easy.Leetcode_Shuffle
 	_SOLUTIONS_[101539] = easy.Leetcode_Find_Kth_Positive
 	_SOLUTIONS_[101572] = easy.Leetcode_Diagonal_Sum
+	_SOLUTIONS_[101768] = easy.Leetcode_Merge_Alternately
 	_SOLUTIONS_[101925] = easy.Leetcode_Count_Triples
 	_SOLUTIONS_[102399] = easy.Leetcode_Check_Distances
 	_SOLUTIONS_[102566] = easy.Leetcode_Min_Max_Difference
