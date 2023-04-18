@@ -36,6 +36,7 @@ func init() {
 	_SOLUTIONS_[100219] = easy.Leetcode_Contains_Near_By_Duplicate
 	_SOLUTIONS_[100226] = easy.Leetcode_Invert_Tree
 	_SOLUTIONS_[100290] = easy.Leetcode_Word_Pattern
+	_SOLUTIONS_[100509] = easy.Leetcode_Fibonacci
 	_SOLUTIONS_[100605] = easy.Leetcode_Can_Place_Flowers
 	_SOLUTIONS_[100704] = easy.Leetcode_Search
 	_SOLUTIONS_[100783] = easy.Leetcode_Min_Diff_In_BST

@@ -13,5 +13,10 @@ func Leetcode_Last_Stone_Weight_II() {
 }
 
 func lastStoneWeightII(stones []int) int {
+	dp := make([]int, len(stones))
+	return lastStoneWeightIISolve(stones, dp, 0)
+}
+
+func lastStoneWeightIISolve(stones []int, dp []int, i int) int {
 	return 0
 }
