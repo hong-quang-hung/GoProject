@@ -21,6 +21,7 @@ func init() {
 	// Easy
 	_SOLUTIONS_[100001] = easy.Leetcode_Two_Sum
 	_SOLUTIONS_[100009] = easy.LeetCode_Is_Palindrome
+	_SOLUTIONS_[100013] = easy.Leetcode_Roman_To_Int
 	_SOLUTIONS_[100014] = easy.Leetcode_Longest_Common_Prefix
 	_SOLUTIONS_[100020] = easy.Leetcode_Is_Valid
 	_SOLUTIONS_[100021] = easy.Leetcode_Merge_Two_Lists

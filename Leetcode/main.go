@@ -15,6 +15,7 @@ var _PROBLEM_TOTAL_ int
 func init() {
 	// _PROBLEM_DEBUG_ = 2646
 	_PROBLEM_DEBUG_ = 1049
+	_PROBLEM_DEBUG_ = 13
 	_PROBLEM_TOTAL_ = 2646
 }
 
@@ -49,11 +50,11 @@ func LeetcodeInfomation() {
 	fmt.Println("There are", Leetcode.Solved(), "/", Leetcode.Total(), "problem(s) has been solved in Leetcode.")
 	// fmt.Println("Today, Number of Leetcode Problem is:", Leetcode.PickProblem())
 
-	for i := 0; i < _PROBLEM_TOTAL_; i++ {
-		if Leetcode.IsSolved(i) && !solutions.Leetcode_Check_Golang_Solution(i+1) {
-			fmt.Println(i + 1)
-		}
-	}
+	// for i := 0; i < _PROBLEM_TOTAL_; i++ {
+	// 	if Leetcode.IsSolved(i) && !solutions.Leetcode_Check_Golang_Solution(i+1) {
+	// 		fmt.Println(i+1, "hasn't submit solution with Golang language.")
+	// 	}
+	// }
 }
 
 func TestRegexGolang() {
