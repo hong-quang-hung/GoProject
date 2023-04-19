@@ -32,6 +32,7 @@ func init() {
 	_SOLUTIONS_[100067] = easy.Leetcode_Add_Binary
 	_SOLUTIONS_[100101] = easy.Leetcode_Is_Symmetric
 	_SOLUTIONS_[100104] = easy.LeetCode_Max_Depth
+	_SOLUTIONS_[100112] = easy.Leetcode_Has_Path_Sum
 	_SOLUTIONS_[100121] = easy.LeetCode_Max_Profit
 	_SOLUTIONS_[100219] = easy.Leetcode_Contains_Near_By_Duplicate
 	_SOLUTIONS_[100226] = easy.Leetcode_Invert_Tree
@@ -49,6 +50,7 @@ func init() {
 	_SOLUTIONS_[101207] = easy.Leetcode_Unique_Occurrences
 	_SOLUTIONS_[101431] = easy.Leetcode_Kids_With_Candies
 	_SOLUTIONS_[101470] = easy.Leetcode_Shuffle
+	_SOLUTIONS_[101523] = easy.Leetcode_Count_Odds
 	_SOLUTIONS_[101539] = easy.Leetcode_Find_Kth_Positive
 	_SOLUTIONS_[101572] = easy.Leetcode_Diagonal_Sum
 	_SOLUTIONS_[101768] = easy.Leetcode_Merge_Alternately
@@ -170,12 +172,21 @@ func init() {
 	// _SOLUTIONS_[106378] = contest.Leetcode_Minimum_Total_Price
 }
 
+func Len() int {
+	return len(_SOLUTIONS_)
+}
+
 func Leetcode_Debug(problem int) {
 	if Invoke, hasSolution := _SOLUTIONS_[Normalize+problem]; hasSolution {
 		Invoke()
 	} else {
 		Leetcode_Empty(problem)
 	}
+}
+
+func Leetcode_Check_Golang_Solution(problem int) bool {
+	_, hasSolution := _SOLUTIONS_[Normalize+problem]
+	return hasSolution
 }
 
 func Leetcode_Empty(problem int) {
