@@ -167,6 +167,7 @@ func init() {
 	_SOLUTIONS_[102547] = hard.Leetcode_Min_Cost
 	_SOLUTIONS_[102646] = hard.Leetcode_Minimum_Total_Price
 	// Other
+	_SOLUTIONS_[100570] = Leetcode_SQL // Medium
 	_SOLUTIONS_[100585] = Leetcode_SQL // Medium
 	_SOLUTIONS_[100601] = Leetcode_SQL // Hard
 	// Contest
