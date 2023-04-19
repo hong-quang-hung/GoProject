@@ -48,6 +48,22 @@ func InsertInt(a []int, index int, value int) []int {
 	return a
 }
 
+func S2SliceString(s string) []string {
+	re := regexp.MustCompile(`^\[(.+)\]$`)
+	matched := re.FindAllStringSubmatch(s, -1)
+	if len(matched) == 0 || len(strings.TrimSpace(matched[0][1])) == 0 {
+		return []string{}
+	}
+
+	arr := strings.Split(matched[0][1], ",")
+	res := make([]string, len(arr))
+	for i, a := range arr {
+		a = strings.Trim(a, " ")
+		res[i] = a
+	}
+	return res
+}
+
 func S2SliceInt(s string) []int {
 	re := regexp.MustCompile(`^\[(.+)\]$`)
 	matched := re.FindAllStringSubmatch(s, -1)

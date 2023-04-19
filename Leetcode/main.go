@@ -6,6 +6,7 @@ import (
 
 	"leetcode.com/Leetcode/solutions"
 	"leetcode.com/Leetcode/types"
+	"leetcode.com/Leetcode/utils"
 )
 
 var _PROBLEM_DEBUG_ int
@@ -23,6 +24,7 @@ func main() {
 	PrintLine()
 	LeetcodeInfomation()
 	PrintLine()
+	TestTreeNode()
 }
 
 func PrintLine() {
@@ -57,4 +59,12 @@ func TestRegexGolang() {
 	fmt.Printf("%q\n", re.FindAllStringSubmatch("[1,112,-33,54, 45]", -1))
 	fmt.Printf("%q\n", re.FindAllStringSubmatch("[]", -1))
 	fmt.Printf("%q\n", re.FindAllStringSubmatch("[ ]", -1))
+}
+
+func TestTreeNode() {
+	fmt.Println("root = [3,1,2,null,4]")
+	root1 := utils.S2TreeNode("[3,1,2,null,4]")
+	root2 := types.LazyNodeAll(3, types.LazyNodeAll(1, nil, types.LazyNode(4)), types.LazyNode(2))
+	fmt.Println(utils.STreeNode(root1))
+	fmt.Println(utils.STreeNode(root2))
 }

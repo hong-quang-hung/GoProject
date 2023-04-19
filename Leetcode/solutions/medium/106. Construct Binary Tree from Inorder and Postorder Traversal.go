@@ -4,12 +4,13 @@ import (
 	"fmt"
 
 	"leetcode.com/Leetcode/types"
+	"leetcode.com/Leetcode/utils"
 )
 
 // Reference: https://leetcode.com/problems/construct-binary-tree-from-inorder-and-postorder-traversal/
 func Leetcode_Build_Trees() {
 	fmt.Println("Input: inorder = [9,3,15,20,7], postorder = [9,15,7,20,3]")
-	fmt.Println("Output:", buildTree([]int{9, 3, 15, 20, 7}, []int{9, 15, 7, 20, 3}).Sprint())
+	fmt.Println("Output:", utils.STreeNode(buildTree([]int{9, 3, 15, 20, 7}, []int{9, 15, 7, 20, 3})))
 
 }
 

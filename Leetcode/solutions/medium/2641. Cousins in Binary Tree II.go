@@ -4,14 +4,15 @@ import (
 	"fmt"
 
 	"leetcode.com/Leetcode/types"
+	"leetcode.com/Leetcode/utils"
 )
 
 // Reference: https://leetcode.com/problems/cousins-in-binary-tree-ii/
 func Leetcode_Replace_Value_In_Tree() {
 	fmt.Println("Input: root = [5,4,9,1,10,null,7]")
-	fmt.Println("Output:", replaceValueInTree(types.LazyNodeAll(5, types.LazyNodeValue(4, 1, 10), types.LazyNodeAll(9, nil, types.LazyNode(7)))).Sprint())
+	fmt.Println("Output:", utils.STreeNode(replaceValueInTree(types.LazyNodeAll(5, types.LazyNodeValue(4, 1, 10), types.LazyNodeAll(9, nil, types.LazyNode(7))))))
 	fmt.Println("Input: root = [3,1,2]")
-	fmt.Println("Output:", replaceValueInTree(types.LazyNodeValue(3, 1, 2)).Sprint())
+	fmt.Println("Output:", utils.STreeNode(replaceValueInTree(types.LazyNodeValue(3, 1, 2))))
 }
 
 func replaceValueInTree(root *types.TreeNode) *types.TreeNode {
