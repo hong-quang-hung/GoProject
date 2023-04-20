@@ -96,6 +96,7 @@ func init() {
 	_SOLUTIONS_[100540] = medium.Leetcode_Single_Non_Duplicate
 	_SOLUTIONS_[100567] = medium.Leetcode_Check_Inclusion
 	_SOLUTIONS_[100652] = medium.Leetcode_Find_Duplicate_Subtrees
+	_SOLUTIONS_[100662] = medium.Leetcode_Width_Of_Binary_Tree
 	_SOLUTIONS_[100769] = medium.Leetcode_Max_Chunks_To_Sorted
 	_SOLUTIONS_[100881] = medium.Leetcode_Num_Rescue_Boats
 	_SOLUTIONS_[100875] = medium.Leetcode_Min_Eating_Speed
