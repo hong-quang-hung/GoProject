@@ -18,7 +18,22 @@ func Leetcode_Width_Of_Binary_Tree() {
 }
 
 func widthOfBinaryTree(root *types.TreeNode) int {
-	res := 0
-	fmt.Println(utils.STreeNode(root))
-	return res
+	m := make(map[int]int)
+	return widthOfBinaryTreeDFS(root, m, 0, 1)
+}
+
+func widthOfBinaryTreeDFS(root *types.TreeNode, m map[int]int, level int, width int) int {
+	if root == nil {
+		return 0
+	}
+
+	if _, ok := m[level]; !ok {
+		m[level] = width
+	}
+
+	cur := width - m[level] + 1
+	left := widthOfBinaryTreeDFS(root.Left, m, level+1, width*2-1)
+	right := widthOfBinaryTreeDFS(root.Right, m, level+1, width*2)
+
+	return max(cur, max(left, right))
 }
