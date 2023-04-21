@@ -34,6 +34,5 @@ func widthOfBinaryTreeDFS(root *types.TreeNode, m map[int]int, level int, width 
 	cur := width - m[level] + 1
 	left := widthOfBinaryTreeDFS(root.Left, m, level+1, width*2-1)
 	right := widthOfBinaryTreeDFS(root.Right, m, level+1, width*2)
-
 	return max(cur, max(left, right))
 }
