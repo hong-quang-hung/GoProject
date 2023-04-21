@@ -15,6 +15,5 @@ func Leetcode_Minimum_Total_Price() {
 }
 
 func minimumTotalPrice(n int, edges [][]int, price []int, trips [][]int) int {
-
 	return 0
 }
