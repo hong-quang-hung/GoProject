@@ -104,6 +104,7 @@ func init() {
 	_SOLUTIONS_[100662] = medium.Leetcode_Width_Of_Binary_Tree
 	_SOLUTIONS_[100769] = medium.Leetcode_Max_Chunks_To_Sorted
 	_SOLUTIONS_[100881] = medium.Leetcode_Num_Rescue_Boats
+	_SOLUTIONS_[100849] = medium.Leetcode_Max_Dist_To_Closest
 	_SOLUTIONS_[100875] = medium.Leetcode_Min_Eating_Speed
 	_SOLUTIONS_[100912] = medium.Leetcode_Sort_Array
 	_SOLUTIONS_[100946] = medium.Leetcode_Validate_Stack_Sequences
