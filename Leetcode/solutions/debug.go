@@ -57,6 +57,7 @@ func init() {
 	_SOLUTIONS_[101768] = easy.Leetcode_Merge_Alternately
 	_SOLUTIONS_[101925] = easy.Leetcode_Count_Triples
 	_SOLUTIONS_[102399] = easy.Leetcode_Check_Distances
+	_SOLUTIONS_[102520] = easy.Leetcode_Count_Digits
 	_SOLUTIONS_[102566] = easy.Leetcode_Min_Max_Difference
 	_SOLUTIONS_[102570] = easy.Leetcode_Merge_Arrays
 	_SOLUTIONS_[102574] = easy.Leetcode_Left_Rigth_Difference
