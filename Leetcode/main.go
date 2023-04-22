@@ -14,7 +14,7 @@ var _PROBLEM_TOTAL_ int
 
 func init() {
 	// _PROBLEM_DEBUG_ = 2646
-	_PROBLEM_DEBUG_ = 879
+	_PROBLEM_DEBUG_ = 1312
 	_PROBLEM_TOTAL_ = 2647
 }
 
@@ -45,9 +45,10 @@ func LeetcodeInfomation() {
 	Leetcode.SetSolved(3, 2567, 101, 2574, 2575, 9, 1129, 2576, 2578, 2579, 2580, 2583, 2586, 2587, 2588, 2591, 2592, 2595, 2596, 2597, 2600, 2601, 2602, 983, 219, 1402, 2390, 768, 87)
 	Leetcode.SetSolved(769, 1944, 2145, 601, 20, 64, 2605, 2606, 2610, 32, 2609, 2300, 2306, 45, 2547, 881, 1954, 925, 2405, 1584, 2439, 1254, 1020, 1857, 133, 585, 1047, 299, 71, 946)
 	Leetcode.SetSolved(652, 912, 516, 958, 103, 704, 2399, 1572, 1925, 2639, 2640, 2641, 2218, 2643, 2644, 2645, 198, 1639, 1431, 1348, 1768, 509, 1372, 570, 2570, 1049, 662, 879)
+	Leetcode.SetSolved(1312)
 
 	fmt.Println("There are", Leetcode.Solved(), "/", Leetcode.Total(), "problem(s) has been solved in Leetcode.")
-	// fmt.Println("Today, Number of Leetcode Problem is:", Leetcode.PickProblem())
+	fmt.Println("Today, Number of Leetcode Problem is:", Leetcode.PickProblem())
 
 	// for i := 0; i < _PROBLEM_TOTAL_; i++ {
 	// 	if Leetcode.IsSolved(i) && !solutions.Leetcode_Check_Golang_Solution(i+1) {

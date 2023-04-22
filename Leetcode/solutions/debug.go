@@ -155,6 +155,7 @@ func init() {
 	_SOLUTIONS_[100502] = hard.Leetcode_Find_Maximized_Capital
 	_SOLUTIONS_[100768] = hard.Leetcode_Max_Chunks_To_Sorted_II
 	_SOLUTIONS_[100879] = hard.Leetcode_Profitable_Schemes
+	_SOLUTIONS_[101312] = hard.Leetcode_Min_Insertions
 	_SOLUTIONS_[101345] = hard.Leetcode_Min_Jumps
 	_SOLUTIONS_[101402] = hard.Leetcode_Max_Satisfaction
 	_SOLUTIONS_[101444] = hard.Leetcode_Ways
