@@ -88,6 +88,7 @@ func init() {
 	_SOLUTIONS_[100198] = medium.Leetcode_House_Robber
 	_SOLUTIONS_[100208] = medium.Leetcode_Trie_Constructor
 	_SOLUTIONS_[100211] = medium.Leetcode_Word_Dictionary
+	_SOLUTIONS_[100213] = medium.Leetcode_House_Robber_II
 	_SOLUTIONS_[100299] = medium.Leetcode_Get_Hint
 	_SOLUTIONS_[100382] = medium.Leetcode_Constructor
 	_SOLUTIONS_[100427] = medium.Leetcode_Construct

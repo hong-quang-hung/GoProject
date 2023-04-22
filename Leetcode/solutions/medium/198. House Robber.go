@@ -14,23 +14,9 @@ func Leetcode_House_Robber() {
 
 func rob(nums []int) int {
 	n := len(nums)
-	dp := make([]int, n)
-	dp[0] = nums[0]
-	for i := 1; i < n; i++ {
-		dp[i] = -1
+	dp := make([]int, n+2)
+	for i := 2; i < n+2; i++ {
+		dp[i] = max(dp[i-1], dp[i-2]+nums[i-2])
 	}
-	return robSolve(nums, dp, n-1)
-}
-
-func robSolve(nums []int, dp []int, i int) int {
-	if i < 0 {
-		return 0
-	}
-
-	if dp[i] != -1 {
-		return dp[i]
-	}
-
-	dp[i] = max(nums[i]+robSolve(nums, dp, i-2), robSolve(nums, dp, i-1))
-	return dp[i]
+	return dp[n+1]
 }
