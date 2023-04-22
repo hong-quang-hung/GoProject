@@ -16,3 +16,12 @@ func NewListNode(val ...int) *ListNode {
 	node.Next = NewListNode(val[1:]...)
 	return node
 }
+
+// ListNode must not cycle
+func (t *ListNode) Last() *ListNode {
+	last := t
+	for last.Next != nil {
+		last = last.Next
+	}
+	return last
+}

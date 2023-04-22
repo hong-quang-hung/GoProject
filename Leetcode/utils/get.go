@@ -21,6 +21,11 @@ func IffNil[T any](c any, a T, b T) T {
 	return b
 }
 
+// Convert input string to ListNode
+func S2ListNode(s string) *types.ListNode {
+	return types.NewListNode(S2SliceInt(s)...)
+}
+
 // Convert input string to TreeNode
 func S2TreeNode(s string) *types.TreeNode {
 	values := S2SliceString(s)
