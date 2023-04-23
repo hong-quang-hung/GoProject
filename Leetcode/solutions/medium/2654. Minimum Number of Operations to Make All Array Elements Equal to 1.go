@@ -18,14 +18,3 @@ func minOperations_ii(nums []int) int {
 	res, n := 0, len(nums)
 	return n - res
 }
-
-func gcd(a, b int) int {
-	if a == b {
-		return a
-	}
-
-	if a > b {
-		return gcd(a-b, a)
-	}
-	return gcd(a, b-a)
-}

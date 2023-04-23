@@ -17,3 +17,7 @@ func manhattanDistance(p1, p2 []int) int {
 func insert(arr []int, index int, value int) []int {
 	return utils.InsertInt(arr, index, value)
 }
+
+func gcd(a, b int) int {
+	return utils.GcdInt(a, b)
+}

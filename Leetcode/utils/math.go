@@ -33,3 +33,10 @@ func MinInt(a, b int) int {
 func ManhattanDistanceInt(p1, p2 []int) int {
 	return int(math.Abs(float64(p1[0]-p2[0]))) + int(math.Abs(float64(p1[1]-p2[1])))
 }
+
+func GcdInt(a, b int) int {
+	if a == 0 {
+		return b
+	}
+	return GcdInt(b%a, a)
+}
