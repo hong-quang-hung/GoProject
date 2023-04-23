@@ -74,6 +74,8 @@ func init() {
 	_SOLUTIONS_[102639] = easy.Leetcode_Max_Value_Of_Coins
 	_SOLUTIONS_[102643] = easy.Leetcode_Row_And_Maximum_Ones
 	_SOLUTIONS_[102644] = easy.Leetcode_Max_Div_Score
+	_SOLUTIONS_[102651] = easy.Leetcode_Find_Delayed_Arrival_Time
+	_SOLUTIONS_[102652] = easy.Leetcode_Sum_Of_Multiples
 	// Medium
 	_SOLUTIONS_[100002] = medium.Leetcode_Add_Two_Numbers
 	_SOLUTIONS_[100003] = medium.Leetcode_Length_Of_Longest_Substring
@@ -152,6 +154,8 @@ func init() {
 	_SOLUTIONS_[102640] = medium.Leetcode_Find_Prefix_Score
 	_SOLUTIONS_[102641] = medium.Leetcode_Replace_Value_In_Tree
 	_SOLUTIONS_[102645] = medium.Leetcode_Add_Minimum
+	_SOLUTIONS_[102653] = medium.Leetcode_Get_Subarray_Beauty
+	_SOLUTIONS_[102654] = medium.Leetcode_Min_Operations_Equal_1
 	// Hard
 	_SOLUTIONS_[100004] = hard.Leetcode_Find_Median_Sorted_Arrays
 	_SOLUTIONS_[100023] = hard.Leetcode_Merge_K_Lists
@@ -180,7 +184,7 @@ func init() {
 	_SOLUTIONS_[100585] = Leetcode_SQL // Medium
 	_SOLUTIONS_[100601] = Leetcode_SQL // Hard
 	// Contest
-	// _SOLUTIONS_[106378] = contest.Leetcode_Minimum_Total_Price
+	// _SOLUTIONS_[106392] = contest.Leetcode_Min_Operations
 }
 
 func Len() int {
