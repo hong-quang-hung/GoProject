@@ -170,6 +170,7 @@ func init() {
 	_SOLUTIONS_[101312] = hard.Leetcode_Min_Insertions
 	_SOLUTIONS_[101345] = hard.Leetcode_Min_Jumps
 	_SOLUTIONS_[101402] = hard.Leetcode_Max_Satisfaction
+	_SOLUTIONS_[101416] = hard.Leetcode_Number_Of_Arrays
 	_SOLUTIONS_[101444] = hard.Leetcode_Ways
 	_SOLUTIONS_[101675] = hard.Leetcode_Minimum_Deviation
 	_SOLUTIONS_[101639] = hard.Leetcode_Num_Ways
