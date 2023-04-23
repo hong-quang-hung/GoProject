@@ -2,6 +2,7 @@ package medium
 
 import (
 	"fmt"
+	"math"
 )
 
 // Reference: https://leetcode.com/problems/minimum-number-of-operations-to-make-all-array-elements-equal-to-1/
@@ -15,6 +16,30 @@ func Leetcode_Min_Operations_Equal_1() {
 }
 
 func minOperations_ii(nums []int) int {
-	res, n := 0, len(nums)
-	return n - res
+	ones, n := 0, len(nums)
+	for _, num := range nums {
+		if num == 1 {
+			ones++
+		}
+	}
+
+	if ones > 0 {
+		return n - ones
+	}
+
+	res := math.MaxInt
+	for i := 0; i < n; i++ {
+		g := nums[i]
+		for j := i + 1; j < n; j++ {
+			g = gcd(g, nums[j])
+			if g == 1 {
+				res = min(res, j-i)
+			}
+		}
+	}
+
+	if res == math.MaxInt {
+		return -1
+	}
+	return res + n - 1
 }
