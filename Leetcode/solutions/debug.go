@@ -34,6 +34,7 @@ func init() {
 	_SOLUTIONS_[100101] = easy.Leetcode_Is_Symmetric
 	_SOLUTIONS_[100104] = easy.LeetCode_Max_Depth
 	_SOLUTIONS_[100112] = easy.Leetcode_Has_Path_Sum
+	_SOLUTIONS_[100118] = easy.Leetcode_Generate
 	_SOLUTIONS_[100121] = easy.LeetCode_Max_Profit
 	_SOLUTIONS_[100141] = easy.Leetcode_Has_Cycle
 	_SOLUTIONS_[100202] = easy.Leetcode_Is_Happy
