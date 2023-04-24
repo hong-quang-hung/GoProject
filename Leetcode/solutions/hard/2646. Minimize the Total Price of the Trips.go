@@ -15,5 +15,17 @@ func Leetcode_Minimum_Total_Price() {
 }
 
 func minimumTotalPrice(n int, edges [][]int, price []int, trips [][]int) int {
+	g := make([][]int, n)
+	for i := 0; i < len(edges); i++ {
+		g[edges[i][0]] = append(g[edges[i][0]], edges[i][1])
+		g[edges[i][1]] = append(g[edges[i][1]], edges[i][0])
+	}
+
+	fmt.Println(g)
+	return minimumTotalPriceBFS(g, n, 0, 3)
+}
+
+func minimumTotalPriceBFS(g [][]int, n int, start int, end int) int {
+	visited := make([]bool, n)
 	return 0
 }
