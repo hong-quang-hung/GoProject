@@ -49,6 +49,7 @@ func init() {
 	_SOLUTIONS_[100925] = easy.Leetcode_Is_Long_PressedName
 	_SOLUTIONS_[100953] = easy.Leetcode_Is_Alien_Sorted
 	_SOLUTIONS_[100989] = easy.Leetcode_Add_To_Array_Form
+	_SOLUTIONS_[101046] = easy.Leetcode_Last_Stone_Weight
 	_SOLUTIONS_[101047] = easy.Leetcode_Remove_Adjacent_Duplicates
 	_SOLUTIONS_[101071] = easy.Leetcode_Gcd_Of_Strings
 	_SOLUTIONS_[101137] = easy.Leetcode_Tribonacci
