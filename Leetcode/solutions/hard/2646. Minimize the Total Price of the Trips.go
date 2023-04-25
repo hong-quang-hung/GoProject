@@ -27,5 +27,6 @@ func minimumTotalPrice(n int, edges [][]int, price []int, trips [][]int) int {
 
 func minimumTotalPriceBFS(g [][]int, n int, start int, end int) int {
 	visited := make([]bool, n)
+	_ = visited
 	return 0
 }

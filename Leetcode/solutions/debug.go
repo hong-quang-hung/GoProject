@@ -135,6 +135,7 @@ func init() {
 	_SOLUTIONS_[102187] = medium.Leetcode_Minimum_Time
 	_SOLUTIONS_[102300] = medium.Leetcode_Successful_Pairs
 	_SOLUTIONS_[102316] = medium.Leetcode_Count_Pairs
+	_SOLUTIONS_[102336] = medium.Leetcode_Smallest_Infinite_Set
 	_SOLUTIONS_[102348] = medium.Leetcode_Zero_Filled_Subarray
 	_SOLUTIONS_[102390] = medium.Leetcode_Remove_Stars
 	_SOLUTIONS_[102405] = medium.Leetcode_Partition_String
