@@ -59,6 +59,7 @@ func init() {
 	_SOLUTIONS_[101523] = easy.Leetcode_Count_Odds
 	_SOLUTIONS_[101539] = easy.Leetcode_Find_Kth_Positive
 	_SOLUTIONS_[101572] = easy.Leetcode_Diagonal_Sum
+	_SOLUTIONS_[101582] = easy.Leetcode_Num_Special
 	_SOLUTIONS_[101768] = easy.Leetcode_Merge_Alternately
 	_SOLUTIONS_[101925] = easy.Leetcode_Count_Triples
 	_SOLUTIONS_[101979] = easy.Leetcode_Find_GCD

@@ -22,11 +22,10 @@ func minimumTotalPrice(n int, edges [][]int, price []int, trips [][]int) int {
 	}
 
 	fmt.Println(g)
-	return minimumTotalPriceBFS(g, n, 0, 3)
+	visited := make([]bool, n)
+	return minimumTotalPriceBFS(g, visited, 0, 3)
 }
 
-func minimumTotalPriceBFS(g [][]int, n int, start int, end int) int {
-	visited := make([]bool, n)
-	_ = visited
+func minimumTotalPriceBFS(g [][]int, visited []bool, start int, end int) int {
 	return 0
 }
