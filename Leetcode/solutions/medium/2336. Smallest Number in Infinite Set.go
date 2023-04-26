@@ -3,6 +3,8 @@ package medium
 import (
 	"container/heap"
 	"fmt"
+
+	"leetcode.com/Leetcode/types"
 )
 
 // Reference: https://leetcode.com/problems/smallest-number-in-infinite-set/
@@ -23,34 +25,15 @@ func Leetcode_Smallest_Infinite_Set() {
 	fmt.Println("smallestInfiniteSet.popSmallest() :", smallestInfiniteSet.PopSmallest())
 }
 
-type smallestInfiniteHeap []int
-
-func (h smallestInfiniteHeap) Less(i, j int) bool { return h[i] < h[j] }
-func (h smallestInfiniteHeap) Len() int           { return len(h) }
-func (h smallestInfiniteHeap) Swap(i, j int)      { h[i], h[j] = h[j], h[i] }
-func (h smallestInfiniteHeap) Empty() bool        { return len(h) == 0 }
-func (h *smallestInfiniteHeap) Pop() interface{} {
-	r := (*h)[(*h).Len()-1]
-	*h = (*h)[0 : (*h).Len()-1]
-	return r
-}
-func (h *smallestInfiniteHeap) Peek() int {
-	r := (*h)[(*h).Len()-1]
-	return r
-}
-func (h *smallestInfiniteHeap) Push(i interface{}) {
-	*h = append(*h, i.(int))
-}
-
 type SmallestInfiniteSet struct {
-	heap   *smallestInfiniteHeap
+	heap   *types.MinHeap
 	remove map[int]bool
 	curVal int
 }
 
 func (s *SmallestInfiniteSet) init() {
 	s.remove = make(map[int]bool)
-	s.heap = new(smallestInfiniteHeap)
+	s.heap = new(types.MinHeap)
 	s.curVal = 1
 }
 

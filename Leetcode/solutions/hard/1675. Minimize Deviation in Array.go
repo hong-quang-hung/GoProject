@@ -5,6 +5,7 @@ import (
 	"fmt"
 	"math"
 
+	"leetcode.com/Leetcode/types"
 	"leetcode.com/Leetcode/utils"
 )
 
@@ -16,23 +17,8 @@ func Leetcode_Minimum_Deviation() {
 	fmt.Println("Output:", minimumDeviation(utils.Slice(4, 1, 5, 20, 3)))
 }
 
-type minimumDeviationHeap []int
-
-func (h minimumDeviationHeap) Less(i, j int) bool { return h[i] > h[j] }
-func (h minimumDeviationHeap) Len() int           { return len(h) }
-func (h minimumDeviationHeap) Swap(i, j int)      { h[i], h[j] = h[j], h[i] }
-func (h minimumDeviationHeap) Empty() bool        { return len(h) == 0 }
-func (h *minimumDeviationHeap) Pop() interface{} {
-	r := (*h)[(*h).Len()-1]
-	*h = (*h)[0 : (*h).Len()-1]
-	return r
-}
-func (h *minimumDeviationHeap) Push(i interface{}) {
-	*h = append(*h, i.(int))
-}
-
 func minimumDeviation(nums []int) int {
-	set := new(minimumDeviationHeap)
+	set := new(types.MaxHeap)
 	minDev := math.MaxInt32
 	for _, num := range nums {
 		if num%2 == 1 {
