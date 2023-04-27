@@ -2,7 +2,7 @@ package medium
 
 import "fmt"
 
-// Reference: https://leetcode.com/problems/ugly-number/
+// Reference: https://leetcode.com/problems/ugly-number-ii/
 func Leetcode_Is_Ugly_II() {
 	fmt.Println("Input: n = 10")
 	fmt.Println("Output:", nthUglyNumber(10))
