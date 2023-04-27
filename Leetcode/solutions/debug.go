@@ -130,6 +130,7 @@ func init() {
 	_SOLUTIONS_[101049] = medium.Leetcode_Last_Stone_Weight_II
 	_SOLUTIONS_[101129] = medium.Leetcode_Shortest_Alternating_Paths
 	_SOLUTIONS_[101162] = medium.Leetcode_Max_Distance
+	_SOLUTIONS_[101201] = medium.Leetcode_Is_Ugly_III
 	_SOLUTIONS_[101254] = medium.Leetcode_Closed_Island
 	_SOLUTIONS_[101319] = medium.Leetcode_Make_Connected
 	_SOLUTIONS_[101348] = medium.Leetcode_Tweet_Counts_Per_Frequency
