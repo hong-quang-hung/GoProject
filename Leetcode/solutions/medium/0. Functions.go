@@ -21,3 +21,7 @@ func insert(arr []int, index int, value int) []int {
 func gcd(a, b int) int {
 	return utils.GcdInt(a, b)
 }
+
+func gcd64(a, b int64) int64 {
+	return utils.GcdInt64(a, b)
+}

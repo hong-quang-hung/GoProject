@@ -13,22 +13,21 @@ func Leetcode_Is_Ugly_III() {
 }
 
 func nthUglyNumber_iii(n int, a int, b int, c int) int {
-	dp := make([]int, n+1)
-	dp[0] = 1
-	x, y, z := 1, 1, 1
-	for i := 1; i <= n; i++ {
-		dp[i] = min(min(dp[x-1]*a, dp[y-1]*b), dp[z-1]*c)
-		// fmt.Println(dp[i], i, x, y, z, dp)
-		if dp[i] == dp[x-1]*a {
-			x++
-		}
-		if dp[i] == dp[y-1]*b {
-			y++
-		}
-		if dp[i] == dp[z-1]*c {
-			z++
+	low, hight := int64(1), int64(2e9)
+	ab, ac, bc := lcm(int64(a), int64(b)), lcm(int64(a), int64(c)), lcm(int64(b), int64(c))
+	abc := lcm(ab, int64(c))
+	for low < hight {
+		mid := low + (hight-low)/2
+		count := mid/int64(a) + mid/int64(b) + mid/int64(c) - mid/ab - mid/ac - mid/bc + mid/abc
+		if count >= int64(n) {
+			hight = mid
+		} else {
+			low = mid + 1
 		}
 	}
-	fmt.Println(dp)
-	return dp[n]
+	return int(low)
+}
+
+func lcm(a, b int64) int64 {
+	return a * b / gcd64(a, b)
 }

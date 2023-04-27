@@ -40,3 +40,10 @@ func GcdInt(a, b int) int {
 	}
 	return GcdInt(b%a, a)
 }
+
+func GcdInt64(a, b int64) int64 {
+	if a == 0 {
+		return b
+	}
+	return GcdInt64(b%a, a)
+}
