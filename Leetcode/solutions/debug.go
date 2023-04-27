@@ -103,6 +103,7 @@ func init() {
 	_SOLUTIONS_[100211] = medium.Leetcode_Word_Dictionary
 	_SOLUTIONS_[100213] = medium.Leetcode_House_Robber_II
 	_SOLUTIONS_[100264] = medium.Leetcode_Is_Ugly_II
+	_SOLUTIONS_[100279] = medium.Leetcode_Num_Squares
 	_SOLUTIONS_[100299] = medium.Leetcode_Get_Hint
 	_SOLUTIONS_[100309] = medium.Leetcode_Max_Profit
 	_SOLUTIONS_[100319] = medium.Leetcode_Bulb_Switch
