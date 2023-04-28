@@ -176,6 +176,7 @@ func init() {
 	_SOLUTIONS_[102654] = medium.Leetcode_Min_Operations_Equal_1
 	// Hard
 	_SOLUTIONS_[100004] = hard.Leetcode_Find_Median_Sorted_Arrays
+	_SOLUTIONS_[100010] = hard.Leetcode_Is_Match
 	_SOLUTIONS_[100023] = hard.Leetcode_Merge_K_Lists
 	_SOLUTIONS_[100032] = hard.Leetcode_Longest_Valid_Parentheses
 	_SOLUTIONS_[100072] = hard.Leetcode_Min_Distance
