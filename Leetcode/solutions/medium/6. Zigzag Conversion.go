@@ -1,9 +1,6 @@
 package medium
 
-import (
-	"fmt"
-	"math"
-)
+import "fmt"
 
 // Reference: https://leetcode.com/problems/zigzag-conversion/
 func Leetcode_Convert() {
@@ -11,18 +8,27 @@ func Leetcode_Convert() {
 	fmt.Println("Output:", convert("PAYPALISHIRING", 3))
 	fmt.Println("Input: x = 'PAYPALISHIRING', numRows = 4")
 	fmt.Println("Output:", convert("PAYPALISHIRING", 4))
+	fmt.Println("Input: x = 'A', numRows = 1")
+	fmt.Println("Output:", convert("A", 1))
 }
 
 func convert(s string, numRows int) string {
 	n := len(s)
-	g := int(math.Ceil(float64(n) / float64(numRows+1)))
-	res := make([]byte, n)
-	for i := 0; i < n; i++ {
-		if i%(numRows+1) == 0 {
-			res[i/(numRows+1)] = s[i]
-		} else {
-			res[i/(numRows+1)*g+i%(numRows+1)] = s[i]
-		}
+	if numRows == 1 {
+		return s
 	}
-	return string(res)
+
+	zigzag := make([][]byte, numRows)
+	res := ""
+	for i := 0; i < numRows; i++ {
+		plus := 2 * (numRows - 1)
+		for j := i; j < n; j += plus {
+			zigzag[i] = append(zigzag[i], s[j])
+			if i != 0 && i != numRows-1 && j+(numRows-1-i)*2 < n {
+				zigzag[i] = append(zigzag[i], s[j+(numRows-1-i)*2])
+			}
+		}
+		res += string(zigzag[i])
+	}
+	return res
 }
