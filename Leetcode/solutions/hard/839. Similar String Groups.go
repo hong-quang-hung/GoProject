@@ -33,7 +33,10 @@ func numSimilarCheck(a, b string) bool {
 	for i := 0; i < len(a); i++ {
 		if a[i] != b[i] {
 			diff++
+			if diff > 2 {
+				return false
+			}
 		}
 	}
-	return diff == 2 || diff == 0
+	return true
 }
