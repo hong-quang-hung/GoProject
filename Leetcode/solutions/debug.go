@@ -91,6 +91,7 @@ func init() {
 	_SOLUTIONS_[100007] = medium.Leetcode_Reverse
 	_SOLUTIONS_[100008] = medium.Leetcode_My_Atoi
 	_SOLUTIONS_[100011] = medium.Leetcode_Max_Area
+	_SOLUTIONS_[100012] = medium.Leetcode_Int_To_Roman
 	_SOLUTIONS_[100015] = medium.Leetcode_Three_Sum
 	_SOLUTIONS_[100045] = medium.Leetcode_Jumb_Game_II
 	_SOLUTIONS_[100064] = medium.Leetcode_Min_Path_Sum
