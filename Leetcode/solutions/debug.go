@@ -83,6 +83,8 @@ func init() {
 	_SOLUTIONS_[102644] = easy.Leetcode_Max_Div_Score
 	_SOLUTIONS_[102651] = easy.Leetcode_Find_Delayed_Arrival_Time
 	_SOLUTIONS_[102652] = easy.Leetcode_Sum_Of_Multiples
+	_SOLUTIONS_[102656] = easy.Leetcode_Maximize_Sum
+	_SOLUTIONS_[102660] = easy.Leetcode_Is_Winner
 	// Medium
 	_SOLUTIONS_[100002] = medium.Leetcode_Add_Two_Numbers
 	_SOLUTIONS_[100003] = medium.Leetcode_Length_Of_Longest_Substring
@@ -176,6 +178,10 @@ func init() {
 	_SOLUTIONS_[102645] = medium.Leetcode_Add_Minimum
 	_SOLUTIONS_[102653] = medium.Leetcode_Get_Subarray_Beauty
 	_SOLUTIONS_[102654] = medium.Leetcode_Min_Operations_Equal_1
+	_SOLUTIONS_[102657] = medium.Leetcode_Find_The_Prefix_Common_Array
+	_SOLUTIONS_[102658] = medium.Leetcode_Find_Max_Fish
+	_SOLUTIONS_[102661] = medium.Leetcode_First_Complete_Index
+	_SOLUTIONS_[102662] = medium.Leetcode_Minimum_Cost
 	// Hard
 	_SOLUTIONS_[100004] = hard.Leetcode_Find_Median_Sorted_Arrays
 	_SOLUTIONS_[100010] = hard.Leetcode_Is_Match
@@ -203,12 +209,11 @@ func init() {
 	_SOLUTIONS_[102444] = hard.Leetcode_Count_Subarrays
 	_SOLUTIONS_[102547] = hard.Leetcode_Min_Cost
 	_SOLUTIONS_[102646] = hard.Leetcode_Minimum_Total_Price
+	_SOLUTIONS_[102659] = hard.Leetcode_Count_Operations_To_Empty_Array
 	// Other
 	_SOLUTIONS_[100570] = Leetcode_SQL // Medium
 	_SOLUTIONS_[100585] = Leetcode_SQL // Medium
 	_SOLUTIONS_[100601] = Leetcode_SQL // Hard
-	// Contest
-	// _SOLUTIONS_[106392] = contest.Leetcode_Min_Operations
 }
 
 func Len() int {
