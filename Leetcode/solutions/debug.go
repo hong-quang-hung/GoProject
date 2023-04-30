@@ -96,6 +96,7 @@ func init() {
 	_SOLUTIONS_[100012] = medium.Leetcode_Int_To_Roman
 	_SOLUTIONS_[100015] = medium.Leetcode_Three_Sum
 	_SOLUTIONS_[100045] = medium.Leetcode_Jumb_Game_II
+	_SOLUTIONS_[100050] = medium.Leetcode_My_Pow
 	_SOLUTIONS_[100064] = medium.Leetcode_Min_Path_Sum
 	_SOLUTIONS_[100071] = medium.Leetcode_Simplify_Path
 	_SOLUTIONS_[100103] = medium.Leetcode_Zigzag_Level_Order
@@ -198,6 +199,7 @@ func init() {
 	_SOLUTIONS_[101402] = hard.Leetcode_Max_Satisfaction
 	_SOLUTIONS_[101416] = hard.Leetcode_Number_Of_Arrays
 	_SOLUTIONS_[101444] = hard.Leetcode_Ways
+	_SOLUTIONS_[101579] = hard.Leetcode_Max_Num_Edges_To_Removet
 	_SOLUTIONS_[101675] = hard.Leetcode_Minimum_Deviation
 	_SOLUTIONS_[101639] = hard.Leetcode_Num_Ways
 	_SOLUTIONS_[101697] = hard.Leetcode_Distance_Limited_Paths_Exist

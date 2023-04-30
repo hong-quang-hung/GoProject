@@ -21,12 +21,13 @@ func (u *UnionFind) Find(x int) int {
 	return u.Parent[x]
 }
 
-func (u *UnionFind) UnionSet(x int, y int) {
-	var xset int = u.Find(x)
-	var yset int = u.Find(y)
+func (u *UnionFind) UnionSet(x int, y int) bool {
+	xset, yset := u.Find(x), u.Find(y)
 	if xset == yset {
-		return
-	} else if u.Rank[xset] < u.Rank[yset] {
+		return false
+	}
+
+	if u.Rank[xset] < u.Rank[yset] {
 		u.Parent[xset] = yset
 	} else if u.Rank[xset] > u.Rank[yset] {
 		u.Parent[yset] = xset
@@ -34,4 +35,5 @@ func (u *UnionFind) UnionSet(x int, y int) {
 		u.Parent[yset] = xset
 		u.Rank[xset]++
 	}
+	return true
 }
