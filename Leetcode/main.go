@@ -13,10 +13,9 @@ var _PROBLEM_DEBUG_ int
 var _PROBLEM_TOTAL_ int
 
 func init() {
-	// _PROBLEM_DEBUG_ = 102646 - solutions.Normalize
-	_PROBLEM_DEBUG_ = 106403 - solutions.Normalize
-	_PROBLEM_DEBUG_ = 102659 - solutions.Normalize
-	_PROBLEM_DEBUG_ = 100016 - solutions.Normalize
+	_PROBLEM_DEBUG_ = 102646 - solutions.Normalize
+	_PROBLEM_DEBUG_ = 102662 - solutions.Normalize
+
 	_PROBLEM_TOTAL_ = 2663
 }
 
@@ -48,7 +47,7 @@ func LeetcodeInfomation() {
 	Leetcode.SetSolved(769, 1944, 2145, 601, 20, 64, 2605, 2606, 2610, 32, 2609, 2300, 2306, 45, 2547, 881, 1954, 925, 2405, 1584, 2439, 1254, 1020, 1857, 133, 585, 1047, 299, 71, 946)
 	Leetcode.SetSolved(652, 912, 516, 958, 103, 704, 2399, 1572, 1925, 2639, 2640, 2641, 2218, 2643, 2644, 2645, 198, 1639, 1431, 1348, 1768, 509, 1372, 570, 2570, 1049, 662, 879, 213)
 	Leetcode.SetSolved(1312, 337, 2520, 202, 141, 849, 2653, 2652, 2651, 204, 1979, 2654, 1416, 118, 119, 1046, 309, 2336, 258, 1582, 319, 263, 264, 279, 313, 1201, 839, 12, 8, 11, 10)
-	Leetcode.SetSolved(6, 7, 1697, 2656, 2660, 2657, 2661, 2659, 1579, 50, 1491)
+	Leetcode.SetSolved(6, 7, 1697, 2656, 2660, 2657, 2661, 2659, 1579, 50, 1491, 13, 16, 904)
 
 	fmt.Println("There are", Leetcode.Solved(), "/", Leetcode.Total(), "problem(s) has been solved in Leetcode.")
 	fmt.Println("Today, Number of Leetcode Problem is:", Leetcode.PickProblem())
