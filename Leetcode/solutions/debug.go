@@ -58,6 +58,7 @@ func init() {
 	_SOLUTIONS_[101207] = easy.Leetcode_Unique_Occurrences
 	_SOLUTIONS_[101431] = easy.Leetcode_Kids_With_Candies
 	_SOLUTIONS_[101470] = easy.Leetcode_Shuffle
+	_SOLUTIONS_[101491] = easy.Leetcode_Average
 	_SOLUTIONS_[101523] = easy.Leetcode_Count_Odds
 	_SOLUTIONS_[101539] = easy.Leetcode_Find_Kth_Positive
 	_SOLUTIONS_[101572] = easy.Leetcode_Diagonal_Sum
@@ -95,6 +96,7 @@ func init() {
 	_SOLUTIONS_[100011] = medium.Leetcode_Max_Area
 	_SOLUTIONS_[100012] = medium.Leetcode_Int_To_Roman
 	_SOLUTIONS_[100015] = medium.Leetcode_Three_Sum
+	_SOLUTIONS_[100016] = medium.Leetcode_Tree_Sum_Closest
 	_SOLUTIONS_[100045] = medium.Leetcode_Jumb_Game_II
 	_SOLUTIONS_[100050] = medium.Leetcode_My_Pow
 	_SOLUTIONS_[100064] = medium.Leetcode_Min_Path_Sum

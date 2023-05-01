@@ -29,6 +29,12 @@ func MinInt(a, b int) int {
 	}
 	return b
 }
+func AbsInt(x int) int {
+	if x > 0 {
+		return x
+	}
+	return -x
+}
 
 func ManhattanDistanceInt(p1, p2 []int) int {
 	return int(math.Abs(float64(p1[0]-p2[0]))) + int(math.Abs(float64(p1[1]-p2[1])))
