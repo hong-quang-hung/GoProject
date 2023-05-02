@@ -44,6 +44,7 @@ func init() {
 	_SOLUTIONS_[100258] = easy.Leetcode_Add_Digits
 	_SOLUTIONS_[100263] = easy.Leetcode_Is_Ugly
 	_SOLUTIONS_[100290] = easy.Leetcode_Word_Pattern
+	_SOLUTIONS_[100401] = easy.Leetcode_Read_Binary_Watch
 	_SOLUTIONS_[100509] = easy.Leetcode_Fibonacci
 	_SOLUTIONS_[100605] = easy.Leetcode_Can_Place_Flowers
 	_SOLUTIONS_[100704] = easy.Leetcode_Search
