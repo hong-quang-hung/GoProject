@@ -15,7 +15,6 @@ var _PROBLEM_TOTAL_ int
 func init() {
 	_PROBLEM_DEBUG_ = 102646 - solutions.Normalize
 	_PROBLEM_DEBUG_ = 102662 - solutions.Normalize
-	_PROBLEM_DEBUG_ = 102215 - solutions.Normalize
 
 	_PROBLEM_TOTAL_ = 2663
 }
@@ -53,11 +52,7 @@ func LeetcodeInfomation() {
 	fmt.Println("There are", Leetcode.Solved(), "/", Leetcode.Total(), "problem(s) has been solved in Leetcode.")
 	fmt.Println("Today, Number of Leetcode Problem is:", Leetcode.PickProblem())
 
-	// for i := 0; i < _PROBLEM_TOTAL_; i++ {
-	// 	if Leetcode.IsSolved(i) && !solutions.Leetcode_Check_Golang_Solution(i+1) {
-	// 		fmt.Println(i+1, "hasn't submit solution with Golang language.")
-	// 	}
-	// }
+	//ShowHasNotSubmited(Leetcode)
 }
 
 func TestRegexGolang() {
@@ -71,4 +66,12 @@ func TestTreeNode() {
 	root2 := types.LazyNodeAll(3, types.LazyNodeAll(1, nil, types.LazyNode(4)), types.LazyNode(2))
 	fmt.Println(utils.STreeNode(root1))
 	fmt.Println(utils.STreeNode(root2))
+}
+
+func ShowHasNotSubmited(L *types.Leetcode) {
+	for i := 0; i < _PROBLEM_TOTAL_; i++ {
+		if L.IsSolved(i) && !solutions.Leetcode_Check_Golang_Solution(i+1) {
+			fmt.Println(i+1, "hasn't submit solution with Golang language.")
+		}
+	}
 }
