@@ -130,6 +130,7 @@ func init() {
 	_SOLUTIONS_[100516] = medium.Leetcode_Longest_Palindrome_Subseq
 	_SOLUTIONS_[100540] = medium.Leetcode_Single_Non_Duplicate
 	_SOLUTIONS_[100567] = medium.Leetcode_Check_Inclusion
+	_SOLUTIONS_[100649] = medium.Leetcode_Predict_Party_Victory
 	_SOLUTIONS_[100652] = medium.Leetcode_Find_Duplicate_Subtrees
 	_SOLUTIONS_[100662] = medium.Leetcode_Width_Of_Binary_Tree
 	_SOLUTIONS_[100769] = medium.Leetcode_Max_Chunks_To_Sorted
