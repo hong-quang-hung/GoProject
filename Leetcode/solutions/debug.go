@@ -50,6 +50,7 @@ func init() {
 	_SOLUTIONS_[100704] = easy.Leetcode_Search
 	_SOLUTIONS_[100783] = easy.Leetcode_Min_Diff_In_BST
 	_SOLUTIONS_[100925] = easy.Leetcode_Is_Long_PressedName
+	_SOLUTIONS_[100929] = easy.Leetcode_Num_Unique_Emails
 	_SOLUTIONS_[100953] = easy.Leetcode_Is_Alien_Sorted
 	_SOLUTIONS_[100989] = easy.Leetcode_Add_To_Array_Form
 	_SOLUTIONS_[101046] = easy.Leetcode_Last_Stone_Weight
