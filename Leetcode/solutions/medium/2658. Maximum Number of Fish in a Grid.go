@@ -15,5 +15,33 @@ func Leetcode_Find_Max_Fish() {
 }
 
 func findMaxFish(grid [][]int) int {
-	return 0
+	n, m := len(grid), len(grid[0])
+	visited := make([][]bool, n)
+	for i := 0; i < n; i++ {
+		visited[i] = make([]bool, m)
+	}
+
+	res := 0
+	for i := 0; i < n; i++ {
+		for j := 0; j < m; j++ {
+			if grid[i][j] != 0 && !visited[i][j] {
+				res = max(res, findMaxFishGet(grid, visited, n, m, i, j))
+			}
+		}
+	}
+	return res
+}
+
+func findMaxFishGet(grid [][]int, visited [][]bool, n, m, i, j int) int {
+	if i < 0 || j < 0 || i == n || j == m || visited[i][j] || grid[i][j] == 0 {
+		return 0
+	}
+
+	visited[i][j] = true
+	sum := grid[i][j]
+	sum += findMaxFishGet(grid, visited, n, m, i-1, j)
+	sum += findMaxFishGet(grid, visited, n, m, i, j-1)
+	sum += findMaxFishGet(grid, visited, n, m, i+1, j)
+	sum += findMaxFishGet(grid, visited, n, m, i, j+1)
+	return sum
 }
