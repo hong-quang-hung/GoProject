@@ -227,6 +227,7 @@ func init() {
 	_SOLUTIONS_[100570] = Leetcode_SQL // Medium
 	_SOLUTIONS_[100585] = Leetcode_SQL // Medium
 	_SOLUTIONS_[100601] = Leetcode_SQL // Hard
+	_SOLUTIONS_[101965] = Leetcode_SQL // Easy
 }
 
 func Len() int {

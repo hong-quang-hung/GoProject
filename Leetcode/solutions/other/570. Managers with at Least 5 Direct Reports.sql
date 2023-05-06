@@ -1,4 +1,4 @@
-/* https://leetcode.com/problems/managers-with-at-least-5-direct-reports/description/ */
+/* https://leetcode.com/problems/managers-with-at-least-5-direct-reports/ */
 
 /* Write your T-SQL query statement below */
 ;WITH cte AS (
