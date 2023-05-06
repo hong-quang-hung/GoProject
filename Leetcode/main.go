@@ -15,8 +15,9 @@ var _PROBLEM_TOTAL_ int
 func init() {
 	_PROBLEM_DEBUG_ = 102646 - solutions.Normalize
 	_PROBLEM_DEBUG_ = 102658 - solutions.Normalize
+	_PROBLEM_DEBUG_ = 101498 - solutions.Normalize
 
-	_PROBLEM_TOTAL_ = 2663
+	_PROBLEM_TOTAL_ = 2669
 }
 
 func main() {

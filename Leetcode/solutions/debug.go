@@ -155,6 +155,7 @@ func init() {
 	_SOLUTIONS_[101456] = medium.Leetcode_Max_Vowels
 	_SOLUTIONS_[101466] = medium.Leetcode_Min_Reorder
 	_SOLUTIONS_[101472] = medium.Leetcode_Design_Browser_History
+	_SOLUTIONS_[101498] = medium.Leetcode_Num_Subseq
 	_SOLUTIONS_[101584] = medium.Leetcode_minCost_Connect_Points
 	_SOLUTIONS_[101954] = medium.Leetcode_Minimum_Perimeter
 	_SOLUTIONS_[102145] = medium.Leetcode_Number_Of_Arrays
