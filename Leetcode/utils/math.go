@@ -29,6 +29,7 @@ func MinInt(a, b int) int {
 	}
 	return b
 }
+
 func AbsInt(x int) int {
 	if x > 0 {
 		return x

@@ -90,6 +90,7 @@ func init() {
 	_SOLUTIONS_[102652] = easy.Leetcode_Sum_Of_Multiples
 	_SOLUTIONS_[102656] = easy.Leetcode_Maximize_Sum
 	_SOLUTIONS_[102660] = easy.Leetcode_Is_Winner
+	_SOLUTIONS_[102670] = easy.Leetcode_Distinct_Difference_Array
 	// Medium
 	_SOLUTIONS_[100002] = medium.Leetcode_Add_Two_Numbers
 	_SOLUTIONS_[100003] = medium.Leetcode_Length_Of_Longest_Substring
@@ -195,6 +196,9 @@ func init() {
 	_SOLUTIONS_[102658] = medium.Leetcode_Find_Max_Fish
 	_SOLUTIONS_[102661] = medium.Leetcode_First_Complete_Index
 	_SOLUTIONS_[102662] = medium.Leetcode_Minimum_Cost
+	_SOLUTIONS_[102671] = medium.Leetcode_Frequency_Tracker
+	_SOLUTIONS_[102672] = medium.Leetcode_Color_The_Array
+	_SOLUTIONS_[102673] = medium.Leetcode_Min_Increments
 	// Hard
 	_SOLUTIONS_[100004] = hard.Leetcode_Find_Median_Sorted_Arrays
 	_SOLUTIONS_[100010] = hard.Leetcode_Is_Match
