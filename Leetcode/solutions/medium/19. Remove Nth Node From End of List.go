@@ -8,7 +8,7 @@ import (
 )
 
 // Reference: https://leetcode.com/problems/remove-nth-node-from-end-of-list/
-func Leetcode_remove_Nth_From_End() {
+func Leetcode_Remove_Nth_From_End() {
 	fmt.Println("Input: head = [1,2,3,4,5], n = 2")
 	fmt.Println("Output:", removeNthFromEnd(utils.S2ListNode("[1,2,3,4,5]"), 2))
 	fmt.Println("Input: head = [1,2], n = 1")

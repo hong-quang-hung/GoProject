@@ -29,3 +29,7 @@ func gcd(a, b int) int {
 func gcd64(a, b int64) int64 {
 	return utils.GcdInt64(a, b)
 }
+
+func compareSliceInt(a, b []int) bool {
+	return utils.CompareSliceInt(a, b)
+}

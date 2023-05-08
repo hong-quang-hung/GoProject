@@ -54,3 +54,14 @@ func GcdInt64(a, b int64) int64 {
 	}
 	return GcdInt64(b%a, a)
 }
+
+// Compare two slice which same length
+// Constraints: len(a) == len(b)
+func CompareSliceInt(a, b []int) bool {
+	for i := range a {
+		if a[i] != b[i] {
+			return false
+		}
+	}
+	return true
+}

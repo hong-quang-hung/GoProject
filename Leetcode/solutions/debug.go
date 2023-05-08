@@ -104,7 +104,7 @@ func init() {
 	_SOLUTIONS_[100016] = medium.Leetcode_Tree_Sum_Closest
 	_SOLUTIONS_[100017] = medium.Leetcode_Letter_Combinations
 	_SOLUTIONS_[100018] = medium.Leetcode_Four_Sum
-	_SOLUTIONS_[100019] = medium.Leetcode_remove_Nth_From_End
+	_SOLUTIONS_[100019] = medium.Leetcode_Remove_Nth_From_End
 	_SOLUTIONS_[100045] = medium.Leetcode_Jumb_Game_II
 	_SOLUTIONS_[100050] = medium.Leetcode_My_Pow
 	_SOLUTIONS_[100064] = medium.Leetcode_Min_Path_Sum
@@ -129,6 +129,7 @@ func init() {
 	_SOLUTIONS_[100337] = medium.Leetcode_House_Robber_III
 	_SOLUTIONS_[100382] = medium.Leetcode_Constructor
 	_SOLUTIONS_[100427] = medium.Leetcode_Construct
+	_SOLUTIONS_[100438] = medium.Leetcode_Find_Anagrams
 	_SOLUTIONS_[100443] = medium.Leetcode_Compress
 	_SOLUTIONS_[100516] = medium.Leetcode_Longest_Palindrome_Subseq
 	_SOLUTIONS_[100540] = medium.Leetcode_Single_Non_Duplicate
