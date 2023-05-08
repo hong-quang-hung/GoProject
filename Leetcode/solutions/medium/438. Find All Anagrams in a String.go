@@ -4,7 +4,7 @@ import (
 	"fmt"
 )
 
-// Reference: https://leetcode.com/problems/remove-nth-node-from-end-of-list/
+// Reference: https://leetcode.com/problems/find-all-anagrams-in-a-string/
 func Leetcode_Find_Anagrams() {
 	fmt.Println("Input: s = 'cbaebabacd', p = 'abc'")
 	fmt.Println("Output:", findAnagrams("cbaebabacd", "abc"))
