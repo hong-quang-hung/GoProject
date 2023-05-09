@@ -58,7 +58,7 @@ func minimumTotalPriceDFS(g [][]int, price []int, dp [][][2]int, visited []bool,
 	visited[start] = true
 	for _, v := range g[start] {
 		if half == 0 {
-			minP = min(minP, min(price[start]+minimumTotalPriceDFS(g, price, dp, visited, v, end, 1), price[start]+minimumTotalPriceDFS(g, price, dp, visited, v, end, 0)))
+			minP = min(minP, price[start]+min(minimumTotalPriceDFS(g, price, dp, visited, v, end, 1), minimumTotalPriceDFS(g, price, dp, visited, v, end, 0)))
 		} else {
 			minP = min(minP, minimumTotalPriceDFS(g, price, dp, visited, v, end, 0)+price[start]/2)
 		}
