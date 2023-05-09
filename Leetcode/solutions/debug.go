@@ -108,6 +108,7 @@ func init() {
 	_SOLUTIONS_[100038] = medium.Leetcode_Count_And_Say
 	_SOLUTIONS_[100045] = medium.Leetcode_Jumb_Game_II
 	_SOLUTIONS_[100050] = medium.Leetcode_My_Pow
+	_SOLUTIONS_[100054] = medium.Leetcode_Spiral_Order
 	_SOLUTIONS_[100064] = medium.Leetcode_Min_Path_Sum
 	_SOLUTIONS_[100071] = medium.Leetcode_Simplify_Path
 	_SOLUTIONS_[100103] = medium.Leetcode_Zigzag_Level_Order
