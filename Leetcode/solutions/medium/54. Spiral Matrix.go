@@ -15,26 +15,37 @@ func Leetcode_Spiral_Order() {
 }
 
 func spiralOrder(matrix [][]int) []int {
-	n, m := len(matrix), len(matrix[0])
-	res := make([]int, n*m)
+	if len(matrix) == 0 {
+		return []int{}
+	}
 
-	r, c := -1, -1
-	isNextR, isNextC := true, true
-	limitR, LimitR := n-1, m-1
-	for i := range res {
-		if isNextR {
-			r++
-		} else {
-			r--
+	rows, cols := len(matrix), len(matrix[0])
+	left, right, top, bottom := 0, cols-1, 0, rows-1
+	res := []int{}
+	for len(res) != rows*cols {
+		for i := left; i < right+1; i++ {
+			res = append(res, matrix[top][i])
 		}
 
-		if isNextC {
-			c++
-		} else {
-			c--
+		top++
+		for i := top; i < bottom+1; i++ {
+			res = append(res, matrix[i][right])
 		}
 
-		res[i] = matrix[r][c]
+		right--
+		if top <= bottom {
+			for i := right; i > left-1; i-- {
+				res = append(res, matrix[bottom][i])
+			}
+			bottom--
+		}
+
+		if left <= right {
+			for i := bottom; i > top-1; i-- {
+				res = append(res, matrix[i][left])
+			}
+			left++
+		}
 	}
 	return res
 }
