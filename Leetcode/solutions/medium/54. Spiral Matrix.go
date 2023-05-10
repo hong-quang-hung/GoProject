@@ -15,10 +15,6 @@ func Leetcode_Spiral_Order() {
 }
 
 func spiralOrder(matrix [][]int) []int {
-	if len(matrix) == 0 {
-		return []int{}
-	}
-
 	rows, cols := len(matrix), len(matrix[0])
 	left, right, top, bottom := 0, cols-1, 0, rows-1
 	res := []int{}
