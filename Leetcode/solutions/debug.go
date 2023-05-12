@@ -18,7 +18,8 @@ var _SOLUTIONS_ Solution
 
 func init() {
 	_SOLUTIONS_ = make(map[int]func())
-	// Easy
+
+	// #region Easy
 	_SOLUTIONS_[100001] = easy.Leetcode_Two_Sum
 	_SOLUTIONS_[100009] = easy.LeetCode_Is_Palindrome
 	_SOLUTIONS_[100013] = easy.Leetcode_Roman_To_Int
@@ -91,7 +92,9 @@ func init() {
 	_SOLUTIONS_[102656] = easy.Leetcode_Maximize_Sum
 	_SOLUTIONS_[102660] = easy.Leetcode_Is_Winner
 	_SOLUTIONS_[102670] = easy.Leetcode_Distinct_Difference_Array
-	// Medium
+	// #endregion
+
+	// #region Medium
 	_SOLUTIONS_[100002] = medium.Leetcode_Add_Two_Numbers
 	_SOLUTIONS_[100003] = medium.Leetcode_Length_Of_Longest_Substring
 	_SOLUTIONS_[100005] = medium.Leetcode_Longest_Palindrome
@@ -151,6 +154,7 @@ func init() {
 	_SOLUTIONS_[100983] = medium.Leetcode_Min_Cost_Tickets
 	_SOLUTIONS_[101011] = medium.Leetcode_Ship_Within_Days
 	_SOLUTIONS_[101020] = medium.Leetcode_Num_Enclaves
+	_SOLUTIONS_[101035] = medium.Leetcode_Max_Uncrossed_Lines
 	_SOLUTIONS_[101049] = medium.Leetcode_Last_Stone_Weight_II
 	_SOLUTIONS_[101129] = medium.Leetcode_Shortest_Alternating_Paths
 	_SOLUTIONS_[101162] = medium.Leetcode_Max_Distance
@@ -165,6 +169,7 @@ func init() {
 	_SOLUTIONS_[101498] = medium.Leetcode_Num_Subseq
 	_SOLUTIONS_[101584] = medium.Leetcode_minCost_Connect_Points
 	_SOLUTIONS_[101954] = medium.Leetcode_Minimum_Perimeter
+	_SOLUTIONS_[102140] = medium.Leetcode_Most_Points
 	_SOLUTIONS_[102145] = medium.Leetcode_Number_Of_Arrays
 	_SOLUTIONS_[102187] = medium.Leetcode_Minimum_Time
 	_SOLUTIONS_[102300] = medium.Leetcode_Successful_Pairs
@@ -204,7 +209,9 @@ func init() {
 	_SOLUTIONS_[102671] = medium.Leetcode_Frequency_Tracker
 	_SOLUTIONS_[102672] = medium.Leetcode_Color_The_Array
 	_SOLUTIONS_[102673] = medium.Leetcode_Min_Increments
-	// Hard
+	// #endregion
+
+	// #region Hard
 	_SOLUTIONS_[100004] = hard.Leetcode_Find_Median_Sorted_Arrays
 	_SOLUTIONS_[100010] = hard.Leetcode_Is_Match
 	_SOLUTIONS_[100023] = hard.Leetcode_Merge_K_Lists
@@ -234,6 +241,8 @@ func init() {
 	_SOLUTIONS_[102547] = hard.Leetcode_Min_Cost
 	_SOLUTIONS_[102646] = hard.Leetcode_Minimum_Total_Price
 	_SOLUTIONS_[102659] = hard.Leetcode_Count_Operations_To_Empty_Array
+	// #endregion
+
 	// Other
 	_SOLUTIONS_[100570] = Leetcode_SQL // Medium
 	_SOLUTIONS_[100585] = Leetcode_SQL // Medium
