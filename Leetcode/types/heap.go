@@ -23,7 +23,7 @@ func (h *MinHeap) Push(i interface{}) {
 // Max Heap for integer type
 type MaxHeap []int
 
-func (h MaxHeap) Less(i, j int) bool { return h[i] < h[j] }
+func (h MaxHeap) Less(i, j int) bool { return h[i] > h[j] }
 func (h MaxHeap) Len() int           { return len(h) }
 func (h MaxHeap) Swap(i, j int)      { h[i], h[j] = h[j], h[i] }
 func (h MaxHeap) Empty() bool        { return len(h) == 0 }

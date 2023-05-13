@@ -95,6 +95,7 @@ func init() {
 	_SOLUTIONS_[102656] = easy.Leetcode_Maximize_Sum
 	_SOLUTIONS_[102660] = easy.Leetcode_Is_Winner
 	_SOLUTIONS_[102670] = easy.Leetcode_Distinct_Difference_Array
+	_SOLUTIONS_[102678] = easy.Leetcode_Count_Seniors
 	// #endregion
 
 	// #region Medium
@@ -214,6 +215,8 @@ func init() {
 	_SOLUTIONS_[102671] = medium.Leetcode_Frequency_Tracker
 	_SOLUTIONS_[102672] = medium.Leetcode_Color_The_Array
 	_SOLUTIONS_[102673] = medium.Leetcode_Min_Increments
+	_SOLUTIONS_[102679] = medium.Leetcode_Matrix_Sum
+	_SOLUTIONS_[102680] = medium.Leetcode_Maximum_Or
 	// #endregion
 
 	// #region Hard
