@@ -111,6 +111,7 @@ func init() {
 	_SOLUTIONS_[100017] = medium.Leetcode_Letter_Combinations
 	_SOLUTIONS_[100018] = medium.Leetcode_Four_Sum
 	_SOLUTIONS_[100019] = medium.Leetcode_Remove_Nth_From_End
+	_SOLUTIONS_[100036] = medium.Leetcode_Is_Valid_Sudoku
 	_SOLUTIONS_[100038] = medium.Leetcode_Count_And_Say
 	_SOLUTIONS_[100045] = medium.Leetcode_Jumb_Game_II
 	_SOLUTIONS_[100050] = medium.Leetcode_My_Pow
