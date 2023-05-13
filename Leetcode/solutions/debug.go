@@ -179,6 +179,7 @@ func init() {
 	_SOLUTIONS_[102390] = medium.Leetcode_Remove_Stars
 	_SOLUTIONS_[102405] = medium.Leetcode_Partition_String
 	_SOLUTIONS_[102439] = medium.Leetcode_Minimize_Array_Value
+	_SOLUTIONS_[102466] = medium.Leetcode_Count_Good_Strings
 	_SOLUTIONS_[102477] = medium.Leetcode_Minimum_Fuel_Cost
 	_SOLUTIONS_[102492] = medium.Leetcode_Min_Score
 	_SOLUTIONS_[102567] = medium.Leetcode_Minimize_Sum
