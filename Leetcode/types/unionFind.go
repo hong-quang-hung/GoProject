@@ -3,15 +3,19 @@ package types
 type UnionFind struct {
 	Parent []int
 	Rank   []int
+	Count  []int
 }
 
 func NewUnionFind(size int) *UnionFind {
 	parent := make([]int, size)
+	count := make([]int, size)
 	for i := 0; i < size; i++ {
 		parent[i] = i
+		count[i] = 1
 	}
+
 	rank := make([]int, size)
-	return &UnionFind{Parent: parent, Rank: rank}
+	return &UnionFind{Parent: parent, Rank: rank, Count: count}
 }
 
 func (u *UnionFind) Find(x int) int {
@@ -26,6 +30,10 @@ func (u *UnionFind) UnionSet(x int, y int) bool {
 	if xset == yset {
 		return false
 	}
+
+	count := u.Count[xset] + u.Count[yset]
+	u.Count[xset] = count
+	u.Count[yset] = count
 
 	if u.Rank[xset] < u.Rank[yset] {
 		u.Parent[xset] = yset
