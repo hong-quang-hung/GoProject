@@ -18,55 +18,85 @@ func Leetcode_Minimum_Total_Price() {
 
 func minimumTotalPrice(n int, edges [][]int, price []int, trips [][]int) int {
 	g := make([][]int, n)
-	dp := make([][][2]int, n)
+	dp := make([][2]int, n)
 	for i := 0; i < len(edges); i++ {
 		g[edges[i][0]] = append(g[edges[i][0]], edges[i][1])
 		g[edges[i][1]] = append(g[edges[i][1]], edges[i][0])
 	}
 
 	for i := 0; i < n; i++ {
-		dp[i] = make([][2]int, n)
-		for j := 0; j < n; j++ {
-			if i == j {
-				dp[i][j][0] = price[i]
-				dp[i][j][1] = price[i] / 2
-			} else {
-				dp[i][j][0] = -1
-				dp[i][j][1] = -1
+		dp[i] = [2]int{-1, -1}
+	}
+
+	cnt := make([]int, n)
+	for _, trip := range trips {
+		cnt[trip[0]]++
+		minimumTotalPriceCountNode(g, trip[0], -1, trip[1], cnt)
+	}
+	return minimumTotalPriceDFS(g, price, dp, 0, -1, 0, cnt)
+}
+
+func minimumTotalPriceDFS(g [][]int, price []int, dp [][2]int, node int, par int, parTaken int, cnt []int) int {
+	if dp[node][parTaken] != -1 {
+		return dp[node][parTaken]
+	}
+
+	childs := 0
+	for _, i := range g[node] {
+		if i != par {
+			childs++
+		}
+	}
+
+	if childs == 0 {
+		if parTaken == 1 {
+			dp[node][parTaken] = cnt[node] * (price[node])
+			return dp[node][parTaken]
+		}
+
+		dp[node][parTaken] = cnt[node] * (price[node] / 2)
+		return dp[node][parTaken]
+	}
+
+	if parTaken == 1 {
+		ans := 0
+		for _, i := range g[node] {
+			if i != par {
+				ans += minimumTotalPriceDFS(g, price, dp, i, node, 0, cnt)
+			}
+		}
+
+		ans += cnt[node] * price[node]
+		dp[node][parTaken] = ans
+		return dp[node][parTaken]
+	}
+
+	ans1, ans2 := 0, 0
+	for _, i := range g[node] {
+		if i != par {
+			ans1 += minimumTotalPriceDFS(g, price, dp, i, node, 0, cnt)
+			ans2 += minimumTotalPriceDFS(g, price, dp, i, node, 1, cnt)
+		}
+	}
+
+	ans1 += cnt[node] * (price[node])
+	ans2 += cnt[node] * (price[node] / 2)
+	dp[node][parTaken] = min(ans1, ans2)
+	return dp[node][parTaken]
+}
+
+func minimumTotalPriceCountNode(g [][]int, node int, par int, dst int, cnt []int) bool {
+	if node == dst {
+		return true
+	}
+
+	for _, i := range g[node] {
+		if i != par {
+			if minimumTotalPriceCountNode(g, i, node, dst, cnt) {
+				cnt[i]++
+				return true
 			}
 		}
 	}
-
-	res1, res2 := 0, 0
-	for _, trip := range trips {
-		res1 += minimumTotalPriceDFS(g, price, dp, make([]bool, n), trip[0], trip[1], 0)
-		res2 += minimumTotalPriceDFS(g, price, dp, make([]bool, n), trip[0], trip[1], 1)
-	}
-	return min(res1, res2)
-}
-
-func minimumTotalPriceDFS(g [][]int, price []int, dp [][][2]int, visited []bool, start int, end int, half int) int {
-	if visited[start] {
-		return 500001
-	}
-
-	if dp[start][end][half] != -1 || dp[end][start][half] != -1 {
-		return dp[start][end][half]
-	}
-
-	minP := 500001
-	visited[start] = true
-	for _, v := range g[start] {
-		if half == 0 {
-			minP = min(minP, price[start]+min(minimumTotalPriceDFS(g, price, dp, visited, v, end, 1), minimumTotalPriceDFS(g, price, dp, visited, v, end, 0)))
-		} else {
-			minP = min(minP, minimumTotalPriceDFS(g, price, dp, visited, v, end, 0)+price[start]/2)
-		}
-	}
-
-	if minP < 500001 {
-		dp[start][end][half] = minP
-		dp[end][start][half] = minP
-	}
-	return minP
+	return false
 }
