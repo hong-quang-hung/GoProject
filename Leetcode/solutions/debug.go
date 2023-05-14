@@ -116,6 +116,7 @@ func init() {
 	_SOLUTIONS_[100022] = medium.Leetcode_Generate_Parenthesis
 	_SOLUTIONS_[100036] = medium.Leetcode_Is_Valid_Sudoku
 	_SOLUTIONS_[100038] = medium.Leetcode_Count_And_Say
+	_SOLUTIONS_[100039] = medium.Leetcode_Combination_Sum
 	_SOLUTIONS_[100045] = medium.Leetcode_Jumb_Game_II
 	_SOLUTIONS_[100050] = medium.Leetcode_My_Pow
 	_SOLUTIONS_[100054] = medium.Leetcode_Spiral_Order
