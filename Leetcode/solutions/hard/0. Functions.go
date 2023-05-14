@@ -9,3 +9,7 @@ func min(a, b int) int {
 func max(a, b int) int {
 	return utils.MaxInt(a, b)
 }
+
+func gcd(a, b int) int {
+	return utils.GcdInt(a, b)
+}
