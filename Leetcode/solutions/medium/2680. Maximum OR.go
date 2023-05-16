@@ -2,7 +2,6 @@ package medium
 
 import (
 	"fmt"
-	"math"
 )
 
 // Reference: https://leetcode.com/problems/maximum-or/
@@ -11,6 +10,10 @@ func Leetcode_Maximum_Or() {
 	fmt.Println("Output:", maximumOr([]int{12, 9}, 1))
 	fmt.Println("Input: nums = [8,1,2], k = 2")
 	fmt.Println("Output:", maximumOr([]int{8, 1, 2}, 2))
+	fmt.Println("Input: nums = [10,8,4], k = 1")
+	fmt.Println("Output:", maximumOr([]int{10, 8, 4}, 1))
+	fmt.Println("Input: nums = [6,9,8], k = 1")
+	fmt.Println("Output:", maximumOr([]int{6, 9, 8}, 1))
 }
 
 func maximumOr(nums []int, k int) int64 {
@@ -22,11 +25,11 @@ func maximumOr(nums []int, k int) int64 {
 			dp[i][j] = -1
 		}
 	}
-	return maximumOrSolved(nums, dp, n-1, k)
+	return maximumOrSolved(nums, dp, 0, k)
 }
 
 func maximumOrSolved(nums []int, dp [][]int64, i, k int) int64 {
-	if i < 0 || k < 0 {
+	if i == len(nums) {
 		return 0
 	}
 
@@ -34,10 +37,10 @@ func maximumOrSolved(nums []int, dp [][]int64, i, k int) int64 {
 		return dp[i][k]
 	}
 
-	maxOr := int64(math.MinInt64)
-	for j := 0; j <= k; j++ {
-		sum := int64(nums[i]) * int64(math.Pow(2, float64(j)))
-		maxOr = max64(maxOr, sum|maximumOrSolved(nums, dp, i-1, k-j))
+	maxOr := int64(nums[i]) | maximumOrSolved(nums, dp, i+1, k)
+	for j := 1; j <= k; j++ {
+		sum := int64(nums[i]) << j
+		maxOr = max64(maxOr, sum|maximumOrSolved(nums, dp, i+1, k-j))
 	}
 
 	dp[i][k] = maxOr

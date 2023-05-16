@@ -184,6 +184,7 @@ func init() {
 	_SOLUTIONS_[101584] = medium.Leetcode_minCost_Connect_Points
 	_SOLUTIONS_[101721] = medium.Leetcode_Swap_Nodes
 	_SOLUTIONS_[101954] = medium.Leetcode_Minimum_Perimeter
+	_SOLUTIONS_[102038] = medium.Leetcode_Winner_Of_Game
 	_SOLUTIONS_[102140] = medium.Leetcode_Most_Points
 	_SOLUTIONS_[102145] = medium.Leetcode_Number_Of_Arrays
 	_SOLUTIONS_[102187] = medium.Leetcode_Minimum_Time
