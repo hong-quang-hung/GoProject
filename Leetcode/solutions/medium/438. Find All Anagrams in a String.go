@@ -24,7 +24,7 @@ func findAnagrams(s string, p string) []int {
 		mS[s[i]-'a']++
 	}
 
-	if compareSliceInt(mS, mP) {
+	if compareSlice(mS, mP) {
 		res = append(res, 0)
 	}
 
@@ -32,7 +32,7 @@ func findAnagrams(s string, p string) []int {
 		mS[s[i-pLen]-'a']--
 		mS[s[i]-'a']++
 
-		if compareSliceInt(mS, mP) {
+		if compareSlice(mS, mP) {
 			res = append(res, i-pLen+1)
 		}
 	}
