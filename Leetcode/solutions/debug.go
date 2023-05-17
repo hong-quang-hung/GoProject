@@ -73,6 +73,7 @@ func init() {
 	_SOLUTIONS_[101805] = easy.Leetcode_Num_Different_Integers
 	_SOLUTIONS_[101822] = easy.Leetcode_Array_Sign
 	_SOLUTIONS_[101925] = easy.Leetcode_Count_Triples
+	_SOLUTIONS_[101965] = Leetcode_SQL
 	_SOLUTIONS_[101979] = easy.Leetcode_Find_GCD
 	_SOLUTIONS_[102215] = easy.Leetcode_Find_Difference
 	_SOLUTIONS_[102399] = easy.Leetcode_Check_Distances
@@ -154,6 +155,8 @@ func init() {
 	_SOLUTIONS_[100516] = medium.Leetcode_Longest_Palindrome_Subseq
 	_SOLUTIONS_[100540] = medium.Leetcode_Single_Non_Duplicate
 	_SOLUTIONS_[100567] = medium.Leetcode_Check_Inclusion
+	_SOLUTIONS_[100570] = Leetcode_SQL
+	_SOLUTIONS_[100585] = Leetcode_SQL
 	_SOLUTIONS_[100649] = medium.Leetcode_Predict_Party_Victory
 	_SOLUTIONS_[100652] = medium.Leetcode_Find_Duplicate_Subtrees
 	_SOLUTIONS_[100662] = medium.Leetcode_Width_Of_Binary_Tree
@@ -243,6 +246,7 @@ func init() {
 	_SOLUTIONS_[100072] = hard.Leetcode_Min_Distance
 	_SOLUTIONS_[100087] = hard.Leetcode_Is_Scramble
 	_SOLUTIONS_[100502] = hard.Leetcode_Find_Maximized_Capital
+	_SOLUTIONS_[100601] = Leetcode_SQL
 	_SOLUTIONS_[100768] = hard.Leetcode_Max_Chunks_To_Sorted_II
 	_SOLUTIONS_[100839] = hard.Leetcode_Num_Similar_Groups
 	_SOLUTIONS_[100879] = hard.Leetcode_Profitable_Schemes
@@ -267,12 +271,6 @@ func init() {
 	_SOLUTIONS_[102646] = hard.Leetcode_Minimum_Total_Price
 	_SOLUTIONS_[102659] = hard.Leetcode_Count_Operations_To_Empty_Array
 	// #endregion
-
-	// Other
-	_SOLUTIONS_[100570] = Leetcode_SQL // Medium
-	_SOLUTIONS_[100585] = Leetcode_SQL // Medium
-	_SOLUTIONS_[100601] = Leetcode_SQL // Hard
-	_SOLUTIONS_[101965] = Leetcode_SQL // Easy
 }
 
 func Len() int {
