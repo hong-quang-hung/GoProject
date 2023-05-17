@@ -128,6 +128,7 @@ func init() {
 	_SOLUTIONS_[100064] = medium.Leetcode_Min_Path_Sum
 	_SOLUTIONS_[100071] = medium.Leetcode_Simplify_Path
 	_SOLUTIONS_[100077] = medium.Leetcode_Combine
+	_SOLUTIONS_[100078] = medium.Leetcode_Subsets
 	_SOLUTIONS_[100103] = medium.Leetcode_Zigzag_Level_Order
 	_SOLUTIONS_[100106] = medium.Leetcode_Build_Trees
 	_SOLUTIONS_[100109] = medium.Leetcode_Sorted_List_To_BST
@@ -188,6 +189,7 @@ func init() {
 	_SOLUTIONS_[101721] = medium.Leetcode_Swap_Nodes
 	_SOLUTIONS_[101954] = medium.Leetcode_Minimum_Perimeter
 	_SOLUTIONS_[102038] = medium.Leetcode_Winner_Of_Game
+	_SOLUTIONS_[102044] = medium.Leetcode_Count_Max_Or_Subsets
 	_SOLUTIONS_[102130] = medium.Leetcode_Pair_Sum
 	_SOLUTIONS_[102140] = medium.Leetcode_Most_Points
 	_SOLUTIONS_[102145] = medium.Leetcode_Number_Of_Arrays
