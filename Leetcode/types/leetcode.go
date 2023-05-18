@@ -62,9 +62,9 @@ func (L *Leetcode) Total() int {
 }
 
 func (L *Leetcode) IsSolved(i int) bool {
-	return i <= L.total && L.problems[i]
+	return i >= 0 && i <= L.total && L.problems[i]
 }
 
 func (L *Leetcode) IsValid(i int) bool {
-	return i <= L.total && !L.problems[i]
+	return i >= 0 && i <= L.total && !L.problems[i]
 }
