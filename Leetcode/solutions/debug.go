@@ -195,6 +195,7 @@ func init() {
 	_SOLUTIONS_[102140] = medium.Leetcode_Most_Points
 	_SOLUTIONS_[102145] = medium.Leetcode_Number_Of_Arrays
 	_SOLUTIONS_[102187] = medium.Leetcode_Minimum_Time
+	_SOLUTIONS_[102275] = medium.Leetcode_Largest_Combination
 	_SOLUTIONS_[102300] = medium.Leetcode_Successful_Pairs
 	_SOLUTIONS_[102316] = medium.Leetcode_Count_Pairs
 	_SOLUTIONS_[102336] = medium.Leetcode_Smallest_Infinite_Set
