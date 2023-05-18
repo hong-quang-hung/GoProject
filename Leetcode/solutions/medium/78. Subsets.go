@@ -6,8 +6,8 @@ import "fmt"
 func Leetcode_Subsets() {
 	fmt.Println("Input: nums = [1,2,3]")
 	fmt.Println("Output:", subsets([]int{1, 2, 3}))
-	fmt.Println("Input: nums = [0]")
-	fmt.Println("Output:", subsets([]int{0}))
+	fmt.Println("Input: nums = [2,2,2]")
+	fmt.Println("Output:", subsets([]int{2, 2, 2}))
 }
 
 func subsets(nums []int) [][]int {
