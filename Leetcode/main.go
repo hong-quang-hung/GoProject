@@ -51,11 +51,11 @@ func LeetcodeInfomation() {
 	Leetcode.SetSolved(8, 18, 28, 38, 58, 78, 118, 198, 208, 258, 438, 768, 958, 1348, 1498, 1768, 2038, 2218, 2348, 2578, 2588, 2658, 2678)
 	Leetcode.SetSolved(9, 19, 39, 59, 109, 119, 129, 219, 279, 299, 309, 319, 509, 649, 769, 839, 849, 879, 929, 989, 1049, 1129, 1319, 1539, 1579, 1639, 1799, 1979, 2399, 2419, 2439, 2579, 2609, 2639, 2659, 2679)
 
+	// defer ShowHasNotSubmited(Leetcode)
 	// defer LeetcodeGroupBy(Leetcode, 10)
 
 	fmt.Println("There are", Leetcode.Solved(), "/", Leetcode.Total(), "problem(s) has been solved in Leetcode.")
 	fmt.Println("Today, Number of Leetcode Problem is:", Leetcode.PickProblem())
-	// ShowHasNotSubmited(Leetcode)
 }
 
 func TestRegexGolang() {
@@ -94,6 +94,6 @@ func LeetcodeGroupBy(L *types.Leetcode, n int) {
 	PrintLine()
 	fmt.Println("Leetcode group by:", n)
 	for i := 0; i < n; i++ {
-		fmt.Printf("%d : %s\n", i+1, utils.Sslice(group[i]))
+		fmt.Printf("%d : %s\n", i, utils.Sslice(group[i]))
 	}
 }
