@@ -150,6 +150,7 @@ func init() {
 	_SOLUTIONS_[100337] = medium.Leetcode_House_Robber_III
 	_SOLUTIONS_[100377] = medium.Leetcode_Combination_Sum_4
 	_SOLUTIONS_[100382] = medium.Leetcode_Constructor
+	_SOLUTIONS_[100399] = medium.Leetcode_Calc_Equation
 	_SOLUTIONS_[100427] = medium.Leetcode_Construct
 	_SOLUTIONS_[100438] = medium.Leetcode_Find_Anagrams
 	_SOLUTIONS_[100443] = medium.Leetcode_Compress
