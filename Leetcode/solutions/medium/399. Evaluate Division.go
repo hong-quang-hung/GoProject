@@ -52,7 +52,7 @@ func calcEquationDFS(x, y string, visited map[string]bool, g map[string]map[stri
 		return val
 	}
 
-	for k, _ := range g[x] {
+	for k := range g[x] {
 		if !visited[k] {
 			visited[k] = true
 			tmp := calcEquationDFS(k, y, visited, g)
