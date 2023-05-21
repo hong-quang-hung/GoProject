@@ -182,6 +182,7 @@ func init() {
 	_SOLUTIONS_[101129] = medium.Leetcode_Shortest_Alternating_Paths
 	_SOLUTIONS_[101162] = medium.Leetcode_Max_Distance
 	_SOLUTIONS_[101201] = medium.Leetcode_Is_Ugly_III
+	_SOLUTIONS_[101202] = medium.Leetcode_Smallest_String_With_Swaps
 	_SOLUTIONS_[101254] = medium.Leetcode_Closed_Island
 	_SOLUTIONS_[101319] = medium.Leetcode_Make_Connected
 	_SOLUTIONS_[101348] = medium.Leetcode_Tweet_Counts_Per_Frequency
@@ -273,6 +274,7 @@ func init() {
 	_SOLUTIONS_[101857] = hard.Leetcode_Largest_Path_Value
 	_SOLUTIONS_[101944] = hard.Leetcode_Can_See_Persons_Count
 	_SOLUTIONS_[101964] = hard.Leetcode_Longest_Obstacle_Course_At_Each_Position
+	_SOLUTIONS_[101998] = hard.Leetcode_Gcd_Sort
 	_SOLUTIONS_[102218] = hard.Leetcode_Max_Value_Of_Coins
 	_SOLUTIONS_[102306] = hard.Leetcode_Distinct_Names
 	_SOLUTIONS_[102360] = hard.Leetcode_Longest_Cycle
