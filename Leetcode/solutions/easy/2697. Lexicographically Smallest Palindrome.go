@@ -4,7 +4,7 @@ import (
 	"fmt"
 )
 
-// Reference:
+// Reference: https://leetcode.com/problems/lexicographically-smallest-palindrome/
 func Leetcode_Make_Smallest_Palindrome() {
 	fmt.Println("Input: s = 'egcfe'")
 	fmt.Println("Output:", makeSmallestPalindrome("egcfe"))

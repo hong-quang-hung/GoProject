@@ -171,6 +171,7 @@ func init() {
 	_SOLUTIONS_[100875] = medium.Leetcode_Min_Eating_Speed
 	_SOLUTIONS_[100904] = medium.Leetcode_Total_Fruit
 	_SOLUTIONS_[100912] = medium.Leetcode_Sort_Array
+	_SOLUTIONS_[100934] = medium.Leetcode_Shortest_Bridge
 	_SOLUTIONS_[100946] = medium.Leetcode_Validate_Stack_Sequences
 	_SOLUTIONS_[100958] = medium.Leetcode_Is_Complete_Tree
 	_SOLUTIONS_[100983] = medium.Leetcode_Min_Cost_Tickets

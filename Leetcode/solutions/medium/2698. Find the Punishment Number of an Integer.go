@@ -5,7 +5,7 @@ import (
 	"strconv"
 )
 
-// Reference:
+// Reference: https://leetcode.com/problems/find-the-punishment-number-of-an-integer/
 func Leetcode_Punishment_Number() {
 	fmt.Println("Input: n = 10")
 	fmt.Println("Output:", punishmentNumber(10))
