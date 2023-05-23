@@ -253,6 +253,7 @@ func init() {
 	_SOLUTIONS_[102671] = medium.Leetcode_Frequency_Tracker
 	_SOLUTIONS_[102672] = medium.Leetcode_Color_The_Array
 	_SOLUTIONS_[102673] = medium.Leetcode_Min_Increments
+	_SOLUTIONS_[102675] = Leetcode_Javascript
 	_SOLUTIONS_[102679] = medium.Leetcode_Matrix_Sum
 	_SOLUTIONS_[102680] = medium.Leetcode_Maximum_Or
 	_SOLUTIONS_[102683] = medium.Leetcode_Does_Valid_Array_Exist
