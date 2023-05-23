@@ -99,6 +99,7 @@ func init() {
 	_SOLUTIONS_[102652] = easy.Leetcode_Sum_Of_Multiples
 	_SOLUTIONS_[102656] = easy.Leetcode_Maximize_Sum
 	_SOLUTIONS_[102660] = easy.Leetcode_Is_Winner
+	_SOLUTIONS_[102665] = Leetcode_Javascript
 	_SOLUTIONS_[102667] = Leetcode_Javascript
 	_SOLUTIONS_[102670] = easy.Leetcode_Distinct_Difference_Array
 	_SOLUTIONS_[102678] = easy.Leetcode_Count_Seniors
