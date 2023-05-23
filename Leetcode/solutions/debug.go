@@ -92,6 +92,7 @@ func init() {
 	_SOLUTIONS_[102609] = easy.Leetcode_Find_The_Longest_Balanced_Substring
 	_SOLUTIONS_[102620] = Leetcode_Javascript
 	_SOLUTIONS_[102626] = Leetcode_Javascript
+	_SOLUTIONS_[102629] = Leetcode_Javascript
 	_SOLUTIONS_[102634] = Leetcode_Javascript
 	_SOLUTIONS_[102635] = Leetcode_Javascript
 	_SOLUTIONS_[102639] = easy.Leetcode_Max_Value_Of_Coins
