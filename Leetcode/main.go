@@ -86,6 +86,7 @@ func LeetcodeGroupBy(L *types.Leetcode, n int) {
 		group[i] = []int{}
 	}
 
+	group[0] = append(group[0], 0)
 	for i := -1; i < _PROBLEM_TOTAL_; i++ {
 		if L.IsSolved(i) {
 			group[(i+1)%n] = append(group[(i+1)%n], i+1)
@@ -95,6 +96,6 @@ func LeetcodeGroupBy(L *types.Leetcode, n int) {
 	PrintLine()
 	fmt.Println("Leetcode group by:", n)
 	for i := 0; i < n; i++ {
-		fmt.Printf("%d : %s\n", i, utils.Sslice(group[i]))
+		fmt.Printf("%2d : %s\n", i, utils.Sslice(group[i]))
 	}
 }
