@@ -223,6 +223,7 @@ func init() {
 	_SOLUTIONS_[102466] = medium.Leetcode_Count_Good_Strings
 	_SOLUTIONS_[102477] = medium.Leetcode_Minimum_Fuel_Cost
 	_SOLUTIONS_[102492] = medium.Leetcode_Min_Score
+	_SOLUTIONS_[102542] = medium.Leetcode_Maximum_Subsequence_Score
 	_SOLUTIONS_[102567] = medium.Leetcode_Minimize_Sum
 	_SOLUTIONS_[102571] = medium.Leetcode_Min_Operations
 	_SOLUTIONS_[102575] = medium.Leetcode_Divisibility_Array
