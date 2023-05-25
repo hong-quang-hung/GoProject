@@ -177,9 +177,10 @@ func init() {
 	_SOLUTIONS_[100662] = medium.Leetcode_Width_Of_Binary_Tree
 	_SOLUTIONS_[100769] = medium.Leetcode_Max_Chunks_To_Sorted
 	_SOLUTIONS_[100785] = medium.Leetcode_Is_Bipartite
-	_SOLUTIONS_[100881] = medium.Leetcode_Num_Rescue_Boats
+	_SOLUTIONS_[100837] = medium.Leetcode_New_21_Game
 	_SOLUTIONS_[100849] = medium.Leetcode_Max_Dist_To_Closest
 	_SOLUTIONS_[100875] = medium.Leetcode_Min_Eating_Speed
+	_SOLUTIONS_[100881] = medium.Leetcode_Num_Rescue_Boats
 	_SOLUTIONS_[100904] = medium.Leetcode_Total_Fruit
 	_SOLUTIONS_[100912] = medium.Leetcode_Sort_Array
 	_SOLUTIONS_[100934] = medium.Leetcode_Shortest_Bridge
@@ -268,6 +269,7 @@ func init() {
 	_SOLUTIONS_[100004] = hard.Leetcode_Find_Median_Sorted_Arrays
 	_SOLUTIONS_[100010] = hard.Leetcode_Is_Match
 	_SOLUTIONS_[100023] = hard.Leetcode_Merge_K_Lists
+	_SOLUTIONS_[100025] = hard.Leetcode_Reverse_K_Group
 	_SOLUTIONS_[100032] = hard.Leetcode_Longest_Valid_Parentheses
 	_SOLUTIONS_[100072] = hard.Leetcode_Min_Distance
 	_SOLUTIONS_[100087] = hard.Leetcode_Is_Scramble
