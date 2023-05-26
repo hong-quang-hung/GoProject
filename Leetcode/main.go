@@ -15,7 +15,7 @@ var _PROBLEM_TOTAL_ int
 func init() {
 	_PROBLEM_DEBUG_ = 101998 - solutions.Normalize
 	_PROBLEM_DEBUG_ = 100025 - solutions.Normalize
-	_PROBLEM_DEBUG_ = 100837 - solutions.Normalize
+	_PROBLEM_DEBUG_ = 101140 - solutions.Normalize
 
 	_PROBLEM_TOTAL_ = 2702
 }
@@ -42,7 +42,7 @@ func LeetcodeInfomation() {
 	Leetcode := new(types.Leetcode)
 	Leetcode.SetTotal(_PROBLEM_TOTAL_)
 
-	Leetcode.SetSolved(0, 10, 20, 40, 50, 290, 540, 570, 1020, 1470, 2130, 2140, 2300, 2360, 2390, 2520, 2570, 2580, 2600, 2610, 2620, 2640, 2660, 2670, 2680)
+	Leetcode.SetSolved(0, 10, 20, 40, 50, 290, 540, 570, 1020, 1140, 1470, 2130, 2140, 2300, 2360, 2390, 2520, 2570, 2580, 2600, 2610, 2620, 2640, 2660, 2670, 2680)
 	Leetcode.SetSolved(1, 11, 21, 71, 101, 121, 141, 211, 231, 401, 601, 881, 1011, 1071, 1201, 1431, 1491, 1721, 2571, 2591, 2601, 2621, 2641, 2651, 2661, 2671)
 	Leetcode.SetSolved(2, 12, 22, 32, 72, 112, 142, 202, 342, 382, 502, 652, 662, 912, 1162, 1202, 1312, 1372, 1402, 1472, 1572, 1582, 1822, 2492, 2542, 2582, 2592, 2602, 2632, 2652, 2662, 2672, 2682)
 	Leetcode.SetSolved(3, 13, 23, 103, 133, 213, 263, 313, 443, 703, 783, 953, 983, 1523, 2583, 2623, 2643, 2653, 2673, 2683)
