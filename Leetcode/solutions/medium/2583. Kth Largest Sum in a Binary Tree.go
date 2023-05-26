@@ -3,17 +3,15 @@ package medium
 import (
 	"fmt"
 	"sort"
-
-	"leetcode.com/Leetcode/types"
 )
 
 // Reference: https://leetcode.com/problems/kth-largest-sum-in-a-binary-tree/
 func Leetcode_Kth_Largest_Level_Sum() {
 	fmt.Println("Input: root = [5,8,9,2,1,3,7,4,6], k = 2")
-	fmt.Println("Output:", kthLargestLevelSum(types.LazyNodeAll(5, types.LazyNodeAll(8, types.LazyNodeValue(2, 4, 6), types.LazyNode(1)), types.LazyNodeValue(9, 3, 7)), 2))
+	fmt.Println("Output:", kthLargestLevelSum(S2TreeNode("[5,8,9,2,1,3,7,4,6]"), 2))
 }
 
-func kthLargestLevelSum(root *types.TreeNode, k int) int64 {
+func kthLargestLevelSum(root *TreeNode, k int) int64 {
 	sumk := make([]int64, 0)
 	sumNodeRecursive(root, &sumk, 0)
 	if len(sumk) < k {
@@ -24,7 +22,7 @@ func kthLargestLevelSum(root *types.TreeNode, k int) int64 {
 	return sumk[k-1]
 }
 
-func sumNodeRecursive(root *types.TreeNode, sumK *[]int64, k int) {
+func sumNodeRecursive(root *TreeNode, sumK *[]int64, k int) {
 	if root == nil {
 		return
 	}

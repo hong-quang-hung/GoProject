@@ -1,17 +1,13 @@
 package medium
 
-import (
-	"fmt"
-
-	"leetcode.com/Leetcode/utils"
-)
+import "fmt"
 
 // Reference: https://leetcode.com/problems/number-of-enclaves/
 func Leetcode_Num_Enclaves() {
 	fmt.Println("Input: grid = [[0,0,0,0],[1,0,1,0],[0,1,1,0],[0,0,0,0]]")
-	fmt.Println("Output:", numEnclaves(utils.S2SoSliceInt("[[0,0,0,0],[1,0,1,0],[0,1,1,0],[0,0,0,0]]")))
+	fmt.Println("Output:", numEnclaves(S2SoSliceInt("[[0,0,0,0],[1,0,1,0],[0,1,1,0],[0,0,0,0]]")))
 	fmt.Println("Input: grid = [[0,1,1,0],[0,0,1,0],[0,0,1,0],[0,0,0,0]]")
-	fmt.Println("Output:", numEnclaves(utils.S2SoSliceInt("[[0,1,1,0],[0,0,1,0],[0,0,1,0],[0,0,0,0]]")))
+	fmt.Println("Output:", numEnclaves(S2SoSliceInt("[[0,1,1,0],[0,0,1,0],[0,0,1,0],[0,0,0,0]]")))
 }
 
 func numEnclaves(grid [][]int) int {

@@ -1,18 +1,14 @@
 package medium
 
-import (
-	"fmt"
-
-	"leetcode.com/Leetcode/types"
-)
+import "fmt"
 
 // Reference: https://leetcode.com/problems/sum-root-to-leaf-numbers/
 func Leetcode_Sum_Numbers() {
 	fmt.Println("Input: root = [1,2,3]")
-	fmt.Println("Output:", sumNumbers(types.LazyNodeAll(1, types.LazyNode(2), types.LazyNode(3))))
+	fmt.Println("Output:", sumNumbers(S2TreeNode("[1,2,3]")))
 }
 
-func sumNumbers(root *types.TreeNode) int {
+func sumNumbers(root *TreeNode) int {
 	if root == nil {
 		return 0
 	}

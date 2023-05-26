@@ -3,14 +3,12 @@ package easy
 import (
 	"fmt"
 	"math"
-
-	"leetcode.com/Leetcode/utils"
 )
 
 // Reference: https://leetcode.com/problems/left-and-right-sum-differences/
 func Leetcode_Left_Rigth_Difference() {
 	fmt.Println("Input: nums = [10,4,8,3]")
-	fmt.Println("Output:", leftRigthDifference(utils.S2SliceInt("[10,4,8,3]")))
+	fmt.Println("Output:", leftRigthDifference(S2SliceInt("[10,4,8,3]")))
 }
 
 func leftRigthDifference(nums []int) []int {

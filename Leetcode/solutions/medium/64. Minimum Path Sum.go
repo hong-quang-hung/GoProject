@@ -1,17 +1,13 @@
 package medium
 
-import (
-	"fmt"
-
-	"leetcode.com/Leetcode/utils"
-)
+import "fmt"
 
 // Reference: https://leetcode.com/problems/minimum-path-sum/
 func Leetcode_Min_Path_Sum() {
 	fmt.Println("Input: grid = [[1,3,1],[1,5,1],[4,2,1]]")
-	fmt.Println("Output:", minPathSum(utils.S2SoSliceInt("[[1,3,1],[1,5,1],[4,2,1]]")))
+	fmt.Println("Output:", minPathSum(S2SoSliceInt("[[1,3,1],[1,5,1],[4,2,1]]")))
 	fmt.Println("Input: grid = [[1,2,3],[4,5,6]]")
-	fmt.Println("Output:", minPathSum(utils.S2SoSliceInt("[[1,2,3],[4,5,6]]")))
+	fmt.Println("Output:", minPathSum(S2SoSliceInt("[[1,2,3],[4,5,6]]")))
 }
 
 func minPathSum(grid [][]int) int {

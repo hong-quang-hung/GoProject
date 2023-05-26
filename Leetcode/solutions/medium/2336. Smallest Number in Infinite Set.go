@@ -3,8 +3,6 @@ package medium
 import (
 	"container/heap"
 	"fmt"
-
-	"leetcode.com/Leetcode/types"
 )
 
 // Reference: https://leetcode.com/problems/smallest-number-in-infinite-set/
@@ -26,14 +24,14 @@ func Leetcode_Smallest_Infinite_Set() {
 }
 
 type SmallestInfiniteSet struct {
-	heap   *types.MinHeap
+	heap   *MinHeap
 	remove map[int]bool
 	curVal int
 }
 
 func (s *SmallestInfiniteSet) init() {
 	s.remove = make(map[int]bool)
-	s.heap = new(types.MinHeap)
+	s.heap = new(MinHeap)
 	s.curVal = 1
 }
 

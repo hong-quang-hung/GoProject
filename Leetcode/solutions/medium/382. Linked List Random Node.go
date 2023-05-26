@@ -4,8 +4,6 @@ import (
 	"fmt"
 	"math/rand"
 	"time"
-
-	"leetcode.com/Leetcode/types"
 )
 
 // Reference: https://leetcode.com/problems/linked-list-random-node/
@@ -13,7 +11,7 @@ func Leetcode_Constructor() {
 	fmt.Println("['Solution', 'getRandom', 'getRandom', 'getRandom', 'getRandom', 'getRandom']")
 	fmt.Println("[[[1, 2, 3]], [], [], [], [], []]")
 
-	solutions := SolutionConstructor(types.NewListNode(1, 2, 3))
+	solutions := SolutionConstructor(S2ListNode("[1, 2, 3]"))
 	fmt.Println(solutions.GetRandom())
 	fmt.Println(solutions.GetRandom())
 	fmt.Println(solutions.GetRandom())
@@ -25,7 +23,7 @@ type Solution struct {
 	list []int
 }
 
-func SolutionConstructor(head *types.ListNode) Solution {
+func SolutionConstructor(head *ListNode) Solution {
 	rand.NewSource(time.Now().UnixNano())
 	solutions := Solution{}
 	for head != nil {

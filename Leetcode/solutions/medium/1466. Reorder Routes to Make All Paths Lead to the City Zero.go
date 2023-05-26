@@ -1,15 +1,11 @@
 package medium
 
-import (
-	"fmt"
-
-	"leetcode.com/Leetcode/utils"
-)
+import "fmt"
 
 // Reference: https://leetcode.com/problems/reorder-routes-to-make-all-paths-lead-to-the-city-zero/
 func Leetcode_Min_Reorder() {
 	fmt.Println("Input: n = 6, connections = [[0,1],[1,3],[2,3],[4,0],[4,5]]")
-	fmt.Println("Output:", minReorder(6, utils.S2SoSliceInt("[[0,1],[1,3],[2,3],[4,0],[4,5]]")))
+	fmt.Println("Output:", minReorder(6, S2SoSliceInt("[[0,1],[1,3],[2,3],[4,0],[4,5]]")))
 }
 
 func minReorder(n int, connections [][]int) int {

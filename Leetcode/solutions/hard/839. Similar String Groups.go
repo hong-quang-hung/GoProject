@@ -1,10 +1,6 @@
 package hard
 
-import (
-	"fmt"
-
-	"leetcode.com/Leetcode/types"
-)
+import "fmt"
 
 // Reference: https://leetcode.com/problems/similar-string-groups/
 func Leetcode_Num_Similar_Groups() {
@@ -16,7 +12,7 @@ func Leetcode_Num_Similar_Groups() {
 
 func numSimilarGroups(strs []string) int {
 	n := len(strs)
-	union, res := types.NewUnionFind(n), n
+	union, res := NewUnionFind(n), n
 	for i := 0; i < n; i++ {
 		for j := i + 1; j < n; j++ {
 			if numSimilarCheck(strs[i], strs[j]) && union.Find(i) != union.Find(j) {

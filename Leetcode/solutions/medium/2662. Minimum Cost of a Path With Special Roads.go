@@ -3,16 +3,14 @@ package medium
 import (
 	"container/heap"
 	"fmt"
-
-	"leetcode.com/Leetcode/utils"
 )
 
 // Reference: https://leetcode.com/problems/minimum-cost-of-a-path-with-special-roads/
 func Leetcode_Minimum_Cost() {
 	fmt.Println("Input: start = [1,1], target = [4,5], specialRoads = [[1,2,3,3,2],[3,4,4,5,1]]")
-	fmt.Println("Output:", minimumCost([]int{1, 1}, []int{4, 5}, utils.S2SoSliceInt("[[1,2,3,3,2],[3,4,4,5,1]]")))
+	fmt.Println("Output:", minimumCost([]int{1, 1}, []int{4, 5}, S2SoSliceInt("[[1,2,3,3,2],[3,4,4,5,1]]")))
 	fmt.Println("Input: start = [3,2], target = [5,7], specialRoads = [[3,2,3,4,4],[3,3,5,5,5],[3,4,5,6,6]]")
-	fmt.Println("Output:", minimumCost([]int{3, 2}, []int{5, 7}, utils.S2SoSliceInt("[[3,2,3,4,4],[3,3,5,5,5],[3,4,5,6,6]]")))
+	fmt.Println("Output:", minimumCost([]int{3, 2}, []int{5, 7}, S2SoSliceInt("[[3,2,3,4,4],[3,3,5,5,5],[3,4,5,6,6]]")))
 }
 
 type minimumCostHeap [][]int

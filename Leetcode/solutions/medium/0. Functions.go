@@ -37,3 +37,7 @@ func gcd64(a, b int64) int64 {
 func compareSlice(a, b []int) bool {
 	return utils.CompareSliceInt(a, b)
 }
+
+func countingSort(nums []int) {
+	utils.CountingSort(nums)
+}

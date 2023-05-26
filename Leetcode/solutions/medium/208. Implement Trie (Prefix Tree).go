@@ -1,8 +1,6 @@
 package medium
 
-import (
-	"fmt"
-)
+import "fmt"
 
 // Reference: https://leetcode.com/problems/implement-trie-prefix-tree/
 func Leetcode_Trie_Constructor() {
@@ -19,25 +17,25 @@ func Leetcode_Trie_Constructor() {
 	fmt.Println("trie.Search('app')", trie.Search("app"))
 }
 
-type TrieNode struct {
-	suffixes [26]*TrieNode
+type TrieNodes struct {
+	suffixes [26]*TrieNodes
 	Tail     bool
 }
 
-func (tr *TrieNode) get(ch byte) *TrieNode {
+func (tr *TrieNodes) get(ch byte) *TrieNodes {
 	return tr.suffixes[ch-'a']
 }
 
-func (tr *TrieNode) set(ch byte, value *TrieNode) {
+func (tr *TrieNodes) set(ch byte, value *TrieNodes) {
 	tr.suffixes[ch-'a'] = value
 }
 
 type Trie struct {
-	root *TrieNode
+	root *TrieNodes
 }
 
 func (t *Trie) init() {
-	t.root = new(TrieNode)
+	t.root = new(TrieNodes)
 }
 
 func TrieConstructor() Trie {
@@ -50,7 +48,7 @@ func (t *Trie) Insert(word string) {
 	current := t.root
 	for i := range word {
 		if current.get(word[i]) == nil {
-			current.set(word[i], new(TrieNode))
+			current.set(word[i], new(TrieNodes))
 		}
 		current = current.get(word[i])
 	}
@@ -69,7 +67,7 @@ func (t *Trie) StartsWith(prefix string) bool {
 	return t.ToTail(prefix) != nil
 }
 
-func (t *Trie) ToTail(prefix string) *TrieNode {
+func (t *Trie) ToTail(prefix string) *TrieNodes {
 	current := t.root
 	for i := range prefix {
 		current = current.get(prefix[i])

@@ -1,10 +1,6 @@
 package medium
 
-import (
-	"fmt"
-
-	"leetcode.com/Leetcode/utils"
-)
+import "fmt"
 
 // Reference: https://leetcode.com/problems/sort-an-array/
 func Leetcode_Sort_Array() {
@@ -13,6 +9,6 @@ func Leetcode_Sort_Array() {
 }
 
 func sortArray(nums []int) []int {
-	utils.CountingSort(nums)
+	countingSort(nums)
 	return nums
 }

@@ -1,26 +1,21 @@
 package medium
 
-import (
-	"fmt"
-
-	"leetcode.com/Leetcode/types"
-	"leetcode.com/Leetcode/utils"
-)
+import "fmt"
 
 // Reference: https://leetcode.com/problems/house-robber-iii/
 func Leetcode_House_Robber_III() {
 	fmt.Println("Input: root = [3,2,3,null,3,null,1]")
-	fmt.Println("Output:", rob_iii(utils.S2TreeNode("[3,2,3,null,3,null,1]")))
+	fmt.Println("Output:", rob_iii(S2TreeNode("[3,2,3,null,3,null,1]")))
 	fmt.Println("Input: root = [3,4,5,1,3,null,1]")
-	fmt.Println("Output:", rob_iii(utils.S2TreeNode("[3,4,5,1,3,null,1]")))
+	fmt.Println("Output:", rob_iii(S2TreeNode("[3,4,5,1,3,null,1]")))
 }
 
-func rob_iii(root *types.TreeNode) int {
+func rob_iii(root *TreeNode) int {
 	first, second := rob_iii_solved(root)
 	return max(first, second)
 }
 
-func rob_iii_solved(root *types.TreeNode) (int, int) {
+func rob_iii_solved(root *TreeNode) (int, int) {
 	if root == nil {
 		return 0, 0
 	}

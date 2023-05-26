@@ -4,8 +4,6 @@ import (
 	"container/heap"
 	"fmt"
 	"sort"
-
-	"leetcode.com/Leetcode/types"
 )
 
 // Reference: https://leetcode.com/problems/ipo/
@@ -29,7 +27,7 @@ func findMaximizedCapital(k int, w int, profits []int, capital []int) int {
 		return item[i][0] < item[j][0]
 	})
 
-	i, h := 0, new(types.MaxHeap)
+	i, h := 0, new(MaxHeap)
 	for k > 0 {
 		for i < n && w >= item[i][0] {
 			heap.Push(h, item[i][1])

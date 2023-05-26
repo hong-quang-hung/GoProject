@@ -3,25 +3,23 @@ package medium
 import (
 	"fmt"
 	"strconv"
-
-	"leetcode.com/Leetcode/types"
 )
 
 // Reference: https://leetcode.com/problems/find-duplicate-subtrees/
 func Leetcode_Find_Duplicate_Subtrees() {
 	fmt.Println("Input: root = [1,2,3,4,null,2,4,null,null,4]")
-	fmt.Println("Output:", findDuplicateSubtrees(types.LazyNodeAll(1, types.LazyNodeAll(2, types.LazyNode(4), nil), types.LazyNodeAll(3, types.LazyNodeAll(2, types.LazyNode(4), nil), types.LazyNode(4)))))
+	fmt.Println("Output:", findDuplicateSubtrees(S2TreeNode("[1,2,3,4,null,2,4,null,null,4]")))
 }
 
-func findDuplicateSubtrees(root *types.TreeNode) []*types.TreeNode {
-	res := make([]*types.TreeNode, 0)
+func findDuplicateSubtrees(root *TreeNode) []*TreeNode {
+	res := make([]*TreeNode, 0)
 	tripletToID := make(map[string]int)
 	cnt := make(map[int]int)
 	findDuplicateSubtreesTraversal(root, tripletToID, cnt, &res)
 	return res
 }
 
-func findDuplicateSubtreesTraversal(node *types.TreeNode, tripletToID map[string]int, cnt map[int]int, res *[]*types.TreeNode) int {
+func findDuplicateSubtreesTraversal(node *TreeNode, tripletToID map[string]int, cnt map[int]int, res *[]*TreeNode) int {
 	if node == nil {
 		return 0
 	}

@@ -4,8 +4,6 @@ import (
 	"container/heap"
 	"fmt"
 	"sort"
-
-	"leetcode.com/Leetcode/types"
 )
 
 // Reference: https://leetcode.com/problems/maximum-subsequence-score/
@@ -29,7 +27,7 @@ func maxScore_ii(nums1 []int, nums2 []int, k int) int64 {
 		return item[i][1] > item[j][1]
 	})
 
-	h, topKSum := new(types.MinHeap), int64(0)
+	h, topKSum := new(MinHeap), int64(0)
 	for i := 0; i < k; i++ {
 		topKSum += int64(item[i][0])
 		heap.Push(h, item[i][0])

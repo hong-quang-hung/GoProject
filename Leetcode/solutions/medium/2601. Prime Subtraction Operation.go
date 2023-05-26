@@ -1,10 +1,6 @@
 package medium
 
-import (
-	"fmt"
-
-	"leetcode.com/Leetcode/utils"
-)
+import "fmt"
 
 // Reference: https://leetcode.com/problems/prime-subtraction-operation/description/
 func Leetcode_Prime_Sub_Operation() {
@@ -13,7 +9,11 @@ func Leetcode_Prime_Sub_Operation() {
 }
 
 func primeSubOperation(nums []int) bool {
-	isPrime := utils.Make(1005, true)
+	isPrime := make([]bool, 1005)
+	for i := 0; i < 1005; i++ {
+		isPrime[i] = true
+	}
+
 	prime := make([]int, 0)
 	seive(isPrime, 1005)
 

@@ -3,14 +3,12 @@ package easy
 import (
 	"fmt"
 	"sort"
-
-	"leetcode.com/Leetcode/utils"
 )
 
 // Reference: https://leetcode.com/problems/merge-two-2d-arrays-by-summing-values/
 func Leetcode_Merge_Arrays() {
 	fmt.Println("Input: nums1 = [[1,2],[2,3],[4,5]], nums2 = [[1,4],[3,2],[4,1]]")
-	fmt.Println("Output:", mergeArrays(utils.S2SoSliceInt("[[1,2],[2,3],[4,5]]"), utils.S2SoSliceInt("[[1,4],[3,2],[4,1]]")))
+	fmt.Println("Output:", mergeArrays(S2SoSliceInt("[[1,2],[2,3],[4,5]]"), S2SoSliceInt("[[1,4],[3,2],[4,1]]")))
 }
 
 func mergeArrays(nums1 [][]int, nums2 [][]int) [][]int {

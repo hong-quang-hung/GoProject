@@ -3,8 +3,6 @@ package easy
 import (
 	"container/heap"
 	"fmt"
-
-	"leetcode.com/Leetcode/types"
 )
 
 // Reference: https://leetcode.com/problems/last-stone-weight/
@@ -16,7 +14,7 @@ func Leetcode_Last_Stone_Weight() {
 }
 
 func lastStoneWeight(stones []int) int {
-	stoneHeap := new(types.MaxHeap)
+	stoneHeap := new(MaxHeap)
 	for _, stone := range stones {
 		*stoneHeap = append(*stoneHeap, stone)
 	}

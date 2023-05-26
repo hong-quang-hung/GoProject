@@ -3,21 +3,18 @@ package hard
 import (
 	"fmt"
 	"sort"
-
-	"leetcode.com/Leetcode/types"
-	"leetcode.com/Leetcode/utils"
 )
 
 // Reference: https://leetcode.com/problems/checking-existence-of-edge-length-limited-paths/
 func Leetcode_Distance_Limited_Paths_Exist() {
 	fmt.Println("Input: n = 3, edgeList = [[0,1,2],[1,2,4],[2,0,8],[1,0,16]], queries = [[0,1,2],[0,2,5]]")
-	fmt.Println("Output:", distanceLimitedPathsExist(3, utils.S2SoSliceInt("[[0,1,2],[1,2,4],[2,0,8],[1,0,16]]"), utils.S2SoSliceInt("[[0,1,2],[0,2,5]]")))
+	fmt.Println("Output:", distanceLimitedPathsExist(3, S2SoSliceInt("[[0,1,2],[1,2,4],[2,0,8],[1,0,16]]"), S2SoSliceInt("[[0,1,2],[0,2,5]]")))
 	fmt.Println("Input: n = 5, edgeList = [[0,1,10],[1,2,5],[2,3,9],[3,4,13]], queries = [[0,4,14],[1,4,13]]")
-	fmt.Println("Output:", distanceLimitedPathsExist(5, utils.S2SoSliceInt("[[0,1,10],[1,2,5],[2,3,9],[3,4,13]]"), utils.S2SoSliceInt("[[0,4,14],[1,4,13]]")))
+	fmt.Println("Output:", distanceLimitedPathsExist(5, S2SoSliceInt("[[0,1,10],[1,2,5],[2,3,9],[3,4,13]]"), S2SoSliceInt("[[0,4,14],[1,4,13]]")))
 }
 
 func distanceLimitedPathsExist(n int, edgeList [][]int, queries [][]int) []bool {
-	union := types.NewUnionFind(n)
+	union := NewUnionFind(n)
 	queriesCount := len(queries)
 	queriesIndex, res := make([][4]int, queriesCount), make([]bool, queriesCount)
 	for i := 0; i < queriesCount; i++ {

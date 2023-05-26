@@ -4,9 +4,6 @@ import (
 	"container/heap"
 	"fmt"
 	"math"
-
-	"leetcode.com/Leetcode/types"
-	"leetcode.com/Leetcode/utils"
 )
 
 // Reference: https://leetcode.com/problems/minimize-deviation-in-array/
@@ -14,11 +11,11 @@ func Leetcode_Minimum_Deviation() {
 	fmt.Println("Input: nums = [1,2,3,4]")
 	fmt.Println("Output:", minimumDeviation([]int{1, 2, 3, 4}))
 	fmt.Println("Input: nums = [4,1,5,20,3]")
-	fmt.Println("Output:", minimumDeviation(utils.Slice(4, 1, 5, 20, 3)))
+	fmt.Println("Output:", minimumDeviation([]int{4, 1, 5, 20, 3}))
 }
 
 func minimumDeviation(nums []int) int {
-	set := new(types.MaxHeap)
+	set := new(MaxHeap)
 	minDev := math.MaxInt32
 	for _, num := range nums {
 		if num%2 == 1 {

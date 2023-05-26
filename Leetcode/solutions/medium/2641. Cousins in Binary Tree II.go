@@ -1,28 +1,23 @@
 package medium
 
-import (
-	"fmt"
-
-	"leetcode.com/Leetcode/types"
-	"leetcode.com/Leetcode/utils"
-)
+import "fmt"
 
 // Reference: https://leetcode.com/problems/cousins-in-binary-tree-ii/
 func Leetcode_Replace_Value_In_Tree() {
 	fmt.Println("Input: root = [5,4,9,1,10,null,7]")
-	fmt.Println("Output:", utils.STreeNode(replaceValueInTree(types.LazyNodeAll(5, types.LazyNodeValue(4, 1, 10), types.LazyNodeAll(9, nil, types.LazyNode(7))))))
+	fmt.Println("Output:", STreeNode(replaceValueInTree(S2TreeNode("[5,4,9,1,10,null,7]"))))
 	fmt.Println("Input: root = [3,1,2]")
-	fmt.Println("Output:", utils.STreeNode(replaceValueInTree(types.LazyNodeValue(3, 1, 2))))
+	fmt.Println("Output:", STreeNode(replaceValueInTree(S2TreeNode("[3,1,2]"))))
 }
 
-func replaceValueInTree(root *types.TreeNode) *types.TreeNode {
+func replaceValueInTree(root *TreeNode) *TreeNode {
 	sum := make(map[int]int)
 	replaceValueInTreeSum(root, sum, 0)
 	replaceValueInTreeSolved(root, sum, 0, 0)
 	return root
 }
 
-func replaceValueInTreeSum(root *types.TreeNode, sum map[int]int, depth int) {
+func replaceValueInTreeSum(root *TreeNode, sum map[int]int, depth int) {
 	if root == nil {
 		return
 	}
@@ -37,7 +32,7 @@ func replaceValueInTreeSum(root *types.TreeNode, sum map[int]int, depth int) {
 	}
 }
 
-func replaceValueInTreeSolved(root *types.TreeNode, sum map[int]int, depth int, sameParentNode int) {
+func replaceValueInTreeSolved(root *TreeNode, sum map[int]int, depth int, sameParentNode int) {
 	if root == nil {
 		return
 	}

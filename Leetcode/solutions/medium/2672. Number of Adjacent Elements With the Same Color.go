@@ -1,17 +1,13 @@
 package medium
 
-import (
-	"fmt"
-
-	"leetcode.com/Leetcode/utils"
-)
+import "fmt"
 
 // Reference: https://leetcode.com/problems/number-of-adjacent-elements-with-the-same-color/
 func Leetcode_Color_The_Array() {
 	fmt.Println("Input: n = 4, queries = [[0,2],[1,2],[3,1],[1,1],[2,1]]")
-	fmt.Println("Output:", colorTheArray(4, utils.S2SoSliceInt("[[0,2],[1,2],[3,1],[1,1],[2,1]]")))
+	fmt.Println("Output:", colorTheArray(4, S2SoSliceInt("[[0,2],[1,2],[3,1],[1,1],[2,1]]")))
 	fmt.Println("n = 1, queries = [[0,100000]]")
-	fmt.Println("Output:", colorTheArray(1, utils.S2SoSliceInt("[[0,100000]]")))
+	fmt.Println("Output:", colorTheArray(1, S2SoSliceInt("[[0,100000]]")))
 }
 
 func colorTheArray(n int, queries [][]int) []int {

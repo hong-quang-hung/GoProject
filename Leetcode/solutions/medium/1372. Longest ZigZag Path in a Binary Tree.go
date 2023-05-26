@@ -1,28 +1,23 @@
 package medium
 
-import (
-	"fmt"
-
-	"leetcode.com/Leetcode/types"
-	"leetcode.com/Leetcode/utils"
-)
+import "fmt"
 
 // Reference: https://leetcode.com/problems/longest-zigzag-path-in-a-binary-tree/
 func Leetcode_Longest_ZigZag() {
 	fmt.Println("Input: root = [1,null,1,1,1,null,null,1,1,null,1,null,null,null,1,null,1]")
-	fmt.Println("Output:", longestZigZag(utils.S2TreeNode("[1,null,1,1,1,null,null,1,1,null,1,null,null,null,1,null,1]")))
+	fmt.Println("Output:", longestZigZag(S2TreeNode("[1,null,1,1,1,null,null,1,1,null,1,null,null,null,1,null,1]")))
 	fmt.Println("Input: root = [1,1,1,null,1,null,null,1,1,null,1]")
-	fmt.Println("Output:", longestZigZag(utils.S2TreeNode("[1,1,1,null,1,null,null,1,1,null,1]")))
+	fmt.Println("Output:", longestZigZag(S2TreeNode("[1,1,1,null,1,null,null,1,1,null,1]")))
 }
 
-func longestZigZag(root *types.TreeNode) int {
+func longestZigZag(root *TreeNode) int {
 	res := 0
 	longestZigZagDFS(root, &res, 0, true)
 	longestZigZagDFS(root, &res, 0, false)
 	return res
 }
 
-func longestZigZagDFS(root *types.TreeNode, maxPath *int, path int, isLeft bool) {
+func longestZigZagDFS(root *TreeNode, maxPath *int, path int, isLeft bool) {
 	if root == nil {
 		return
 	}

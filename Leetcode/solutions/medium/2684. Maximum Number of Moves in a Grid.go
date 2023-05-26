@@ -1,17 +1,13 @@
 package medium
 
-import (
-	"fmt"
-
-	"leetcode.com/Leetcode/utils"
-)
+import "fmt"
 
 // Reference: https://leetcode.com/problems/maximum-number-of-moves-in-a-grid/
 func Leetcode_Max_Moves() {
 	fmt.Println("Input: grid = [[2,4,3,5],[5,4,9,3],[3,4,2,11],[10,9,13,15]]")
-	fmt.Println("Output:", maxMoves(utils.S2SoSliceInt("[[2,4,3,5],[5,4,9,3],[3,4,2,11],[10,9,13,15]]")))
+	fmt.Println("Output:", maxMoves(S2SoSliceInt("[[2,4,3,5],[5,4,9,3],[3,4,2,11],[10,9,13,15]]")))
 	fmt.Println("Input: grid = [[3,2,4],[2,1,9],[1,1,7]]")
-	fmt.Println("Output:", maxMoves(utils.S2SoSliceInt("[[3,2,4],[2,1,9],[1,1,7]]")))
+	fmt.Println("Output:", maxMoves(S2SoSliceInt("[[3,2,4],[2,1,9],[1,1,7]]")))
 }
 
 func maxMoves(grid [][]int) int {

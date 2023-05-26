@@ -3,14 +3,12 @@ package hard
 import (
 	"fmt"
 	"math"
-
-	"leetcode.com/Leetcode/utils"
 )
 
 // Reference: https://leetcode.com/problems/largest-color-value-in-a-directed-graph/
 func Leetcode_Largest_Path_Value() {
 	fmt.Println("Input: colors = 'abaca', edges = [[0,1],[0,2],[2,3],[3,4]]")
-	fmt.Println("Output:", largestPathValue("abaca", utils.S2SoSliceInt("[[0,1],[0,2],[2,3],[3,4]]")))
+	fmt.Println("Output:", largestPathValue("abaca", S2SoSliceInt("[[0,1],[0,2],[2,3],[3,4]]")))
 }
 
 func largestPathValue(colors string, edges [][]int) int {

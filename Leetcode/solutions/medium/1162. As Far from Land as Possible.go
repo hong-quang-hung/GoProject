@@ -1,15 +1,11 @@
 package medium
 
-import (
-	"fmt"
-
-	"leetcode.com/Leetcode/utils"
-)
+import "fmt"
 
 // Reference: https://leetcode.com/problems/as-far-from-land-as-possible/
 func Leetcode_Max_Distance() {
 	fmt.Println("Input: grid = [[1,0,0],[0,0,0],[0,0,0]]")
-	fmt.Println("Output:", maxDistance(utils.S2SoSliceInt("[[1,0,0],[0,0,0],[0,0,0]]")))
+	fmt.Println("Output:", maxDistance(S2SoSliceInt("[[1,0,0],[0,0,0],[0,0,0]]")))
 }
 
 func maxDistance(grid [][]int) int {

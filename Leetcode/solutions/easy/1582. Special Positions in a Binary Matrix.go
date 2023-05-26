@@ -1,21 +1,17 @@
 package easy
 
-import (
-	"fmt"
-
-	"leetcode.com/Leetcode/utils"
-)
+import "fmt"
 
 // Reference: https://leetcode.com/problems/special-positions-in-a-binary-matrix/
 func Leetcode_Num_Special() {
 	fmt.Println("Input: mat = [[1,0,0],[0,0,1],[1,0,0]]")
-	fmt.Println("Output:", numSpecial(utils.S2SoSliceInt("[[1,0,0],[0,0,1],[1,0,0]]")))
+	fmt.Println("Output:", numSpecial(S2SoSliceInt("[[1,0,0],[0,0,1],[1,0,0]]")))
 	fmt.Println("Input: mat = [[1,0,0],[0,1,0],[0,0,1]]")
-	fmt.Println("Output:", numSpecial(utils.S2SoSliceInt("[[1,0,0],[0,1,0],[0,0,1]]")))
+	fmt.Println("Output:", numSpecial(S2SoSliceInt("[[1,0,0],[0,1,0],[0,0,1]]")))
 	fmt.Println("Input: mat = [[0,0,0,0,0,1,0,0],[0,0,0,0,1,0,0,1],[0,0,0,0,1,0,0,0],[1,0,0,0,1,0,0,0],[0,0,1,1,0,0,0,0]]")
-	fmt.Println("Output:", numSpecial(utils.S2SoSliceInt("[[0,0,0,0,0,1,0,0],[0,0,0,0,1,0,0,1],[0,0,0,0,1,0,0,0],[1,0,0,0,1,0,0,0],[0,0,1,1,0,0,0,0]]")))
+	fmt.Println("Output:", numSpecial(S2SoSliceInt("[[0,0,0,0,0,1,0,0],[0,0,0,0,1,0,0,1],[0,0,0,0,1,0,0,0],[1,0,0,0,1,0,0,0],[0,0,1,1,0,0,0,0]]")))
 	fmt.Println("Input: mat = [[0,0,0,0,0,0,0,0],[0,0,0,1,0,0,0,0],[0,0,0,0,0,0,0,0],[0,0,0,0,0,0,1,0],[0,1,0,0,0,0,1,0],[0,1,0,0,0,0,0,0]]")
-	fmt.Println("Output:", numSpecial(utils.S2SoSliceInt("[[0,0,0,0,0,0,0,0],[0,0,0,1,0,0,0,0],[0,0,0,0,0,0,0,0],[0,0,0,0,0,0,1,0],[0,1,0,0,0,0,1,0],[0,1,0,0,0,0,0,0]]")))
+	fmt.Println("Output:", numSpecial(S2SoSliceInt("[[0,0,0,0,0,0,0,0],[0,0,0,1,0,0,0,0],[0,0,0,0,0,0,0,0],[0,0,0,0,0,0,1,0],[0,1,0,0,0,0,1,0],[0,1,0,0,0,0,0,0]]")))
 }
 
 func numSpecial(mat [][]int) int {

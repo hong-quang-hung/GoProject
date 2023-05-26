@@ -1,10 +1,6 @@
 package medium
 
-import (
-	"fmt"
-
-	"leetcode.com/Leetcode/types"
-)
+import "fmt"
 
 // Reference: https://leetcode.com/problems/symmetric-tree/
 func Leetcode_Word_Dictionary() {
@@ -19,7 +15,7 @@ func Leetcode_Word_Dictionary() {
 }
 
 type WordDictionary struct {
-	root *types.TrieNode
+	root *TrieNode
 }
 
 func Constructor() WordDictionary {
@@ -29,7 +25,7 @@ func Constructor() WordDictionary {
 }
 
 func (wd *WordDictionary) Init() {
-	wd.root = new(types.TrieNode)
+	wd.root = new(TrieNode)
 }
 
 func (wd *WordDictionary) AddWord(word string) {
@@ -37,10 +33,10 @@ func (wd *WordDictionary) AddWord(word string) {
 	for i := range word {
 		ch := word[i]
 		if node.Childrens == nil {
-			node.Childrens = make(map[byte]*types.TrieNode)
+			node.Childrens = make(map[byte]*TrieNode)
 		}
 		if node.Childrens[ch] == nil {
-			node.Childrens[ch] = new(types.TrieNode)
+			node.Childrens[ch] = new(TrieNode)
 		}
 		node = node.Childrens[ch]
 	}
@@ -51,7 +47,7 @@ func (wd *WordDictionary) Search(word string) bool {
 	return helper(wd.root, word, 0)
 }
 
-func helper(root *types.TrieNode, word string, i int) bool {
+func helper(root *TrieNode, word string, i int) bool {
 	for i < len(word) {
 		ch := word[i]
 		if ch == '.' {

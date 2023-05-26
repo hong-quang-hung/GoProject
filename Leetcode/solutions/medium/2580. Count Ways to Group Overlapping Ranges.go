@@ -3,14 +3,12 @@ package medium
 import (
 	"fmt"
 	"sort"
-
-	"leetcode.com/Leetcode/utils"
 )
 
 // Reference: https://leetcode.com/problems/count-ways-to-group-overlapping-ranges/
 func Leetcode_Count_Ways() {
 	fmt.Println("Input: ranges = [[6,10],[5,15]]")
-	fmt.Println("Output:", countWays(utils.S2SoSliceInt("[[6,10],[5,15]]")))
+	fmt.Println("Output:", countWays(S2SoSliceInt("[[6,10],[5,15]]")))
 }
 
 func countWays(ranges [][]int) int {

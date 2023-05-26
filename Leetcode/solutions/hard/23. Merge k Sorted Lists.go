@@ -1,20 +1,16 @@
 package hard
 
-import (
-	"fmt"
-
-	"leetcode.com/Leetcode/types"
-)
+import "fmt"
 
 // Reference: https://leetcode.com/problems/merge-k-sorted-lists/
 func Leetcode_Merge_K_Lists() {
 	fmt.Println("Input: lists = [[1,4,5],[1,3,4],[2,6]]")
-	fmt.Println("Output:", mergeKLists([]*types.ListNode{types.NewListNode(1, 4, 5), types.NewListNode(1, 3, 4), types.NewListNode(2, 6)}))
+	fmt.Println("Output:", mergeKLists([]*ListNode{S2ListNode("[1,4,5]"), S2ListNode("[1,3,4]"), S2ListNode("[2,6]")}))
 	fmt.Println("Input: lists = [[]]")
-	fmt.Println("Output:", mergeKLists([]*types.ListNode{types.NewListNode()}))
+	fmt.Println("Output:", mergeKLists([]*ListNode{S2ListNode("[]")}))
 }
 
-func mergeKLists(lists []*types.ListNode) *types.ListNode {
+func mergeKLists(lists []*ListNode) *ListNode {
 	length := len(lists)
 	if length == 0 {
 		return nil
@@ -30,8 +26,8 @@ func mergeKLists(lists []*types.ListNode) *types.ListNode {
 	return lists[0]
 }
 
-func mergeTwoNode(node1 *types.ListNode, node2 *types.ListNode) *types.ListNode {
-	root := new(types.ListNode)
+func mergeTwoNode(node1 *ListNode, node2 *ListNode) *ListNode {
+	root := new(ListNode)
 	temp := root
 	for node1 != nil && node2 != nil {
 		if node1.Val > node2.Val {

@@ -1,25 +1,21 @@
 package medium
 
-import (
-	"fmt"
-
-	"leetcode.com/Leetcode/types"
-)
+import "fmt"
 
 // Reference: https://leetcode.com/problems/binary-tree-zigzag-level-order-traversal/
 func Leetcode_Zigzag_Level_Order() {
 	fmt.Println("Input: root = [3,9,20,null,null,15,7]")
-	fmt.Println("Output:", zigzagLevelOrder(types.LazyNodeAll(3, types.LazyNode(9), types.LazyNodeValue(20, 15, 7))))
+	fmt.Println("Output:", zigzagLevelOrder(S2TreeNode("[3,9,20,null,null,15,7]")))
 }
 
-func zigzagLevelOrder(root *types.TreeNode) [][]int {
+func zigzagLevelOrder(root *TreeNode) [][]int {
 	res := make([][]int, 0)
 	if root == nil {
 		return res
 	}
 
 	nums, isNodeLeft := 1, false
-	queue := []*types.TreeNode{root}
+	queue := []*TreeNode{root}
 	nodes := []int{}
 	for len(queue) > 0 {
 		node := queue[0]

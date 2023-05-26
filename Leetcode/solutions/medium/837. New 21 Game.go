@@ -29,9 +29,9 @@ func new21Game(n int, k int, maxPts int) float64 {
 		}
 	}
 
-	ans := float64(0)
+	res := float64(0)
 	for i := k; i <= n; i++ {
-		ans += dp[i]
+		res += dp[i]
 	}
-	return ans
+	return res
 }

@@ -1,17 +1,13 @@
 package medium
 
-import (
-	"fmt"
-
-	"leetcode.com/Leetcode/utils"
-)
+import "fmt"
 
 // Reference: https://leetcode.com/problems/spiral-matrix/
 func Leetcode_Spiral_Order() {
 	fmt.Println("Input: matrix = [[1,2,3],[4,5,6],[7,8,9]]")
-	fmt.Println("Output:", spiralOrder(utils.S2SoSliceInt("[[1,2,3],[4,5,6],[7,8,9]]")))
+	fmt.Println("Output:", spiralOrder(S2SoSliceInt("[[1,2,3],[4,5,6],[7,8,9]]")))
 	fmt.Println("Input: matrix = [[1,2,3,4],[5,6,7,8],[9,10,11,12]]")
-	fmt.Println("Output:", spiralOrder(utils.S2SoSliceInt("[[1,2,3,4],[5,6,7,8],[9,10,11,12]]")))
+	fmt.Println("Output:", spiralOrder(S2SoSliceInt("[[1,2,3,4],[5,6,7,8],[9,10,11,12]]")))
 }
 
 func spiralOrder(matrix [][]int) []int {
