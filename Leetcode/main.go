@@ -2,7 +2,6 @@ package main
 
 import (
 	"fmt"
-	"regexp"
 
 	"leetcode.com/Leetcode/solutions"
 	"leetcode.com/Leetcode/types"
@@ -15,9 +14,9 @@ var _PROBLEM_TOTAL_ int
 func init() {
 	_PROBLEM_DEBUG_ = 101998 - solutions.Normalize
 	_PROBLEM_DEBUG_ = 100025 - solutions.Normalize
-	_PROBLEM_DEBUG_ = 101140 - solutions.Normalize
+	_PROBLEM_DEBUG_ = 101406 - solutions.Normalize
 
-	_PROBLEM_TOTAL_ = 2702
+	_PROBLEM_TOTAL_ = 2705
 }
 
 func main() {
@@ -58,19 +57,6 @@ func LeetcodeInfomation() {
 
 	fmt.Println("There are", Leetcode.Solved(), "/", Leetcode.Total(), "problem(s) has been solved in Leetcode.")
 	fmt.Println("Today, Number of Leetcode Problem is:", Leetcode.PickProblem())
-}
-
-func TestRegexGolang() {
-	re := regexp.MustCompile(`[-]`)
-	fmt.Printf("%q\n", re.FindAllStringSubmatch("42", -1))
-}
-
-func TestTreeNode() {
-	fmt.Println("root = [1,null,1,1,1,null,null,1,1,null,1,null,null,null,1,null,1]")
-	root1 := utils.S2TreeNode("[1,null,1,1,1,null,null,1,1,null,1,null,null,null,1,null,1]")
-	root2 := types.LazyNodeAll(3, types.LazyNodeAll(1, nil, types.LazyNode(4)), types.LazyNode(2))
-	fmt.Println(utils.STreeNode(root1))
-	fmt.Println(utils.STreeNode(root2))
 }
 
 func ShowHasNotSubmited(L *types.Leetcode) {
