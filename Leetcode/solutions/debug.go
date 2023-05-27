@@ -111,6 +111,7 @@ func init() {
 	_SOLUTIONS_[102682] = easy.Leetcode_Circular_Game_Losers
 	_SOLUTIONS_[102696] = easy.Leetcode_Min_Length
 	_SOLUTIONS_[102697] = easy.Leetcode_Make_Smallest_Palindrome
+	_SOLUTIONS_[102076] = easy.Leetcode_Buy_Choco
 	// #endregion
 
 	// #region Medium
@@ -264,6 +265,8 @@ func init() {
 	_SOLUTIONS_[102684] = medium.Leetcode_Max_Moves
 	_SOLUTIONS_[102685] = medium.Leetcode_Count_Complete_Components
 	_SOLUTIONS_[102698] = medium.Leetcode_Punishment_Number
+	_SOLUTIONS_[102707] = medium.Leetcode_Min_Extra_Char
+	_SOLUTIONS_[102708] = medium.Leetcode_Max_Strength
 	// #endregion
 
 	// #region Hard
