@@ -246,6 +246,7 @@ func init() {
 	_SOLUTIONS_[102606] = medium.Leetcode_Maximum_Cost_Substring
 	_SOLUTIONS_[102610] = medium.Leetcode_Find_Matrix
 	_SOLUTIONS_[102623] = Leetcode_Javascript
+	_SOLUTIONS_[102625] = Leetcode_Javascript
 	_SOLUTIONS_[102632] = Leetcode_Javascript
 	_SOLUTIONS_[102640] = medium.Leetcode_Find_Prefix_Score
 	_SOLUTIONS_[102641] = medium.Leetcode_Replace_Value_In_Tree
