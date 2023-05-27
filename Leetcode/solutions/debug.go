@@ -107,11 +107,12 @@ func init() {
 	_SOLUTIONS_[102665] = Leetcode_Javascript
 	_SOLUTIONS_[102667] = Leetcode_Javascript
 	_SOLUTIONS_[102670] = easy.Leetcode_Distinct_Difference_Array
+	_SOLUTIONS_[102677] = Leetcode_Javascript
 	_SOLUTIONS_[102678] = easy.Leetcode_Count_Seniors
 	_SOLUTIONS_[102682] = easy.Leetcode_Circular_Game_Losers
 	_SOLUTIONS_[102696] = easy.Leetcode_Min_Length
 	_SOLUTIONS_[102697] = easy.Leetcode_Make_Smallest_Palindrome
-	_SOLUTIONS_[102076] = easy.Leetcode_Buy_Choco
+	_SOLUTIONS_[102706] = easy.Leetcode_Buy_Choco
 	// #endregion
 
 	// #region Medium
