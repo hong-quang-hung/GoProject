@@ -17,6 +17,10 @@ func init() {
 	_PROBLEM_DEBUG_ = 101406 - solutions.Normalize
 	_PROBLEM_DEBUG_ = 102707 - solutions.Normalize
 
+	_PROBLEM_DEBUG_ = 106457 - solutions.Normalize
+	_PROBLEM_DEBUG_ = 106440 - solutions.Normalize
+	// _PROBLEM_DEBUG_ = 106455 - solutions.Normalize
+
 	_PROBLEM_TOTAL_ = 2709
 }
 

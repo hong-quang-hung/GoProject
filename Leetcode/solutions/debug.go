@@ -113,6 +113,9 @@ func init() {
 	_SOLUTIONS_[102696] = easy.Leetcode_Min_Length
 	_SOLUTIONS_[102697] = easy.Leetcode_Make_Smallest_Palindrome
 	_SOLUTIONS_[102706] = easy.Leetcode_Buy_Choco
+
+	_SOLUTIONS_[106457] = easy.Leetcode_Remove_Trailing_Zeros
+	_SOLUTIONS_[106440] = medium.Leetcode_Difference_Of_Distinct_Values
 	// #endregion
 
 	// #region Medium
@@ -270,6 +273,8 @@ func init() {
 	_SOLUTIONS_[102700] = Leetcode_Javascript
 	_SOLUTIONS_[102707] = medium.Leetcode_Min_Extra_Char
 	_SOLUTIONS_[102708] = medium.Leetcode_Max_Strength
+
+	_SOLUTIONS_[106455] = medium.Leetcode_Minimum_Cost_II
 	// #endregion
 
 	// #region Hard
