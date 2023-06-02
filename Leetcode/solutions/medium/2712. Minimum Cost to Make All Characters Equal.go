@@ -4,7 +4,7 @@ import (
 	"fmt"
 )
 
-// Reference:
+// Reference: https://leetcode.com/problems/minimum-cost-to-make-all-characters-equal/
 func Leetcode_Minimum_Cost_II() {
 	fmt.Println("Input: num = '0011'")
 	fmt.Println("Output:", minimumCost_ii("0011"))

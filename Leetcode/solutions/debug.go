@@ -115,7 +115,6 @@ func init() {
 	_SOLUTIONS_[102706] = easy.Leetcode_Buy_Choco
 
 	_SOLUTIONS_[106457] = easy.Leetcode_Remove_Trailing_Zeros
-	_SOLUTIONS_[106440] = medium.Leetcode_Difference_Of_Distinct_Values
 	// #endregion
 
 	// #region Medium
@@ -273,8 +272,8 @@ func init() {
 	_SOLUTIONS_[102700] = Leetcode_Javascript
 	_SOLUTIONS_[102707] = medium.Leetcode_Min_Extra_Char
 	_SOLUTIONS_[102708] = medium.Leetcode_Max_Strength
-
-	_SOLUTIONS_[106455] = medium.Leetcode_Minimum_Cost_II
+	_SOLUTIONS_[102711] = medium.Leetcode_Difference_Of_Distinct_Values
+	_SOLUTIONS_[102712] = medium.Leetcode_Minimum_Cost_II
 	// #endregion
 
 	// #region Hard
