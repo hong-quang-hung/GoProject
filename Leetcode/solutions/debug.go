@@ -70,6 +70,7 @@ func init() {
 	_SOLUTIONS_[101539] = easy.Leetcode_Find_Kth_Positive
 	_SOLUTIONS_[101572] = easy.Leetcode_Diagonal_Sum
 	_SOLUTIONS_[101582] = easy.Leetcode_Num_Special
+	_SOLUTIONS_[101603] = easy.Leetcode_Design_Parking_System
 	_SOLUTIONS_[101768] = easy.Leetcode_Merge_Alternately
 	_SOLUTIONS_[101805] = easy.Leetcode_Num_Different_Integers
 	_SOLUTIONS_[101822] = easy.Leetcode_Array_Sign
