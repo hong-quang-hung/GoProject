@@ -1,6 +1,7 @@
 /**
  * @param {Function[]} functions
  * @return {Function}
+ * https://leetcode.com/problems/array-reduce-transformation/
  */
 var compose = function(functions) {
 	return function(x) {
