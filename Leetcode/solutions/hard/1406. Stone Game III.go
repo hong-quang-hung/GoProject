@@ -1,6 +1,9 @@
 package hard
 
-import "fmt"
+import (
+	"fmt"
+	"math"
+)
 
 // Reference: https://leetcode.com/problems/stone-game-iii/
 func Leetcode_Stone_Game_III() {
@@ -13,5 +16,36 @@ func Leetcode_Stone_Game_III() {
 }
 
 func stoneGameIII(stoneValue []int) string {
-	return ""
+	dp := make([]int, len(stoneValue))
+	for i := range dp {
+		dp[i] = math.MinInt
+	}
+
+	switch d0 := stoneGameIIISolved(stoneValue, dp, 0); {
+	case d0 > 0:
+		return "Alice"
+	case d0 < 0:
+		return "Bob"
+	default:
+		return "Tie"
+	}
+}
+
+func stoneGameIIISolved(stoneValue []int, dp []int, i int) int {
+	if i == len(stoneValue) {
+		return 0
+	}
+
+	if dp[i] != math.MinInt {
+		return dp[i]
+	}
+
+	s := 0
+	for j := 0; j <= 2 && i+j < len(stoneValue); j++ {
+		s += stoneValue[i+j]
+		if h := s - stoneGameIIISolved(stoneValue, dp, i+j+1); h > dp[i] {
+			dp[i] = h
+		}
+	}
+	return dp[i]
 }
