@@ -299,6 +299,7 @@ func init() {
 	_SOLUTIONS_[101406] = hard.Leetcode_Stone_Game_III
 	_SOLUTIONS_[101416] = hard.Leetcode_Number_Of_Arrays
 	_SOLUTIONS_[101444] = hard.Leetcode_Ways
+	_SOLUTIONS_[101547] = hard.Leetcode_Min_Cost_Cut
 	_SOLUTIONS_[101579] = hard.Leetcode_Max_Num_Edges_To_Removet
 	_SOLUTIONS_[101675] = hard.Leetcode_Minimum_Deviation
 	_SOLUTIONS_[101639] = hard.Leetcode_Num_Ways
