@@ -195,6 +195,7 @@ func init() {
 	_SOLUTIONS_[101020] = medium.Leetcode_Num_Enclaves
 	_SOLUTIONS_[101035] = medium.Leetcode_Max_Uncrossed_Lines
 	_SOLUTIONS_[101049] = medium.Leetcode_Last_Stone_Weight_II
+	_SOLUTIONS_[101091] = medium.Leetcode_Shortest_Path_Binary_Matrix
 	_SOLUTIONS_[101129] = medium.Leetcode_Shortest_Alternating_Paths
 	_SOLUTIONS_[101140] = medium.Leetcode_Stone_Game_II
 	_SOLUTIONS_[101162] = medium.Leetcode_Max_Distance
