@@ -205,6 +205,7 @@ func init() {
 	_SOLUTIONS_[101319] = medium.Leetcode_Make_Connected
 	_SOLUTIONS_[101348] = medium.Leetcode_Tweet_Counts_Per_Frequency
 	_SOLUTIONS_[101372] = medium.Leetcode_Longest_ZigZag
+	_SOLUTIONS_[101396] = medium.Leetcode_Design_Underground_System
 	_SOLUTIONS_[101456] = medium.Leetcode_Max_Vowels
 	_SOLUTIONS_[101466] = medium.Leetcode_Min_Reorder
 	_SOLUTIONS_[101472] = medium.Leetcode_Design_Browser_History
