@@ -53,6 +53,7 @@ func init() {
 	_SOLUTIONS_[100605] = easy.Leetcode_Can_Place_Flowers
 	_SOLUTIONS_[100703] = easy.Leetcode_Kth_Largest
 	_SOLUTIONS_[100704] = easy.Leetcode_Search
+	_SOLUTIONS_[100705] = easy.Leetcode_Design_HashSet
 	_SOLUTIONS_[100783] = easy.Leetcode_Min_Diff_In_BST
 	_SOLUTIONS_[100925] = easy.Leetcode_Is_Long_PressedName
 	_SOLUTIONS_[100929] = easy.Leetcode_Num_Unique_Emails
