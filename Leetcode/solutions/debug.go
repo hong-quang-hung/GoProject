@@ -103,6 +103,7 @@ func init() {
 	_SOLUTIONS_[102639] = easy.Leetcode_Max_Value_Of_Coins
 	_SOLUTIONS_[102643] = easy.Leetcode_Row_And_Maximum_Ones
 	_SOLUTIONS_[102644] = easy.Leetcode_Max_Div_Score
+	_SOLUTIONS_[102648] = Leetcode_Javascript
 	_SOLUTIONS_[102651] = easy.Leetcode_Find_Delayed_Arrival_Time
 	_SOLUTIONS_[102652] = easy.Leetcode_Sum_Of_Multiples
 	_SOLUTIONS_[102656] = easy.Leetcode_Maximize_Sum
