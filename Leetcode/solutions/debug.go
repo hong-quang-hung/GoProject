@@ -277,6 +277,7 @@ func init() {
 	_SOLUTIONS_[102683] = medium.Leetcode_Does_Valid_Array_Exist
 	_SOLUTIONS_[102684] = medium.Leetcode_Max_Moves
 	_SOLUTIONS_[102685] = medium.Leetcode_Count_Complete_Components
+	_SOLUTIONS_[102693] = Leetcode_Javascript
 	_SOLUTIONS_[102698] = medium.Leetcode_Punishment_Number
 	_SOLUTIONS_[102700] = Leetcode_Javascript
 	_SOLUTIONS_[102707] = medium.Leetcode_Min_Extra_Char
