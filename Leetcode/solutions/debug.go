@@ -254,6 +254,7 @@ func init() {
 	_SOLUTIONS_[102602] = medium.Leetcode_Min_Operations_I
 	_SOLUTIONS_[102606] = medium.Leetcode_Maximum_Cost_Substring
 	_SOLUTIONS_[102610] = medium.Leetcode_Find_Matrix
+	_SOLUTIONS_[102618] = Leetcode_Javascript
 	_SOLUTIONS_[102623] = Leetcode_Javascript
 	_SOLUTIONS_[102625] = Leetcode_Javascript
 	_SOLUTIONS_[102631] = Leetcode_Javascript
