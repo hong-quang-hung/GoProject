@@ -17,7 +17,7 @@ func Leetcode_Num_Subseq() {
 
 func numSubseq(nums []int, target int) int {
 	sort.Ints(nums)
-	res, mod, n := 0, 1_000_000_007, len(nums)
+	res, n := 0, len(nums)
 	power := make([]int, n)
 	power[0] = 1
 	for i := 1; i < n; i++ {

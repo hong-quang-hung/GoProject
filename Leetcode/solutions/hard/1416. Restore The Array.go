@@ -34,7 +34,7 @@ func numberOfArraysDFS(s string, k int, dp []int, start int, n int) int {
 		return 0
 	}
 
-	count, mod := 0, 1_000_000_007
+	count := 0
 	for i := start; i < n; i++ {
 		curNumber, _ := strconv.ParseInt(s[start:i+1], 10, 64)
 		if curNumber > int64(k) {

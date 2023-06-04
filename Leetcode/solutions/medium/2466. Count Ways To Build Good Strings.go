@@ -22,7 +22,7 @@ func countGoodStrings(low int, high int, zero int, one int) int {
 	res := 0
 	for i := low; i <= high; i++ {
 		res += countGoodStringsSolved(zero, one, dp, i)
-		res %= 1_000_000_007
+		res %= mod
 	}
 	return res
 }
@@ -41,6 +41,6 @@ func countGoodStringsSolved(zero int, one int, dp []int, i int) int {
 		count += countGoodStringsSolved(zero, one, dp, i-zero)
 	}
 
-	dp[i] = count % 1_000_000_007
+	dp[i] = count % mod
 	return dp[i]
 }

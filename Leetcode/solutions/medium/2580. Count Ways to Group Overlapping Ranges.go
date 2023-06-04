@@ -21,7 +21,7 @@ func countWays(ranges [][]int) int {
 		end = max(end, ranges[i][1])
 	}
 
-	res, mod := int64(1), int64(1_000_000_007)
+	res := int64(1)
 	for i := overlapping; i > 0; i-- {
 		res <<= 1
 		res %= mod
