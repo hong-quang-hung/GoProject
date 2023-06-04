@@ -258,6 +258,7 @@ func init() {
 	_SOLUTIONS_[102606] = medium.Leetcode_Maximum_Cost_Substring
 	_SOLUTIONS_[102610] = medium.Leetcode_Find_Matrix
 	_SOLUTIONS_[102618] = Leetcode_Javascript
+	_SOLUTIONS_[102622] = Leetcode_Javascript
 	_SOLUTIONS_[102623] = Leetcode_Javascript
 	_SOLUTIONS_[102625] = Leetcode_Javascript
 	_SOLUTIONS_[102627] = Leetcode_Javascript
@@ -279,6 +280,7 @@ func init() {
 	_SOLUTIONS_[102672] = medium.Leetcode_Color_The_Array
 	_SOLUTIONS_[102673] = medium.Leetcode_Min_Increments
 	_SOLUTIONS_[102675] = Leetcode_Javascript
+	_SOLUTIONS_[102676] = Leetcode_Javascript
 	_SOLUTIONS_[102679] = medium.Leetcode_Matrix_Sum
 	_SOLUTIONS_[102680] = medium.Leetcode_Maximum_Or
 	_SOLUTIONS_[102683] = medium.Leetcode_Does_Valid_Array_Exist

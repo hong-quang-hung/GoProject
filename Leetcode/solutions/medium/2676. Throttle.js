@@ -1,0 +1,18 @@
+/**
+ * @param {Function} fn
+ * @param {number} t
+ * @return {Function}
+ * https://leetcode.com/problems/throttle/
+ */
+var throttle = function (fn, t) {
+    let timeout = null;
+    let nextTimeToCallFn = 0;
+    return function (...args) {
+        const delay = Math.max(0, nextTimeToCallFn - Date.now());
+        clearTimeout(timeout);
+        timeout = setTimeout(() => {
+            fn(...args);
+            nextTimeToCallFn = Date.now() + t;
+        }, delay);
+    }
+};
