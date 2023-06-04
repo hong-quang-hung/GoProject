@@ -265,6 +265,7 @@ func init() {
 	_SOLUTIONS_[102640] = medium.Leetcode_Find_Prefix_Score
 	_SOLUTIONS_[102641] = medium.Leetcode_Replace_Value_In_Tree
 	_SOLUTIONS_[102645] = medium.Leetcode_Add_Minimum
+	_SOLUTIONS_[102649] = Leetcode_Javascript
 	_SOLUTIONS_[102653] = medium.Leetcode_Get_Subarray_Beauty
 	_SOLUTIONS_[102654] = medium.Leetcode_Min_Operations_Equal_1
 	_SOLUTIONS_[102657] = medium.Leetcode_Find_The_Prefix_Common_Array
