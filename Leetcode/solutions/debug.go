@@ -180,6 +180,7 @@ func init() {
 	_SOLUTIONS_[100443] = medium.Leetcode_Compress
 	_SOLUTIONS_[100516] = medium.Leetcode_Longest_Palindrome_Subseq
 	_SOLUTIONS_[100540] = medium.Leetcode_Single_Non_Duplicate
+	_SOLUTIONS_[100547] = medium.Leetcode_Find_Circle_Num
 	_SOLUTIONS_[100567] = medium.Leetcode_Check_Inclusion
 	_SOLUTIONS_[100570] = Leetcode_SQL
 	_SOLUTIONS_[100585] = Leetcode_SQL
