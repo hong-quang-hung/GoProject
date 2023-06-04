@@ -260,6 +260,7 @@ func init() {
 	_SOLUTIONS_[102618] = Leetcode_Javascript
 	_SOLUTIONS_[102623] = Leetcode_Javascript
 	_SOLUTIONS_[102625] = Leetcode_Javascript
+	_SOLUTIONS_[102627] = Leetcode_Javascript
 	_SOLUTIONS_[102631] = Leetcode_Javascript
 	_SOLUTIONS_[102632] = Leetcode_Javascript
 	_SOLUTIONS_[102636] = Leetcode_Javascript
