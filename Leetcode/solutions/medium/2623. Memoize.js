@@ -4,7 +4,7 @@
  */
 function memoize(fn) {
     let check = new Map();
-    return function(...args) {
+    return function (...args) {
         let k = JSON.stringify(args);
         if (!check.has(k)) {
             check.set(k, fn(...args));

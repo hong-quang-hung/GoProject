@@ -263,6 +263,7 @@ func init() {
 	_SOLUTIONS_[102627] = Leetcode_Javascript
 	_SOLUTIONS_[102631] = Leetcode_Javascript
 	_SOLUTIONS_[102632] = Leetcode_Javascript
+	_SOLUTIONS_[102633] = Leetcode_Javascript
 	_SOLUTIONS_[102636] = Leetcode_Javascript
 	_SOLUTIONS_[102640] = medium.Leetcode_Find_Prefix_Score
 	_SOLUTIONS_[102641] = medium.Leetcode_Replace_Value_In_Tree
