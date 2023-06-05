@@ -64,6 +64,7 @@ func init() {
 	_SOLUTIONS_[101071] = easy.Leetcode_Gcd_Of_Strings
 	_SOLUTIONS_[101137] = easy.Leetcode_Tribonacci
 	_SOLUTIONS_[101207] = easy.Leetcode_Unique_Occurrences
+	_SOLUTIONS_[101232] = easy.Leetcode_Check_Straight_Line
 	_SOLUTIONS_[101431] = easy.Leetcode_Kids_With_Candies
 	_SOLUTIONS_[101470] = easy.Leetcode_Shuffle
 	_SOLUTIONS_[101491] = easy.Leetcode_Average
@@ -264,6 +265,7 @@ func init() {
 	_SOLUTIONS_[102623] = Leetcode_Javascript
 	_SOLUTIONS_[102625] = Leetcode_Javascript
 	_SOLUTIONS_[102627] = Leetcode_Javascript
+	_SOLUTIONS_[102628] = Leetcode_Javascript
 	_SOLUTIONS_[102631] = Leetcode_Javascript
 	_SOLUTIONS_[102632] = Leetcode_Javascript
 	_SOLUTIONS_[102633] = Leetcode_Javascript
