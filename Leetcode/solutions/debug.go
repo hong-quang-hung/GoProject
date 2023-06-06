@@ -68,6 +68,7 @@ func init() {
 	_SOLUTIONS_[101431] = easy.Leetcode_Kids_With_Candies
 	_SOLUTIONS_[101470] = easy.Leetcode_Shuffle
 	_SOLUTIONS_[101491] = easy.Leetcode_Average
+	_SOLUTIONS_[101502] = easy.Leetcode_Can_Make_Arithmetic_Progression
 	_SOLUTIONS_[101523] = easy.Leetcode_Count_Odds
 	_SOLUTIONS_[101539] = easy.Leetcode_Find_Kth_Positive
 	_SOLUTIONS_[101572] = easy.Leetcode_Diagonal_Sum
