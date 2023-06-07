@@ -185,6 +185,7 @@ func init() {
 	_SOLUTIONS_[100547] = medium.Leetcode_Find_Circle_Num
 	_SOLUTIONS_[100567] = medium.Leetcode_Check_Inclusion
 	_SOLUTIONS_[100570] = Leetcode_SQL
+	_SOLUTIONS_[100583] = medium.Leetcode_Min_Distance
 	_SOLUTIONS_[100585] = Leetcode_SQL
 	_SOLUTIONS_[100649] = medium.Leetcode_Predict_Party_Victory
 	_SOLUTIONS_[100652] = medium.Leetcode_Find_Duplicate_Subtrees
