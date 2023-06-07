@@ -212,6 +212,7 @@ func init() {
 	_SOLUTIONS_[101201] = medium.Leetcode_Is_Ugly_III
 	_SOLUTIONS_[101202] = medium.Leetcode_Smallest_String_With_Swaps
 	_SOLUTIONS_[101254] = medium.Leetcode_Closed_Island
+	_SOLUTIONS_[101318] = medium.Leetcode_Min_Flips
 	_SOLUTIONS_[101319] = medium.Leetcode_Make_Connected
 	_SOLUTIONS_[101348] = medium.Leetcode_Tweet_Counts_Per_Frequency
 	_SOLUTIONS_[101372] = medium.Leetcode_Longest_ZigZag
