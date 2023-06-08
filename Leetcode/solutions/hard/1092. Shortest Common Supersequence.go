@@ -40,6 +40,21 @@ func shortestCommonSupersequence(str1 string, str2 string) string {
 		}
 	}
 
-	fmt.Println(dp[m][n])
-	return str1
+	a, b, lcs, res := 0, 0, dp[m][n], []byte{}
+	for i := range lcs {
+		for str1[a] != lcs[i] {
+			res = append(res, str1[a])
+			a++
+		}
+
+		for str2[b] != lcs[i] {
+			res = append(res, str2[b])
+			b++
+		}
+
+		res = append(res, lcs[i])
+		a++
+		b++
+	}
+	return string(res) + str1[a:] + str2[b:]
 }
