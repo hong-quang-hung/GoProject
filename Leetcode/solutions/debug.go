@@ -127,6 +127,7 @@ func init() {
 	_SOLUTIONS_[102716] = easy.Leetcode_Minimized_String_Length
 	_SOLUTIONS_[102723] = Leetcode_Javascript
 	_SOLUTIONS_[102724] = Leetcode_Javascript
+	_SOLUTIONS_[102725] = Leetcode_Javascript
 	// #endregion
 
 	// #region Medium
