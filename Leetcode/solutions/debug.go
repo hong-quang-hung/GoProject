@@ -65,6 +65,7 @@ func init() {
 	_SOLUTIONS_[101137] = easy.Leetcode_Tribonacci
 	_SOLUTIONS_[101207] = easy.Leetcode_Unique_Occurrences
 	_SOLUTIONS_[101232] = easy.Leetcode_Check_Straight_Line
+	_SOLUTIONS_[101351] = easy.Leetcode_Count_Negatives
 	_SOLUTIONS_[101431] = easy.Leetcode_Kids_With_Candies
 	_SOLUTIONS_[101470] = easy.Leetcode_Shuffle
 	_SOLUTIONS_[101491] = easy.Leetcode_Average
@@ -318,6 +319,7 @@ func init() {
 	_SOLUTIONS_[100768] = hard.Leetcode_Max_Chunks_To_Sorted_II
 	_SOLUTIONS_[100839] = hard.Leetcode_Num_Similar_Groups
 	_SOLUTIONS_[100879] = hard.Leetcode_Profitable_Schemes
+	_SOLUTIONS_[101092] = hard.Leetcode_Shortest_Common_Supersequence
 	_SOLUTIONS_[101312] = hard.Leetcode_Min_Insertions
 	_SOLUTIONS_[101345] = hard.Leetcode_Min_Jumps
 	_SOLUTIONS_[101402] = hard.Leetcode_Max_Satisfaction
