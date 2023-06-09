@@ -1,8 +1,6 @@
 package medium
 
-import (
-	"fmt"
-)
+import "fmt"
 
 // Reference: https://leetcode.com/problems/minimum-cost-to-make-all-characters-equal/
 func Leetcode_Minimum_Cost_II() {
