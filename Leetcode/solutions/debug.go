@@ -130,6 +130,7 @@ func init() {
 	_SOLUTIONS_[102724] = Leetcode_Javascript
 	_SOLUTIONS_[102725] = Leetcode_Javascript
 	_SOLUTIONS_[102726] = Leetcode_Javascript
+	_SOLUTIONS_[102727] = Leetcode_Javascript
 	// #endregion
 
 	// #region Medium
