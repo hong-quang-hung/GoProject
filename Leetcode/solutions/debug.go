@@ -131,6 +131,7 @@ func init() {
 	_SOLUTIONS_[102725] = Leetcode_Javascript
 	_SOLUTIONS_[102726] = Leetcode_Javascript
 	_SOLUTIONS_[102727] = Leetcode_Javascript
+	_SOLUTIONS_[102729] = easy.LeetCode_Is_Fascinating
 	// #endregion
 
 	// #region Medium
@@ -310,6 +311,8 @@ func init() {
 	_SOLUTIONS_[102711] = medium.Leetcode_Difference_Of_Distinct_Values
 	_SOLUTIONS_[102712] = medium.Leetcode_Minimum_Cost_II
 	_SOLUTIONS_[102718] = medium.Leetcode_Matrix_Sum_Queries
+	_SOLUTIONS_[102730] = medium.LeetCode_Longest_Semi_Repetitive_Substring
+	_SOLUTIONS_[102731] = medium.LeetCode_Sum_Distance
 	// #endregion
 
 	// #region Hard
@@ -350,6 +353,7 @@ func init() {
 	_SOLUTIONS_[102646] = hard.Leetcode_Minimum_Total_Price
 	_SOLUTIONS_[102659] = hard.Leetcode_Count_Operations_To_Empty_Array
 	_SOLUTIONS_[102719] = hard.Leetcode_Count
+	_SOLUTIONS_[102732] = hard.LeetCode_Good_Subset_Of_Binary_Matrix
 	// #endregion
 }
 
