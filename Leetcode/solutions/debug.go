@@ -122,6 +122,8 @@ func init() {
 	_SOLUTIONS_[102695] = Leetcode_Javascript
 	_SOLUTIONS_[102696] = easy.Leetcode_Min_Length
 	_SOLUTIONS_[102697] = easy.Leetcode_Make_Smallest_Palindrome
+	_SOLUTIONS_[102703] = Leetcode_Javascript
+	_SOLUTIONS_[102704] = Leetcode_Javascript
 	_SOLUTIONS_[102706] = easy.Leetcode_Buy_Choco
 	_SOLUTIONS_[102710] = easy.Leetcode_Remove_Trailing_Zeros
 	_SOLUTIONS_[102717] = easy.Leetcode_Semi_Ordered_Permutation
@@ -235,6 +237,7 @@ func init() {
 	_SOLUTIONS_[101557] = medium.Leetcode_Find_Smallest_Set_Of_Vertices
 	_SOLUTIONS_[101584] = medium.Leetcode_minCost_Connect_Points
 	_SOLUTIONS_[101721] = medium.Leetcode_Swap_Nodes
+	_SOLUTIONS_[101802] = medium.Leetcode_Max_Value
 	_SOLUTIONS_[101954] = medium.Leetcode_Minimum_Perimeter
 	_SOLUTIONS_[102038] = medium.Leetcode_Winner_Of_Game
 	_SOLUTIONS_[102044] = medium.Leetcode_Count_Max_Or_Subsets
