@@ -126,8 +126,9 @@ func init() {
 	_SOLUTIONS_[102704] = Leetcode_Javascript
 	_SOLUTIONS_[102706] = easy.Leetcode_Buy_Choco
 	_SOLUTIONS_[102710] = easy.Leetcode_Remove_Trailing_Zeros
-	_SOLUTIONS_[102717] = easy.Leetcode_Semi_Ordered_Permutation
+	_SOLUTIONS_[102715] = Leetcode_Javascript
 	_SOLUTIONS_[102716] = easy.Leetcode_Minimized_String_Length
+	_SOLUTIONS_[102717] = easy.Leetcode_Semi_Ordered_Permutation
 	_SOLUTIONS_[102723] = Leetcode_Javascript
 	_SOLUTIONS_[102724] = Leetcode_Javascript
 	_SOLUTIONS_[102725] = Leetcode_Javascript
