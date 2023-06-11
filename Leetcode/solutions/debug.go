@@ -222,6 +222,7 @@ func init() {
 	_SOLUTIONS_[101129] = medium.Leetcode_Shortest_Alternating_Paths
 	_SOLUTIONS_[101140] = medium.Leetcode_Stone_Game_II
 	_SOLUTIONS_[101143] = medium.Leetcode_Longest_Common_Subsequence
+	_SOLUTIONS_[101146] = medium.Leetcode_Snapshot_Array
 	_SOLUTIONS_[101162] = medium.Leetcode_Max_Distance
 	_SOLUTIONS_[101201] = medium.Leetcode_Is_Ugly_III
 	_SOLUTIONS_[101202] = medium.Leetcode_Smallest_String_With_Swaps
