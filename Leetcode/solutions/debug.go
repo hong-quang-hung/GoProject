@@ -318,6 +318,7 @@ func init() {
 	_SOLUTIONS_[102711] = medium.Leetcode_Difference_Of_Distinct_Values
 	_SOLUTIONS_[102712] = medium.Leetcode_Minimum_Cost_II
 	_SOLUTIONS_[102718] = medium.Leetcode_Matrix_Sum_Queries
+	_SOLUTIONS_[102722] = Leetcode_Javascript
 	_SOLUTIONS_[102730] = medium.LeetCode_Longest_Semi_Repetitive_Substring
 	_SOLUTIONS_[102731] = medium.LeetCode_Sum_Distance
 	_SOLUTIONS_[102734] = medium.Leetcode_Smallest_String
