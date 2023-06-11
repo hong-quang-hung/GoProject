@@ -312,6 +312,7 @@ func init() {
 	_SOLUTIONS_[102694] = Leetcode_Javascript
 	_SOLUTIONS_[102698] = medium.Leetcode_Punishment_Number
 	_SOLUTIONS_[102700] = Leetcode_Javascript
+	_SOLUTIONS_[102705] = Leetcode_Javascript
 	_SOLUTIONS_[102707] = medium.Leetcode_Min_Extra_Char
 	_SOLUTIONS_[102708] = medium.Leetcode_Max_Strength
 	_SOLUTIONS_[102711] = medium.Leetcode_Difference_Of_Distinct_Values
