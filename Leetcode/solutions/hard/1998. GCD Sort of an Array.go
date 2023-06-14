@@ -17,14 +17,14 @@ func Leetcode_Gcd_Sort() {
 
 func gcdSort(nums []int) bool {
 	n := len(nums)
-	numsSort := make([]int, n)
-	copy(numsSort, nums)
-	sort.Ints(numsSort)
+	des := make([]int, n)
+	copy(des, nums)
+	sort.Ints(des)
 	sort.Slice(nums, func(i, j int) bool {
 		return nums[i] < nums[j] && gcd(nums[i], nums[j]) == 1
 	})
 
 	fmt.Println(nums)
-	fmt.Println(numsSort)
+	fmt.Println(des)
 	return true
 }
