@@ -51,6 +51,7 @@ func init() {
 	_SOLUTIONS_[100342] = easy.Leetcode_Is_Power_Of_Four
 	_SOLUTIONS_[100401] = easy.Leetcode_Read_Binary_Watch
 	_SOLUTIONS_[100509] = easy.Leetcode_Fibonacci
+	_SOLUTIONS_[100530] = easy.Leetcode_Get_Minimum_Difference
 	_SOLUTIONS_[100605] = easy.Leetcode_Can_Place_Flowers
 	_SOLUTIONS_[100703] = easy.Leetcode_Kth_Largest
 	_SOLUTIONS_[100704] = easy.Leetcode_Search
