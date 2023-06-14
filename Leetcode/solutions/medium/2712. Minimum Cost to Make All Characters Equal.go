@@ -11,5 +11,11 @@ func Leetcode_Minimum_Cost_II() {
 }
 
 func minimumCost_ii(s string) int64 {
-	return 0
+	res, n := int64(0), len(s)
+	for i := 1; i < n; i++ {
+		if s[i] != s[i-1] {
+			res += int64(min(i, n-i))
+		}
+	}
+	return res
 }
