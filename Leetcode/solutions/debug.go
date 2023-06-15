@@ -170,6 +170,7 @@ func init() {
 	_SOLUTIONS_[100071] = medium.Leetcode_Simplify_Path
 	_SOLUTIONS_[100077] = medium.Leetcode_Combine
 	_SOLUTIONS_[100078] = medium.Leetcode_Subsets
+	_SOLUTIONS_[100080] = medium.Leetcode_Remove_Duplicates
 	_SOLUTIONS_[100103] = medium.Leetcode_Zigzag_Level_Order
 	_SOLUTIONS_[100106] = medium.Leetcode_Build_Trees
 	_SOLUTIONS_[100109] = medium.Leetcode_Sorted_List_To_BST
