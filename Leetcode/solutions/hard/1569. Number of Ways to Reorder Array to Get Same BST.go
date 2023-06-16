@@ -13,5 +13,35 @@ func Leetcode_Num_Of_Ways() {
 }
 
 func numOfWays(nums []int) int {
-	return 0
+	table := make([][]int, len(nums))
+	for i := 0; i < len(nums); i++ {
+		table[i] = make([]int, i+1)
+		table[i][0] = 1
+		table[i][i] = 1
+		for j := 1; j < i; j++ {
+			table[i][j] = (table[i-1][j] + table[i-1][j-1]) % mod
+		}
+	}
+	return numOfWaysSolved(nums, table) - 1
+}
+
+func numOfWaysSolved(nums []int, table [][]int) int {
+	n := len(nums)
+	if n <= 2 {
+		return 1
+	}
+
+	root := nums[0]
+	left, right := []int{}, []int{}
+	for i := 1; i < n; i++ {
+		if nums[i] < root {
+			left = append(left, nums[i])
+		} else {
+			right = append(right, nums[i])
+		}
+	}
+
+	lc := numOfWaysSolved(left, table) % mod
+	rc := numOfWaysSolved(right, table) % mod
+	return (((lc * rc) % mod) * table[n-1][len(left)]) % mod
 }
