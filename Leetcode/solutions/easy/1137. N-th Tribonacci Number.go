@@ -8,6 +8,8 @@ func Leetcode_Tribonacci() {
 	fmt.Println("Output:", tribonacci(4))
 	fmt.Println("Input: n = 25")
 	fmt.Println("Output:", tribonacci(25))
+	fmt.Println("Input: n = 2")
+	fmt.Println("Output:", tribonacci(2))
 }
 
 func tribonacci(n int) int {
@@ -16,7 +18,7 @@ func tribonacci(n int) int {
 	}
 
 	if n == 2 {
-		return 2
+		return 1
 	}
 
 	dp := make([]int, n+1)

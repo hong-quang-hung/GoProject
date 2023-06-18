@@ -6,7 +6,7 @@ import (
 	"sort"
 )
 
-// Reference: https://leetcode.com/problems/number-of-ways-to-reorder-array-to-get-same-bst/
+// Reference: https://leetcode.com/problems/make-array-strictly-increasing/
 func Leetcode_Make_Array_Increasing() {
 	fmt.Println("Input: arr1 = [1,5,3,6,7], arr2 = [1,3,2,4]")
 	fmt.Println("Output:", makeArrayIncreasing([]int{1, 5, 3, 6, 7}, []int{1, 3, 2, 4}))
