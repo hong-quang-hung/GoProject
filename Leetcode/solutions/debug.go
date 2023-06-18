@@ -164,6 +164,7 @@ func init() {
 	_SOLUTIONS_[100039] = medium.Leetcode_Combination_Sum
 	_SOLUTIONS_[100040] = medium.Leetcode_Combination_Sum_2
 	_SOLUTIONS_[100045] = medium.Leetcode_Jumb_Game_II
+	_SOLUTIONS_[100046] = medium.Leetcode_Permute
 	_SOLUTIONS_[100050] = medium.Leetcode_My_Pow
 	_SOLUTIONS_[100054] = medium.Leetcode_Spiral_Order
 	_SOLUTIONS_[100059] = medium.Leetcode_Generate_Matrix
@@ -373,6 +374,7 @@ func init() {
 	_SOLUTIONS_[101998] = hard.Leetcode_Gcd_Sort
 	_SOLUTIONS_[102218] = hard.Leetcode_Max_Value_Of_Coins
 	_SOLUTIONS_[102306] = hard.Leetcode_Distinct_Names
+	_SOLUTIONS_[102328] = hard.Leetcode_Count_Paths
 	_SOLUTIONS_[102360] = hard.Leetcode_Longest_Cycle
 	_SOLUTIONS_[102444] = hard.Leetcode_Count_Subarrays
 	_SOLUTIONS_[102547] = hard.Leetcode_Min_Cost
