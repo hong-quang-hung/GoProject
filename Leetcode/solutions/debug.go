@@ -32,6 +32,7 @@ func init() {
 	_SOLUTIONS_[100035] = easy.Leetcode_Search_Insert
 	_SOLUTIONS_[100058] = easy.Leetcode_Length_Of_Last_Word
 	_SOLUTIONS_[100067] = easy.Leetcode_Add_Binary
+	_SOLUTIONS_[100070] = easy.Leetcode_Climb_Stairs
 	_SOLUTIONS_[100088] = easy.Leetcode_Merge_Sorted_Array
 	_SOLUTIONS_[100101] = easy.Leetcode_Is_Symmetric
 	_SOLUTIONS_[100104] = easy.LeetCode_Max_Depth
