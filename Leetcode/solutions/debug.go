@@ -59,6 +59,7 @@ func init() {
 	_SOLUTIONS_[100509] = easy.Leetcode_Fibonacci
 	_SOLUTIONS_[100530] = easy.Leetcode_Get_Minimum_Difference
 	_SOLUTIONS_[100605] = easy.Leetcode_Can_Place_Flowers
+	_SOLUTIONS_[100643] = easy.Leetcode_Find_Max_Average
 	_SOLUTIONS_[100703] = easy.Leetcode_Kth_Largest
 	_SOLUTIONS_[100704] = easy.Leetcode_Search
 	_SOLUTIONS_[100705] = easy.Leetcode_Design_HashSet
