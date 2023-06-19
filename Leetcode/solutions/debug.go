@@ -175,6 +175,7 @@ func init() {
 	_SOLUTIONS_[100050] = medium.Leetcode_My_Pow
 	_SOLUTIONS_[100054] = medium.Leetcode_Spiral_Order
 	_SOLUTIONS_[100059] = medium.Leetcode_Generate_Matrix
+	_SOLUTIONS_[100062] = medium.Leetcode_Unique_Paths
 	_SOLUTIONS_[100064] = medium.Leetcode_Min_Path_Sum
 	_SOLUTIONS_[100071] = medium.Leetcode_Simplify_Path
 	_SOLUTIONS_[100077] = medium.Leetcode_Combine

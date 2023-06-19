@@ -5,9 +5,9 @@ import "fmt"
 // Reference: https://leetcode.com/problems/longest-subarray-with-maximum-bitwise-and/
 func Leetcode_Longest_Subarray_II() {
 	fmt.Println("Input: nums = [1,2,3,3,2,2]")
-	fmt.Println("Output:", longestSubarray([]int{1, 2, 3, 3, 2, 2}))
+	fmt.Println("Output:", longestSubarray_ii([]int{1, 2, 3, 3, 2, 2}))
 	fmt.Println("Input: nums = [1,2,3,3,2,2,2,4]")
-	fmt.Println("Output:", longestSubarray([]int{1, 2, 3, 3, 2, 2, 2, 4}))
+	fmt.Println("Output:", longestSubarray_ii([]int{1, 2, 3, 3, 2, 2, 2, 4}))
 }
 
 func longestSubarray_ii(nums []int) int {
