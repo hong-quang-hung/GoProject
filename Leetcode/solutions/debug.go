@@ -255,6 +255,7 @@ func init() {
 	_SOLUTIONS_[101498] = medium.Leetcode_Num_Subseq
 	_SOLUTIONS_[101557] = medium.Leetcode_Find_Smallest_Set_Of_Vertices
 	_SOLUTIONS_[101584] = medium.Leetcode_minCost_Connect_Points
+	_SOLUTIONS_[101679] = medium.Leetcode_Max_Operations
 	_SOLUTIONS_[101721] = medium.Leetcode_Swap_Nodes
 	_SOLUTIONS_[101802] = medium.Leetcode_Max_Value
 	_SOLUTIONS_[101954] = medium.Leetcode_Minimum_Perimeter
