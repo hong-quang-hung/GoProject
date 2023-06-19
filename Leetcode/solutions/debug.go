@@ -54,6 +54,7 @@ func init() {
 	_SOLUTIONS_[100342] = easy.Leetcode_Is_Power_Of_Four
 	_SOLUTIONS_[100345] = easy.Leetcode_Reverse_Vowels
 	_SOLUTIONS_[100389] = easy.Leetcode_Find_The_Difference
+	_SOLUTIONS_[100392] = easy.Leetcode_Is_Subsequence
 	_SOLUTIONS_[100401] = easy.Leetcode_Read_Binary_Watch
 	_SOLUTIONS_[100509] = easy.Leetcode_Fibonacci
 	_SOLUTIONS_[100530] = easy.Leetcode_Get_Minimum_Difference
