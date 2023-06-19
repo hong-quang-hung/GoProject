@@ -254,6 +254,7 @@ func init() {
 	_SOLUTIONS_[101456] = medium.Leetcode_Max_Vowels
 	_SOLUTIONS_[101466] = medium.Leetcode_Min_Reorder
 	_SOLUTIONS_[101472] = medium.Leetcode_Design_Browser_History
+	_SOLUTIONS_[101493] = medium.Leetcode_Longest_Subarray
 	_SOLUTIONS_[101498] = medium.Leetcode_Num_Subseq
 	_SOLUTIONS_[101557] = medium.Leetcode_Find_Smallest_Set_Of_Vertices
 	_SOLUTIONS_[101584] = medium.Leetcode_minCost_Connect_Points
@@ -276,7 +277,7 @@ func init() {
 	_SOLUTIONS_[102352] = medium.Leetcode_Equal_Pairs
 	_SOLUTIONS_[102390] = medium.Leetcode_Remove_Stars
 	_SOLUTIONS_[102405] = medium.Leetcode_Partition_String
-	_SOLUTIONS_[102419] = medium.Leetcode_Longest_Subarray
+	_SOLUTIONS_[102419] = medium.Leetcode_Longest_Subarray_II
 	_SOLUTIONS_[102439] = medium.Leetcode_Minimize_Array_Value
 	_SOLUTIONS_[102466] = medium.Leetcode_Count_Good_Strings
 	_SOLUTIONS_[102477] = medium.Leetcode_Minimum_Fuel_Cost
