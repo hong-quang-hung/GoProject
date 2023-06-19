@@ -48,6 +48,7 @@ func init() {
 	_SOLUTIONS_[100231] = easy.Leetcode_Is_Power_Of_Two
 	_SOLUTIONS_[100258] = easy.Leetcode_Add_Digits
 	_SOLUTIONS_[100263] = easy.Leetcode_Is_Ugly
+	_SOLUTIONS_[100283] = easy.Leetcode_Move_Zeroes
 	_SOLUTIONS_[100290] = easy.Leetcode_Word_Pattern
 	_SOLUTIONS_[100326] = easy.Leetcode_Is_Power_Of_Three
 	_SOLUTIONS_[100342] = easy.Leetcode_Is_Power_Of_Four
