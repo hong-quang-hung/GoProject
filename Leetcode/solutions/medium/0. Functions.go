@@ -1,6 +1,10 @@
 package medium
 
-import "leetcode.com/Leetcode/utils"
+import (
+	"fmt"
+
+	"leetcode.com/Leetcode/utils"
+)
 
 func min(a, b int) int {
 	return utils.MinInt(a, b)
@@ -44,4 +48,12 @@ func compareSlice(a, b []int) bool {
 
 func countingSort(nums []int) {
 	utils.CountingSort(nums)
+}
+
+func Leetcode_SQL() {
+	fmt.Printf("This is SQL solution!\n")
+}
+
+func Leetcode_Javascript() {
+	fmt.Printf("This is Javascript solution!\n")
 }

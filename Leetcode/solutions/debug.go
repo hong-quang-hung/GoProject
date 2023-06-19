@@ -90,7 +90,7 @@ func init() {
 	_SOLUTIONS_[101805] = easy.Leetcode_Num_Different_Integers
 	_SOLUTIONS_[101822] = easy.Leetcode_Array_Sign
 	_SOLUTIONS_[101925] = easy.Leetcode_Count_Triples
-	_SOLUTIONS_[101965] = Leetcode_SQL
+	_SOLUTIONS_[101965] = easy.Leetcode_SQL
 	_SOLUTIONS_[101979] = easy.Leetcode_Find_GCD
 	_SOLUTIONS_[102215] = easy.Leetcode_Find_Difference
 	_SOLUTIONS_[102399] = easy.Leetcode_Check_Distances
@@ -106,44 +106,44 @@ func init() {
 	_SOLUTIONS_[102600] = easy.Leetcode_K_Items_With_Maximum_Sum
 	_SOLUTIONS_[102605] = easy.Leetcode_Min_Number
 	_SOLUTIONS_[102609] = easy.Leetcode_Find_The_Longest_Balanced_Substring
-	_SOLUTIONS_[102619] = Leetcode_Javascript
-	_SOLUTIONS_[102620] = Leetcode_Javascript
-	_SOLUTIONS_[102621] = Leetcode_Javascript
-	_SOLUTIONS_[102626] = Leetcode_Javascript
-	_SOLUTIONS_[102629] = Leetcode_Javascript
-	_SOLUTIONS_[102634] = Leetcode_Javascript
-	_SOLUTIONS_[102635] = Leetcode_Javascript
-	_SOLUTIONS_[102637] = Leetcode_Javascript
+	_SOLUTIONS_[102619] = easy.Leetcode_Javascript
+	_SOLUTIONS_[102620] = easy.Leetcode_Javascript
+	_SOLUTIONS_[102621] = easy.Leetcode_Javascript
+	_SOLUTIONS_[102626] = easy.Leetcode_Javascript
+	_SOLUTIONS_[102629] = easy.Leetcode_Javascript
+	_SOLUTIONS_[102634] = easy.Leetcode_Javascript
+	_SOLUTIONS_[102635] = easy.Leetcode_Javascript
+	_SOLUTIONS_[102637] = easy.Leetcode_Javascript
 	_SOLUTIONS_[102639] = easy.Leetcode_Max_Value_Of_Coins
 	_SOLUTIONS_[102643] = easy.Leetcode_Row_And_Maximum_Ones
 	_SOLUTIONS_[102644] = easy.Leetcode_Max_Div_Score
-	_SOLUTIONS_[102648] = Leetcode_Javascript
+	_SOLUTIONS_[102648] = easy.Leetcode_Javascript
 	_SOLUTIONS_[102651] = easy.Leetcode_Find_Delayed_Arrival_Time
 	_SOLUTIONS_[102652] = easy.Leetcode_Sum_Of_Multiples
 	_SOLUTIONS_[102656] = easy.Leetcode_Maximize_Sum
 	_SOLUTIONS_[102660] = easy.Leetcode_Is_Winner
-	_SOLUTIONS_[102665] = Leetcode_Javascript
-	_SOLUTIONS_[102666] = Leetcode_Javascript
-	_SOLUTIONS_[102667] = Leetcode_Javascript
+	_SOLUTIONS_[102665] = easy.Leetcode_Javascript
+	_SOLUTIONS_[102666] = easy.Leetcode_Javascript
+	_SOLUTIONS_[102667] = easy.Leetcode_Javascript
 	_SOLUTIONS_[102670] = easy.Leetcode_Distinct_Difference_Array
-	_SOLUTIONS_[102677] = Leetcode_Javascript
+	_SOLUTIONS_[102677] = easy.Leetcode_Javascript
 	_SOLUTIONS_[102678] = easy.Leetcode_Count_Seniors
 	_SOLUTIONS_[102682] = easy.Leetcode_Circular_Game_Losers
-	_SOLUTIONS_[102695] = Leetcode_Javascript
+	_SOLUTIONS_[102695] = easy.Leetcode_Javascript
 	_SOLUTIONS_[102696] = easy.Leetcode_Min_Length
 	_SOLUTIONS_[102697] = easy.Leetcode_Make_Smallest_Palindrome
-	_SOLUTIONS_[102703] = Leetcode_Javascript
-	_SOLUTIONS_[102704] = Leetcode_Javascript
+	_SOLUTIONS_[102703] = easy.Leetcode_Javascript
+	_SOLUTIONS_[102704] = easy.Leetcode_Javascript
 	_SOLUTIONS_[102706] = easy.Leetcode_Buy_Choco
 	_SOLUTIONS_[102710] = easy.Leetcode_Remove_Trailing_Zeros
-	_SOLUTIONS_[102715] = Leetcode_Javascript
+	_SOLUTIONS_[102715] = easy.Leetcode_Javascript
 	_SOLUTIONS_[102716] = easy.Leetcode_Minimized_String_Length
 	_SOLUTIONS_[102717] = easy.Leetcode_Semi_Ordered_Permutation
-	_SOLUTIONS_[102723] = Leetcode_Javascript
-	_SOLUTIONS_[102724] = Leetcode_Javascript
-	_SOLUTIONS_[102725] = Leetcode_Javascript
-	_SOLUTIONS_[102726] = Leetcode_Javascript
-	_SOLUTIONS_[102727] = Leetcode_Javascript
+	_SOLUTIONS_[102723] = easy.Leetcode_Javascript
+	_SOLUTIONS_[102724] = easy.Leetcode_Javascript
+	_SOLUTIONS_[102725] = easy.Leetcode_Javascript
+	_SOLUTIONS_[102726] = easy.Leetcode_Javascript
+	_SOLUTIONS_[102727] = easy.Leetcode_Javascript
 	_SOLUTIONS_[102729] = easy.LeetCode_Is_Fascinating
 	_SOLUTIONS_[102733] = easy.Leetcode_Find_Non_Min_Or_Max
 	_SOLUTIONS_[102739] = easy.Leetcode_Distance_Traveled
@@ -212,9 +212,9 @@ func init() {
 	_SOLUTIONS_[100540] = medium.Leetcode_Single_Non_Duplicate
 	_SOLUTIONS_[100547] = medium.Leetcode_Find_Circle_Num
 	_SOLUTIONS_[100567] = medium.Leetcode_Check_Inclusion
-	_SOLUTIONS_[100570] = Leetcode_SQL
+	_SOLUTIONS_[100570] = medium.Leetcode_SQL
 	_SOLUTIONS_[100583] = medium.Leetcode_Min_Distance
-	_SOLUTIONS_[100585] = Leetcode_SQL
+	_SOLUTIONS_[100585] = medium.Leetcode_SQL
 	_SOLUTIONS_[100649] = medium.Leetcode_Predict_Party_Victory
 	_SOLUTIONS_[100652] = medium.Leetcode_Find_Duplicate_Subtrees
 	_SOLUTIONS_[100662] = medium.Leetcode_Width_Of_Binary_Tree
@@ -230,6 +230,7 @@ func init() {
 	_SOLUTIONS_[100946] = medium.Leetcode_Validate_Stack_Sequences
 	_SOLUTIONS_[100958] = medium.Leetcode_Is_Complete_Tree
 	_SOLUTIONS_[100983] = medium.Leetcode_Min_Cost_Tickets
+	_SOLUTIONS_[101004] = medium.Leetcode_Longest_Ones
 	_SOLUTIONS_[101011] = medium.Leetcode_Ship_Within_Days
 	_SOLUTIONS_[101020] = medium.Leetcode_Num_Enclaves
 	_SOLUTIONS_[101035] = medium.Leetcode_Max_Uncrossed_Lines
@@ -297,20 +298,20 @@ func init() {
 	_SOLUTIONS_[102602] = medium.Leetcode_Min_Operations_I
 	_SOLUTIONS_[102606] = medium.Leetcode_Maximum_Cost_Substring
 	_SOLUTIONS_[102610] = medium.Leetcode_Find_Matrix
-	_SOLUTIONS_[102618] = Leetcode_Javascript
-	_SOLUTIONS_[102622] = Leetcode_Javascript
-	_SOLUTIONS_[102623] = Leetcode_Javascript
-	_SOLUTIONS_[102625] = Leetcode_Javascript
-	_SOLUTIONS_[102627] = Leetcode_Javascript
-	_SOLUTIONS_[102628] = Leetcode_Javascript
-	_SOLUTIONS_[102631] = Leetcode_Javascript
-	_SOLUTIONS_[102632] = Leetcode_Javascript
-	_SOLUTIONS_[102633] = Leetcode_Javascript
-	_SOLUTIONS_[102636] = Leetcode_Javascript
+	_SOLUTIONS_[102618] = medium.Leetcode_Javascript
+	_SOLUTIONS_[102622] = medium.Leetcode_Javascript
+	_SOLUTIONS_[102623] = medium.Leetcode_Javascript
+	_SOLUTIONS_[102625] = medium.Leetcode_Javascript
+	_SOLUTIONS_[102627] = medium.Leetcode_Javascript
+	_SOLUTIONS_[102628] = medium.Leetcode_Javascript
+	_SOLUTIONS_[102631] = medium.Leetcode_Javascript
+	_SOLUTIONS_[102632] = medium.Leetcode_Javascript
+	_SOLUTIONS_[102633] = medium.Leetcode_Javascript
+	_SOLUTIONS_[102636] = medium.Leetcode_Javascript
 	_SOLUTIONS_[102640] = medium.Leetcode_Find_Prefix_Score
 	_SOLUTIONS_[102641] = medium.Leetcode_Replace_Value_In_Tree
 	_SOLUTIONS_[102645] = medium.Leetcode_Add_Minimum
-	_SOLUTIONS_[102649] = Leetcode_Javascript
+	_SOLUTIONS_[102649] = medium.Leetcode_Javascript
 	_SOLUTIONS_[102653] = medium.Leetcode_Get_Subarray_Beauty
 	_SOLUTIONS_[102654] = medium.Leetcode_Min_Operations_Equal_1
 	_SOLUTIONS_[102657] = medium.Leetcode_Find_The_Prefix_Common_Array
@@ -320,25 +321,25 @@ func init() {
 	_SOLUTIONS_[102671] = medium.Leetcode_Frequency_Tracker
 	_SOLUTIONS_[102672] = medium.Leetcode_Color_The_Array
 	_SOLUTIONS_[102673] = medium.Leetcode_Min_Increments
-	_SOLUTIONS_[102675] = Leetcode_Javascript
-	_SOLUTIONS_[102676] = Leetcode_Javascript
+	_SOLUTIONS_[102675] = medium.Leetcode_Javascript
+	_SOLUTIONS_[102676] = medium.Leetcode_Javascript
 	_SOLUTIONS_[102679] = medium.Leetcode_Matrix_Sum
 	_SOLUTIONS_[102680] = medium.Leetcode_Maximum_Or
 	_SOLUTIONS_[102683] = medium.Leetcode_Does_Valid_Array_Exist
 	_SOLUTIONS_[102684] = medium.Leetcode_Max_Moves
 	_SOLUTIONS_[102685] = medium.Leetcode_Count_Complete_Components
-	_SOLUTIONS_[102693] = Leetcode_Javascript
-	_SOLUTIONS_[102694] = Leetcode_Javascript
+	_SOLUTIONS_[102693] = medium.Leetcode_Javascript
+	_SOLUTIONS_[102694] = medium.Leetcode_Javascript
 	_SOLUTIONS_[102698] = medium.Leetcode_Punishment_Number
-	_SOLUTIONS_[102700] = Leetcode_Javascript
-	_SOLUTIONS_[102705] = Leetcode_Javascript
+	_SOLUTIONS_[102700] = medium.Leetcode_Javascript
+	_SOLUTIONS_[102705] = medium.Leetcode_Javascript
 	_SOLUTIONS_[102707] = medium.Leetcode_Min_Extra_Char
 	_SOLUTIONS_[102708] = medium.Leetcode_Max_Strength
 	_SOLUTIONS_[102711] = medium.Leetcode_Difference_Of_Distinct_Values
 	_SOLUTIONS_[102712] = medium.Leetcode_Minimum_Cost_II
 	_SOLUTIONS_[102718] = medium.Leetcode_Matrix_Sum_Queries
-	_SOLUTIONS_[102721] = Leetcode_Javascript
-	_SOLUTIONS_[102722] = Leetcode_Javascript
+	_SOLUTIONS_[102721] = medium.Leetcode_Javascript
+	_SOLUTIONS_[102722] = medium.Leetcode_Javascript
 	_SOLUTIONS_[102730] = medium.LeetCode_Longest_Semi_Repetitive_Substring
 	_SOLUTIONS_[102731] = medium.LeetCode_Sum_Distance
 	_SOLUTIONS_[102734] = medium.Leetcode_Smallest_String
@@ -356,7 +357,7 @@ func init() {
 	_SOLUTIONS_[100072] = hard.Leetcode_Min_Distance
 	_SOLUTIONS_[100087] = hard.Leetcode_Is_Scramble
 	_SOLUTIONS_[100502] = hard.Leetcode_Find_Maximized_Capital
-	_SOLUTIONS_[100601] = Leetcode_SQL
+	_SOLUTIONS_[100601] = hard.Leetcode_SQL
 	_SOLUTIONS_[100768] = hard.Leetcode_Max_Chunks_To_Sorted_II
 	_SOLUTIONS_[100839] = hard.Leetcode_Num_Similar_Groups
 	_SOLUTIONS_[100879] = hard.Leetcode_Profitable_Schemes
@@ -412,12 +413,4 @@ func Leetcode_Check_Golang_Solution(problem int) bool {
 
 func Leetcode_Empty(problem int) {
 	fmt.Printf("The problem %d hasn't been solved yet!\n", problem)
-}
-
-func Leetcode_SQL() {
-	fmt.Printf("This is SQL solution!\n")
-}
-
-func Leetcode_Javascript() {
-	fmt.Printf("This is Javascript solution!\n")
 }
