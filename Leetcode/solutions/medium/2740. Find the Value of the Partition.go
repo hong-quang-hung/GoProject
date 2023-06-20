@@ -20,7 +20,7 @@ func findValueOfPartition(nums []int) int {
 	sort.Ints(nums)
 	res := math.MaxInt
 	for i := 1; i < len(nums); i++ {
-		res = min(res, abs(nums[i]-nums[i-1]))
+		res = min(res, nums[i]-nums[i-1])
 	}
 	return res
 }
