@@ -221,6 +221,7 @@ func init() {
 	_SOLUTIONS_[100652] = medium.Leetcode_Find_Duplicate_Subtrees
 	_SOLUTIONS_[100662] = medium.Leetcode_Width_Of_Binary_Tree
 	_SOLUTIONS_[100714] = medium.Leetcode_Max_Profit_II
+	_SOLUTIONS_[100735] = medium.Leetcode_Asteroid_Collision
 	_SOLUTIONS_[100769] = medium.Leetcode_Max_Chunks_To_Sorted
 	_SOLUTIONS_[100785] = medium.Leetcode_Is_Bipartite
 	_SOLUTIONS_[100837] = medium.Leetcode_New_21_Game
