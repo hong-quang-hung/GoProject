@@ -2,6 +2,7 @@ package medium
 
 import (
 	"fmt"
+	"strings"
 )
 
 // Reference: https://leetcode.com/problems/decode-string/
@@ -23,30 +24,36 @@ func decodeString(s string) string {
 		i, n := 1, int(s[0]-'0')
 		for i < len(s) && s[i] != '[' {
 			n = n*10 + int(s[i]-'0')
+			i++
 		}
 
 		j := i + 1
-		stack := []byte{s[i]}
+		stack := []int{i}
 		for len(stack) != 0 {
 			if s[j] == '[' {
-				stack = append(stack, s[j])
+				stack = append(stack, j)
 			} else if s[j] == ']' {
 				stack = stack[:len(stack)-1]
 			}
 			j++
 		}
 
-		res := ""
+		var sb strings.Builder
 		left := decodeString(s[i+1 : j-1])
 		for r := 0; r < n; r++ {
-			res += left
+			sb.WriteString(left)
 		}
-		return res + decodeString(s[j:])
+		sb.WriteString(decodeString(s[j:]))
+		return sb.String()
 	}
 
 	i := 0
 	for i < len(s) && s[i]-'0' > 9 {
 		i++
 	}
-	return s[0:i] + decodeString(s[i:])
+
+	var sb strings.Builder
+	sb.WriteString(s[0:i])
+	sb.WriteString(decodeString(s[i:]))
+	return sb.String()
 }
