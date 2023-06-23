@@ -2,7 +2,6 @@ package hard
 
 import (
 	"fmt"
-	"sort"
 )
 
 // Reference: https://leetcode.com/problems/gcd-sort-of-an-array/
@@ -17,14 +16,21 @@ func Leetcode_Gcd_Sort() {
 
 func gcdSort(nums []int) bool {
 	n := len(nums)
-	des := make([]int, n)
-	copy(des, nums)
-	sort.Ints(des)
-	sort.Slice(nums, func(i, j int) bool {
-		return nums[i] < nums[j] && gcd(nums[i], nums[j]) == 1
-	})
+	union := NewUnionFind(n)
+	for i := 0; i < n-1; i++ {
+		for j := i + 1; j < n; j++ {
+			if gcd(nums[i], nums[j]) > 1 {
+				union.UnionSet(j, i)
+				union.UnionSet(i, j)
+			}
+		}
+	}
 
-	fmt.Println(nums)
-	fmt.Println(des)
+	fmt.Println(union.Parent, union.Rank, union.Count)
+	for i := 0; i < n; i++ {
+		union.Parent[i] = union.Find(union.Parent[i])
+	}
+
+	fmt.Println(union.Parent, union.Rank, union.Count)
 	return true
 }
