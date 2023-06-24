@@ -371,6 +371,7 @@ func init() {
 	_SOLUTIONS_[100768] = hard.Leetcode_Max_Chunks_To_Sorted_II
 	_SOLUTIONS_[100839] = hard.Leetcode_Num_Similar_Groups
 	_SOLUTIONS_[100879] = hard.Leetcode_Profitable_Schemes
+	_SOLUTIONS_[100956] = hard.Leetcode_Tallest_Billboard
 	_SOLUTIONS_[101092] = hard.Leetcode_Shortest_Common_Supersequence
 	_SOLUTIONS_[101187] = hard.Leetcode_Make_Array_Increasing
 	_SOLUTIONS_[101312] = hard.Leetcode_Min_Insertions

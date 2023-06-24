@@ -18,6 +18,10 @@ func gcd(a, b int) int {
 	return utils.GcdInt(a, b)
 }
 
+func abs(x int) int {
+	return utils.AbsInt(x)
+}
+
 func min64(a, b int64) int64 {
 	return utils.MinInt64(a, b)
 }
