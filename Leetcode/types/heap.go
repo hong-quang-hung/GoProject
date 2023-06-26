@@ -13,7 +13,7 @@ func (h *MinHeap) Pop() interface{} {
 	return r
 }
 func (h *MinHeap) Peek() int {
-	r := (*h)[(*h).Len()-1]
+	r := (*h)[0]
 	return r
 }
 func (h *MinHeap) Push(i interface{}) {
@@ -33,7 +33,7 @@ func (h *MaxHeap) Pop() interface{} {
 	return r
 }
 func (h *MaxHeap) Peek() int {
-	r := (*h)[(*h).Len()-1]
+	r := (*h)[0]
 	return r
 }
 func (h *MaxHeap) Push(i interface{}) {
