@@ -1,6 +1,7 @@
 package medium
 
 import (
+	"container/heap"
 	"fmt"
 )
 
@@ -16,7 +17,7 @@ func Leetcode_K_Smallest_Pairs() {
 
 type kSmallestPairsHeap [][]int
 
-func (h kSmallestPairsHeap) Less(i, j int) bool { return h[i][0]+h[i][1] < h[j][0]+h[j][1] }
+func (h kSmallestPairsHeap) Less(i, j int) bool { return h[i][0] < h[j][0] }
 func (h kSmallestPairsHeap) Len() int           { return len(h) }
 func (h kSmallestPairsHeap) Swap(i, j int)      { h[i], h[j] = h[j], h[i] }
 func (h kSmallestPairsHeap) Empty() bool        { return len(h) == 0 }
@@ -30,7 +31,20 @@ func (h *kSmallestPairsHeap) Push(i interface{}) {
 }
 
 func kSmallestPairs(nums1 []int, nums2 []int, k int) [][]int {
-	n1, n2 := len(nums1), len(nums2)
-	res := new(kSmallestPairsHeap)
-	return ((&res).([][]int))
+	h := new(kSmallestPairsHeap)
+	heap.Push(h, []int{nums1[0] + nums2[0], 0, 0})
+	res := [][]int{}
+	for h.Len() != 0 && len(res) < k {
+		cur := heap.Pop(h).([]int)
+		i, j := cur[1], cur[2]
+		res = append(res, []int{nums1[i], nums2[j]})
+
+		if j == 0 && i+1 < len(nums1) {
+			heap.Push(h, []int{nums1[i+1] + nums2[0], i + 1, 0})
+		}
+		if j+1 < len(nums2) {
+			heap.Push(h, []int{nums1[i] + nums2[j+1], i, j + 1})
+		}
+	}
+	return res
 }
