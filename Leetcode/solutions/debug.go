@@ -264,6 +264,7 @@ func init() {
 	_SOLUTIONS_[101472] = medium.Leetcode_Design_Browser_History
 	_SOLUTIONS_[101493] = medium.Leetcode_Longest_Subarray
 	_SOLUTIONS_[101498] = medium.Leetcode_Num_Subseq
+	_SOLUTIONS_[101514] = medium.Leetcode_Max_Probability
 	_SOLUTIONS_[101557] = medium.Leetcode_Find_Smallest_Set_Of_Vertices
 	_SOLUTIONS_[101584] = medium.Leetcode_minCost_Connect_Points
 	_SOLUTIONS_[101657] = medium.Leetcode_Close_Strings
