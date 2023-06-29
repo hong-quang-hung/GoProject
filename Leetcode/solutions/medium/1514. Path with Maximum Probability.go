@@ -16,11 +16,11 @@ func Leetcode_Max_Probability() {
 }
 
 type pair struct {
-	edge int
-	val  float64
+	to  int
+	val float64
 }
 
-type maxProbabilityHeap []pair
+type maxProbabilityHeap []*pair
 
 func (h maxProbabilityHeap) Less(i, j int) bool { return h[i].val > h[j].val }
 func (h maxProbabilityHeap) Len() int           { return len(h) }
@@ -32,23 +32,44 @@ func (h *maxProbabilityHeap) Pop() interface{} {
 	return r
 }
 func (h *maxProbabilityHeap) Push(i interface{}) {
-	*h = append(*h, i.(pair))
+	*h = append(*h, i.(*pair))
 }
 
 func maxProbability(n int, edges [][]int, succProb []float64, start int, end int) float64 {
 	g := make([][]pair, n)
 	for i := 0; i < len(edges); i++ {
-		g[edges[i][0]] = append(g[edges[i][0]], pair{edge: edges[i][1], val: succProb[i]})
-		g[edges[i][1]] = append(g[edges[i][1]], pair{edge: edges[i][0], val: succProb[i]})
+		g[edges[i][0]] = append(g[edges[i][0]], pair{to: edges[i][1], val: succProb[i]})
+		g[edges[i][1]] = append(g[edges[i][1]], pair{to: edges[i][0], val: succProb[i]})
 	}
 
 	h := new(maxProbabilityHeap)
-	for _, p := range g[start] {
-		heap.Push(h, p)
-	}
+	visited := make([]bool, n)
+	dist := make([]float64, n)
 
+	heap.Push(h, &pair{to: start, val: 0})
+	dist[start] = 1
 	for !h.Empty() {
+		cur := heap.Pop(h).(*pair)
+		if cur.to == end {
+			return dist[end]
+		}
 
+		if visited[cur.to] {
+			continue
+		}
+
+		visited[cur.to] = true
+		for _, edge := range g[cur.to] {
+			if visited[edge.to] {
+				continue
+			}
+
+			next := dist[cur.to] * edge.val
+			if next > dist[edge.to] {
+				dist[edge.to] = next
+				heap.Push(h, &pair{edge.to, next})
+			}
+		}
 	}
 	return 0
 }
