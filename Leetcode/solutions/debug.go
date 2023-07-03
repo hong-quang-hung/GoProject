@@ -66,6 +66,7 @@ func init() {
 	_SOLUTIONS_[100724] = easy.Leetcode_Pivot_Index
 	_SOLUTIONS_[100744] = easy.Leetcode_Next_Greatest_Letter
 	_SOLUTIONS_[100783] = easy.Leetcode_Min_Diff_In_BST
+	_SOLUTIONS_[100859] = easy.Leetcode_Buddy_Strings
 	_SOLUTIONS_[100925] = easy.Leetcode_Is_Long_PressedName
 	_SOLUTIONS_[100929] = easy.Leetcode_Num_Unique_Emails
 	_SOLUTIONS_[100933] = easy.Leetcode_Number_Of_Recent_Calls
