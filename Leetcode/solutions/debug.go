@@ -277,6 +277,7 @@ func init() {
 	_SOLUTIONS_[102038] = medium.Leetcode_Winner_Of_Game
 	_SOLUTIONS_[102044] = medium.Leetcode_Count_Max_Or_Subsets
 	_SOLUTIONS_[102090] = medium.Leetcode_Get_Averages
+	_SOLUTIONS_[102095] = medium.Leetcode_Delete_Middle
 	_SOLUTIONS_[102101] = medium.Leetcode_Maximum_Detonation
 	_SOLUTIONS_[102130] = medium.Leetcode_Pair_Sum
 	_SOLUTIONS_[102140] = medium.Leetcode_Most_Points
