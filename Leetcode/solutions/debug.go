@@ -389,6 +389,7 @@ func init() {
 	_SOLUTIONS_[101444] = hard.Leetcode_Ways
 	_SOLUTIONS_[101547] = hard.Leetcode_Min_Cost_Cut
 	_SOLUTIONS_[101569] = hard.Leetcode_Num_Of_Ways
+	_SOLUTIONS_[101575] = hard.Leetcode_Count_Routes
 	_SOLUTIONS_[101579] = hard.Leetcode_Max_Num_Edges_To_Removet
 	_SOLUTIONS_[101601] = hard.Leetcode_Maximum_Requests
 	_SOLUTIONS_[101675] = hard.Leetcode_Minimum_Deviation
