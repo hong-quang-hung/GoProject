@@ -204,6 +204,7 @@ func init() {
 	_SOLUTIONS_[100309] = medium.Leetcode_Max_Profit
 	_SOLUTIONS_[100313] = medium.Leetcode_Nth_Super_Ugly_Number
 	_SOLUTIONS_[100319] = medium.Leetcode_Bulb_Switch
+	_SOLUTIONS_[100328] = medium.Leetcode_Odd_Even_List
 	_SOLUTIONS_[100334] = medium.Leetcode_Increasing_Triplet
 	_SOLUTIONS_[100337] = medium.Leetcode_House_Robber_III
 	_SOLUTIONS_[100347] = medium.Leetcode_Top_K_Frequent

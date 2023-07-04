@@ -26,6 +26,29 @@ func S2ListNode(s string) *types.ListNode {
 	return types.NewListNode(S2SliceInt(s)...)
 }
 
+// Returning the TreeNode string
+// do not use when ListNode is cycle...
+func SListNode(head *types.ListNode) string {
+	if head == nil {
+		return "[]"
+	}
+
+	var s strings.Builder
+	s.WriteString("[")
+	temp := head
+	for {
+		s.WriteString(strconv.Itoa(temp.Val))
+		temp = temp.Next
+		if temp == nil {
+			break
+		} else {
+			s.WriteString(",")
+		}
+	}
+	s.WriteString("]")
+	return s.String()
+}
+
 // Convert input string to TreeNode
 func S2TreeNode(s string) *types.TreeNode {
 	values := S2SliceString(s)

@@ -19,6 +19,10 @@ func S2ListNode(s string) *ListNode {
 	return utils.S2ListNode(s)
 }
 
+func SListNode(head *ListNode) string {
+	return utils.SListNode(head)
+}
+
 func STreeNode(root *TreeNode) string {
 	return utils.STreeNode(root)
 }
