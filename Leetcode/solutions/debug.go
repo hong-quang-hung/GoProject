@@ -397,6 +397,7 @@ func init() {
 	_SOLUTIONS_[101857] = hard.Leetcode_Largest_Path_Value
 	_SOLUTIONS_[101944] = hard.Leetcode_Can_See_Persons_Count
 	_SOLUTIONS_[101964] = hard.Leetcode_Longest_Obstacle_Course_At_Each_Position
+	_SOLUTIONS_[101970] = hard.Leetcode_Latest_Day_To_Cross
 	_SOLUTIONS_[101998] = hard.Leetcode_Gcd_Sort
 	_SOLUTIONS_[102218] = hard.Leetcode_Max_Value_Of_Coins
 	_SOLUTIONS_[102306] = hard.Leetcode_Distinct_Names
