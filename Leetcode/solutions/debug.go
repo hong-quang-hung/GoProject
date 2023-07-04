@@ -188,6 +188,7 @@ func init() {
 	_SOLUTIONS_[100109] = medium.Leetcode_Sorted_List_To_BST
 	_SOLUTIONS_[100129] = medium.Leetcode_Sum_Numbers
 	_SOLUTIONS_[100133] = medium.Leetcode_Clone_Graph
+	_SOLUTIONS_[100137] = medium.Leetcode_Single_Number_II
 	_SOLUTIONS_[100142] = medium.Leetcode_Detect_Cycle
 	_SOLUTIONS_[100151] = medium.Leetcode_Reverse_Words
 	_SOLUTIONS_[100198] = medium.Leetcode_House_Robber
