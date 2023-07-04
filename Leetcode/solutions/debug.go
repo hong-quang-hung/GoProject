@@ -283,6 +283,7 @@ func init() {
 	_SOLUTIONS_[102187] = medium.Leetcode_Minimum_Time
 	_SOLUTIONS_[102275] = medium.Leetcode_Largest_Combination
 	_SOLUTIONS_[102300] = medium.Leetcode_Successful_Pairs
+	_SOLUTIONS_[102305] = medium.Leetcode_Distribute_Cookies
 	_SOLUTIONS_[102316] = medium.Leetcode_Count_Pairs
 	_SOLUTIONS_[102336] = medium.Leetcode_Smallest_Infinite_Set
 	_SOLUTIONS_[102348] = medium.Leetcode_Zero_Filled_Subarray
