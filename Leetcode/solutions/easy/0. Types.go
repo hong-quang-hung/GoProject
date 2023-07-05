@@ -5,13 +5,15 @@ import (
 	"leetcode.com/Leetcode/utils"
 )
 
-type Node = types.Node
-type ListNode = types.ListNode
-type TreeNode = types.TreeNode
-type TrieNode = types.TrieNode
-type UnionFind = types.UnionFind
-type MinHeap = types.MinHeap
-type MaxHeap = types.MaxHeap
+type (
+	Node      = types.Node
+	ListNode  = types.ListNode
+	TreeNode  = types.TreeNode
+	TrieNode  = types.TrieNode
+	UnionFind = types.UnionFind
+	MinHeap   = types.MinHeap
+	MaxHeap   = types.MaxHeap
+)
 
 func S2ListNode(s string) *ListNode {
 	return utils.S2ListNode(s)
