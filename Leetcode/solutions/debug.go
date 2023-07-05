@@ -42,6 +42,7 @@ func init() {
 	_SOLUTIONS_[100121] = easy.LeetCode_Max_Profit
 	_SOLUTIONS_[100141] = easy.Leetcode_Has_Cycle
 	_SOLUTIONS_[100202] = easy.Leetcode_Is_Happy
+	_SOLUTIONS_[100206] = easy.Leetcode_Reverse_List
 	_SOLUTIONS_[100219] = easy.Leetcode_Contains_Near_By_Duplicate
 	_SOLUTIONS_[100226] = easy.Leetcode_Invert_Tree
 	_SOLUTIONS_[100228] = easy.Leetcode_Summary_Ranges
