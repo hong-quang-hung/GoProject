@@ -216,6 +216,7 @@ func init() {
 	_SOLUTIONS_[100394] = medium.Leetcode_Decode_String
 	_SOLUTIONS_[100399] = medium.Leetcode_Calc_Equation
 	_SOLUTIONS_[100427] = medium.Leetcode_Construct
+	_SOLUTIONS_[100437] = medium.Leetcode_Path_Sum_III
 	_SOLUTIONS_[100438] = medium.Leetcode_Find_Anagrams
 	_SOLUTIONS_[100443] = medium.Leetcode_Compress
 	_SOLUTIONS_[100516] = medium.Leetcode_Longest_Palindrome_Subseq
