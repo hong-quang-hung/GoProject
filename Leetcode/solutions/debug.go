@@ -264,6 +264,7 @@ func init() {
 	_SOLUTIONS_[101372] = medium.Leetcode_Longest_ZigZag
 	_SOLUTIONS_[101376] = medium.Leetcode_Num_Of_Minutes
 	_SOLUTIONS_[101396] = medium.Leetcode_Design_Underground_System
+	_SOLUTIONS_[101448] = medium.Leetcode_Good_Nodes
 	_SOLUTIONS_[101456] = medium.Leetcode_Max_Vowels
 	_SOLUTIONS_[101466] = medium.Leetcode_Min_Reorder
 	_SOLUTIONS_[101472] = medium.Leetcode_Design_Browser_History
