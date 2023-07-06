@@ -196,6 +196,7 @@ func init() {
 	_SOLUTIONS_[100198] = medium.Leetcode_House_Robber
 	_SOLUTIONS_[100204] = medium.Leetcode_Count_Primes
 	_SOLUTIONS_[100208] = medium.Leetcode_Trie_Constructor
+	_SOLUTIONS_[100209] = medium.Leetcode_Min_Sub_Array_Len
 	_SOLUTIONS_[100211] = medium.Leetcode_Word_Dictionary
 	_SOLUTIONS_[100213] = medium.Leetcode_House_Robber_II
 	_SOLUTIONS_[100238] = medium.Leetcode_Product_ExceptSelf
