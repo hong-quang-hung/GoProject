@@ -11,14 +11,23 @@ func Leetcode_Path_Sum_III() {
 }
 
 func pathSum(root *TreeNode, targetSum int) int {
-	res := 0
-	pathSumCount(root, targetSum, &res)
-	return res
+	m := map[int]int{}
+	m[0] = 1
+	pathSumCount(root, targetSum, 0, m)
+	return pathSumCount(root, targetSum, 0, m)
 }
 
-func pathSumCount(root *TreeNode, targetSum int, res *int) int {
+func pathSumCount(root *TreeNode, targetSum int, curr int, m map[int]int) int {
 	if root == nil {
 		return 0
 	}
-	return 0
+
+	curr += root.Val
+	res := m[curr-targetSum]
+
+	m[curr]++
+	res += pathSumCount(root.Left, targetSum, curr, m)
+	res += pathSumCount(root.Right, targetSum, curr, m)
+	m[curr]--
+	return res
 }
