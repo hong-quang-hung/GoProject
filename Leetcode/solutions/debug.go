@@ -188,6 +188,7 @@ func init() {
 	_SOLUTIONS_[100103] = medium.Leetcode_Zigzag_Level_Order
 	_SOLUTIONS_[100106] = medium.Leetcode_Build_Trees
 	_SOLUTIONS_[100109] = medium.Leetcode_Sorted_List_To_BST
+	_SOLUTIONS_[100113] = medium.Leetcode_Path_Sum_II
 	_SOLUTIONS_[100129] = medium.Leetcode_Sum_Numbers
 	_SOLUTIONS_[100133] = medium.Leetcode_Clone_Graph
 	_SOLUTIONS_[100137] = medium.Leetcode_Single_Number_II
