@@ -195,6 +195,7 @@ func init() {
 	_SOLUTIONS_[100142] = medium.Leetcode_Detect_Cycle
 	_SOLUTIONS_[100151] = medium.Leetcode_Reverse_Words
 	_SOLUTIONS_[100198] = medium.Leetcode_House_Robber
+	_SOLUTIONS_[100199] = medium.Leetcode_Right_Side_View
 	_SOLUTIONS_[100204] = medium.Leetcode_Count_Primes
 	_SOLUTIONS_[100208] = medium.Leetcode_Trie_Constructor
 	_SOLUTIONS_[100209] = medium.Leetcode_Min_Sub_Array_Len
