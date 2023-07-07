@@ -80,6 +80,10 @@ func S2TreeNode(s string) *types.TreeNode {
 
 // Returning the TreeNode string
 func STreeNode(root *types.TreeNode) string {
+	if root == nil {
+		return "[]"
+	}
+
 	strDepth, maxDepth := []string{}, 0
 	printTreeNode(root, &strDepth, &maxDepth, 0)
 	strDepth = strDepth[0:(maxDepth + 1)]
