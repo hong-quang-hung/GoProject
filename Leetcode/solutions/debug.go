@@ -281,6 +281,7 @@ func init() {
 	_SOLUTIONS_[101721] = medium.Leetcode_Swap_Nodes
 	_SOLUTIONS_[101802] = medium.Leetcode_Max_Value
 	_SOLUTIONS_[101954] = medium.Leetcode_Minimum_Perimeter
+	_SOLUTIONS_[102024] = medium.Leetcode_Max_Consecutive_Answers
 	_SOLUTIONS_[102038] = medium.Leetcode_Winner_Of_Game
 	_SOLUTIONS_[102044] = medium.Leetcode_Count_Max_Or_Subsets
 	_SOLUTIONS_[102090] = medium.Leetcode_Get_Averages
