@@ -2,6 +2,10 @@ package medium
 
 import "fmt"
 
+func init() {
+	Solutions[2419] = Leetcode_Longest_Subarray_II
+}
+
 // Reference: https://leetcode.com/problems/longest-subarray-with-maximum-bitwise-and/
 func Leetcode_Longest_Subarray_II() {
 	fmt.Println("Input: nums = [1,2,3,3,2,2]")

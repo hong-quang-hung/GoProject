@@ -5,6 +5,10 @@ import (
 	"math"
 )
 
+func init() {
+	Solutions[2492] = Leetcode_Min_Score
+}
+
 // Reference: https://leetcode.com/problems/minimum-score-of-a-path-between-two-cities/
 func Leetcode_Min_Score() {
 	fmt.Println("Input: n = 4, roads = [[1,2,9],[2,3,6],[2,4,5],[1,4,7]]")

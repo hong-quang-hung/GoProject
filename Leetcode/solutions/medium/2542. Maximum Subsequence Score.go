@@ -6,6 +6,10 @@ import (
 	"sort"
 )
 
+func init() {
+	Solutions[2542] = Leetcode_Maximum_Subsequence_Score
+}
+
 // Reference: https://leetcode.com/problems/maximum-subsequence-score/
 func Leetcode_Maximum_Subsequence_Score() {
 	fmt.Println("Input: nums1 = [1,3,3,2], nums2 = [2,1,3,4], k = 3")

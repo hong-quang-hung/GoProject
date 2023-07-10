@@ -1,8 +1,10 @@
 package medium
 
-import (
-	"fmt"
-)
+import "fmt"
+
+func init() {
+	Solutions[2466] = Leetcode_Count_Good_Strings
+}
 
 // Reference: https://leetcode.com/problems/count-ways-to-build-good-strings/
 func Leetcode_Count_Good_Strings() {

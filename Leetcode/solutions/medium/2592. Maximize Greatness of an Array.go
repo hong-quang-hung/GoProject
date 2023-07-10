@@ -5,6 +5,10 @@ import (
 	"sort"
 )
 
+func init() {
+	Solutions[2592] = Leetcode_Maximize_Greatness
+}
+
 // Reference: https://leetcode.com/problems/maximize-greatness-of-an-array/
 func Leetcode_Maximize_Greatness() {
 	fmt.Println("Input: nums = [42,8,75,28,35,21,13,21]")

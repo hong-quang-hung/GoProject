@@ -2,6 +2,10 @@ package medium
 
 import "fmt"
 
+func init() {
+	Solutions[2405] = Leetcode_Partition_String
+}
+
 // Reference: https://leetcode.com/problems/optimal-partition-of-string/
 func Leetcode_Partition_String() {
 	fmt.Println("Input: s = 'gizfdfri'")

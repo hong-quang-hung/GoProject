@@ -5,6 +5,10 @@ import (
 	"sort"
 )
 
+func init() {
+	Solutions[2583] = Leetcode_Kth_Largest_Level_Sum
+}
+
 // Reference: https://leetcode.com/problems/kth-largest-sum-in-a-binary-tree/
 func Leetcode_Kth_Largest_Level_Sum() {
 	fmt.Println("Input: root = [5,8,9,2,1,3,7,4,6], k = 2")

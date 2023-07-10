@@ -2,6 +2,10 @@ package medium
 
 import "fmt"
 
+func init() {
+	Solutions[2596] = Leetcode_Check_Valid_Grid
+}
+
 // Reference: https://leetcode.com/problems/check-knight-tour-configuration/
 func Leetcode_Check_Valid_Grid() {
 	fmt.Println("Input: grid = [[8,3,6],[5,0,1],[2,7,4]]")

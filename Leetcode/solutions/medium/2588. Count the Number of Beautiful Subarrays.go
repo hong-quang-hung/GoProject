@@ -2,6 +2,10 @@ package medium
 
 import "fmt"
 
+func init() {
+	Solutions[2588] = Leetcode_Beautiful_Subarrays
+}
+
 // Reference: https://leetcode.com/problems/count-the-number-of-beautiful-subarrays/
 func Leetcode_Beautiful_Subarrays() {
 	fmt.Println("Input: nums = [4,3,1,2,4]")

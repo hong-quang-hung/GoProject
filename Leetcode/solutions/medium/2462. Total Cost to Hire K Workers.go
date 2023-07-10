@@ -5,6 +5,10 @@ import (
 	"fmt"
 )
 
+func init() {
+	Solutions[2462] = Leetcode_Total_Cost
+}
+
 // Reference: https://leetcode.com/problems/total-cost-to-hire-k-workers/
 func Leetcode_Total_Cost() {
 	fmt.Println("Input: costs = [17,12,10,2,7,2,11,20,8], k = 3, candidates = 4")

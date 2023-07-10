@@ -5,6 +5,10 @@ import (
 	"sort"
 )
 
+func init() {
+	Solutions[2587] = Leetcode_Max_Score
+}
+
 // Reference: https://leetcode.com/problems/rearrange-array-to-maximize-prefix-score/
 func Leetcode_Max_Score() {
 	fmt.Println("Input: nums = [2,-1,0,1,-3,3,-3]")

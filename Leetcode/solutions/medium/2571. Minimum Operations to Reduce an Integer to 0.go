@@ -2,6 +2,10 @@ package medium
 
 import "fmt"
 
+func init() {
+	Solutions[2571] = Leetcode_Min_Operations
+}
+
 // Reference: https://leetcode.com/problems/minimum-operations-to-reduce-an-integer-to-0/
 func Leetcode_Min_Operations() {
 	fmt.Println("Input: n = 39")
