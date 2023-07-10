@@ -36,6 +36,7 @@ func init() {
 	_SOLUTIONS_[100088] = easy.Leetcode_Merge_Sorted_Array
 	_SOLUTIONS_[100101] = easy.Leetcode_Is_Symmetric
 	_SOLUTIONS_[100104] = easy.LeetCode_Max_Depth
+	_SOLUTIONS_[100111] = easy.Leetcode_Min_Depth
 	_SOLUTIONS_[100112] = easy.Leetcode_Has_Path_Sum
 	_SOLUTIONS_[100118] = easy.Leetcode_Generate
 	_SOLUTIONS_[100119] = easy.Leetcode_Get_Row
