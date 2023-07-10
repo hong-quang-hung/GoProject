@@ -2,6 +2,10 @@ package medium
 
 import "fmt"
 
+func init() {
+	Solutions[2712] = Leetcode_Minimum_Cost_II
+}
+
 // Reference: https://leetcode.com/problems/minimum-cost-to-make-all-characters-equal/
 func Leetcode_Minimum_Cost_II() {
 	fmt.Println("Input: num = '0011'")

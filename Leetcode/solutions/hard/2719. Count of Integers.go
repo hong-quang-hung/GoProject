@@ -1,8 +1,6 @@
 package hard
 
-import (
-	"fmt"
-)
+import "fmt"
 
 func init() {
 	Solutions[2719] = Leetcode_Count

@@ -1,8 +1,10 @@
 package medium
 
-import (
-	"fmt"
-)
+import "fmt"
+
+func init() {
+	Solutions[2741] = Leetcode_Special_Perm
+}
 
 // Reference: https://leetcode.com/problems/special-permutations/
 func Leetcode_Special_Perm() {

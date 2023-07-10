@@ -5,6 +5,10 @@ import (
 	"strings"
 )
 
+func init() {
+	Solutions[2734] = Leetcode_Smallest_String
+}
+
 // Reference: https://leetcode.com/problems/lexicographically-smallest-string-after-substring-operation/
 func Leetcode_Smallest_String() {
 	fmt.Println("Input: s = 'cbabc'")

@@ -1,8 +1,10 @@
 package medium
 
-import (
-	"fmt"
-)
+import "fmt"
+
+func init() {
+	Solutions[2730] = LeetCode_Longest_Semi_Repetitive_Substring
+}
 
 // Reference: https://leetcode.com/problems/find-the-longest-semi-repetitive-substring/
 func LeetCode_Longest_Semi_Repetitive_Substring() {

@@ -6,6 +6,10 @@ import (
 	"sort"
 )
 
+func init() {
+	Solutions[2740] = Leetcode_Find_Value_Of_Partition
+}
+
 // Reference: https://leetcode.com/problems/find-the-value-of-the-partition/
 func Leetcode_Find_Value_Of_Partition() {
 	fmt.Println("Input: nums = [1,3,2,4]")

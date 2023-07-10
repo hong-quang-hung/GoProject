@@ -2,6 +2,10 @@ package medium
 
 import "fmt"
 
+func init() {
+	Solutions[2718] = Leetcode_Matrix_Sum_Queries
+}
+
 // Reference: https://leetcode.com/problems/sum-of-matrix-after-queries/
 func Leetcode_Matrix_Sum_Queries() {
 	fmt.Println("Input: n = 3, queries = [[0,0,1],[1,2,2],[0,2,3],[1,0,4]]")

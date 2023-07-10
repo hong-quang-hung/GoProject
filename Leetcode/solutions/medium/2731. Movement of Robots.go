@@ -5,6 +5,10 @@ import (
 	"sort"
 )
 
+func init() {
+	Solutions[2731] = LeetCode_Sum_Distance
+}
+
 // Reference: https://leetcode.com/problems/movement-of-robots/
 func LeetCode_Sum_Distance() {
 	fmt.Println("Input: nums = [-2,0,2], s = 'RLL', d = 3")

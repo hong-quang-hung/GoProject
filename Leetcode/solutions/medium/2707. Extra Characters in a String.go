@@ -1,8 +1,10 @@
 package medium
 
-import (
-	"fmt"
-)
+import "fmt"
+
+func init() {
+	Solutions[2707] = Leetcode_Min_Extra_Char
+}
 
 // Reference: https://leetcode.com/problems/extra-characters-in-a-string/
 func Leetcode_Min_Extra_Char() {

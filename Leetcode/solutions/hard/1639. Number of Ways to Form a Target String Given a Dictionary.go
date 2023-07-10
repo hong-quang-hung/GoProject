@@ -1,8 +1,6 @@
 package hard
 
-import (
-	"fmt"
-)
+import "fmt"
 
 func init() {
 	Solutions[1639] = Leetcode_Num_Ways

@@ -1,8 +1,6 @@
 package hard
 
-import (
-	"fmt"
-)
+import "fmt"
 
 func init() {
 	Solutions[1998] = Leetcode_Gcd_Sort

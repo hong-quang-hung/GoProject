@@ -5,6 +5,10 @@ import (
 	"sort"
 )
 
+func init() {
+	Solutions[2708] = Leetcode_Max_Strength
+}
+
 // Reference: https://leetcode.com/problems/maximum-strength-of-a-group/
 func Leetcode_Max_Strength() {
 	fmt.Println("Input: nums = [3,-1,-5,2,5,-9]")

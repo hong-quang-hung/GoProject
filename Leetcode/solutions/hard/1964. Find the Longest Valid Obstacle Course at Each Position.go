@@ -1,8 +1,6 @@
 package hard
 
-import (
-	"fmt"
-)
+import "fmt"
 
 func init() {
 	Solutions[1964] = Leetcode_Longest_Obstacle_Course_At_Each_Position

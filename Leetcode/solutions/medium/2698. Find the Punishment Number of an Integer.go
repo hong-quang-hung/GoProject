@@ -5,6 +5,10 @@ import (
 	"strconv"
 )
 
+func init() {
+	Solutions[2698] = Leetcode_Punishment_Number
+}
+
 // Reference: https://leetcode.com/problems/find-the-punishment-number-of-an-integer/
 func Leetcode_Punishment_Number() {
 	fmt.Println("Input: n = 10")

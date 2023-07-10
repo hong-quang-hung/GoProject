@@ -1,8 +1,10 @@
 package medium
 
-import (
-	"fmt"
-)
+import "fmt"
+
+func init() {
+	Solutions[2735] = Leetcode_Min_Cost
+}
 
 // Reference: https://leetcode.com/problems/collecting-chocolates/
 func Leetcode_Min_Cost() {
