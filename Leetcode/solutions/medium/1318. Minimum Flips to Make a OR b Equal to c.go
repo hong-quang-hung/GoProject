@@ -5,6 +5,10 @@ import (
 	"math/bits"
 )
 
+func init() {
+	Solutions[1318] = Leetcode_Min_Flips
+}
+
 // Reference: https://leetcode.com/problems/minimum-flips-to-make-a-or-b-equal-to-c/
 func Leetcode_Min_Flips() {
 	fmt.Println("Input: a = 2, b = 6, c = 5")

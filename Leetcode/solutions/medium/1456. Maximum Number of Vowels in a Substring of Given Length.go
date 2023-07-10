@@ -2,6 +2,10 @@ package medium
 
 import "fmt"
 
+func init() {
+	Solutions[1456] = Leetcode_Max_Vowels
+}
+
 // Reference: https://leetcode.com/problems/maximum-number-of-vowels-in-a-substring-of-given-length/
 func Leetcode_Max_Vowels() {
 	fmt.Println("Input: s = 'abciiidef', k = 3")

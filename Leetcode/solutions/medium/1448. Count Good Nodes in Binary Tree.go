@@ -2,6 +2,10 @@ package medium
 
 import "fmt"
 
+func init() {
+	Solutions[1448] = Leetcode_Good_Nodes
+}
+
 // Reference: https://leetcode.com/problems/count-good-nodes-in-binary-tree/
 func Leetcode_Good_Nodes() {
 	fmt.Println("Input: root = [3,1,4,3,null,1,5]")

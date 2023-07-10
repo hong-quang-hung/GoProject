@@ -2,6 +2,10 @@ package medium
 
 import "fmt"
 
+func init() {
+	Solutions[1372] = Leetcode_Longest_ZigZag
+}
+
 // Reference: https://leetcode.com/problems/longest-zigzag-path-in-a-binary-tree/
 func Leetcode_Longest_ZigZag() {
 	fmt.Println("Input: root = [1,null,1,1,1,null,null,1,1,null,1,null,null,null,1,null,1]")

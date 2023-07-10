@@ -2,6 +2,10 @@ package medium
 
 import "fmt"
 
+func init() {
+	Solutions[1319] = Leetcode_Make_Connected
+}
+
 // Reference: https://leetcode.com/problems/number-of-operations-to-make-network-connected/
 func Leetcode_Make_Connected() {
 	fmt.Println("Input: n = 4, connections = [[0,1],[0,2],[1,2]]")

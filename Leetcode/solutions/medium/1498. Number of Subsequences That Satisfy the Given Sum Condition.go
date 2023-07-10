@@ -5,6 +5,10 @@ import (
 	"sort"
 )
 
+func init() {
+	Solutions[1498] = Leetcode_Num_Subseq
+}
+
 // Reference: https://leetcode.com/problems/number-of-subsequences-that-satisfy-the-given-sum-condition/
 func Leetcode_Num_Subseq() {
 	fmt.Println("Input: nums = [3,5,6,7], target = 9")

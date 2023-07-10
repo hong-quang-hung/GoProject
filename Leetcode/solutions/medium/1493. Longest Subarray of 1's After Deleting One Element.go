@@ -2,6 +2,10 @@ package medium
 
 import "fmt"
 
+func init() {
+	Solutions[1493] = Leetcode_Longest_Subarray
+}
+
 // Reference: https://leetcode.com/problems/longest-subarray-of-1s-after-deleting-one-element/
 func Leetcode_Longest_Subarray() {
 	fmt.Println("Input: nums = [1,1,0,1]")

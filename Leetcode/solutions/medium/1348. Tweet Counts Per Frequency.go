@@ -5,6 +5,10 @@ import (
 	"math"
 )
 
+func init() {
+	Solutions[1348] = Leetcode_Tweet_Counts_Per_Frequency
+}
+
 // Reference: https://leetcode.com/problems/tweet-counts-per-frequency/
 func Leetcode_Tweet_Counts_Per_Frequency() {
 	fmt.Println("Input:")

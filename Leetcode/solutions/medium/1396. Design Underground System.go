@@ -2,6 +2,10 @@ package medium
 
 import "fmt"
 
+func init() {
+	Solutions[1396] = Leetcode_Design_Underground_System
+}
+
 // Reference: https://leetcode.com/problems/design-underground-system/
 func Leetcode_Design_Underground_System() {
 	fmt.Println("Input:")

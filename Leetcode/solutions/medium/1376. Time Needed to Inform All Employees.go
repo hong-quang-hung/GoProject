@@ -5,6 +5,10 @@ import (
 	"math"
 )
 
+func init() {
+	Solutions[1376] = Leetcode_Num_Of_Minutes
+}
+
 // Reference: https://leetcode.com/problems/time-needed-to-inform-all-employees/
 func Leetcode_Num_Of_Minutes() {
 	fmt.Println("Input: n = 1, headID = 0, manager = [-1], informTime = [0]")

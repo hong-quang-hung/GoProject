@@ -2,6 +2,10 @@ package medium
 
 import "fmt"
 
+func init() {
+	Solutions[1472] = Leetcode_Design_Browser_History
+}
+
 // Reference: https://leetcode.com/problems/design-browser-history/
 func Leetcode_Design_Browser_History() {
 	fmt.Println("Input:")
