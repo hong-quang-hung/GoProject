@@ -2,6 +2,10 @@ package medium
 
 import "fmt"
 
+func init() {
+	Solutions[2610] = Leetcode_Find_Matrix
+}
+
 // Reference: https://leetcode.com/problems/convert-an-array-into-a-2d-array-with-conditions/
 func Leetcode_Find_Matrix() {
 	fmt.Println("Input: nums = [1,3,4,1,2,3,1]")

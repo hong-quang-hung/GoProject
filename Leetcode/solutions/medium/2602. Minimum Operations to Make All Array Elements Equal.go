@@ -6,6 +6,10 @@ import (
 	"sort"
 )
 
+func init() {
+	Solutions[2602] = Leetcode_Min_Operations_I
+}
+
 // Reference: https://leetcode.com/problems/minimum-operations-to-make-all-array-elements-equal/
 func Leetcode_Min_Operations_I() {
 	fmt.Println("Input: nums = [3,1,6,8], queries = [1,5]")

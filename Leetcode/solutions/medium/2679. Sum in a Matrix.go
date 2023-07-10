@@ -5,7 +5,11 @@ import (
 	"sort"
 )
 
-// Reference:
+func init() {
+	Solutions[2679] = Leetcode_Matrix_Sum
+}
+
+// Reference: https://leetcode.com/problems/sum-in-a-matrix/
 func Leetcode_Matrix_Sum() {
 	fmt.Println("Input: nums = [[7,2,1],[6,4,2],[6,5,3],[3,2,1]]")
 	fmt.Println("Output:", matrixSum(S2SoSliceInt("[[7,2,1],[6,4,2],[6,5,3],[3,2,1]]")))

@@ -5,6 +5,10 @@ import (
 	"sort"
 )
 
+func init() {
+	Solutions[2597] = Leetcode_Beautiful_Subsets
+}
+
 // Reference: https://leetcode.com/problems/the-number-of-beautiful-subsets/
 func Leetcode_Beautiful_Subsets() {
 	fmt.Println("Input: nums = [10,4,5,7,2,1], k = 3")

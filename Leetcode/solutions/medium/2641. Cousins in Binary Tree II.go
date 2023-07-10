@@ -2,6 +2,10 @@ package medium
 
 import "fmt"
 
+func init() {
+	Solutions[2641] = Leetcode_Replace_Value_In_Tree
+}
+
 // Reference: https://leetcode.com/problems/cousins-in-binary-tree-ii/
 func Leetcode_Replace_Value_In_Tree() {
 	fmt.Println("Input: root = [5,4,9,1,10,null,7]")

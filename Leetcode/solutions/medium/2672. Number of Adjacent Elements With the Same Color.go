@@ -2,6 +2,10 @@ package medium
 
 import "fmt"
 
+func init() {
+	Solutions[2672] = Leetcode_Color_The_Array
+}
+
 // Reference: https://leetcode.com/problems/number-of-adjacent-elements-with-the-same-color/
 func Leetcode_Color_The_Array() {
 	fmt.Println("Input: n = 4, queries = [[0,2],[1,2],[3,1],[1,1],[2,1]]")

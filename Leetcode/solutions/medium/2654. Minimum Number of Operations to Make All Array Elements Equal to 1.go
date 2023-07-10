@@ -5,6 +5,10 @@ import (
 	"math"
 )
 
+func init() {
+	Solutions[2654] = Leetcode_Min_Operations_Equal_1
+}
+
 // Reference: https://leetcode.com/problems/minimum-number-of-operations-to-make-all-array-elements-equal-to-1/
 func Leetcode_Min_Operations_Equal_1() {
 	fmt.Println("Input: nums = [2,6,3,4]")

@@ -1,8 +1,10 @@
 package medium
 
-import (
-	"fmt"
-)
+import "fmt"
+
+func init() {
+	Solutions[2671] = Leetcode_Frequency_Tracker
+}
 
 // Reference: https://leetcode.com/problems/frequency-tracker/
 func Leetcode_Frequency_Tracker() {

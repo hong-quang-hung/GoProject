@@ -1,8 +1,10 @@
 package medium
 
-import (
-	"fmt"
-)
+import "fmt"
+
+func init() {
+	Solutions[2680] = Leetcode_Maximum_Or
+}
 
 // Reference: https://leetcode.com/problems/maximum-or/
 func Leetcode_Maximum_Or() {

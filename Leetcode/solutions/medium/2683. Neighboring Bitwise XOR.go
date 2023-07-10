@@ -2,6 +2,10 @@ package medium
 
 import "fmt"
 
+func init() {
+	Solutions[2683] = Leetcode_Does_Valid_Array_Exist
+}
+
 // Reference: https://leetcode.com/problems/neighboring-bitwise-xor/
 func Leetcode_Does_Valid_Array_Exist() {
 	fmt.Println("Input: derived = [1,1,0]")

@@ -2,6 +2,10 @@ package medium
 
 import "fmt"
 
+func init() {
+	Solutions[2601] = Leetcode_Prime_Sub_Operation
+}
+
 // Reference: https://leetcode.com/problems/prime-subtraction-operation/description/
 func Leetcode_Prime_Sub_Operation() {
 	fmt.Println("Input: nums = [4,9,6,10]")

@@ -2,6 +2,10 @@ package medium
 
 import "fmt"
 
+func init() {
+	Solutions[2606] = Leetcode_Maximum_Cost_Substring
+}
+
 // Reference: https://leetcode.com/problems/find-the-seubstring-with-maximum-cost/
 func Leetcode_Maximum_Cost_Substring() {
 	fmt.Println("Input: s = 'adaa', chars = 'd', vals = [-1000]")

@@ -5,6 +5,10 @@ import (
 	"strings"
 )
 
+func init() {
+	Solutions[2645] = Leetcode_Add_Minimum
+}
+
 // Reference: https://leetcode.com/problems/minimum-additions-to-make-valid-string/
 func Leetcode_Add_Minimum() {
 	fmt.Println("Input: word = 'aaaaab'")

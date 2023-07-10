@@ -1,8 +1,10 @@
 package medium
 
-import (
-	"fmt"
-)
+import "fmt"
+
+func init() {
+	Solutions[2653] = Leetcode_Get_Subarray_Beauty
+}
 
 // Reference: https://leetcode.com/problems/sliding-subarray-beauty/
 func Leetcode_Get_Subarray_Beauty() {

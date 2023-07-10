@@ -2,6 +2,10 @@ package medium
 
 import "fmt"
 
+func init() {
+	Solutions[2657] = Leetcode_Min_Operations_Equal_1
+}
+
 // Reference: https://leetcode.com/problems/find-the-prefix-common-array-of-two-arrays/
 func Leetcode_Find_The_Prefix_Common_Array() {
 	fmt.Println("Input: A = [1,3,2,4], B = [3,1,2,4]")

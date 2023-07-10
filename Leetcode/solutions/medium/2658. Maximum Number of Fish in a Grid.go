@@ -2,6 +2,10 @@ package medium
 
 import "fmt"
 
+func init() {
+	Solutions[2658] = Leetcode_Find_Max_Fish
+}
+
 // Reference: https://leetcode.com/problems/maximum-number-of-fish-in-a-grid/
 func Leetcode_Find_Max_Fish() {
 	fmt.Println("Input: grid = [[0,2,1,0],[4,0,0,3],[1,0,0,4],[0,3,2,0]]")

@@ -1,8 +1,10 @@
 package medium
 
-import (
-	"fmt"
-)
+import "fmt"
+
+func init() {
+	Solutions[2673] = Leetcode_Min_Increments
+}
 
 // Reference: https://leetcode.com/problems/make-costs-of-paths-equal-in-a-binary-tree/
 func Leetcode_Min_Increments() {

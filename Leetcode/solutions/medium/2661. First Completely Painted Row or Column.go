@@ -2,6 +2,10 @@ package medium
 
 import "fmt"
 
+func init() {
+	Solutions[2661] = Leetcode_First_Complete_Index
+}
+
 // Reference: https://leetcode.com/problems/first-completely-painted-row-or-column/
 func Leetcode_First_Complete_Index() {
 	fmt.Println("Input: arr = [1,3,4,2], mat = [[1,4],[2,3]]")

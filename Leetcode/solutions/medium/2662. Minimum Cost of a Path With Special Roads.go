@@ -5,6 +5,10 @@ import (
 	"fmt"
 )
 
+func init() {
+	Solutions[2662] = Leetcode_Minimum_Cost
+}
+
 // Reference: https://leetcode.com/problems/minimum-cost-of-a-path-with-special-roads/
 func Leetcode_Minimum_Cost() {
 	fmt.Println("Input: start = [1,1], target = [4,5], specialRoads = [[1,2,3,3,2],[3,4,4,5,1]]")
