@@ -2,6 +2,10 @@ package medium
 
 import "fmt"
 
+func init() {
+	Solutions[1140] = Leetcode_Stone_Game_II
+}
+
 // Reference: https://leetcode.com/problems/stone-game-ii/
 func Leetcode_Stone_Game_II() {
 	fmt.Println("Input: piles = [2,7,9,4,4]")

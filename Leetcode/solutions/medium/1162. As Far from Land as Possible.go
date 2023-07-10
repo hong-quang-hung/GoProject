@@ -2,6 +2,10 @@ package medium
 
 import "fmt"
 
+func init() {
+	Solutions[1162] = Leetcode_Max_Distance
+}
+
 // Reference: https://leetcode.com/problems/as-far-from-land-as-possible/
 func Leetcode_Max_Distance() {
 	fmt.Println("Input: grid = [[1,0,0],[0,0,0],[0,0,0]]")

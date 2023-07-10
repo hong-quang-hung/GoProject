@@ -5,6 +5,10 @@ import (
 	"sort"
 )
 
+func init() {
+	Solutions[1146] = Leetcode_Snapshot_Array
+}
+
 // Reference: https://leetcode.com/problems/snapshot-array/
 func Leetcode_Snapshot_Array() {
 	fmt.Println("Input:")

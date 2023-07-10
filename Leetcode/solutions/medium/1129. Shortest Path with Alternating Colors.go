@@ -5,6 +5,10 @@ import (
 	"math"
 )
 
+func init() {
+	Solutions[1129] = Leetcode_Shortest_Alternating_Paths
+}
+
 // Reference: https://leetcode.com/problems/shortest-path-with-alternating-colors/
 func Leetcode_Shortest_Alternating_Paths() {
 	fmt.Println("Input: n = 3, redEdges = [[0,1]], blueEdges = [[2,1]]")

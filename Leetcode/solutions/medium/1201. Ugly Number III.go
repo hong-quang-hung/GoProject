@@ -2,6 +2,10 @@ package medium
 
 import "fmt"
 
+func init() {
+	Solutions[1201] = Leetcode_Is_Ugly_III
+}
+
 // Reference: https://leetcode.com/problems/ugly-number-iii/
 func Leetcode_Is_Ugly_III() {
 	fmt.Println("Input: n = 3, a = 2, b = 3, c = 5")

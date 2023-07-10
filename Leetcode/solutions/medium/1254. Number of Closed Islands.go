@@ -2,6 +2,10 @@ package medium
 
 import "fmt"
 
+func init() {
+	Solutions[1254] = Leetcode_Closed_Island
+}
+
 // Reference: https://leetcode.com/problems/number-of-closed-islands/
 func Leetcode_Closed_Island() {
 	fmt.Println("Input: grid = [[1,1,1,1,1,1,1],[1,0,0,0,0,0,1],[1,0,1,1,1,0,1],[1,0,1,0,1,0,1],[1,0,1,1,1,0,1],[1,0,0,0,0,0,1],[1,1,1,1,1,1,1]]")

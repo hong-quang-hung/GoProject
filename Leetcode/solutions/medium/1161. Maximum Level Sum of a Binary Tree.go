@@ -5,6 +5,10 @@ import (
 	"math"
 )
 
+func init() {
+	Solutions[1161] = Leetcode_Max_LevelSum
+}
+
 // Reference: https://leetcode.com/problems/maximum-level-sum-of-a-binary-tree/
 func Leetcode_Max_LevelSum() {
 	fmt.Println("Input: root = [1,7,0,7,-8,null,null]")

@@ -2,6 +2,10 @@ package medium
 
 import "fmt"
 
+func init() {
+	Solutions[1143] = Leetcode_Longest_Common_Subsequence
+}
+
 // Reference: https://leetcode.com/problems/longest-common-subsequence/
 func Leetcode_Longest_Common_Subsequence() {
 	fmt.Println("Input: text1 = 'abcde', text2 = 'ace'")
