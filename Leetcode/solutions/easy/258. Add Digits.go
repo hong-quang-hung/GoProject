@@ -2,6 +2,10 @@ package easy
 
 import "fmt"
 
+func init() {
+	Solutions[258] = Leetcode_Add_Digits
+}
+
 // Reference: https://leetcode.com/problems/add-digits/
 func Leetcode_Add_Digits() {
 	fmt.Println("Input: num = 38")

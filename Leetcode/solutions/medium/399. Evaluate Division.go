@@ -2,6 +2,10 @@ package medium
 
 import "fmt"
 
+func init() {
+	Solutions[399] = Leetcode_Calc_Equation
+}
+
 // Reference: https://leetcode.com/problems/evaluate-division/
 func Leetcode_Calc_Equation() {
 	fmt.Println("Input: equations = [['a','b'],['b','c']], values = [2.0,3.0], queries = [['a','c'],['b','a'],['a','e'],['a','a'],['x','x']]")

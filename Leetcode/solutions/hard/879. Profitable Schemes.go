@@ -4,6 +4,10 @@ import (
 	"fmt"
 )
 
+func init() {
+	Solutions[879] = Leetcode_Profitable_Schemes
+}
+
 // Reference: https://leetcode.com/problems/profitable-schemes/
 func Leetcode_Profitable_Schemes() {
 	fmt.Println("Input: n = 5, minProfit = 3, group = [2,2], profit = [2,3]")

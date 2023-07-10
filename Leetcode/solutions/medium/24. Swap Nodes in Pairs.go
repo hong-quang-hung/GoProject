@@ -2,6 +2,10 @@ package medium
 
 import "fmt"
 
+func init() {
+	Solutions[24] = Leetcode_Swap_Pairs
+}
+
 // Reference: https://leetcode.com/problems/swap-nodes-in-pairs/
 func Leetcode_Swap_Pairs() {
 	fmt.Println("Input: head = [1,2,3,4]")

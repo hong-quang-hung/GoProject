@@ -2,6 +2,10 @@ package easy
 
 import "fmt"
 
+func init() {
+	Solutions[104] = LeetCode_Max_Depth
+}
+
 // Reference: https://leetcode.com/problems/maximum-depth-of-binary-tree/
 func LeetCode_Max_Depth() {
 	fmt.Println("Input: root = [3,9,20,null,null,15,7]")
@@ -14,8 +18,9 @@ func maxDepth(root *TreeNode) int {
 	if root == nil {
 		return 0
 	}
-	var l int = maxDepth(root.Left)
-	var r int = maxDepth(root.Right)
+
+	l := maxDepth(root.Left)
+	r := maxDepth(root.Right)
 	if l > r {
 		return 1 + l
 	}

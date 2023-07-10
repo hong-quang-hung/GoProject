@@ -1,8 +1,10 @@
 package easy
 
-import (
-	"fmt"
-)
+import "fmt"
+
+func init() {
+	Solutions[1805] = Leetcode_Num_Different_Integers
+}
 
 // Reference: https://leetcode.com/problems/number-of-different-integers-in-a-string/
 func Leetcode_Num_Different_Integers() {

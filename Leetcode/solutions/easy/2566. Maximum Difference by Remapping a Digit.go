@@ -6,6 +6,10 @@ import (
 	"strings"
 )
 
+func init() {
+	Solutions[2566] = Leetcode_Min_Max_Difference
+}
+
 // Reference: https://leetcode.com/problems/maximum-difference-by-remapping-a-digit/
 func Leetcode_Min_Max_Difference() {
 	fmt.Println("Input: num = 11891")

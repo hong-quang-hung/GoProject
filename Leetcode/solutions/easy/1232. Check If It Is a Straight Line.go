@@ -1,8 +1,10 @@
 package easy
 
-import (
-	"fmt"
-)
+import "fmt"
+
+func init() {
+	Solutions[1232] = Leetcode_Check_Straight_Line
+}
 
 // Reference: https://leetcode.com/problems/check-if-it-is-a-straight-line/
 func Leetcode_Check_Straight_Line() {

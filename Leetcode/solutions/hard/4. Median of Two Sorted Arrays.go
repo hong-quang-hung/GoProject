@@ -2,6 +2,10 @@ package hard
 
 import "fmt"
 
+func init() {
+	Solutions[4] = Leetcode_Find_Median_Sorted_Arrays
+}
+
 // Reference: https://leetcode.com/problems/median-of-two-sorted-arrays/
 func Leetcode_Find_Median_Sorted_Arrays() {
 	fmt.Println("Input: nums1 = [1], nums2 = [2,3,4,5,6]")

@@ -1,8 +1,10 @@
 package medium
 
-import (
-	"fmt"
-)
+import "fmt"
+
+func init() {
+	Solutions[39] = Leetcode_Combination_Sum
+}
 
 // Reference: https://leetcode.com/problems/combination-sum/
 func Leetcode_Combination_Sum() {

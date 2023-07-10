@@ -2,6 +2,10 @@ package easy
 
 import "fmt"
 
+func init() {
+	Solutions[27] = Leetcode_Remove_Element
+}
+
 // Reference: https://leetcode.com/problems/remove-element/
 func Leetcode_Remove_Element() {
 	fmt.Println("Input: nums = [3,2,2,3], val = 3")

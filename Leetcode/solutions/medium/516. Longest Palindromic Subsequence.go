@@ -1,8 +1,10 @@
 package medium
 
-import (
-	"fmt"
-)
+import "fmt"
+
+func init() {
+	Solutions[516] = Leetcode_Longest_Palindrome_Subseq
+}
 
 // Reference: https://leetcode.com/problems/longest-palindromic-subsequence/
 func Leetcode_Longest_Palindrome_Subseq() {

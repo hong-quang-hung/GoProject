@@ -5,6 +5,10 @@ import (
 	"math"
 )
 
+func init() {
+	Solutions[319] = Leetcode_Bulb_Switch
+}
+
 // Reference: https://leetcode.com/problems/bulb-switcher/
 func Leetcode_Bulb_Switch() {
 	fmt.Println("Input: n = 3")

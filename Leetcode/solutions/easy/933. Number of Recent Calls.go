@@ -5,6 +5,10 @@ import (
 	"sort"
 )
 
+func init() {
+	Solutions[933] = Leetcode_Number_Of_Recent_Calls
+}
+
 // Reference: https://leetcode.com/problems/number-of-recent-calls/
 func Leetcode_Number_Of_Recent_Calls() {
 	fmt.Println("Input:")

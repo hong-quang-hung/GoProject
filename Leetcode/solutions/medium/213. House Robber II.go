@@ -2,6 +2,10 @@ package medium
 
 import "fmt"
 
+func init() {
+	Solutions[213] = Leetcode_House_Robber_II
+}
+
 // Reference: https://leetcode.com/problems/house-robber-ii/
 func Leetcode_House_Robber_II() {
 	fmt.Println("Input: nums = [2,3,2]")

@@ -4,6 +4,10 @@ import (
 	"fmt"
 )
 
+func init() {
+	Solutions[1964] = Leetcode_Longest_Obstacle_Course_At_Each_Position
+}
+
 // Reference: https://leetcode.com/problems/find-the-longest-valid-obstacle-course-at-each-position/
 func Leetcode_Longest_Obstacle_Course_At_Each_Position() {
 	fmt.Println("Input: obstacles = [1,2,3,2]")

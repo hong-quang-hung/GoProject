@@ -2,6 +2,10 @@ package hard
 
 import "fmt"
 
+func init() {
+	Solutions[1970] = Leetcode_Latest_Day_To_Cross
+}
+
 // Reference: https://leetcode.com/problems/last-day-where-you-can-still-cross/
 func Leetcode_Latest_Day_To_Cross() {
 	fmt.Println("Input: row = 2, col = 2, cells = [[1,1],[2,1],[1,2],[2,2]]")

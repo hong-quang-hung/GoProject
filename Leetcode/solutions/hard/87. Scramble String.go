@@ -2,6 +2,10 @@ package hard
 
 import "fmt"
 
+func init() {
+	Solutions[87] = Leetcode_Is_Scramble
+}
+
 // Reference: https://leetcode.com/problems/scramble-string/
 func Leetcode_Is_Scramble() {
 	fmt.Println("Input: s1 = 'great', s2 = 'rgeat'")

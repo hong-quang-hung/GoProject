@@ -2,6 +2,10 @@ package easy
 
 import "fmt"
 
+func init() {
+	Solutions[228] = Leetcode_Summary_Ranges
+}
+
 // Reference: https://leetcode.com/problems/summary-ranges/
 func Leetcode_Summary_Ranges() {
 	fmt.Println("Input: nums = [0,1,2,4,5,7]")

@@ -5,6 +5,10 @@ import (
 	"sort"
 )
 
+func init() {
+	Solutions[2605] = Leetcode_Min_Number
+}
+
 // Reference: https://leetcode.com/problems/form-smallest-number-from-two-digit-arrays/
 func Leetcode_Min_Number() {
 	fmt.Println("Input: nums1 = [4,1,3], nums2 = [5,7]")

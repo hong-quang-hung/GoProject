@@ -1,8 +1,10 @@
 package easy
 
-import (
-	"fmt"
-)
+import "fmt"
+
+func init() {
+	Solutions[206] = Leetcode_Reverse_List
+}
 
 // Reference: https://leetcode.com/problems/reverse-linked-list/
 func Leetcode_Reverse_List() {

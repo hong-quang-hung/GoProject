@@ -1,8 +1,10 @@
 package easy
 
-import (
-	"fmt"
-)
+import "fmt"
+
+func init() {
+	Solutions[389] = Leetcode_Find_The_Difference
+}
 
 // Reference: https://leetcode.com/problems/find-the-difference/
 func Leetcode_Find_The_Difference() {

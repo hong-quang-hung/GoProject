@@ -1,8 +1,10 @@
 package medium
 
-import (
-	"fmt"
-)
+import "fmt"
+
+func init() {
+	Solutions[438] = Leetcode_Find_Anagrams
+}
 
 // Reference: https://leetcode.com/problems/find-all-anagrams-in-a-string/
 func Leetcode_Find_Anagrams() {

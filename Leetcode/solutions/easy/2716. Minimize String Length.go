@@ -2,6 +2,10 @@ package easy
 
 import "fmt"
 
+func init() {
+	Solutions[2716] = Leetcode_Minimized_String_Length
+}
+
 // Reference: https://leetcode.com/problems/minimize-string-length/
 func Leetcode_Minimized_String_Length() {
 	fmt.Println("Input: s = 'aaabc'")

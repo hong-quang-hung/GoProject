@@ -6,6 +6,10 @@ import (
 	"strconv"
 )
 
+func init() {
+	Solutions[2578] = Leetcode_Split_Num
+}
+
 // Reference: https://leetcode.com/problems/split-with-minimum-sum/
 func Leetcode_Split_Num() {
 	fmt.Println("Input: num = 4325")

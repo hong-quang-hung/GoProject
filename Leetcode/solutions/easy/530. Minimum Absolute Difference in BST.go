@@ -5,6 +5,10 @@ import (
 	"math"
 )
 
+func init() {
+	Solutions[530] = Leetcode_Get_Minimum_Difference
+}
+
 // Reference: https://leetcode.com/problems/minimum-absolute-difference-in-bst/
 func Leetcode_Get_Minimum_Difference() {
 	fmt.Println("Input: root = [4,2,6,1,3]")

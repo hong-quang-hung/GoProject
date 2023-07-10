@@ -5,6 +5,10 @@ import (
 	"strings"
 )
 
+func init() {
+	Solutions[2710] = Leetcode_Remove_Trailing_Zeros
+}
+
 // Reference: https://leetcode.com/problems/remove-trailing-zeros-from-a-string/
 func Leetcode_Remove_Trailing_Zeros() {
 	fmt.Println("Input: num = '51230100'")

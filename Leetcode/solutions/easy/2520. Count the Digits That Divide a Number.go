@@ -1,8 +1,10 @@
 package easy
 
-import (
-	"fmt"
-)
+import "fmt"
+
+func init() {
+	Solutions[2520] = Leetcode_Count_Digits
+}
 
 // Reference: https://leetcode.com/problems/count-the-digits-that-divide-a-number/
 func Leetcode_Count_Digits() {

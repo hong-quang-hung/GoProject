@@ -2,6 +2,10 @@ package medium
 
 import "fmt"
 
+func init() {
+	Solutions[208] = Leetcode_Trie_Constructor
+}
+
 // Reference: https://leetcode.com/problems/implement-trie-prefix-tree/
 func Leetcode_Trie_Constructor() {
 	fmt.Println("Input: ['Trie', 'insert', 'search', 'search', 'startsWith', 'insert', 'search']")

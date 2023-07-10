@@ -2,6 +2,10 @@ package easy
 
 import "fmt"
 
+func init() {
+	Solutions[70] = Leetcode_Climb_Stairs
+}
+
 // Reference: https://leetcode.com/problems/climbing-stairs/
 func Leetcode_Climb_Stairs() {
 	fmt.Println("Input: n = 2")

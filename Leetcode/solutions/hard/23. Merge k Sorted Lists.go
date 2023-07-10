@@ -2,6 +2,10 @@ package hard
 
 import "fmt"
 
+func init() {
+	Solutions[23] = Leetcode_Merge_K_Lists
+}
+
 // Reference: https://leetcode.com/problems/merge-k-sorted-lists/
 func Leetcode_Merge_K_Lists() {
 	fmt.Println("Input: lists = [[1,4,5],[1,3,4],[2,6]]")

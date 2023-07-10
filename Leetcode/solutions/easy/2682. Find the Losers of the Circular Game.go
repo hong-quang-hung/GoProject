@@ -5,6 +5,10 @@ import (
 	"sort"
 )
 
+func init() {
+	Solutions[2682] = Leetcode_Circular_Game_Losers
+}
+
 // Reference: https://leetcode.com/problems/find-the-losers-of-the-circular-game/
 func Leetcode_Circular_Game_Losers() {
 	fmt.Println("Input: n = 5, k = 2")

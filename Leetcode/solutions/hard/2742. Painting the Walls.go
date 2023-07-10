@@ -4,6 +4,10 @@ import (
 	"fmt"
 )
 
+func init() {
+	Solutions[2742] = Leetcode_Special_Perm
+}
+
 // Reference: https://leetcode.com/problems/painting-the-walls/
 func Leetcode_Special_Perm() {
 	fmt.Println("Input: cost = [1,2,3,2], time = [1,2,3,2]")

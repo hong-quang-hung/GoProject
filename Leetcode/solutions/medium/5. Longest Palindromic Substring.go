@@ -2,6 +2,10 @@ package medium
 
 import "fmt"
 
+func init() {
+	Solutions[5] = Leetcode_Longest_Palindrome
+}
+
 // Reference: https://leetcode.com/problems/longest-palindromic-substring/
 func Leetcode_Longest_Palindrome() {
 	fmt.Println("Input: s = 'babad'")

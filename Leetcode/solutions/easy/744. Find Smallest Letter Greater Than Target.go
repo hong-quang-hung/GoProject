@@ -5,6 +5,10 @@ import (
 	"sort"
 )
 
+func init() {
+	Solutions[744] = Leetcode_Next_Greatest_Letter
+}
+
 // Reference: https://leetcode.com/problems/shortest-common-supersequence/
 func Leetcode_Next_Greatest_Letter() {
 	fmt.Println("Input: letters = ['c','f','j'], target = 'a'")

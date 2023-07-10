@@ -2,6 +2,10 @@ package hard
 
 import "fmt"
 
+func init() {
+	Solutions[864] = Leetcode_shortest_Path_All_Keys
+}
+
 // Reference: https://leetcode.com/problems/shortest-path-to-get-all-keys/
 func Leetcode_shortest_Path_All_Keys() {
 	fmt.Println("Input: grid = ['@.a..','###.#','b.A.B']")

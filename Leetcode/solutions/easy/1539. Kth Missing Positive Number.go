@@ -1,8 +1,10 @@
 package easy
 
-import (
-	"fmt"
-)
+import "fmt"
+
+func init() {
+	Solutions[1539] = Leetcode_Find_Kth_Positive
+}
 
 // Reference: https://leetcode.com/problems/kth-missing-positive-number/
 func Leetcode_Find_Kth_Positive() {

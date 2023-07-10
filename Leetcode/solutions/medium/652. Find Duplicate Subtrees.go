@@ -5,6 +5,10 @@ import (
 	"strconv"
 )
 
+func init() {
+	Solutions[652] = Leetcode_Find_Duplicate_Subtrees
+}
+
 // Reference: https://leetcode.com/problems/find-duplicate-subtrees/
 func Leetcode_Find_Duplicate_Subtrees() {
 	fmt.Println("Input: root = [1,2,3,4,null,2,4,null,null,4]")

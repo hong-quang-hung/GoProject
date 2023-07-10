@@ -2,6 +2,10 @@ package easy
 
 import "fmt"
 
+func init() {
+	Solutions[21] = Leetcode_Merge_Two_Lists
+}
+
 // Reference: https://leetcode.com/problems/merge-two-sorted-lists/
 func Leetcode_Merge_Two_Lists() {
 	fmt.Println("Input: list1 = [1,2,4], list2 = [1,3,4]")

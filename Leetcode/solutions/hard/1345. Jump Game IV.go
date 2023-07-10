@@ -4,6 +4,10 @@ import (
 	"fmt"
 )
 
+func init() {
+	Solutions[1345] = Leetcode_Min_Jumps
+}
+
 // Reference: https://leetcode.com/problems/jump-game-iv/
 func Leetcode_Min_Jumps() {
 	fmt.Println("Input: arr = [100,-23,-23,404,100,23,23,23,3,404]")

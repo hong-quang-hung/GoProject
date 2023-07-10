@@ -2,6 +2,10 @@ package easy
 
 import "fmt"
 
+func init() {
+	Solutions[20] = Leetcode_Is_Valid
+}
+
 // Reference: https://leetcode.com/problems/valid-parentheses/
 func Leetcode_Is_Valid() {
 	fmt.Println("Input: s = '()[]{}'")

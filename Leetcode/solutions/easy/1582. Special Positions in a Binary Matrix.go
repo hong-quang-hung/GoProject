@@ -2,6 +2,10 @@ package easy
 
 import "fmt"
 
+func init() {
+	Solutions[1582] = Leetcode_Num_Special
+}
+
 // Reference: https://leetcode.com/problems/special-positions-in-a-binary-matrix/
 func Leetcode_Num_Special() {
 	fmt.Println("Input: mat = [[1,0,0],[0,0,1],[1,0,0]]")

@@ -5,6 +5,10 @@ import (
 	"math"
 )
 
+func init() {
+	Solutions[2547] = Leetcode_Min_Cost
+}
+
 // Reference: https://leetcode.com/problems/minimum-cost-to-split-an-array/
 func Leetcode_Min_Cost() {
 	fmt.Println("Input: nums = [1,2,1,2,1], k = 2")

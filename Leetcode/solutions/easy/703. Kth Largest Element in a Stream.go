@@ -5,6 +5,10 @@ import (
 	"sort"
 )
 
+func init() {
+	Solutions[703] = Leetcode_Kth_Largest
+}
+
 // Reference: https://leetcode.com/problems/kth-largest-element-in-a-stream/
 func Leetcode_Kth_Largest() {
 	fmt.Println("Input:")

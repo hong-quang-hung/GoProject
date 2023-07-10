@@ -5,6 +5,10 @@ import (
 	"sort"
 )
 
+func init() {
+	Solutions[2448] = Leetcode_Min_Cost_III
+}
+
 // Reference: https://leetcode.com/problems/minimum-cost-to-make-array-equal/
 func Leetcode_Min_Cost_III() {
 	fmt.Println("Input: nums = [1,3,5,2], cost = [2,3,1,14]")

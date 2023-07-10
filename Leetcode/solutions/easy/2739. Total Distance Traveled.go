@@ -2,6 +2,10 @@ package easy
 
 import "fmt"
 
+func init() {
+	Solutions[2739] = Leetcode_Distance_Traveled
+}
+
 // Reference: https://leetcode.com/problems/total-distance-traveled/
 func Leetcode_Distance_Traveled() {
 	fmt.Println("Input: mainTank = 5, additionalTank = 10")

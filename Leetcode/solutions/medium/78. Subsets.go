@@ -2,6 +2,10 @@ package medium
 
 import "fmt"
 
+func init() {
+	Solutions[78] = Leetcode_Subsets
+}
+
 // Reference: https://leetcode.com/problems/subsets/
 func Leetcode_Subsets() {
 	fmt.Println("Input: nums = [1,2,3]")

@@ -2,6 +2,10 @@ package easy
 
 import "fmt"
 
+func init() {
+	Solutions[859] = Leetcode_Buddy_Strings
+}
+
 // Reference: https://leetcode.com/problems/buddy-strings/
 func Leetcode_Buddy_Strings() {
 	fmt.Println("Input: s = 'ab', goal = 'ba'")

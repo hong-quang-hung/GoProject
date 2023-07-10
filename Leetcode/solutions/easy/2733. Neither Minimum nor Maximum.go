@@ -5,6 +5,10 @@ import (
 	"sort"
 )
 
+func init() {
+	Solutions[2733] = Leetcode_Find_Non_Min_Or_Max
+}
+
 // Reference: https://leetcode.com/problems/neither-minimum-nor-maximum/
 func Leetcode_Find_Non_Min_Or_Max() {
 	fmt.Println("Input: nums = [3,2,1,4]")

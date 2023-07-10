@@ -1,8 +1,10 @@
 package easy
 
-import (
-	"fmt"
-)
+import "fmt"
+
+func init() {
+	Solutions[2670] = Leetcode_Distinct_Difference_Array
+}
 
 // Reference: https://leetcode.com/problems/find-the-distinct-difference-array/
 func Leetcode_Distinct_Difference_Array() {

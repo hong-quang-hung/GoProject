@@ -5,6 +5,10 @@ import (
 	"fmt"
 )
 
+func init() {
+	Solutions[1046] = Leetcode_Last_Stone_Weight
+}
+
 // Reference: https://leetcode.com/problems/last-stone-weight/
 func Leetcode_Last_Stone_Weight() {
 	fmt.Println("Input: stones = [2,7,4,1,8,1]")

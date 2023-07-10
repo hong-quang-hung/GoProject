@@ -2,6 +2,10 @@ package medium
 
 import "fmt"
 
+func init() {
+	Solutions[103] = Leetcode_Zigzag_Level_Order
+}
+
 // Reference: https://leetcode.com/problems/binary-tree-zigzag-level-order-traversal/
 func Leetcode_Zigzag_Level_Order() {
 	fmt.Println("Input: root = [3,9,20,null,null,15,7]")

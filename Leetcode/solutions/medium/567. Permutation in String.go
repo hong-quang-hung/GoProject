@@ -2,6 +2,10 @@ package medium
 
 import "fmt"
 
+func init() {
+	Solutions[567] = Leetcode_Check_Inclusion
+}
+
 // Reference: https://leetcode.com/problems/permutation-in-string/
 func Leetcode_Check_Inclusion() {
 	fmt.Println("Input: s1 = 'ab', s2 = 'eidbaooo'")

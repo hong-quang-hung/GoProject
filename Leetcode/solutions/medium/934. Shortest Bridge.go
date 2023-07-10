@@ -2,6 +2,10 @@ package medium
 
 import "fmt"
 
+func init() {
+	Solutions[934] = Leetcode_Shortest_Bridge
+}
+
 // Reference: https://leetcode.com/problems/shortest-bridge/
 func Leetcode_Shortest_Bridge() {
 	fmt.Println("Input: grid = [[0,1],[1,0]]")

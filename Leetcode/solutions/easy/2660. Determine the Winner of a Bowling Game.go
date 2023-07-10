@@ -1,8 +1,10 @@
 package easy
 
-import (
-	"fmt"
-)
+import "fmt"
+
+func init() {
+	Solutions[2660] = Leetcode_Is_Winner
+}
 
 // Reference: https://leetcode.com/problems/determine-the-winner-of-a-bowling-game/
 func Leetcode_Is_Winner() {

@@ -2,6 +2,10 @@ package easy
 
 import "fmt"
 
+func init() {
+	Solutions[509] = Leetcode_Fibonacci
+}
+
 // Reference: https://leetcode.com/problems/fibonacci-number/
 func Leetcode_Fibonacci() {
 	fmt.Println("Input: n = 2")

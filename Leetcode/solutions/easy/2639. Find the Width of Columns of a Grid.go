@@ -5,6 +5,10 @@ import (
 	"strconv"
 )
 
+func init() {
+	Solutions[2639] = Leetcode_Max_Value_Of_Coins
+}
+
 // Reference: https://leetcode.com/problems/find-the-score-of-all-prefixes-of-an-array/
 func Leetcode_Max_Value_Of_Coins() {
 	fmt.Println("Input: grid = [[1],[22],[333]]")

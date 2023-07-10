@@ -2,6 +2,10 @@ package easy
 
 import "fmt"
 
+func init() {
+	Solutions[1768] = Leetcode_Merge_Alternately
+}
+
 // Reference: https://leetcode.com/problems/merge-strings-alternately/
 func Leetcode_Merge_Alternately() {
 	fmt.Println("Input: word1 = 'abc', word2 = 'pqr'")

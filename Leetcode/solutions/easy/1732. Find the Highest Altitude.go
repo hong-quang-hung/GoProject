@@ -2,6 +2,10 @@ package easy
 
 import "fmt"
 
+func init() {
+	Solutions[1732] = Leetcode_Largest_Altitude
+}
+
 // Reference: https://leetcode.com/problems/find-the-highest-altitude/
 func Leetcode_Largest_Altitude() {
 	fmt.Println("Input: gain = [-5,1,5,0,-7]")

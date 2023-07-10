@@ -2,6 +2,10 @@ package medium
 
 import "fmt"
 
+func init() {
+	Solutions[6] = Leetcode_Convert
+}
+
 // Reference: https://leetcode.com/problems/zigzag-conversion/
 func Leetcode_Convert() {
 	fmt.Println("Input: x = 'PAYPALISHIRING', numRows = 3")

@@ -2,6 +2,10 @@ package medium
 
 import "fmt"
 
+func init() {
+	Solutions[427] = Leetcode_Construct
+}
+
 // Reference: https://leetcode.com/problems/construct-quad-tree/
 func Leetcode_Construct() {
 	fmt.Println("Input: grid = [[0,1],[1,0]]")

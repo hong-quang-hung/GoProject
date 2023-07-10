@@ -5,6 +5,10 @@ import (
 	"strings"
 )
 
+func init() {
+	Solutions[38] = Leetcode_Count_And_Say
+}
+
 // Reference: https://leetcode.com/problems/count-and-say/
 func Leetcode_Count_And_Say() {
 	fmt.Println("Input: n = 1")

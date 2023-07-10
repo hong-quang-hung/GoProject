@@ -1,8 +1,10 @@
 package easy
 
-import (
-	"fmt"
-)
+import "fmt"
+
+func init() {
+	Solutions[1523] = Leetcode_Count_Odds
+}
 
 // Reference: https://leetcode.com/problems/path-sum/
 func Leetcode_Count_Odds() {

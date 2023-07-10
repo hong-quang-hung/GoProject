@@ -5,6 +5,10 @@ import (
 	"math"
 )
 
+func init() {
+	Solutions[1857] = Leetcode_Largest_Path_Value
+}
+
 // Reference: https://leetcode.com/problems/largest-color-value-in-a-directed-graph/
 func Leetcode_Largest_Path_Value() {
 	fmt.Println("Input: colors = 'abaca', edges = [[0,1],[0,2],[2,3],[3,4]]")

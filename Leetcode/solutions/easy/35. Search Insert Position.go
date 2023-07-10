@@ -5,6 +5,10 @@ import (
 	"math"
 )
 
+func init() {
+	Solutions[35] = Leetcode_Search_Insert
+}
+
 // Reference: https://leetcode.com/problems/search-insert-position/
 func Leetcode_Search_Insert() {
 	fmt.Println("Input: nums = [1,3,5,6], target = 7")

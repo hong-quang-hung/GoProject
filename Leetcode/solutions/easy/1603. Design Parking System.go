@@ -2,6 +2,10 @@ package easy
 
 import "fmt"
 
+func init() {
+	Solutions[1603] = Leetcode_Design_Parking_System
+}
+
 // Reference: https://leetcode.com/problems/design-parking-system/
 func Leetcode_Design_Parking_System() {
 	fmt.Println("Input:")

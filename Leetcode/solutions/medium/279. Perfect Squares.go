@@ -5,6 +5,10 @@ import (
 	"math"
 )
 
+func init() {
+	Solutions[279] = Leetcode_Num_Squares
+}
+
 // Reference: https://leetcode.com/problems/perfect-squares/
 func Leetcode_Num_Squares() {
 	fmt.Println("Input: n = 12")

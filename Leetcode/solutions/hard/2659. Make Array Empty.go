@@ -5,6 +5,10 @@ import (
 	"sort"
 )
 
+func init() {
+	Solutions[2659] = Leetcode_Count_Operations_To_Empty_Array
+}
+
 // Reference: https://leetcode.com/problems/make-array-empty/
 func Leetcode_Count_Operations_To_Empty_Array() {
 	fmt.Println("Input: nums = [3,4,-1]")

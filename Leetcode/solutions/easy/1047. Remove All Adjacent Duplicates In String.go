@@ -2,6 +2,10 @@ package easy
 
 import "fmt"
 
+func init() {
+	Solutions[1047] = Leetcode_Remove_Adjacent_Duplicates
+}
+
 // Reference: https://leetcode.com/problems/remove-all-adjacent-duplicates-in-string/
 func Leetcode_Remove_Adjacent_Duplicates() {
 	fmt.Println("Input: s = 'azxxzy'")

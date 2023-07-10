@@ -2,6 +2,10 @@ package easy
 
 import "fmt"
 
+func init() {
+	Solutions[226] = Leetcode_Invert_Tree
+}
+
 // Reference: https://leetcode.com/problems/invert-binary-tree/
 func Leetcode_Invert_Tree() {
 	fmt.Println("Input: root = [4,2,7,1,3,6,9]")

@@ -2,6 +2,10 @@ package medium
 
 import "fmt"
 
+func init() {
+	Solutions[142] = Leetcode_Detect_Cycle
+}
+
 // Reference: https://leetcode.com/problems/linked-list-cycle-ii/
 func Leetcode_Detect_Cycle() {
 	fmt.Println("Input: head = [3,2,0,-4], pos = 1")

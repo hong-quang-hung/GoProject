@@ -2,6 +2,10 @@ package easy
 
 import "fmt"
 
+func init() {
+	Solutions[231] = Leetcode_Is_Power_Of_Two
+}
+
 // Reference: https://leetcode.com/problems/power-of-two/
 func Leetcode_Is_Power_Of_Two() {
 	fmt.Println("Input: n = 16")

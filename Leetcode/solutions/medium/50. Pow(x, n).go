@@ -1,8 +1,10 @@
 package medium
 
-import (
-	"fmt"
-)
+import "fmt"
+
+func init() {
+	Solutions[50] = Leetcode_My_Pow
+}
 
 // Reference: https://leetcode.com/problems/powx-n/
 func Leetcode_My_Pow() {

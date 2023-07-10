@@ -5,6 +5,10 @@ import (
 	"sort"
 )
 
+func init() {
+	Solutions[88] = Leetcode_Merge_Sorted_Array
+}
+
 // Reference: https://leetcode.com/problems/merge-sorted-array/
 func Leetcode_Merge_Sorted_Array() {
 	fmt.Println("Input: nums1 = [1,2,3,0,0,0], m = 3, nums2 = [2,5,6], n = 3")

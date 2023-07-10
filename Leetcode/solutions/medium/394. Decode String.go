@@ -5,6 +5,10 @@ import (
 	"strings"
 )
 
+func init() {
+	Solutions[394] = Leetcode_Decode_String
+}
+
 // Reference: https://leetcode.com/problems/decode-string/
 func Leetcode_Decode_String() {
 	fmt.Println("Input: s = '3[a]2[bc]'")

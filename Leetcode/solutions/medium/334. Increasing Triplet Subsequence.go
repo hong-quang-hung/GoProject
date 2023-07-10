@@ -5,6 +5,10 @@ import (
 	"math"
 )
 
+func init() {
+	Solutions[334] = Leetcode_Increasing_Triplet
+}
+
 // Reference: https://leetcode.com/problems/increasing-triplet-subsequence/
 func Leetcode_Increasing_Triplet() {
 	fmt.Println("Input: nums = [1,2,3,4,5]")

@@ -2,6 +2,10 @@ package medium
 
 import "fmt"
 
+func init() {
+	Solutions[64] = Leetcode_Min_Path_Sum
+}
+
 // Reference: https://leetcode.com/problems/minimum-path-sum/
 func Leetcode_Min_Path_Sum() {
 	fmt.Println("Input: grid = [[1,3,1],[1,5,1],[4,2,1]]")

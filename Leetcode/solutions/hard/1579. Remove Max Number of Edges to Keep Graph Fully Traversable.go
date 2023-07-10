@@ -2,6 +2,10 @@ package hard
 
 import "fmt"
 
+func init() {
+	Solutions[1579] = Leetcode_Max_Num_Edges_To_Removet
+}
+
 // Reference: https://leetcode.com/problems/remove-max-number-of-edges-to-keep-graph-fully-traversable/
 func Leetcode_Max_Num_Edges_To_Removet() {
 	fmt.Println("Input: n = 4, edges = [[3,1,2],[3,2,3],[1,1,3],[1,2,4],[1,1,2],[2,3,4]]")

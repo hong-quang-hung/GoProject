@@ -5,6 +5,10 @@ import (
 	"math"
 )
 
+func init() {
+	Solutions[202] = Leetcode_Is_Happy
+}
+
 // Reference: https://leetcode.com/problems/happy-number/
 func Leetcode_Is_Happy() {
 	fmt.Println("Input: num = 19")

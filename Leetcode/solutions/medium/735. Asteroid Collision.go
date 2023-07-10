@@ -1,8 +1,10 @@
 package medium
 
-import (
-	"fmt"
-)
+import "fmt"
+
+func init() {
+	Solutions[735] = Leetcode_Asteroid_Collision
+}
 
 // Reference: https://leetcode.com/problems/asteroid-collision/
 func Leetcode_Asteroid_Collision() {

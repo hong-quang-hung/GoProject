@@ -1,8 +1,10 @@
 package easy
 
-import (
-	"fmt"
-)
+import "fmt"
+
+func init() {
+	Solutions[2651] = Leetcode_Find_Delayed_Arrival_Time
+}
 
 // Reference: https://leetcode.com/problems/calculate-delayed-arrival-time/
 func Leetcode_Find_Delayed_Arrival_Time() {

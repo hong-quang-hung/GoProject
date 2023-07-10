@@ -2,6 +2,10 @@ package hard
 
 import "fmt"
 
+func init() {
+	Solutions[25] = Leetcode_Reverse_K_Group
+}
+
 // Reference: https://leetcode.com/problems/reverse-nodes-in-k-group/
 func Leetcode_Reverse_K_Group() {
 	fmt.Println("Input: head = [1,2,3,4,5], k = 2")

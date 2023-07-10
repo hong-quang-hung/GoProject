@@ -5,6 +5,10 @@ import (
 	"sort"
 )
 
+func init() {
+	Solutions[1697] = Leetcode_Distance_Limited_Paths_Exist
+}
+
 // Reference: https://leetcode.com/problems/checking-existence-of-edge-length-limited-paths/
 func Leetcode_Distance_Limited_Paths_Exist() {
 	fmt.Println("Input: n = 3, edgeList = [[0,1,2],[1,2,4],[2,0,8],[1,0,16]], queries = [[0,1,2],[0,2,5]]")

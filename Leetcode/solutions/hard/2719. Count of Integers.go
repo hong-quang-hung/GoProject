@@ -4,6 +4,10 @@ import (
 	"fmt"
 )
 
+func init() {
+	Solutions[2719] = Leetcode_Count
+}
+
 // Reference: https://leetcode.com/problems/count-of-integers/
 func Leetcode_Count() {
 	fmt.Println("Input: num1 = '1', num2 = '12', min_num = 1, max_num = 8")

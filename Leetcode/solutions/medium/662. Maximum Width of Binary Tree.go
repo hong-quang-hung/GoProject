@@ -2,6 +2,10 @@ package medium
 
 import "fmt"
 
+func init() {
+	Solutions[662] = Leetcode_Width_Of_Binary_Tree
+}
+
 // Reference: https://leetcode.com/problems/maximum-width-of-binary-tree/
 func Leetcode_Width_Of_Binary_Tree() {
 	fmt.Println("Input: root = [1,3,2,5,3,null,9]")

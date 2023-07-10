@@ -6,6 +6,10 @@ import (
 	"sort"
 )
 
+func init() {
+	Solutions[1547] = Leetcode_Min_Cost_Cut
+}
+
 // Reference: https://leetcode.com/problems/minimum-cost-to-cut-a-stick/
 func Leetcode_Min_Cost_Cut() {
 	fmt.Println("Input: n = 7, cuts = [1,3,4,5]")

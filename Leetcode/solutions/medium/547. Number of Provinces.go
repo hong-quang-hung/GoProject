@@ -2,6 +2,10 @@ package medium
 
 import "fmt"
 
+func init() {
+	Solutions[547] = Leetcode_Find_Circle_Num
+}
+
 // Reference: https://leetcode.com/problems/number-of-provinces/
 func Leetcode_Find_Circle_Num() {
 	fmt.Println("Input: isConnected = [[1,1,0],[1,1,0],[0,0,1]]")

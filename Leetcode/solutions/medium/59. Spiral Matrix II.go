@@ -1,8 +1,10 @@
 package medium
 
-import (
-	"fmt"
-)
+import "fmt"
+
+func init() {
+	Solutions[59] = Leetcode_Generate_Matrix
+}
 
 // Reference: https://leetcode.com/problems/spiral-matrix-ii/
 func Leetcode_Generate_Matrix() {

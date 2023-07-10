@@ -2,6 +2,10 @@ package medium
 
 import "fmt"
 
+func init() {
+	Solutions[11] = Leetcode_Max_Area
+}
+
 // Reference: https://leetcode.com/problems/container-with-most-water/
 func Leetcode_Max_Area() {
 	fmt.Println("Input: height = [1,8,6,2,5,4,8,3,7]")

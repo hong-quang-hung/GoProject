@@ -5,6 +5,10 @@ import (
 	"math"
 )
 
+func init() {
+	Solutions[313] = Leetcode_Nth_Super_Ugly_Number
+}
+
 // Reference: https://leetcode.com/problems/super-ugly-number/
 func Leetcode_Nth_Super_Ugly_Number() {
 	fmt.Println("Input: n = 12, primes = [2,7,13,19]")

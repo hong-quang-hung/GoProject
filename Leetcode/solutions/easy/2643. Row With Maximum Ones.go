@@ -2,6 +2,10 @@ package easy
 
 import "fmt"
 
+func init() {
+	Solutions[2643] = Leetcode_Row_And_Maximum_Ones
+}
+
 // Reference: https://leetcode.com/problems/row-with-maximum-ones/
 func Leetcode_Row_And_Maximum_Ones() {
 	fmt.Println("Input: mat = [[0,1],[1,0]]")

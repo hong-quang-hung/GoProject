@@ -2,6 +2,10 @@ package medium
 
 import "fmt"
 
+func init() {
+	Solutions[837] = Leetcode_New_21_Game
+}
+
 // Reference: https://leetcode.com/problems/new-21-game/
 func Leetcode_New_21_Game() {
 	fmt.Println("Input: n = 10, k = 1, maxPts = 10")

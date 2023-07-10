@@ -1,8 +1,10 @@
 package easy
 
-import (
-	"fmt"
-)
+import "fmt"
+
+func init() {
+	Solutions[1431] = Leetcode_Kids_With_Candies
+}
 
 // Reference: https://leetcode.com/problems/kids-with-the-greatest-number-of-candies/
 func Leetcode_Kids_With_Candies() {

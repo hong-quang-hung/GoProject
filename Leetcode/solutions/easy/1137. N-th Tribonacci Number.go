@@ -2,6 +2,10 @@ package easy
 
 import "fmt"
 
+func init() {
+	Solutions[1137] = Leetcode_Tribonacci
+}
+
 // Reference: https://leetcode.com/problems/n-th-tribonacci-number/
 func Leetcode_Tribonacci() {
 	fmt.Println("Input: n = 4")

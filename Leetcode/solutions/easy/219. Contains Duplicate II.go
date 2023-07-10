@@ -2,6 +2,10 @@ package easy
 
 import "fmt"
 
+func init() {
+	Solutions[219] = Leetcode_Contains_Near_By_Duplicate
+}
+
 // Reference: https://leetcode.com/problems/contains-duplicate-ii/
 func Leetcode_Contains_Near_By_Duplicate() {
 	fmt.Println("Input: nums = [1,2,3,1,2,3], k = 2")

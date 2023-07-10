@@ -2,7 +2,11 @@ package medium
 
 import "fmt"
 
-// Reference: https://leetcode.com/problems/symmetric-tree/
+func init() {
+	Solutions[211] = Leetcode_Word_Dictionary
+}
+
+// Reference: https://leetcode.com/problems/design-add-and-search-words-data-structure/
 func Leetcode_Word_Dictionary() {
 	wordDictionary := Constructor()
 	wordDictionary.AddWord("bad")

@@ -2,6 +2,10 @@ package easy
 
 import "fmt"
 
+func init() {
+	Solutions[1470] = Leetcode_Shuffle
+}
+
 // Reference: https://leetcode.com/problems/shuffle-the-array/
 func Leetcode_Shuffle() {
 	fmt.Println("Input: nums = [1,2,3,4,4,3,2,1], n = 4")

@@ -2,6 +2,10 @@ package medium
 
 import "fmt"
 
+func init() {
+	Solutions[54] = Leetcode_Spiral_Order
+}
+
 // Reference: https://leetcode.com/problems/spiral-matrix/
 func Leetcode_Spiral_Order() {
 	fmt.Println("Input: matrix = [[1,2,3],[4,5,6],[7,8,9]]")

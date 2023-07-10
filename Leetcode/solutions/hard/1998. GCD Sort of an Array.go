@@ -4,6 +4,10 @@ import (
 	"fmt"
 )
 
+func init() {
+	Solutions[1998] = Leetcode_Gcd_Sort
+}
+
 // Reference: https://leetcode.com/problems/gcd-sort-of-an-array/
 func Leetcode_Gcd_Sort() {
 	fmt.Println("Input: nums = [7,21,3]")

@@ -2,6 +2,10 @@ package medium
 
 import "fmt"
 
+func init() {
+	Solutions[540] = Leetcode_Single_Non_Duplicate
+}
+
 // Reference: https://leetcode.com/problems/single-element-in-a-sorted-array/
 func Leetcode_Single_Non_Duplicate() {
 	fmt.Println("Input: nums = [1,1,2,3,3,4,4,8,8]")

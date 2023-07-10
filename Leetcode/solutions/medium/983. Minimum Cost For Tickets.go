@@ -5,6 +5,10 @@ import (
 	"math"
 )
 
+func init() {
+	Solutions[983] = Leetcode_Min_Cost_Tickets
+}
+
 // Reference: https://leetcode.com/problems/minimum-cost-for-tickets/
 func Leetcode_Min_Cost_Tickets() {
 	fmt.Println("Input: days = [1,4,6,7,8,20], costs = [2,7,15]")

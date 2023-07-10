@@ -5,6 +5,10 @@ import (
 	"strings"
 )
 
+func init() {
+	Solutions[2696] = Leetcode_Min_Length
+}
+
 // Reference: https://leetcode.com/problems/minimum-string-length-after-removing-substrings/
 func Leetcode_Min_Length() {
 	fmt.Println("Input: s = 'ABFCACDB'")

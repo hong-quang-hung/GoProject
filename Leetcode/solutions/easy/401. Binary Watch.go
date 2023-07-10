@@ -5,6 +5,10 @@ import (
 	"math/bits"
 )
 
+func init() {
+	Solutions[401] = Leetcode_Read_Binary_Watch
+}
+
 // Reference: https://leetcode.com/problems/binary-watch/
 func Leetcode_Read_Binary_Watch() {
 	fmt.Println("Input: turnedOn = 1")

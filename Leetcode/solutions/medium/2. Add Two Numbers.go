@@ -2,6 +2,10 @@ package medium
 
 import "fmt"
 
+func init() {
+	Solutions[2] = Leetcode_Add_Two_Numbers
+}
+
 // Reference: https://leetcode.com/problems/add-two-numbers/
 func Leetcode_Add_Two_Numbers() {
 	fmt.Println("Input: l1 = [2,4,3], l2 = [5,6,4]")

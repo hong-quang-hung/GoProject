@@ -2,6 +2,10 @@ package medium
 
 import "fmt"
 
+func init() {
+	Solutions[337] = Leetcode_House_Robber_III
+}
+
 // Reference: https://leetcode.com/problems/house-robber-iii/
 func Leetcode_House_Robber_III() {
 	fmt.Println("Input: root = [3,2,3,null,3,null,1]")

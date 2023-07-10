@@ -5,6 +5,10 @@ import (
 	"sort"
 )
 
+func init() {
+	Solutions[16] = Leetcode_Tree_Sum_Closest
+}
+
 // Reference: https://leetcode.com/problems/3sum-closest/
 func Leetcode_Tree_Sum_Closest() {
 	fmt.Println("Input: nums = [-1,2,1,-4], target = 1")

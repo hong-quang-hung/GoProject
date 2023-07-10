@@ -5,6 +5,10 @@ import (
 	"sort"
 )
 
+func init() {
+	Solutions[1202] = Leetcode_Smallest_String_With_Swaps
+}
+
 // Reference: https://leetcode.com/problems/smallest-string-with-swaps/
 func Leetcode_Smallest_String_With_Swaps() {
 	fmt.Println("Input: s = 'dcab', pairs = [[0,3],[1,2]]")

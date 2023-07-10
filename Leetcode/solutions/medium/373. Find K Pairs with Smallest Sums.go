@@ -5,6 +5,10 @@ import (
 	"fmt"
 )
 
+func init() {
+	Solutions[373] = Leetcode_K_Smallest_Pairs
+}
+
 // Reference: https://leetcode.com/problems/find-k-pairs-with-smallest-sums/
 func Leetcode_K_Smallest_Pairs() {
 	fmt.Println("Input: nums1 = [1,7,11], nums2 = [2,4,6], k = 3")

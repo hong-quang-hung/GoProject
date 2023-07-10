@@ -2,6 +2,10 @@ package medium
 
 import "fmt"
 
+func init() {
+	Solutions[958] = Leetcode_Is_Complete_Tree
+}
+
 // Reference: https://leetcode.com/problems/check-completeness-of-a-binary-tree/
 func Leetcode_Is_Complete_Tree() {
 	fmt.Println("Input: root = [1,2,3,5,null,7,8]")

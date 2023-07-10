@@ -2,6 +2,10 @@ package easy
 
 import "fmt"
 
+func init() {
+	Solutions[705] = Leetcode_Design_HashSet
+}
+
 // Reference: https://leetcode.com/problems/design-hashset/
 func Leetcode_Design_HashSet() {
 	fmt.Println("Input:")

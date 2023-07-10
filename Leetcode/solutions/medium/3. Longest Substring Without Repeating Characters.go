@@ -2,6 +2,10 @@ package medium
 
 import "fmt"
 
+func init() {
+	Solutions[3] = Leetcode_Length_Of_Longest_Substring
+}
+
 // Reference: https://leetcode.com/problems/longest-substring-without-repeating-characters/
 func Leetcode_Length_Of_Longest_Substring() {
 	fmt.Println("Input: s = 'abcabcbb'")

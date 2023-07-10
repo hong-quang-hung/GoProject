@@ -1,8 +1,10 @@
 package easy
 
-import (
-	"fmt"
-)
+import "fmt"
+
+func init() {
+	Solutions[13] = Leetcode_Roman_To_Int
+}
 
 // Reference: https://leetcode.com/problems/roman-to-integer/
 func Leetcode_Roman_To_Int() {

@@ -2,6 +2,10 @@ package hard
 
 import "fmt"
 
+func init() {
+	Solutions[1575] = Leetcode_Count_Routes
+}
+
 // Reference: https://leetcode.com/problems/count-all-possible-routes/
 func Leetcode_Count_Routes() {
 	fmt.Println("Input: locations = [2,3,6,8,4], start = 1, finish = 3, fuel = 5")

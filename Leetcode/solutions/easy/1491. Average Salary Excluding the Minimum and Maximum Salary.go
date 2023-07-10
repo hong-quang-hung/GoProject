@@ -5,6 +5,10 @@ import (
 	"math"
 )
 
+func init() {
+	Solutions[1491] = Leetcode_Average
+}
+
 // Reference: https://leetcode.com/problems/average-salary-excluding-the-minimum-and-maximum-salary/
 func Leetcode_Average() {
 	fmt.Println("Input: salary = [4000,3000,1000,2000]")

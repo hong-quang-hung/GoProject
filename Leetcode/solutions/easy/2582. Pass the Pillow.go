@@ -2,6 +2,10 @@ package easy
 
 import "fmt"
 
+func init() {
+	Solutions[2582] = Leetcode_Pass_The_Pillow
+}
+
 // Reference: https://leetcode.com/problems/pass-the-pillow/
 func Leetcode_Pass_The_Pillow() {
 	fmt.Println("Input: n = 4, time = 5")

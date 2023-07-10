@@ -5,6 +5,10 @@ import (
 	"reflect"
 )
 
+func init() {
+	Solutions[872] = Leetcode_Leaf_Similar
+}
+
 // Reference: https://leetcode.com/problems/leaf-similar-trees/
 func Leetcode_Leaf_Similar() {
 	fmt.Println("Input: root1 = [3,5,1,6,2,9,8,null,null,7,4], root2 = [3,5,1,6,7,4,2,null,null,null,null,null,null,9,8]")

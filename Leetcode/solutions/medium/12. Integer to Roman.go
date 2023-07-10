@@ -2,6 +2,10 @@ package medium
 
 import "fmt"
 
+func init() {
+	Solutions[12] = Leetcode_Int_To_Roman
+}
+
 // Reference: https://leetcode.com/problems/integer-to-roman/
 func Leetcode_Int_To_Roman() {
 	fmt.Println("Input: num = 58")

@@ -6,6 +6,10 @@ import (
 	"sort"
 )
 
+func init() {
+	Solutions[1187] = Leetcode_Make_Array_Increasing
+}
+
 // Reference: https://leetcode.com/problems/make-array-strictly-increasing/
 func Leetcode_Make_Array_Increasing() {
 	fmt.Println("Input: arr1 = [1,5,3,6,7], arr2 = [1,3,2,4]")

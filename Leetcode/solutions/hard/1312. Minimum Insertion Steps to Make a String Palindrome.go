@@ -2,6 +2,10 @@ package hard
 
 import "fmt"
 
+func init() {
+	Solutions[1312] = Leetcode_Min_Insertions
+}
+
 // Reference: https://leetcode.com/problems/minimum-insertion-steps-to-make-a-string-palindrome/
 func Leetcode_Min_Insertions() {
 	fmt.Println("Input: s = 'zzazz'")

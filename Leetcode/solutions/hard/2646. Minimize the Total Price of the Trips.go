@@ -2,6 +2,10 @@ package hard
 
 import "fmt"
 
+func init() {
+	Solutions[2646] = Leetcode_Minimum_Total_Price
+}
+
 // Reference: https://leetcode.com/problems/minimize-the-total-price-of-the-trips/
 func Leetcode_Minimum_Total_Price() {
 	fmt.Println("Input: n = 4, edges = [[0,1],[1,2],[1,3]], price = [2,2,10,6], trips = [[0,3],[2,1],[2,3]]")

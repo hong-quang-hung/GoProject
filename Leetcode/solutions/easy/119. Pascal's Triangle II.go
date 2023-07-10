@@ -2,6 +2,10 @@ package easy
 
 import "fmt"
 
+func init() {
+	Solutions[119] = Leetcode_Get_Row
+}
+
 // Reference: https://leetcode.com/problems/pascals-triangle-ii/
 func Leetcode_Get_Row() {
 	fmt.Println("Input: numRows = 3")

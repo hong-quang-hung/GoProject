@@ -1,8 +1,10 @@
 package medium
 
-import (
-	"fmt"
-)
+import "fmt"
+
+func init() {
+	Solutions[204] = Leetcode_Count_Primes
+}
 
 // Reference: https://leetcode.com/problems/count-primes/
 func Leetcode_Count_Primes() {

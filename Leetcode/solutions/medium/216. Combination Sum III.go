@@ -2,8 +2,12 @@ package medium
 
 import "fmt"
 
+func init() {
+	Solutions[216] = Leetcode_Combination_Sum_III
+}
+
 // Reference: https://leetcode.com/problems/combination-sum-iii/
-func Leetcode_Combination_Sum_3() {
+func Leetcode_Combination_Sum_III() {
 	fmt.Println("Input: k = 3, n = 7")
 	fmt.Println("Output:", combinationSum3(3, 7))
 	fmt.Println("Input: k = 3, n = 9")

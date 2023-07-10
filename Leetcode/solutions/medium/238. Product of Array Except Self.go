@@ -1,8 +1,10 @@
 package medium
 
-import (
-	"fmt"
-)
+import "fmt"
+
+func init() {
+	Solutions[238] = Leetcode_Product_ExceptSelf
+}
 
 // Reference: https://leetcode.com/problems/product-of-array-except-self/
 func Leetcode_Product_ExceptSelf() {

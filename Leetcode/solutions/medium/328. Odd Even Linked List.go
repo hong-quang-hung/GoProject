@@ -2,6 +2,10 @@ package medium
 
 import "fmt"
 
+func init() {
+	Solutions[328] = Leetcode_Odd_Even_List
+}
+
 // Reference: https://leetcode.com/problems/odd-even-linked-list/
 func Leetcode_Odd_Even_List() {
 	fmt.Println("Input: head = [1,2,3,4,5]")

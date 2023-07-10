@@ -2,6 +2,10 @@ package medium
 
 import "fmt"
 
+func init() {
+	Solutions[129] = Leetcode_Sum_Numbers
+}
+
 // Reference: https://leetcode.com/problems/sum-root-to-leaf-numbers/
 func Leetcode_Sum_Numbers() {
 	fmt.Println("Input: root = [1,2,3]")

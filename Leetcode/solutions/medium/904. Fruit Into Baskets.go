@@ -1,8 +1,10 @@
 package medium
 
-import (
-	"fmt"
-)
+import "fmt"
+
+func init() {
+	Solutions[904] = Leetcode_Total_Fruit
+}
 
 // Reference: https://leetcode.com/problems/fruit-into-baskets/
 func Leetcode_Total_Fruit() {

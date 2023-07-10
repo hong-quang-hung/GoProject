@@ -5,6 +5,10 @@ import (
 	"sort"
 )
 
+func init() {
+	Solutions[18] = Leetcode_Four_Sum
+}
+
 // Reference: https://leetcode.com/problems/4sum/
 func Leetcode_Four_Sum() {
 	fmt.Println("Input: nums = [1,0,-1,0,-2,2], target = 0")

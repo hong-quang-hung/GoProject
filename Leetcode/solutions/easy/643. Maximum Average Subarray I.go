@@ -2,6 +2,10 @@ package easy
 
 import "fmt"
 
+func init() {
+	Solutions[643] = Leetcode_Find_Max_Average
+}
+
 // Reference: https://leetcode.com/problems/maximum-average-subarray-i/
 func Leetcode_Find_Max_Average() {
 	fmt.Println("Input: nums = [1,12,-5,-6,50,3], k = 4")

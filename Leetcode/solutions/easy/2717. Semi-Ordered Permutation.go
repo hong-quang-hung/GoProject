@@ -2,6 +2,10 @@ package easy
 
 import "fmt"
 
+func init() {
+	Solutions[2717] = Leetcode_Semi_Ordered_Permutation
+}
+
 // Reference: https://leetcode.com/problems/semi-ordered-permutation/
 func Leetcode_Semi_Ordered_Permutation() {
 	fmt.Println("Input: nums = [2,1,4,3]")

@@ -1,8 +1,10 @@
 package hard
 
-import (
-	"fmt"
-)
+import "fmt"
+
+func init() {
+	Solutions[1092] = Leetcode_Shortest_Common_Supersequence
+}
 
 // Reference: https://leetcode.com/problems/shortest-common-supersequence/
 func Leetcode_Shortest_Common_Supersequence() {

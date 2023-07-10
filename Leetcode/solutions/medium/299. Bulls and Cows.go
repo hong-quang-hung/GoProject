@@ -2,6 +2,10 @@ package medium
 
 import "fmt"
 
+func init() {
+	Solutions[299] = Leetcode_Get_Hint
+}
+
 // Reference: https://leetcode.com/problems/bulls-and-cows/
 func Leetcode_Get_Hint() {
 	fmt.Println("Input: secret = '1234', guess = '0111'")

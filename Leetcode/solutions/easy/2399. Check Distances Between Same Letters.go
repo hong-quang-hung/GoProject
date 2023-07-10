@@ -2,6 +2,10 @@ package easy
 
 import "fmt"
 
+func init() {
+	Solutions[2399] = Leetcode_Check_Distances
+}
+
 // Reference: https://leetcode.com/problems/check-distances-between-same-letters/
 func Leetcode_Check_Distances() {
 	fmt.Println("Input: s = 'aa', distance = [1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]")

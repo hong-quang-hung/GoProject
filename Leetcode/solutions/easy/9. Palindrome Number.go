@@ -2,6 +2,10 @@ package easy
 
 import "fmt"
 
+func init() {
+	Solutions[9] = LeetCode_Is_Palindrome
+}
+
 // Reference: https://leetcode.com/problems/palindrome-number/
 func LeetCode_Is_Palindrome() {
 	fmt.Println("Input: x = 0")

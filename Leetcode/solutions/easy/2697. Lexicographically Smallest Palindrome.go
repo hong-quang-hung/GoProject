@@ -1,8 +1,10 @@
 package easy
 
-import (
-	"fmt"
-)
+import "fmt"
+
+func init() {
+	Solutions[2697] = Leetcode_Make_Smallest_Palindrome
+}
 
 // Reference: https://leetcode.com/problems/lexicographically-smallest-palindrome/
 func Leetcode_Make_Smallest_Palindrome() {

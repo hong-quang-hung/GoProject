@@ -5,6 +5,10 @@ import (
 	"math"
 )
 
+func init() {
+	Solutions[2644] = Leetcode_Max_Div_Score
+}
+
 // Reference: https://leetcode.com/problems/find-the-maximum-divisibility-score/
 func Leetcode_Max_Div_Score() {
 	fmt.Println("Input: nums = [4,7,9,3,9], divisors = [5,2,3]")

@@ -2,6 +2,10 @@ package medium
 
 import "fmt"
 
+func init() {
+	Solutions[45] = Leetcode_Jumb_Game_II
+}
+
 // Reference: https://leetcode.com/problems/jump-game-ii/
 func Leetcode_Jumb_Game_II() {
 	fmt.Println("Input: nums = [2,3,1,1,4]")

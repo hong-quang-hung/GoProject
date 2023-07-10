@@ -2,6 +2,10 @@ package hard
 
 import "fmt"
 
+func init() {
+	Solutions[768] = Leetcode_Max_Chunks_To_Sorted_II
+}
+
 // Reference: https://leetcode.com/problems/max-chunks-to-make-sorted-ii/
 func Leetcode_Max_Chunks_To_Sorted_II() {
 	fmt.Println("Input: arr = [4,2,2,1,1]")

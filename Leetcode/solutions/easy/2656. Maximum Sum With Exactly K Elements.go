@@ -1,8 +1,10 @@
 package easy
 
-import (
-	"fmt"
-)
+import "fmt"
+
+func init() {
+	Solutions[2656] = Leetcode_Maximize_Sum
+}
 
 // Reference: https://leetcode.com/problems/maximum-sum-with-exactly-k-elements/
 func Leetcode_Maximize_Sum() {

@@ -1,8 +1,10 @@
 package medium
 
-import (
-	"fmt"
-)
+import "fmt"
+
+func init() {
+	Solutions[714] = Leetcode_Max_Profit_II
+}
 
 // Reference: https://leetcode.com/problems/best-time-to-buy-and-sell-stock-with-transaction-fee/
 func Leetcode_Max_Profit_II() {

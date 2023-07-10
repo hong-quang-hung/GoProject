@@ -1,8 +1,10 @@
 package medium
 
-import (
-	"fmt"
-)
+import "fmt"
+
+func init() {
+	Solutions[209] = Leetcode_Min_Sub_Array_Len
+}
 
 // Reference: https://leetcode.com/problems/minimum-size-subarray-sum/
 func Leetcode_Min_Sub_Array_Len() {

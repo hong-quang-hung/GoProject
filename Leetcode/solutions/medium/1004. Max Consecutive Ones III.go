@@ -2,6 +2,10 @@ package medium
 
 import "fmt"
 
+func init() {
+	Solutions[1004] = Leetcode_Longest_Ones
+}
+
 // Reference: https://leetcode.com/problems/max-consecutive-ones-iii/
 func Leetcode_Longest_Ones() {
 	fmt.Println("Input: nums = [1,1,1,0,0,0,1,1,1,1,0], k = 2")

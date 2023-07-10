@@ -1,8 +1,10 @@
 package medium
 
-import (
-	"fmt"
-)
+import "fmt"
+
+func init() {
+	Solutions[22] = Leetcode_Generate_Parenthesis
+}
 
 // Reference: https://leetcode.com/problems/generate-parentheses/
 func Leetcode_Generate_Parenthesis() {

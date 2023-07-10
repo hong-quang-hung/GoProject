@@ -2,6 +2,10 @@ package easy
 
 import "fmt"
 
+func init() {
+	Solutions[2729] = LeetCode_Is_Fascinating
+}
+
 // Reference: https://leetcode.com/problems/check-if-the-number-is-fascinating/
 func LeetCode_Is_Fascinating() {
 	fmt.Println("Input: n = 192")

@@ -2,6 +2,10 @@ package hard
 
 import "fmt"
 
+func init() {
+	Solutions[839] = Leetcode_Num_Similar_Groups
+}
+
 // Reference: https://leetcode.com/problems/similar-string-groups/
 func Leetcode_Num_Similar_Groups() {
 	fmt.Println("Input: strs = ['tars','rats','arts','star']")

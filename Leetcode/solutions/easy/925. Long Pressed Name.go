@@ -2,6 +2,10 @@ package easy
 
 import "fmt"
 
+func init() {
+	Solutions[925] = Leetcode_Is_Long_PressedName
+}
+
 // Reference: https://leetcode.com/problems/long-pressed-name/
 func Leetcode_Is_Long_PressedName() {
 	fmt.Println("Input: name = 'pyplrz', typed = 'ppyypllr'")

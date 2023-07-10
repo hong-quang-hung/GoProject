@@ -2,6 +2,10 @@ package medium
 
 import "fmt"
 
+func init() {
+	Solutions[19] = Leetcode_Remove_Nth_From_End
+}
+
 // Reference: https://leetcode.com/problems/remove-nth-node-from-end-of-list/
 func Leetcode_Remove_Nth_From_End() {
 	fmt.Println("Input: head = [1,2,3,4,5], n = 2")

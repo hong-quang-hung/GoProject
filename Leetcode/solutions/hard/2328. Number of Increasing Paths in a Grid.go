@@ -2,6 +2,10 @@ package hard
 
 import "fmt"
 
+func init() {
+	Solutions[2328] = Leetcode_Count_Paths
+}
+
 // Reference: https://leetcode.com/problems/number-of-increasing-paths-in-a-grid/
 func Leetcode_Count_Paths() {
 	fmt.Println("Input: grid = [[1,1],[3,4]]")

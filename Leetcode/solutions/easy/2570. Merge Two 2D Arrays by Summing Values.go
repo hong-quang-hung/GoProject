@@ -5,6 +5,10 @@ import (
 	"sort"
 )
 
+func init() {
+	Solutions[2570] = Leetcode_Merge_Arrays
+}
+
 // Reference: https://leetcode.com/problems/merge-two-2d-arrays-by-summing-values/
 func Leetcode_Merge_Arrays() {
 	fmt.Println("Input: nums1 = [[1,2],[2,3],[4,5]], nums2 = [[1,4],[3,2],[4,1]]")

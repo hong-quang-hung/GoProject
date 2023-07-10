@@ -2,6 +2,10 @@ package easy
 
 import "fmt"
 
+func init() {
+	Solutions[28] = Leetcode_StrStr
+}
+
 // Reference: https://leetcode.com/problems/find-the-index-of-the-first-occurrence-in-a-string/
 func Leetcode_StrStr() {
 	fmt.Println("Input: haystack = \"sadbutsad\", needle = \"sad\"")

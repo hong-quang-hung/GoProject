@@ -19,13 +19,13 @@ func Leetcode_Constructor() {
 	fmt.Println(solutions.GetRandom())
 }
 
-type Solution struct {
+type Random struct {
 	list []int
 }
 
-func SolutionConstructor(head *ListNode) Solution {
+func SolutionConstructor(head *ListNode) Random {
 	rand.NewSource(time.Now().UnixNano())
-	solutions := Solution{}
+	solutions := Random{}
 	for head != nil {
 		solutions.Append(head.Val)
 		head = head.Next
@@ -33,10 +33,10 @@ func SolutionConstructor(head *ListNode) Solution {
 	return solutions
 }
 
-func (s *Solution) GetRandom() int {
+func (s *Random) GetRandom() int {
 	return s.list[rand.Intn(len(s.list))]
 }
 
-func (s *Solution) Append(val int) {
+func (s *Random) Append(val int) {
 	s.list = append(s.list, val)
 }

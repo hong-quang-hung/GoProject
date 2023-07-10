@@ -1,8 +1,10 @@
 package medium
 
-import (
-	"fmt"
-)
+import "fmt"
+
+func init() {
+	Solutions[946] = Leetcode_Validate_Stack_Sequences
+}
 
 // Reference: https://leetcode.com/problems/validate-stack-sequences/
 func Leetcode_Validate_Stack_Sequences() {

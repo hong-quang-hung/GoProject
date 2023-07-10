@@ -4,6 +4,10 @@ import (
 	"fmt"
 )
 
+func init() {
+	Solutions[10] = Leetcode_Is_Match
+}
+
 // Reference: https://leetcode.com/problems/regular-expression-matching/
 func Leetcode_Is_Match() {
 	fmt.Println("Input: s = 'aa', p = 'a'")

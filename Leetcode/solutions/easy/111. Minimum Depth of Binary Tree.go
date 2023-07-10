@@ -2,6 +2,10 @@ package easy
 
 import "fmt"
 
+func init() {
+	Solutions[111] = Leetcode_Min_Depth
+}
+
 // Reference: https://leetcode.com/problems/minimum-depth-of-binary-tree/
 func Leetcode_Min_Depth() {
 	fmt.Println("Input: root = [3,9,20,null,null,15,7]")

@@ -1,8 +1,10 @@
 package medium
 
-import (
-	"fmt"
-)
+import "fmt"
+
+func init() {
+	Solutions[7] = Leetcode_Reverse
+}
 
 // Reference: https://leetcode.com/problems/reverse-integer/
 func Leetcode_Reverse() {

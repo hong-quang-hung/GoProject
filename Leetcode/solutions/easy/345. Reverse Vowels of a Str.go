@@ -2,6 +2,10 @@ package easy
 
 import "fmt"
 
+func init() {
+	Solutions[345] = Leetcode_Reverse_Vowels
+}
+
 // Reference: https://leetcode.com/problems/reverse-vowels-of-a-string/
 func Leetcode_Reverse_Vowels() {
 	fmt.Println("Input: s = 'hello'")

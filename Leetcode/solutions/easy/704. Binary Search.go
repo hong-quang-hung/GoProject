@@ -2,6 +2,10 @@ package easy
 
 import "fmt"
 
+func init() {
+	Solutions[704] = Leetcode_Search
+}
+
 // Reference: https://leetcode.com/problems/binary-search/
 func Leetcode_Search() {
 	fmt.Println("Input: nums = [-1,0,3,5,9,12], target = 9")

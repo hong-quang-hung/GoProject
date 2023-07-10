@@ -2,6 +2,10 @@ package easy
 
 import "fmt"
 
+func init() {
+	Solutions[2678] = Leetcode_Count_Seniors
+}
+
 // Reference: https://leetcode.com/problems/number-of-senior-citizens/
 func Leetcode_Count_Seniors() {
 	fmt.Println("Input: nums = ['7868190130M7522','5303914400F9211','9273338290F4010']")

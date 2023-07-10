@@ -2,6 +2,10 @@ package easy
 
 import "fmt"
 
+func init() {
+	Solutions[724] = Leetcode_Pivot_Index
+}
+
 // Reference: https://leetcode.com/problems/find-pivot-index/
 func Leetcode_Pivot_Index() {
 	fmt.Println("Input: nums = [1,7,3,6,5,6]")

@@ -5,6 +5,10 @@ import (
 	"sort"
 )
 
+func init() {
+	Solutions[40] = Leetcode_Combination_Sum_2
+}
+
 // Reference: https://leetcode.com/problems/combination-sum-ii/
 func Leetcode_Combination_Sum_2() {
 	fmt.Println("Input: candidates = [10,1,2,7,6,1,5], target = 8")

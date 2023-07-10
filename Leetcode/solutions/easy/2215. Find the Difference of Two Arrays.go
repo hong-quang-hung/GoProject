@@ -2,6 +2,10 @@ package easy
 
 import "fmt"
 
+func init() {
+	Solutions[2215] = Leetcode_Find_Difference
+}
+
 // Reference: https://leetcode.com/problems/find-the-difference-of-two-arrays/
 func Leetcode_Find_Difference() {
 	fmt.Println("Input: nums1 = [1,2,3], nums2 = [2,4,6]")

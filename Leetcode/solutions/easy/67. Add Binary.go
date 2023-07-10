@@ -2,6 +2,10 @@ package easy
 
 import "fmt"
 
+func init() {
+	Solutions[67] = Leetcode_Add_Binary
+}
+
 // Reference: https://leetcode.com/problems/add-binary/
 func Leetcode_Add_Binary() {
 	fmt.Println("Input: a = '1010', b = '1011'")

@@ -4,6 +4,10 @@ import (
 	"fmt"
 )
 
+func init() {
+	Solutions[1639] = Leetcode_Num_Ways
+}
+
 // Reference: https://leetcode.com/problems/number-of-ways-to-form-a-target-string-given-a-dictionary/
 func Leetcode_Num_Ways() {
 	fmt.Println("Input: words = ['acca','bbbb','caca'], target = 'aba'")

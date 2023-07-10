@@ -2,6 +2,10 @@ package medium
 
 import "fmt"
 
+func init() {
+	Solutions[46] = Leetcode_Permute
+}
+
 // Reference: https://leetcode.com/problems/permutations/
 func Leetcode_Permute() {
 	fmt.Println("Input: nums = [1,2,3]")

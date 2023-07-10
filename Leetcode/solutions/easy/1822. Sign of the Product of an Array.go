@@ -2,6 +2,10 @@ package easy
 
 import "fmt"
 
+func init() {
+	Solutions[1822] = Leetcode_Array_Sign
+}
+
 // Reference: https://leetcode.com/problems/sign-of-the-product-of-an-array/
 func Leetcode_Array_Sign() {
 	fmt.Println("Input: nums = [-1,-2,-3,-4,3,2,1]")

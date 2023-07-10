@@ -2,6 +2,10 @@ package medium
 
 import "fmt"
 
+func init() {
+	Solutions[106] = Leetcode_Build_Trees
+}
+
 // Reference: https://leetcode.com/problems/construct-binary-tree-from-inorder-and-postorder-traversal/
 func Leetcode_Build_Trees() {
 	fmt.Println("Input: inorder = [9,3,15,20,7], postorder = [9,15,7,20,3]")

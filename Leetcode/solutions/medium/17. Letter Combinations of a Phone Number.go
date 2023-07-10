@@ -2,6 +2,10 @@ package medium
 
 import "fmt"
 
+func init() {
+	Solutions[17] = Leetcode_Letter_Combinations
+}
+
 // Reference: https://leetcode.com/problems/letter-combinations-of-a-phone-number/
 func Leetcode_Letter_Combinations() {
 	fmt.Println("Input: digits = '23'")

@@ -1,8 +1,10 @@
 package medium
 
-import (
-	"fmt"
-)
+import "fmt"
+
+func init() {
+	Solutions[649] = Leetcode_Predict_Party_Victory
+}
 
 // Reference: https://leetcode.com/problems/dota2-senate/
 func Leetcode_Predict_Party_Victory() {

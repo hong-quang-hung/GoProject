@@ -5,6 +5,10 @@ import (
 	"math/bits"
 )
 
+func init() {
+	Solutions[1601] = Leetcode_Maximum_Requests
+}
+
 // Reference: https://leetcode.com/problems/maximum-number-of-achievable-transfer-requests/
 func Leetcode_Maximum_Requests() {
 	fmt.Println("Input: n = 5, requests = [[0,1],[1,0],[0,1],[1,2],[2,0],[3,4]]")

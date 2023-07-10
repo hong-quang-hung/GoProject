@@ -2,6 +2,10 @@ package hard
 
 import "fmt"
 
+func init() {
+	Solutions[1944] = Leetcode_Can_See_Persons_Count
+}
+
 // Reference: https://leetcode.com/problems/number-of-visible-people-in-a-queue/
 func Leetcode_Can_See_Persons_Count() {
 	fmt.Println("Input: heights = [10,6,8,5,11,9]")

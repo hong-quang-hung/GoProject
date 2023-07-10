@@ -2,6 +2,10 @@ package hard
 
 import "fmt"
 
+func init() {
+	Solutions[2444] = Leetcode_Count_Subarrays
+}
+
 // Reference: https://leetcode.com/problems/count-subarrays-with-fixed-bounds/
 func Leetcode_Count_Subarrays() {
 	fmt.Println("Input: nums = [1,3,5,2,7,5], minK = 1, maxK = 5")

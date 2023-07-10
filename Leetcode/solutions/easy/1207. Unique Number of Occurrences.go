@@ -2,6 +2,10 @@ package easy
 
 import "fmt"
 
+func init() {
+	Solutions[1207] = Leetcode_Unique_Occurrences
+}
+
 // Reference: https://leetcode.com/problems/unique-number-of-occurrences/
 func Leetcode_Unique_Occurrences() {
 	fmt.Println("Input: nums = [1,2,2,1,1,3]")

@@ -6,6 +6,10 @@ import (
 	"math"
 )
 
+func init() {
+	Solutions[1675] = Leetcode_Minimum_Deviation
+}
+
 // Reference: https://leetcode.com/problems/minimize-deviation-in-array/
 func Leetcode_Minimum_Deviation() {
 	fmt.Println("Input: nums = [1,2,3,4]")

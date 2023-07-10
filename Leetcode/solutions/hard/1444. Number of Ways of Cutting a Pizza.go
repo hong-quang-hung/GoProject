@@ -2,6 +2,10 @@ package hard
 
 import "fmt"
 
+func init() {
+	Solutions[1444] = Leetcode_Ways
+}
+
 // Reference: https://leetcode.com/problems/number-of-ways-of-cutting-a-pizza/
 func Leetcode_Ways() {
 	fmt.Println("Input: pizza = ['A..','AAA,'...'], k = 3")

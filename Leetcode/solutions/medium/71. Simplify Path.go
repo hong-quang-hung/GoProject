@@ -5,6 +5,10 @@ import (
 	"strings"
 )
 
+func init() {
+	Solutions[71] = Leetcode_Simplify_Path
+}
+
 // Reference: https://leetcode.com/problems/simplify-path/
 func Leetcode_Simplify_Path() {
 	fmt.Println("Input: path = '/.'")

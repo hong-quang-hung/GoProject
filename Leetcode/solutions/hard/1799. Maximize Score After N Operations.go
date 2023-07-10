@@ -5,6 +5,10 @@ import (
 	"math/bits"
 )
 
+func init() {
+	Solutions[1799] = Leetcode_Max_Score
+}
+
 // Reference: hhttps://leetcode.com/problems/maximize-score-after-n-operations/
 func Leetcode_Max_Score() {
 	fmt.Println("Input: nums = [1,2]")

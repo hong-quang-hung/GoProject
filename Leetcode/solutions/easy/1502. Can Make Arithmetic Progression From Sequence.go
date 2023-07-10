@@ -5,6 +5,10 @@ import (
 	"sort"
 )
 
+func init() {
+	Solutions[1502] = Leetcode_Can_Make_Arithmetic_Progression
+}
+
 // Reference: https://leetcode.com/problems/can-make-arithmetic-progression-from-sequence/
 func Leetcode_Can_Make_Arithmetic_Progression() {
 	fmt.Println("Input: arr = [3,5,1]")

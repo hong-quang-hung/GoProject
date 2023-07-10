@@ -5,6 +5,10 @@ import (
 	"math"
 )
 
+func init() {
+	Solutions[1925] = Leetcode_Count_Triples
+}
+
 // Reference: https://leetcode.com/problems/count-square-sum-triples/
 func Leetcode_Count_Triples() {
 	fmt.Println("Input: n = 5")

@@ -2,6 +2,10 @@ package hard
 
 import "fmt"
 
+func init() {
+	Solutions[2306] = Leetcode_Distinct_Names
+}
+
 // Reference: https://leetcode.com/problems/naming-a-company/
 func Leetcode_Distinct_Names() {
 	fmt.Println("Input: ideas = ['coffee','donuts','time','toffee']")

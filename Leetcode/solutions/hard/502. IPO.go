@@ -6,6 +6,10 @@ import (
 	"sort"
 )
 
+func init() {
+	Solutions[502] = Leetcode_Find_Maximized_Capital
+}
+
 // Reference: https://leetcode.com/problems/ipo/
 func Leetcode_Find_Maximized_Capital() {
 	fmt.Println("Input: k = 2, w = 0, profits = [1,2,3], capital = [0,1,1]")

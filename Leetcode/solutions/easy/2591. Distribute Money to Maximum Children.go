@@ -1,8 +1,10 @@
 package easy
 
-import (
-	"fmt"
-)
+import "fmt"
+
+func init() {
+	Solutions[2591] = Leetcode_Dist_Money
+}
 
 // Reference: https://leetcode.com/problems/distribute-money-to-maximum-children/
 func Leetcode_Dist_Money() {

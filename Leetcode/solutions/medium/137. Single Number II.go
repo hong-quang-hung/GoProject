@@ -2,6 +2,10 @@ package medium
 
 import "fmt"
 
+func init() {
+	Solutions[137] = Leetcode_Single_Number_II
+}
+
 // Reference: https://leetcode.com/problems/single-number-ii/
 func Leetcode_Single_Number_II() {
 	fmt.Println("Input: nums = [2,2,3,2]")

@@ -2,6 +2,10 @@ package medium
 
 import "fmt"
 
+func init() {
+	Solutions[77] = Leetcode_Combine
+}
+
 // Reference: https://leetcode.com/problems/combinations/
 func Leetcode_Combine() {
 	fmt.Println("Input: n = 4, k = 2")

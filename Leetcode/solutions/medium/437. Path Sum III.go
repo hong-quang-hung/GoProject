@@ -2,6 +2,10 @@ package medium
 
 import "fmt"
 
+func init() {
+	Solutions[437] = Leetcode_Path_Sum_III
+}
+
 // Reference: https://leetcode.com/problems/path-sum-iii/
 func Leetcode_Path_Sum_III() {
 	fmt.Println("Input: root = [10,5,-3,3,2,null,11,3,-2,null,1], targetSum = 8")

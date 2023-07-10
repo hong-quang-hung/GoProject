@@ -2,6 +2,10 @@ package medium
 
 import "fmt"
 
+func init() {
+	Solutions[377] = Leetcode_Combination_Sum_4
+}
+
 // Reference: https://leetcode.com/problems/combination-sum-iii/
 func Leetcode_Combination_Sum_4() {
 	fmt.Println("Input: nums = [1,2,3], target = 4")

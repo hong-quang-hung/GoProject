@@ -1,8 +1,10 @@
 package easy
 
-import (
-	"fmt"
-)
+import "fmt"
+
+func init() {
+	Solutions[141] = Leetcode_Has_Cycle
+}
 
 // Reference: https://leetcode.com/problems/linked-list-cycle/
 func Leetcode_Has_Cycle() {

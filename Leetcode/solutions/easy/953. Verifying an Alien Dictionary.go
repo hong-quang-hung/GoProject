@@ -2,6 +2,10 @@ package easy
 
 import "fmt"
 
+func init() {
+	Solutions[953] = Leetcode_Is_Alien_Sorted
+}
+
 // Reference: https://leetcode.com/problems/verifying-an-alien-dictionary/
 func Leetcode_Is_Alien_Sorted() {
 	fmt.Println("Input: words = ['hello','leetcode'], order = 'hlabcdefgijkmnopqrstuvwxyz'")

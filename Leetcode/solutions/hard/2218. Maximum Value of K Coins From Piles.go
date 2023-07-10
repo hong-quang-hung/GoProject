@@ -2,6 +2,10 @@ package hard
 
 import "fmt"
 
+func init() {
+	Solutions[2218] = Leetcode_Max_Value_Of_Coins
+}
+
 // Reference: https://leetcode.com/problems/maximum-value-of-k-coins-from-piles/
 func Leetcode_Max_Value_Of_Coins() {
 	fmt.Println("Input: piles = [[1,100,3],[7,8,9]], k = 2")

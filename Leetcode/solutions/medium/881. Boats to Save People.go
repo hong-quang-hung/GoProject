@@ -5,6 +5,10 @@ import (
 	"sort"
 )
 
+func init() {
+	Solutions[881] = Leetcode_Num_Rescue_Boats
+}
+
 // Reference: https://leetcode.com/problems/boats-to-save-people/
 func Leetcode_Num_Rescue_Boats() {
 	fmt.Println("Input: people = [3,2,3,2,2], limit = 6")

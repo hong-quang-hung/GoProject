@@ -5,6 +5,10 @@ import (
 	"strings"
 )
 
+func init() {
+	Solutions[290] = Leetcode_Word_Pattern
+}
+
 // Reference: https://leetcode.com/problems/word-pattern/
 func Leetcode_Word_Pattern() {
 	fmt.Println("Input: pattern = 'abba', s = 'dog cat cat dog'")

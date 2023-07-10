@@ -2,6 +2,10 @@ package easy
 
 import "fmt"
 
+func init() {
+	Solutions[989] = Leetcode_Add_To_Array_Form
+}
+
 // Reference: https://leetcode.com/problems/add-to-array-form-of-integer/
 func Leetcode_Add_To_Array_Form() {
 	fmt.Println("Input: num = [1,2,0,0], k = 34")

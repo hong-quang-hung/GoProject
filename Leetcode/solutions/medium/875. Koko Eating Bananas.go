@@ -5,6 +5,10 @@ import (
 	"math"
 )
 
+func init() {
+	Solutions[875] = Leetcode_Min_Eating_Speed
+}
+
 // Reference: https://leetcode.com/problems/koko-eating-bananas/
 func Leetcode_Min_Eating_Speed() {
 	fmt.Println("Input: piles = [3,6,7,11], h = 8")

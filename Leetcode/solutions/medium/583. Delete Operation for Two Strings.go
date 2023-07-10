@@ -2,6 +2,10 @@ package medium
 
 import "fmt"
 
+func init() {
+	Solutions[583] = Leetcode_Min_Distance
+}
+
 // Reference: https://leetcode.com/problems/delete-operation-for-two-strings/
 func Leetcode_Min_Distance() {
 	fmt.Println("Input: word1 = 'sea', word2 = 'eat'")

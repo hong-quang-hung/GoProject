@@ -5,6 +5,10 @@ import (
 	"fmt"
 )
 
+func init() {
+	Solutions[347] = Leetcode_Top_K_Frequent
+}
+
 // Reference: https://leetcode.com/problems/top-k-frequent-elements/
 func Leetcode_Top_K_Frequent() {
 	fmt.Println("Input: nums = [1,1,1,2,2,3], k = 2")

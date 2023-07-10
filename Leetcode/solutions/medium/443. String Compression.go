@@ -5,6 +5,10 @@ import (
 	"strconv"
 )
 
+func init() {
+	Solutions[443] = Leetcode_Compress
+}
+
 // Reference: https://leetcode.com/problems/string-compression/
 func Leetcode_Compress() {
 	fmt.Println("Input: chars = ['a','a','b','b','c','c','c']")

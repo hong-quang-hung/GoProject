@@ -1,8 +1,10 @@
 package easy
 
-import (
-	"fmt"
-)
+import "fmt"
+
+func init() {
+	Solutions[1979] = Leetcode_Find_GCD
+}
 
 // Reference: https://leetcode.com/problems/find-greatest-common-divisor-of-array/
 func Leetcode_Find_GCD() {

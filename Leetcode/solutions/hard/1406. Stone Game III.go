@@ -5,6 +5,10 @@ import (
 	"math"
 )
 
+func init() {
+	Solutions[1406] = Leetcode_Stone_Game_III
+}
+
 // Reference: https://leetcode.com/problems/stone-game-iii/
 func Leetcode_Stone_Game_III() {
 	fmt.Println("Input: values = [1,2,3,7]")

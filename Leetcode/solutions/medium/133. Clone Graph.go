@@ -2,6 +2,10 @@ package medium
 
 import "fmt"
 
+func init() {
+	Solutions[133] = Leetcode_Clone_Graph
+}
+
 // Reference: https://leetcode.com/problems/clone-graph/
 func Leetcode_Clone_Graph() {
 	fmt.Println("Input: adjList = [[2,4],[1,3],[2,4],[1,3]]")

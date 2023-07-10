@@ -2,6 +2,10 @@ package easy
 
 import "fmt"
 
+func init() {
+	Solutions[283] = Leetcode_Move_Zeroes
+}
+
 // Reference: https://leetcode.com/problems/move-zeroes/
 func Leetcode_Move_Zeroes() {
 	fmt.Println("Input: nums = [0,1,0,3,12]")

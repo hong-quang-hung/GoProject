@@ -5,6 +5,10 @@ import (
 	"strings"
 )
 
+func init() {
+	Solutions[151] = Leetcode_Reverse_Words
+}
+
 // Reference: https://leetcode.com/problems/reverse-words-in-a-string/
 func Leetcode_Reverse_Words() {
 	fmt.Println("Input: s = 'the sky is blue'")

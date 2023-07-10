@@ -7,6 +7,10 @@ import (
 	"strings"
 )
 
+func init() {
+	Solutions[8] = Leetcode_My_Atoi
+}
+
 // Reference: https://leetcode.com/problems/string-to-integer-atoi/
 func Leetcode_My_Atoi() {
 	fmt.Println("Input: x = '42'")

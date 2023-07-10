@@ -1,8 +1,10 @@
 package medium
 
-import (
-	"fmt"
-)
+import "fmt"
+
+func init() {
+	Solutions[36] = Leetcode_Is_Valid_Sudoku
+}
 
 // Reference: https://leetcode.com/problems/valid-sudoku/
 func Leetcode_Is_Valid_Sudoku() {

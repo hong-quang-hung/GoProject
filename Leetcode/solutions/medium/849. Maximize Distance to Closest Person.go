@@ -1,8 +1,10 @@
 package medium
 
-import (
-	"fmt"
-)
+import "fmt"
+
+func init() {
+	Solutions[849] = Leetcode_Max_Dist_To_Closest
+}
 
 // Reference: https://leetcode.com/problems/maximize-distance-to-closest-person/
 func Leetcode_Max_Dist_To_Closest() {

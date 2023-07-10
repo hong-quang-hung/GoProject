@@ -2,6 +2,10 @@ package easy
 
 import "fmt"
 
+func init() {
+	Solutions[101] = Leetcode_Is_Symmetric
+}
+
 // Reference: https://leetcode.com/problems/symmetric-tree/
 func Leetcode_Is_Symmetric() {
 	fmt.Println("Input: root = [1,2,2,3,4,4,3]")

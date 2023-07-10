@@ -2,6 +2,10 @@ package easy
 
 import "fmt"
 
+func init() {
+	Solutions[1572] = Leetcode_Diagonal_Sum
+}
+
 // Reference: https://leetcode.com/problems/matrix-diagonal-sum/
 func Leetcode_Diagonal_Sum() {
 	fmt.Println("Input: mat = [[1,2,3],[4,5,6],[7,8,9]]")

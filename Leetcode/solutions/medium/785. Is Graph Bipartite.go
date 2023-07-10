@@ -2,6 +2,10 @@ package medium
 
 import "fmt"
 
+func init() {
+	Solutions[785] = Leetcode_Is_Bipartite
+}
+
 // Reference: https://leetcode.com/problems/is-graph-bipartite/
 func Leetcode_Is_Bipartite() {
 	fmt.Println("Input: graph = [[1,2,3],[0,2],[0,1,3],[0,2]]")

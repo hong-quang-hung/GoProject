@@ -1,8 +1,10 @@
 package medium
 
-import (
-	"fmt"
-)
+import "fmt"
+
+func init() {
+	Solutions[198] = Leetcode_House_Robber
+}
 
 // Reference: https://leetcode.com/problems/house-robber/
 func Leetcode_House_Robber() {
