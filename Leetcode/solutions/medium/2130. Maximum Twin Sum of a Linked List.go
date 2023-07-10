@@ -2,6 +2,10 @@ package medium
 
 import "fmt"
 
+func init() {
+	Solutions[2130] = Leetcode_Pair_Sum
+}
+
 // Reference: https://leetcode.com/problems/maximum-twin-sum-of-a-linked-list/
 func Leetcode_Pair_Sum() {
 	fmt.Println("Input: head = [5,4,2,1]")

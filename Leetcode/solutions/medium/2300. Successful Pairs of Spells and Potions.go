@@ -5,6 +5,10 @@ import (
 	"sort"
 )
 
+func init() {
+	Solutions[2300] = Leetcode_Successful_Pairs
+}
+
 // Reference: https://leetcode.com/problems/successful-pairs-of-spells-and-potions/
 func Leetcode_Successful_Pairs() {
 	fmt.Println("Input: spells = [5,1,3], potions = [1,2,3,4,5], success = 7")

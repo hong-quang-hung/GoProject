@@ -5,6 +5,10 @@ import (
 	"math"
 )
 
+func init() {
+	Solutions[2187] = Leetcode_Minimum_Time
+}
+
 // Reference: https://leetcode.com/problems/minimum-time-to-complete-trips/
 func Leetcode_Minimum_Time() {
 	fmt.Println("Input: time = [1,2,3], totalTrips = 5")

@@ -2,6 +2,10 @@ package medium
 
 import "fmt"
 
+func init() {
+	Solutions[2348] = Leetcode_Zero_Filled_Subarray
+}
+
 // Reference: https://leetcode.com/problems/number-of-zero-filled-subarrays/
 func Leetcode_Zero_Filled_Subarray() {
 	fmt.Println("Input: nums = [0,0,0,2,0,0]")

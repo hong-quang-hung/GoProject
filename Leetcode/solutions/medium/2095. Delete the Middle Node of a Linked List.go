@@ -2,6 +2,10 @@ package medium
 
 import "fmt"
 
+func init() {
+	Solutions[2095] = Leetcode_Delete_Middle
+}
+
 // Reference: https://leetcode.com/problems/delete-the-middle-node-of-a-linked-list/
 func Leetcode_Delete_Middle() {
 	fmt.Println("Input: head = [1,3,4,7,1,2,6]")

@@ -1,8 +1,10 @@
 package medium
 
-import (
-	"fmt"
-)
+import "fmt"
+
+func init() {
+	Solutions[2352] = Leetcode_Equal_Pairs
+}
 
 // Reference: https://leetcode.com/problems/equal-row-and-column-pairs/
 func Leetcode_Equal_Pairs() {

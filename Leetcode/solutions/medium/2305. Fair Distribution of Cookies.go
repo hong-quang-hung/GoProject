@@ -5,6 +5,10 @@ import (
 	"math"
 )
 
+func init() {
+	Solutions[2305] = Leetcode_Distribute_Cookies
+}
+
 // Reference: https://leetcode.com/problems/fair-distribution-of-cookies/
 func Leetcode_Distribute_Cookies() {
 	fmt.Println("Input: cookies = [8,15,10,20,8], k = 2")

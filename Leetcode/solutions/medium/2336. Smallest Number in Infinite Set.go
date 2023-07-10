@@ -5,6 +5,10 @@ import (
 	"fmt"
 )
 
+func init() {
+	Solutions[2336] = Leetcode_Smallest_Infinite_Set
+}
+
 // Reference: https://leetcode.com/problems/smallest-number-in-infinite-set/
 func Leetcode_Smallest_Infinite_Set() {
 	fmt.Println("Input:")

@@ -2,6 +2,10 @@ package medium
 
 import "fmt"
 
+func init() {
+	Solutions[2316] = Leetcode_Count_Pairs
+}
+
 // Reference: https://leetcode.com/problems/count-unreachable-pairs-of-nodes-in-an-undirected-graph/
 func Leetcode_Count_Pairs() {
 	fmt.Println("Input: n = 7, edges = [[0,2],[0,5],[2,4],[1,6],[5,4]]")

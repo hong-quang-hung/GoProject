@@ -2,6 +2,10 @@ package medium
 
 import "fmt"
 
+func init() {
+	Solutions[2390] = Leetcode_Remove_Stars
+}
+
 // Reference: https://leetcode.com/problems/removing-stars-from-a-string/
 func Leetcode_Remove_Stars() {
 	fmt.Println("Input: s = 'leet**cod*e'")

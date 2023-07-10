@@ -2,6 +2,10 @@ package medium
 
 import "fmt"
 
+func init() {
+	Solutions[2101] = Leetcode_Maximum_Detonation
+}
+
 // Reference: https://leetcode.com/problems/detonate-the-maximum-bombs/
 func Leetcode_Maximum_Detonation() {
 	fmt.Println("Input: bombs = [[2,1,3],[6,1,4]]")

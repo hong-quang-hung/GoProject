@@ -32,7 +32,6 @@ func init() {
 
 	// #region Solution
 	// _SOLUTIONS_[101965] = easy.Leetcode_SQL
-	// _SOLUTIONS_[102606] = medium.Leetcode_Maximum_Cost_Substring
 	// _SOLUTIONS_[102619] = easy.Leetcode_Javascript
 	// _SOLUTIONS_[102620] = easy.Leetcode_Javascript
 	// _SOLUTIONS_[102621] = easy.Leetcode_Javascript
@@ -59,20 +58,6 @@ func init() {
 	// _SOLUTIONS_[100570] = medium.Leetcode_SQL
 	// _SOLUTIONS_[100585] = medium.Leetcode_SQL
 
-	// _SOLUTIONS_[102095] = medium.Leetcode_Delete_Middle
-	// _SOLUTIONS_[102101] = medium.Leetcode_Maximum_Detonation
-	// _SOLUTIONS_[102130] = medium.Leetcode_Pair_Sum
-	// _SOLUTIONS_[102140] = medium.Leetcode_Most_Points
-	// _SOLUTIONS_[102145] = medium.Leetcode_Number_Of_Arrays
-	// _SOLUTIONS_[102187] = medium.Leetcode_Minimum_Time
-	// _SOLUTIONS_[102275] = medium.Leetcode_Largest_Combination
-	// _SOLUTIONS_[102300] = medium.Leetcode_Successful_Pairs
-	// _SOLUTIONS_[102305] = medium.Leetcode_Distribute_Cookies
-	// _SOLUTIONS_[102316] = medium.Leetcode_Count_Pairs
-	// _SOLUTIONS_[102336] = medium.Leetcode_Smallest_Infinite_Set
-	// _SOLUTIONS_[102348] = medium.Leetcode_Zero_Filled_Subarray
-	// _SOLUTIONS_[102352] = medium.Leetcode_Equal_Pairs
-	// _SOLUTIONS_[102390] = medium.Leetcode_Remove_Stars
 	// _SOLUTIONS_[102405] = medium.Leetcode_Partition_String
 	// _SOLUTIONS_[102419] = medium.Leetcode_Longest_Subarray_II
 	// _SOLUTIONS_[102439] = medium.Leetcode_Minimize_Array_Value
@@ -95,7 +80,9 @@ func init() {
 	// _SOLUTIONS_[102597] = medium.Leetcode_Beautiful_Subsets
 	// _SOLUTIONS_[102601] = medium.Leetcode_Prime_Sub_Operation
 	// _SOLUTIONS_[102602] = medium.Leetcode_Min_Operations_I
+	// _SOLUTIONS_[102606] = medium.Leetcode_Maximum_Cost_Substring
 	// _SOLUTIONS_[102610] = medium.Leetcode_Find_Matrix
+
 	// _SOLUTIONS_[102618] = medium.Leetcode_Javascript
 	// _SOLUTIONS_[102622] = medium.Leetcode_Javascript
 	// _SOLUTIONS_[102623] = medium.Leetcode_Javascript
@@ -106,6 +93,7 @@ func init() {
 	// _SOLUTIONS_[102632] = medium.Leetcode_Javascript
 	// _SOLUTIONS_[102633] = medium.Leetcode_Javascript
 	// _SOLUTIONS_[102636] = medium.Leetcode_Javascript
+
 	// _SOLUTIONS_[102640] = medium.Leetcode_Find_Prefix_Score
 	// _SOLUTIONS_[102641] = medium.Leetcode_Replace_Value_In_Tree
 	// _SOLUTIONS_[102645] = medium.Leetcode_Add_Minimum

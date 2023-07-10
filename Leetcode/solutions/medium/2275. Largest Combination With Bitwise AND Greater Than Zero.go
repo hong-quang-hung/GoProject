@@ -1,8 +1,10 @@
 package medium
 
-import (
-	"fmt"
-)
+import "fmt"
+
+func init() {
+	Solutions[2275] = Leetcode_Largest_Combination
+}
 
 // Reference: https://leetcode.com/problems/largest-combination-with-bitwise-and-greater-than-zero/
 func Leetcode_Largest_Combination() {
