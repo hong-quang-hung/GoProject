@@ -5,6 +5,10 @@ import (
 	"sort"
 )
 
+func init() {
+	Solutions[1657] = Leetcode_Close_Strings
+}
+
 // Reference: https://leetcode.com/problems/determine-if-two-strings-are-close/
 func Leetcode_Close_Strings() {
 	fmt.Println("Input: word1 = 'abc', word2 = 'bca'")

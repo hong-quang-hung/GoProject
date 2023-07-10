@@ -1,8 +1,10 @@
 package medium
 
-import (
-	"fmt"
-)
+import "fmt"
+
+func init() {
+	Solutions[1721] = Leetcode_Swap_Nodes
+}
 
 // Reference: https://leetcode.com/problems/swapping-nodes-in-a-linked-list/
 func Leetcode_Swap_Nodes() {

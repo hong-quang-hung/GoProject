@@ -2,6 +2,10 @@ package medium
 
 import "fmt"
 
+func init() {
+	Solutions[1802] = Leetcode_Max_Value
+}
+
 // Reference: https://leetcode.com/problems/maximum-value-at-a-given-index-in-a-bounded-array/
 func Leetcode_Max_Value() {
 	fmt.Println("Input: n = 4, index = 2, maxSum = 6")

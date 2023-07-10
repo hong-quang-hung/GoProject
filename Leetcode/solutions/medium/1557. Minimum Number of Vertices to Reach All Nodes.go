@@ -2,6 +2,10 @@ package medium
 
 import "fmt"
 
+func init() {
+	Solutions[1557] = Leetcode_Find_Smallest_Set_Of_Vertices
+}
+
 // Reference: https://leetcode.com/problems/minimum-number-of-vertices-to-reach-all-nodes/
 func Leetcode_Find_Smallest_Set_Of_Vertices() {
 	fmt.Println("Input: n = 6, edges = [[0,1],[0,2],[2,5],[3,4],[4,2]]")

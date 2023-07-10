@@ -2,6 +2,10 @@ package medium
 
 import "fmt"
 
+func init() {
+	Solutions[2024] = Leetcode_Max_Consecutive_Answers
+}
+
 // Reference: https://leetcode.com/problems/maximize-the-confusion-of-an-exam/
 func Leetcode_Max_Consecutive_Answers() {
 	fmt.Println("Input: answerKey = 'TTFF', k = 2")

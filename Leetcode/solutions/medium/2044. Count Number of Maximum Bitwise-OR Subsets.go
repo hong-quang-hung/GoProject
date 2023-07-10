@@ -1,8 +1,10 @@
 package medium
 
-import (
-	"fmt"
-)
+import "fmt"
+
+func init() {
+	Solutions[2044] = Leetcode_Count_Max_Or_Subsets
+}
 
 // Reference: https://leetcode.com/problems/count-number-of-maximum-bitwise-or-subsets/
 func Leetcode_Count_Max_Or_Subsets() {

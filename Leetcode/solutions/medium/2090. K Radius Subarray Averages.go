@@ -2,6 +2,10 @@ package medium
 
 import "fmt"
 
+func init() {
+	Solutions[2090] = Leetcode_Get_Averages
+}
+
 // Reference: https://leetcode.com/problems/k-radius-subarray-averages/
 func Leetcode_Get_Averages() {
 	fmt.Println("Input: nums = [7,4,3,9,1,8,5,2,6], k = 3")

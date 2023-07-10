@@ -5,6 +5,10 @@ import (
 	"fmt"
 )
 
+func init() {
+	Solutions[1514] = Leetcode_Max_Probability
+}
+
 // Reference: https://leetcode.com/problems/path-with-maximum-probability/
 func Leetcode_Max_Probability() {
 	fmt.Println("Input:  n = 3, edges = [[0,1],[1,2],[0,2]], succProb = [0.5,0.5,0.2], start = 0, end = 2")

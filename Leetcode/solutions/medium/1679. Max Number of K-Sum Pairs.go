@@ -5,6 +5,10 @@ import (
 	"sort"
 )
 
+func init() {
+	Solutions[1679] = Leetcode_Max_Operations
+}
+
 // Reference: https://leetcode.com/problems/max-number-of-k-sum-pairs/
 func Leetcode_Max_Operations() {
 	fmt.Println("Input: nums = [1,2,3,4], k = 5")

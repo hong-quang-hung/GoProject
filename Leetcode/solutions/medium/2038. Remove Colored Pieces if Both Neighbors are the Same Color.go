@@ -1,8 +1,10 @@
 package medium
 
-import (
-	"fmt"
-)
+import "fmt"
+
+func init() {
+	Solutions[2038] = Leetcode_Winner_Of_Game
+}
 
 // Reference: https://leetcode.com/problems/remove-colored-pieces-if-both-neighbors-are-the-same-color/
 func Leetcode_Winner_Of_Game() {
