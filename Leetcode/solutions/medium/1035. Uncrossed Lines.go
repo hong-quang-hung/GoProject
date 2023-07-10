@@ -1,8 +1,10 @@
 package medium
 
-import (
-	"fmt"
-)
+import "fmt"
+
+func init() {
+	Solutions[1035] = Leetcode_Longest_Arith_Seq_Length
+}
 
 // Reference: https://leetcode.com/problems/uncrossed-lines/
 func Leetcode_Max_Uncrossed_Lines() {

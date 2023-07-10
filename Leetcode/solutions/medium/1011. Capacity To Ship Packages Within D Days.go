@@ -2,6 +2,10 @@ package medium
 
 import "fmt"
 
+func init() {
+	Solutions[1011] = Leetcode_Ship_Within_Days
+}
+
 // Reference: https://leetcode.com/problems/capacity-to-ship-packages-within-d-days/
 func Leetcode_Ship_Within_Days() {
 	fmt.Println("Input: weights = [1,2,3,4,5,6,7,8,9,10], days = 5")

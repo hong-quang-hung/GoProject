@@ -2,6 +2,10 @@ package medium
 
 import "fmt"
 
+func init() {
+	Solutions[1020] = Leetcode_Num_Enclaves
+}
+
 // Reference: https://leetcode.com/problems/number-of-enclaves/
 func Leetcode_Num_Enclaves() {
 	fmt.Println("Input: grid = [[0,0,0,0],[1,0,1,0],[0,1,1,0],[0,0,0,0]]")

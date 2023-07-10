@@ -2,6 +2,10 @@ package medium
 
 import "fmt"
 
+func init() {
+	Solutions[1027] = Leetcode_Longest_Arith_Seq_Length
+}
+
 // Reference: https://leetcode.com/problems/longest-arithmetic-subsequence/
 func Leetcode_Longest_Arith_Seq_Length() {
 	fmt.Println("Input: nums = [3,6,9,12]")
