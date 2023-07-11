@@ -5,24 +5,21 @@ import (
 	"strings"
 )
 
-func init() {
-	Solutions[71] = Leetcode_Simplify_Path
-}
-
 // Reference: https://leetcode.com/problems/simplify-path/
-func Leetcode_Simplify_Path() {
-	fmt.Println("Input: path = '/.'")
-	fmt.Println("Output:", simplifyPath("/."))
-	fmt.Println("Input: path = '/a/../../b/../c//.//'")
-	fmt.Println("Output:", simplifyPath("/a/../../b/../c//.//"))
-	fmt.Println("Input: path = '/a//b////c/d//././/..'")
-	fmt.Println("Output:", simplifyPath("/a//b////c/d//././/.."))
+func init() {
+	Solutions[71] = func() {
+		fmt.Println("Input: path = '/.'")
+		fmt.Println("Output:", simplifyPath("/."))
+		fmt.Println("Input: path = '/a/../../b/../c//.//'")
+		fmt.Println("Output:", simplifyPath("/a/../../b/../c//.//"))
+		fmt.Println("Input: path = '/a//b////c/d//././/..'")
+		fmt.Println("Output:", simplifyPath("/a//b////c/d//././/.."))
+	}
 }
 
 func simplifyPath(path string) string {
 	contents := strings.Split(path, "/")
 	lenContents := len(contents)
-
 	for i := 0; i < lenContents; i++ {
 		char := contents[i]
 		if (char == ".." && i == 0) || (char == "" && i < lenContents) || char == "." {

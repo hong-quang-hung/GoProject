@@ -2,18 +2,16 @@ package medium
 
 import "fmt"
 
-func init() {
-	Solutions[216] = Leetcode_Combination_Sum_III
-}
-
 // Reference: https://leetcode.com/problems/combination-sum-iii/
-func Leetcode_Combination_Sum_III() {
-	fmt.Println("Input: k = 3, n = 7")
-	fmt.Println("Output:", combinationSum3(3, 7))
-	fmt.Println("Input: k = 3, n = 9")
-	fmt.Println("Output:", combinationSum3(3, 9))
-	fmt.Println("Input: k = 2, n = 18")
-	fmt.Println("Output:", combinationSum3(2, 18))
+func init() {
+	Solutions[216] = func() {
+		fmt.Println("Input: k = 3, n = 7")
+		fmt.Println("Output:", combinationSum3(3, 7))
+		fmt.Println("Input: k = 3, n = 9")
+		fmt.Println("Output:", combinationSum3(3, 9))
+		fmt.Println("Input: k = 2, n = 18")
+		fmt.Println("Output:", combinationSum3(2, 18))
+	}
 }
 
 func combinationSum3(k int, n int) [][]int {

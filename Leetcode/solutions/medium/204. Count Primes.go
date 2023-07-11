@@ -2,18 +2,14 @@ package medium
 
 import "fmt"
 
-func init() {
-	Solutions[204] = Leetcode_Count_Primes
-}
-
 // Reference: https://leetcode.com/problems/count-primes/
-func Leetcode_Count_Primes() {
-	fmt.Println("Input: n = 10")
-	fmt.Println("Output:", countPrimes(10))
-	fmt.Println("Input: n = 994794")
-	fmt.Println("Output:", countPrimes(994794))
-	fmt.Println("Input: n = 100")
-	fmt.Println("Output:", countPrimes(100))
+func init() {
+	Solutions[204] = func() {
+		fmt.Println("Input: n = 10")
+		fmt.Println("Output:", countPrimes(10))
+		fmt.Println("Input: n = 994794")
+		fmt.Println("Output:", countPrimes(994794))
+	}
 }
 
 func countPrimes(n int) int {

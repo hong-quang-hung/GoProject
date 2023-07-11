@@ -5,16 +5,14 @@ import (
 	"strings"
 )
 
-func init() {
-	Solutions[38] = Leetcode_Count_And_Say
-}
-
 // Reference: https://leetcode.com/problems/count-and-say/
-func Leetcode_Count_And_Say() {
-	fmt.Println("Input: n = 1")
-	fmt.Println("Output:", countAndSay(1))
-	fmt.Println("Input: n = 4")
-	fmt.Println("Output:", countAndSay(4))
+func init() {
+	Solutions[38] = func() {
+		fmt.Println("Input: n = 1")
+		fmt.Println("Output:", countAndSay(1))
+		fmt.Println("Input: n = 4")
+		fmt.Println("Output:", countAndSay(4))
+	}
 }
 
 func countAndSay(n int) string {

@@ -2,16 +2,14 @@ package medium
 
 import "fmt"
 
-func init() {
-	Solutions[45] = Leetcode_Jumb_Game_II
-}
-
 // Reference: https://leetcode.com/problems/jump-game-ii/
-func Leetcode_Jumb_Game_II() {
-	fmt.Println("Input: nums = [2,3,1,1,4]")
-	fmt.Println("Output:", jump_ii([]int{2, 3, 1, 1, 4}))
-	fmt.Println("Input: nums = [2,3,0,1,4]]")
-	fmt.Println("Output:", jump_ii([]int{2, 3, 0, 1, 4}))
+func init() {
+	Solutions[45] = func() {
+		fmt.Println("Input: nums = [2,3,1,1,4]")
+		fmt.Println("Output:", jump_ii([]int{2, 3, 1, 1, 4}))
+		fmt.Println("Input: nums = [2,3,0,1,4]]")
+		fmt.Println("Output:", jump_ii([]int{2, 3, 0, 1, 4}))
+	}
 }
 
 func jump_ii(nums []int) int {

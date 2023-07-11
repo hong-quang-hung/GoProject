@@ -5,18 +5,16 @@ import (
 	"math"
 )
 
-func init() {
-	Solutions[309] = Leetcode_Max_Profit
-}
-
 // Reference: https://leetcode.com/problems/best-time-to-buy-and-sell-stock-with-cooldown/
-func Leetcode_Max_Profit() {
-	fmt.Println("Input: prices = [1,2,3,0,2]")
-	fmt.Println("Output:", maxProfit([]int{1, 2, 3, 0, 2}))
-	fmt.Println("Input: prices = [1,2,4]")
-	fmt.Println("Output:", maxProfit([]int{1, 2, 4}))
-	fmt.Println("Input: prices = [2,1,4]")
-	fmt.Println("Output:", maxProfit([]int{2, 1, 4}))
+func init() {
+	Solutions[309] = func() {
+		fmt.Println("Input: prices = [1,2,3,0,2]")
+		fmt.Println("Output:", maxProfit([]int{1, 2, 3, 0, 2}))
+		fmt.Println("Input: prices = [1,2,4]")
+		fmt.Println("Output:", maxProfit([]int{1, 2, 4}))
+		fmt.Println("Input: prices = [2,1,4]")
+		fmt.Println("Output:", maxProfit([]int{2, 1, 4}))
+	}
 }
 
 func maxProfit(prices []int) int {

@@ -5,16 +5,14 @@ import (
 	"math"
 )
 
-func init() {
-	Solutions[313] = Leetcode_Nth_Super_Ugly_Number
-}
-
 // Reference: https://leetcode.com/problems/super-ugly-number/
-func Leetcode_Nth_Super_Ugly_Number() {
-	fmt.Println("Input: n = 12, primes = [2,7,13,19]")
-	fmt.Println("Output:", nthSuperUglyNumber(12, []int{2, 7, 13, 19}))
-	fmt.Println("Input: n = 1, primes = [2,3,5]")
-	fmt.Println("Output:", nthSuperUglyNumber(1, []int{2, 3, 5}))
+func init() {
+	Solutions[313] = func() {
+		fmt.Println("Input: n = 12, primes = [2,7,13,19]")
+		fmt.Println("Output:", nthSuperUglyNumber(12, []int{2, 7, 13, 19}))
+		fmt.Println("Input: n = 1, primes = [2,3,5]")
+		fmt.Println("Output:", nthSuperUglyNumber(1, []int{2, 3, 5}))
+	}
 }
 
 func nthSuperUglyNumber(n int, primes []int) int {
@@ -37,7 +35,6 @@ func nthSuperUglyNumber(n int, primes []int) int {
 		}
 
 		dp[i] = minP
-
 		for j := 0; j < p; j++ {
 			if dp[i] == dp[primeVal[j]]*primes[j] {
 				primeVal[j]++

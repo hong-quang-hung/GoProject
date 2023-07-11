@@ -2,16 +2,14 @@ package medium
 
 import "fmt"
 
-func init() {
-	Solutions[59] = Leetcode_Generate_Matrix
-}
-
 // Reference: https://leetcode.com/problems/spiral-matrix-ii/
-func Leetcode_Generate_Matrix() {
-	fmt.Println("Input: n = 3")
-	fmt.Println("Output:", generateMatrix(3))
-	fmt.Println("Input: n = 1")
-	fmt.Println("Output:", generateMatrix(1))
+func init() {
+	Solutions[59] = func() {
+		fmt.Println("Input: n = 3")
+		fmt.Println("Output:", generateMatrix(3))
+		fmt.Println("Input: n = 1")
+		fmt.Println("Output:", generateMatrix(1))
+	}
 }
 
 func generateMatrix(n int) [][]int {

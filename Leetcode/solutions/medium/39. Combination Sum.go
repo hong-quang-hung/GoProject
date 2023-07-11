@@ -2,18 +2,16 @@ package medium
 
 import "fmt"
 
-func init() {
-	Solutions[39] = Leetcode_Combination_Sum
-}
-
 // Reference: https://leetcode.com/problems/combination-sum/
-func Leetcode_Combination_Sum() {
-	fmt.Println("Input: candidates = [2,3,6,7], target = 7")
-	fmt.Println("Output:", combinationSum([]int{2, 3, 6, 7}, 7))
-	fmt.Println("Input: candidates = [2,3,5], target = 8")
-	fmt.Println("Output:", combinationSum([]int{2, 3, 5}, 8))
-	fmt.Println("Input: candidates = [8,7,4,3], target = 11")
-	fmt.Println("Output:", combinationSum([]int{8, 7, 4, 3}, 11))
+func init() {
+	Solutions[39] = func() {
+		fmt.Println("Input: candidates = [2,3,6,7], target = 7")
+		fmt.Println("Output:", combinationSum([]int{2, 3, 6, 7}, 7))
+		fmt.Println("Input: candidates = [2,3,5], target = 8")
+		fmt.Println("Output:", combinationSum([]int{2, 3, 5}, 8))
+		fmt.Println("Input: candidates = [8,7,4,3], target = 11")
+		fmt.Println("Output:", combinationSum([]int{8, 7, 4, 3}, 11))
+	}
 }
 
 func combinationSum(candidates []int, target int) [][]int {

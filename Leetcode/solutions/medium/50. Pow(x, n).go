@@ -2,18 +2,14 @@ package medium
 
 import "fmt"
 
-func init() {
-	Solutions[50] = Leetcode_My_Pow
-}
-
 // Reference: https://leetcode.com/problems/powx-n/
-func Leetcode_My_Pow() {
-	fmt.Println("Input: x = 2.00000, n = 10")
-	fmt.Println("Output:", myPow(2.00000, 10))
-	fmt.Println("Input: x = 2.10000, n = 3")
-	fmt.Println("Output:", myPow(2.10000, 3))
-	fmt.Println("Input: x = 2.00000, n = -1")
-	fmt.Println("Output:", myPow(2.00000, -1))
+func init() {
+	Solutions[50] = func() {
+		fmt.Println("Input: x = 2.00000, n = 10")
+		fmt.Println("Output:", myPow(2.00000, 10))
+		fmt.Println("Input: x = 2.00000, n = -1")
+		fmt.Println("Output:", myPow(2.00000, -1))
+	}
 }
 
 func myPow(x float64, n int) float64 {

@@ -2,18 +2,16 @@ package medium
 
 import "fmt"
 
-func init() {
-	Solutions[7] = Leetcode_Reverse
-}
-
 // Reference: https://leetcode.com/problems/reverse-integer/
-func Leetcode_Reverse() {
-	fmt.Println("Input: x = 123")
-	fmt.Println("Output:", reverse(123))
-	fmt.Println("Input: x = -123")
-	fmt.Println("Output:", reverse(-123))
-	fmt.Println("Input: x = 120")
-	fmt.Println("Output:", reverse(120))
+func init() {
+	Solutions[7] = func() {
+		fmt.Println("Input: x = 123")
+		fmt.Println("Output:", reverse(123))
+		fmt.Println("Input: x = -123")
+		fmt.Println("Output:", reverse(-123))
+		fmt.Println("Input: x = 120")
+		fmt.Println("Output:", reverse(120))
+	}
 }
 
 func reverse(x int) int {

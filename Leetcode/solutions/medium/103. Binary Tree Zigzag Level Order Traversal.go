@@ -2,14 +2,12 @@ package medium
 
 import "fmt"
 
-func init() {
-	Solutions[103] = Leetcode_Zigzag_Level_Order
-}
-
 // Reference: https://leetcode.com/problems/binary-tree-zigzag-level-order-traversal/
-func Leetcode_Zigzag_Level_Order() {
-	fmt.Println("Input: root = [3,9,20,null,null,15,7]")
-	fmt.Println("Output:", zigzagLevelOrder(S2TreeNode("[3,9,20,null,null,15,7]")))
+func init() {
+	Solutions[103] = func() {
+		fmt.Println("Input: root = [3,9,20,null,null,15,7]")
+		fmt.Println("Output:", zigzagLevelOrder(S2TreeNode("[3,9,20,null,null,15,7]")))
+	}
 }
 
 func zigzagLevelOrder(root *TreeNode) [][]int {

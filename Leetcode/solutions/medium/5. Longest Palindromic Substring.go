@@ -2,14 +2,12 @@ package medium
 
 import "fmt"
 
-func init() {
-	Solutions[5] = Leetcode_Longest_Palindrome
-}
-
 // Reference: https://leetcode.com/problems/longest-palindromic-substring/
-func Leetcode_Longest_Palindrome() {
-	fmt.Println("Input: s = 'babad'")
-	fmt.Println("Output:", longestPalindrome("babad"))
+func init() {
+	Solutions[5] = func() {
+		fmt.Println("Input: s = 'babad'")
+		fmt.Println("Output:", longestPalindrome("babad"))
+	}
 }
 
 func longestPalindrome(s string) string {
@@ -17,8 +15,7 @@ func longestPalindrome(s string) string {
 		return ""
 	}
 
-	var start int = 0
-	var end int = 0
+	start, end := 0, 0
 	for i := 0; i < len(s); i++ {
 		len1 := expandAroundCenter(s, i, i)
 		len2 := expandAroundCenter(s, i, i+1)
@@ -28,6 +25,7 @@ func longestPalindrome(s string) string {
 		} else {
 			len = len2
 		}
+
 		if len > end-start {
 			start = i - (len-1)/2
 			end = i + len/2

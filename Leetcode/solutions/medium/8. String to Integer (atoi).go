@@ -7,18 +7,14 @@ import (
 	"strings"
 )
 
-func init() {
-	Solutions[8] = Leetcode_My_Atoi
-}
-
 // Reference: https://leetcode.com/problems/string-to-integer-atoi/
-func Leetcode_My_Atoi() {
-	fmt.Println("Input: x = '42'")
-	fmt.Println("Output:", myAtoi(""))
-	fmt.Println("Input: x = '   -42'")
-	fmt.Println("Output:", myAtoi(""))
-	fmt.Println("Input: x = '4193 with words'")
-	fmt.Println("Output:", myAtoi("4193 with words"))
+func init() {
+	Solutions[8] = func() {
+		fmt.Println("Input: x = '42'")
+		fmt.Println("Output:", myAtoi(""))
+		fmt.Println("Input: x = '4193 with words'")
+		fmt.Println("Output:", myAtoi("4193 with words"))
+	}
 }
 
 func myAtoi(s string) int {

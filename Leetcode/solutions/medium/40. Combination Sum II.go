@@ -5,16 +5,14 @@ import (
 	"sort"
 )
 
-func init() {
-	Solutions[40] = Leetcode_Combination_Sum_2
-}
-
 // Reference: https://leetcode.com/problems/combination-sum-ii/
-func Leetcode_Combination_Sum_2() {
-	fmt.Println("Input: candidates = [10,1,2,7,6,1,5], target = 8")
-	fmt.Println("Output:", combinationSum2([]int{10, 1, 2, 7, 6, 1, 5}, 8))
-	fmt.Println("Input: candidates = [2,5,2,1,2], target = 5")
-	fmt.Println("Output:", combinationSum2([]int{2, 5, 2, 1, 2}, 5))
+func init() {
+	Solutions[40] = func() {
+		fmt.Println("Input: candidates = [10,1,2,7,6,1,5], target = 8")
+		fmt.Println("Output:", combinationSum2([]int{10, 1, 2, 7, 6, 1, 5}, 8))
+		fmt.Println("Input: candidates = [2,5,2,1,2], target = 5")
+		fmt.Println("Output:", combinationSum2([]int{2, 5, 2, 1, 2}, 5))
+	}
 }
 
 func combinationSum2(candidates []int, target int) [][]int {

@@ -2,15 +2,12 @@ package medium
 
 import "fmt"
 
-func init() {
-	Solutions[106] = Leetcode_Build_Trees
-}
-
 // Reference: https://leetcode.com/problems/construct-binary-tree-from-inorder-and-postorder-traversal/
-func Leetcode_Build_Trees() {
-	fmt.Println("Input: inorder = [9,3,15,20,7], postorder = [9,15,7,20,3]")
-	fmt.Println("Output:", STreeNode(buildTree([]int{9, 3, 15, 20, 7}, []int{9, 15, 7, 20, 3})))
-
+func init() {
+	Solutions[106] = func() {
+		fmt.Println("Input: inorder = [9,3,15,20,7], postorder = [9,15,7,20,3]")
+		fmt.Println("Output:", STreeNode(buildTree([]int{9, 3, 15, 20, 7}, []int{9, 15, 7, 20, 3})))
+	}
 }
 
 func buildTree(inorder []int, postorder []int) *TreeNode {
@@ -22,12 +19,14 @@ func buildTreeConstruct(inorder []int, postorder []int, i1 int, i2 int, p1 int, 
 	for mid <= i2 && inorder[mid] != rootVal {
 		mid++
 	}
+
 	root := &TreeNode{Val: rootVal}
 	if mid-i1 == 1 {
 		root.Left = &TreeNode{Val: inorder[i1]}
 	} else if mid-i1 > 1 {
 		root.Left = buildTreeConstruct(inorder, postorder, i1, mid-1, p1, p1+mid-i1-1)
 	}
+
 	if i2-mid == 1 {
 		root.Right = &TreeNode{Val: postorder[p2-1]}
 	} else if i2-mid > 1 {

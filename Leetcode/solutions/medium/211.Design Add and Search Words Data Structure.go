@@ -2,20 +2,18 @@ package medium
 
 import "fmt"
 
-func init() {
-	Solutions[211] = Leetcode_Word_Dictionary
-}
-
 // Reference: https://leetcode.com/problems/design-add-and-search-words-data-structure/
-func Leetcode_Word_Dictionary() {
-	wordDictionary := Constructor()
-	wordDictionary.AddWord("bad")
-	wordDictionary.AddWord("dad")
-	wordDictionary.AddWord("mad")
-	fmt.Println(wordDictionary.Search("pad"))
-	fmt.Println(wordDictionary.Search("bad"))
-	fmt.Println(wordDictionary.Search(".ad"))
-	fmt.Println(wordDictionary.Search("b.."))
+func init() {
+	Solutions[211] = func() {
+		wordDictionary := Constructor()
+		wordDictionary.AddWord("bad")
+		wordDictionary.AddWord("dad")
+		wordDictionary.AddWord("mad")
+		fmt.Println(wordDictionary.Search("pad"))
+		fmt.Println(wordDictionary.Search("bad"))
+		fmt.Println(wordDictionary.Search(".ad"))
+		fmt.Println(wordDictionary.Search("b.."))
+	}
 }
 
 type WordDictionary struct {

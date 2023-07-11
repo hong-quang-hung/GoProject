@@ -2,18 +2,16 @@ package medium
 
 import "fmt"
 
-func init() {
-	Solutions[213] = Leetcode_House_Robber_II
-}
-
 // Reference: https://leetcode.com/problems/house-robber-ii/
-func Leetcode_House_Robber_II() {
-	fmt.Println("Input: nums = [2,3,2]")
-	fmt.Println("Output:", rob_ii([]int{2, 3, 2}))
-	fmt.Println("Input: nums = [1,2,3,1]")
-	fmt.Println("Output:", rob_ii([]int{1, 2, 3, 1}))
-	fmt.Println("Input: nums = [1,2,3]")
-	fmt.Println("Output:", rob_ii([]int{1, 2, 3}))
+func init() {
+	Solutions[213] = func() {
+		fmt.Println("Input: nums = [2,3,2]")
+		fmt.Println("Output:", rob_ii([]int{2, 3, 2}))
+		fmt.Println("Input: nums = [1,2,3,1]")
+		fmt.Println("Output:", rob_ii([]int{1, 2, 3, 1}))
+		fmt.Println("Input: nums = [1,2,3]")
+		fmt.Println("Output:", rob_ii([]int{1, 2, 3}))
+	}
 }
 
 func rob_ii(nums []int) int {

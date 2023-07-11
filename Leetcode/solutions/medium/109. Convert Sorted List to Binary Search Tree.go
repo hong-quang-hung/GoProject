@@ -2,16 +2,14 @@ package medium
 
 import "fmt"
 
-func init() {
-	Solutions[109] = Leetcode_Sorted_List_To_BST
-}
-
 // Reference: https://leetcode.com/problems/convert-sorted-list-to-binary-search-tree/
-func Leetcode_Sorted_List_To_BST() {
-	fmt.Println("Input: head = [-10,-3,0,5,9]")
-	fmt.Print("Output:", STreeNode(sortedListToBST(S2ListNode("[-10,-3,0,5,9]"))))
-	fmt.Println("Input: head = []")
-	fmt.Print("Output:", STreeNode(sortedListToBST(S2ListNode("[]"))))
+func init() {
+	Solutions[109] = func() {
+		fmt.Println("Input: head = [-10,-3,0,5,9]")
+		fmt.Print("Output:", STreeNode(sortedListToBST(S2ListNode("[-10,-3,0,5,9]"))))
+		fmt.Println("Input: head = []")
+		fmt.Print("Output:", STreeNode(sortedListToBST(S2ListNode("[]"))))
+	}
 }
 
 func sortedListToBST(head *ListNode) *TreeNode {

@@ -5,18 +5,14 @@ import (
 	"sort"
 )
 
-func init() {
-	Solutions[15] = Leetcode_Three_Sum
-}
-
 // Reference: https://leetcode.com/problems/3sum/
-func Leetcode_Three_Sum() {
-	fmt.Println("Input: nums = [-1,0,1,2,-1,-4]")
-	fmt.Println("Output:", threeSum([]int{-1, 0, 1, 2, -1, -4}))
-	fmt.Println("Input: nums = [0,1,1]")
-	fmt.Println("Output:", threeSum([]int{0, 1, 1}))
-	fmt.Println("Input: nums = [0,0,0]")
-	fmt.Println("Output:", threeSum([]int{0, 0, 0}))
+func init() {
+	Solutions[15] = func() {
+		fmt.Println("Input: nums = [-1,0,1,2,-1,-4]")
+		fmt.Println("Output:", threeSum([]int{-1, 0, 1, 2, -1, -4}))
+		fmt.Println("Input: nums = [0,1,1]")
+		fmt.Println("Output:", threeSum([]int{0, 1, 1}))
+	}
 }
 
 func threeSum(nums []int) [][]int {

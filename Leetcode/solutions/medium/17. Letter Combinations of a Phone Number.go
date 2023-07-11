@@ -2,18 +2,16 @@ package medium
 
 import "fmt"
 
-func init() {
-	Solutions[17] = Leetcode_Letter_Combinations
-}
-
 // Reference: https://leetcode.com/problems/letter-combinations-of-a-phone-number/
-func Leetcode_Letter_Combinations() {
-	fmt.Println("Input: digits = '23'")
-	fmt.Println("Output:", letterCombinations("23"))
-	fmt.Println("Input: digits = ''")
-	fmt.Println("Output:", letterCombinations(""))
-	fmt.Println("Input: digits = '2'")
-	fmt.Println("Output:", letterCombinations("2"))
+func init() {
+	Solutions[17] = func() {
+		fmt.Println("Input: digits = '23'")
+		fmt.Println("Output:", letterCombinations("23"))
+		fmt.Println("Input: digits = ''")
+		fmt.Println("Output:", letterCombinations(""))
+		fmt.Println("Input: digits = '2'")
+		fmt.Println("Output:", letterCombinations("2"))
+	}
 }
 
 func letterCombinations(digits string) []string {

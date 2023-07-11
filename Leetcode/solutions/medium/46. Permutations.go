@@ -2,16 +2,14 @@ package medium
 
 import "fmt"
 
-func init() {
-	Solutions[46] = Leetcode_Permute
-}
-
 // Reference: https://leetcode.com/problems/permutations/
-func Leetcode_Permute() {
-	fmt.Println("Input: nums = [1,2,3]")
-	fmt.Println("Output:", permute([]int{1, 2, 3}))
-	fmt.Println("Input: nums = [0,1]")
-	fmt.Println("Output:", permute([]int{0, 1}))
+func init() {
+	Solutions[46] = func() {
+		fmt.Println("Input: nums = [1,2,3]")
+		fmt.Println("Output:", permute([]int{1, 2, 3}))
+		fmt.Println("Input: nums = [0,1]")
+		fmt.Println("Output:", permute([]int{0, 1}))
+	}
 }
 
 func permute(nums []int) [][]int {

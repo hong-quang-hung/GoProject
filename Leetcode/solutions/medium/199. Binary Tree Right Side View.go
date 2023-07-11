@@ -2,16 +2,14 @@ package medium
 
 import "fmt"
 
-func init() {
-	Solutions[199] = Leetcode_Right_Side_View
-}
-
 // Reference: https://leetcode.com/problems/binary-tree-right-side-view/
-func Leetcode_Right_Side_View() {
-	fmt.Println("Input: root = [1,2,3,null,5,null,4]")
-	fmt.Println("Output:", rightSideView(S2TreeNode("[1,2,3,null,5,null,4]")))
-	fmt.Println("Input: root = [1,null,3]")
-	fmt.Println("Output:", rightSideView(S2TreeNode("[1,null,3]")))
+func init() {
+	Solutions[199] = func() {
+		fmt.Println("Input: root = [1,2,3,null,5,null,4]")
+		fmt.Println("Output:", rightSideView(S2TreeNode("[1,2,3,null,5,null,4]")))
+		fmt.Println("Input: root = [1,null,3]")
+		fmt.Println("Output:", rightSideView(S2TreeNode("[1,null,3]")))
+	}
 }
 
 func rightSideView(root *TreeNode) []int {

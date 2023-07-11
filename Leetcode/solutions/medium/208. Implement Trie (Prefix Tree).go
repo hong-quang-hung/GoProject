@@ -2,23 +2,21 @@ package medium
 
 import "fmt"
 
-func init() {
-	Solutions[208] = Leetcode_Trie_Constructor
-}
-
 // Reference: https://leetcode.com/problems/implement-trie-prefix-tree/
-func Leetcode_Trie_Constructor() {
-	fmt.Println("Input: ['Trie', 'insert', 'search', 'search', 'startsWith', 'insert', 'search']")
-	fmt.Println("       [[], ['apple'], ['apple'], ['app'], ['app'], ['app'], ['app']]")
-	fmt.Println("Output:")
+func init() {
+	Solutions[208] = func() {
+		fmt.Println("Input: ['Trie', 'insert', 'search', 'search', 'startsWith', 'insert', 'search']")
+		fmt.Println("       [[], ['apple'], ['apple'], ['app'], ['app'], ['app'], ['app']]")
+		fmt.Println("Output:")
 
-	trie := TrieConstructor()
-	trie.Insert("apple")
-	fmt.Println("trie.Search('apple')", trie.Search("apple"))
-	fmt.Println("trie.Search('app')", trie.Search("app"))
-	fmt.Println("trie.StartsWith('app')", trie.StartsWith("app"))
-	trie.Insert("app")
-	fmt.Println("trie.Search('app')", trie.Search("app"))
+		trie := TrieConstructor()
+		trie.Insert("apple")
+		fmt.Println("trie.Search('apple')", trie.Search("apple"))
+		fmt.Println("trie.Search('app')", trie.Search("app"))
+		fmt.Println("trie.StartsWith('app')", trie.StartsWith("app"))
+		trie.Insert("app")
+		fmt.Println("trie.Search('app')", trie.Search("app"))
+	}
 }
 
 type TrieNodes struct {

@@ -2,16 +2,14 @@ package medium
 
 import "fmt"
 
-func init() {
-	Solutions[2] = Leetcode_Add_Two_Numbers
-}
-
 // Reference: https://leetcode.com/problems/add-two-numbers/
-func Leetcode_Add_Two_Numbers() {
-	fmt.Println("Input: l1 = [2,4,3], l2 = [5,6,4]")
-	fmt.Println("Output:", addTwoNumbers(S2ListNode("[2,4,3]"), S2ListNode("[5,6,4]")))
-	fmt.Println("Input: l1 = [9,9,9,9,9,9,9], l2 = [9,9,9,9]")
-	fmt.Println("Output:", addTwoNumbers(S2ListNode("[9,9,9,9,9,9,9]"), S2ListNode("[9,9,9,9]")))
+func init() {
+	Solutions[2] = func() {
+		fmt.Println("Input: l1 = [2,4,3], l2 = [5,6,4]")
+		fmt.Println("Output:", addTwoNumbers(S2ListNode("[2,4,3]"), S2ListNode("[5,6,4]")))
+		fmt.Println("Input: l1 = [9,9,9,9,9,9,9], l2 = [9,9,9,9]")
+		fmt.Println("Output:", addTwoNumbers(S2ListNode("[9,9,9,9,9,9,9]"), S2ListNode("[9,9,9,9]")))
+	}
 }
 
 func addTwoNumbers(l1 *ListNode, l2 *ListNode) *ListNode {

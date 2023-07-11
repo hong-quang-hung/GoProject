@@ -2,16 +2,14 @@ package medium
 
 import "fmt"
 
-func init() {
-	Solutions[238] = Leetcode_Product_ExceptSelf
-}
-
 // Reference: https://leetcode.com/problems/product-of-array-except-self/
-func Leetcode_Product_ExceptSelf() {
-	fmt.Println("Input: nums = [1,2,3,4]")
-	fmt.Println("Output:", productExceptSelf([]int{1, 2, 3, 4}))
-	fmt.Println("Input: nums = [-1, 1, 0, -3, 3]")
-	fmt.Println("Output:", productExceptSelf([]int{-1, 1, 0, -3, 3}))
+func init() {
+	Solutions[238] = func() {
+		fmt.Println("Input: nums = [1,2,3,4]")
+		fmt.Println("Output:", productExceptSelf([]int{1, 2, 3, 4}))
+		fmt.Println("Input: nums = [-1, 1, 0, -3, 3]")
+		fmt.Println("Output:", productExceptSelf([]int{-1, 1, 0, -3, 3}))
+	}
 }
 
 func productExceptSelf(nums []int) []int {

@@ -2,16 +2,14 @@ package medium
 
 import "fmt"
 
-func init() {
-	Solutions[62] = Leetcode_Unique_Paths
-}
-
 // Reference: https://leetcode.com/problems/unique-paths/
-func Leetcode_Unique_Paths() {
-	fmt.Println("Input: m = 3, n = 7")
-	fmt.Println("Output:", uniquePaths(3, 7))
-	fmt.Println("Input: m = 3, n = 2")
-	fmt.Println("Output:", uniquePaths(3, 2))
+func init() {
+	Solutions[62] = func() {
+		fmt.Println("Input: m = 3, n = 7")
+		fmt.Println("Output:", uniquePaths(3, 7))
+		fmt.Println("Input: m = 3, n = 2")
+		fmt.Println("Output:", uniquePaths(3, 2))
+	}
 }
 
 func uniquePaths(m int, n int) int {

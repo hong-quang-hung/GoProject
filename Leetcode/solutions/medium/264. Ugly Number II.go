@@ -2,16 +2,14 @@ package medium
 
 import "fmt"
 
-func init() {
-	Solutions[264] = Leetcode_Is_Ugly_II
-}
-
 // Reference: https://leetcode.com/problems/ugly-number-ii/
-func Leetcode_Is_Ugly_II() {
-	fmt.Println("Input: n = 10")
-	fmt.Println("Output:", nthUglyNumber(10))
-	fmt.Println("Input: n = 1000")
-	fmt.Println("Output:", nthUglyNumber(1000))
+func init() {
+	Solutions[264] = func() {
+		fmt.Println("Input: n = 10")
+		fmt.Println("Output:", nthUglyNumber(10))
+		fmt.Println("Input: n = 1000")
+		fmt.Println("Output:", nthUglyNumber(1000))
+	}
 }
 
 func nthUglyNumber(n int) int {
