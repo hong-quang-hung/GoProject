@@ -2,30 +2,28 @@ package medium
 
 import "fmt"
 
-func init() {
-	Solutions[1396] = Leetcode_Design_Underground_System
-}
-
 // Reference: https://leetcode.com/problems/design-underground-system/
-func Leetcode_Design_Underground_System() {
-	fmt.Println("Input:")
-	fmt.Println("['UndergroundSystem','checkIn','checkIn','checkIn','checkOut','checkOut','checkOut','getAverageTime','getAverageTime','checkIn','getAverageTime','checkOut','getAverageTime']")
-	fmt.Println("[[],[45,'Leyton',3],[32,'Paradise',8],[27,'Leyton',10],[45,'Waterloo',15],[27,'Waterloo',20],[32,'Cambridge',22],['Paradise','Cambridge'],['Leyton','Waterloo'],[10,'Leyton',24],['Leyton','Waterloo'],[10,'Waterloo',38],['Leyton','Waterloo']]")
-	fmt.Println("Output:")
-	undergroundSystem := UndergroundSystemConstructor()
-	undergroundSystem.CheckIn(45, "Leyton", 3)
-	undergroundSystem.CheckIn(32, "Paradise", 8)
-	undergroundSystem.CheckIn(27, "Leyton", 10)
-	undergroundSystem.CheckOut(45, "Waterloo", 15)
-	undergroundSystem.CheckOut(27, "Waterloo", 20)
-	undergroundSystem.CheckOut(32, "Cambridge", 22)
-	fmt.Println("undergroundSystem.GetAverageTime('Paradise', 'Cambridge')", "-->", undergroundSystem.GetAverageTime("Paradise", "Cambridge"))
-	fmt.Println("undergroundSystem.GetAverageTime('Leyton', 'Waterloo')", "-->", undergroundSystem.GetAverageTime("Leyton", "Waterloo"))
-	undergroundSystem.CheckIn(10, "Leyton", 24)
-	fmt.Println("undergroundSystem.GetAverageTime('Leyton', 'Waterloo')", "-->", undergroundSystem.GetAverageTime("Leyton", "Waterloo"))
-	undergroundSystem.CheckOut(10, "Waterloo", 38)
-	undergroundSystem.GetAverageTime("Leyton", "Waterloo")
-	fmt.Println("undergroundSystem.GetAverageTime('Leyton', 'Waterloo')", "-->", undergroundSystem.GetAverageTime("Leyton", "Waterloo"))
+func init() {
+	Solutions[1396] = func() {
+		fmt.Println("Input:")
+		fmt.Println("['UndergroundSystem','checkIn','checkIn','checkIn','checkOut','checkOut','checkOut','getAverageTime','getAverageTime','checkIn','getAverageTime','checkOut','getAverageTime']")
+		fmt.Println("[[],[45,'Leyton',3],[32,'Paradise',8],[27,'Leyton',10],[45,'Waterloo',15],[27,'Waterloo',20],[32,'Cambridge',22],['Paradise','Cambridge'],['Leyton','Waterloo'],[10,'Leyton',24],['Leyton','Waterloo'],[10,'Waterloo',38],['Leyton','Waterloo']]")
+		fmt.Println("Output:")
+		undergroundSystem := UndergroundSystemConstructor()
+		undergroundSystem.CheckIn(45, "Leyton", 3)
+		undergroundSystem.CheckIn(32, "Paradise", 8)
+		undergroundSystem.CheckIn(27, "Leyton", 10)
+		undergroundSystem.CheckOut(45, "Waterloo", 15)
+		undergroundSystem.CheckOut(27, "Waterloo", 20)
+		undergroundSystem.CheckOut(32, "Cambridge", 22)
+		fmt.Println("undergroundSystem.GetAverageTime('Paradise', 'Cambridge')", "-->", undergroundSystem.GetAverageTime("Paradise", "Cambridge"))
+		fmt.Println("undergroundSystem.GetAverageTime('Leyton', 'Waterloo')", "-->", undergroundSystem.GetAverageTime("Leyton", "Waterloo"))
+		undergroundSystem.CheckIn(10, "Leyton", 24)
+		fmt.Println("undergroundSystem.GetAverageTime('Leyton', 'Waterloo')", "-->", undergroundSystem.GetAverageTime("Leyton", "Waterloo"))
+		undergroundSystem.CheckOut(10, "Waterloo", 38)
+		undergroundSystem.GetAverageTime("Leyton", "Waterloo")
+		fmt.Println("undergroundSystem.GetAverageTime('Leyton', 'Waterloo')", "-->", undergroundSystem.GetAverageTime("Leyton", "Waterloo"))
+	}
 }
 
 type UndergroundSystem struct {

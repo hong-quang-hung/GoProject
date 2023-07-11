@@ -5,14 +5,12 @@ import (
 	"math"
 )
 
-func init() {
-	Solutions[2477] = Leetcode_Minimum_Fuel_Cost
-}
-
 // Reference: https://leetcode.com/problems/minimum-fuel-cost-to-report-to-the-capital
-func Leetcode_Minimum_Fuel_Cost() {
-	fmt.Println("Input: roads = [[3,1],[3,2],[1,0],[0,4],[0,5],[4,6]], seats = 2")
-	fmt.Println("Output:", minimumFuelCost(S2SoSliceInt("[[3,1],[3,2],[1,0],[0,4],[0,5],[4,6]]"), 2))
+func init() {
+	Solutions[2477] = func() {
+		fmt.Println("Input: roads = [[3,1],[3,2],[1,0],[0,4],[0,5],[4,6]], seats = 2")
+		fmt.Println("Output:", minimumFuelCost(S2SoSliceInt("[[3,1],[3,2],[1,0],[0,4],[0,5],[4,6]]"), 2))
+	}
 }
 
 func minimumFuelCost(roads [][]int, seats int) int64 {

@@ -2,20 +2,16 @@ package medium
 
 import "fmt"
 
-func init() {
-	Solutions[2095] = Leetcode_Delete_Middle
-}
-
 // Reference: https://leetcode.com/problems/delete-the-middle-node-of-a-linked-list/
-func Leetcode_Delete_Middle() {
-	fmt.Println("Input: head = [1,3,4,7,1,2,6]")
-	fmt.Println("Output:", deleteMiddle(S2ListNode("[1,3,4,7,1,2,6]")))
-	fmt.Println("Input: head = [1,2,3,4]")
-	fmt.Println("Output:", deleteMiddle(S2ListNode("[1,2,3,4]")))
-	fmt.Println("Input: head = [2,1]")
-	fmt.Println("Output:", deleteMiddle(S2ListNode("[2,1]")))
-	fmt.Println("Input: head = [1]")
-	fmt.Println("Output:", deleteMiddle(S2ListNode("[1]")))
+func init() {
+	Solutions[2095] = func() {
+		fmt.Println("Input: head = [1,3,4,7,1,2,6]")
+		fmt.Println("Output:", deleteMiddle(S2ListNode("[1,3,4,7,1,2,6]")))
+		fmt.Println("Input: head = [1,2,3,4]")
+		fmt.Println("Output:", deleteMiddle(S2ListNode("[1,2,3,4]")))
+		fmt.Println("Input: head = [2,1]")
+		fmt.Println("Output:", deleteMiddle(S2ListNode("[2,1]")))
+	}
 }
 
 func deleteMiddle(head *ListNode) *ListNode {

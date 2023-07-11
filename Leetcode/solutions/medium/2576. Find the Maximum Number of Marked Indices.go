@@ -5,14 +5,12 @@ import (
 	"sort"
 )
 
-func init() {
-	Solutions[2576] = Leetcode_Max_Num_Of_Marked_Indices
-}
-
 // Reference: https://leetcode.com/problems/find-the-maximum-number-of-marked-indices/
-func Leetcode_Max_Num_Of_Marked_Indices() {
-	fmt.Println("Input: nums = [3,5,2,4]")
-	fmt.Println("Output:", maxNumOfMarkedIndices([]int{3, 5, 2, 4}))
+func init() {
+	Solutions[2576] = func() {
+		fmt.Println("Input: nums = [3,5,2,4]")
+		fmt.Println("Output:", maxNumOfMarkedIndices([]int{3, 5, 2, 4}))
+	}
 }
 
 func maxNumOfMarkedIndices(nums []int) int {

@@ -2,18 +2,16 @@ package medium
 
 import "fmt"
 
-func init() {
-	Solutions[2090] = Leetcode_Get_Averages
-}
-
 // Reference: https://leetcode.com/problems/k-radius-subarray-averages/
-func Leetcode_Get_Averages() {
-	fmt.Println("Input: nums = [7,4,3,9,1,8,5,2,6], k = 3")
-	fmt.Println("Output:", getAverages([]int{7, 4, 3, 9, 1, 8, 5, 2, 6}, 3))
-	fmt.Println("Input: nums = [100000], k = 0")
-	fmt.Println("Output:", getAverages([]int{100000}, 0))
-	fmt.Println("Input: nums = [8], k = 100000")
-	fmt.Println("Output:", getAverages([]int{8}, 100000))
+func init() {
+	Solutions[2090] = func() {
+		fmt.Println("Input: nums = [7,4,3,9,1,8,5,2,6], k = 3")
+		fmt.Println("Output:", getAverages([]int{7, 4, 3, 9, 1, 8, 5, 2, 6}, 3))
+		fmt.Println("Input: nums = [100000], k = 0")
+		fmt.Println("Output:", getAverages([]int{100000}, 0))
+		fmt.Println("Input: nums = [8], k = 100000")
+		fmt.Println("Output:", getAverages([]int{8}, 100000))
+	}
 }
 
 func getAverages(nums []int, k int) []int {

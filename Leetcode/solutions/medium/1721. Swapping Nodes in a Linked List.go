@@ -2,16 +2,14 @@ package medium
 
 import "fmt"
 
-func init() {
-	Solutions[1721] = Leetcode_Swap_Nodes
-}
-
 // Reference: https://leetcode.com/problems/swapping-nodes-in-a-linked-list/
-func Leetcode_Swap_Nodes() {
-	fmt.Println("Input: head = [1,2,3,4,5], k = 2")
-	fmt.Println("Output:", swapNodes(S2ListNode("[1,2,3,4,5]"), 2))
-	fmt.Println("Input: head = [7,9,6,6,7,8,3,0,9,5], k = 5")
-	fmt.Println("Output:", swapNodes(S2ListNode("[7,9,6,6,7,8,3,0,9,5]"), 5))
+func init() {
+	Solutions[1721] = func() {
+		fmt.Println("Input: head = [1,2,3,4,5], k = 2")
+		fmt.Println("Output:", swapNodes(S2ListNode("[1,2,3,4,5]"), 2))
+		fmt.Println("Input: head = [7,9,6,6,7,8,3,0,9,5], k = 5")
+		fmt.Println("Output:", swapNodes(S2ListNode("[7,9,6,6,7,8,3,0,9,5]"), 5))
+	}
 }
 
 func swapNodes(head *ListNode, k int) *ListNode {

@@ -2,14 +2,12 @@ package medium
 
 import "fmt"
 
-func init() {
-	Solutions[2575] = Leetcode_Divisibility_Array
-}
-
 // Reference: https://leetcode.com/problems/find-the-divisibility-array-of-a-string/
-func Leetcode_Divisibility_Array() {
-	fmt.Println("Input: word = '998244353', m = 3")
-	fmt.Println("Output:", divisibilityArray("998244353", 3))
+func init() {
+	Solutions[2575] = func() {
+		fmt.Println("Input: word = '998244353', m = 3")
+		fmt.Println("Output:", divisibilityArray("998244353", 3))
+	}
 }
 
 func divisibilityArray(word string, m int) []int {

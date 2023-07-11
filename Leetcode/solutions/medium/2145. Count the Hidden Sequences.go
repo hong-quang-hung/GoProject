@@ -2,16 +2,14 @@ package medium
 
 import "fmt"
 
-func init() {
-	Solutions[2145] = Leetcode_Number_Of_Arrays
-}
-
 // Reference: https://leetcode.com/problems/count-the-hidden-sequences/
-func Leetcode_Number_Of_Arrays() {
-	fmt.Println("Input: differences = [1,-3,4], lower = 1, upper = 6")
-	fmt.Println("Output:", numberOfArrays([]int{1, -3, 4}, 1, 6))
-	fmt.Println("Input: differences = [3,-4,5,1,-2], lower = -4, upper = 5")
-	fmt.Println("Output:", numberOfArrays([]int{3, -4, 5, 1, -2}, -4, 5))
+func init() {
+	Solutions[2145] = func() {
+		fmt.Println("Input: differences = [1,-3,4], lower = 1, upper = 6")
+		fmt.Println("Output:", numberOfArrays([]int{1, -3, 4}, 1, 6))
+		fmt.Println("Input: differences = [3,-4,5,1,-2], lower = -4, upper = 5")
+		fmt.Println("Output:", numberOfArrays([]int{3, -4, 5, 1, -2}, -4, 5))
+	}
 }
 
 func numberOfArrays(differences []int, lower int, upper int) int {

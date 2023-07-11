@@ -5,26 +5,24 @@ import (
 	"fmt"
 )
 
-func init() {
-	Solutions[2336] = Leetcode_Smallest_Infinite_Set
-}
-
 // Reference: https://leetcode.com/problems/smallest-number-in-infinite-set/
-func Leetcode_Smallest_Infinite_Set() {
-	fmt.Println("Input:")
-	fmt.Println("['SmallestInfiniteSet', 'addBack', 'popSmallest', 'popSmallest', 'popSmallest', 'addBack', 'popSmallest', 'popSmallest', 'popSmallest']")
-	fmt.Println("[[], [2], [], [], [], [1], [], [], []]")
-	fmt.Println("Output:")
+func init() {
+	Solutions[2336] = func() {
+		fmt.Println("Input:")
+		fmt.Println("['SmallestInfiniteSet', 'addBack', 'popSmallest', 'popSmallest', 'popSmallest', 'addBack', 'popSmallest', 'popSmallest', 'popSmallest']")
+		fmt.Println("[[], [2], [], [], [], [1], [], [], []]")
+		fmt.Println("Output:")
 
-	smallestInfiniteSet := SmallestInfiniteSetConstructor()
-	smallestInfiniteSet.AddBack(2)
-	fmt.Println("smallestInfiniteSet.popSmallest() :", smallestInfiniteSet.PopSmallest())
-	fmt.Println("smallestInfiniteSet.popSmallest() :", smallestInfiniteSet.PopSmallest())
-	fmt.Println("smallestInfiniteSet.popSmallest() :", smallestInfiniteSet.PopSmallest())
-	smallestInfiniteSet.AddBack(1)
-	fmt.Println("smallestInfiniteSet.popSmallest() :", smallestInfiniteSet.PopSmallest())
-	fmt.Println("smallestInfiniteSet.popSmallest() :", smallestInfiniteSet.PopSmallest())
-	fmt.Println("smallestInfiniteSet.popSmallest() :", smallestInfiniteSet.PopSmallest())
+		smallestInfiniteSet := SmallestInfiniteSetConstructor()
+		smallestInfiniteSet.AddBack(2)
+		fmt.Println("smallestInfiniteSet.popSmallest() :", smallestInfiniteSet.PopSmallest())
+		fmt.Println("smallestInfiniteSet.popSmallest() :", smallestInfiniteSet.PopSmallest())
+		fmt.Println("smallestInfiniteSet.popSmallest() :", smallestInfiniteSet.PopSmallest())
+		smallestInfiniteSet.AddBack(1)
+		fmt.Println("smallestInfiniteSet.popSmallest() :", smallestInfiniteSet.PopSmallest())
+		fmt.Println("smallestInfiniteSet.popSmallest() :", smallestInfiniteSet.PopSmallest())
+		fmt.Println("smallestInfiniteSet.popSmallest() :", smallestInfiniteSet.PopSmallest())
+	}
 }
 
 type SmallestInfiniteSet struct {

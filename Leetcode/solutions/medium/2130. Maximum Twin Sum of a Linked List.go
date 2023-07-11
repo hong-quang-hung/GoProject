@@ -2,18 +2,16 @@ package medium
 
 import "fmt"
 
-func init() {
-	Solutions[2130] = Leetcode_Pair_Sum
-}
-
 // Reference: https://leetcode.com/problems/maximum-twin-sum-of-a-linked-list/
-func Leetcode_Pair_Sum() {
-	fmt.Println("Input: head = [5,4,2,1]")
-	fmt.Println("Output:", pairSum(S2ListNode("[5,4,2,1]")))
-	fmt.Println("Input: head = [4,2,2,3]")
-	fmt.Println("Output:", pairSum(S2ListNode("[4,2,2,3]")))
-	fmt.Println("Input: head = [1,100000]")
-	fmt.Println("Output:", pairSum(S2ListNode("[1,100000]")))
+func init() {
+	Solutions[2130] = func() {
+		fmt.Println("Input: head = [5,4,2,1]")
+		fmt.Println("Output:", pairSum(S2ListNode("[5,4,2,1]")))
+		fmt.Println("Input: head = [4,2,2,3]")
+		fmt.Println("Output:", pairSum(S2ListNode("[4,2,2,3]")))
+		fmt.Println("Input: head = [1,100000]")
+		fmt.Println("Output:", pairSum(S2ListNode("[1,100000]")))
+	}
 }
 
 func pairSum(head *ListNode) int {

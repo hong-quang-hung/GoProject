@@ -2,18 +2,16 @@ package medium
 
 import "fmt"
 
-func init() {
-	Solutions[2101] = Leetcode_Maximum_Detonation
-}
-
 // Reference: https://leetcode.com/problems/detonate-the-maximum-bombs/
-func Leetcode_Maximum_Detonation() {
-	fmt.Println("Input: bombs = [[2,1,3],[6,1,4]]")
-	fmt.Println("Output:", maximumDetonation(S2SoSliceInt("[[2,1,3],[6,1,4]]")))
-	fmt.Println("Input: bombs = [[1,1,5],[10,10,5]]")
-	fmt.Println("Output:", maximumDetonation(S2SoSliceInt("[[1,1,5],[10,10,5]]")))
-	fmt.Println("Input: bombs = [[1,2,3],[2,3,1],[3,4,2],[4,5,3],[5,6,4]]")
-	fmt.Println("Output:", maximumDetonation(S2SoSliceInt("[[1,2,3],[2,3,1],[3,4,2],[4,5,3],[5,6,4]]")))
+func init() {
+	Solutions[2101] = func() {
+		fmt.Println("Input: bombs = [[2,1,3],[6,1,4]]")
+		fmt.Println("Output:", maximumDetonation(S2SoSliceInt("[[2,1,3],[6,1,4]]")))
+		fmt.Println("Input: bombs = [[1,1,5],[10,10,5]]")
+		fmt.Println("Output:", maximumDetonation(S2SoSliceInt("[[1,1,5],[10,10,5]]")))
+		fmt.Println("Input: bombs = [[1,2,3],[2,3,1],[3,4,2],[4,5,3],[5,6,4]]")
+		fmt.Println("Output:", maximumDetonation(S2SoSliceInt("[[1,2,3],[2,3,1],[3,4,2],[4,5,3],[5,6,4]]")))
+	}
 }
 
 func maximumDetonation(bombs [][]int) int {

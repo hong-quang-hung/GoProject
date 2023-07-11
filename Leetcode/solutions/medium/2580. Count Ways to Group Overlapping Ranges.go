@@ -5,14 +5,12 @@ import (
 	"sort"
 )
 
-func init() {
-	Solutions[2580] = Leetcode_Count_Ways
-}
-
 // Reference: https://leetcode.com/problems/count-ways-to-group-overlapping-ranges/
-func Leetcode_Count_Ways() {
-	fmt.Println("Input: ranges = [[6,10],[5,15]]")
-	fmt.Println("Output:", countWays(S2SoSliceInt("[[6,10],[5,15]]")))
+func init() {
+	Solutions[2580] = func() {
+		fmt.Println("Input: ranges = [[6,10],[5,15]]")
+		fmt.Println("Output:", countWays(S2SoSliceInt("[[6,10],[5,15]]")))
+	}
 }
 
 func countWays(ranges [][]int) int {

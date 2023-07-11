@@ -2,16 +2,14 @@ package medium
 
 import "fmt"
 
-func init() {
-	Solutions[1802] = Leetcode_Max_Value
-}
-
 // Reference: https://leetcode.com/problems/maximum-value-at-a-given-index-in-a-bounded-array/
-func Leetcode_Max_Value() {
-	fmt.Println("Input: n = 4, index = 2, maxSum = 6")
-	fmt.Println("Output:", maxValue(4, 2, 6))
-	fmt.Println("Input: n = 6, index = 1, maxSum = 10")
-	fmt.Println("Output:", maxValue(4, 2, 6))
+func init() {
+	Solutions[1802] = func() {
+		fmt.Println("Input: n = 4, index = 2, maxSum = 6")
+		fmt.Println("Output:", maxValue(4, 2, 6))
+		fmt.Println("Input: n = 6, index = 1, maxSum = 10")
+		fmt.Println("Output:", maxValue(4, 2, 6))
+	}
 }
 
 func maxValue(n int, index int, maxSum int) int {

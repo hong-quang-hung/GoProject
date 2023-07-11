@@ -2,14 +2,12 @@ package medium
 
 import "fmt"
 
-func init() {
-	Solutions[1954] = Leetcode_Minimum_Perimeter
-}
-
 // Reference: https://leetcode.com/problems/minimum-garden-perimeter-to-collect-enough-apples/
-func Leetcode_Minimum_Perimeter() {
-	fmt.Println("Input: neededApples = 1000000000")
-	fmt.Println("Output:", minimumPerimeter(1000000000))
+func init() {
+	Solutions[1954] = func() {
+		fmt.Println("Input: neededApples = 1000000000")
+		fmt.Println("Output:", minimumPerimeter(1000000000))
+	}
 }
 
 func minimumPerimeter(neededApples int64) int64 {

@@ -2,29 +2,26 @@ package medium
 
 import "fmt"
 
-func init() {
-	Solutions[1472] = Leetcode_Design_Browser_History
-}
-
 // Reference: https://leetcode.com/problems/design-browser-history/
-func Leetcode_Design_Browser_History() {
-	fmt.Println("Input:")
-	fmt.Println("['BrowserHistory','visit','visit','visit','back','back','forward','visit','forward','back','back']")
-	fmt.Println("[['leetcode.com'],['google.com'],['facebook.com'],['youtube.com'],[1],[1],[1],['linkedin.com'],[2],[2],[7]]")
-	fmt.Println()
+func init() {
+	Solutions[1472] = func() {
+		fmt.Println("Input:")
+		fmt.Println("['BrowserHistory','visit','visit','visit','back','back','forward','visit','forward','back','back']")
+		fmt.Println("[['leetcode.com'],['google.com'],['facebook.com'],['youtube.com'],[1],[1],[1],['linkedin.com'],[2],[2],[7]]")
 
-	fmt.Println("Output:")
-	browserHistory := BrowserHistoryConstructor("leetcode.com")
-	browserHistory.Visit("google.com")
-	browserHistory.Visit("facebook.com")
-	browserHistory.Visit("youtube.com")
-	fmt.Println("browserHistory.Back(1)\t", browserHistory.Back(1))
-	fmt.Println("browserHistory.Back(1)\t", browserHistory.Back(1))
-	fmt.Println("browserHistory.Forward(1)\t", browserHistory.Forward(1))
-	browserHistory.Visit("linkedin.com")
-	fmt.Println("browserHistory.Forward(2)\t", browserHistory.Forward(2))
-	fmt.Println("browserHistory.Back(2)\t", browserHistory.Back(2))
-	fmt.Println("browserHistory.Back(7)\t", browserHistory.Back(7))
+		fmt.Println("Output:")
+		browserHistory := BrowserHistoryConstructor("leetcode.com")
+		browserHistory.Visit("google.com")
+		browserHistory.Visit("facebook.com")
+		browserHistory.Visit("youtube.com")
+		fmt.Println("browserHistory.Back(1)\t", browserHistory.Back(1))
+		fmt.Println("browserHistory.Back(1)\t", browserHistory.Back(1))
+		fmt.Println("browserHistory.Forward(1)\t", browserHistory.Forward(1))
+		browserHistory.Visit("linkedin.com")
+		fmt.Println("browserHistory.Forward(2)\t", browserHistory.Forward(2))
+		fmt.Println("browserHistory.Back(2)\t", browserHistory.Back(2))
+		fmt.Println("browserHistory.Back(7)\t", browserHistory.Back(7))
+	}
 }
 
 type BrowserHistory struct {

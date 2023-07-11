@@ -2,16 +2,14 @@ package medium
 
 import "fmt"
 
-func init() {
-	Solutions[2405] = Leetcode_Partition_String
-}
-
 // Reference: https://leetcode.com/problems/optimal-partition-of-string/
-func Leetcode_Partition_String() {
-	fmt.Println("Input: s = 'gizfdfri'")
-	fmt.Println("Output:", partitionString("gizfdfri"))
-	fmt.Println("Input: s = 'hdklqkcssgxlvehva'")
-	fmt.Println("Output:", partitionString("hdklqkcssgxlvehva"))
+func init() {
+	Solutions[2405] = func() {
+		fmt.Println("Input: s = 'gizfdfri'")
+		fmt.Println("Output:", partitionString("gizfdfri"))
+		fmt.Println("Input: s = 'hdklqkcssgxlvehva'")
+		fmt.Println("Output:", partitionString("hdklqkcssgxlvehva"))
+	}
 }
 
 func partitionString(s string) int {

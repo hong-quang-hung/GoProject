@@ -2,18 +2,14 @@ package medium
 
 import "fmt"
 
-func init() {
-	Solutions[2024] = Leetcode_Max_Consecutive_Answers
-}
-
 // Reference: https://leetcode.com/problems/maximize-the-confusion-of-an-exam/
-func Leetcode_Max_Consecutive_Answers() {
-	fmt.Println("Input: answerKey = 'TTFF', k = 2")
-	fmt.Println("Output:", maxConsecutiveAnswers("TTFF", 2))
-	fmt.Println("Input: answerKey = 'TFFT', k = 1")
-	fmt.Println("Output:", maxConsecutiveAnswers("TFFT", 1))
-	fmt.Println("Input: answerKey = 'TTFTTFTT', k = 1")
-	fmt.Println("Output:", maxConsecutiveAnswers("TTFTTFTT", 1))
+func init() {
+	Solutions[2024] = func() {
+		fmt.Println("Input: answerKey = 'TTFF', k = 2")
+		fmt.Println("Output:", maxConsecutiveAnswers("TTFF", 2))
+		fmt.Println("Input: answerKey = 'TTFTTFTT', k = 1")
+		fmt.Println("Output:", maxConsecutiveAnswers("TTFTTFTT", 1))
+	}
 }
 
 func maxConsecutiveAnswers(answerKey string, k int) int {

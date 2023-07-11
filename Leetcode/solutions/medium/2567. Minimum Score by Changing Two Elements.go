@@ -5,16 +5,14 @@ import (
 	"sort"
 )
 
-func init() {
-	Solutions[2567] = Leetcode_Minimize_Sum
-}
-
 // Reference: https://leetcode.com/problems/minimum-score-by-changing-two-elements/
-func Leetcode_Minimize_Sum() {
-	fmt.Println("Input: nums = [1,4,3]")
-	fmt.Println("Output:", minimizeSum([]int{1, 4, 3}))
-	fmt.Println("Input: nums = [1,4,7,8,5]")
-	fmt.Println("Output:", minimizeSum([]int{1, 4, 7, 8, 5}))
+func init() {
+	Solutions[2567] = func() {
+		fmt.Println("Input: nums = [1,4,3]")
+		fmt.Println("Output:", minimizeSum([]int{1, 4, 3}))
+		fmt.Println("Input: nums = [1,4,7,8,5]")
+		fmt.Println("Output:", minimizeSum([]int{1, 4, 7, 8, 5}))
+	}
 }
 
 func minimizeSum(nums []int) int {

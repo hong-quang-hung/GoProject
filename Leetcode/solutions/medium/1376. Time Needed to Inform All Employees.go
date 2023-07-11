@@ -5,16 +5,14 @@ import (
 	"math"
 )
 
-func init() {
-	Solutions[1376] = Leetcode_Num_Of_Minutes
-}
-
 // Reference: https://leetcode.com/problems/time-needed-to-inform-all-employees/
-func Leetcode_Num_Of_Minutes() {
-	fmt.Println("Input: n = 1, headID = 0, manager = [-1], informTime = [0]")
-	fmt.Println("Output:", numOfMinutes(1, 0, []int{-1}, []int{0}))
-	fmt.Println("Input: n = 6, headID = 2, manager = [2,2,-1,2,2,2], informTime = [0,0,1,0,0,0]")
-	fmt.Println("Output:", numOfMinutes(6, 2, []int{2, 2, -1, 2, 2, 2}, []int{0, 0, 1, 0, 0, 0}))
+func init() {
+	Solutions[1376] = func() {
+		fmt.Println("Input: n = 1, headID = 0, manager = [-1], informTime = [0]")
+		fmt.Println("Output:", numOfMinutes(1, 0, []int{-1}, []int{0}))
+		fmt.Println("Input: n = 6, headID = 2, manager = [2,2,-1,2,2,2], informTime = [0,0,1,0,0,0]")
+		fmt.Println("Output:", numOfMinutes(6, 2, []int{2, 2, -1, 2, 2, 2}, []int{0, 0, 1, 0, 0, 0}))
+	}
 }
 
 func numOfMinutes(n int, headID int, manager []int, informTime []int) int {

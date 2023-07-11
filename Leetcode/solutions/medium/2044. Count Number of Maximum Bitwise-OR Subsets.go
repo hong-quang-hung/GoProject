@@ -2,18 +2,16 @@ package medium
 
 import "fmt"
 
-func init() {
-	Solutions[2044] = Leetcode_Count_Max_Or_Subsets
-}
-
 // Reference: https://leetcode.com/problems/count-number-of-maximum-bitwise-or-subsets/
-func Leetcode_Count_Max_Or_Subsets() {
-	fmt.Println("Input: nums = [3,1]")
-	fmt.Println("Output:", countMaxOrSubsets([]int{3, 1}))
-	fmt.Println("Input: nums = [2,2,2]")
-	fmt.Println("Output:", countMaxOrSubsets([]int{2, 2, 2}))
-	fmt.Println("Input: nums = [10,8,4]")
-	fmt.Println("Output:", countMaxOrSubsets([]int{10, 8, 4}))
+func init() {
+	Solutions[2044] = func() {
+		fmt.Println("Input: nums = [3,1]")
+		fmt.Println("Output:", countMaxOrSubsets([]int{3, 1}))
+		fmt.Println("Input: nums = [2,2,2]")
+		fmt.Println("Output:", countMaxOrSubsets([]int{2, 2, 2}))
+		fmt.Println("Input: nums = [10,8,4]")
+		fmt.Println("Output:", countMaxOrSubsets([]int{10, 8, 4}))
+	}
 }
 
 func countMaxOrSubsets(nums []int) int {

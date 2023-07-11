@@ -2,16 +2,14 @@ package medium
 
 import "fmt"
 
-func init() {
-	Solutions[2419] = Leetcode_Longest_Subarray_II
-}
-
 // Reference: https://leetcode.com/problems/longest-subarray-with-maximum-bitwise-and/
-func Leetcode_Longest_Subarray_II() {
-	fmt.Println("Input: nums = [1,2,3,3,2,2]")
-	fmt.Println("Output:", longestSubarray_ii([]int{1, 2, 3, 3, 2, 2}))
-	fmt.Println("Input: nums = [1,2,3,3,2,2,2,4]")
-	fmt.Println("Output:", longestSubarray_ii([]int{1, 2, 3, 3, 2, 2, 2, 4}))
+func init() {
+	Solutions[2419] = func() {
+		fmt.Println("Input: nums = [1,2,3,3,2,2]")
+		fmt.Println("Output:", longestSubarray_ii([]int{1, 2, 3, 3, 2, 2}))
+		fmt.Println("Input: nums = [1,2,3,3,2,2,2,4]")
+		fmt.Println("Output:", longestSubarray_ii([]int{1, 2, 3, 3, 2, 2, 2, 4}))
+	}
 }
 
 func longestSubarray_ii(nums []int) int {

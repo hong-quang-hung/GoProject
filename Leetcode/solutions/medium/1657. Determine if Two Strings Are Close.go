@@ -5,18 +5,16 @@ import (
 	"sort"
 )
 
-func init() {
-	Solutions[1657] = Leetcode_Close_Strings
-}
-
 // Reference: https://leetcode.com/problems/determine-if-two-strings-are-close/
-func Leetcode_Close_Strings() {
-	fmt.Println("Input: word1 = 'abc', word2 = 'bca'")
-	fmt.Println("Output:", closeStrings("abc", "bca"))
-	fmt.Println("Input: word1 = 'cabbba', word2 = 'abbccc'")
-	fmt.Println("Output:", closeStrings("cabbba", "abbccc"))
-	fmt.Println("Input: word1 = 'cabbb', word2 = 'abbcc'")
-	fmt.Println("Output:", closeStrings("cabbb", "abbcc"))
+func init() {
+	Solutions[1657] = func() {
+		fmt.Println("Input: word1 = 'abc', word2 = 'bca'")
+		fmt.Println("Output:", closeStrings("abc", "bca"))
+		fmt.Println("Input: word1 = 'cabbba', word2 = 'abbccc'")
+		fmt.Println("Output:", closeStrings("cabbba", "abbccc"))
+		fmt.Println("Input: word1 = 'cabbb', word2 = 'abbcc'")
+		fmt.Println("Output:", closeStrings("cabbb", "abbcc"))
+	}
 }
 
 func closeStrings(word1 string, word2 string) bool {

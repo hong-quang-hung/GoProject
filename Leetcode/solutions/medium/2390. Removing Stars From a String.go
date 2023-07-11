@@ -2,16 +2,14 @@ package medium
 
 import "fmt"
 
-func init() {
-	Solutions[2390] = Leetcode_Remove_Stars
-}
-
 // Reference: https://leetcode.com/problems/removing-stars-from-a-string/
-func Leetcode_Remove_Stars() {
-	fmt.Println("Input: s = 'leet**cod*e'")
-	fmt.Println("Output:", removeStars("leet**cod*e"))
-	fmt.Println("Input: s = 'erase*****'")
-	fmt.Println("Output:", removeStars("erase*****"))
+func init() {
+	Solutions[2390] = func() {
+		fmt.Println("Input: s = 'leet**cod*e'")
+		fmt.Println("Output:", removeStars("leet**cod*e"))
+		fmt.Println("Input: s = 'erase*****'")
+		fmt.Println("Output:", removeStars("erase*****"))
+	}
 }
 
 func removeStars(s string) string {

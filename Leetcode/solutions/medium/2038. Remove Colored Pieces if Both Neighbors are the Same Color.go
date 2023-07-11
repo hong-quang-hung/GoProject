@@ -2,18 +2,16 @@ package medium
 
 import "fmt"
 
-func init() {
-	Solutions[2038] = Leetcode_Winner_Of_Game
-}
-
 // Reference: https://leetcode.com/problems/remove-colored-pieces-if-both-neighbors-are-the-same-color/
-func Leetcode_Winner_Of_Game() {
-	fmt.Println("Input: colors = 'AAABABB'")
-	fmt.Println("Output:", winnerOfGame("AAABABB"))
-	fmt.Println("Input: colors = 'AA'")
-	fmt.Println("Output:", winnerOfGame("AA"))
-	fmt.Println("Input: colors = 'ABBBBBBBAAA'")
-	fmt.Println("Output:", winnerOfGame("ABBBBBBBAAA"))
+func init() {
+	Solutions[2038] = func() {
+		fmt.Println("Input: colors = 'AAABABB'")
+		fmt.Println("Output:", winnerOfGame("AAABABB"))
+		fmt.Println("Input: colors = 'AA'")
+		fmt.Println("Output:", winnerOfGame("AA"))
+		fmt.Println("Input: colors = 'ABBBBBBBAAA'")
+		fmt.Println("Output:", winnerOfGame("ABBBBBBBAAA"))
+	}
 }
 
 func winnerOfGame(colors string) bool {

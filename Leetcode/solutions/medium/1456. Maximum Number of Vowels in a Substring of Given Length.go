@@ -2,18 +2,16 @@ package medium
 
 import "fmt"
 
-func init() {
-	Solutions[1456] = Leetcode_Max_Vowels
-}
-
 // Reference: https://leetcode.com/problems/maximum-number-of-vowels-in-a-substring-of-given-length/
-func Leetcode_Max_Vowels() {
-	fmt.Println("Input: s = 'abciiidef', k = 3")
-	fmt.Println("Output:", maxVowels("abciiidef", 3))
-	fmt.Println("Input: s = 'aeiou', k = 2")
-	fmt.Println("Output:", maxVowels("aeiou", 2))
-	fmt.Println("Input: s = 'leetcode', k = 3")
-	fmt.Println("Output:", maxVowels("leetcode", 3))
+func init() {
+	Solutions[1456] = func() {
+		fmt.Println("Input: s = 'abciiidef', k = 3")
+		fmt.Println("Output:", maxVowels("abciiidef", 3))
+		fmt.Println("Input: s = 'aeiou', k = 2")
+		fmt.Println("Output:", maxVowels("aeiou", 2))
+		fmt.Println("Input: s = 'leetcode', k = 3")
+		fmt.Println("Output:", maxVowels("leetcode", 3))
+	}
 }
 
 func maxVowels(s string, k int) int {

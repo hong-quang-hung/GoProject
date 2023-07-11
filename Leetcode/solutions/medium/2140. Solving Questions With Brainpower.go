@@ -2,16 +2,14 @@ package medium
 
 import "fmt"
 
-func init() {
-	Solutions[2140] = Leetcode_Most_Points
-}
-
 // Reference: https://leetcode.com/problems/solving-questions-with-brainpower/
-func Leetcode_Most_Points() {
-	fmt.Println("Input: questions = [[3,2],[4,3],[4,4],[2,5]]")
-	fmt.Println("Output:", mostPoints(S2SoSliceInt("[[3,2],[4,3],[4,4],[2,5]]")))
-	fmt.Println("Input: questions = [[1,1],[2,2],[3,3],[4,4],[5,5]]")
-	fmt.Println("Output:", mostPoints(S2SoSliceInt("[[1,1],[2,2],[3,3],[4,4],[5,5]]")))
+func init() {
+	Solutions[2140] = func() {
+		fmt.Println("Input: questions = [[3,2],[4,3],[4,4],[2,5]]")
+		fmt.Println("Output:", mostPoints(S2SoSliceInt("[[3,2],[4,3],[4,4],[2,5]]")))
+		fmt.Println("Input: questions = [[1,1],[2,2],[3,3],[4,4],[5,5]]")
+		fmt.Println("Output:", mostPoints(S2SoSliceInt("[[1,1],[2,2],[3,3],[4,4],[5,5]]")))
+	}
 }
 
 func mostPoints(questions [][]int) int64 {

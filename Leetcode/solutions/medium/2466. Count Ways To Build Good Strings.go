@@ -2,16 +2,14 @@ package medium
 
 import "fmt"
 
-func init() {
-	Solutions[2466] = Leetcode_Count_Good_Strings
-}
-
 // Reference: https://leetcode.com/problems/count-ways-to-build-good-strings/
-func Leetcode_Count_Good_Strings() {
-	fmt.Println("Input: low = 3, high = 3, zero = 1, one = 1")
-	fmt.Println("Output:", countGoodStrings(3, 3, 1, 1))
-	fmt.Println("Input: low = 2, high = 3, zero = 1, one = 2")
-	fmt.Println("Output:", countGoodStrings(2, 3, 1, 2))
+func init() {
+	Solutions[2466] = func() {
+		fmt.Println("Input: low = 3, high = 3, zero = 1, one = 1")
+		fmt.Println("Output:", countGoodStrings(3, 3, 1, 1))
+		fmt.Println("Input: low = 2, high = 3, zero = 1, one = 2")
+		fmt.Println("Output:", countGoodStrings(2, 3, 1, 2))
+	}
 }
 
 func countGoodStrings(low int, high int, zero int, one int) int {

@@ -2,16 +2,14 @@ package medium
 
 import "fmt"
 
-func init() {
-	Solutions[2352] = Leetcode_Equal_Pairs
-}
-
 // Reference: https://leetcode.com/problems/equal-row-and-column-pairs/
-func Leetcode_Equal_Pairs() {
-	fmt.Println("Input: grid = [[3,2,1],[1,7,6],[2,7,7]]")
-	fmt.Println("Output:", equalPairs(S2SoSliceInt("[[3,2,1],[1,7,6],[2,7,7]]")))
-	fmt.Println("Input: grid = [[3,1,2,2],[1,4,4,5],[2,4,2,2],[2,4,2,2]]")
-	fmt.Println("Output:", equalPairs(S2SoSliceInt("[[3,1,2,2],[1,4,4,5],[2,4,2,2],[2,4,2,2]]")))
+func init() {
+	Solutions[2352] = func() {
+		fmt.Println("Input: grid = [[3,2,1],[1,7,6],[2,7,7]]")
+		fmt.Println("Output:", equalPairs(S2SoSliceInt("[[3,2,1],[1,7,6],[2,7,7]]")))
+		fmt.Println("Input: grid = [[3,1,2,2],[1,4,4,5],[2,4,2,2],[2,4,2,2]]")
+		fmt.Println("Output:", equalPairs(S2SoSliceInt("[[3,1,2,2],[1,4,4,5],[2,4,2,2],[2,4,2,2]]")))
+	}
 }
 
 func equalPairs(grid [][]int) int {
