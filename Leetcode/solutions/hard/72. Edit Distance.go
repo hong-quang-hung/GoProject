@@ -2,14 +2,12 @@ package hard
 
 import "fmt"
 
-func init() {
-	Solutions[72] = Leetcode_Min_Distance
-}
-
 // Reference: https://leetcode.com/problems/edit-distance/
-func Leetcode_Min_Distance() {
-	fmt.Println("Input: word1 = 'intention', word2 = 'execution'")
-	fmt.Println("Output:", minDistance("intention", "execution"))
+func init() {
+	Solutions[72] = func() {
+		fmt.Println("Input: word1 = 'intention', word2 = 'execution'")
+		fmt.Println("Output:", minDistance("intention", "execution"))
+	}
 }
 
 func minDistance(word1 string, word2 string) int {

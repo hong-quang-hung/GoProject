@@ -2,18 +2,16 @@ package hard
 
 import "fmt"
 
-func init() {
-	Solutions[1092] = Leetcode_Shortest_Common_Supersequence
-}
-
 // Reference: https://leetcode.com/problems/shortest-common-supersequence/
-func Leetcode_Shortest_Common_Supersequence() {
-	fmt.Println("Input: str1 = 'abac', str2 = 'cab'")
-	fmt.Println("Output:", shortestCommonSupersequence("abac", "cab"))
-	fmt.Println("Input: str1 = 'aaaaaaaa', str2 = 'aaaaaaaa'")
-	fmt.Println("Output:", shortestCommonSupersequence("aaaaaaaa", "aaaaaaaa"))
-	fmt.Println("Input: str1 = 'cddb', str2 = 'cab'")
-	fmt.Println("Output:", shortestCommonSupersequence("cddb", "cab"))
+func init() {
+	Solutions[1092] = func() {
+		fmt.Println("Input: str1 = 'abac', str2 = 'cab'")
+		fmt.Println("Output:", shortestCommonSupersequence("abac", "cab"))
+		fmt.Println("Input: str1 = 'aaaaaaaa', str2 = 'aaaaaaaa'")
+		fmt.Println("Output:", shortestCommonSupersequence("aaaaaaaa", "aaaaaaaa"))
+		fmt.Println("Input: str1 = 'cddb', str2 = 'cab'")
+		fmt.Println("Output:", shortestCommonSupersequence("cddb", "cab"))
+	}
 }
 
 func shortestCommonSupersequence(str1 string, str2 string) string {

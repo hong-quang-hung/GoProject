@@ -2,18 +2,14 @@ package hard
 
 import "fmt"
 
-func init() {
-	Solutions[956] = Leetcode_Tallest_Billboard
-}
-
 // Reference: https://leetcode.com/problems/tallest-billboard/
-func Leetcode_Tallest_Billboard() {
-	fmt.Println("Input: nums = [1, 2, 3, 6]")
-	fmt.Println("Output:", tallestBillboard([]int{1, 2, 3, 6}))
-	fmt.Println("Input: nums = [1,2,3,4,5,6]")
-	fmt.Println("Output:", tallestBillboard([]int{1, 2, 3, 4, 5, 6}))
-	fmt.Println("Input: nums = [1,2]")
-	fmt.Println("Output:", tallestBillboard([]int{1, 2}))
+func init() {
+	Solutions[956] = func() {
+		fmt.Println("Input: nums = [1, 2, 3, 6]")
+		fmt.Println("Output:", tallestBillboard([]int{1, 2, 3, 6}))
+		fmt.Println("Input: nums = [1,2,3,4,5,6]")
+		fmt.Println("Output:", tallestBillboard([]int{1, 2, 3, 4, 5, 6}))
+	}
 }
 
 func tallestBillboard(rods []int) int {

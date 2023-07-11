@@ -2,16 +2,14 @@ package hard
 
 import "fmt"
 
-func init() {
-	Solutions[2360] = Leetcode_Longest_Cycle
-}
-
 // Reference: https://leetcode.com/problems/longest-cycle-in-a-graph/
-func Leetcode_Longest_Cycle() {
-	fmt.Println("Input: edges = [3,3,4,2,3]")
-	fmt.Println("Output:", longestCycle([]int{3, 3, 4, 2, 3}))
-	fmt.Println("Input: edges = [2,-1,3,1]")
-	fmt.Println("Output:", longestCycle([]int{2, -1, 3, 1}))
+func init() {
+	Solutions[2360] = func() {
+		fmt.Println("Input: edges = [3,3,4,2,3]")
+		fmt.Println("Output:", longestCycle([]int{3, 3, 4, 2, 3}))
+		fmt.Println("Input: edges = [2,-1,3,1]")
+		fmt.Println("Output:", longestCycle([]int{2, -1, 3, 1}))
+	}
 }
 
 func longestCycle(edges []int) int {

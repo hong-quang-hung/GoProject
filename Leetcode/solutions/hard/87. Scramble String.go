@@ -2,16 +2,14 @@ package hard
 
 import "fmt"
 
-func init() {
-	Solutions[87] = Leetcode_Is_Scramble
-}
-
 // Reference: https://leetcode.com/problems/scramble-string/
-func Leetcode_Is_Scramble() {
-	fmt.Println("Input: s1 = 'great', s2 = 'rgeat'")
-	fmt.Println("Output:", isScramble("great", "rgeat"))
-	fmt.Println("Input: s1 = 'abcde', s2 = 'caebd'")
-	fmt.Println("Output:", isScramble("abcde", "caebd"))
+func init() {
+	Solutions[87] = func() {
+		fmt.Println("Input: s1 = 'great', s2 = 'rgeat'")
+		fmt.Println("Output:", isScramble("great", "rgeat"))
+		fmt.Println("Input: s1 = 'abcde', s2 = 'caebd'")
+		fmt.Println("Output:", isScramble("abcde", "caebd"))
+	}
 }
 
 func isScramble(s1 string, s2 string) bool {
@@ -25,14 +23,17 @@ func isScramble(s1 string, s2 string) bool {
 			dp[1][i][j] = s1[i] == s2[j]
 		}
 	}
+
 	for l := 2; l <= n; l++ {
 		if dp[l] == nil {
 			dp[l] = make([][]bool, n)
 		}
+
 		for i := 0; i < n+1-l; i++ {
 			if dp[l][i] == nil {
 				dp[l][i] = make([]bool, n)
 			}
+
 			for j := 0; j < n+1-l; j++ {
 				for k := 1; k < l; k++ {
 					dp1 := dp[k][i]

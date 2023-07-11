@@ -2,18 +2,16 @@ package hard
 
 import "fmt"
 
-func init() {
-	Solutions[2732] = LeetCode_Good_Subset_Of_Binary_Matrix
-}
-
 // Reference: https://leetcode.com/problems/find-a-good-subset-of-the-matrix/
-func LeetCode_Good_Subset_Of_Binary_Matrix() {
-	fmt.Println("Input: grid = [[0,1,1,0],[0,0,0,1],[1,1,1,1]]")
-	fmt.Println("Output:", goodSubsetofBinaryMatrix(S2SoSliceInt("[[0,1,1,0],[0,0,0,1],[1,1,1,1]]")))
-	fmt.Println("Input: grid = [[0]]")
-	fmt.Println("Output:", goodSubsetofBinaryMatrix(S2SoSliceInt("[[0]]")))
-	fmt.Println("Input: grid = [[1,1,1],[1,1,1]]")
-	fmt.Println("Output:", goodSubsetofBinaryMatrix(S2SoSliceInt("[[1,1,1],[1,1,1]]")))
+func init() {
+	Solutions[2732] = func() {
+		fmt.Println("Input: grid = [[0,1,1,0],[0,0,0,1],[1,1,1,1]]")
+		fmt.Println("Output:", goodSubsetofBinaryMatrix(S2SoSliceInt("[[0,1,1,0],[0,0,0,1],[1,1,1,1]]")))
+		fmt.Println("Input: grid = [[0]]")
+		fmt.Println("Output:", goodSubsetofBinaryMatrix(S2SoSliceInt("[[0]]")))
+		fmt.Println("Input: grid = [[1,1,1],[1,1,1]]")
+		fmt.Println("Output:", goodSubsetofBinaryMatrix(S2SoSliceInt("[[1,1,1],[1,1,1]]")))
+	}
 }
 
 func goodSubsetofBinaryMatrix(grid [][]int) []int {

@@ -2,18 +2,16 @@ package hard
 
 import "fmt"
 
-func init() {
-	Solutions[1312] = Leetcode_Min_Insertions
-}
-
 // Reference: https://leetcode.com/problems/minimum-insertion-steps-to-make-a-string-palindrome/
-func Leetcode_Min_Insertions() {
-	fmt.Println("Input: s = 'zzazz'")
-	fmt.Println("Output:", minInsertions("zzazz"))
-	fmt.Println("Input: s = 'mbadm'")
-	fmt.Println("Output:", minInsertions("mbadm"))
-	fmt.Println("Input: s = 'leetcode'")
-	fmt.Println("Output:", minInsertions("leetcode"))
+func init() {
+	Solutions[1312] = func() {
+		fmt.Println("Input: s = 'zzazz'")
+		fmt.Println("Output:", minInsertions("zzazz"))
+		fmt.Println("Input: s = 'mbadm'")
+		fmt.Println("Output:", minInsertions("mbadm"))
+		fmt.Println("Input: s = 'leetcode'")
+		fmt.Println("Output:", minInsertions("leetcode"))
+	}
 }
 
 func minInsertions(s string) int {

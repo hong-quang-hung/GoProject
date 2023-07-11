@@ -2,29 +2,26 @@ package hard
 
 import "fmt"
 
-func init() {
-	Solutions[1444] = Leetcode_Ways
-}
-
 // Reference: https://leetcode.com/problems/number-of-ways-of-cutting-a-pizza/
-func Leetcode_Ways() {
-	fmt.Println("Input: pizza = ['A..','AAA,'...'], k = 3")
-	fmt.Println("Output:", ways([]string{"A..", "AAA", "..."}, 3))
-	fmt.Println("Input: pizza = ['A..','AA.,'...'], k = 3")
-	fmt.Println("Output:", ways([]string{"A..", "AA.", "..."}, 3))
+func init() {
+	Solutions[1444] = func() {
+		fmt.Println("Input: pizza = ['A..','AAA,'...'], k = 3")
+		fmt.Println("Output:", ways([]string{"A..", "AAA", "..."}, 3))
+		fmt.Println("Input: pizza = ['A..','AA.,'...'], k = 3")
+		fmt.Println("Output:", ways([]string{"A..", "AA.", "..."}, 3))
+	}
 }
 
 func ways(pizza []string, k int) int {
 	rows, cols := len(pizza), len(pizza[0])
 	apples := make([][]int, rows+1)
 	f := make([][]int, rows)
-
 	for row := 0; row < rows; row++ {
 		apples[row] = make([]int, cols+1)
 		f[row] = make([]int, cols)
 	}
-	apples[rows] = make([]int, cols+1)
 
+	apples[rows] = make([]int, cols+1)
 	for row := rows - 1; row >= 0; row-- {
 		for col := cols - 1; col >= 0; col-- {
 			if pizza[row][col] == 'A' {
@@ -37,7 +34,6 @@ func ways(pizza []string, k int) int {
 		}
 	}
 
-	const mod = int(1e9 + 7)
 	for remain := 1; remain < k; remain++ {
 		g := make([][]int, rows)
 		for row := 0; row < rows; row++ {

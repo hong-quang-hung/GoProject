@@ -2,16 +2,14 @@ package hard
 
 import "fmt"
 
-func init() {
-	Solutions[839] = Leetcode_Num_Similar_Groups
-}
-
 // Reference: https://leetcode.com/problems/similar-string-groups/
-func Leetcode_Num_Similar_Groups() {
-	fmt.Println("Input: strs = ['tars','rats','arts','star']")
-	fmt.Println("Output:", numSimilarGroups([]string{"tars", "rats", "arts", "star"}))
-	fmt.Println("Input: strs = ['omv','ovm']")
-	fmt.Println("Output:", numSimilarGroups([]string{"omv", "ovm"}))
+func init() {
+	Solutions[839] = func() {
+		fmt.Println("Input: strs = ['tars','rats','arts','star']")
+		fmt.Println("Output:", numSimilarGroups([]string{"tars", "rats", "arts", "star"}))
+		fmt.Println("Input: strs = ['omv','ovm']")
+		fmt.Println("Output:", numSimilarGroups([]string{"omv", "ovm"}))
+	}
 }
 
 func numSimilarGroups(strs []string) int {

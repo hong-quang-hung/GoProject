@@ -2,16 +2,14 @@ package hard
 
 import "fmt"
 
-func init() {
-	Solutions[25] = Leetcode_Reverse_K_Group
-}
-
 // Reference: https://leetcode.com/problems/reverse-nodes-in-k-group/
-func Leetcode_Reverse_K_Group() {
-	fmt.Println("Input: head = [1,2,3,4,5], k = 2")
-	fmt.Println("Output:", reverseKGroup(S2ListNode("[1,2,3,4,5]"), 2))
-	fmt.Println("Input: head = [1,2,3,4,5], k = 3")
-	fmt.Println("Output:", reverseKGroup(S2ListNode("[1,2,3,4,5]"), 3))
+func init() {
+	Solutions[25] = func() {
+		fmt.Println("Input: head = [1,2,3,4,5], k = 2")
+		fmt.Println("Output:", reverseKGroup(S2ListNode("[1,2,3,4,5]"), 2))
+		fmt.Println("Input: head = [1,2,3,4,5], k = 3")
+		fmt.Println("Output:", reverseKGroup(S2ListNode("[1,2,3,4,5]"), 3))
+	}
 }
 
 func reverseKGroup(head *ListNode, k int) *ListNode {

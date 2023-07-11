@@ -5,16 +5,14 @@ import (
 	"math"
 )
 
-func init() {
-	Solutions[2547] = Leetcode_Min_Cost
-}
-
 // Reference: https://leetcode.com/problems/minimum-cost-to-split-an-array/
-func Leetcode_Min_Cost() {
-	fmt.Println("Input: nums = [1,2,1,2,1], k = 2")
-	fmt.Println("Output:", minCost([]int{1, 2, 1, 2, 1}, 2))
-	fmt.Println("Input: nums = [1,2,1,2,1], k = 5")
-	fmt.Println("Output:", minCost([]int{1, 2, 1, 2, 1}, 5))
+func init() {
+	Solutions[2547] = func() {
+		fmt.Println("Input: nums = [1,2,1,2,1], k = 2")
+		fmt.Println("Output:", minCost([]int{1, 2, 1, 2, 1}, 2))
+		fmt.Println("Input: nums = [1,2,1,2,1], k = 5")
+		fmt.Println("Output:", minCost([]int{1, 2, 1, 2, 1}, 5))
+	}
 }
 
 func minCost(nums []int, k int) int {

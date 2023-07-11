@@ -2,16 +2,14 @@ package hard
 
 import "fmt"
 
-func init() {
-	Solutions[1639] = Leetcode_Num_Ways
-}
-
 // Reference: https://leetcode.com/problems/number-of-ways-to-form-a-target-string-given-a-dictionary/
-func Leetcode_Num_Ways() {
-	fmt.Println("Input: words = ['acca','bbbb','caca'], target = 'aba'")
-	fmt.Println("Output:", numWays([]string{"acca", "bbbb", "caca"}, "aba"))
-	fmt.Println("Input: words = ['abba','baab'], target = 'bab'")
-	fmt.Println("Output:", numWays([]string{"abba", "baab"}, "bab"))
+func init() {
+	Solutions[1639] = func() {
+		fmt.Println("Input: words = ['acca','bbbb','caca'], target = 'aba'")
+		fmt.Println("Output:", numWays([]string{"acca", "bbbb", "caca"}, "aba"))
+		fmt.Println("Input: words = ['abba','baab'], target = 'bab'")
+		fmt.Println("Output:", numWays([]string{"abba", "baab"}, "bab"))
+	}
 }
 
 func numWays(words []string, target string) int {

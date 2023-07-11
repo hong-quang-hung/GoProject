@@ -6,18 +6,16 @@ import (
 	"sort"
 )
 
-func init() {
-	Solutions[502] = Leetcode_Find_Maximized_Capital
-}
-
 // Reference: https://leetcode.com/problems/ipo/
-func Leetcode_Find_Maximized_Capital() {
-	fmt.Println("Input: k = 2, w = 0, profits = [1,2,3], capital = [0,1,1]")
-	fmt.Println("Output:", findMaximizedCapital(2, 0, []int{1, 2, 3}, []int{0, 1, 1}))
-	fmt.Println("Input: k = 3, w = 0, profits = [1,2,3], capital = [0,1,2]")
-	fmt.Println("Output:", findMaximizedCapital(3, 0, []int{1, 2, 3}, []int{0, 1, 2}))
-	fmt.Println("Input: k = 3, w = 0, profits = [1,3,2,2], capital = [0,2,1,4]")
-	fmt.Println("Output:", findMaximizedCapital(3, 0, []int{1, 3, 2, 2}, []int{0, 2, 1, 4}))
+func init() {
+	Solutions[502] = func() {
+		fmt.Println("Input: k = 2, w = 0, profits = [1,2,3], capital = [0,1,1]")
+		fmt.Println("Output:", findMaximizedCapital(2, 0, []int{1, 2, 3}, []int{0, 1, 1}))
+		fmt.Println("Input: k = 3, w = 0, profits = [1,2,3], capital = [0,1,2]")
+		fmt.Println("Output:", findMaximizedCapital(3, 0, []int{1, 2, 3}, []int{0, 1, 2}))
+		fmt.Println("Input: k = 3, w = 0, profits = [1,3,2,2], capital = [0,2,1,4]")
+		fmt.Println("Output:", findMaximizedCapital(3, 0, []int{1, 3, 2, 2}, []int{0, 2, 1, 4}))
+	}
 }
 
 func findMaximizedCapital(k int, w int, profits []int, capital []int) int {

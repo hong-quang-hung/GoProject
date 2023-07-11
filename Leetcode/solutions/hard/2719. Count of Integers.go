@@ -2,16 +2,14 @@ package hard
 
 import "fmt"
 
-func init() {
-	Solutions[2719] = Leetcode_Count
-}
-
 // Reference: https://leetcode.com/problems/count-of-integers/
-func Leetcode_Count() {
-	fmt.Println("Input: num1 = '1', num2 = '12', min_num = 1, max_num = 8")
-	fmt.Println("Output:", count("1", "12", 1, 8))
-	fmt.Println("Input: num1 = '1', num2 = '5', min_num = 1, max_num = 5")
-	fmt.Println("Output:", count("1", "5", 1, 5))
+func init() {
+	Solutions[2719] = func() {
+		fmt.Println("Input: num1 = '1', num2 = '12', min_num = 1, max_num = 8")
+		fmt.Println("Output:", count("1", "12", 1, 8))
+		fmt.Println("Input: num1 = '1', num2 = '5', min_num = 1, max_num = 5")
+		fmt.Println("Output:", count("1", "5", 1, 5))
+	}
 }
 
 func count(num1 string, num2 string, min_sum int, max_sum int) int {
@@ -24,7 +22,6 @@ func count(num1 string, num2 string, min_sum int, max_sum int) int {
 	}
 
 	upper := countSolved(dp, 0, 0, 1, num2, min_sum, max_sum)
-
 	for i := 0; i < 23; i++ {
 		dp[i] = make([][]int, 401)
 		for j := 0; j < 401; j++ {
@@ -33,7 +30,6 @@ func count(num1 string, num2 string, min_sum int, max_sum int) int {
 	}
 
 	lower := countSolved(dp, 0, 0, 1, num1, min_sum, max_sum)
-
 	sum := 0
 	for _, c := range num1 {
 		sum += int(c - '0')

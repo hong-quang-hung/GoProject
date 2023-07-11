@@ -2,16 +2,14 @@ package hard
 
 import "fmt"
 
-func init() {
-	Solutions[768] = Leetcode_Max_Chunks_To_Sorted_II
-}
-
 // Reference: https://leetcode.com/problems/max-chunks-to-make-sorted-ii/
-func Leetcode_Max_Chunks_To_Sorted_II() {
-	fmt.Println("Input: arr = [4,2,2,1,1]")
-	fmt.Println("Output:", maxChunksToSorted_ii([]int{4, 2, 2, 1, 1}))
-	fmt.Println("Input: arr = [0,0,1,1,1]")
-	fmt.Println("Output:", maxChunksToSorted_ii([]int{0, 0, 1, 1, 1}))
+func init() {
+	Solutions[768] = func() {
+		fmt.Println("Input: arr = [4,2,2,1,1]")
+		fmt.Println("Output:", maxChunksToSorted_ii([]int{4, 2, 2, 1, 1}))
+		fmt.Println("Input: arr = [0,0,1,1,1]")
+		fmt.Println("Output:", maxChunksToSorted_ii([]int{0, 0, 1, 1, 1}))
+	}
 }
 
 func maxChunksToSorted_ii(arr []int) int {

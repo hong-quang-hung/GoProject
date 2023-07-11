@@ -5,16 +5,14 @@ import (
 	"sort"
 )
 
-func init() {
-	Solutions[1402] = Leetcode_Max_Satisfaction
-}
-
 // Reference: https://leetcode.com/problems/reducing-dishes/
-func Leetcode_Max_Satisfaction() {
-	fmt.Println("Input: satisfaction = [-1,-8,0,5,-9]")
-	fmt.Println("Output:", maxSatisfaction([]int{-1, -8, 0, 5, -9}))
-	fmt.Println("Input: satisfaction = [-1,-4,-5]")
-	fmt.Println("Output:", maxSatisfaction([]int{-1, -4, -5}))
+func init() {
+	Solutions[1402] = func() {
+		fmt.Println("Input: satisfaction = [-1,-8,0,5,-9]")
+		fmt.Println("Output:", maxSatisfaction([]int{-1, -8, 0, 5, -9}))
+		fmt.Println("Input: satisfaction = [-1,-4,-5]")
+		fmt.Println("Output:", maxSatisfaction([]int{-1, -4, -5}))
+	}
 }
 
 func maxSatisfaction(satisfaction []int) int {

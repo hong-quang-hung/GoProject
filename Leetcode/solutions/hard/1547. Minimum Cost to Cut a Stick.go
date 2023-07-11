@@ -6,22 +6,19 @@ import (
 	"sort"
 )
 
-func init() {
-	Solutions[1547] = Leetcode_Min_Cost_Cut
-}
-
 // Reference: https://leetcode.com/problems/minimum-cost-to-cut-a-stick/
-func Leetcode_Min_Cost_Cut() {
-	fmt.Println("Input: n = 7, cuts = [1,3,4,5]")
-	fmt.Println("Output:", minCostCut(7, []int{1, 3, 4, 5}))
-	fmt.Println("Input: n = 9, cuts = [5,6,1,4,2]")
-	fmt.Println("Output:", minCostCut(9, []int{5, 6, 1, 4, 2}))
+func init() {
+	Solutions[1547] = func() {
+		fmt.Println("Input: n = 7, cuts = [1,3,4,5]")
+		fmt.Println("Output:", minCostCut(7, []int{1, 3, 4, 5}))
+		fmt.Println("Input: n = 9, cuts = [5,6,1,4,2]")
+		fmt.Println("Output:", minCostCut(9, []int{5, 6, 1, 4, 2}))
+	}
 }
 
 func minCostCut(n int, cuts []int) int {
 	cuts = append(cuts, []int{0, n}...)
 	sort.Ints(cuts)
-
 	l := len(cuts)
 	dp := make([][]int, l)
 	for i := 0; i < l; i++ {

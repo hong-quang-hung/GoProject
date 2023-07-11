@@ -5,18 +5,16 @@ import (
 	"math/bits"
 )
 
-func init() {
-	Solutions[1601] = Leetcode_Maximum_Requests
-}
-
 // Reference: https://leetcode.com/problems/maximum-number-of-achievable-transfer-requests/
-func Leetcode_Maximum_Requests() {
-	fmt.Println("Input: n = 5, requests = [[0,1],[1,0],[0,1],[1,2],[2,0],[3,4]]")
-	fmt.Println("Output:", maximumRequests(5, S2SoSliceInt("[[0,1],[1,0],[0,1],[1,2],[2,0],[3,4]]")))
-	fmt.Println("Input: n = 3, requests = [[0,0],[1,2],[2,1]]")
-	fmt.Println("Output:", maximumRequests(3, S2SoSliceInt("[[0,0],[1,2],[2,1]]")))
-	fmt.Println("Input: n = 4, requests = [[0,3],[3,1],[1,2],[2,0]]")
-	fmt.Println("Output:", maximumRequests(4, S2SoSliceInt("[[0,3],[3,1],[1,2],[2,0]]")))
+func init() {
+	Solutions[1601] = func() {
+		fmt.Println("Input: n = 5, requests = [[0,1],[1,0],[0,1],[1,2],[2,0],[3,4]]")
+		fmt.Println("Output:", maximumRequests(5, S2SoSliceInt("[[0,1],[1,0],[0,1],[1,2],[2,0],[3,4]]")))
+		fmt.Println("Input: n = 3, requests = [[0,0],[1,2],[2,1]]")
+		fmt.Println("Output:", maximumRequests(3, S2SoSliceInt("[[0,0],[1,2],[2,1]]")))
+		fmt.Println("Input: n = 4, requests = [[0,3],[3,1],[1,2],[2,0]]")
+		fmt.Println("Output:", maximumRequests(4, S2SoSliceInt("[[0,3],[3,1],[1,2],[2,0]]")))
+	}
 }
 
 func maximumRequests(n int, requests [][]int) int {

@@ -2,16 +2,14 @@ package hard
 
 import "fmt"
 
-func init() {
-	Solutions[2306] = Leetcode_Distinct_Names
-}
-
 // Reference: https://leetcode.com/problems/naming-a-company/
-func Leetcode_Distinct_Names() {
-	fmt.Println("Input: ideas = ['coffee','donuts','time','toffee']")
-	fmt.Println("Output:", distinctNames([]string{"coffee", "donuts", "time", "toffee"}))
-	fmt.Println("Input: ideas = ['aaa','baa', 'caa', 'bbb', 'cbb', 'dbb']")
-	fmt.Println("Output:", distinctNames([]string{"aaa", "baa", "caa", "bbb", "cbb", "dbb"}))
+func init() {
+	Solutions[2306] = func() {
+		fmt.Println("Input: ideas = ['coffee','donuts','time','toffee']")
+		fmt.Println("Output:", distinctNames([]string{"coffee", "donuts", "time", "toffee"}))
+		fmt.Println("Input: ideas = ['aaa','baa', 'caa', 'bbb', 'cbb', 'dbb']")
+		fmt.Println("Output:", distinctNames([]string{"aaa", "baa", "caa", "bbb", "cbb", "dbb"}))
+	}
 }
 
 func distinctNames(ideas []string) int64 {

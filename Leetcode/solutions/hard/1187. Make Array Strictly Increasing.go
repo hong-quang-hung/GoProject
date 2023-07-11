@@ -6,23 +6,20 @@ import (
 	"sort"
 )
 
-func init() {
-	Solutions[1187] = Leetcode_Make_Array_Increasing
-}
-
 // Reference: https://leetcode.com/problems/make-array-strictly-increasing/
-func Leetcode_Make_Array_Increasing() {
-	fmt.Println("Input: arr1 = [1,5,3,6,7], arr2 = [1,3,2,4]")
-	fmt.Println("Output:", makeArrayIncreasing([]int{1, 5, 3, 6, 7}, []int{1, 3, 2, 4}))
-	fmt.Println("Input: arr1 = [1,5,3,6,7], arr2 = [4,3,1]")
-	fmt.Println("Output:", makeArrayIncreasing([]int{1, 5, 3, 6, 7}, []int{4, 3, 1}))
-	fmt.Println("Input: arr1 = [1,5,3,6,7], arr2 = [1,6,3,3]")
-	fmt.Println("Output:", makeArrayIncreasing([]int{1, 5, 3, 6, 7}, []int{1, 6, 3, 3}))
+func init() {
+	Solutions[1187] = func() {
+		fmt.Println("Input: arr1 = [1,5,3,6,7], arr2 = [1,3,2,4]")
+		fmt.Println("Output:", makeArrayIncreasing([]int{1, 5, 3, 6, 7}, []int{1, 3, 2, 4}))
+		fmt.Println("Input: arr1 = [1,5,3,6,7], arr2 = [4,3,1]")
+		fmt.Println("Output:", makeArrayIncreasing([]int{1, 5, 3, 6, 7}, []int{4, 3, 1}))
+		fmt.Println("Input: arr1 = [1,5,3,6,7], arr2 = [1,6,3,3]")
+		fmt.Println("Output:", makeArrayIncreasing([]int{1, 5, 3, 6, 7}, []int{1, 6, 3, 3}))
+	}
 }
 
 func makeArrayIncreasing(arr1 []int, arr2 []int) int {
 	sort.Ints(arr2)
-
 	dp := make(map[[2]int]int)
 	count := makeArrayIncreasingSolved(0, -1, arr1, arr2, dp)
 	if count == math.MaxInt32 {

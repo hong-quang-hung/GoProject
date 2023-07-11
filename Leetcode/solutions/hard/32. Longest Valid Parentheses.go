@@ -2,16 +2,14 @@ package hard
 
 import "fmt"
 
-func init() {
-	Solutions[32] = Leetcode_Longest_Valid_Parentheses
-}
-
 // Reference: https://leetcode.com/problems/longest-valid-parentheses/
-func Leetcode_Longest_Valid_Parentheses() {
-	fmt.Println("Input: s = '(()'")
-	fmt.Println("Output:", longestValidParentheses("(()"))
-	fmt.Println("Input: s = ')()())'")
-	fmt.Println("Output:", longestValidParentheses(")()())"))
+func init() {
+	Solutions[32] = func() {
+		fmt.Println("Input: s = '(()'")
+		fmt.Println("Output:", longestValidParentheses("(()"))
+		fmt.Println("Input: s = ')()())'")
+		fmt.Println("Output:", longestValidParentheses(")()())"))
+	}
 }
 
 func longestValidParentheses(s string) int {
