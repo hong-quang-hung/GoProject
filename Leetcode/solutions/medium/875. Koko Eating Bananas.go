@@ -16,20 +16,20 @@ func init() {
 }
 
 func minEatingSpeed(piles []int, h int) int {
-	var left int = 1
-	var right int = 0
+	left, right := 1, 0
 	for _, p := range piles {
 		if right < p {
 			right = p
 		}
 	}
-	var res int = right
+
+	res := right
 	for left <= right {
-		var hours int64 = 0
-		var mid = left + (right-left)/2
+		hours, mid := int64(0), left+(right-left)/2
 		for _, p := range piles {
 			hours += int64(math.Ceil(float64(p) / float64(mid)))
 		}
+
 		if hours <= int64(h) {
 			if res > mid {
 				res = mid

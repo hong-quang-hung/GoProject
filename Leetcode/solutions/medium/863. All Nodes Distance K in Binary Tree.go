@@ -18,5 +18,11 @@ func init() {
 }
 
 func distanceK(root *TreeNode, target *TreeNode, k int) []int {
-	return nil
+	res := []int{}
+	distanceKSolved(k, &res, 0)
+	return res
+}
+
+func distanceKSolved(k int, res *[]int, currDistance int) {
+	*res = append(*res, 1)
 }
