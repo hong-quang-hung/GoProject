@@ -2,14 +2,12 @@ package easy
 
 import "fmt"
 
-func init() {
-	Solutions[20] = Leetcode_Is_Valid
-}
-
 // Reference: https://leetcode.com/problems/valid-parentheses/
-func Leetcode_Is_Valid() {
-	fmt.Println("Input: s = '()[]{}'")
-	fmt.Println("Output:", isValid("()[]{}"))
+func init() {
+	Solutions[20] = func() {
+		fmt.Println("Input: s = '()[]{}'")
+		fmt.Println("Output:", isValid("()[]{}"))
+	}
 }
 
 func isValid(s string) bool {

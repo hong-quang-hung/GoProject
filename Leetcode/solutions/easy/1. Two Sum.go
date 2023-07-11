@@ -2,14 +2,12 @@ package easy
 
 import "fmt"
 
-func init() {
-	Solutions[1] = Leetcode_Two_Sum
-}
-
 // Reference: https://leetcode.com/problems/two-sum/
-func Leetcode_Two_Sum() {
-	fmt.Println("Input: nums = [2,7,11,15], target = 9")
-	fmt.Println("Output:", twoSum([]int{2, 7, 11, 15}, 9))
+func init() {
+	Solutions[1] = func() {
+		fmt.Println("Input: nums = [2,7,11,15], target = 9")
+		fmt.Println("Output:", twoSum([]int{2, 7, 11, 15}, 9))
+	}
 }
 
 func twoSum(nums []int, target int) []int {

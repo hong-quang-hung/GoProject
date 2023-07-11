@@ -2,16 +2,14 @@ package easy
 
 import "fmt"
 
-func init() {
-	Solutions[70] = Leetcode_Climb_Stairs
-}
-
 // Reference: https://leetcode.com/problems/climbing-stairs/
-func Leetcode_Climb_Stairs() {
-	fmt.Println("Input: n = 2")
-	fmt.Println("Output:", climbStairs(2))
-	fmt.Println("Input: n = 3")
-	fmt.Println("Output:", climbStairs(3))
+func init() {
+	Solutions[70] = func() {
+		fmt.Println("Input: n = 2")
+		fmt.Println("Output:", climbStairs(2))
+		fmt.Println("Input: n = 3")
+		fmt.Println("Output:", climbStairs(3))
+	}
 }
 
 func climbStairs(n int) int {

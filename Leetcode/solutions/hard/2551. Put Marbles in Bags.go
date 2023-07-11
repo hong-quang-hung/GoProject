@@ -5,16 +5,14 @@ import (
 	"sort"
 )
 
-func init() {
-	Solutions[2551] = Leetcode_Put_Marbles
-}
-
 // Reference: https://leetcode.com/problems/put-marbles-in-bags/
-func Leetcode_Put_Marbles() {
-	fmt.Println("Input: weights = [1,3,5,1], k = 2")
-	fmt.Println("Output:", putMarbles([]int{1, 3, 5, 1}, 2))
-	fmt.Println("Input: weights = [1, 3], k = 2")
-	fmt.Println("Output:", putMarbles([]int{1, 3}, 2))
+func init() {
+	Solutions[2551] = func() {
+		fmt.Println("Input: weights = [1,3,5,1], k = 2")
+		fmt.Println("Output:", putMarbles([]int{1, 3, 5, 1}, 2))
+		fmt.Println("Input: weights = [1, 3], k = 2")
+		fmt.Println("Output:", putMarbles([]int{1, 3}, 2))
+	}
 }
 
 func putMarbles(weights []int, k int) int64 {

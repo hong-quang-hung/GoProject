@@ -2,14 +2,12 @@ package easy
 
 import "fmt"
 
-func init() {
-	Solutions[9] = LeetCode_Is_Palindrome
-}
-
 // Reference: https://leetcode.com/problems/palindrome-number/
-func LeetCode_Is_Palindrome() {
-	fmt.Println("Input: x = 0")
-	fmt.Println("Output:", isPalindrome(0))
+func init() {
+	Solutions[9] = func() {
+		fmt.Println("Input: x = 0")
+		fmt.Println("Output:", isPalindrome(0))
+	}
 }
 
 func isPalindrome(x int) bool {

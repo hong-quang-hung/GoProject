@@ -2,18 +2,16 @@ package hard
 
 import "fmt"
 
-func init() {
-	Solutions[1998] = Leetcode_Gcd_Sort
-}
-
 // Reference: https://leetcode.com/problems/gcd-sort-of-an-array/
-func Leetcode_Gcd_Sort() {
-	fmt.Println("Input: nums = [7,21,3]")
-	fmt.Println("Output:", gcdSort([]int{7, 21, 3}))
-	fmt.Println("Input: nums = [5,2,6,2]")
-	fmt.Println("Output:", gcdSort([]int{5, 2, 6, 2}))
-	fmt.Println("Input: nums = [10,5,9,3,15]")
-	fmt.Println("Output:", gcdSort([]int{10, 5, 9, 3, 15}))
+func init() {
+	Solutions[1998] = func() {
+		fmt.Println("Input: nums = [7,21,3]")
+		fmt.Println("Output:", gcdSort([]int{7, 21, 3}))
+		fmt.Println("Input: nums = [5,2,6,2]")
+		fmt.Println("Output:", gcdSort([]int{5, 2, 6, 2}))
+		fmt.Println("Input: nums = [10,5,9,3,15]")
+		fmt.Println("Output:", gcdSort([]int{10, 5, 9, 3, 15}))
+	}
 }
 
 func gcdSort(nums []int) bool {

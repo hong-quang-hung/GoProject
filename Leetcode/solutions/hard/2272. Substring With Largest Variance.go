@@ -2,16 +2,14 @@ package hard
 
 import "fmt"
 
-func init() {
-	Solutions[2272] = Leetcode_Largest_Variance
-}
-
 // Reference: https://leetcode.com/problems/substring-with-largest-variance/
-func Leetcode_Largest_Variance() {
-	fmt.Println("Input: s = 'aababbb'")
-	fmt.Println("Output:", largestVariance("aababbb"))
-	fmt.Println("Input: s = 'abcde'")
-	fmt.Println("Output:", largestVariance("abcde"))
+func init() {
+	Solutions[2272] = func() {
+		fmt.Println("Input: s = 'aababbb'")
+		fmt.Println("Output:", largestVariance("aababbb"))
+		fmt.Println("Input: s = 'abcde'")
+		fmt.Println("Output:", largestVariance("abcde"))
+	}
 }
 
 func largestVariance(s string) int {

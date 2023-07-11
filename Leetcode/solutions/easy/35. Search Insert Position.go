@@ -5,14 +5,12 @@ import (
 	"math"
 )
 
-func init() {
-	Solutions[35] = Leetcode_Search_Insert
-}
-
 // Reference: https://leetcode.com/problems/search-insert-position/
-func Leetcode_Search_Insert() {
-	fmt.Println("Input: nums = [1,3,5,6], target = 7")
-	fmt.Println("Output:", searchInsert([]int{1, 3, 5, 6}, 7))
+func init() {
+	Solutions[35] = func() {
+		fmt.Println("Input: nums = [1,3,5,6], target = 7")
+		fmt.Println("Output:", searchInsert([]int{1, 3, 5, 6}, 7))
+	}
 }
 
 func searchInsert(nums []int, target int) int {

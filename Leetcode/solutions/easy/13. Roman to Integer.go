@@ -2,18 +2,16 @@ package easy
 
 import "fmt"
 
-func init() {
-	Solutions[13] = Leetcode_Roman_To_Int
-}
-
 // Reference: https://leetcode.com/problems/roman-to-integer/
-func Leetcode_Roman_To_Int() {
-	fmt.Println("Input: s = 'III'")
-	fmt.Println("Output:", romanToInt("III"))
-	fmt.Println("Input: s = 'LVIII'")
-	fmt.Println("Output:", romanToInt("LVIII"))
-	fmt.Println("Input: s = 'MCMXCIV'")
-	fmt.Println("Output:", romanToInt("MCMXCIV"))
+func init() {
+	Solutions[13] = func() {
+		fmt.Println("Input: s = 'III'")
+		fmt.Println("Output:", romanToInt("III"))
+		fmt.Println("Input: s = 'LVIII'")
+		fmt.Println("Output:", romanToInt("LVIII"))
+		fmt.Println("Input: s = 'MCMXCIV'")
+		fmt.Println("Output:", romanToInt("MCMXCIV"))
+	}
 }
 
 func romanToInt(s string) int {

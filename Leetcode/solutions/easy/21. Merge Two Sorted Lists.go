@@ -2,14 +2,12 @@ package easy
 
 import "fmt"
 
-func init() {
-	Solutions[21] = Leetcode_Merge_Two_Lists
-}
-
 // Reference: https://leetcode.com/problems/merge-two-sorted-lists/
-func Leetcode_Merge_Two_Lists() {
-	fmt.Println("Input: list1 = [1,2,4], list2 = [1,3,4]")
-	fmt.Println("Output:", mergeTwoLists(S2ListNode("1,2,4"), S2ListNode("1,3,4")))
+func init() {
+	Solutions[21] = func() {
+		fmt.Println("Input: list1 = [1,2,4], list2 = [1,3,4]")
+		fmt.Println("Output:", mergeTwoLists(S2ListNode("1,2,4"), S2ListNode("1,3,4")))
+	}
 }
 
 func mergeTwoLists(list1 *ListNode, list2 *ListNode) *ListNode {

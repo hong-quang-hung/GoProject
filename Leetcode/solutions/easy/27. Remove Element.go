@@ -2,14 +2,12 @@ package easy
 
 import "fmt"
 
-func init() {
-	Solutions[27] = Leetcode_Remove_Element
-}
-
 // Reference: https://leetcode.com/problems/remove-element/
-func Leetcode_Remove_Element() {
-	fmt.Println("Input: nums = [3,2,2,3], val = 3")
-	fmt.Println("Output:", removeElement([]int{3, 2, 2, 3}, 3))
+func init() {
+	Solutions[27] = func() {
+		fmt.Println("Input: nums = [3,2,2,3], val = 3")
+		fmt.Println("Output:", removeElement([]int{3, 2, 2, 3}, 3))
+	}
 }
 
 func removeElement(nums []int, val int) int {

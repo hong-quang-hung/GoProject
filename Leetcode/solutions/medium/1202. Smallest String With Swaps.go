@@ -5,18 +5,16 @@ import (
 	"sort"
 )
 
-func init() {
-	Solutions[1202] = Leetcode_Smallest_String_With_Swaps
-}
-
 // Reference: https://leetcode.com/problems/smallest-string-with-swaps/
-func Leetcode_Smallest_String_With_Swaps() {
-	fmt.Println("Input: s = 'dcab', pairs = [[0,3],[1,2]]")
-	fmt.Println("Output:", smallestStringWithSwaps("dcab", S2SoSliceInt("[[0,3],[1,2]]")))
-	fmt.Println("Input: s = 'dcab', pairs = [[0,3],[1,2],[0,2]]")
-	fmt.Println("Output:", smallestStringWithSwaps("dcab", S2SoSliceInt("[[0,3],[1,2],[0,2]]")))
-	fmt.Println("Input: s = 'cba', pairs = [[0,1],[1,2]]")
-	fmt.Println("Output:", smallestStringWithSwaps("cba", S2SoSliceInt("[[0,1],[1,2]]")))
+func init() {
+	Solutions[1202] = func() {
+		fmt.Println("Input: s = 'dcab', pairs = [[0,3],[1,2]]")
+		fmt.Println("Output:", smallestStringWithSwaps("dcab", S2SoSliceInt("[[0,3],[1,2]]")))
+		fmt.Println("Input: s = 'dcab', pairs = [[0,3],[1,2],[0,2]]")
+		fmt.Println("Output:", smallestStringWithSwaps("dcab", S2SoSliceInt("[[0,3],[1,2],[0,2]]")))
+		fmt.Println("Input: s = 'cba', pairs = [[0,1],[1,2]]")
+		fmt.Println("Output:", smallestStringWithSwaps("cba", S2SoSliceInt("[[0,1],[1,2]]")))
+	}
 }
 
 func smallestStringWithSwaps(s string, pairs [][]int) string {
