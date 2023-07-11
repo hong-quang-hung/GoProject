@@ -2,14 +2,12 @@ package easy
 
 import "fmt"
 
-func init() {
-	Solutions[2595] = Leetcode_Even_Odd_Bit
-}
-
 // Reference: https://leetcode.com/problems/number-of-even-and-odd-bits/
-func Leetcode_Even_Odd_Bit() {
-	fmt.Println("Input: n = 11")
-	fmt.Println("Output:", evenOddBit(11))
+func init() {
+	Solutions[2595] = func() {
+		fmt.Println("Input: n = 11")
+		fmt.Println("Output:", evenOddBit(11))
+	}
 }
 
 func evenOddBit(n int) []int {

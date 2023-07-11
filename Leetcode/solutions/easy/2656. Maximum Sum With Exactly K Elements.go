@@ -2,16 +2,14 @@ package easy
 
 import "fmt"
 
-func init() {
-	Solutions[2656] = Leetcode_Maximize_Sum
-}
-
 // Reference: https://leetcode.com/problems/maximum-sum-with-exactly-k-elements/
-func Leetcode_Maximize_Sum() {
-	fmt.Println("Input: nums = [1,2,3,4,5], k = 3")
-	fmt.Println("Output:", maximizeSum([]int{1, 2, 3, 4, 5}, 3))
-	fmt.Println("Input: nums = [5,5,5], k = 2")
-	fmt.Println("Output:", maximizeSum([]int{5, 5, 5}, 2))
+func init() {
+	Solutions[2656] = func() {
+		fmt.Println("Input: nums = [1,2,3,4,5], k = 3")
+		fmt.Println("Output:", maximizeSum([]int{1, 2, 3, 4, 5}, 3))
+		fmt.Println("Input: nums = [5,5,5], k = 2")
+		fmt.Println("Output:", maximizeSum([]int{5, 5, 5}, 2))
+	}
 }
 
 func maximizeSum(nums []int, k int) int {

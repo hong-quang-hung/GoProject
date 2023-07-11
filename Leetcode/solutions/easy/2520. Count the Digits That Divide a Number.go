@@ -2,18 +2,14 @@ package easy
 
 import "fmt"
 
-func init() {
-	Solutions[2520] = Leetcode_Count_Digits
-}
-
 // Reference: https://leetcode.com/problems/count-the-digits-that-divide-a-number/
-func Leetcode_Count_Digits() {
-	fmt.Println("Input: num = 7")
-	fmt.Println("Output:", countDigits(7))
-	fmt.Println("Input: num = 121")
-	fmt.Println("Output:", countDigits(121))
-	fmt.Println("Input: num = 1248")
-	fmt.Println("Output:", countDigits(1248))
+func init() {
+	Solutions[2520] = func() {
+		fmt.Println("Input: num = 121")
+		fmt.Println("Output:", countDigits(121))
+		fmt.Println("Input: num = 1248")
+		fmt.Println("Output:", countDigits(1248))
+	}
 }
 
 func countDigits(num int) int {

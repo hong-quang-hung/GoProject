@@ -2,20 +2,16 @@ package easy
 
 import "fmt"
 
-func init() {
-	Solutions[2729] = LeetCode_Is_Fascinating
-}
-
 // Reference: https://leetcode.com/problems/check-if-the-number-is-fascinating/
-func LeetCode_Is_Fascinating() {
-	fmt.Println("Input: n = 192")
-	fmt.Println("Output:", isFascinating(192))
-	fmt.Println("Input: n = 100")
-	fmt.Println("Output:", isFascinating(100))
-	fmt.Println("Input: n = 783")
-	fmt.Println("Output:", isFascinating(783))
-	fmt.Println("Input: n = 267")
-	fmt.Println("Output:", isFascinating(267))
+func init() {
+	Solutions[2729] = func() {
+		fmt.Println("Input: n = 192")
+		fmt.Println("Output:", isFascinating(192))
+		fmt.Println("Input: n = 783")
+		fmt.Println("Output:", isFascinating(783))
+		fmt.Println("Input: n = 267")
+		fmt.Println("Output:", isFascinating(267))
+	}
 }
 
 func isFascinating(n int) bool {

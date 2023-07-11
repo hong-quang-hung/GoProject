@@ -2,16 +2,14 @@ package easy
 
 import "fmt"
 
-func init() {
-	Solutions[2670] = Leetcode_Distinct_Difference_Array
-}
-
 // Reference: https://leetcode.com/problems/find-the-distinct-difference-array/
-func Leetcode_Distinct_Difference_Array() {
-	fmt.Println("Input: nums = [1,2,3,4,5]")
-	fmt.Println("Output:", distinctDifferenceArray([]int{1, 2, 3, 4, 5}))
-	fmt.Println("Input: nums = [3,2,3,4,2]")
-	fmt.Println("Output:", distinctDifferenceArray([]int{3, 2, 3, 4, 2}))
+func init() {
+	Solutions[2670] = func() {
+		fmt.Println("Input: nums = [1,2,3,4,5]")
+		fmt.Println("Output:", distinctDifferenceArray([]int{1, 2, 3, 4, 5}))
+		fmt.Println("Input: nums = [3,2,3,4,2]")
+		fmt.Println("Output:", distinctDifferenceArray([]int{3, 2, 3, 4, 2}))
+	}
 }
 
 func distinctDifferenceArray(nums []int) []int {

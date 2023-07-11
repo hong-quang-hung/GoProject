@@ -2,18 +2,14 @@ package easy
 
 import "fmt"
 
-func init() {
-	Solutions[2643] = Leetcode_Row_And_Maximum_Ones
-}
-
 // Reference: https://leetcode.com/problems/row-with-maximum-ones/
-func Leetcode_Row_And_Maximum_Ones() {
-	fmt.Println("Input: mat = [[0,1],[1,0]]")
-	fmt.Println("Output:", rowAndMaximumOnes(S2SoSliceInt("[[0,1],[1,0]]")))
-	fmt.Println("Input: mat = [[0,0,0],[0,1,1]]")
-	fmt.Println("Output:", rowAndMaximumOnes(S2SoSliceInt("[[0,0,0],[0,1,1]]")))
-	fmt.Println("Input: mat = [[0,0],[1,1],[0,0]]")
-	fmt.Println("Output:", rowAndMaximumOnes(S2SoSliceInt("[[0,0],[1,1],[0,0]]")))
+func init() {
+	Solutions[2643] = func() {
+		fmt.Println("Input: mat = [[0,0,0],[0,1,1]]")
+		fmt.Println("Output:", rowAndMaximumOnes(S2SoSliceInt("[[0,0,0],[0,1,1]]")))
+		fmt.Println("Input: mat = [[0,0],[1,1],[0,0]]")
+		fmt.Println("Output:", rowAndMaximumOnes(S2SoSliceInt("[[0,0],[1,1],[0,0]]")))
+	}
 }
 
 func rowAndMaximumOnes(mat [][]int) []int {

@@ -6,20 +6,17 @@ import (
 	"strings"
 )
 
-func init() {
-	Solutions[2566] = Leetcode_Min_Max_Difference
-}
-
 // Reference: https://leetcode.com/problems/maximum-difference-by-remapping-a-digit/
-func Leetcode_Min_Max_Difference() {
-	fmt.Println("Input: num = 11891")
-	fmt.Println("Output:", minMaxDifference(11891))
-	fmt.Println("Input: num = 90")
-	fmt.Println("Output:", minMaxDifference(90))
+func init() {
+	Solutions[2566] = func() {
+		fmt.Println("Input: num = 11891")
+		fmt.Println("Output:", minMaxDifference(11891))
+		fmt.Println("Input: num = 90")
+		fmt.Println("Output:", minMaxDifference(90))
+	}
 }
 
 func minMaxDifference(num int) int {
-
 	s, h := strconv.Itoa(num), 0
 	for l1 := len(s) - 1; h < l1 && s[h] == '9'; {
 		h++

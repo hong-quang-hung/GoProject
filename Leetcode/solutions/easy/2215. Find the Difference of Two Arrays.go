@@ -2,18 +2,14 @@ package easy
 
 import "fmt"
 
-func init() {
-	Solutions[2215] = Leetcode_Find_Difference
-}
-
 // Reference: https://leetcode.com/problems/find-the-difference-of-two-arrays/
-func Leetcode_Find_Difference() {
-	fmt.Println("Input: nums1 = [1,2,3], nums2 = [2,4,6]")
-	fmt.Println("Output:", findDifference([]int{1, 2, 3}, []int{2, 4, 6}))
-	fmt.Println("Input: nums1 = [1,2,3,3], nums2 = [1,1,2,2]")
-	fmt.Println("Output:", findDifference([]int{1, 2, 3, 3}, []int{1, 1, 2, 2}))
-	fmt.Println("Input: nums1 = [-80,-15,-81,-28,-61,63,14,-45,-35,-10], nums2 = [-1,-40,-44,41,10,-43,69,10,2]")
-	fmt.Println("Output:", findDifference([]int{-80, -15, -81, -28, -61, 63, 14, -45, -35, -10}, []int{-1, -40, -44, 41, 10, -43, 69, 10, 2}))
+func init() {
+	Solutions[2215] = func() {
+		fmt.Println("Input: nums1 = [1,2,3], nums2 = [2,4,6]")
+		fmt.Println("Output:", findDifference([]int{1, 2, 3}, []int{2, 4, 6}))
+		fmt.Println("Input: nums1 = [1,2,3,3], nums2 = [1,1,2,2]")
+		fmt.Println("Output:", findDifference([]int{1, 2, 3, 3}, []int{1, 1, 2, 2}))
+	}
 }
 
 func findDifference(nums1 []int, nums2 []int) [][]int {

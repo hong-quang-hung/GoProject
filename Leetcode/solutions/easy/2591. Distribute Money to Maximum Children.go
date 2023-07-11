@@ -2,16 +2,14 @@ package easy
 
 import "fmt"
 
-func init() {
-	Solutions[2591] = Leetcode_Dist_Money
-}
-
 // Reference: https://leetcode.com/problems/distribute-money-to-maximum-children/
-func Leetcode_Dist_Money() {
-	fmt.Println("Input: money = 20, children = 3")
-	fmt.Println("Output:", distMoney(20, 3))
-	fmt.Println("Input: money = 17, children = 2")
-	fmt.Println("Output:", distMoney(17, 2))
+func init() {
+	Solutions[2591] = func() {
+		fmt.Println("Input: money = 20, children = 3")
+		fmt.Println("Output:", distMoney(20, 3))
+		fmt.Println("Input: money = 17, children = 2")
+		fmt.Println("Output:", distMoney(17, 2))
+	}
 }
 
 func distMoney(money int, children int) int {

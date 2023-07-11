@@ -5,14 +5,12 @@ import (
 	"math"
 )
 
-func init() {
-	Solutions[2574] = Leetcode_Left_Rigth_Difference
-}
-
 // Reference: https://leetcode.com/problems/left-and-right-sum-differences/
-func Leetcode_Left_Rigth_Difference() {
-	fmt.Println("Input: nums = [10,4,8,3]")
-	fmt.Println("Output:", leftRigthDifference(S2SliceInt("[10,4,8,3]")))
+func init() {
+	Solutions[2574] = func() {
+		fmt.Println("Input: nums = [10,4,8,3]")
+		fmt.Println("Output:", leftRigthDifference(S2SliceInt("[10,4,8,3]")))
+	}
 }
 
 func leftRigthDifference(nums []int) []int {

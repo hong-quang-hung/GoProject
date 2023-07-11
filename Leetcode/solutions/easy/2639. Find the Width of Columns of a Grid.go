@@ -5,16 +5,14 @@ import (
 	"strconv"
 )
 
-func init() {
-	Solutions[2639] = Leetcode_Max_Value_Of_Coins
-}
-
 // Reference: https://leetcode.com/problems/find-the-score-of-all-prefixes-of-an-array/
-func Leetcode_Max_Value_Of_Coins() {
-	fmt.Println("Input: grid = [[1],[22],[333]]")
-	fmt.Println("Output:", findColumnWidth(S2SoSliceInt("[[1],[22],[333]]")))
-	fmt.Println("Input: grid = [[-15,1,3],[15,7,12],[5,6,-2]]")
-	fmt.Println("Output:", findColumnWidth(S2SoSliceInt("[[-15,1,3],[15,7,12],[5,6,-2]]")))
+func init() {
+	Solutions[2639] = func() {
+		fmt.Println("Input: grid = [[1],[22],[333]]")
+		fmt.Println("Output:", findColumnWidth(S2SoSliceInt("[[1],[22],[333]]")))
+		fmt.Println("Input: grid = [[-15,1,3],[15,7,12],[5,6,-2]]")
+		fmt.Println("Output:", findColumnWidth(S2SoSliceInt("[[-15,1,3],[15,7,12],[5,6,-2]]")))
+	}
 }
 
 func findColumnWidth(grid [][]int) []int {

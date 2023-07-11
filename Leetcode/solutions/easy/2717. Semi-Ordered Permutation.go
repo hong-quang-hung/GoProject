@@ -2,20 +2,16 @@ package easy
 
 import "fmt"
 
-func init() {
-	Solutions[2717] = Leetcode_Semi_Ordered_Permutation
-}
-
 // Reference: https://leetcode.com/problems/semi-ordered-permutation/
-func Leetcode_Semi_Ordered_Permutation() {
-	fmt.Println("Input: nums = [2,1,4,3]")
-	fmt.Println("Output:", semiOrderedPermutation([]int{2, 1, 4, 3}))
-	fmt.Println("Input: nums = [2,4,1,3]")
-	fmt.Println("Output:", semiOrderedPermutation([]int{2, 4, 1, 3}))
-	fmt.Println("Input: nums = [1,3,4,2,5]")
-	fmt.Println("Output:", semiOrderedPermutation([]int{1, 3, 4, 2, 5}))
-	fmt.Println("Input: nums = [3,2,1]")
-	fmt.Println("Output:", semiOrderedPermutation([]int{3, 2, 1}))
+func init() {
+	Solutions[2717] = func() {
+		fmt.Println("Input: nums = [2,1,4,3]")
+		fmt.Println("Output:", semiOrderedPermutation([]int{2, 1, 4, 3}))
+		fmt.Println("Input: nums = [2,4,1,3]")
+		fmt.Println("Output:", semiOrderedPermutation([]int{2, 4, 1, 3}))
+		fmt.Println("Input: nums = [1,3,4,2,5]")
+		fmt.Println("Output:", semiOrderedPermutation([]int{1, 3, 4, 2, 5}))
+	}
 }
 
 func semiOrderedPermutation(nums []int) int {

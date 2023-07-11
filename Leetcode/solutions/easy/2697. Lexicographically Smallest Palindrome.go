@@ -2,18 +2,14 @@ package easy
 
 import "fmt"
 
-func init() {
-	Solutions[2697] = Leetcode_Make_Smallest_Palindrome
-}
-
 // Reference: https://leetcode.com/problems/lexicographically-smallest-palindrome/
-func Leetcode_Make_Smallest_Palindrome() {
-	fmt.Println("Input: s = 'egcfe'")
-	fmt.Println("Output:", makeSmallestPalindrome("egcfe"))
-	fmt.Println("Input: s = 'abcd'")
-	fmt.Println("Output:", makeSmallestPalindrome("abcd"))
-	fmt.Println("Input: s = 'seven'")
-	fmt.Println("Output:", makeSmallestPalindrome("seven"))
+func init() {
+	Solutions[2697] = func() {
+		fmt.Println("Input: s = 'egcfe'")
+		fmt.Println("Output:", makeSmallestPalindrome("egcfe"))
+		fmt.Println("Input: s = 'abcd'")
+		fmt.Println("Output:", makeSmallestPalindrome("abcd"))
+	}
 }
 
 func makeSmallestPalindrome(s string) string {

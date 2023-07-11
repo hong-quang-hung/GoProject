@@ -2,18 +2,14 @@ package easy
 
 import "fmt"
 
-func init() {
-	Solutions[2399] = Leetcode_Check_Distances
-}
-
 // Reference: https://leetcode.com/problems/check-distances-between-same-letters/
-func Leetcode_Check_Distances() {
-	fmt.Println("Input: s = 'aa', distance = [1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]")
-	fmt.Println("Output:", checkDistances("aa", []int{1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0}))
-	fmt.Println("Input: s = 'abbccddeeffgghhiijjkkllmmnnooppqqrrssttuuvvwwxxyyzza', distance = [49,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]")
-	fmt.Println("Output:", checkDistances("abbccddeeffgghhiijjkkllmmnnooppqqrrssttuuvvwwxxyyzza", []int{49, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0}))
-	fmt.Println("Input: s = 'adaccd', distance = [1,0,0,5,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]")
-	fmt.Println("Output:", checkDistances("adaccd", []int{1, 0, 0, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0}))
+func init() {
+	Solutions[2399] = func() {
+		fmt.Println("Input: s = 'aa', distance = [1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]")
+		fmt.Println("Output:", checkDistances("aa", []int{1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0}))
+		fmt.Println("Input: s = 'adaccd', distance = [1,0,0,5,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]")
+		fmt.Println("Output:", checkDistances("adaccd", []int{1, 0, 0, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0}))
+	}
 }
 
 func checkDistances(s string, distance []int) bool {

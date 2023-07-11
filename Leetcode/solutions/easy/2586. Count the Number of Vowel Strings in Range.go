@@ -2,14 +2,12 @@ package easy
 
 import "fmt"
 
-func init() {
-	Solutions[2586] = Leetcode_Vowel_Strings
-}
-
 // Reference: https://leetcode.com/problems/count-the-number-of-vowel-strings-in-range/
-func Leetcode_Vowel_Strings() {
-	fmt.Println("Input: words = ['hey', 'aeo', 'mu', 'ooo', 'artro'], left = 1, right = 4")
-	fmt.Println("Output:", vowelStrings([]string{"hey", "aeo", "mu", "ooo", "artro"}, 1, 4))
+func init() {
+	Solutions[2586] = func() {
+		fmt.Println("Input: words = ['hey', 'aeo', 'mu', 'ooo', 'artro'], left = 1, right = 4")
+		fmt.Println("Output:", vowelStrings([]string{"hey", "aeo", "mu", "ooo", "artro"}, 1, 4))
+	}
 }
 
 func vowelStrings(words []string, left int, right int) int {
