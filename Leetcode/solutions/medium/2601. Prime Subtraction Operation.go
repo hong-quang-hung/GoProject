@@ -2,11 +2,14 @@ package medium
 
 import "fmt"
 
+// Reference: https://leetcode.com/problems/prime-subtraction-operation/
 func init() {
-	Solutions[2601] = Leetcode_Prime_Sub_Operation
+	Solutions[2601] = func() {
+		fmt.Println("Input: nums = [4,9,6,10]")
+		fmt.Println("Output:", primeSubOperation([]int{4, 9, 6, 10}))
+	}
 }
 
-// Reference: https://leetcode.com/problems/prime-subtraction-operation/description/
 func Leetcode_Prime_Sub_Operation() {
 	fmt.Println("Input: nums = [4,9,6,10]")
 	fmt.Println("Output:", primeSubOperation([]int{4, 9, 6, 10}))

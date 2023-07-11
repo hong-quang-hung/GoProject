@@ -2,23 +2,20 @@ package medium
 
 import "fmt"
 
-func init() {
-	Solutions[2657] = Leetcode_Min_Operations_Equal_1
-}
-
 // Reference: https://leetcode.com/problems/find-the-prefix-common-array-of-two-arrays/
-func Leetcode_Find_The_Prefix_Common_Array() {
-	fmt.Println("Input: A = [1,3,2,4], B = [3,1,2,4]")
-	fmt.Println("Output:", findThePrefixCommonArray([]int{1, 3, 2, 4}, []int{3, 1, 2, 4}))
-	fmt.Println("Input: A = [2,3,1], B = [3,1,2]")
-	fmt.Println("Output:", findThePrefixCommonArray([]int{2, 3, 1}, []int{3, 1, 2}))
+func init() {
+	Solutions[2657] = func() {
+		fmt.Println("Input: A = [1,3,2,4], B = [3,1,2,4]")
+		fmt.Println("Output:", findThePrefixCommonArray([]int{1, 3, 2, 4}, []int{3, 1, 2, 4}))
+		fmt.Println("Input: A = [2,3,1], B = [3,1,2]")
+		fmt.Println("Output:", findThePrefixCommonArray([]int{2, 3, 1}, []int{3, 1, 2}))
+	}
 }
 
 func findThePrefixCommonArray(A []int, B []int) []int {
 	n := len(A)
 	res := make([]int, n)
-	mA := make(map[int]bool)
-	mB := make(map[int]bool)
+	mA, mB := make(map[int]bool), make(map[int]bool)
 
 	mA[A[0]] = true
 	mB[B[0]] = true

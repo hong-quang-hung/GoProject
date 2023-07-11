@@ -2,16 +2,14 @@ package medium
 
 import "fmt"
 
-func init() {
-	Solutions[2606] = Leetcode_Maximum_Cost_Substring
-}
-
 // Reference: https://leetcode.com/problems/find-the-seubstring-with-maximum-cost/
-func Leetcode_Maximum_Cost_Substring() {
-	fmt.Println("Input: s = 'adaa', chars = 'd', vals = [-1000]")
-	fmt.Println("Output:", maximumCostSubstring("adaa", "d", []int{-1000}))
-	fmt.Println("Input: s = 'abc', chars = 'abc', vals = [-1,-1,-1]")
-	fmt.Println("Output:", maximumCostSubstring("abc", "abc", []int{-1, -1, -1}))
+func init() {
+	Solutions[2606] = func() {
+		fmt.Println("Input: s = 'adaa', chars = 'd', vals = [-1000]")
+		fmt.Println("Output:", maximumCostSubstring("adaa", "d", []int{-1000}))
+		fmt.Println("Input: s = 'abc', chars = 'abc', vals = [-1,-1,-1]")
+		fmt.Println("Output:", maximumCostSubstring("abc", "abc", []int{-1, -1, -1}))
+	}
 }
 
 func maximumCostSubstring(s string, chars string, vals []int) int {

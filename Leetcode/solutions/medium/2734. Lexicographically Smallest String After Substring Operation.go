@@ -5,18 +5,14 @@ import (
 	"strings"
 )
 
-func init() {
-	Solutions[2734] = Leetcode_Smallest_String
-}
-
 // Reference: https://leetcode.com/problems/lexicographically-smallest-string-after-substring-operation/
-func Leetcode_Smallest_String() {
-	fmt.Println("Input: s = 'cbabc'")
-	fmt.Println("Output:", smallestString("cbabc"))
-	fmt.Println("Input: s = 'aacbbc'")
-	fmt.Println("Output:", smallestString("acbbc"))
-	fmt.Println("Input: s = 'leetcode'")
-	fmt.Println("Output:", smallestString("leetcode"))
+func init() {
+	Solutions[2734] = func() {
+		fmt.Println("Input: s = 'cbabc'")
+		fmt.Println("Output:", smallestString("cbabc"))
+		fmt.Println("Input: s = 'aacbbc'")
+		fmt.Println("Output:", smallestString("acbbc"))
+	}
 }
 
 func smallestString(s string) string {

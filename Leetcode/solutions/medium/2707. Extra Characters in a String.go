@@ -2,16 +2,14 @@ package medium
 
 import "fmt"
 
-func init() {
-	Solutions[2707] = Leetcode_Min_Extra_Char
-}
-
 // Reference: https://leetcode.com/problems/extra-characters-in-a-string/
-func Leetcode_Min_Extra_Char() {
-	fmt.Println("Input: s = 'leetscode', dictionary = ['leet','code','leetcode']")
-	fmt.Println("Output:", minExtraChar("leetscode", []string{"leet", "code", "leetcode"}))
-	fmt.Println("Input: s = 'sayhelloworld', dictionary = ['hello','world']")
-	fmt.Println("Output:", minExtraChar("sayhelloworld", []string{"hello", "world"}))
+func init() {
+	Solutions[2707] = func() {
+		fmt.Println("Input: s = 'leetscode', dictionary = ['leet','code','leetcode']")
+		fmt.Println("Output:", minExtraChar("leetscode", []string{"leet", "code", "leetcode"}))
+		fmt.Println("Input: s = 'sayhelloworld', dictionary = ['hello','world']")
+		fmt.Println("Output:", minExtraChar("sayhelloworld", []string{"hello", "world"}))
+	}
 }
 
 func minExtraChar(s string, dictionary []string) int {

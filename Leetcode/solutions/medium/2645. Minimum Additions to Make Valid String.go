@@ -5,18 +5,14 @@ import (
 	"strings"
 )
 
-func init() {
-	Solutions[2645] = Leetcode_Add_Minimum
-}
-
 // Reference: https://leetcode.com/problems/minimum-additions-to-make-valid-string/
-func Leetcode_Add_Minimum() {
-	fmt.Println("Input: word = 'aaaaab'")
-	fmt.Println("Output:", addMinimum("aaaaab"))
-	fmt.Println("Input: word = 'aaa'")
-	fmt.Println("Output:", addMinimum("aaa"))
-	fmt.Println("Input: word = 'aaabcb'")
-	fmt.Println("Output:", addMinimum("aaabcb"))
+func init() {
+	Solutions[2645] = func() {
+		fmt.Println("Input: word = 'aaaaab'")
+		fmt.Println("Output:", addMinimum("aaaaab"))
+		fmt.Println("Input: word = 'aaabcb'")
+		fmt.Println("Output:", addMinimum("aaabcb"))
+	}
 }
 
 func addMinimum(word string) int {

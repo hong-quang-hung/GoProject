@@ -2,18 +2,16 @@ package medium
 
 import "fmt"
 
-func init() {
-	Solutions[2680] = Leetcode_Maximum_Or
-}
-
 // Reference: https://leetcode.com/problems/maximum-or/
-func Leetcode_Maximum_Or() {
-	fmt.Println("Input: nums = [12,9], k = 1")
-	fmt.Println("Output:", maximumOr([]int{12, 9}, 1))
-	fmt.Println("Input: nums = [8,1,2], k = 2")
-	fmt.Println("Output:", maximumOr([]int{8, 1, 2}, 2))
-	fmt.Println("Input: nums = [10,8,4], k = 1")
-	fmt.Println("Output:", maximumOr([]int{10, 8, 4}, 1))
+func init() {
+	Solutions[2680] = func() {
+		fmt.Println("Input: nums = [12,9], k = 1")
+		fmt.Println("Output:", maximumOr([]int{12, 9}, 1))
+		fmt.Println("Input: nums = [8,1,2], k = 2")
+		fmt.Println("Output:", maximumOr([]int{8, 1, 2}, 2))
+		fmt.Println("Input: nums = [10,8,4], k = 1")
+		fmt.Println("Output:", maximumOr([]int{10, 8, 4}, 1))
+	}
 }
 
 func maximumOr(nums []int, k int) int64 {

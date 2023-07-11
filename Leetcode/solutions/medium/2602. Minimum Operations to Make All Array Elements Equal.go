@@ -6,21 +6,18 @@ import (
 	"sort"
 )
 
-func init() {
-	Solutions[2602] = Leetcode_Min_Operations_I
-}
-
 // Reference: https://leetcode.com/problems/minimum-operations-to-make-all-array-elements-equal/
-func Leetcode_Min_Operations_I() {
-	fmt.Println("Input: nums = [3,1,6,8], queries = [1,5]")
-	fmt.Println("Output:", minOperations_i([]int{3, 1, 6, 8}, []int{1, 5}))
+func init() {
+	Solutions[2602] = func() {
+		fmt.Println("Input: nums = [3,1,6,8], queries = [1,5]")
+		fmt.Println("Output:", minOperations_i([]int{3, 1, 6, 8}, []int{1, 5}))
+	}
 }
 
 func minOperations_i(nums []int, queries []int) []int64 {
-	var n int = len(nums)
+	n := len(nums)
 	res := make([]int64, len(queries))
 	sumIndex := make([]int64, n)
-
 	sort.Slice(nums, func(i, j int) bool {
 		return nums[i] < nums[j]
 	})
@@ -38,7 +35,6 @@ func minOperations_i(nums []int, queries []int) []int64 {
 			res[j] = int64(q)*int64(index) - 2*sumIndex[index-1] + sumIndex[n-1] - int64(q)*int64(n-index)
 		}
 	}
-
 	return res
 }
 

@@ -2,16 +2,14 @@ package medium
 
 import "fmt"
 
-func init() {
-	Solutions[2673] = Leetcode_Min_Increments
-}
-
 // Reference: https://leetcode.com/problems/make-costs-of-paths-equal-in-a-binary-tree/
-func Leetcode_Min_Increments() {
-	fmt.Println("Input : n = 7, cost = [1,5,2,2,3,3,1]")
-	fmt.Println("Output:", minIncrements(7, []int{1, 5, 2, 2, 3, 3, 1}))
-	fmt.Println("Input: n = 3, cost = [5,3,3]")
-	fmt.Println("Output:", minIncrements(3, []int{5, 3, 3}))
+func init() {
+	Solutions[2673] = func() {
+		fmt.Println("Input : n = 7, cost = [1,5,2,2,3,3,1]")
+		fmt.Println("Output:", minIncrements(7, []int{1, 5, 2, 2, 3, 3, 1}))
+		fmt.Println("Input: n = 3, cost = [5,3,3]")
+		fmt.Println("Output:", minIncrements(3, []int{5, 3, 3}))
+	}
 }
 
 func minIncrements(n int, cost []int) int {

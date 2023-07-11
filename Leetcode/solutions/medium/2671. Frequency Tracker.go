@@ -2,20 +2,18 @@ package medium
 
 import "fmt"
 
-func init() {
-	Solutions[2671] = Leetcode_Frequency_Tracker
-}
-
 // Reference: https://leetcode.com/problems/frequency-tracker/
-func Leetcode_Frequency_Tracker() {
-	f := FrequencyTrackerConstructor()
-	f.Add(5)
-	f.Add(5)
-	fmt.Println(f.HasFrequency(1))
-	fmt.Println(f.HasFrequency(2))
-	f.Add(6)
-	f.Add(5)
-	f.Add(1)
+func init() {
+	Solutions[2671] = func() {
+		f := FrequencyTrackerConstructor()
+		f.Add(5)
+		f.Add(5)
+		fmt.Println(f.HasFrequency(1))
+		fmt.Println(f.HasFrequency(2))
+		f.Add(6)
+		f.Add(5)
+		f.Add(1)
+	}
 }
 
 type FrequencyTracker struct {

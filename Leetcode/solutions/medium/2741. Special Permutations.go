@@ -2,18 +2,14 @@ package medium
 
 import "fmt"
 
-func init() {
-	Solutions[2741] = Leetcode_Special_Perm
-}
-
 // Reference: https://leetcode.com/problems/special-permutations/
-func Leetcode_Special_Perm() {
-	fmt.Println("Input: nums = [2,3,6]")
-	fmt.Println("Output:", specialPerm([]int{2, 3, 6}))
-	fmt.Println("Input: nums = [1,4,3]")
-	fmt.Println("Output:", specialPerm([]int{1, 4, 3}))
-	fmt.Println("Input: nums = [20,100,50,5,10,70,7]")
-	fmt.Println("Output:", specialPerm([]int{20, 100, 50, 5, 10, 70, 7}))
+func init() {
+	Solutions[2741] = func() {
+		fmt.Println("Input: nums = [2,3,6]")
+		fmt.Println("Output:", specialPerm([]int{2, 3, 6}))
+		fmt.Println("Input: nums = [20,100,50,5,10,70,7]")
+		fmt.Println("Output:", specialPerm([]int{20, 100, 50, 5, 10, 70, 7}))
+	}
 }
 
 func specialPerm(nums []int) int {

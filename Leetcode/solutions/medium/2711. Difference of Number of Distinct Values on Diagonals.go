@@ -2,16 +2,14 @@ package medium
 
 import "fmt"
 
-func init() {
-	Solutions[2711] = Leetcode_Difference_Of_Distinct_Values
-}
-
 // Reference: https://leetcode.com/problems/difference-of-number-of-distinct-values-on-diagonals/
-func Leetcode_Difference_Of_Distinct_Values() {
-	fmt.Println("Input: grid = [[1,2,3],[3,1,5],[3,2,1]]")
-	fmt.Println("Output:", differenceOfDistinctValues(S2SoSliceInt("[[1,2,3],[3,1,5],[3,2,1]]")))
-	fmt.Println("Input: grid = [[1]]")
-	fmt.Println("Output:", differenceOfDistinctValues(S2SoSliceInt("[[1]]")))
+func init() {
+	Solutions[2711] = func() {
+		fmt.Println("Input: grid = [[1,2,3],[3,1,5],[3,2,1]]")
+		fmt.Println("Output:", differenceOfDistinctValues(S2SoSliceInt("[[1,2,3],[3,1,5],[3,2,1]]")))
+		fmt.Println("Input: grid = [[1]]")
+		fmt.Println("Output:", differenceOfDistinctValues(S2SoSliceInt("[[1]]")))
+	}
 }
 
 func differenceOfDistinctValues(grid [][]int) [][]int {
