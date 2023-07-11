@@ -2,16 +2,14 @@ package medium
 
 import "fmt"
 
-func init() {
-	Solutions[849] = Leetcode_Max_Dist_To_Closest
-}
-
 // Reference: https://leetcode.com/problems/maximize-distance-to-closest-person/
-func Leetcode_Max_Dist_To_Closest() {
-	fmt.Println("Input: seats = [1,0,0,0,1,0,1]")
-	fmt.Println("Output:", maxDistToClosest([]int{1, 0, 0, 0, 1, 0, 1}))
-	fmt.Println("Input: seats = [1,0,0,0]")
-	fmt.Println("Output:", maxDistToClosest([]int{1, 0, 0, 0}))
+func init() {
+	Solutions[849] = func() {
+		fmt.Println("Input: seats = [1,0,0,0,1,0,1]")
+		fmt.Println("Output:", maxDistToClosest([]int{1, 0, 0, 0, 1, 0, 1}))
+		fmt.Println("Input: seats = [1,0,0,0]")
+		fmt.Println("Output:", maxDistToClosest([]int{1, 0, 0, 0}))
+	}
 }
 
 func maxDistToClosest(seats []int) int {

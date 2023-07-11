@@ -2,16 +2,14 @@ package medium
 
 import "fmt"
 
-func init() {
-	Solutions[583] = Leetcode_Min_Distance
-}
-
 // Reference: https://leetcode.com/problems/delete-operation-for-two-strings/
-func Leetcode_Min_Distance() {
-	fmt.Println("Input: word1 = 'sea', word2 = 'eat'")
-	fmt.Println("Output:", minDistance("sea", "eat"))
-	fmt.Println("Input: word1 = 'leetcode', word2 = 'etco'")
-	fmt.Println("Output:", minDistance("leetcode", "etco"))
+func init() {
+	Solutions[583] = func() {
+		fmt.Println("Input: word1 = 'sea', word2 = 'eat'")
+		fmt.Println("Output:", minDistance("sea", "eat"))
+		fmt.Println("Input: word1 = 'leetcode', word2 = 'etco'")
+		fmt.Println("Output:", minDistance("leetcode", "etco"))
+	}
 }
 
 func minDistance(word1 string, word2 string) int {

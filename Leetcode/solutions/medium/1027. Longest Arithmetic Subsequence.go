@@ -2,18 +2,16 @@ package medium
 
 import "fmt"
 
-func init() {
-	Solutions[1027] = Leetcode_Longest_Arith_Seq_Length
-}
-
 // Reference: https://leetcode.com/problems/longest-arithmetic-subsequence/
-func Leetcode_Longest_Arith_Seq_Length() {
-	fmt.Println("Input: nums = [3,6,9,12]")
-	fmt.Println("Output:", longestArithSeqLength([]int{3, 6, 9, 12}))
-	fmt.Println("Input: nums = [9,4,7,2,10]")
-	fmt.Println("Output:", longestArithSeqLength([]int{9, 4, 7, 2, 10}))
-	fmt.Println("Input: nums = [20,1,15,3,10,5,8]")
-	fmt.Println("Output:", longestArithSeqLength([]int{20, 1, 15, 3, 10, 5, 8}))
+func init() {
+	Solutions[1027] = func() {
+		fmt.Println("Input: nums = [3,6,9,12]")
+		fmt.Println("Output:", longestArithSeqLength([]int{3, 6, 9, 12}))
+		fmt.Println("Input: nums = [9,4,7,2,10]")
+		fmt.Println("Output:", longestArithSeqLength([]int{9, 4, 7, 2, 10}))
+		fmt.Println("Input: nums = [20,1,15,3,10,5,8]")
+		fmt.Println("Output:", longestArithSeqLength([]int{20, 1, 15, 3, 10, 5, 8}))
+	}
 }
 
 func longestArithSeqLength(nums []int) int {

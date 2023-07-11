@@ -5,21 +5,19 @@ import (
 	"sort"
 )
 
-func init() {
-	Solutions[1146] = Leetcode_Snapshot_Array
-}
-
 // Reference: https://leetcode.com/problems/snapshot-array/
-func Leetcode_Snapshot_Array() {
-	fmt.Println("Input:")
-	fmt.Println("['SnapshotArray','set','snap','set','get']")
-	fmt.Println("Output:")
+func init() {
+	Solutions[1146] = func() {
+		fmt.Println("Input:")
+		fmt.Println("['SnapshotArray','set','snap','set','get']")
+		fmt.Println("Output:")
 
-	snapshotArr := SnapshotArrayConstructor(3)
-	snapshotArr.Set(0, 5)
-	fmt.Println("snapshotArr.snap()", "=>", snapshotArr.Snap())
-	snapshotArr.Set(0, 6)
-	fmt.Println("snapshotArr.get(0, 0)", "=>", snapshotArr.Get(0, 0))
+		snapshotArr := SnapshotArrayConstructor(3)
+		snapshotArr.Set(0, 5)
+		fmt.Println("snapshotArr.snap()", "=>", snapshotArr.Snap())
+		snapshotArr.Set(0, 6)
+		fmt.Println("snapshotArr.get(0, 0)", "=>", snapshotArr.Get(0, 0))
+	}
 }
 
 type SnapshotArray struct {

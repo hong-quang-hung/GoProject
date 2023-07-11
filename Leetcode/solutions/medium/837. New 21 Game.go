@@ -2,18 +2,16 @@ package medium
 
 import "fmt"
 
-func init() {
-	Solutions[837] = Leetcode_New_21_Game
-}
-
 // Reference: https://leetcode.com/problems/new-21-game/
-func Leetcode_New_21_Game() {
-	fmt.Println("Input: n = 10, k = 1, maxPts = 10")
-	fmt.Println("Output:", new21Game(10, 1, 10))
-	fmt.Println("Input: n = 6, k = 1, maxPts = 10")
-	fmt.Println("Output:", new21Game(6, 1, 10))
-	fmt.Println("Input: n = 21, k = 17, maxPts = 10")
-	fmt.Println("Output:", new21Game(21, 17, 10))
+func init() {
+	Solutions[837] = func() {
+		fmt.Println("Input: n = 10, k = 1, maxPts = 10")
+		fmt.Println("Output:", new21Game(10, 1, 10))
+		fmt.Println("Input: n = 6, k = 1, maxPts = 10")
+		fmt.Println("Output:", new21Game(6, 1, 10))
+		fmt.Println("Input: n = 21, k = 17, maxPts = 10")
+		fmt.Println("Output:", new21Game(21, 17, 10))
+	}
 }
 
 func new21Game(n int, k int, maxPts int) float64 {

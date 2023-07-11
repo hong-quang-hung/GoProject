@@ -2,18 +2,14 @@ package medium
 
 import "fmt"
 
-func init() {
-	Solutions[450] = Leetcode_Delete_Node
-}
-
 // Reference: https://leetcode.com/problems/search-in-a-binary-search-tree/
-func Leetcode_Delete_Node() {
-	fmt.Println("Input: root = [5,3,6,2,4,null,7], key = 3")
-	fmt.Println("Output:", STreeNode(deleteNode(S2TreeNode("[5,3,6,2,4,null,7]"), 3)))
-	fmt.Println("Input: root = [5,3,6,2,4,null,7], key = 0")
-	fmt.Println("Output:", STreeNode(deleteNode(S2TreeNode("[5,3,6,2,4,null,7]"), 0)))
-	fmt.Println("Input: root = [0], key = 0")
-	fmt.Println("Output:", STreeNode(deleteNode(S2TreeNode("[0]"), 0)))
+func init() {
+	Solutions[450] = func() {
+		fmt.Println("Input: root = [5,3,6,2,4,null,7], key = 3")
+		fmt.Println("Output:", STreeNode(deleteNode(S2TreeNode("[5,3,6,2,4,null,7]"), 3)))
+		fmt.Println("Input: root = [5,3,6,2,4,null,7], key = 0")
+		fmt.Println("Output:", STreeNode(deleteNode(S2TreeNode("[5,3,6,2,4,null,7]"), 0)))
+	}
 }
 
 func deleteNode(root *TreeNode, key int) *TreeNode {

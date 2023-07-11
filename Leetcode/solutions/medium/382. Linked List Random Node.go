@@ -7,16 +7,18 @@ import (
 )
 
 // Reference: https://leetcode.com/problems/linked-list-random-node/
-func Leetcode_Constructor() {
-	fmt.Println("['Solution', 'getRandom', 'getRandom', 'getRandom', 'getRandom', 'getRandom']")
-	fmt.Println("[[[1, 2, 3]], [], [], [], [], []]")
+func init() {
+	Solutions[382] = func() {
+		fmt.Println("['Solution', 'getRandom', 'getRandom', 'getRandom', 'getRandom', 'getRandom']")
+		fmt.Println("[[[1, 2, 3]], [], [], [], [], []]")
 
-	solutions := SolutionConstructor(S2ListNode("[1, 2, 3]"))
-	fmt.Println(solutions.GetRandom())
-	fmt.Println(solutions.GetRandom())
-	fmt.Println(solutions.GetRandom())
-	fmt.Println(solutions.GetRandom())
-	fmt.Println(solutions.GetRandom())
+		solutions := SolutionConstructor(S2ListNode("[1, 2, 3]"))
+		fmt.Println(solutions.GetRandom())
+		fmt.Println(solutions.GetRandom())
+		fmt.Println(solutions.GetRandom())
+		fmt.Println(solutions.GetRandom())
+		fmt.Println(solutions.GetRandom())
+	}
 }
 
 type Random struct {

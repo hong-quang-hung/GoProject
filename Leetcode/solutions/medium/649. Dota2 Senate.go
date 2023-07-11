@@ -2,23 +2,20 @@ package medium
 
 import "fmt"
 
-func init() {
-	Solutions[649] = Leetcode_Predict_Party_Victory
-}
-
 // Reference: https://leetcode.com/problems/dota2-senate/
-func Leetcode_Predict_Party_Victory() {
-	fmt.Println("Input: senate = 'RD'")
-	fmt.Println("Output:", predictPartyVictory("RD"))
-	fmt.Println("Input: senate = 'RDD'")
-	fmt.Println("Output:", predictPartyVictory("RDD"))
-	fmt.Println("Input: senate = 'DDRRR'")
-	fmt.Println("Output:", predictPartyVictory("DDRRR"))
+func init() {
+	Solutions[649] = func() {
+		fmt.Println("Input: senate = 'RD'")
+		fmt.Println("Output:", predictPartyVictory("RD"))
+		fmt.Println("Input: senate = 'RDD'")
+		fmt.Println("Output:", predictPartyVictory("RDD"))
+		fmt.Println("Input: senate = 'DDRRR'")
+		fmt.Println("Output:", predictPartyVictory("DDRRR"))
+	}
 }
 
 func predictPartyVictory(senate string) string {
-	R := []int{}
-	D := []int{}
+	R, D := []int{}, []int{}
 	n := len(senate)
 	for i, ch := range senate {
 		if ch == 'R' {

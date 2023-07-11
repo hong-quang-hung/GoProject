@@ -2,18 +2,16 @@ package medium
 
 import "fmt"
 
-func init() {
-	Solutions[1143] = Leetcode_Longest_Common_Subsequence
-}
-
 // Reference: https://leetcode.com/problems/longest-common-subsequence/
-func Leetcode_Longest_Common_Subsequence() {
-	fmt.Println("Input: text1 = 'abcde', text2 = 'ace'")
-	fmt.Println("Output:", longestCommonSubsequence("abcde", "ace"))
-	fmt.Println("Input: text1 = 'abc', text2 = 'abc'")
-	fmt.Println("Output:", longestCommonSubsequence("abc", "abc"))
-	fmt.Println("Input: text1 = 'abc', text2 = 'def'")
-	fmt.Println("Output:", longestCommonSubsequence("abc", "def"))
+func init() {
+	Solutions[1143] = func() {
+		fmt.Println("Input: text1 = 'abcde', text2 = 'ace'")
+		fmt.Println("Output:", longestCommonSubsequence("abcde", "ace"))
+		fmt.Println("Input: text1 = 'abc', text2 = 'abc'")
+		fmt.Println("Output:", longestCommonSubsequence("abc", "abc"))
+		fmt.Println("Input: text1 = 'abc', text2 = 'def'")
+		fmt.Println("Output:", longestCommonSubsequence("abc", "def"))
+	}
 }
 
 func longestCommonSubsequence(text1 string, text2 string) int {

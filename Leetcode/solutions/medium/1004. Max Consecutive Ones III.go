@@ -2,16 +2,14 @@ package medium
 
 import "fmt"
 
-func init() {
-	Solutions[1004] = Leetcode_Longest_Ones
-}
-
 // Reference: https://leetcode.com/problems/max-consecutive-ones-iii/
-func Leetcode_Longest_Ones() {
-	fmt.Println("Input: nums = [1,1,1,0,0,0,1,1,1,1,0], k = 2")
-	fmt.Println("Output:", longestOnes([]int{1, 1, 1, 0, 0, 0, 1, 1, 1, 1, 0}, 2))
-	fmt.Println("Input: nums = [0,0,1,1,0,0,1,1,1,0,1,1,0,0,0,1,1,1,1], k = 3")
-	fmt.Println("Output:", longestOnes([]int{0, 0, 1, 1, 0, 0, 1, 1, 1, 0, 1, 1, 0, 0, 0, 1, 1, 1, 1}, 3))
+func init() {
+	Solutions[1004] = func() {
+		fmt.Println("Input: nums = [1,1,1,0,0,0,1,1,1,1,0], k = 2")
+		fmt.Println("Output:", longestOnes([]int{1, 1, 1, 0, 0, 0, 1, 1, 1, 1, 0}, 2))
+		fmt.Println("Input: nums = [0,0,1,1,0,0,1,1,1,0,1,1,0,0,0,1,1,1,1], k = 3")
+		fmt.Println("Output:", longestOnes([]int{0, 0, 1, 1, 0, 0, 1, 1, 1, 0, 1, 1, 0, 0, 0, 1, 1, 1, 1}, 3))
+	}
 }
 
 func longestOnes(nums []int, k int) int {

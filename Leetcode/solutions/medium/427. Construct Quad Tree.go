@@ -2,14 +2,12 @@ package medium
 
 import "fmt"
 
-func init() {
-	Solutions[427] = Leetcode_Construct
-}
-
 // Reference: https://leetcode.com/problems/construct-quad-tree/
-func Leetcode_Construct() {
-	fmt.Println("Input: grid = [[0,1],[1,0]]")
-	fmt.Println("Output:", construct(S2SoSliceInt("[[0,1],[1,0]]")))
+func init() {
+	Solutions[427] = func() {
+		fmt.Println("Input: grid = [[0,1],[1,0]]")
+		fmt.Println("Output:", construct(S2SoSliceInt("[[0,1],[1,0]]")))
+	}
 }
 
 type Cell struct {

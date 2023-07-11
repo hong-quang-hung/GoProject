@@ -5,16 +5,14 @@ import (
 	"math"
 )
 
-func init() {
-	Solutions[1049] = Leetcode_Last_Stone_Weight_II
-}
-
 // Reference: https://leetcode.com/problems/last-stone-weight-ii/
-func Leetcode_Last_Stone_Weight_II() {
-	fmt.Println("Input: stones = [2,7,4,1,8,1]")
-	fmt.Println("Output:", lastStoneWeightII([]int{2, 7, 4, 1, 8, 1}))
-	fmt.Println("Input: stones = [31,26,33,21,40]")
-	fmt.Println("Output:", lastStoneWeightII([]int{31, 26, 33, 21, 40}))
+func init() {
+	Solutions[1049] = func() {
+		fmt.Println("Input: stones = [2,7,4,1,8,1]")
+		fmt.Println("Output:", lastStoneWeightII([]int{2, 7, 4, 1, 8, 1}))
+		fmt.Println("Input: stones = [31,26,33,21,40]")
+		fmt.Println("Output:", lastStoneWeightII([]int{31, 26, 33, 21, 40}))
+	}
 }
 
 func lastStoneWeightII(stones []int) int {

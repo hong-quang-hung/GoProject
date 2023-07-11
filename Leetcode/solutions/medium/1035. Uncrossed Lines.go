@@ -2,18 +2,16 @@ package medium
 
 import "fmt"
 
-func init() {
-	Solutions[1035] = Leetcode_Longest_Arith_Seq_Length
-}
-
 // Reference: https://leetcode.com/problems/uncrossed-lines/
-func Leetcode_Max_Uncrossed_Lines() {
-	fmt.Println("Input: nums1 = [1,4,2], nums2 = [1,2,4]")
-	fmt.Println("Output:", maxUncrossedLines([]int{1, 4, 2}, []int{1, 2, 4}))
-	fmt.Println("Input: nums1 = [2,5,1,2,5], nums2 = [10,5,2,1,5,2]")
-	fmt.Println("Output:", maxUncrossedLines([]int{2, 5, 1, 2, 5}, []int{10, 5, 2, 1, 5, 2}))
-	fmt.Println("Input: nums1 = [1,3,7,1,7,5], nums2 = [1,9,2,5,1]")
-	fmt.Println("Output:", maxUncrossedLines([]int{1, 3, 7, 1, 7, 5}, []int{1, 9, 2, 5, 1}))
+func init() {
+	Solutions[1035] = func() {
+		fmt.Println("Input: nums1 = [1,4,2], nums2 = [1,2,4]")
+		fmt.Println("Output:", maxUncrossedLines([]int{1, 4, 2}, []int{1, 2, 4}))
+		fmt.Println("Input: nums1 = [2,5,1,2,5], nums2 = [10,5,2,1,5,2]")
+		fmt.Println("Output:", maxUncrossedLines([]int{2, 5, 1, 2, 5}, []int{10, 5, 2, 1, 5, 2}))
+		fmt.Println("Input: nums1 = [1,3,7,1,7,5], nums2 = [1,9,2,5,1]")
+		fmt.Println("Output:", maxUncrossedLines([]int{1, 3, 7, 1, 7, 5}, []int{1, 9, 2, 5, 1}))
+	}
 }
 
 func maxUncrossedLines(nums1 []int, nums2 []int) int {

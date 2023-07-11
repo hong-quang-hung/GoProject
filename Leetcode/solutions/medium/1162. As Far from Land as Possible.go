@@ -2,20 +2,17 @@ package medium
 
 import "fmt"
 
-func init() {
-	Solutions[1162] = Leetcode_Max_Distance
-}
-
 // Reference: https://leetcode.com/problems/as-far-from-land-as-possible/
-func Leetcode_Max_Distance() {
-	fmt.Println("Input: grid = [[1,0,0],[0,0,0],[0,0,0]]")
-	fmt.Println("Output:", maxDistance(S2SoSliceInt("[[1,0,0],[0,0,0],[0,0,0]]")))
+func init() {
+	Solutions[1162] = func() {
+		fmt.Println("Input: grid = [[1,0,0],[0,0,0],[0,0,0]]")
+		fmt.Println("Output:", maxVDistance(S2SoSliceInt("[[1,0,0],[0,0,0],[0,0,0]]")))
+	}
 }
 
-func maxDistance(grid [][]int) int {
-	var max int = -1
-
-	n, max := len(grid)-1, -1
+func maxVDistance(grid [][]int) int {
+	maxV := -1
+	n, maxV := len(grid)-1, -1
 	queue := [][2]int{}
 
 	for i := 0; i <= n; i++ {
@@ -34,35 +31,35 @@ func maxDistance(grid [][]int) int {
 
 		if col > 0 && grid[col-1][row] == 0 {
 			grid[col-1][row] = point + 1
-			if max < point {
-				max = point
+			if maxV < point {
+				maxV = point
 			}
 			queue = append(queue, [2]int{col - 1, row})
 		}
 
 		if col < n && grid[col+1][row] == 0 {
 			grid[col+1][row] = point + 1
-			if max < point {
-				max = point
+			if maxV < point {
+				maxV = point
 			}
 			queue = append(queue, [2]int{col + 1, row})
 		}
 
 		if row > 0 && grid[col][row-1] == 0 {
 			grid[col][row-1] = point + 1
-			if max < point {
-				max = point
+			if maxV < point {
+				maxV = point
 			}
 			queue = append(queue, [2]int{col, row - 1})
 		}
 
 		if row < n && grid[col][row+1] == 0 {
 			grid[col][row+1] = point + 1
-			if max < point {
-				max = point
+			if maxV < point {
+				maxV = point
 			}
 			queue = append(queue, [2]int{col, row + 1})
 		}
 	}
-	return max
+	return maxV
 }

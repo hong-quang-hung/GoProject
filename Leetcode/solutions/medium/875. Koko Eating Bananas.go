@@ -5,17 +5,14 @@ import (
 	"math"
 )
 
-func init() {
-	Solutions[875] = Leetcode_Min_Eating_Speed
-}
-
 // Reference: https://leetcode.com/problems/koko-eating-bananas/
-func Leetcode_Min_Eating_Speed() {
-	fmt.Println("Input: piles = [3,6,7,11], h = 8")
-	fmt.Println("Output:", minEatingSpeed([]int{3, 6, 7, 11}, 8))
-	fmt.Println()
-	fmt.Println("Input: ppiles = [30,11,23,4,20], h = 6")
-	fmt.Println("Output:", minEatingSpeed([]int{30, 11, 23, 4, 20}, 6))
+func init() {
+	Solutions[875] = func() {
+		fmt.Println("Input: piles = [3,6,7,11], h = 8")
+		fmt.Println("Output:", minEatingSpeed([]int{3, 6, 7, 11}, 8))
+		fmt.Println("Input: ppiles = [30,11,23,4,20], h = 6")
+		fmt.Println("Output:", minEatingSpeed([]int{30, 11, 23, 4, 20}, 6))
+	}
 }
 
 func minEatingSpeed(piles []int, h int) int {

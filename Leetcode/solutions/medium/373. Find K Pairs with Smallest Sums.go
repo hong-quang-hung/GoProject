@@ -5,18 +5,16 @@ import (
 	"fmt"
 )
 
-func init() {
-	Solutions[373] = Leetcode_K_Smallest_Pairs
-}
-
 // Reference: https://leetcode.com/problems/find-k-pairs-with-smallest-sums/
-func Leetcode_K_Smallest_Pairs() {
-	fmt.Println("Input: nums1 = [1,7,11], nums2 = [2,4,6], k = 3")
-	fmt.Println("Output:", kSmallestPairs([]int{1, 7, 11}, []int{2, 4, 6}, 3))
-	fmt.Println("Input: nums1 = [1,1,2], nums2 = [1,2,3], k = 2")
-	fmt.Println("Output:", kSmallestPairs([]int{1, 1, 2}, []int{1, 2, 3}, 2))
-	fmt.Println("Input: nums1 = [1,1,2], nums2 = [1,2,3], k = 10")
-	fmt.Println("Output:", kSmallestPairs([]int{1, 1, 2}, []int{1, 2, 3}, 10))
+func init() {
+	Solutions[373] = func() {
+		fmt.Println("Input: nums1 = [1,7,11], nums2 = [2,4,6], k = 3")
+		fmt.Println("Output:", kSmallestPairs([]int{1, 7, 11}, []int{2, 4, 6}, 3))
+		fmt.Println("Input: nums1 = [1,1,2], nums2 = [1,2,3], k = 2")
+		fmt.Println("Output:", kSmallestPairs([]int{1, 1, 2}, []int{1, 2, 3}, 2))
+		fmt.Println("Input: nums1 = [1,1,2], nums2 = [1,2,3], k = 10")
+		fmt.Println("Output:", kSmallestPairs([]int{1, 1, 2}, []int{1, 2, 3}, 10))
+	}
 }
 
 type kSmallestPairsHeap [][]int

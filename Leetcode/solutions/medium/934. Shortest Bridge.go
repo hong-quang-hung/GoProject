@@ -2,17 +2,15 @@ package medium
 
 import "fmt"
 
-func init() {
-	Solutions[934] = Leetcode_Shortest_Bridge
-}
-
 // Reference: https://leetcode.com/problems/shortest-bridge/
-func Leetcode_Shortest_Bridge() {
-	fmt.Println("Input: grid = [[0,1],[1,0]]")
-	fmt.Println("Output:", shortestBridge(S2SoSliceInt("[[0,1],[1,0]]")))
-	fmt.Println("Input: grid = [[0,1,0],[0,0,0],[0,0,1]]")
-	fmt.Println("Output:", shortestBridge(S2SoSliceInt("[[0,1,0],[0,0,0],[0,0,1]]")))
-	fmt.Println("Input: grid = [[1,1,1,1,1],[1,0,0,0,1],[1,0,1,0,1],[1,0,0,0,1],[1,1,1,1,1]]")
+func init() {
+	Solutions[934] = func() {
+		fmt.Println("Input: grid = [[0,1],[1,0]]")
+		fmt.Println("Output:", shortestBridge(S2SoSliceInt("[[0,1],[1,0]]")))
+		fmt.Println("Input: grid = [[0,1,0],[0,0,0],[0,0,1]]")
+		fmt.Println("Output:", shortestBridge(S2SoSliceInt("[[0,1,0],[0,0,0],[0,0,1]]")))
+		fmt.Println("Input: grid = [[1,1,1,1,1],[1,0,0,0,1],[1,0,1,0,1],[1,0,0,0,1],[1,1,1,1,1]]")
+	}
 }
 
 func shortestBridge(grid [][]int) int {

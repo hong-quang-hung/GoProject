@@ -2,16 +2,14 @@ package medium
 
 import "fmt"
 
-func init() {
-	Solutions[714] = Leetcode_Max_Profit_II
-}
-
 // Reference: https://leetcode.com/problems/best-time-to-buy-and-sell-stock-with-transaction-fee/
-func Leetcode_Max_Profit_II() {
-	fmt.Println("Input: prices = [1,3,2,8,4,9], fee = 2")
-	fmt.Println("Output:", maxProfit_ii([]int{1, 3, 2, 8, 4, 9}, 2))
-	fmt.Println("Input: prices = [1,3,7,5,10,3], fee = 3")
-	fmt.Println("Output:", maxProfit_ii([]int{1, 3, 7, 5, 10, 3}, 3))
+func init() {
+	Solutions[714] = func() {
+		fmt.Println("Input: prices = [1,3,2,8,4,9], fee = 2")
+		fmt.Println("Output:", maxProfit_ii([]int{1, 3, 2, 8, 4, 9}, 2))
+		fmt.Println("Input: prices = [1,3,7,5,10,3], fee = 3")
+		fmt.Println("Output:", maxProfit_ii([]int{1, 3, 7, 5, 10, 3}, 3))
+	}
 }
 
 func maxProfit_ii(prices []int, fee int) int {

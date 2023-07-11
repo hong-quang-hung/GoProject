@@ -5,18 +5,16 @@ import (
 	"strings"
 )
 
-func init() {
-	Solutions[394] = Leetcode_Decode_String
-}
-
 // Reference: https://leetcode.com/problems/decode-string/
-func Leetcode_Decode_String() {
-	fmt.Println("Input: s = '3[a]2[bc]'")
-	fmt.Println("Output:", decodeString("3[a]2[bc]"))
-	fmt.Println("Input: s = '3[a2[c]]'")
-	fmt.Println("Output:", decodeString("3[a2[c]]"))
-	fmt.Println("Input: s = '2[abc]3[cd]ef'")
-	fmt.Println("Output:", decodeString("2[abc]3[cd]ef"))
+func init() {
+	Solutions[394] = func() {
+		fmt.Println("Input: s = '3[a]2[bc]'")
+		fmt.Println("Output:", decodeString("3[a]2[bc]"))
+		fmt.Println("Input: s = '3[a2[c]]'")
+		fmt.Println("Output:", decodeString("3[a2[c]]"))
+		fmt.Println("Input: s = '2[abc]3[cd]ef'")
+		fmt.Println("Output:", decodeString("2[abc]3[cd]ef"))
+	}
 }
 
 func decodeString(s string) string {

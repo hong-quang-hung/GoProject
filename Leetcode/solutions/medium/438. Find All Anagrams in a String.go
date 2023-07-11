@@ -2,16 +2,14 @@ package medium
 
 import "fmt"
 
-func init() {
-	Solutions[438] = Leetcode_Find_Anagrams
-}
-
 // Reference: https://leetcode.com/problems/find-all-anagrams-in-a-string/
-func Leetcode_Find_Anagrams() {
-	fmt.Println("Input: s = 'cbaebabacd', p = 'abc'")
-	fmt.Println("Output:", findAnagrams("cbaebabacd", "abc"))
-	fmt.Println("Input: s = 'abab', p = 'abc'")
-	fmt.Println("Output:", findAnagrams("abab", "ab"))
+func init() {
+	Solutions[438] = func() {
+		fmt.Println("Input: s = 'cbaebabacd', p = 'abc'")
+		fmt.Println("Output:", findAnagrams("cbaebabacd", "abc"))
+		fmt.Println("Input: s = 'abab', p = 'abc'")
+		fmt.Println("Output:", findAnagrams("abab", "ab"))
+	}
 }
 
 func findAnagrams(s string, p string) []int {

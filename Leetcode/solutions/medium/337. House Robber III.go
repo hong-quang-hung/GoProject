@@ -2,16 +2,14 @@ package medium
 
 import "fmt"
 
-func init() {
-	Solutions[337] = Leetcode_House_Robber_III
-}
-
 // Reference: https://leetcode.com/problems/house-robber-iii/
-func Leetcode_House_Robber_III() {
-	fmt.Println("Input: root = [3,2,3,null,3,null,1]")
-	fmt.Println("Output:", rob_iii(S2TreeNode("[3,2,3,null,3,null,1]")))
-	fmt.Println("Input: root = [3,4,5,1,3,null,1]")
-	fmt.Println("Output:", rob_iii(S2TreeNode("[3,4,5,1,3,null,1]")))
+func init() {
+	Solutions[337] = func() {
+		fmt.Println("Input: root = [3,2,3,null,3,null,1]")
+		fmt.Println("Output:", rob_iii(S2TreeNode("[3,2,3,null,3,null,1]")))
+		fmt.Println("Input: root = [3,4,5,1,3,null,1]")
+		fmt.Println("Output:", rob_iii(S2TreeNode("[3,4,5,1,3,null,1]")))
+	}
 }
 
 func rob_iii(root *TreeNode) int {
