@@ -2,18 +2,16 @@ package easy
 
 import "fmt"
 
-func init() {
-	Solutions[345] = Leetcode_Reverse_Vowels
-}
-
 // Reference: https://leetcode.com/problems/reverse-vowels-of-a-string/
-func Leetcode_Reverse_Vowels() {
-	fmt.Println("Input: s = 'hello'")
-	fmt.Println("Output:", reverseVowels("hello"))
-	fmt.Println("Input: s = 'leetcode'")
-	fmt.Println("Output:", reverseVowels("leetcode"))
-	fmt.Println("Input: s = 'aA'")
-	fmt.Println("Output:", reverseVowels("aA"))
+func init() {
+	Solutions[345] = func() {
+		fmt.Println("Input: s = 'hello'")
+		fmt.Println("Output:", reverseVowels("hello"))
+		fmt.Println("Input: s = 'leetcode'")
+		fmt.Println("Output:", reverseVowels("leetcode"))
+		fmt.Println("Input: s = 'aA'")
+		fmt.Println("Output:", reverseVowels("aA"))
+	}
 }
 
 func reverseVowels(s string) string {

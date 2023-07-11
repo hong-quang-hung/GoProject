@@ -2,16 +2,14 @@ package easy
 
 import "fmt"
 
-func init() {
-	Solutions[231] = Leetcode_Is_Power_Of_Two
-}
-
 // Reference: https://leetcode.com/problems/power-of-two/
-func Leetcode_Is_Power_Of_Two() {
-	fmt.Println("Input: n = 16")
-	fmt.Println("Output:", isPowerOfTwo(16))
-	fmt.Println("Input: n = 3")
-	fmt.Println("Output:", isPowerOfTwo(3))
+func init() {
+	Solutions[231] = func() {
+		fmt.Println("Input: n = 16")
+		fmt.Println("Output:", isPowerOfTwo(16))
+		fmt.Println("Input: n = 3")
+		fmt.Println("Output:", isPowerOfTwo(3))
+	}
 }
 
 func isPowerOfTwo(n int) bool {

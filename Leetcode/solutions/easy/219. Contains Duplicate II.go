@@ -2,14 +2,12 @@ package easy
 
 import "fmt"
 
-func init() {
-	Solutions[219] = Leetcode_Contains_Near_By_Duplicate
-}
-
 // Reference: https://leetcode.com/problems/contains-duplicate-ii/
-func Leetcode_Contains_Near_By_Duplicate() {
-	fmt.Println("Input: nums = [1,2,3,1,2,3], k = 2")
-	fmt.Println("Output:", containsNearbyDuplicate([]int{1, 2, 3, 1, 2, 3}, 2))
+func init() {
+	Solutions[219] = func() {
+		fmt.Println("Input: nums = [1,2,3,1,2,3], k = 2")
+		fmt.Println("Output:", containsNearbyDuplicate([]int{1, 2, 3, 1, 2, 3}, 2))
+	}
 }
 
 func containsNearbyDuplicate(nums []int, k int) bool {

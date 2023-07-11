@@ -5,18 +5,16 @@ import (
 	"math"
 )
 
-func init() {
-	Solutions[202] = Leetcode_Is_Happy
-}
-
 // Reference: https://leetcode.com/problems/happy-number/
-func Leetcode_Is_Happy() {
-	fmt.Println("Input: num = 19")
-	fmt.Println("Output:", isHappy(19))
-	fmt.Println("Input: num = 2")
-	fmt.Println("Output:", isHappy(2))
-	fmt.Println("Input: num = 3")
-	fmt.Println("Output:", isHappy(3))
+func init() {
+	Solutions[202] = func() {
+		fmt.Println("Input: num = 19")
+		fmt.Println("Output:", isHappy(19))
+		fmt.Println("Input: num = 2")
+		fmt.Println("Output:", isHappy(2))
+		fmt.Println("Input: num = 3")
+		fmt.Println("Output:", isHappy(3))
+	}
 }
 
 func isHappy(n int) bool {

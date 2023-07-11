@@ -2,14 +2,12 @@ package easy
 
 import "fmt"
 
-func init() {
-	Solutions[101] = Leetcode_Is_Symmetric
-}
-
 // Reference: https://leetcode.com/problems/symmetric-tree/
-func Leetcode_Is_Symmetric() {
-	fmt.Println("Input: root = [1,2,2,3,4,4,3]")
-	fmt.Println("Output:", isSymmetric(S2TreeNode("[1,2,2,3,4,4,3]")))
+func init() {
+	Solutions[101] = func() {
+		fmt.Println("Input: root = [1,2,2,3,4,4,3]")
+		fmt.Println("Output:", isSymmetric(S2TreeNode("[1,2,2,3,4,4,3]")))
+	}
 }
 
 func isSymmetric(root *TreeNode) bool {

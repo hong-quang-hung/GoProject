@@ -2,14 +2,12 @@ package easy
 
 import "fmt"
 
-func init() {
-	Solutions[121] = LeetCode_Max_Profit
-}
-
 // Reference: https://leetcode.com/problems/best-time-to-buy-and-sell-stock/
-func LeetCode_Max_Profit() {
-	fmt.Println("Input: x = [2,1,2,1,0,1,2]")
-	fmt.Println("Output:", maxProfit([]int{2, 1, 2, 1, 0, 1, 2}))
+func init() {
+	Solutions[121] = func() {
+		fmt.Println("Input: x = [2,1,2,1,0,1,2]")
+		fmt.Println("Output:", maxProfit([]int{2, 1, 2, 1, 0, 1, 2}))
+	}
 }
 
 func maxProfit(prices []int) int {

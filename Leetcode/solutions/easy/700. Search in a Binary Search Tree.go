@@ -2,16 +2,14 @@ package easy
 
 import "fmt"
 
-func init() {
-	Solutions[700] = Leetcode_Search_BST
-}
-
 // Reference: https://leetcode.com/problems/search-in-a-binary-search-tree/
-func Leetcode_Search_BST() {
-	fmt.Println("Input: root = [4,2,7,1,3], val = 2")
-	fmt.Println("Output:", STreeNode(searchBST(S2TreeNode("[4,2,7,1,3]"), 2)))
-	fmt.Println("Input: root = [4,2,7,1,3], val = 5")
-	fmt.Println("Output:", STreeNode(searchBST(S2TreeNode("[4,2,7,1,3]"), 5)))
+func init() {
+	Solutions[700] = func() {
+		fmt.Println("Input: root = [4,2,7,1,3], val = 2")
+		fmt.Println("Output:", STreeNode(searchBST(S2TreeNode("[4,2,7,1,3]"), 2)))
+		fmt.Println("Input: root = [4,2,7,1,3], val = 5")
+		fmt.Println("Output:", STreeNode(searchBST(S2TreeNode("[4,2,7,1,3]"), 5)))
+	}
 }
 
 func searchBST(root *TreeNode, val int) *TreeNode {

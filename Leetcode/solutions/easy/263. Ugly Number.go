@@ -2,18 +2,16 @@ package easy
 
 import "fmt"
 
-func init() {
-	Solutions[263] = Leetcode_Is_Ugly
-}
-
 // Reference: https://leetcode.com/problems/ugly-number/
-func Leetcode_Is_Ugly() {
-	fmt.Println("Input: n = 6")
-	fmt.Println("Output:", isUgly(6))
-	fmt.Println("Input: n = 14")
-	fmt.Println("Output:", isUgly(14))
-	fmt.Println("Input: n = 40")
-	fmt.Println("Output:", isUgly(40))
+func init() {
+	Solutions[263] = func() {
+		fmt.Println("Input: n = 6")
+		fmt.Println("Output:", isUgly(6))
+		fmt.Println("Input: n = 14")
+		fmt.Println("Output:", isUgly(14))
+		fmt.Println("Input: n = 40")
+		fmt.Println("Output:", isUgly(40))
+	}
 }
 
 func isUgly(n int) bool {

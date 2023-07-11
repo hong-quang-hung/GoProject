@@ -2,16 +2,14 @@ package easy
 
 import "fmt"
 
-func init() {
-	Solutions[283] = Leetcode_Move_Zeroes
-}
-
 // Reference: https://leetcode.com/problems/move-zeroes/
-func Leetcode_Move_Zeroes() {
-	fmt.Println("Input: nums = [0,1,0,3,12]")
-	nums1 := []int{0, 1, 0, 3, 12}
-	moveZeroes(nums1)
-	fmt.Println("Output:", nums1)
+func init() {
+	Solutions[283] = func() {
+		fmt.Println("Input: nums = [0,1,0,3,12]")
+		nums1 := []int{0, 1, 0, 3, 12}
+		moveZeroes(nums1)
+		fmt.Println("Output:", nums1)
+	}
 }
 
 func moveZeroes(nums []int) {

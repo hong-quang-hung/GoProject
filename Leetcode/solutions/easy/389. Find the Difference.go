@@ -2,16 +2,14 @@ package easy
 
 import "fmt"
 
-func init() {
-	Solutions[389] = Leetcode_Find_The_Difference
-}
-
 // Reference: https://leetcode.com/problems/find-the-difference/
-func Leetcode_Find_The_Difference() {
-	fmt.Println("Input: s = 'abcd', t = 'abcde'")
-	fmt.Println("Output:", findTheDifference("abcd", "abcde"))
-	fmt.Println("Input: s = '', t = 'y'")
-	fmt.Println("Output:", findTheDifference("", "y"))
+func init() {
+	Solutions[389] = func() {
+		fmt.Println("Input: s = 'abcd', t = 'abcde'")
+		fmt.Println("Output:", findTheDifference("abcd", "abcde"))
+		fmt.Println("Input: s = '', t = 'y'")
+		fmt.Println("Output:", findTheDifference("", "y"))
+	}
 }
 
 func findTheDifference(s string, t string) byte {

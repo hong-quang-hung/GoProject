@@ -2,16 +2,14 @@ package easy
 
 import "fmt"
 
-func init() {
-	Solutions[338] = Leetcode_Count_Bits
-}
-
 // Reference: https://leetcode.com/problems/counting-bits/
-func Leetcode_Count_Bits() {
-	fmt.Println("Input: n = 2")
-	fmt.Println("Output:", countBits(2))
-	fmt.Println("Input: n = 5")
-	fmt.Println("Output:", countBits(5))
+func init() {
+	Solutions[338] = func() {
+		fmt.Println("Input: n = 2")
+		fmt.Println("Output:", countBits(2))
+		fmt.Println("Input: n = 5")
+		fmt.Println("Output:", countBits(5))
+	}
 }
 
 func countBits(n int) []int {
