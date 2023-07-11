@@ -2,18 +2,16 @@ package easy
 
 import "fmt"
 
-func init() {
-	Solutions[1768] = Leetcode_Merge_Alternately
-}
-
 // Reference: https://leetcode.com/problems/merge-strings-alternately/
-func Leetcode_Merge_Alternately() {
-	fmt.Println("Input: word1 = 'abc', word2 = 'pqr'")
-	fmt.Println("Output:", mergeAlternately("abc", "pqr"))
-	fmt.Println("Input: word1 = 'ab', word2 = 'pqrs'")
-	fmt.Println("Output:", mergeAlternately("ab", "pqrs"))
-	fmt.Println("Input: word1 = 'abcd', word2 = 'pq'")
-	fmt.Println("Output:", mergeAlternately("abcd", "pq"))
+func init() {
+	Solutions[1768] = func() {
+		fmt.Println("Input: word1 = 'abc', word2 = 'pqr'")
+		fmt.Println("Output:", mergeAlternately("abc", "pqr"))
+		fmt.Println("Input: word1 = 'ab', word2 = 'pqrs'")
+		fmt.Println("Output:", mergeAlternately("ab", "pqrs"))
+		fmt.Println("Input: word1 = 'abcd', word2 = 'pq'")
+		fmt.Println("Output:", mergeAlternately("abcd", "pq"))
+	}
 }
 
 func mergeAlternately(word1 string, word2 string) string {

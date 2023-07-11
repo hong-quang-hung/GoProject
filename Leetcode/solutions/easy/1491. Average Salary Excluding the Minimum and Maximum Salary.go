@@ -5,18 +5,14 @@ import (
 	"math"
 )
 
-func init() {
-	Solutions[1491] = Leetcode_Average
-}
-
 // Reference: https://leetcode.com/problems/average-salary-excluding-the-minimum-and-maximum-salary/
-func Leetcode_Average() {
-	fmt.Println("Input: salary = [4000,3000,1000,2000]")
-	fmt.Println("Output:", average([]int{4000, 3000, 1000, 2000}))
-	fmt.Println("Input: salary = [1000,2000,3000]")
-	fmt.Println("Output:", average([]int{1000, 2000, 3000}))
-	fmt.Println("Input: salary = [8000,9000,2000,3000,6000,1000]")
-	fmt.Println("Output:", average([]int{8000, 9000, 2000, 3000, 6000, 1000}))
+func init() {
+	Solutions[1491] = func() {
+		fmt.Println("Input: salary = [4000,3000,1000,2000]")
+		fmt.Println("Output:", average([]int{4000, 3000, 1000, 2000}))
+		fmt.Println("Input: salary = [8000,9000,2000,3000,6000,1000]")
+		fmt.Println("Output:", average([]int{8000, 9000, 2000, 3000, 6000, 1000}))
+	}
 }
 
 func average(salary []int) float64 {

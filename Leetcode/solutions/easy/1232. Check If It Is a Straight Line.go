@@ -2,18 +2,16 @@ package easy
 
 import "fmt"
 
-func init() {
-	Solutions[1232] = Leetcode_Check_Straight_Line
-}
-
 // Reference: https://leetcode.com/problems/check-if-it-is-a-straight-line/
-func Leetcode_Check_Straight_Line() {
-	fmt.Println("Input: coordinates = [[1,2],[2,3],[3,4],[4,5],[5,6],[6,7]]")
-	fmt.Println("Output:", checkStraightLine(S2SoSliceInt("[[1,2],[2,3],[3,4],[4,5],[5,6],[6,7]]")))
-	fmt.Println("Input: coordinates = [[1,1],[2,2],[3,4],[4,5],[5,6],[7,7]]")
-	fmt.Println("Output:", checkStraightLine(S2SoSliceInt("[[1,1],[2,2],[3,4],[4,5],[5,6],[7,7]]")))
-	fmt.Println("Input: coordinates = [[0,0],[0,1],[0,-1]]")
-	fmt.Println("Output:", checkStraightLine(S2SoSliceInt("[[0,0],[0,1],[0,-1]]")))
+func init() {
+	Solutions[1232] = func() {
+		fmt.Println("Input: coordinates = [[1,2],[2,3],[3,4],[4,5],[5,6],[6,7]]")
+		fmt.Println("Output:", checkStraightLine(S2SoSliceInt("[[1,2],[2,3],[3,4],[4,5],[5,6],[6,7]]")))
+		fmt.Println("Input: coordinates = [[1,1],[2,2],[3,4],[4,5],[5,6],[7,7]]")
+		fmt.Println("Output:", checkStraightLine(S2SoSliceInt("[[1,1],[2,2],[3,4],[4,5],[5,6],[7,7]]")))
+		fmt.Println("Input: coordinates = [[0,0],[0,1],[0,-1]]")
+		fmt.Println("Output:", checkStraightLine(S2SoSliceInt("[[0,0],[0,1],[0,-1]]")))
+	}
 }
 
 func checkStraightLine(coordinates [][]int) bool {

@@ -2,20 +2,16 @@ package easy
 
 import "fmt"
 
-func init() {
-	Solutions[1582] = Leetcode_Num_Special
-}
-
 // Reference: https://leetcode.com/problems/special-positions-in-a-binary-matrix/
-func Leetcode_Num_Special() {
-	fmt.Println("Input: mat = [[1,0,0],[0,0,1],[1,0,0]]")
-	fmt.Println("Output:", numSpecial(S2SoSliceInt("[[1,0,0],[0,0,1],[1,0,0]]")))
-	fmt.Println("Input: mat = [[1,0,0],[0,1,0],[0,0,1]]")
-	fmt.Println("Output:", numSpecial(S2SoSliceInt("[[1,0,0],[0,1,0],[0,0,1]]")))
-	fmt.Println("Input: mat = [[0,0,0,0,0,1,0,0],[0,0,0,0,1,0,0,1],[0,0,0,0,1,0,0,0],[1,0,0,0,1,0,0,0],[0,0,1,1,0,0,0,0]]")
-	fmt.Println("Output:", numSpecial(S2SoSliceInt("[[0,0,0,0,0,1,0,0],[0,0,0,0,1,0,0,1],[0,0,0,0,1,0,0,0],[1,0,0,0,1,0,0,0],[0,0,1,1,0,0,0,0]]")))
-	fmt.Println("Input: mat = [[0,0,0,0,0,0,0,0],[0,0,0,1,0,0,0,0],[0,0,0,0,0,0,0,0],[0,0,0,0,0,0,1,0],[0,1,0,0,0,0,1,0],[0,1,0,0,0,0,0,0]]")
-	fmt.Println("Output:", numSpecial(S2SoSliceInt("[[0,0,0,0,0,0,0,0],[0,0,0,1,0,0,0,0],[0,0,0,0,0,0,0,0],[0,0,0,0,0,0,1,0],[0,1,0,0,0,0,1,0],[0,1,0,0,0,0,0,0]]")))
+func init() {
+	Solutions[1582] = func() {
+		fmt.Println("Input: mat = [[1,0,0],[0,0,1],[1,0,0]]")
+		fmt.Println("Output:", numSpecial(S2SoSliceInt("[[1,0,0],[0,0,1],[1,0,0]]")))
+		fmt.Println("Input: mat = [[1,0,0],[0,1,0],[0,0,1]]")
+		fmt.Println("Output:", numSpecial(S2SoSliceInt("[[1,0,0],[0,1,0],[0,0,1]]")))
+		fmt.Println("Input: mat = [[0,0,0,0,0,1,0,0],[0,0,0,0,1,0,0,1],[0,0,0,0,1,0,0,0],[1,0,0,0,1,0,0,0],[0,0,1,1,0,0,0,0]]")
+		fmt.Println("Output:", numSpecial(S2SoSliceInt("[[0,0,0,0,0,1,0,0],[0,0,0,0,1,0,0,1],[0,0,0,0,1,0,0,0],[1,0,0,0,1,0,0,0],[0,0,1,1,0,0,0,0]]")))
+	}
 }
 
 func numSpecial(mat [][]int) int {

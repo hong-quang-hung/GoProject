@@ -5,16 +5,14 @@ import (
 	"strings"
 )
 
-func init() {
-	Solutions[929] = Leetcode_Num_Unique_Emails
-}
-
 // Reference: https://leetcode.com/problems/unique-email-addresses/
-func Leetcode_Num_Unique_Emails() {
-	fmt.Println("Input: emails = ['test.email+alex@leetcode.com','test.e.mail+bob.cathy@leetcode.com','testemail+david@lee.tcode.com']")
-	fmt.Println("Output:", numUniqueEmails([]string{"test.email+alex@leetcode.com", "test.e.mail+bob.cathy@leetcode.com", "testemail+david@lee.tcode.com"}))
-	fmt.Println("Input: emails = ['a@leetcode.com','b@leetcode.com','c@leetcode.com']")
-	fmt.Println("Output:", numUniqueEmails([]string{"a@leetcode.com", "b@leetcode.com", "c@leetcode.com"}))
+func init() {
+	Solutions[929] = func() {
+		fmt.Println("Input: emails = ['test.email+alex@leetcode.com','test.e.mail+bob.cathy@leetcode.com','testemail+david@lee.tcode.com']")
+		fmt.Println("Output:", numUniqueEmails([]string{"test.email+alex@leetcode.com", "test.e.mail+bob.cathy@leetcode.com", "testemail+david@lee.tcode.com"}))
+		fmt.Println("Input: emails = ['a@leetcode.com','b@leetcode.com','c@leetcode.com']")
+		fmt.Println("Output:", numUniqueEmails([]string{"a@leetcode.com", "b@leetcode.com", "c@leetcode.com"}))
+	}
 }
 
 func numUniqueEmails(emails []string) int {

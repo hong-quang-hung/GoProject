@@ -2,14 +2,12 @@ package easy
 
 import "fmt"
 
-func init() {
-	Solutions[989] = Leetcode_Add_To_Array_Form
-}
-
 // Reference: https://leetcode.com/problems/add-to-array-form-of-integer/
-func Leetcode_Add_To_Array_Form() {
-	fmt.Println("Input: num = [1,2,0,0], k = 34")
-	fmt.Println("Output:", addToArrayForm([]int{1, 2, 0, 0}, 34))
+func init() {
+	Solutions[989] = func() {
+		fmt.Println("Input: num = [1,2,0,0], k = 34")
+		fmt.Println("Output:", addToArrayForm([]int{1, 2, 0, 0}, 34))
+	}
 }
 
 func addToArrayForm(num []int, k int) []int {

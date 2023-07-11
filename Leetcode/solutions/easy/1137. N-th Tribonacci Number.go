@@ -2,18 +2,14 @@ package easy
 
 import "fmt"
 
-func init() {
-	Solutions[1137] = Leetcode_Tribonacci
-}
-
 // Reference: https://leetcode.com/problems/n-th-tribonacci-number/
-func Leetcode_Tribonacci() {
-	fmt.Println("Input: n = 4")
-	fmt.Println("Output:", tribonacci(4))
-	fmt.Println("Input: n = 25")
-	fmt.Println("Output:", tribonacci(25))
-	fmt.Println("Input: n = 2")
-	fmt.Println("Output:", tribonacci(2))
+func init() {
+	Solutions[1137] = func() {
+		fmt.Println("Input: n = 4")
+		fmt.Println("Output:", tribonacci(4))
+		fmt.Println("Input: n = 25")
+		fmt.Println("Output:", tribonacci(25))
+	}
 }
 
 func tribonacci(n int) int {

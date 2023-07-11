@@ -2,25 +2,23 @@ package easy
 
 import "fmt"
 
-func init() {
-	Solutions[705] = Leetcode_Design_HashSet
-}
-
 // Reference: https://leetcode.com/problems/design-hashset/
-func Leetcode_Design_HashSet() {
-	fmt.Println("Input:")
-	fmt.Println("['MyHashSet', 'add', 'add', 'contains', 'contains', 'add', 'contains', 'remove', 'contains']")
-	fmt.Println("[[], [1], [2], [1], [3], [2], [2], [2], [2]]")
-	fmt.Println("Output:")
-	myHashSet := MyHashSetConstructor()
-	myHashSet.Add(1)
-	myHashSet.Add(2)
-	fmt.Println("myHashSet.Contains(1)", "-->", myHashSet.Contains(1))
-	fmt.Println("myHashSet.Contains(3)", "-->", myHashSet.Contains(3))
-	myHashSet.Add(2)
-	fmt.Println("myHashSet.Contains(2)", "-->", myHashSet.Contains(2))
-	myHashSet.Remove(2)
-	fmt.Println("myHashSet.Contains(2)", "-->", myHashSet.Contains(2))
+func init() {
+	Solutions[705] = func() {
+		fmt.Println("Input:")
+		fmt.Println("['MyHashSet', 'add', 'add', 'contains', 'contains', 'add', 'contains', 'remove', 'contains']")
+		fmt.Println("[[], [1], [2], [1], [3], [2], [2], [2], [2]]")
+		fmt.Println("Output:")
+		myHashSet := MyHashSetConstructor()
+		myHashSet.Add(1)
+		myHashSet.Add(2)
+		fmt.Println("myHashSet.Contains(1)", "-->", myHashSet.Contains(1))
+		fmt.Println("myHashSet.Contains(3)", "-->", myHashSet.Contains(3))
+		myHashSet.Add(2)
+		fmt.Println("myHashSet.Contains(2)", "-->", myHashSet.Contains(2))
+		myHashSet.Remove(2)
+		fmt.Println("myHashSet.Contains(2)", "-->", myHashSet.Contains(2))
+	}
 }
 
 type MyHashSet struct {

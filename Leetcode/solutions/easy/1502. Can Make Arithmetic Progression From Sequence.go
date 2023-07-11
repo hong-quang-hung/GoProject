@@ -5,16 +5,14 @@ import (
 	"sort"
 )
 
-func init() {
-	Solutions[1502] = Leetcode_Can_Make_Arithmetic_Progression
-}
-
 // Reference: https://leetcode.com/problems/can-make-arithmetic-progression-from-sequence/
-func Leetcode_Can_Make_Arithmetic_Progression() {
-	fmt.Println("Input: arr = [3,5,1]")
-	fmt.Println("Output:", canMakeArithmeticProgression([]int{3, 5, 1}))
-	fmt.Println("Input: arr = [1,2,4]")
-	fmt.Println("Output:", canMakeArithmeticProgression([]int{1, 2, 4}))
+func init() {
+	Solutions[1502] = func() {
+		fmt.Println("Input: arr = [3,5,1]")
+		fmt.Println("Output:", canMakeArithmeticProgression([]int{3, 5, 1}))
+		fmt.Println("Input: arr = [1,2,4]")
+		fmt.Println("Output:", canMakeArithmeticProgression([]int{1, 2, 4}))
+	}
 }
 
 func canMakeArithmeticProgression(arr []int) bool {

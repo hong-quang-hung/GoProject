@@ -2,14 +2,12 @@ package easy
 
 import "fmt"
 
-func init() {
-	Solutions[1071] = Leetcode_Gcd_Of_Strings
-}
-
 // Reference: https://leetcode.com/problems/greatest-common-divisor-of-strings/
-func Leetcode_Gcd_Of_Strings() {
-	fmt.Println("Input: str1 = 'ABCABC', str2 = 'ABC")
-	fmt.Println("Output:", gcdOfStrings("ABCABC", "ABC"))
+func init() {
+	Solutions[1071] = func() {
+		fmt.Println("Input: str1 = 'ABCABC', str2 = 'ABC")
+		fmt.Println("Output:", gcdOfStrings("ABCABC", "ABC"))
+	}
 }
 
 func gcdOfStrings(str1 string, str2 string) string {
