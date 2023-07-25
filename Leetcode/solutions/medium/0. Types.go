@@ -18,7 +18,10 @@ type (
 	Solution  = types.Solution
 )
 
-var Solutions Solution = make(Solution)
+var (
+	Solutions       Solution = make(Solution)
+	KnightDirection          = [][2]int{{-2, -1}, {-2, 1}, {2, -1}, {2, 1}, {-1, -2}, {-1, 2}, {1, -2}, {1, 2}}
+)
 
 func S2ListNode(s string) *ListNode {
 	return utils.S2ListNode(s)
