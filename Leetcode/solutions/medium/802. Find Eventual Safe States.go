@@ -38,9 +38,7 @@ func eventualSafeNodesDFS(graph [][]int, isSafe []int, visited []bool, i int) bo
 	}
 
 	visited[i] = true
-	res := true
 	for _, u := range graph[i] {
-		res = res && eventualSafeNodesDFS(graph, isSafe, visited, u)
 		if !eventualSafeNodesDFS(graph, isSafe, visited, u) {
 			isSafe[i] = 0
 			return false
