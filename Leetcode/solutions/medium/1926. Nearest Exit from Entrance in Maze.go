@@ -24,7 +24,7 @@ func nearestExit(maze [][]byte, entrance []int) int {
 			for _, dir := range [][]int{{1, 0}, {0, 1}, {-1, 0}, {0, -1}} {
 				row, col := next[0]+dir[0], next[1]+dir[1]
 				if row >= 0 && row < n && col >= 0 && col < m && maze[row][col] == '.' {
-					if row == 0 || row == n || col == 0 || col == m {
+					if row == 0 || row == n-1 || col == 0 || col == m-1 {
 						return res
 					}
 
