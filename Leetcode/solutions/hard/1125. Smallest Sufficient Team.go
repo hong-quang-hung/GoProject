@@ -2,7 +2,7 @@ package hard
 
 import "fmt"
 
-// Reference: https://leetcode.com/problems/put-marbles-in-bags/
+// Reference: https://leetcode.com/problems/smallest-sufficient-team/
 func init() {
 	Solutions[1125] = func() {
 		fmt.Println("Input: req_skills = ['java','nodejs','reactjs'], people = [['java'],['nodejs'],['nodejs','reactjs']]")
