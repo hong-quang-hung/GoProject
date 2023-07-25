@@ -19,10 +19,56 @@ func init() {
 
 func distanceK(root *TreeNode, target *TreeNode, k int) []int {
 	res := []int{}
-	distanceKSolved(k, &res, 0)
+	distanceKSolved(root, target, k, &res)
 	return res
 }
 
-func distanceKSolved(k int, res *[]int, currDistance int) {
-	*res = append(*res, 1)
+func distanceKSolved(root *TreeNode, target *TreeNode, k int, result *[]int) int {
+	if root == nil {
+		return -1
+	}
+
+	if root == target {
+		distanceKFind(root, 0, k, result)
+		return 1
+	}
+
+	leftDistance := distanceKSolved(root.Left, target, k, result)
+	rightDistance := distanceKSolved(root.Right, target, k, result)
+	if leftDistance != -1 {
+		if leftDistance == k {
+			*result = append(*result, root.Val)
+		} else {
+			distanceKFind(root.Right, leftDistance+1, k, result)
+		}
+		return leftDistance + 1
+	}
+
+	if rightDistance != -1 {
+		if rightDistance == k {
+			*result = append(*result, root.Val)
+		} else {
+			distanceKFind(root.Left, rightDistance+1, k, result)
+		}
+		return rightDistance + 1
+	}
+	return -1
+}
+
+func distanceKFind(root *TreeNode, distance, k int, result *[]int) {
+	if root == nil {
+		return
+	}
+
+	if distance > k {
+		return
+	}
+
+	if distance == k {
+		*result = append(*result, root.Val)
+		return
+	}
+
+	distanceKFind(root.Left, distance+1, k, result)
+	distanceKFind(root.Right, distance+1, k, result)
 }
