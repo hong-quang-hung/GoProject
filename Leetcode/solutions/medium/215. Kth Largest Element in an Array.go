@@ -5,7 +5,7 @@ import (
 	"fmt"
 )
 
-// Reference: https://leetcode.com/problems/single-number/
+// Reference: https://leetcode.com/problems/kth-largest-element-in-an-array/
 func init() {
 	Solutions[215] = func() {
 		fmt.Println("Input: nums = [3,2,1,5,6,4], k = 2")
