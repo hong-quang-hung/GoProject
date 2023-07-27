@@ -15,8 +15,7 @@ func init() {
 }
 
 func minCostClimbingStairs(cost []int) int {
-	first := cost[0]
-	second := cost[1]
+	first, second := cost[0], cost[1]
 	for i := 2; i < len(cost); i++ {
 		if first > second {
 			first, second = second, second+cost[i]
