@@ -18,28 +18,22 @@ func init() {
 }
 
 func maxRunTime(n int, batteries []int) int64 {
-	sort.Slice(batteries, func(i, j int) bool { return batteries[i] > batteries[j] })
-	res := int64(0)
+	sort.Ints(batteries)
+
+	sum := int64(0)
+	for _, batterie := range batteries {
+		sum += int64(batterie)
+	}
+
+	i := len(batteries) - 1
 	for {
-		head, tail := batteries[:n], batteries[n:]
-		for i := 0; i < n; i++ {
-			if head[i] == 0 {
-				return res
-			} else {
-				head[i]--
-			}
+		res := sum / int64(n)
+		if res >= int64(batteries[i]) {
+			return res
 		}
 
-		idx1 := sort.Search(len(head), func(i int) bool { return head[i] < tail[0] })
-		idx2 := sort.Search(len(tail), func(i int) bool { return tail[i] < head[n-1] })
-		if idx1 == 0 && idx2 == len(tail) {
-			batteries = append(tail, head...)
-		} else if idx2 > 0 {
-			if idx1 < n {
-				mid := batteries[idx1 : n+idx2]
-				sort.Slice(mid, func(i, j int) bool { return mid[i] > mid[j] })
-			}
-		}
-		res++
+		sum -= int64(batteries[i])
+		n--
+		i--
 	}
 }
