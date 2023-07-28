@@ -19,19 +19,6 @@ func init() {
 	}
 }
 
-type TrieNodes struct {
-	suffixes [26]*TrieNodes
-	Tail     bool
-}
-
-func (tr *TrieNodes) get(ch byte) *TrieNodes {
-	return tr.suffixes[ch-'a']
-}
-
-func (tr *TrieNodes) set(ch byte, value *TrieNodes) {
-	tr.suffixes[ch-'a'] = value
-}
-
 type Trie struct {
 	root *TrieNodes
 }
@@ -49,10 +36,10 @@ func TrieConstructor() Trie {
 func (t *Trie) Insert(word string) {
 	current := t.root
 	for i := range word {
-		if current.get(word[i]) == nil {
-			current.set(word[i], new(TrieNodes))
+		if current.Get(word[i]) == nil {
+			current.Set(word[i], new(TrieNodes))
 		}
-		current = current.get(word[i])
+		current = current.Get(word[i])
 	}
 	current.Tail = true
 }
@@ -72,7 +59,7 @@ func (t *Trie) StartsWith(prefix string) bool {
 func (t *Trie) ToTail(prefix string) *TrieNodes {
 	current := t.root
 	for i := range prefix {
-		current = current.get(prefix[i])
+		current = current.Get(prefix[i])
 		if current == nil {
 			return current
 		}

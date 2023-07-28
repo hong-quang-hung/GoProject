@@ -12,6 +12,7 @@ type (
 	ListNode  = types.ListNode
 	TreeNode  = types.TreeNode
 	TrieNode  = types.TrieNode
+	TrieNodes = types.TrieNodes
 	UnionFind = types.UnionFind
 	MinHeap   = types.MinHeap
 	MaxHeap   = types.MaxHeap
