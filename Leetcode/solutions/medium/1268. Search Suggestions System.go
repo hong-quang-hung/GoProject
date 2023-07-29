@@ -1,6 +1,9 @@
 package medium
 
-import "fmt"
+import (
+	"fmt"
+	"strings"
+)
 
 // Reference: https://leetcode.com/problems/search-suggestions-system/
 func init() {
@@ -13,40 +16,46 @@ func init() {
 }
 
 func suggestedProducts(products []string, searchWord string) [][]string {
-	trie := new(TrieNode)
+	trie := new(TrieNodes)
 	for _, product := range products {
-		node := trie
+		current := trie
 		for i := range product {
-			ch := product[i]
-			if node.Childrens == nil {
-				node.Childrens = make(map[byte]*TrieNode)
+			if current.Get(product[i]) == nil {
+				current.Set(product[i], new(TrieNodes))
 			}
-			if node.Childrens[ch] == nil {
-				node.Childrens[ch] = new(TrieNode)
-			}
-			node = node.Childrens[ch]
+			current = current.Get(product[i])
 		}
-		node.End = true
+		current.Tail = true
 	}
 
 	res := [][]string{}
 	for i := 1; i <= len(searchWord); i++ {
-		search := []string{}
-		node := trie
 		prefix := searchWord[:i]
+		current := trie
 		for j := range prefix {
-			node = node.Childrens[prefix[j]]
-			if node == nil {
+			current = current.Get(prefix[j])
+			if current == nil {
 				break
 			}
+		}
 
-			search = append(search, string(prefix[j]))
-			if len(search) == 3 {
-				break
-			}
+		search := []string{}
+		if current.Tail {
+			search = append(search, prefix)
+		}
+
+		sb := new(strings.Builder)
+		sb.WriteString(prefix)
+		stack := []*TrieNodes{current}
+		for len(stack) > 0 {
+			stack = stack[1:]
 		}
 
 		res = append(res, search)
 	}
 	return res
+}
+
+func suggestedProductsDFS() {
+
 }
