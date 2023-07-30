@@ -10,7 +10,7 @@ func init() {
 	Solutions[1268] = func() {
 		fmt.Println("Input: products = ['mobile','mouse','moneypot','monitor','mousepad'], searchWord = 'mouse'")
 		fmt.Println("Output:", suggestedProducts([]string{"mobile", "mouse", "moneypot", "monitor", "mousepad"}, "mouse"))
-		fmt.Println("Input: products = ['havana'], searchWord = 'havana")
+		fmt.Println("Input: products = ['havana'], searchWord = 'havana'")
 		fmt.Println("Output:", suggestedProducts([]string{"havana"}, "havana"))
 	}
 }
