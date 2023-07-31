@@ -9,7 +9,7 @@ type TrieNode struct {
 
 type TrieNodes struct {
 	Suffixes  [26]*TrieNodes
-	Character []int
+	Character []byte
 	Tail      bool
 }
 
@@ -19,11 +19,11 @@ func (tr *TrieNodes) Get(ch byte) *TrieNodes {
 
 func (tr *TrieNodes) Set(ch byte, value *TrieNodes) {
 	tr.Suffixes[ch-'a'] = value
-	idx := sort.SearchInts(tr.Character, int(ch))
+	idx := sort.Search(len(tr.Character), func(i int) bool { return tr.Character[i] >= ch })
 	if len(tr.Character) == idx {
-		tr.Character = append(tr.Character, int(ch))
-	} else if tr.Character[idx] != int(ch) {
+		tr.Character = append(tr.Character, ch)
+	} else if tr.Character[idx] != ch {
 		tr.Character = append(tr.Character[:idx+1], tr.Character[idx:]...)
-		tr.Character[idx] = int(ch)
+		tr.Character[idx] = ch
 	}
 }

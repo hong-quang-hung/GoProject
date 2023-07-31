@@ -2,7 +2,6 @@ package medium
 
 import (
 	"fmt"
-	"strings"
 )
 
 // Reference: https://leetcode.com/problems/search-suggestions-system/
@@ -29,33 +28,38 @@ func suggestedProducts(products []string, searchWord string) [][]string {
 	}
 
 	res := [][]string{}
-	for i := 1; i <= len(searchWord); i++ {
-		prefix := searchWord[:i]
-		current := trie
-		for j := range prefix {
-			current = current.Get(prefix[j])
-			if current == nil {
-				break
-			}
+	current := trie
+	str := []byte{}
+	for i := 0; i < len(searchWord); i++ {
+		if current != nil {
+			current = current.Get(searchWord[i])
+			str = append(str, searchWord[i])
 		}
-
-		search := []string{}
-		if current.Tail {
-			search = append(search, prefix)
-		}
-
-		sb := new(strings.Builder)
-		sb.WriteString(prefix)
-		stack := []*TrieNodes{current}
-		for len(stack) > 0 {
-			stack = stack[1:]
-		}
-
-		res = append(res, search)
+		res = append(res, suggestedProductsGetList(current, str))
 	}
 	return res
 }
 
-func suggestedProductsDFS() {
+func suggestedProductsGetList(current *TrieNodes, str []byte) []string {
+	res := []string{}
+	if current != nil {
+		suggestedProductsGetListDFS(current, &res, str)
+	}
+	return res
+}
 
+func suggestedProductsGetListDFS(current *TrieNodes, res *[]string, str []byte) {
+	if len(*res) == 3 {
+		return
+	}
+
+	if current.Tail {
+		*res = append(*res, string(str))
+	}
+
+	for _, ch := range current.Character {
+		str = append(str, ch)
+		suggestedProductsGetListDFS(current.Get(ch), res, str)
+		str = str[:len(str)-1]
+	}
 }
