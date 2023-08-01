@@ -16,8 +16,15 @@ func init() {
 
 func dailyTemperatures(temperatures []int) []int {
 	n := len(temperatures)
+	stack := []int{}
 	res := make([]int, n)
-	for i := 0; i < n; i++ {
+	for i, temperature := range temperatures {
+		for len(stack) > 0 && temperatures[stack[len(stack)-1]] < temperature {
+			pop := stack[len(stack)-1]
+			res[pop] = i - pop
+			stack = stack[:len(stack)-1]
+		}
+		stack = append(stack, i)
 	}
 	return res
 }
