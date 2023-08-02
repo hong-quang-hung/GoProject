@@ -5,7 +5,9 @@ import (
 	"leetcode.com/Leetcode/utils"
 )
 
-const mod = 1_000_000_007
+const (
+	mod = 1_000_000_007
+)
 
 type (
 	Node      = types.Node

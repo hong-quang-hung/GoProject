@@ -5,7 +5,9 @@ import (
 	"leetcode.com/Leetcode/utils"
 )
 
-const mod = 1_000_000_007
+const (
+	mod = 1_000_000_007
+)
 
 type (
 	Node      = types.Node
@@ -22,6 +24,7 @@ type (
 var (
 	Solutions       Solution = make(Solution)
 	KnightDirection          = [][2]int{{-2, -1}, {-2, 1}, {2, -1}, {2, 1}, {-1, -2}, {-1, 2}, {1, -2}, {1, 2}}
+	BoardDirection           = [][2]int{{0, 1}, {0, -1}, {1, 0}, {-1, 0}}
 )
 
 func S2ListNode(s string) *ListNode {
