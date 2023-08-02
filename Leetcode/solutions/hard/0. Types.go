@@ -20,7 +20,9 @@ type (
 	Solution  = types.Solution
 )
 
-var Solutions Solution = make(Solution)
+var (
+	Solutions Solution = make(Solution)
+)
 
 func S2ListNode(s string) *ListNode {
 	return utils.S2ListNode(s)
