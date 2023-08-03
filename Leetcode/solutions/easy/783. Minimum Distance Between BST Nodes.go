@@ -15,20 +15,20 @@ func init() {
 
 func minDiffInBST(root *TreeNode) int {
 	minDiff, preValue := math.MaxInt, -1
-	inorderTraversal(root, &preValue, &minDiff)
+	minDiffInBSTSolved(root, &preValue, &minDiff)
 	return minDiff
 }
 
-func inorderTraversal(root *TreeNode, preValue *int, minDiff *int) {
+func minDiffInBSTSolved(root *TreeNode, preValue *int, minDiff *int) {
 	if root == nil {
 		return
 	}
 
-	inorderTraversal(root.Left, preValue, minDiff)
+	minDiffInBSTSolved(root.Left, preValue, minDiff)
 	if *preValue != -1 && root.Val-*preValue < *minDiff {
 		*minDiff = root.Val - *preValue
 	}
 
 	*preValue = root.Val
-	inorderTraversal(root.Right, preValue, minDiff)
+	minDiffInBSTSolved(root.Right, preValue, minDiff)
 }

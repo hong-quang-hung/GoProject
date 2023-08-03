@@ -5,15 +5,12 @@ import "fmt"
 // Reference: https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/
 func init() {
 	Solutions[153] = func() {
-		// fmt.Println("Input: nums = [3,4,5,1,2]")
-		// fmt.Println("Output:", findMin([]int{3, 4, 5, 1, 2}))
-		// fmt.Println("Input: nums = [4,5,6,7,0,1,2]")
-		// fmt.Println("Output:", findMin([]int{4, 5, 6, 7, 0, 1, 2}))
-		// fmt.Println("Input: nums = [11,13,15,17]")
-		// fmt.Println("Output:", findMin([]int{11, 13, 15, 17}))
-
-		fmt.Println("Input: nums = [5,1,2,3,4]")
-		fmt.Println("Output:", findMin([]int{5, 1, 2, 3, 4}))
+		fmt.Println("Input: nums = [3,4,5,1,2]")
+		fmt.Println("Output:", findMin([]int{3, 4, 5, 1, 2}))
+		fmt.Println("Input: nums = [4,5,6,7,0,1,2]")
+		fmt.Println("Output:", findMin([]int{4, 5, 6, 7, 0, 1, 2}))
+		fmt.Println("Input: nums = [11,13,15,17]")
+		fmt.Println("Output:", findMin([]int{11, 13, 15, 17}))
 	}
 }
 
