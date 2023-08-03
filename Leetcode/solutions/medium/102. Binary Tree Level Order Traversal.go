@@ -2,7 +2,7 @@ package medium
 
 import "fmt"
 
-// Reference: https://leetcode.com/problems/validate-binary-search-tree/
+// Reference: https://leetcode.com/problems/binary-tree-level-order-traversal/
 func init() {
 	Solutions[102] = func() {
 		fmt.Println("Input: root = [3,9,20,null,null,15,7]")
