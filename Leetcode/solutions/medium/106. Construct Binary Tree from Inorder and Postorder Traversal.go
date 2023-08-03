@@ -6,11 +6,11 @@ import "fmt"
 func init() {
 	Solutions[106] = func() {
 		fmt.Println("Input: inorder = [9,3,15,20,7], postorder = [9,15,7,20,3]")
-		fmt.Println("Output:", STreeNode(buildTree([]int{9, 3, 15, 20, 7}, []int{9, 15, 7, 20, 3})))
+		fmt.Println("Output:", STreeNode(buildTree_ii([]int{9, 3, 15, 20, 7}, []int{9, 15, 7, 20, 3})))
 	}
 }
 
-func buildTree(inorder []int, postorder []int) *TreeNode {
+func buildTree_ii(inorder []int, postorder []int) *TreeNode {
 	return buildTreeConstruct(inorder, postorder, 0, len(inorder)-1, 0, len(postorder)-1)
 }
 

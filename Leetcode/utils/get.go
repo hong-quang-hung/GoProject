@@ -84,13 +84,29 @@ func STreeNode(root *types.TreeNode) string {
 		return "[]"
 	}
 
-	strDepth, maxDepth := []string{}, 0
+	strDepth, maxDepth := [][]string{}, 0
 	printTreeNode(root, &strDepth, &maxDepth, 0)
 	strDepth = strDepth[0:(maxDepth + 1)]
-	return "[" + strings.Join(strDepth, ",") + "]"
+
+	temp := strDepth[maxDepth]
+	idx := len(temp) - 1
+	for idx >= 0 && temp[idx] == nilStr {
+		idx--
+	}
+	strDepth[maxDepth] = temp[:idx+1]
+
+	str := new(strings.Builder)
+	str.WriteString("[")
+	str.WriteString(strings.Join(strDepth[0], ","))
+	for _, sd := range strDepth[1:] {
+		str.WriteString(",")
+		str.WriteString(strings.Join(sd, ","))
+	}
+	str.WriteString("]")
+	return str.String()
 }
 
-func printTreeNode(node *types.TreeNode, strDepth *[]string, maxDepth *int, depth int) {
+func printTreeNode(node *types.TreeNode, strDepth *[][]string, maxDepth *int, depth int) {
 	var val string
 	if node == nil {
 		val = nilStr
@@ -99,9 +115,9 @@ func printTreeNode(node *types.TreeNode, strDepth *[]string, maxDepth *int, dept
 	}
 
 	if len(*strDepth) > depth {
-		(*strDepth)[depth] = (*strDepth)[depth] + "," + val
+		(*strDepth)[depth] = append((*strDepth)[depth], val)
 	} else {
-		*strDepth = append(*strDepth, val)
+		*strDepth = append(*strDepth, []string{val})
 	}
 
 	if node == nil {
