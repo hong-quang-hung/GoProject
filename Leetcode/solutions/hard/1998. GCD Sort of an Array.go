@@ -1,6 +1,9 @@
 package hard
 
-import "fmt"
+import (
+	"fmt"
+	"sort"
+)
 
 // Reference: https://leetcode.com/problems/gcd-sort-of-an-array/
 func init() {
@@ -15,22 +18,31 @@ func init() {
 }
 
 func gcdSort(nums []int) bool {
-	n := len(nums)
-	union := NewUnionFind(n)
-	for i := 0; i < n-1; i++ {
-		for j := i + 1; j < n; j++ {
-			if gcd(nums[i], nums[j]) > 1 {
-				union.UnionSet(j, i)
-				union.UnionSet(i, j)
+	union := NewUnionFind(100001)
+	for _, x := range nums {
+		y := x
+		for p := 2; p*p <= y; p++ {
+			if y%p == 0 {
+				union.UnionSet(x, p)
+				for y%p == 0 {
+					y /= p
+				}
 			}
+		}
+
+		if y != 1 {
+			union.UnionSet(x, y)
 		}
 	}
 
-	fmt.Println(union.Parent, union.Rank, union.Count)
+	n := len(nums)
+	temp := make([]int, n)
+	copy(temp, nums)
+	sort.Ints(temp)
 	for i := 0; i < n; i++ {
-		union.Parent[i] = union.Find(union.Parent[i])
+		if union.Find(nums[i]) != union.Find(temp[i]) {
+			return false
+		}
 	}
-
-	fmt.Println(union.Parent, union.Rank, union.Count)
 	return true
 }
