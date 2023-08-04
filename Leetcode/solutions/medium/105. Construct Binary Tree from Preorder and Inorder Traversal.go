@@ -9,8 +9,8 @@ func init() {
 		// fmt.Println("Output:", STreeNode(buildTree([]int{3, 9, 20, 15, 7}, []int{9, 3, 15, 20, 7})))
 		// fmt.Println("Input: preorder = [-1], inorder = [-1]")
 		// fmt.Println("Output:", STreeNode(buildTree([]int{-1}, []int{-1})))
-		fmt.Println("Input: preorder = [1,2,3], inorder = [2,3,1]")
-		fmt.Println("Output:", STreeNode(buildTree([]int{1, 2, 3}, []int{2, 3, 1})))
+		fmt.Println("Input: preorder = [1,4,2,3], inorder = [1,2,3,4]")
+		fmt.Println("Output:", STreeNode(buildTree([]int{1, 4, 2, 3}, []int{1, 2, 3, 4})))
 	}
 }
 
@@ -28,7 +28,7 @@ func buildTreeSolved(preorder []int, inorder []int, p1 int, p2 int, i1 int, i2 i
 	if mid-i1 == 1 {
 		root.Left = &TreeNode{Val: inorder[i1]}
 	} else if mid-i1 > 1 {
-		root.Left = buildTreeSolved(preorder, inorder, p1+mid-i1-1, p2-1, i1, mid-1)
+		root.Left = buildTreeSolved(preorder, inorder, p1+1, p1+mid-i1, i1, mid-1)
 	}
 
 	if i2-mid == 1 {
