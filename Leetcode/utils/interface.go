@@ -5,7 +5,7 @@ import "strconv"
 const nilStr string = "null"
 
 type Number interface {
-	uint | uint32 | int | int16 | int32 | int64 | float32
+	uint | uint32 | int | int16 | int32 | int64 | float32 | float64
 }
 
 func Len[T Number](n T) int {
