@@ -34,7 +34,6 @@ func wordBreakSolved(s string, dp []int, m map[string]bool, idx int, n int) bool
 	}
 
 	if dp[idx] != -1 {
-		fmt.Println(idx)
 		return dp[idx] == 1
 	}
 
