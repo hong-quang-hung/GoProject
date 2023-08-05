@@ -55,7 +55,7 @@ func S2SliceString(s string) []string {
 		return []string{}
 	}
 
-	arr := strings.Split(matched[0][1], ",")
+	arr := strings.Split(matched[0][1], commaSpaceString)
 	res := make([]string, len(arr))
 	for i, a := range arr {
 		a = strings.Trim(a, " ")
@@ -71,7 +71,7 @@ func S2SliceInt(s string) []int {
 		return []int{}
 	}
 
-	arr := strings.Split(matched[0][1], ",")
+	arr := strings.Split(matched[0][1], commaSpaceString)
 	res := make([]int, len(arr))
 	for i, a := range arr {
 		a = strings.Trim(a, " ")
@@ -94,8 +94,7 @@ func S2SoSliceInt(s string) [][]int {
 }
 
 func Sslice[T Number](slice []T) string {
-	sep := ","
-	s, _ := joinSlice(slice, sep)
+	s, _ := joinSlice(slice, commaSpaceString)
 	return s
 }
 
@@ -108,24 +107,23 @@ func SsoSlice[T Number](soSlice [][]T) string {
 		return Sslice(soSlice[0])
 	}
 
-	sep := ","
 	str := make([]string, lenght)
-	n := len(sep) * (lenght - 1)
+	n := len(commaSpaceString) * (lenght - 1)
 	for i := 0; i < lenght; i++ {
-		s, l := joinSlice(soSlice[i], sep)
+		s, l := joinSlice(soSlice[i], commaSpaceString)
 		str[i] = s
 		n += l + 2
 	}
 
 	var b strings.Builder
 	b.Grow(n + 2)
-	b.WriteString("[")
+	b.WriteString(sliceStart)
 	b.WriteString(str[0])
 	for _, s := range str[1:] {
-		b.WriteString(sep)
+		b.WriteString(commaSpaceString)
 		b.WriteString(s)
 	}
-	b.WriteString("]")
+	b.WriteString(sliceEnd)
 	return b.String()
 }
 
@@ -133,9 +131,9 @@ func joinSlice[T Number](slice []T, sep string) (string, int) {
 	s, l := join(slice, sep)
 	var b strings.Builder
 	b.Grow(l + 2)
-	b.WriteString("[")
+	b.WriteString(sliceStart)
 	b.WriteString(s)
-	b.WriteString("]")
+	b.WriteString(sliceEnd)
 	return b.String(), b.Len()
 }
 

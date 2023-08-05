@@ -1,6 +1,7 @@
 package utils
 
 import (
+	"fmt"
 	"strconv"
 	"strings"
 
@@ -21,6 +22,23 @@ func IffNil[T any](c any, a T, b T) T {
 	return b
 }
 
+// Print Any array
+func SAny[L Any](a []*L) string {
+	if len(a) == 0 {
+		return nilSlice
+	}
+
+	var s strings.Builder
+	s.WriteString(sliceStart)
+	s.WriteString(printAny(a[0]))
+	for _, o := range a[1:] {
+		s.WriteString(commaSpaceString)
+		s.WriteString(printAny(o))
+	}
+	s.WriteString(sliceEnd)
+	return s.String()
+}
+
 // Convert input string to ListNode
 func S2ListNode(s string) *types.ListNode {
 	return types.NewListNode(S2SliceInt(s)...)
@@ -30,11 +48,11 @@ func S2ListNode(s string) *types.ListNode {
 // do not use when ListNode is cycle...
 func SListNode(head *types.ListNode) string {
 	if head == nil {
-		return "[]"
+		return nilSlice
 	}
 
 	var s strings.Builder
-	s.WriteString("[")
+	s.WriteString(sliceStart)
 	temp := head
 	for {
 		s.WriteString(strconv.Itoa(temp.Val))
@@ -42,10 +60,10 @@ func SListNode(head *types.ListNode) string {
 		if temp == nil {
 			break
 		} else {
-			s.WriteString(",")
+			s.WriteString(commaSpaceString)
 		}
 	}
-	s.WriteString("]")
+	s.WriteString(sliceEnd)
 	return s.String()
 }
 
@@ -81,7 +99,7 @@ func S2TreeNode(s string) *types.TreeNode {
 // Returning the TreeNode string
 func STreeNode(root *types.TreeNode) string {
 	if root == nil {
-		return "[]"
+		return nilSlice
 	}
 
 	strDepth, maxDepth := [][]string{}, 0
@@ -96,13 +114,13 @@ func STreeNode(root *types.TreeNode) string {
 	strDepth[maxDepth] = temp[:idx+1]
 
 	str := new(strings.Builder)
-	str.WriteString("[")
-	str.WriteString(strings.Join(strDepth[0], ","))
+	str.WriteString(sliceStart)
+	str.WriteString(strings.Join(strDepth[0], commaSpaceString))
 	for _, sd := range strDepth[1:] {
-		str.WriteString(",")
-		str.WriteString(strings.Join(sd, ","))
+		str.WriteString(commaSpaceString)
+		str.WriteString(strings.Join(sd, commaSpaceString))
 	}
-	str.WriteString("]")
+	str.WriteString(sliceEnd)
 	return str.String()
 }
 
@@ -127,4 +145,16 @@ func printTreeNode(node *types.TreeNode, strDepth *[][]string, maxDepth *int, de
 	*maxDepth = Max(*maxDepth, depth)
 	printTreeNode(node.Left, strDepth, maxDepth, depth+1)
 	printTreeNode(node.Right, strDepth, maxDepth, depth+1)
+}
+
+// Implement Print
+func printAny(a any) string {
+	switch t := a.(type) {
+	case *types.TreeNode:
+		return STreeNode(t)
+	case *types.ListNode:
+		return SListNode(t)
+	default:
+		return fmt.Sprint(t)
+	}
 }

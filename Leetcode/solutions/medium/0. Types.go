@@ -10,6 +10,7 @@ const (
 )
 
 type (
+	Any       = utils.Any
 	Node      = types.Node
 	ListNode  = types.ListNode
 	TreeNode  = types.TreeNode
@@ -26,6 +27,10 @@ var (
 	KnightDirection          = [][2]int{{-2, -1}, {-2, 1}, {2, -1}, {2, 1}, {-1, -2}, {-1, 2}, {1, -2}, {1, 2}}
 	BoardDirection           = [][2]int{{0, 1}, {0, -1}, {1, 0}, {-1, 0}}
 )
+
+func SAny[L Any](a []*L) string {
+	return utils.SAny(a)
+}
 
 func S2ListNode(s string) *ListNode {
 	return utils.S2ListNode(s)

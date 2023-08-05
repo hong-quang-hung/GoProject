@@ -1,11 +1,25 @@
 package utils
 
-import "strconv"
+import (
+	"strconv"
 
-const nilStr string = "null"
+	"leetcode.com/Leetcode/types"
+)
+
+const (
+	commaSpaceString = ","
+	nilStr           = "null"
+	nilSlice         = "[]"
+	sliceStart       = "["
+	sliceEnd         = "]"
+)
 
 type Number interface {
 	uint | uint32 | int | int16 | int32 | int64 | float32 | float64
+}
+
+type Any interface {
+	types.ListNode | types.TreeNode
 }
 
 func Len[T Number](n T) int {
