@@ -21,7 +21,7 @@ func generateTrees(n int) []*TreeNode {
 	dp[0] = append(dp[0], nil)
 	for i := 1; i <= n; i++ {
 		for j := 1; j <= i; j++ {
-			z := i - 1
+			z := i - j
 			for _, left := range dp[j-1] {
 				for _, right := range dp[z] {
 					dp[i] = append(dp[i], &TreeNode{Val: j, Left: left, Right: generateTreesClone(right, j)})
@@ -34,11 +34,11 @@ func generateTrees(n int) []*TreeNode {
 
 func generateTreesClone(node *TreeNode, offset int) *TreeNode {
 	if node == nil {
-		return nil
+		return node
 	}
 
-	clonedNode := &TreeNode{Val: node.Val + offset}
-	clonedNode.Left = generateTreesClone(node.Left, offset)
-	clonedNode.Right = generateTreesClone(node.Right, offset)
-	return clonedNode
+	clone := &TreeNode{Val: node.Val + offset}
+	clone.Left = generateTreesClone(node.Left, offset)
+	clone.Right = generateTreesClone(node.Right, offset)
+	return clone
 }
