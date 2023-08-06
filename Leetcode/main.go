@@ -54,14 +54,14 @@ func LeetcodeInformation() {
 	Leetcode.SetSolved(8, 18, 28, 38, 58, 78, 88, 98, 108, 118, 198, 208, 228, 238, 258, 328, 338, 438, 688, 768, 808, 958, 1218, 1268, 1318, 1348, 1448, 1498, 1768, 1998, 2038, 2218, 2328, 2348, 2448, 2578, 2588, 2618, 2628, 2648, 2658, 2678, 2698, 2708, 2718)
 	Leetcode.SetSolved(9, 19, 39, 59, 79, 109, 119, 129, 139, 199, 209, 219, 279, 299, 309, 319, 389, 399, 509, 649, 739, 769, 839, 849, 859, 879, 929, 989, 1049, 1129, 1319, 1539, 1569, 1579, 1639, 1679, 1799, 1979, 2399, 2419, 2439, 2579, 2609, 2619, 2629, 2639, 2649, 2659, 2679, 2719, 2729, 2739)
 
-	// defer ShowHasNotSubmited(Leetcode)
+	// defer ShowHasNotSubmitted(Leetcode)
 	// defer LeetcodeGroupBy(Leetcode, 20)
 
 	fmt.Println("There are", Leetcode.Solved(), "/", Leetcode.Total(), "problem(s) has been solved in Leetcode.")
 	// fmt.Println("Today, Number of Leetcode Problem is:", Leetcode.PickProblem())
 }
 
-func ShowHasNotSubmited(L *types.Leetcode) {
+func ShowHasNotSubmitted(L *types.Leetcode) {
 	for i := 0; i < _PROBLEM_TOTAL_; i++ {
 		if L.IsSolved(i) && !solutions.Leetcode_Check_Golang_Solution(i+1) {
 			fmt.Println(i+1, "hasn't submit solution with Golang language.")

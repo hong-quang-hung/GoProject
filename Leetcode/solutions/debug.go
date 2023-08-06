@@ -12,7 +12,9 @@ import (
 type Solution types.Solution
 
 // problem th convert to problem + normalize
-var _SOLUTIONS_ Solution = make(Solution)
+var (
+	_SOLUTIONS_ Solution = make(Solution)
+)
 
 func init() {
 	// Easy

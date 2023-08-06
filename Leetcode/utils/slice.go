@@ -99,17 +99,17 @@ func Sslice[T Number](slice []T) string {
 }
 
 func SsoSlice[T Number](soSlice [][]T) string {
-	var lenght int = len(soSlice)
-	switch lenght {
+	var length int = len(soSlice)
+	switch length {
 	case 0:
 		return ""
 	case 1:
 		return Sslice(soSlice[0])
 	}
 
-	str := make([]string, lenght)
-	n := len(commaSpaceString) * (lenght - 1)
-	for i := 0; i < lenght; i++ {
+	str := make([]string, length)
+	n := len(commaSpaceString) * (length - 1)
+	for i := 0; i < length; i++ {
 		s, l := joinSlice(soSlice[i], commaSpaceString)
 		str[i] = s
 		n += l + 2
