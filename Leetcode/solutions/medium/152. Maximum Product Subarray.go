@@ -17,9 +17,9 @@ func init() {
 func maxProduct(nums []int) int {
 	maxVal, minVal, res := nums[0], nums[0], nums[0]
 	for _, num := range nums[1:] {
-		temp := maxVal
-		maxVal = max(num, max(maxVal*num, minVal*num))
-		minVal = min(num, min(temp*num, minVal*num))
+		v1, v2 := maxVal*num, minVal*num
+		maxVal = max(num, max(v1, v2))
+		minVal = min(num, min(v1, v2))
 		res = max(res, maxVal)
 	}
 	return res
