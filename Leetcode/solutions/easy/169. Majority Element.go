@@ -14,8 +14,8 @@ func init() {
 
 func majorityElement(nums []int) int {
 	res := nums[0]
-	count := 0
-	for i := 0; i < len(nums); i++ {
+	count := 1
+	for i := 1; i < len(nums); i++ {
 		if count == 0 {
 			res = nums[i]
 		}
