@@ -1,6 +1,9 @@
 package hard
 
-import "fmt"
+import (
+	"container/heap"
+	"fmt"
+)
 
 // Reference: https://leetcode.com/problems/find-median-from-data-stream/
 func init() {
@@ -20,20 +23,42 @@ func init() {
 }
 
 type MedianFinder struct {
-	sum    float64
-	n      int
-	stream map[int]bool
+	small *MaxHeap
+	large *MinHeap
 }
 
 func MedianFinderConstructor() MedianFinder {
-	return MedianFinder{}
+	m := new(MedianFinder)
+	m.small = new(MaxHeap)
+	m.large = new(MinHeap)
+	return *m
 }
 
 func (m *MedianFinder) AddNum(num int) {
-	m.sum += float64(num)
-	m.n++
+	heap.Push(m.small, num)
+	if m.small.Len() != 0 && m.large.Len() != 0 {
+		if m.small.Peek() > m.large.Peek() {
+			heap.Push(m.large, heap.Pop(m.small).(int))
+		}
+	}
+
+	if m.small.Len() > m.large.Len()+1 {
+		heap.Push(m.large, heap.Pop(m.small).(int))
+	}
+
+	if m.large.Len() > m.small.Len()+1 {
+		heap.Push(m.small, heap.Pop(m.large).(int))
+	}
 }
 
 func (m *MedianFinder) FindMedian() float64 {
-	return m.sum / float64(m.n)
+	if m.small.Len() > m.large.Len() {
+		return float64(m.small.Peek())
+	}
+
+	if m.small.Len() < m.large.Len() {
+		return float64(m.large.Peek())
+	}
+
+	return (float64(m.small.Peek()) + float64(m.large.Peek())) / float64(2)
 }
