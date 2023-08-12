@@ -15,7 +15,7 @@ var (
 )
 
 func init() {
-	_PROBLEM_DEBUG_ = 169
+	_PROBLEM_DEBUG_ = 295
 
 	_PROBLEM_GROUP_ = 10
 	_PROBLEM_TOTAL_ = 2813
