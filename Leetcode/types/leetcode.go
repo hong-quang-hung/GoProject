@@ -2,32 +2,36 @@ package types
 
 import (
 	"math/rand"
+	"sync"
 	"time"
 )
 
 type Leetcode struct {
 	total    int
 	problems []bool
-	solved   []int
+	solved   int
 }
 
 func (L *Leetcode) SetTotal(size int) {
 	L.total = size
 	L.problems = make([]bool, size)
-	L.solved = []int{}
+	L.solved = 0
 }
 
-func (L *Leetcode) SetSolved(s ...int) {
+func (L *Leetcode) SetSolved(wg *sync.WaitGroup, s ...int) {
+	defer wg.Done()
+	vl := 0
 	for _, i := range s {
 		if L.IsValid(i - 1) {
 			L.problems[i-1] = true
-			L.solved = append(L.solved, i)
+			vl++
 		}
 	}
+	L.solved += vl
 }
 
 func (L *Leetcode) PickProblem() int {
-	if len(L.solved) == L.total {
+	if L.solved == L.total {
 		return -1
 	}
 
@@ -43,18 +47,8 @@ func (L *Leetcode) PickProblem() int {
 	return pr[rd]
 }
 
-func (L *Leetcode) GetSolved() int {
-	if len(L.solved) == L.total {
-		return -1
-	}
-
-	rand.NewSource(time.Now().UnixNano())
-	rd := rand.Intn(L.Solved())
-	return L.solved[rd]
-}
-
 func (L *Leetcode) Solved() int {
-	return len(L.solved)
+	return L.solved
 }
 
 func (L *Leetcode) Total() int {

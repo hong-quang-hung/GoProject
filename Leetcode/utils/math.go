@@ -1,7 +1,5 @@
 package utils
 
-import "math"
-
 func Max[T Number](a, b T) T {
 	if a > b {
 		return a
@@ -52,7 +50,7 @@ func AbsInt(x int) int {
 }
 
 func ManhattanDistanceInt(p1, p2 []int) int {
-	return int(math.Abs(float64(p1[0]-p2[0]))) + int(math.Abs(float64(p1[1]-p2[1])))
+	return AbsInt(p1[0]-p2[0]) + AbsInt(p1[0]-p2[0])
 }
 
 func GcdInt(a, b int) int {

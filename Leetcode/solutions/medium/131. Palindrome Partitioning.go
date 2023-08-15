@@ -6,21 +6,21 @@ import "fmt"
 func init() {
 	Solutions[131] = func() {
 		fmt.Println("Input: s = 'aab'")
-		fmt.Println("Output:", partition("aab"))
+		fmt.Println("Output:", partitionII("aab"))
 		fmt.Println("Input: s = 'a'")
-		fmt.Println("Output:", partition("a"))
+		fmt.Println("Output:", partitionII("a"))
 		fmt.Println("Input: s = 'aabb'")
-		fmt.Println("Output:", partition("aabb"))
+		fmt.Println("Output:", partitionII("aabb"))
 	}
 }
 
-func partition(s string) [][]string {
+func partitionII(s string) [][]string {
 	res := [][]string{}
-	partitionSolved(s, &res, []string{})
+	partitionIISolved(s, &res, []string{})
 	return res
 }
 
-func partitionSolved(s string, res *[][]string, current []string) {
+func partitionIISolved(s string, res *[][]string, current []string) {
 	n := len(s)
 	if n == 0 {
 		temp := make([]string, len(current))
@@ -33,7 +33,7 @@ func partitionSolved(s string, res *[][]string, current []string) {
 		curr := s[:i]
 		if isPalindrome(curr) {
 			current = append(current, curr)
-			partitionSolved(s[i:], res, current)
+			partitionIISolved(s[i:], res, current)
 			current = current[:len(current)-1]
 		}
 	}
