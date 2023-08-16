@@ -13,5 +13,23 @@ func init() {
 }
 
 func partition(head *ListNode, x int) *ListNode {
-	return head
+	hook1 := &ListNode{Val: -1000, Next: head}
+	hook2 := &ListNode{Val: 0, Next: nil}
+	cur := hook1
+	prev := hook1
+	node2 := hook2
+	for cur != nil {
+		if cur.Val >= x {
+			node2.Next = cur
+			node2 = node2.Next
+			prev.Next = cur.Next
+		} else {
+			prev = cur
+		}
+		cur = cur.Next
+	}
+
+	prev.Next = hook2.Next
+	node2.Next = nil
+	return hook1.Next
 }
