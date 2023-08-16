@@ -15,22 +15,47 @@ func init() {
 }
 
 func sortList(head *ListNode) *ListNode {
-	temp := head
-	for temp != nil {
-		next := temp
-		for next.Next != nil && temp.Val >= next.Next.Val {
-			next = next.Next
-		}
-
-		if temp != next && temp.Val != next.Val {
-			temp.Val, next.Val = next.Val, temp.Val
-		} else {
-			if temp.Val < head.Val {
-				temp = head
-			} else {
-				temp = temp.Next
-			}
-		}
+	if head == nil || head.Next == nil {
+		return head
 	}
-	return head
+
+	other := sortListDivide(head)
+	head1 := sortList(head)
+	head2 := sortList(other)
+	return sortListMerge(head1, head2)
+}
+
+func sortListDivide(head *ListNode) *ListNode {
+	slow := head
+	fast := slow.Next
+	for fast != nil && fast.Next != nil {
+		slow = slow.Next
+		fast = fast.Next.Next
+	}
+
+	newHead := slow.Next
+	slow.Next = nil
+	return newHead
+}
+
+func sortListMerge(p, q *ListNode) *ListNode {
+	res := &ListNode{}
+	temp := res
+	for p != nil && q != nil {
+		if p.Val < q.Val {
+			temp.Next = p
+			p = p.Next
+		} else {
+			temp.Next = q
+			q = q.Next
+		}
+		temp = temp.Next
+	}
+
+	if p != nil {
+		temp.Next = p
+	} else {
+		temp.Next = q
+	}
+	return res.Next
 }
