@@ -18,17 +18,19 @@ func init() {
 }
 
 func getIntersectionNode(headA, headB *ListNode) *ListNode {
-	flag := true
-	for headA != nil && headB != nil {
-		if headA != headB {
-			if flag {
-				headA = headA.Next
-			} else {
-				headB = headB.Next
-			}
+	tempA, tempB := headA, headB
+	for tempA != tempB {
+		if tempA != nil {
+			tempA = tempA.Next
 		} else {
-			return headA
+			tempA = headB
+		}
+
+		if tempB != nil {
+			tempB = tempB.Next
+		} else {
+			tempB = headA
 		}
 	}
-	return nil
+	return tempB
 }
