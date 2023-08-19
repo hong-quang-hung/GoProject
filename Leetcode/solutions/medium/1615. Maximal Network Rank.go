@@ -15,13 +15,29 @@ func init() {
 }
 
 func maximalNetworkRank(n int, roads [][]int) int {
-	m := make([]int, n)
-	maxA, maxB := 0, 0
-	for _, r := range roads {
-		m[r[0]]++
-		m[r[1]]++
-		maxA = max(maxA, m[r[0]])
-		maxA = max(maxA, m[r[1]])
+	m := make([][]bool, n)
+	for i := 0; i < n; i++ {
+		m[i] = make([]bool, n)
 	}
-	return maxA + maxB
+
+	degree := make([]int, n)
+	for _, r := range roads {
+		m[r[0]][r[1]] = true
+		m[r[1]][r[0]] = true
+
+		degree[r[0]]++
+		degree[r[1]]++
+	}
+
+	res := 0
+	for i := 0; i < n-1; i++ {
+		for j := i + 1; j < n; j++ {
+			if m[i][j] {
+				res = max(res, degree[i]+degree[j]-1)
+			} else {
+				res = max(res, degree[i]+degree[j])
+			}
+		}
+	}
+	return res
 }
