@@ -17,10 +17,10 @@ var (
 
 func init() {
 	_PROBLEM_DEBUG_ = 1489
-	_PROBLEM_DEBUG_ = 48
+	_PROBLEM_DEBUG_ = 1203
 
 	_PROBLEM_GROUP_ = 10
-	_PROBLEM_TOTAL_ = 2823
+	_PROBLEM_TOTAL_ = 2831
 }
 
 func main() {
