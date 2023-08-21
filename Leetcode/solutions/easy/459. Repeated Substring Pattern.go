@@ -5,7 +5,7 @@ import (
 	"strings"
 )
 
-// Reference: https://leetcode.com/problems/sort-items-by-groups-respecting-dependencies/
+// Reference: https://leetcode.com/problems/repeated-substring-pattern/
 func init() {
 	Solutions[459] = func() {
 		fmt.Println("Input: s = 'abab'")
