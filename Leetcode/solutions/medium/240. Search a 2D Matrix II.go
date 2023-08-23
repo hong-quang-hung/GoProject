@@ -16,28 +16,14 @@ func init() {
 
 func searchMatrixII(matrix [][]int, target int) bool {
 	m, n := len(matrix), len(matrix[0])
-	rl, rr, cl, cr := 0, m-1, 0, n-1
-	for rl <= rr && cl <= cr {
-		rm := (rl + rr) / 2
-		cm := (cl + cr) / 2
-		if matrix[rm][cm] == target {
+	r, c := 0, n-1
+	for r < m && c >= 0 {
+		if matrix[r][c] == target {
 			return true
-		} else if matrix[rm][cm] > target {
-			for matrix[rm][cl] < target {
-				cl++
-			}
-
-			for matrix[rl][cm] < target {
-				rl++
-			}
+		} else if matrix[r][c] < target {
+			r++
 		} else {
-			for matrix[rm][cr] > target {
-				cr++
-			}
-
-			for matrix[rr][cm] > target {
-				rr--
-			}
+			c--
 		}
 	}
 	return false
