@@ -10,6 +10,7 @@ type Leetcode struct {
 	total    int
 	problems []bool
 	solved   int
+	mu       sync.Mutex
 }
 
 func (L *Leetcode) SetTotal(size int) {
@@ -27,7 +28,10 @@ func (L *Leetcode) SetSolved(wg *sync.WaitGroup, s ...int) {
 			vl++
 		}
 	}
+
+	L.mu.Lock()
 	L.solved += vl
+	L.mu.Unlock()
 }
 
 func (L *Leetcode) PickProblem() int {
