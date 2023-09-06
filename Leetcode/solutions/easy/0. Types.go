@@ -13,6 +13,7 @@ type (
 	UnionFind = types.UnionFind
 	MinHeap   = types.MinHeap
 	MaxHeap   = types.MaxHeap
+	Queue     = types.Queue
 	Solution  = types.Solution
 )
 
