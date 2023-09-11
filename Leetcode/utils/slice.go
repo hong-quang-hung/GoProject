@@ -70,8 +70,11 @@ func S2SliceInt(s string) []int {
 	if len(matched) == 0 || len(strings.TrimSpace(matched[0][1])) == 0 {
 		return []int{}
 	}
+	return SSplitInt(matched[0][1])
+}
 
-	arr := strings.Split(matched[0][1], commaSpaceString)
+func SSplitInt(s string) []int {
+	arr := strings.Split(s, commaSpaceString)
 	res := make([]int, len(arr))
 	for i, a := range arr {
 		a = strings.Trim(a, " ")
