@@ -18,14 +18,12 @@ const (
 var (
 	problemDebug int
 	problemTotal int
-	problemGroup int
 )
 
 func init() {
 	problemDebug = 2366
 	problemDebug = 92
 
-	problemGroup = 10
 	problemTotal = 2851
 }
 
@@ -44,7 +42,7 @@ func PrintLine() {
 func LeetcodeDebug() {
 	fmt.Printf("Leetcode Debug Start...\n")
 	solutions.Leetcode_Debug(problemDebug)
-	fmt.Printf("Leetcode Debug End. The question %d belongs to group %dth.\n", problemDebug, (problemDebug)%problemGroup)
+	fmt.Printf("Leetcode Debug End....\n")
 }
 
 func LeetcodeInformation() {
@@ -58,6 +56,7 @@ func LeetcodeInformation() {
 	}
 
 	wg := new(sync.WaitGroup)
+
 	fsc := bufio.NewScanner(rf)
 	fsc.Split(bufio.ScanLines)
 	for fsc.Scan() {
@@ -65,10 +64,10 @@ func LeetcodeInformation() {
 		go Leetcode.SetSolved(wg, utils.SSplitInt(fsc.Text())...)
 	}
 	rf.Close()
+
 	wg.Wait()
 
 	// defer ShowHasNotSubmitted(Leetcode)
-
 	fmt.Println("There are", Leetcode.Solved(), "/", Leetcode.Total(), "problem(s) has been solved in Leetcode.")
 	// fmt.Println("Today, Number of Leetcode Problem is:", Leetcode.PickProblem())
 }
