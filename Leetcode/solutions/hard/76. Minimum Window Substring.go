@@ -15,8 +15,7 @@ func init() {
 }
 
 func minWindow(s string, t string) string {
-	check := [52]bool{}
-	ms, mt := [52]int{}, [52]int{}
+	check, ms, mt := [52]bool{}, [52]int{}, [52]int{}
 	for _, ch := range t {
 		check[int(ch-'A')] = true
 		mt[int(ch-'A')]++
