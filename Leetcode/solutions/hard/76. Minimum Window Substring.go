@@ -9,25 +9,41 @@ func init() {
 		fmt.Println("Output:", minWindow("ADOBECODEBANC", "ABC"))
 		fmt.Println("Input: s = 'a', t = 'a'")
 		fmt.Println("Output:", minWindow("a", "a"))
-		fmt.Println("Input: s = 'a', t = 'aa'")
-		fmt.Println("Output:", minWindow("a", "aa"))
+		fmt.Println("Input: s = 'a', t = 'b'")
+		fmt.Println("Output:", minWindow("a", "b"))
 	}
 }
 
 func minWindow(s string, t string) string {
-	check, ms, mt := [52]bool{}, [52]int{}, [52]int{}
+	m, n := len(s), len(t)
+	if m < n {
+		return ""
+	}
+
+	mt := [58]int{}
 	for _, ch := range t {
-		check[int(ch-'A')] = true
 		mt[int(ch-'A')]++
 	}
 
-	var res string
-	m, n := len(s), len(t)
-	for i := 0; i < m; i++ {
-		if check[int(s[i]-'A')] {
-			ms[s[i]-'A']++
-			if i-n >= 0 {
-				ms[s[i-n]-'A']--
+	res := ""
+	for left := 0; left < m; left++ {
+		for left < m && mt[int(s[left]-'A')] == 0 {
+			left++
+		}
+
+		counter := 0
+		ms := [58]int{}
+		for right := left; right < m; right++ {
+			ch := int(s[right] - 'A')
+			if mt[ch] > 0 && mt[ch] > ms[ch] {
+				ms[ch]++
+				counter++
+			}
+
+			if counter == n {
+				if len(res) == 0 || len(res) > right-left+1 {
+					res = s[left : right+1]
+				}
 			}
 		}
 	}
