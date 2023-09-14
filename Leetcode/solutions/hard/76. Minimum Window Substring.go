@@ -1,6 +1,8 @@
 package hard
 
-import "fmt"
+import (
+	"fmt"
+)
 
 // Reference: https://leetcode.com/problems/minimum-window-substring/
 func init() {
@@ -9,8 +11,8 @@ func init() {
 		fmt.Println("Output:", minWindow("ADOBECODEBANC", "ABC"))
 		fmt.Println("Input: s = 'a', t = 'a'")
 		fmt.Println("Output:", minWindow("a", "a"))
-		fmt.Println("Input: s = 'a', t = 'b'")
-		fmt.Println("Output:", minWindow("a", "b"))
+		fmt.Println("Input: s = 'cabefgecdaecf', t = 'cae'")
+		fmt.Println("Output:", minWindow("cabefgecdaecf", "cae"))
 	}
 }
 
@@ -26,26 +28,47 @@ func minWindow(s string, t string) string {
 	}
 
 	res := ""
-	for left := 0; left < m; left++ {
-		for left < m && mt[int(s[left]-'A')] == 0 {
+	left, right := 0, -1
+	count := 0
+	ms := [58]int{}
+	for left < m {
+		for left < m-1 && mt[int(s[left]-'A')] == 0 {
 			left++
 		}
 
-		counter := 0
-		ms := [58]int{}
-		for right := left; right < m; right++ {
-			ch := int(s[right] - 'A')
-			if mt[ch] > 0 && mt[ch] > ms[ch] {
-				ms[ch]++
-				counter++
-			}
+		flag := count != n
+		if flag {
+			right++
+		}
 
-			if counter == n {
-				if len(res) == 0 || len(res) > right-left+1 {
-					res = s[left : right+1]
+		for right < m {
+			cright := int(s[right] - 'A')
+			if mt[cright] > 0 {
+				if flag {
+					ms[cright]++
+					if mt[cright] >= ms[cright] {
+						count++
+					}
+				}
+
+				if count == n {
+					if len(res) == 0 || len(res) > right-left+1 {
+						res = s[left : right+1]
+					}
+					break
 				}
 			}
+			right++
 		}
+
+		cleft := int(s[left] - 'A')
+		if mt[cleft] > 0 {
+			ms[cleft]--
+			if mt[cleft] > ms[cleft] {
+				count--
+			}
+		}
+		left++
 	}
 	return res
 }
