@@ -16,6 +16,7 @@ func init() {
 }
 
 func findItinerary(tickets [][]string) []string {
+	n := len(tickets)
 	g := make(map[string][]string)
 	for _, ticket := range tickets {
 		g[ticket[0]] = append(g[ticket[0]], ticket[1])
@@ -24,12 +25,27 @@ func findItinerary(tickets [][]string) []string {
 	for k := range g {
 		sort.Strings(g[k])
 	}
-
-	res := []string{}
-	findItineraryDFS(g, &res, "JFK")
-	return res
+	return findItineraryDFS(g, []string{"JFK"}, n)
 }
 
-func findItineraryDFS(g map[string][]string, res *[]string, start string) {
+func findItineraryDFS(g map[string][]string, curr []string, n int) []string {
+	if len(curr) == n+1 {
+		return curr
+	}
 
+	next := (curr)[len(curr)-1]
+	for i, v := range g[next] {
+		if v == "" {
+			continue
+		}
+
+		g[next][i] = ""
+		d := append(curr, v)
+		p := findItineraryDFS(g, d, n)
+		if p != nil {
+			return p
+		}
+		g[next][i] = v
+	}
+	return nil
 }
