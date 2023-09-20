@@ -13,8 +13,8 @@ func init() {
 }
 
 func subarraySum(nums []int, k int) int {
-	m := map[int]int{}
-	m[0] = 1
+	m := make(map[int]int, len(nums))
+	m[0]++
 	res, sum := 0, 0
 	for _, num := range nums {
 		sum += num

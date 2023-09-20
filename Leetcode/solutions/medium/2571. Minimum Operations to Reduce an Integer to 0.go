@@ -6,13 +6,13 @@ import "fmt"
 func init() {
 	Solutions[2571] = func() {
 		fmt.Println("Input: n = 39")
-		fmt.Println("Output:", minOperations(39))
+		fmt.Println("Output:", minOperationsII(39))
 		fmt.Println("Input: n = 54")
-		fmt.Println("Output:", minOperations(54))
+		fmt.Println("Output:", minOperationsII(54))
 	}
 }
 
-func minOperations(n int) int {
+func minOperationsII(n int) int {
 	res := 0
 	for n > 0 {
 		if n%2 == 0 {
