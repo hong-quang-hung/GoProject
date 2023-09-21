@@ -4,7 +4,7 @@ import (
 	"fmt"
 )
 
-// Reference: https://leetcode.com/problems/maximum-subarray/description/
+// Reference: https://leetcode.com/problems/maximum-subarray/
 func init() {
 	Solutions[53] = func() {
 		fmt.Println("Input: nums = [-2,1,-3,4,-1,2,1,-5,4]")
