@@ -13,16 +13,17 @@ func init() {
 }
 
 func findTheDifference(s string, t string) byte {
-	m := make(map[byte]int)
+	m := [26]int{}
 	for i := range s {
-		m[s[i]]++
+		m[int(s[i]-'a')]++
 	}
 
-	for i := range t {
-		if m[t[i]] == 0 {
+	for i, ch := range t {
+		idx := int(ch - 'a')
+		if m[idx] == 0 {
 			return t[i]
 		}
-		m[t[i]]--
+		m[idx]--
 	}
 	return ' '
 }
