@@ -13,18 +13,21 @@ func init() {
 }
 
 func largestRectangleArea(heights []int) int {
-	res := 0
-	stack := []int{}
-	arr := make([]int, len(heights))
+	stack, res := [][2]int{}, 0
 	for i, h := range heights {
-		for len(stack) > 0 && heights[stack[len(stack)-1]] >= h {
-			pop := stack[len(stack)-1]
-			arr[pop] = i - pop
+		start := i
+		for len(stack) > 0 && stack[len(stack)-1][1] > h {
+			idx, v := stack[len(stack)-1][0], stack[len(stack)-1][1]
 			stack = stack[:len(stack)-1]
+			res = max(res, (i-idx)*v)
+			start = idx
 		}
-		stack = append(stack, i)
+		stack = append(stack, [2]int{start, h})
 	}
 
-	fmt.Println(arr)
+	for i := 0; i < len(stack); i++ {
+		idx, h := stack[i][0], stack[i][1]
+		res = max(res, h*(len(heights)-idx))
+	}
 	return res
 }
