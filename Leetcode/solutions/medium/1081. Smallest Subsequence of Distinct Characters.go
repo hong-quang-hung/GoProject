@@ -1,20 +1,18 @@
 package medium
 
-import (
-	"fmt"
-)
+import "fmt"
 
-// Reference: https://leetcode.com/problems/remove-duplicate-letters/
+// Reference: https://leetcode.com/problems/smallest-subsequence-of-distinct-characters/
 func init() {
-	Solutions[316] = func() {
+	Solutions[1081] = func() {
 		fmt.Println("Input: s = 'bcabc'")
-		fmt.Println("Output:", removeDuplicateLetters("bcabc"))
+		fmt.Println("Output:", smallestSubsequence("bcabc"))
 		fmt.Println("Input: s = 'cbacdcbc'")
-		fmt.Println("Output:", removeDuplicateLetters("cbacdcbc"))
+		fmt.Println("Output:", smallestSubsequence("cbacdcbc"))
 	}
 }
 
-func removeDuplicateLetters(s string) string {
+func smallestSubsequence(s string) string {
 	left := ['z' + 1]int{}
 	for _, c := range s {
 		left[c]++
