@@ -22,10 +22,9 @@ var (
 
 func init() {
 	problemDebug = 2366
-	problemDebug = 316
 	problemDebug = 896
 
-	problemTotal = 2867
+	problemTotal = 2868
 }
 
 func main() {
