@@ -1,6 +1,8 @@
 package medium
 
-import "fmt"
+import (
+	"fmt"
+)
 
 // Reference: https://leetcode.com/problems/132-pattern/
 func init() {
@@ -15,5 +17,16 @@ func init() {
 }
 
 func find132pattern(nums []int) bool {
+	num, stack := -1_000_000_001, []int{}
+	for i := len(nums) - 1; i >= 0; i-- {
+		val := nums[i]
+		if val < num {
+			return true
+		}
+		for len(stack) > 0 && stack[len(stack)-1] < val {
+			num, stack = stack[len(stack)-1], stack[:len(stack)-1]
+		}
+		stack = append(stack, val)
+	}
 	return false
 }
