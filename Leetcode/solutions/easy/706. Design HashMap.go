@@ -2,7 +2,7 @@ package easy
 
 import "fmt"
 
-// Reference: https://leetcode.com/problems/132-pattern/
+// Reference: https://leetcode.com/problems/design-hashmap/
 func init() {
 	Solutions[706] = func() {
 		fmt.Println("Input:")
