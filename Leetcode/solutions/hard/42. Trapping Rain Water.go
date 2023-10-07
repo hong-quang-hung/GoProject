@@ -16,30 +16,46 @@ func init() {
 
 func trap(height []int) int {
 	n := len(height)
-	stack := []int{}
-	m := make([]int, n)
-	for i := range height {
-		for len(stack) > 0 && height[stack[len(stack)-1]] <= height[i] {
-			pop := stack[len(stack)-1]
-			m[pop] = i - pop
-			stack = stack[:len(stack)-1]
+	stack1, stack2 := []int{}, []int{}
+	m1, m2 := make([]int, n), make([]int, n)
+	for i := 0; i < n; i++ {
+		for len(stack1) > 0 && height[stack1[len(stack1)-1]] <= height[i] {
+			pop := stack1[len(stack1)-1]
+			m1[pop] = i - pop
+			stack1 = stack1[:len(stack1)-1]
 		}
-		stack = append(stack, i)
+		stack1 = append(stack1, i)
+	}
+
+	for i := n - 1; i >= 0; i-- {
+		for len(stack2) > 0 && height[stack2[len(stack2)-1]] <= height[i] {
+			pop := stack2[len(stack2)-1]
+			m2[pop] = pop - i
+			stack2 = stack2[:len(stack2)-1]
+		}
+		stack2 = append(stack2, i)
 	}
 
 	res := 0
-	i := 0
-	for i < n {
-		if m[i] == 0 {
+	left := 0
+	for left < n {
+		if m1[left] == 0 {
 			break
 		}
-
-		for j := 1; j < m[i]; j++ {
-			res += height[i] - height[i+j]
+		for j := 1; j < m1[left]; j++ {
+			res += height[left] - height[left+j]
 		}
-		i += m[i]
+		left += m1[left]
 	}
 
-	fmt.Println(i, m)
+	for i := n - 1; i > left; {
+		if m2[i] == 0 {
+			break
+		}
+		for j := 1; j < m2[i]; j++ {
+			res += height[i] - height[i-j]
+		}
+		i -= m2[i]
+	}
 	return res
 }
