@@ -15,5 +15,34 @@ func init() {
 }
 
 func numOfArrays(n int, m int, k int) int {
-	return 0
+	dp := make(map[string]int)
+	var f func(id, length, lar int) int
+	f = func(id, length, lar int) int {
+		if id == n {
+			if length == k {
+				return 1
+			} else {
+				return 0
+			}
+		}
+
+		key := fmt.Sprintf("%d-%d-%d", id, length, lar)
+		if v, ok := dp[key]; ok {
+			return v
+		}
+
+		res := 0
+		for i := 1; i <= m; i++ {
+			if i > lar {
+				res += f(id+1, length+1, i)
+			} else {
+				res += f(id+1, length, lar)
+			}
+			res = res % (1e9 + 7)
+		}
+
+		dp[key] = res
+		return res
+	}
+	return f(0, 0, 0)
 }
