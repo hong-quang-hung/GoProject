@@ -15,5 +15,16 @@ func init() {
 }
 
 func firstMissingPositive(nums []int) int {
-	return 0
+	n := len(nums)
+	res := 1
+	sum := 0
+	for i := range nums {
+		if nums[i] <= 0 || nums[i] > n {
+			continue
+		}
+		sum += nums[i]
+	}
+
+	fmt.Println(sum)
+	return res
 }
