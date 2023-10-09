@@ -38,7 +38,7 @@ func numOfArrays(n int, m int, k int) int {
 			} else {
 				res += f(id+1, length, lar)
 			}
-			res = res % (1e9 + 7)
+			res = res % mod
 		}
 
 		dp[key] = res

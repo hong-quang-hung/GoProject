@@ -6,7 +6,7 @@ import (
 )
 
 const (
-	mod = 1_000_000_007
+	mod = 1e9 + 7
 )
 
 type (
