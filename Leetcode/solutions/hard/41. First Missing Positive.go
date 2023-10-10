@@ -1,6 +1,8 @@
 package hard
 
-import "fmt"
+import (
+	"fmt"
+)
 
 // Reference: https://leetcode.com/problems/first-missing-positive/
 func init() {
@@ -16,15 +18,16 @@ func init() {
 
 func firstMissingPositive(nums []int) int {
 	n := len(nums)
-	res := 1
-	sum := 0
-	for i := range nums {
-		if nums[i] <= 0 || nums[i] > n {
-			continue
+	for i := 0; i < n; i++ {
+		for nums[i] > 0 && nums[i] <= n && nums[i] != nums[nums[i]-1] {
+			nums[i], nums[nums[i]-1] = nums[nums[i]-1], nums[i]
 		}
-		sum += nums[i]
 	}
 
-	fmt.Println(sum)
-	return res
+	for i := 0; i < n; i++ {
+		if nums[i] != i+1 {
+			return i + 1
+		}
+	}
+	return n + 1
 }
