@@ -3,7 +3,6 @@ package medium
 import (
 	"fmt"
 	"math/rand"
-	"time"
 )
 
 // Reference: https://leetcode.com/problems/insert-delete-getrandom-o1/
@@ -27,26 +26,36 @@ func init() {
 
 type RandomizedSet struct {
 	m map[int]interface{}
-	r *rand.Rand
 }
 
 func RandomizedSetConstructor() RandomizedSet {
-	return RandomizedSet{}
+	return RandomizedSet{m: make(map[int]interface{})}
 }
 
 func (r *RandomizedSet) Insert(val int) bool {
+	if _, ok := r.m[val]; ok {
+		return false
+	}
+	r.m[val] = val
 	return true
 }
 
 func (r *RandomizedSet) Remove(val int) bool {
-	return true
+	if _, ok := r.m[val]; ok {
+		delete(r.m, val)
+		return true
+	}
+	return false
 }
 
 func (r *RandomizedSet) GetRandom() int {
-	if len(r.m) == 0 {
-		return 0
+	idx := rand.Intn(len(r.m))
+	counter := 0
+	for k := range r.m {
+		if counter == idx {
+			return k
+		}
+		counter++
 	}
-
-	r.r = rand.New(rand.NewSource(time.Now().UnixNano()))
-	return 0
+	return -1
 }
