@@ -2,6 +2,7 @@ package easy
 
 func init() {
 	Solutions[197] = Leetcode_SQL
+	Solutions[577] = Leetcode_SQL
 	Solutions[584] = Leetcode_SQL
 	Solutions[595] = Leetcode_SQL
 	Solutions[1068] = Leetcode_SQL
