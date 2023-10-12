@@ -1,4 +1,4 @@
-/* https://leetcode.com/problems/find-customer-referee/ */
+/* https://leetcode.com/problems/big-countries/ */
 /* Write your T-SQL query statement below */
 
 SELECT name, population, area
