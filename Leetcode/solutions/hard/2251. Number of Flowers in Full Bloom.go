@@ -16,19 +16,20 @@ func init() {
 }
 
 func fullBloomFlowers(flowers [][]int, people []int) []int {
-	sort.Slice(flowers, func(i, j int) bool {
-		return flowers[i][0] < flowers[j][0]
-	})
+	n := len(flowers)
+	starts, ends := make([]int, n), make([]int, n)
+	for i, flower := range flowers {
+		starts[i], ends[i] = flower[0], flower[1]+1
+	}
 
-	fmt.Println(flowers)
+	sort.Ints(starts)
+	sort.Ints(ends)
 
-	res := make([]int, len(people))
-	for i, p := range people {
-		j := sort.Search(len(flowers), func(i int) bool { return flowers[i][0] >= p })
-		res[i] = j
-		if j < len(flowers) && flowers[j][0] == p {
-			res[i]++
-		}
+	res := make([]int, 0)
+	for _, person := range people {
+		i := sort.Search(n, func(i int) bool { return starts[i] > person })
+		j := sort.Search(n, func(i int) bool { return ends[i] > person })
+		res = append(res, i-j)
 	}
 	return res
 }
