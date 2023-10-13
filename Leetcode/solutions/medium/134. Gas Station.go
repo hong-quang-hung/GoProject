@@ -13,17 +13,17 @@ func init() {
 }
 
 func canCompleteCircuit(gas []int, cost []int) int {
-	n := len(gas)
-	calc, neg, pos := make([]int, n), 0, 0
-	for i := 0; i < n; i++ {
-		calc[i] = gas[i] - cost[i]
-		if calc[i] <= 0 {
-			neg += calc[i]
-		} else {
-			pos += calc[i]
+	res, total, tank := 0, 0, 0
+	for i := 0; i < len(gas); i++ {
+		tank += gas[i] - cost[i]
+		if tank < 0 {
+			res = i + 1
+			total += tank
+			tank = 0
 		}
 	}
-
-	fmt.Println(calc, neg, pos)
-	return 0
+	if total+tank < 0 {
+		return -1
+	}
+	return res
 }
