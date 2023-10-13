@@ -23,7 +23,7 @@ var (
 func init() {
 	problemDebug = 1420
 	problemDebug = 1458
-	problemDebug = 380
+	problemDebug = 134
 
 	problemTotal = 2898
 }
@@ -52,8 +52,7 @@ func LeetcodeInformation() {
 
 	rf, err := os.Open(solvedPath)
 	if err != nil {
-		fmt.Println(err)
-		return
+		panic(err)
 	}
 
 	wg := new(sync.WaitGroup)
