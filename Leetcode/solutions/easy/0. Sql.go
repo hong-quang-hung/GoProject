@@ -7,6 +7,7 @@ func init() {
 	Solutions[595] = Leetcode_SQL
 	Solutions[1068] = Leetcode_SQL
 	Solutions[1148] = Leetcode_SQL
+	Solutions[1280] = Leetcode_SQL
 	Solutions[1378] = Leetcode_SQL
 	Solutions[1581] = Leetcode_SQL
 	Solutions[1661] = Leetcode_SQL
