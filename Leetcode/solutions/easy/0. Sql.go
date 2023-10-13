@@ -1,18 +1,12 @@
 package easy
 
+var sql_easy = []int{
+	197, 577, 584, 595, 620, 1068, 1148, 1251, 1280,
+	1378, 1581, 1661, 1683, 1757, 1965,
+}
+
 func init() {
-	Solutions[197] = Leetcode_SQL
-	Solutions[577] = Leetcode_SQL
-	Solutions[584] = Leetcode_SQL
-	Solutions[595] = Leetcode_SQL
-	Solutions[620] = Leetcode_SQL
-	Solutions[1068] = Leetcode_SQL
-	Solutions[1148] = Leetcode_SQL
-	Solutions[1280] = Leetcode_SQL
-	Solutions[1378] = Leetcode_SQL
-	Solutions[1581] = Leetcode_SQL
-	Solutions[1661] = Leetcode_SQL
-	Solutions[1683] = Leetcode_SQL
-	Solutions[1757] = Leetcode_SQL
-	Solutions[1965] = Leetcode_SQL
+	for _, i := range sql_easy {
+		Solutions[i] = Leetcode_SQL
+	}
 }

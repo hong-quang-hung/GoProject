@@ -1,26 +1,13 @@
 package easy
 
+var js_easy = []int{
+	2619, 2620, 2621, 2626, 2629, 2634, 2635, 2637,
+	2648, 2665, 2666, 2667, 2677, 2695, 2703, 2704,
+	2715, 2723, 2724, 2725, 2726, 2727,
+}
+
 func init() {
-	Solutions[2619] = Leetcode_Javascript
-	Solutions[2620] = Leetcode_Javascript
-	Solutions[2621] = Leetcode_Javascript
-	Solutions[2626] = Leetcode_Javascript
-	Solutions[2629] = Leetcode_Javascript
-	Solutions[2634] = Leetcode_Javascript
-	Solutions[2635] = Leetcode_Javascript
-	Solutions[2637] = Leetcode_Javascript
-	Solutions[2648] = Leetcode_Javascript
-	Solutions[2665] = Leetcode_Javascript
-	Solutions[2666] = Leetcode_Javascript
-	Solutions[2667] = Leetcode_Javascript
-	Solutions[2677] = Leetcode_Javascript
-	Solutions[2695] = Leetcode_Javascript
-	Solutions[2703] = Leetcode_Javascript
-	Solutions[2704] = Leetcode_Javascript
-	Solutions[2715] = Leetcode_Javascript
-	Solutions[2723] = Leetcode_Javascript
-	Solutions[2724] = Leetcode_Javascript
-	Solutions[2725] = Leetcode_Javascript
-	Solutions[2726] = Leetcode_Javascript
-	Solutions[2727] = Leetcode_Javascript
+	for _, i := range js_easy {
+		Solutions[i] = Leetcode_Javascript
+	}
 }

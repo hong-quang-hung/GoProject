@@ -1,23 +1,14 @@
 package medium
 
+var js_medium = []int{
+	2618, 2622, 2623, 2625, 2627, 2628,
+	2631, 2632, 2633, 2636, 2649, 2675,
+	2676, 2693, 2694, 2700, 2705, 2721,
+	2722,
+}
+
 func init() {
-	Solutions[2618] = Leetcode_Javascript
-	Solutions[2622] = Leetcode_Javascript
-	Solutions[2623] = Leetcode_Javascript
-	Solutions[2625] = Leetcode_Javascript
-	Solutions[2627] = Leetcode_Javascript
-	Solutions[2628] = Leetcode_Javascript
-	Solutions[2631] = Leetcode_Javascript
-	Solutions[2632] = Leetcode_Javascript
-	Solutions[2633] = Leetcode_Javascript
-	Solutions[2636] = Leetcode_Javascript
-	Solutions[2649] = Leetcode_Javascript
-	Solutions[2675] = Leetcode_Javascript
-	Solutions[2676] = Leetcode_Javascript
-	Solutions[2693] = Leetcode_Javascript
-	Solutions[2694] = Leetcode_Javascript
-	Solutions[2700] = Leetcode_Javascript
-	Solutions[2705] = Leetcode_Javascript
-	Solutions[2721] = Leetcode_Javascript
-	Solutions[2722] = Leetcode_Javascript
+	for _, i := range js_medium {
+		Solutions[i] = Leetcode_Javascript
+	}
 }

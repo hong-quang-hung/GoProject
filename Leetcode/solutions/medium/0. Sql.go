@@ -1,7 +1,11 @@
 package medium
 
+var sql_medium = []int{
+	570, 585, 1934,
+}
+
 func init() {
-	Solutions[570] = Leetcode_SQL
-	Solutions[585] = Leetcode_SQL
-	Solutions[1934] = Leetcode_SQL
+	for _, i := range sql_medium {
+		Solutions[i] = Leetcode_SQL
+	}
 }

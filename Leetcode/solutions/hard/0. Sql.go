@@ -1,5 +1,11 @@
 package hard
 
+var sql_hard = []int{
+	601,
+}
+
 func init() {
-	Solutions[601] = Leetcode_SQL
+	for _, i := range sql_hard {
+		Solutions[i] = Leetcode_SQL
+	}
 }
