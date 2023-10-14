@@ -8,13 +8,13 @@ import (
 func init() {
 	Solutions[234] = func() {
 		fmt.Println("Input: head = [1,2,2,1]")
-		fmt.Println("Output:", isPalindromeII(S2ListNode("[1,2,2,1]")))
+		fmt.Println("Output:", isPalindromeIII(S2ListNode("[1,2,2,1]")))
 		fmt.Println("Input: head = [1,2]")
-		fmt.Println("Output:", isPalindromeII(S2ListNode("[1,2]")))
+		fmt.Println("Output:", isPalindromeIII(S2ListNode("[1,2]")))
 	}
 }
 
-func isPalindromeII(head *ListNode) bool {
+func isPalindromeIII(head *ListNode) bool {
 	var reverse, slow, fast *ListNode
 	reverse, slow, fast = nil, head, head
 	for fast != nil && fast.Next != nil {
