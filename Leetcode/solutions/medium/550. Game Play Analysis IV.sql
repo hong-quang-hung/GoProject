@@ -3,9 +3,9 @@
 
 ;WITH CTE AS (
     SELECT player_id
-        , ROW_NUMBER() OVER (PARTITION BY player_id, device_id ORDER BY event_date) AS rank
+        , FIRST_VALUE(event_date) OVER (PARTITION BY player_id ORDER BY event_date) AS first_log
+        , LEAD(event_date) OVER (PARTITION BY player_id ORDER BY event_date) AS second_log
     FROM Activity
 )
-SELECT ROUND(COUNT(1)*1.0/(SELECT COUNT(DISTINCT player_id) FROM Activity), 2) AS fraction
+SELECT ROUND(COUNT(CASE WHEN DATEADD(day, 1, first_log) = second_log THEN player_id END)*1.0/COUNT(DISTINCT player_id), 2) AS fraction
 FROM CTE
-WHERE rank = 2
