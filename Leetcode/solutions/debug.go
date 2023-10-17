@@ -14,9 +14,19 @@ type Solution types.Solution
 // problem th convert to problem + normalize
 var (
 	solutions Solution = make(Solution)
+
+	EASY   int
+	MEDIUM int
+	HARD   int
 )
 
 func init() {
+	defer clear(easy.Solutions)
+	defer clear(medium.Solutions)
+	defer clear(hard.Solutions)
+
+	EASY, MEDIUM, HARD = len(easy.Solutions), len(medium.Solutions), len(hard.Solutions)
+
 	// Easy
 	for index, function := range easy.Solutions {
 		solutions[index] = function
