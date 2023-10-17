@@ -1,4 +1,4 @@
-/* https://leetcode.com/problems/find-users-with-valid-e-mails/description/ */
+/* https://leetcode.com/problems/find-users-with-valid-e-mails/ */
 /* Write your T-SQL query statement below */
 
 SELECT user_id, name, mail
