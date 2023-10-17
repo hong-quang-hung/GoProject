@@ -6,16 +6,19 @@ type UnionFind struct {
 	Count  []int
 }
 
-func NewUnionFind(size int) *UnionFind {
-	parent := make([]int, size)
-	count := make([]int, size)
-	for i := 0; i < size; i++ {
+func NewUnionFind(n int) *UnionFind {
+	parent, count, rank := make([]int, n), make([]int, n), make([]int, n)
+
+	for i := 0; i < n; i++ {
 		parent[i] = i
 		count[i] = 1
 	}
 
-	rank := make([]int, size)
-	return &UnionFind{Parent: parent, Rank: rank, Count: count}
+	return &UnionFind{
+		Parent: parent,
+		Rank:   rank,
+		Count:  count,
+	}
 }
 
 func (u *UnionFind) Find(x int) int {

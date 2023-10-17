@@ -17,6 +17,7 @@ type (
 	TrieNode  = types.TrieNode
 	TrieNodes = types.TrieNodes
 	UnionFind = types.UnionFind
+	DSU       = types.DSU
 	MinHeap   = types.MinHeap
 	MaxHeap   = types.MaxHeap
 	Solution  = types.Solution
@@ -56,6 +57,10 @@ func S2SoSliceInt(s string) [][]int {
 	return utils.S2SoSliceInt(s)
 }
 
-func NewUnionFind(size int) *UnionFind {
-	return types.NewUnionFind(size)
+func NewUnionFind(n int) *UnionFind {
+	return types.NewUnionFind(n)
+}
+
+func NewDSU(n int) *DSU {
+	return types.NewDSU(n)
 }
