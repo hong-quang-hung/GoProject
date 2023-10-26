@@ -5,7 +5,7 @@ import (
 	"math"
 )
 
-// Reference: https://leetcode.com/problems/constrained-subseqnce-sum/
+// Reference: https://leetcode.com/problems/constrained-subsequence-sum/
 func init() {
 	Solutions[1425] = func() {
 		fmt.Println("Input: nums = [10,2,-10,5,20], k = 2")
