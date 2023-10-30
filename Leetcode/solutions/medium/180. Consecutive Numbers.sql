@@ -4,8 +4,8 @@ SELECT
     DISTINCT o.num AS ConsecutiveNums
 FROM
     LOGS o
-    JOIN LOGS tw
-    JOIN LOGS th ON o.id + 1 = tw.id
+    INNER JOIN LOGS tw
+    INNER JOIN LOGS th ON o.id + 1 = tw.id
     AND tw.id + 1 = th.id
     AND o.num = tw.num
     AND tw.num = th.num
