@@ -6,7 +6,7 @@ import (
 	"sort"
 )
 
-// Reference: https://leetcode.com/problems/binary-trees-with-factors/
+// Reference: https://leetcode.com/problems/sort-integers-by-the-number-of-1-bits/
 func init() {
 	Solutions[1356] = func() {
 		fmt.Println("Input: arr = [0,1,2,3,4,5,6,7,8]")
