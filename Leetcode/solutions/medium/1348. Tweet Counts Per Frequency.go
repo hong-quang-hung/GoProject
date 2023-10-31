@@ -60,7 +60,7 @@ func (tw *TweetCounts) RecordTweet(tweetName string, time int) {
 	}
 
 	mid := tw.bns(time, tw.times[tweetName])
-	tw.times[tweetName] = insert(tw.times[tweetName], mid, time)
+	tw.times[tweetName] = insertAt(tw.times[tweetName], mid, time)
 }
 
 func (tw *TweetCounts) GetTweetCountsPerFrequency(freq string, tweetName string, startTime int, endTime int) []int {

@@ -30,7 +30,7 @@ func manhattanDistance(p1, p2 []int) int {
 	return utils.ManhattanDistanceInt(p1, p2)
 }
 
-func insert(arr []int, index int, value int) []int {
+func insertAt(arr []int, index int, value int) []int {
 	return utils.InsertInt(arr, index, value)
 }
 
