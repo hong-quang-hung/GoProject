@@ -1,6 +1,5 @@
 # https://leetcode.com/problems/movie-rating/
 # Write your MySQL query statement below
-# Write your MySQL query statement below
 (
     SELECT
         a.name AS results
