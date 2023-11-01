@@ -2,7 +2,7 @@
 # Write your MySQL query statement below
 SELECT
     id,
-    SUM(id)
+    SUM(num) AS num
 FROM
     (
         (
