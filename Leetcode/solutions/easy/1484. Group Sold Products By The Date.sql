@@ -1,4 +1,4 @@
-# https://leetcode.com/problems/second-highest-salary/
+# https://leetcode.com/problems/group-sold-products-by-the-date/
 # Write your MySQL query statement below
 SELECT
     sell_date,
