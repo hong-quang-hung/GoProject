@@ -2,8 +2,8 @@
 # Write your MySQL query statement below
 SELECT
     a.name AS Department,
-    Employee,
-    Salary
+    b.name AS Employee,
+    b.salary AS Salary
 FROM
     Department a
     INNER JOIN (
@@ -16,5 +16,5 @@ FROM
             ) AS salary_rank
         FROM
             Employee
-    ) b
-    ON a.id = b.departmentId
+    ) b ON a.id = b.departmentId
+    AND b.salary_rank <= 3
