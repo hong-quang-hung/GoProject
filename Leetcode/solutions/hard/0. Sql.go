@@ -1,7 +1,7 @@
 package hard
 
 var sql_hard = []int{
-	601,
+	185, 601,
 }
 
 func init() {
