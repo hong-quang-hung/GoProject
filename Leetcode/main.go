@@ -26,7 +26,7 @@ func init() {
 	problemDebug = 2050
 	problemDebug = 1425
 	problemDebug = 224
-	problemDebug = 1503
+	problemDebug = 66
 
 	problemTotal = 2922
 }
@@ -60,11 +60,11 @@ func LeetcodeInformation() {
 
 	wg := new(sync.WaitGroup)
 
-	fsc := bufio.NewScanner(rf)
-	fsc.Split(bufio.ScanLines)
-	for fsc.Scan() {
+	fs := bufio.NewScanner(rf)
+	fs.Split(bufio.ScanLines)
+	for fs.Scan() {
 		wg.Add(1)
-		go Leetcode.SetSolved(wg, utils.SSplitInt(fsc.Text())...)
+		go Leetcode.SetSolved(wg, utils.SSplitInt(fs.Text())...)
 	}
 	rf.Close()
 
