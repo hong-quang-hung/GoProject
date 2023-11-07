@@ -17,6 +17,28 @@ func init() {
 }
 
 func calculate(s string) int {
-	res := 0
+	var f func(s string, i int) (int, int)
+	f = func(s string, i int) (int, int) {
+		res, digit, op, idx, n := 0, 0, 1, i, len(s)
+		for ; idx < n && s[idx] != ')'; idx++ {
+			ch := s[idx]
+			switch {
+			case ch == '+':
+				res, digit = res+op*digit, 0
+				op = 1
+			case ch == '-':
+				res, digit = res+op*digit, 0
+				op = -1
+			case ch == '(':
+				digit, idx = f(s, idx+1)
+			case ch >= '0' && ch <= '9':
+				digit = digit*10 + int(ch-'0')
+			default:
+			}
+		}
+		return res + op*digit, idx
+	}
+
+	res, _ := f(s, 0)
 	return res
 }
