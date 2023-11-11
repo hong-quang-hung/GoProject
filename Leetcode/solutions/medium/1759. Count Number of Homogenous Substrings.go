@@ -2,7 +2,7 @@ package medium
 
 import "fmt"
 
-// Reference: https://leetcode.com/problems/remove-duplicates-from-sorted-list-ii/
+// Reference: https://leetcode.com/problems/count-number-of-homogenous-substrings/
 func init() {
 	Solutions[1759] = func() {
 		fmt.Println("Input: s = \"abbcccaa\"")
@@ -15,7 +15,15 @@ func init() {
 }
 
 func countHomogenous(s string) int {
-	res := 0
-	fmt.Println(5 + 4 + 3 + 2 + 1)
+	res, i, j := 0, 0, 0
+	for i <= j && j < len(s) {
+		for j < len(s) && s[i] == s[j] {
+			j++
+		}
+
+		temp := j - i
+		res += ((temp%mod + 1) * temp / 2) % mod
+		i = j
+	}
 	return res
 }
