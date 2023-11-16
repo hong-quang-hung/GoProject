@@ -13,7 +13,7 @@ type Solution types.Solution
 
 // problem th convert to problem + normalize
 var (
-	solutions Solution = make(Solution)
+	Solutions Solution = make(Solution)
 
 	EASY   int
 	MEDIUM int
@@ -29,26 +29,26 @@ func init() {
 
 	// Easy
 	for index, function := range easy.Solutions {
-		solutions[index] = function
+		Solutions[index] = function
 	}
 
 	// Medium
 	for index, function := range medium.Solutions {
-		solutions[index] = function
+		Solutions[index] = function
 	}
 
 	// Hard
 	for index, function := range hard.Solutions {
-		solutions[index] = function
+		Solutions[index] = function
 	}
 }
 
 func Len() int {
-	return len(solutions)
+	return len(Solutions)
 }
 
 func Leetcode_Debug(problem int) {
-	if Invoke, hasSolution := solutions[problem]; hasSolution {
+	if Invoke, hasSolution := Solutions[problem]; hasSolution {
 		Invoke()
 	} else {
 		Leetcode_Empty(problem)
@@ -56,10 +56,16 @@ func Leetcode_Debug(problem int) {
 }
 
 func Leetcode_Check_Golang_Solution(problem int) bool {
-	_, hasSolution := solutions[problem]
+	_, hasSolution := Solutions[problem]
 	return hasSolution
 }
 
 func Leetcode_Empty(problem int) {
 	fmt.Printf("The problem %d hasn't been solved yet!\n", problem)
+}
+
+func Leetcode_Solutions_Loop(f func(i int)) {
+	for i := range Solutions {
+		f(i)
+	}
 }

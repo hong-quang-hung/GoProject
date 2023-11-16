@@ -70,15 +70,35 @@ func LeetcodeInformation() {
 
 	wg.Wait()
 
-	// defer ShowHasNotSubmitted(Leetcode)
 	fmt.Println("There are", Leetcode.Solved(), "/", Leetcode.Total(), "problem(s) has been solved in Leetcode.")
 	// fmt.Println("Today, Number of Leetcode Problem is:", Leetcode.PickProblem())
+
+	// defer ShowHasNotSubmitted(Leetcode)
+	// defer ShowSolutionDuplicate(Leetcode)
+	defer ShowSolutionHasNotNote(Leetcode)
 }
 
 func ShowHasNotSubmitted(L *types.Leetcode) {
 	for i := 0; i < problemTotal; i++ {
 		if L.IsSolved(i) && !solutions.Leetcode_Check_Golang_Solution(i+1) {
-			fmt.Println(i+1, "hasn't submit solution with Golang language.")
+			fmt.Printf("%4d hasn't been submitted solution with Golang language.\n", i+1)
 		}
 	}
+}
+
+func ShowSolutionDuplicate(L *types.Leetcode) {
+	for i := 0; i < problemTotal; i++ {
+		times := L.Count(i)
+		if L.Count(i) > 1 {
+			fmt.Printf("%4d is duplicate %d time(s) in \"solved.txt\".\n", i+1, times)
+		}
+	}
+}
+
+func ShowSolutionHasNotNote(L *types.Leetcode) {
+	solutions.Leetcode_Solutions_Loop(func(i int) {
+		if !L.IsSolved(i - 1) {
+			fmt.Printf("%4d hasn't been noted in \"solved.txt\".\n", i)
+		}
+	})
 }
