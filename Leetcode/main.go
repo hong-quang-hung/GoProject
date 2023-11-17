@@ -25,6 +25,7 @@ func init() {
 	problemDebug = 1458
 	problemDebug = 2050
 	problemDebug = 1425
+	problemDebug = 1743
 	problemDebug = 2642
 	problemDebug = 815
 
@@ -75,7 +76,7 @@ func LeetcodeInformation() {
 
 	// defer ShowHasNotSubmitted(Leetcode)
 	// defer ShowSolutionDuplicate(Leetcode)
-	defer ShowSolutionHasNotNote(Leetcode)
+	// defer ShowSolutionHasNotNote(Leetcode)
 }
 
 func ShowHasNotSubmitted(L *types.Leetcode) {
@@ -96,9 +97,11 @@ func ShowSolutionDuplicate(L *types.Leetcode) {
 }
 
 func ShowSolutionHasNotNote(L *types.Leetcode) {
+	j := 0
 	solutions.Leetcode_Solutions_Loop(func(i int) {
 		if !L.IsSolved(i - 1) {
 			fmt.Printf("%4d hasn't been noted in \"solved.txt\".\n", i)
 		}
+		j++
 	})
 }

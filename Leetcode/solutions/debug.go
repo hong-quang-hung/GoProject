@@ -11,13 +11,14 @@ import (
 
 type Solution types.Solution
 
-// problem th convert to problem + normalize
 var (
 	Solutions Solution = make(Solution)
 
 	EASY   int
 	MEDIUM int
 	HARD   int
+
+	Duplicate []int
 )
 
 func init() {
@@ -28,17 +29,15 @@ func init() {
 	EASY, MEDIUM, HARD = len(easy.Solutions), len(medium.Solutions), len(hard.Solutions)
 
 	// Easy
-	for index, function := range easy.Solutions {
-		Solutions[index] = function
-	}
-
+	Add(easy.Solutions)
 	// Medium
-	for index, function := range medium.Solutions {
-		Solutions[index] = function
-	}
-
+	Add(medium.Solutions)
 	// Hard
-	for index, function := range hard.Solutions {
+	Add(hard.Solutions)
+}
+
+func Add(solutions types.Solution) {
+	for index, function := range solutions {
 		Solutions[index] = function
 	}
 }
@@ -64,8 +63,8 @@ func Leetcode_Empty(problem int) {
 	fmt.Printf("The problem %d hasn't been solved yet!\n", problem)
 }
 
-func Leetcode_Solutions_Loop(f func(i int)) {
+func Leetcode_Solutions_Loop(function func(i int)) {
 	for i := range Solutions {
-		f(i)
+		function(i)
 	}
 }
