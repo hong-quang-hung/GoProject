@@ -43,7 +43,7 @@ func MinInt64(a, b int64) int64 {
 }
 
 func AbsInt(x int) int {
-	if x > 0 {
+	if x >= 0 {
 		return x
 	}
 	return -x
