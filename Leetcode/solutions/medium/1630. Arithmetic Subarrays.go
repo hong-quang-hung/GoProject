@@ -13,5 +13,46 @@ func init() {
 }
 
 func checkArithmeticSubarrays(nums []int, l []int, r []int) []bool {
-	return nil
+	n := len(l)
+	res := make([]bool, len(l), len(l))
+	for i := 0; i < n; i++ {
+		res[i] = checkArithmeticSubarraysCheck(nums[l[i] : r[i]+1])
+	}
+	return res
+}
+
+func checkArithmeticSubarraysCheck(nums []int) bool {
+	min := nums[0]
+	max := nums[0]
+	sum := 0
+	var len = len(nums)
+	for _, num := range nums {
+		if num < min {
+			min = num
+		}
+		if num > max {
+			max = num
+		}
+		sum += num
+	}
+
+	if max == min {
+		return true
+	}
+	if (max-min)%(len-1) > 0 {
+		return false
+	}
+	if (max+min)*len != 2*sum {
+		return false
+	}
+
+	step := (max - min) / (len - 1)
+	sum = 0
+	for i, num := range nums {
+		if ((num - min) % step) > 0 {
+			return false
+		}
+		sum += i*i - (num-min)/step*(num-min)/step
+	}
+	return sum == 0
 }
