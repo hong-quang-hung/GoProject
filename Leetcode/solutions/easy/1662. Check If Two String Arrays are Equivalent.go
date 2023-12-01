@@ -15,5 +15,23 @@ func init() {
 }
 
 func arrayStringsAreEqual(word1 []string, word2 []string) bool {
-	return true
+	i, j, n, m := 0, 0, 0, 0
+	for n < len(word1) && m < len(word2) {
+		if word1[n][i] != word2[m][j] {
+			return false
+		}
+
+		i++
+		if i == len(word1[n]) {
+			i = 0
+			n++
+		}
+
+		j++
+		if j == len(word2[m]) {
+			j = 0
+			m++
+		}
+	}
+	return n == len(word1) && m == len(word2)
 }
