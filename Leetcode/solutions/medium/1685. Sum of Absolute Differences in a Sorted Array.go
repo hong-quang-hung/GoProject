@@ -14,17 +14,22 @@ func init() {
 
 func getSumAbsoluteDifferences(nums []int) []int {
 	n := len(nums)
-	res := make([]int, n)
-	prefix := make([]int, n)
-	prefix[0] = 0
-	for i := 1; i < n; i++ {
-		prefix[i] = prefix[i-1] + nums[i] - nums[i-1]
+	sum := 0
+	for _, num := range nums {
+		sum += num
 	}
 
-	fmt.Println(prefix)
+	res := make([]int, n)
+	leftSum := 0
+	for i := 0; i < n; i++ {
+		rightSum := sum - leftSum - nums[i]
+		leftCount, rightCount := i, n-1-i
 
-	for i := 0; i < n-1; i++ {
+		leftTotal := leftCount*nums[i] - leftSum
+		rightTotal := rightSum - rightCount*nums[i]
 
+		res[i] = leftTotal + rightTotal
+		leftSum += nums[i]
 	}
 	return res
 }
