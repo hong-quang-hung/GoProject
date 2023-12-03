@@ -20,7 +20,7 @@ func minCostConnectPoints(points [][]int) int {
 	m := [][]int{}
 	for i := 0; i < n-1; i++ {
 		for j := i + 1; j < n; j++ {
-			m = append(m, []int{i, j, manhattanDistance(points[i], points[j])})
+			m = append(m, []int{i, j, manhattan(points[i], points[j])})
 		}
 	}
 

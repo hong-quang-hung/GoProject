@@ -49,8 +49,19 @@ func AbsInt(x int) int {
 	return -x
 }
 
-func ManhattanDistanceInt(p1, p2 []int) int {
+func ManhattanInt(p1, p2 []int) int {
 	return AbsInt(p1[0]-p2[0]) + AbsInt(p1[0]-p2[0])
+}
+
+// Calculate the Chebyshev distance(https://en.wikipedia.org/wiki/Chebyshev_distance) between two points
+func ChebyshevInt(a, b []int) int {
+	res := 0
+	size := MaxInt(len(a), len(b))
+	for i := 0; i < size; i++ {
+		distance := AbsInt(b[i] - a[i])
+		res = MaxInt(res, distance)
+	}
+	return res
 }
 
 func GcdInt(a, b int) int {

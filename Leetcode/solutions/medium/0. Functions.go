@@ -26,8 +26,8 @@ func abs(x int) int {
 	return utils.AbsInt(x)
 }
 
-func manhattanDistance(p1, p2 []int) int {
-	return utils.ManhattanDistanceInt(p1, p2)
+func manhattan(p1, p2 []int) int {
+	return utils.ManhattanInt(p1, p2)
 }
 
 func insertAt(arr []int, index int, value int) []int {
