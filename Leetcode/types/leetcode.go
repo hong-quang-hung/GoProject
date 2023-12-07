@@ -11,7 +11,8 @@ type Leetcode struct {
 	problems []bool
 	solved   int
 	count    []int
-	mu       sync.Mutex
+
+	sync.Mutex
 }
 
 func (L *Leetcode) SetTotal(size int) {
@@ -31,15 +32,15 @@ func (L *Leetcode) SetSolved(wg *sync.WaitGroup, s ...int) {
 		}
 
 		if i > 0 && i < L.total {
-			L.mu.Lock()
+			L.Lock()
 			L.count[i-1]++
-			L.mu.Unlock()
+			L.Unlock()
 		}
 	}
 
-	L.mu.Lock()
+	L.Lock()
 	L.solved += vl
-	L.mu.Unlock()
+	L.Unlock()
 }
 
 func (L *Leetcode) PickProblem() int {
