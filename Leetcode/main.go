@@ -4,6 +4,7 @@ import (
 	"bufio"
 	"fmt"
 	"os"
+	"runtime/debug"
 	"sync"
 
 	"leetcode.com/Leetcode/solutions"
@@ -28,12 +29,13 @@ func init() {
 	problemDebug = 1743
 	problemDebug = 2642
 	problemDebug = 815
-	problemDebug = 2391
 
 	problemTotal = 2985
 }
 
 func main() {
+	defer LeetcodeHandleError()
+
 	PrintLine()
 	LeetcodeDebug()
 	PrintLine()
@@ -49,6 +51,13 @@ func LeetcodeDebug() {
 	fmt.Printf("Leetcode Debug Start...\n")
 	solutions.Leetcode_Debug(problemDebug)
 	fmt.Printf("Leetcode Debug End....\n")
+}
+
+func LeetcodeHandleError() {
+	if r := recover(); r != nil {
+		fmt.Println("Error:", r)
+		debug.PrintStack()
+	}
 }
 
 func LeetcodeInformation() {

@@ -13,6 +13,25 @@ func init() {
 }
 
 func garbageCollection(garbage []string, travel []int) int {
-	G, P, M := 0, 0, 0
-	return G + P + M
+	for i := 1; i < len(travel); i++ {
+		travel[i] += travel[i-1]
+	}
+
+	m := make(map[rune]int)
+	res := 0
+	for i, g := range garbage {
+		for _, ch := range g {
+			m[ch] = i
+		}
+		res += len(g)
+	}
+
+	for _, ch := range "GPM" {
+		if last, ok := m[ch]; ok {
+			if last > 0 {
+				res += travel[last-1]
+			}
+		}
+	}
+	return res
 }
