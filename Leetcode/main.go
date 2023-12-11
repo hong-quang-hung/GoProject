@@ -84,7 +84,6 @@ func LeetcodeInformation() {
 	wg.Wait()
 
 	fmt.Println("There are", Leetcode.Solved(), "/", Leetcode.Total(), "problem(s) has been solved in Leetcode.")
-	// fmt.Println("Today, Number of Leetcode Problem is:", Leetcode.PickProblem())
 
 	// defer ShowHasNotSubmitted(Leetcode)
 	// defer ShowSolutionDuplicate(Leetcode)
