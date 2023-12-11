@@ -14,7 +14,7 @@ func init() {
 
 func checkArithmeticSubarrays(nums []int, l []int, r []int) []bool {
 	n := len(l)
-	res := make([]bool, len(l), len(l))
+	res := make([]bool, len(l))
 	for i := 0; i < n; i++ {
 		res[i] = checkArithmeticSubarraysCheck(nums[l[i] : r[i]+1])
 	}
