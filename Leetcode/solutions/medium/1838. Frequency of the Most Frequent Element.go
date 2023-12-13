@@ -5,7 +5,7 @@ import (
 	"sort"
 )
 
-// Reference: https://leetcode.com/problems/bus-routes/
+// Reference: https://leetcode.com/problems/frequency-of-the-most-frequent-element/
 func init() {
 	Solutions[1838] = func() {
 		fmt.Println("Input: nums = [1,2,4], k = 5")
