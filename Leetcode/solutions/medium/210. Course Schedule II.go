@@ -29,11 +29,11 @@ func findOrder(numCourses int, prerequisites [][]int) []int {
 		}
 	}
 
-	result := []int{}
+	res := []int{}
 	for len(frontier) != 0 {
 		cur := frontier[0]
 		frontier = frontier[1:]
-		result = append(result, cur)
+		res = append(res, cur)
 		for _, v := range g[cur] {
 			indegree[v]--
 			if indegree[v] == 0 {
@@ -42,8 +42,8 @@ func findOrder(numCourses int, prerequisites [][]int) []int {
 		}
 	}
 
-	if len(result) == numCourses {
-		return result
+	if len(res) == numCourses {
+		return res
 	}
 	return []int{}
 }
