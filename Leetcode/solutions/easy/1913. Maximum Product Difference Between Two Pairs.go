@@ -5,7 +5,7 @@ import (
 	"math"
 )
 
-// Reference: https://leetcode.com/problems/course-schedule-ii/
+// Reference: https://leetcode.com/problems/maximum-product-difference-between-two-pairs/
 func init() {
 	Solutions[1913] = func() {
 		fmt.Println("Input: nums = [5,6,2,7,4]")
