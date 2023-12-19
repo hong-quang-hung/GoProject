@@ -5,10 +5,10 @@ import "fmt"
 // Reference: https://leetcode.com/problems/split-linked-list-in-parts/
 func init() {
 	Solutions[725] = func() {
-		fmt.Println("Input: head = [1,2,3], k = 5")
-		fmt.Println("Output:", splitListToParts(S2ListNode("[1,2,3]"), 5))
-		fmt.Println("Input: head = [1,2,3,4,5,6,7,8,9,10], k = 3")
-		fmt.Println("Output:", splitListToParts(S2ListNode("[1,2,3,4,5,6,7,8,9,10]"), 3))
+		fmt.Println(`Input: head = [1,2,3], k = 5`)
+		fmt.Println(`Output:`, splitListToParts(S2ListNode(`[1,2,3]`), 5))
+		fmt.Println(`Input: head = [1,2,3,4,5,6,7,8,9,10], k = 3`)
+		fmt.Println(`Output:`, splitListToParts(S2ListNode(`[1,2,3,4,5,6,7,8,9,10]`), 3))
 	}
 }
 

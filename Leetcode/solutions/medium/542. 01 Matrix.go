@@ -5,10 +5,10 @@ import "fmt"
 // Reference: https://leetcode.com/problems/01-matrix/
 func init() {
 	Solutions[542] = func() {
-		fmt.Println("Input: mat = [[0,0,0],[0,1,0],[0,0,0]]")
-		fmt.Println("Output:", updateMatrix(S2SoSliceInt("[[0,0,0],[0,1,0],[0,0,0]]")))
-		fmt.Println("Input: mat = [[0,0,0],[0,1,0],[1,1,1]]")
-		fmt.Println("Output:", updateMatrix(S2SoSliceInt("[[0,0,0],[0,1,0],[1,1,1]]")))
+		fmt.Println(`Input: mat = [[0,0,0],[0,1,0],[0,0,0]]`)
+		fmt.Println(`Output:`, updateMatrix(S2SoSliceInt(`[[0,0,0],[0,1,0],[0,0,0]]`)))
+		fmt.Println(`Input: mat = [[0,0,0],[0,1,0],[1,1,1]]`)
+		fmt.Println(`Output:`, updateMatrix(S2SoSliceInt(`[[0,0,0],[0,1,0],[1,1,1]]`)))
 	}
 }
 

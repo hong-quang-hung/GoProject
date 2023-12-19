@@ -5,10 +5,10 @@ import "fmt"
 // Reference: https://leetcode.com/problems/course-schedule/
 func init() {
 	Solutions[207] = func() {
-		fmt.Println("Input: numCourses = 2, prerequisites = [[1,0]]")
-		fmt.Println("Output:", canFinish(2, S2SoSliceInt("[[1,0]]")))
-		fmt.Println("Input: numCourses = 2, prerequisites = [[1,0],[0,1]]")
-		fmt.Println("Output:", canFinish(2, S2SoSliceInt("[[1,0],[0,1]]")))
+		fmt.Println(`Input: numCourses = 2, prerequisites = [[1,0]]`)
+		fmt.Println(`Output:`, canFinish(2, S2SoSliceInt(`[[1,0]]`)))
+		fmt.Println(`Input: numCourses = 2, prerequisites = [[1,0],[0,1]]`)
+		fmt.Println(`Output:`, canFinish(2, S2SoSliceInt(`[[1,0],[0,1]]`)))
 	}
 }
 

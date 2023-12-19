@@ -7,10 +7,10 @@ import (
 // Reference: https://leetcode.com/problems/remove-duplicate-letters/
 func init() {
 	Solutions[316] = func() {
-		fmt.Println("Input: s = 'bcabc'")
-		fmt.Println("Output:", removeDuplicateLetters("bcabc"))
-		fmt.Println("Input: s = 'cbacdcbc'")
-		fmt.Println("Output:", removeDuplicateLetters("cbacdcbc"))
+		fmt.Println(`Input: s = "bcabc"`)
+		fmt.Println(`Output:`, removeDuplicateLetters(`bcabc`))
+		fmt.Println(`Input: s = "cbacdcbc"`)
+		fmt.Println(`Output:`, removeDuplicateLetters(`cbacdcbc`))
 	}
 }
 

@@ -8,12 +8,12 @@ import (
 // Reference: https://leetcode.com/problems/non-overlapping-intervals/
 func init() {
 	Solutions[435] = func() {
-		fmt.Println("Input: intervals = [[1,2],[2,3],[3,4],[1,3]]")
-		fmt.Println("Output:", eraseOverlapIntervals(S2SoSliceInt("[[1,2],[2,3],[3,4],[1,3]]")))
-		fmt.Println("Input: intervals = [[1,2],[1,2],[1,2]]")
-		fmt.Println("Output:", eraseOverlapIntervals(S2SoSliceInt("[[1,2],[1,2],[1,2]]")))
-		fmt.Println("Input: intervals = [[1,2],[2,3]]")
-		fmt.Println("Output:", eraseOverlapIntervals(S2SoSliceInt("[[1,2],[2,3]]")))
+		fmt.Println(`Input: intervals = [[1,2],[2,3],[3,4],[1,3]]`)
+		fmt.Println(`Output:`, eraseOverlapIntervals(S2SoSliceInt(`[[1,2],[2,3],[3,4],[1,3]]`)))
+		fmt.Println(`Input: intervals = [[1,2],[1,2],[1,2]]`)
+		fmt.Println(`Output:`, eraseOverlapIntervals(S2SoSliceInt(`[[1,2],[1,2],[1,2]]`)))
+		fmt.Println(`Input: intervals = [[1,2],[2,3]]`)
+		fmt.Println(`Output:`, eraseOverlapIntervals(S2SoSliceInt(`[[1,2],[2,3]]`)))
 	}
 }
 

@@ -5,10 +5,10 @@ import "fmt"
 // Reference: https://leetcode.com/problems/ugly-number-ii/
 func init() {
 	Solutions[264] = func() {
-		fmt.Println("Input: n = 10")
-		fmt.Println("Output:", nthUglyNumber(10))
-		fmt.Println("Input: n = 1000")
-		fmt.Println("Output:", nthUglyNumber(1000))
+		fmt.Println(`Input: n = 10`)
+		fmt.Println(`Output:`, nthUglyNumber(10))
+		fmt.Println(`Input: n = 1000`)
+		fmt.Println(`Output:`, nthUglyNumber(1000))
 	}
 }
 

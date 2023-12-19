@@ -5,10 +5,10 @@ import "fmt"
 // Reference: https://leetcode.com/problems/count-primes/
 func init() {
 	Solutions[204] = func() {
-		fmt.Println("Input: n = 10")
-		fmt.Println("Output:", countPrimes(10))
-		fmt.Println("Input: n = 994794")
-		fmt.Println("Output:", countPrimes(994794))
+		fmt.Println(`Input: n = 10`)
+		fmt.Println(`Output:`, countPrimes(10))
+		fmt.Println(`Input: n = 994794`)
+		fmt.Println(`Output:`, countPrimes(994794))
 	}
 }
 

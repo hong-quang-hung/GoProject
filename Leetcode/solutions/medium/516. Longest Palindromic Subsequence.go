@@ -5,12 +5,12 @@ import "fmt"
 // Reference: https://leetcode.com/problems/longest-palindromic-subsequence/
 func init() {
 	Solutions[516] = func() {
-		fmt.Println("Input: s = 'bbbab'")
-		fmt.Println("Output:", longestPalindromeSubseq("bbbab"))
-		fmt.Println("Input: s = 'abcabcabcabc'")
-		fmt.Println("Output:", longestPalindromeSubseq("abcabcabcabc"))
-		fmt.Println("Input: s = 'aabaa'")
-		fmt.Println("Output:", longestPalindromeSubseq("aabaa"))
+		fmt.Println(`Input: s = "bbbab"`)
+		fmt.Println(`Output:`, longestPalindromeSubseq(`bbbab`))
+		fmt.Println(`Input: s = "abcabcabcabc"`)
+		fmt.Println(`Output:`, longestPalindromeSubseq(`abcabcabcabc`))
+		fmt.Println(`Input: s = "aabaa"`)
+		fmt.Println(`Output:`, longestPalindromeSubseq(`aabaa`))
 	}
 }
 

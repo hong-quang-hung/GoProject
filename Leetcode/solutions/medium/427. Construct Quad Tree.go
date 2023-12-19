@@ -5,8 +5,8 @@ import "fmt"
 // Reference: https://leetcode.com/problems/construct-quad-tree/
 func init() {
 	Solutions[427] = func() {
-		fmt.Println("Input: grid = [[0,1],[1,0]]")
-		fmt.Println("Output:", construct(S2SoSliceInt("[[0,1],[1,0]]")))
+		fmt.Println(`Input: grid = [[0,1],[1,0]]`)
+		fmt.Println(`Output:`, construct(S2SoSliceInt(`[[0,1],[1,0]]`)))
 	}
 }
 

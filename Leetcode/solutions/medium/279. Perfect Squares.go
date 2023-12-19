@@ -8,10 +8,10 @@ import (
 // Reference: https://leetcode.com/problems/perfect-squares/
 func init() {
 	Solutions[279] = func() {
-		fmt.Println("Input: n = 12")
-		fmt.Println("Output:", numSquares(12))
-		fmt.Println("Input: n = 13")
-		fmt.Println("Output:", numSquares(13))
+		fmt.Println(`Input: n = 12`)
+		fmt.Println(`Output:`, numSquares(12))
+		fmt.Println(`Input: n = 13`)
+		fmt.Println(`Output:`, numSquares(13))
 	}
 }
 

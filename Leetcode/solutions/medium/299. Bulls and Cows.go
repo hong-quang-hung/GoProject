@@ -5,10 +5,10 @@ import "fmt"
 // Reference: https://leetcode.com/problems/bulls-and-cows/
 func init() {
 	Solutions[299] = func() {
-		fmt.Println("Input: secret = '1234', guess = '0111'")
-		fmt.Println("Output:", getHint("1234", "0111"))
-		fmt.Println("Input: secret = '1122', guess = '2211'")
-		fmt.Println("Output:", getHint("1122", "2211"))
+		fmt.Println(`Input: secret = "1234", guess = "0111"`)
+		fmt.Println(`Output:`, getHint(`1234`, `0111`))
+		fmt.Println(`Input: secret = "1122", guess = "2211"`)
+		fmt.Println(`Output:`, getHint(`1122`, `2211`))
 	}
 }
 
@@ -29,5 +29,5 @@ func getHint(secret string, guess string) string {
 			}
 		}
 	}
-	return fmt.Sprintf("%dA%dB", bulls, cows)
+	return fmt.Sprintf(`%dA%dB`, bulls, cows)
 }

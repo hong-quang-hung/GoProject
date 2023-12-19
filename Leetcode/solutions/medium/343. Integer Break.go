@@ -5,10 +5,10 @@ import "fmt"
 // Reference: https://leetcode.com/problems/integer-break/
 func init() {
 	Solutions[343] = func() {
-		fmt.Println("Input: n = 2")
-		fmt.Println("Output:", integerBreak(2))
-		fmt.Println("Input: n = 10")
-		fmt.Println("Output:", integerBreak(10))
+		fmt.Println(`Input: n = 2`)
+		fmt.Println(`Output:`, integerBreak(2))
+		fmt.Println(`Input: n = 10`)
+		fmt.Println(`Output:`, integerBreak(10))
 	}
 }
 

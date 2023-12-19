@@ -5,12 +5,12 @@ import "fmt"
 // Reference: https://leetcode.com/problems/coin-change-ii/
 func init() {
 	Solutions[518] = func() {
-		fmt.Println("Input: amount = 5, coins = [1,2,5]")
-		fmt.Println("Output:", change(5, []int{1, 2, 5}))
-		fmt.Println("Input: amount = 3, coins = [2]")
-		fmt.Println("Output:", change(3, []int{2}))
-		fmt.Println("Input: amount = 10, coins = [10]")
-		fmt.Println("Output:", change(10, []int{10}))
+		fmt.Println(`Input: amount = 5, coins = [1,2,5]`)
+		fmt.Println(`Output:`, change(5, []int{1, 2, 5}))
+		fmt.Println(`Input: amount = 3, coins = [2]`)
+		fmt.Println(`Output:`, change(3, []int{2}))
+		fmt.Println(`Input: amount = 10, coins = [10]`)
+		fmt.Println(`Output:`, change(10, []int{10}))
 	}
 }
 

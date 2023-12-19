@@ -5,12 +5,12 @@ import "fmt"
 // Reference: https://leetcode.com/problems/dota2-senate/
 func init() {
 	Solutions[649] = func() {
-		fmt.Println("Input: senate = 'RD'")
-		fmt.Println("Output:", predictPartyVictory("RD"))
-		fmt.Println("Input: senate = 'RDD'")
-		fmt.Println("Output:", predictPartyVictory("RDD"))
-		fmt.Println("Input: senate = 'DDRRR'")
-		fmt.Println("Output:", predictPartyVictory("DDRRR"))
+		fmt.Println(`Input: senate = "RD"`)
+		fmt.Println(`Output:`, predictPartyVictory(`RD`))
+		fmt.Println(`Input: senate = "RDD"`)
+		fmt.Println(`Output:`, predictPartyVictory(`RDD`))
+		fmt.Println(`Input: senate = "DDRRR"`)
+		fmt.Println(`Output:`, predictPartyVictory(`DDRRR`))
 	}
 }
 
@@ -36,7 +36,7 @@ func predictPartyVictory(senate string) string {
 	}
 
 	if len(D) == 0 {
-		return "Radiant"
+		return `Radiant`
 	}
-	return "Dire"
+	return `Dire`
 }

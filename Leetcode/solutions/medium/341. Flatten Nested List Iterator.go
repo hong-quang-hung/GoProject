@@ -5,8 +5,8 @@ import "fmt"
 // Reference: https://leetcode.com/problems/flatten-nested-list-iterator/
 func init() {
 	Solutions[341] = func() {
-		fmt.Println("Input: nestedList = [[1,1],2,[1,1]]")
-		fmt.Println("Input: nestedList = [1,[4,[6]]]")
+		fmt.Println(`Input: nestedList = [[1,1],2,[1,1]]`)
+		fmt.Println(`Input: nestedList = [1,[4,[6]]]`)
 	}
 }
 

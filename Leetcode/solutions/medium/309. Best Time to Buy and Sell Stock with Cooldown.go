@@ -8,12 +8,12 @@ import (
 // Reference: https://leetcode.com/problems/best-time-to-buy-and-sell-stock-with-cooldown/
 func init() {
 	Solutions[309] = func() {
-		fmt.Println("Input: prices = [1,2,3,0,2]")
-		fmt.Println("Output:", maxProfit2([]int{1, 2, 3, 0, 2}))
-		fmt.Println("Input: prices = [1,2,4]")
-		fmt.Println("Output:", maxProfit2([]int{1, 2, 4}))
-		fmt.Println("Input: prices = [2,1,4]")
-		fmt.Println("Output:", maxProfit2([]int{2, 1, 4}))
+		fmt.Println(`Input: prices = [1,2,3,0,2]`)
+		fmt.Println(`Output:`, maxProfit2([]int{1, 2, 3, 0, 2}))
+		fmt.Println(`Input: prices = [1,2,4]`)
+		fmt.Println(`Output:`, maxProfit2([]int{1, 2, 4}))
+		fmt.Println(`Input: prices = [2,1,4]`)
+		fmt.Println(`Output:`, maxProfit2([]int{2, 1, 4}))
 	}
 }
 

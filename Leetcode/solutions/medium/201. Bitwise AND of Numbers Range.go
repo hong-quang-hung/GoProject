@@ -8,12 +8,12 @@ import (
 // Reference: https://leetcode.com/problems/bitwise-and-of-numbers-range/
 func init() {
 	Solutions[201] = func() {
-		fmt.Println("Input: left = 5, right = 7")
-		fmt.Println("Output:", rangeBitwiseAnd(5, 7))
-		fmt.Println("Input: left = 1, right = 2147483647")
-		fmt.Println("Output:", rangeBitwiseAnd(1, 2147483647))
-		fmt.Println("Input: left = 5, right = 5")
-		fmt.Println("Output:", rangeBitwiseAnd(5, 5))
+		fmt.Println(`Input: left = 5, right = 7`)
+		fmt.Println(`Output:`, rangeBitwiseAnd(5, 7))
+		fmt.Println(`Input: left = 1, right = 2147483647`)
+		fmt.Println(`Output:`, rangeBitwiseAnd(1, 2147483647))
+		fmt.Println(`Input: left = 5, right = 5`)
+		fmt.Println(`Output:`, rangeBitwiseAnd(5, 5))
 	}
 }
 

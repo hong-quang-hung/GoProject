@@ -5,12 +5,12 @@ import "fmt"
 // Reference: https://leetcode.com/problems/minimum-size-subarray-sum/
 func init() {
 	Solutions[209] = func() {
-		fmt.Println("Input: target = 7, nums = [2,3,1,2,4,3]")
-		fmt.Println("Output:", minSubArrayLen(7, []int{2, 3, 1, 2, 4, 3}))
-		fmt.Println("Input: target = 4, nums = [1,4,4]")
-		fmt.Println("Output:", minSubArrayLen(4, []int{1, 4, 4}))
-		fmt.Println("Input: target = 15, nums = [1,2,3,4,5]")
-		fmt.Println("Output:", minSubArrayLen(15, []int{1, 2, 3, 4, 5}))
+		fmt.Println(`Input: target = 7, nums = [2,3,1,2,4,3]`)
+		fmt.Println(`Output:`, minSubArrayLen(7, []int{2, 3, 1, 2, 4, 3}))
+		fmt.Println(`Input: target = 4, nums = [1,4,4]`)
+		fmt.Println(`Output:`, minSubArrayLen(4, []int{1, 4, 4}))
+		fmt.Println(`Input: target = 15, nums = [1,2,3,4,5]`)
+		fmt.Println(`Output:`, minSubArrayLen(15, []int{1, 2, 3, 4, 5}))
 	}
 }
 

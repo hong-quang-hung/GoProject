@@ -5,10 +5,10 @@ import "fmt"
 // Reference: https://leetcode.com/problems/predict-the-winner/
 func init() {
 	Solutions[486] = func() {
-		fmt.Println("Input: nums = [1,5,2]")
-		fmt.Println("Output:", predictTheWinner([]int{1, 5, 2}))
-		fmt.Println("Input: nums = [1,5,233,7]")
-		fmt.Println("Output:", predictTheWinner([]int{1, 5, 233, 7}))
+		fmt.Println(`Input: nums = [1,5,2]`)
+		fmt.Println(`Output:`, predictTheWinner([]int{1, 5, 2}))
+		fmt.Println(`Input: nums = [1,5,233,7]`)
+		fmt.Println(`Output:`, predictTheWinner([]int{1, 5, 233, 7}))
 	}
 }
 

@@ -8,19 +8,19 @@ import (
 // Reference: https://leetcode.com/problems/insert-delete-getrandom-o1/
 func init() {
 	Solutions[380] = func() {
-		fmt.Println("Input:")
-		fmt.Println("['RandomizedSet', 'insert', 'remove', 'insert', 'getRandom', 'remove', 'insert', 'getRandom']")
-		fmt.Println("[[], [1], [2], [2], [], [1], [2], []]")
-		fmt.Println("Output:")
+		fmt.Println(`Input:`)
+		fmt.Println(`["RandomizedSet", "insert", "remove", "insert", "getRandom", "remove", "insert", "getRandom"]`)
+		fmt.Println(`[[], [1], [2], [2], [], [1], [2], []]`)
+		fmt.Println(`Output:`)
 
 		randomizedSet := RandomizedSetConstructor()
-		fmt.Println("randomizedSet.insert(1)", "//return", randomizedSet.Insert(1))
-		fmt.Println("randomizedSet.remove(2) ", "//return", randomizedSet.Remove(2))
-		fmt.Println("randomizedSet.insert(2)", "//return", randomizedSet.Insert(2))
-		fmt.Println("randomizedSet.getRandom()", "//return", randomizedSet.GetRandom())
-		fmt.Println("randomizedSet.remove(1) ", "//return", randomizedSet.Remove(1))
-		fmt.Println("randomizedSet.insert(2)", "//return", randomizedSet.Insert(2))
-		fmt.Println("randomizedSet.getRandom()", "//return", randomizedSet.GetRandom())
+		fmt.Println(`randomizedSet.insert(1)`, `//return`, randomizedSet.Insert(1))
+		fmt.Println(`randomizedSet.remove(2) `, `//return`, randomizedSet.Remove(2))
+		fmt.Println(`randomizedSet.insert(2)`, `//return`, randomizedSet.Insert(2))
+		fmt.Println(`randomizedSet.getRandom()`, `//return`, randomizedSet.GetRandom())
+		fmt.Println(`randomizedSet.remove(1) `, `//return`, randomizedSet.Remove(1))
+		fmt.Println(`randomizedSet.insert(2)`, `//return`, randomizedSet.Insert(2))
+		fmt.Println(`randomizedSet.getRandom()`, `//return`, randomizedSet.GetRandom())
 	}
 }
 

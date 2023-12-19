@@ -8,10 +8,10 @@ import (
 // Reference: https://leetcode.com/problems/kth-largest-element-in-an-array/
 func init() {
 	Solutions[215] = func() {
-		fmt.Println("Input: nums = [3,2,1,5,6,4], k = 2")
-		fmt.Println("Output:", findKthLargest([]int{3, 2, 1, 5, 6, 4}, 2))
-		fmt.Println("Input: nums = [3,2,3,1,2,4,5,5,6], k = 4")
-		fmt.Println("Output:", findKthLargest([]int{3, 2, 3, 1, 2, 4, 5, 5, 6}, 4))
+		fmt.Println(`Input: nums = [3,2,1,5,6,4], k = 2`)
+		fmt.Println(`Output:`, findKthLargest([]int{3, 2, 1, 5, 6, 4}, 2))
+		fmt.Println(`Input: nums = [3,2,3,1,2,4,5,5,6], k = 4`)
+		fmt.Println(`Output:`, findKthLargest([]int{3, 2, 3, 1, 2, 4, 5, 5, 6}, 4))
 	}
 }
 

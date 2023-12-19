@@ -5,10 +5,10 @@ import "fmt"
 // Reference: https://leetcode.com/problems/find-all-anagrams-in-a-string/
 func init() {
 	Solutions[438] = func() {
-		fmt.Println("Input: s = 'cbaebabacd', p = 'abc'")
-		fmt.Println("Output:", findAnagrams("cbaebabacd", "abc"))
-		fmt.Println("Input: s = 'abab', p = 'abc'")
-		fmt.Println("Output:", findAnagrams("abab", "ab"))
+		fmt.Println(`Input: s = "cbaebabacd", p = "abc"`)
+		fmt.Println(`Output:`, findAnagrams(`cbaebabacd`, `abc`))
+		fmt.Println(`Input: s = "abab", p = "abc"`)
+		fmt.Println(`Output:`, findAnagrams(`abab`, `ab`))
 	}
 }
 

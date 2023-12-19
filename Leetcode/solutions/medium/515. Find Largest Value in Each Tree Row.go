@@ -8,10 +8,10 @@ import (
 // Reference: https://leetcode.com/problems/find-largest-value-in-each-tree-row/
 func init() {
 	Solutions[515] = func() {
-		fmt.Println("Input: root = [1,3,2,5,3,null,9]")
-		fmt.Println("Output:", largestValues(S2TreeNode("[1,3,2,5,3,null,9]")))
-		fmt.Println("Input: root = [1,2,3]")
-		fmt.Println("Output:", largestValues(S2TreeNode("[1,2,3]")))
+		fmt.Println(`Input: root = [1,3,2,5,3,null,9]`)
+		fmt.Println(`Output:`, largestValues(S2TreeNode(`[1,3,2,5,3,null,9]`)))
+		fmt.Println(`Input: root = [1,2,3]`)
+		fmt.Println(`Output:`, largestValues(S2TreeNode(`[1,2,3]`)))
 	}
 }
 

@@ -5,10 +5,10 @@ import "fmt"
 // Reference: https://leetcode.com/problems/product-of-array-except-self/
 func init() {
 	Solutions[238] = func() {
-		fmt.Println("Input: nums = [1,2,3,4]")
-		fmt.Println("Output:", productExceptSelf([]int{1, 2, 3, 4}))
-		fmt.Println("Input: nums = [-1, 1, 0, -3, 3]")
-		fmt.Println("Output:", productExceptSelf([]int{-1, 1, 0, -3, 3}))
+		fmt.Println(`Input: nums = [1,2,3,4]`)
+		fmt.Println(`Output:`, productExceptSelf([]int{1, 2, 3, 4}))
+		fmt.Println(`Input: nums = [-1, 1, 0, -3, 3]`)
+		fmt.Println(`Output:`, productExceptSelf([]int{-1, 1, 0, -3, 3}))
 	}
 }
 

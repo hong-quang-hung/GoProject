@@ -8,10 +8,10 @@ import (
 // Reference: https://leetcode.com/problems/maximum-length-of-pair-chain/
 func init() {
 	Solutions[646] = func() {
-		fmt.Println("Input: pairs = [[1,2],[2,3],[3,4]]")
-		fmt.Println("Output:", findLongestChain(S2SoSliceInt("[[1,2],[2,3],[3,4]]")))
-		fmt.Println("Input: pairs = [[1,2],[7,8],[4,5]]")
-		fmt.Println("Output:", findLongestChain(S2SoSliceInt("[[1,2],[7,8],[4,5]]")))
+		fmt.Println(`Input: pairs = [[1,2],[2,3],[3,4]]`)
+		fmt.Println(`Output:`, findLongestChain(S2SoSliceInt(`[[1,2],[2,3],[3,4]]`)))
+		fmt.Println(`Input: pairs = [[1,2],[7,8],[4,5]]`)
+		fmt.Println(`Output:`, findLongestChain(S2SoSliceInt(`[[1,2],[7,8],[4,5]]`)))
 	}
 }
 

@@ -5,10 +5,10 @@ import "fmt"
 // Reference: https://leetcode.com/problems/number-of-provinces/
 func init() {
 	Solutions[547] = func() {
-		fmt.Println("Input: isConnected = [[1,1,0],[1,1,0],[0,0,1]]")
-		fmt.Println("Output:", findCircleNum(S2SoSliceInt("[[1,1,0],[1,1,0],[0,0,1]]")))
-		fmt.Println("Input: isConnected = [[1,0,0],[0,1,0],[0,0,1]]")
-		fmt.Println("Output:", findCircleNum(S2SoSliceInt("[[1,0,0],[0,1,0],[0,0,1]]")))
+		fmt.Println(`Input: isConnected = [[1,1,0],[1,1,0],[0,0,1]]`)
+		fmt.Println(`Output:`, findCircleNum(S2SoSliceInt(`[[1,1,0],[1,1,0],[0,0,1]]`)))
+		fmt.Println(`Input: isConnected = [[1,0,0],[0,1,0],[0,0,1]]`)
+		fmt.Println(`Output:`, findCircleNum(S2SoSliceInt(`[[1,0,0],[0,1,0],[0,0,1]]`)))
 	}
 }
 

@@ -8,10 +8,10 @@ import (
 // Reference: https://leetcode.com/problems/super-ugly-number/
 func init() {
 	Solutions[313] = func() {
-		fmt.Println("Input: n = 12, primes = [2,7,13,19]")
-		fmt.Println("Output:", nthSuperUglyNumber(12, []int{2, 7, 13, 19}))
-		fmt.Println("Input: n = 1, primes = [2,3,5]")
-		fmt.Println("Output:", nthSuperUglyNumber(1, []int{2, 3, 5}))
+		fmt.Println(`Input: n = 12, primes = [2,7,13,19]`)
+		fmt.Println(`Output:`, nthSuperUglyNumber(12, []int{2, 7, 13, 19}))
+		fmt.Println(`Input: n = 1, primes = [2,3,5]`)
+		fmt.Println(`Output:`, nthSuperUglyNumber(1, []int{2, 3, 5}))
 	}
 }
 

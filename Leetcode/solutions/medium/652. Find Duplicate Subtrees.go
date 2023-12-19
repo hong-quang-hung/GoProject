@@ -8,8 +8,8 @@ import (
 // Reference: https://leetcode.com/problems/find-duplicate-subtrees/
 func init() {
 	Solutions[652] = func() {
-		fmt.Println("Input: root = [1,2,3,4,null,2,4,null,null,4]")
-		fmt.Println("Output:", findDuplicateSubtrees(S2TreeNode("[1,2,3,4,null,2,4,null,null,4]")))
+		fmt.Println(`Input: root = [1,2,3,4,null,2,4,null,null,4]`)
+		fmt.Println(`Output:`, findDuplicateSubtrees(S2TreeNode(`[1,2,3,4,null,2,4,null,null,4]`)))
 	}
 }
 
@@ -26,7 +26,7 @@ func findDuplicateSubtreesTraversal(node *TreeNode, tripletToID map[string]int, 
 		return 0
 	}
 
-	triplet := strconv.Itoa(findDuplicateSubtreesTraversal(node.Left, tripletToID, cnt, res)) + "," + strconv.Itoa(node.Val) + "," + strconv.Itoa(findDuplicateSubtreesTraversal(node.Right, tripletToID, cnt, res))
+	triplet := strconv.Itoa(findDuplicateSubtreesTraversal(node.Left, tripletToID, cnt, res)) + `,` + strconv.Itoa(node.Val) + `,` + strconv.Itoa(findDuplicateSubtreesTraversal(node.Right, tripletToID, cnt, res))
 	if _, c := tripletToID[triplet]; !c {
 		tripletToID[triplet] = len(tripletToID) + 1
 	}

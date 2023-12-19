@@ -7,15 +7,15 @@ func init() {
 	Solutions[289] = func() {
 		var board [][]int
 
-		fmt.Println("Input: board = [[0,1,0],[0,0,1],[1,1,1],[0,0,0]]")
-		board = S2SoSliceInt("[[0,1,0],[0,0,1],[1,1,1],[0,0,0]]")
+		fmt.Println(`Input: board = [[0,1,0],[0,0,1],[1,1,1],[0,0,0]]`)
+		board = S2SoSliceInt(`[[0,1,0],[0,0,1],[1,1,1],[0,0,0]]`)
 		gameOfLife(board)
-		fmt.Println("Output:", board)
+		fmt.Println(`Output:`, board)
 
-		fmt.Println("Input: board = [[1,1],[1,0]]")
-		board = S2SoSliceInt("[[1,1],[1,0]]")
+		fmt.Println(`Input: board = [[1,1],[1,0]]`)
+		board = S2SoSliceInt(`[[1,1],[1,0]]`)
 		gameOfLife(board)
-		fmt.Println("Output:", board)
+		fmt.Println(`Output:`, board)
 	}
 }
 

@@ -8,12 +8,12 @@ import (
 // Reference: https://leetcode.com/problems/increasing-triplet-subsequence/
 func init() {
 	Solutions[334] = func() {
-		fmt.Println("Input: nums = [1,2,3,4,5]")
-		fmt.Println("Output:", increasingTriplet([]int{1, 2, 3, 4, 5}))
-		fmt.Println("Input: nums = [0,4,2,1,0,-1,-3]")
-		fmt.Println("Output:", increasingTriplet([]int{0, 4, 2, 1, 0, -1, -3}))
-		fmt.Println("Input: nums = [20,100,10,12,5,13]")
-		fmt.Println("Output:", increasingTriplet([]int{20, 100, 10, 12, 5, 13}))
+		fmt.Println(`Input: nums = [1,2,3,4,5]`)
+		fmt.Println(`Output:`, increasingTriplet([]int{1, 2, 3, 4, 5}))
+		fmt.Println(`Input: nums = [0,4,2,1,0,-1,-3]`)
+		fmt.Println(`Output:`, increasingTriplet([]int{0, 4, 2, 1, 0, -1, -3}))
+		fmt.Println(`Input: nums = [20,100,10,12,5,13]`)
+		fmt.Println(`Output:`, increasingTriplet([]int{20, 100, 10, 12, 5, 13}))
 	}
 }
 

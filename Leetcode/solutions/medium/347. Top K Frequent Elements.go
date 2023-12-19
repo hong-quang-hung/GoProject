@@ -8,10 +8,10 @@ import (
 // Reference: https://leetcode.com/problems/top-k-frequent-elements/
 func init() {
 	Solutions[347] = func() {
-		fmt.Println("Input: nums = [1,1,1,2,2,3], k = 2")
-		fmt.Println("Output:", topKFrequent([]int{1, 1, 1, 2, 2, 3}, 2))
-		fmt.Println("Input: nums = [1], k = 1")
-		fmt.Println("Output:", topKFrequent([]int{1}, 1))
+		fmt.Println(`Input: nums = [1,1,1,2,2,3], k = 2`)
+		fmt.Println(`Output:`, topKFrequent([]int{1, 1, 1, 2, 2, 3}, 2))
+		fmt.Println(`Input: nums = [1], k = 1`)
+		fmt.Println(`Output:`, topKFrequent([]int{1}, 1))
 	}
 }
 

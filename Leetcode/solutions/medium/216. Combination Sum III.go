@@ -5,12 +5,12 @@ import "fmt"
 // Reference: https://leetcode.com/problems/combination-sum-iii/
 func init() {
 	Solutions[216] = func() {
-		fmt.Println("Input: k = 3, n = 7")
-		fmt.Println("Output:", combinationSum3(3, 7))
-		fmt.Println("Input: k = 3, n = 9")
-		fmt.Println("Output:", combinationSum3(3, 9))
-		fmt.Println("Input: k = 2, n = 18")
-		fmt.Println("Output:", combinationSum3(2, 18))
+		fmt.Println(`Input: k = 3, n = 7`)
+		fmt.Println(`Output:`, combinationSum3(3, 7))
+		fmt.Println(`Input: k = 3, n = 9`)
+		fmt.Println(`Output:`, combinationSum3(3, 9))
+		fmt.Println(`Input: k = 2, n = 18`)
+		fmt.Println(`Output:`, combinationSum3(2, 18))
 	}
 }
 

@@ -5,12 +5,12 @@ import "fmt"
 // Reference: https://leetcode.com/problems/combination-sum-iii/
 func init() {
 	Solutions[377] = func() {
-		fmt.Println("Input: nums = [1,2,3], target = 4")
-		fmt.Println("Output:", combinationSum4([]int{1, 2, 3}, 4))
-		fmt.Println("Input: nums = [9], target = 3")
-		fmt.Println("Output:", combinationSum4([]int{9}, 3))
-		fmt.Println("Input: nums = [2,1,3], target = 35")
-		fmt.Println("Output:", combinationSum4([]int{2, 1, 3}, 35))
+		fmt.Println(`Input: nums = [1,2,3], target = 4`)
+		fmt.Println(`Output:`, combinationSum4([]int{1, 2, 3}, 4))
+		fmt.Println(`Input: nums = [9], target = 3`)
+		fmt.Println(`Output:`, combinationSum4([]int{9}, 3))
+		fmt.Println(`Input: nums = [2,1,3], target = 35`)
+		fmt.Println(`Output:`, combinationSum4([]int{2, 1, 3}, 35))
 	}
 }
 

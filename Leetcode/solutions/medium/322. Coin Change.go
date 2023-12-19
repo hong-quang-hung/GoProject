@@ -8,12 +8,12 @@ import (
 // Reference: https://leetcode.com/problems/coin-change/
 func init() {
 	Solutions[322] = func() {
-		fmt.Println("Input: coins = [1,2,5], amount = 11")
-		fmt.Println("Output:", coinChange([]int{1, 2, 5}, 11))
-		fmt.Println("Input: coins = [2], amount = 3")
-		fmt.Println("Output:", coinChange([]int{2}, 3))
-		fmt.Println("Input: coins = [1], amount = 0")
-		fmt.Println("Output:", coinChange([]int{1}, 0))
+		fmt.Println(`Input: coins = [1,2,5], amount = 11`)
+		fmt.Println(`Output:`, coinChange([]int{1, 2, 5}, 11))
+		fmt.Println(`Input: coins = [2], amount = 3`)
+		fmt.Println(`Output:`, coinChange([]int{2}, 3))
+		fmt.Println(`Input: coins = [1], amount = 0`)
+		fmt.Println(`Output:`, coinChange([]int{1}, 0))
 	}
 }
 

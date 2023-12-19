@@ -7,10 +7,10 @@ import (
 // Reference: https://leetcode.com/problems/h-index/
 func init() {
 	Solutions[274] = func() {
-		fmt.Println("Input: citations = [3,0,6,1,5]")
-		fmt.Println("Output:", hIndex([]int{3, 0, 6, 1, 5}))
-		fmt.Println("Input: citations = [1,3,1]")
-		fmt.Println("Output:", hIndex([]int{1, 3, 1}))
+		fmt.Println(`Input: citations = [3,0,6,1,5]`)
+		fmt.Println(`Output:`, hIndex([]int{3, 0, 6, 1, 5}))
+		fmt.Println(`Input: citations = [1,3,1]`)
+		fmt.Println(`Output:`, hIndex([]int{1, 3, 1}))
 	}
 }
 

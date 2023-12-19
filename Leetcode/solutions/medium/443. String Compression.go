@@ -8,10 +8,10 @@ import (
 // Reference: https://leetcode.com/problems/string-compression/
 func init() {
 	Solutions[443] = func() {
-		fmt.Println("Input: chars = ['a','a','b','b','c','c','c']")
-		fmt.Println("Output:", compress([]byte{'a', 'a', 'b', 'b', 'c', 'c', 'c'}))
-		fmt.Println("Input: chars = ['a','b','b','b','b','b','b','b','b','b','b','b','b']")
-		fmt.Println("Output:", compress([]byte{'a', 'b', 'b', 'b', 'b', 'b', 'b', 'b', 'b', 'b', 'b', 'b', 'b'}))
+		fmt.Println(`Input: chars = ['a','a','b','b','c','c','c']`)
+		fmt.Println(`Output:`, compress([]byte{'a', 'a', 'b', 'b', 'c', 'c', 'c'}))
+		fmt.Println(`Input: chars = ['a','b','b','b','b','b','b','b','b','b','b','b','b']`)
+		fmt.Println(`Output:`, compress([]byte{'a', 'b', 'b', 'b', 'b', 'b', 'b', 'b', 'b', 'b', 'b', 'b', 'b'}))
 	}
 }
 

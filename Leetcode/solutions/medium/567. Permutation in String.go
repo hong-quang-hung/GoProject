@@ -5,8 +5,8 @@ import "fmt"
 // Reference: https://leetcode.com/problems/permutation-in-string/
 func init() {
 	Solutions[567] = func() {
-		fmt.Println("Input: s1 = 'ab', s2 = 'eidbaooo'")
-		fmt.Println("Output:", checkInclusion("ab", "eidbaooo"))
+		fmt.Println(`Input: s1 = "ab", s2 = "eidbaooo"`)
+		fmt.Println(`Output:`, checkInclusion(`ab`, `eidbaooo`))
 	}
 }
 

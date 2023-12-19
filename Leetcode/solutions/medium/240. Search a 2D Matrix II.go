@@ -7,10 +7,10 @@ import (
 // Reference: https://leetcode.com/problems/search-a-2d-matrix-ii/
 func init() {
 	Solutions[240] = func() {
-		fmt.Println("Input: matrix = [[1,4,7,11,15],[2,5,8,12,19],[3,6,9,16,22],[10,13,14,17,24],[18,21,23,26,30]], target = 5")
-		fmt.Println("Output:", searchMatrixII(S2SoSliceInt("[[1,4,7,11,15],[2,5,8,12,19],[3,6,9,16,22],[10,13,14,17,24],[18,21,23,26,30]]"), 5))
-		fmt.Println("Input: matrix = [[1,4,7,11,15],[2,5,8,12,19],[3,6,9,16,22],[10,13,14,17,24],[18,21,23,26,30]], target = 20")
-		fmt.Println("Output:", searchMatrixII(S2SoSliceInt("[[1,4,7,11,15],[2,5,8,12,19],[3,6,9,16,22],[10,13,14,17,24],[18,21,23,26,30]]"), 20))
+		fmt.Println(`Input: matrix = [[1,4,7,11,15],[2,5,8,12,19],[3,6,9,16,22],[10,13,14,17,24],[18,21,23,26,30]], target = 5`)
+		fmt.Println(`Output:`, searchMatrixII(S2SoSliceInt(`[[1,4,7,11,15],[2,5,8,12,19],[3,6,9,16,22],[10,13,14,17,24],[18,21,23,26,30]]`), 5))
+		fmt.Println(`Input: matrix = [[1,4,7,11,15],[2,5,8,12,19],[3,6,9,16,22],[10,13,14,17,24],[18,21,23,26,30]], target = 20`)
+		fmt.Println(`Output:`, searchMatrixII(S2SoSliceInt(`[[1,4,7,11,15],[2,5,8,12,19],[3,6,9,16,22],[10,13,14,17,24],[18,21,23,26,30]]`), 20))
 	}
 }
 
