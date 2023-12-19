@@ -5,8 +5,8 @@ import "fmt"
 // Reference: https://leetcode.com/problems/median-of-two-sorted-arrays/
 func init() {
 	Solutions[4] = func() {
-		fmt.Println("Input: nums1 = [1], nums2 = [2,3,4,5,6]")
-		fmt.Println("Output:", findMedianSortedArrays([]int{1}, []int{2, 3, 4, 5, 6}))
+		fmt.Println(`Input: nums1 = [1], nums2 = [2,3,4,5,6]`)
+		fmt.Println(`Output:`, findMedianSortedArrays([]int{1}, []int{2, 3, 4, 5, 6}))
 	}
 }
 

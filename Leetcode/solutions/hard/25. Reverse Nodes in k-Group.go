@@ -5,10 +5,10 @@ import "fmt"
 // Reference: https://leetcode.com/problems/reverse-nodes-in-k-group/
 func init() {
 	Solutions[25] = func() {
-		fmt.Println("Input: head = [1,2,3,4,5], k = 2")
-		fmt.Println("Output:", reverseKGroup(S2ListNode("[1,2,3,4,5]"), 2))
-		fmt.Println("Input: head = [1,2,3,4,5], k = 3")
-		fmt.Println("Output:", reverseKGroup(S2ListNode("[1,2,3,4,5]"), 3))
+		fmt.Println(`Input: head = [1,2,3,4,5], k = 2`)
+		fmt.Println(`Output:`, reverseKGroup(S2ListNode(`[1,2,3,4,5]`), 2))
+		fmt.Println(`Input: head = [1,2,3,4,5], k = 3`)
+		fmt.Println(`Output:`, reverseKGroup(S2ListNode(`[1,2,3,4,5]`), 3))
 	}
 }
 

@@ -8,8 +8,8 @@ import (
 // Reference: https://leetcode.com/problems/form-smallest-number-from-two-digit-arrays/
 func init() {
 	Solutions[2605] = func() {
-		fmt.Println("Input: nums1 = [4,1,3], nums2 = [5,7]")
-		fmt.Println("Output:", minNumber([]int{1, 3}, []int{5, 7}))
+		fmt.Println(`Input: nums1 = [4,1,3], nums2 = [5,7]`)
+		fmt.Println(`Output:`, minNumber([]int{1, 3}, []int{5, 7}))
 	}
 }
 

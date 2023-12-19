@@ -5,10 +5,10 @@ import "fmt"
 // Reference: https://leetcode.com/problems/candy/
 func init() {
 	Solutions[135] = func() {
-		fmt.Println("Input: ratings = [1,0,2]")
-		fmt.Println("Output:", candy([]int{1, 0, 2}))
-		fmt.Println("Input: ratings = [1,2,2]")
-		fmt.Println("Output:", candy([]int{1, 2, 2}))
+		fmt.Println(`Input: ratings = [1,0,2]`)
+		fmt.Println(`Output:`, candy([]int{1, 0, 2}))
+		fmt.Println(`Input: ratings = [1,2,2]`)
+		fmt.Println(`Output:`, candy([]int{1, 2, 2}))
 	}
 }
 

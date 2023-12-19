@@ -7,19 +7,17 @@ import (
 // Reference: https://leetcode.com/problems/minimum-window-substring/
 func init() {
 	Solutions[76] = func() {
-		fmt.Println("Input: s = 'ADOBECODEBANC', t = 'ABC'")
-		fmt.Println("Output:", minWindow("ADOBECODEBANC", "ABC"))
-		fmt.Println("Input: s = 'a', t = 'a'")
-		fmt.Println("Output:", minWindow("a", "a"))
-		fmt.Println("Input: s = 'cabefgecdaecf', t = 'cae'")
-		fmt.Println("Output:", minWindow("cabefgecdaecf", "cae"))
+		fmt.Println(`Input: s = "ADOBECODEBANC", t = "ABC"`)
+		fmt.Println(`Output:`, minWindow(`ADOBECODEBANC`, `ABC`))
+		fmt.Println(`Input: s = "cabefgecdaecf", t = "cae"`)
+		fmt.Println(`Output:`, minWindow(`cabefgecdaecf`, `cae`))
 	}
 }
 
 func minWindow(s string, t string) string {
 	m, n := len(s), len(t)
 	if m < n {
-		return ""
+		return ``
 	}
 
 	mt := [58]int{}
@@ -27,7 +25,7 @@ func minWindow(s string, t string) string {
 		mt[int(ch-'A')]++
 	}
 
-	res := ""
+	res := ``
 	left, right := 0, -1
 	count := 0
 	ms := [58]int{}

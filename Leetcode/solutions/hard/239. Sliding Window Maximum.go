@@ -7,10 +7,10 @@ import (
 // Reference: https://leetcode.com/problems/sliding-window-maximum/
 func init() {
 	Solutions[239] = func() {
-		fmt.Println("Input: nums = [1,3,-1,-3,5,3,6,7], k = 3")
-		fmt.Println("Output:", maxSlidingWindow([]int{1, 3, -1, -3, 5, 3, 6, 7}, 3))
-		fmt.Println("Input: nums = [1], k = 1")
-		fmt.Println("Output:", maxSlidingWindow([]int{1}, 1))
+		fmt.Println(`Input: nums = [1,3,-1,-3,5,3,6,7], k = 3`)
+		fmt.Println(`Output:`, maxSlidingWindow([]int{1, 3, -1, -3, 5, 3, 6, 7}, 3))
+		fmt.Println(`Input: nums = [1], k = 1`)
+		fmt.Println(`Output:`, maxSlidingWindow([]int{1}, 1))
 	}
 }
 

@@ -5,8 +5,8 @@ import "fmt"
 // Reference: https://leetcode.com/problems/edit-distance/
 func init() {
 	Solutions[72] = func() {
-		fmt.Println("Input: word1 = 'intention', word2 = 'execution'")
-		fmt.Println("Output:", minDistance("intention", "execution"))
+		fmt.Println(`Input: word1 = "intention", word2 = "execution"`)
+		fmt.Println(`Output:`, minDistance(`intention`, `execution`))
 	}
 }
 

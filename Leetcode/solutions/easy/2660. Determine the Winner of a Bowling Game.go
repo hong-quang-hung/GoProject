@@ -5,12 +5,12 @@ import "fmt"
 // Reference: https://leetcode.com/problems/determine-the-winner-of-a-bowling-game/
 func init() {
 	Solutions[2660] = func() {
-		fmt.Println("Input: player1 = [4,10,7,9], player2 = [6,5,2,3]")
-		fmt.Println("Output:", isWinner([]int{4, 10, 7, 9}, []int{6, 5, 2, 3}))
-		fmt.Println("Input: player1 = [5,6,1,10], player2 = [5,1,10,5]")
-		fmt.Println("Output:", isWinner([]int{5, 6, 1, 10}, []int{5, 1, 10, 5}))
-		fmt.Println("Input: player1 = [10,2,2,3], player2 = [3,8,4,5]")
-		fmt.Println("Output:", isWinner([]int{10, 2, 2, 3}, []int{3, 8, 4, 5}))
+		fmt.Println(`Input: player1 = [4,10,7,9], player2 = [6,5,2,3]`)
+		fmt.Println(`Output:`, isWinner([]int{4, 10, 7, 9}, []int{6, 5, 2, 3}))
+		fmt.Println(`Input: player1 = [5,6,1,10], player2 = [5,1,10,5]`)
+		fmt.Println(`Output:`, isWinner([]int{5, 6, 1, 10}, []int{5, 1, 10, 5}))
+		fmt.Println(`Input: player1 = [10,2,2,3], player2 = [3,8,4,5]`)
+		fmt.Println(`Output:`, isWinner([]int{10, 2, 2, 3}, []int{3, 8, 4, 5}))
 	}
 }
 

@@ -5,10 +5,10 @@ import "fmt"
 // Reference: https://leetcode.com/problems/row-with-maximum-ones/
 func init() {
 	Solutions[2643] = func() {
-		fmt.Println("Input: mat = [[0,0,0],[0,1,1]]")
-		fmt.Println("Output:", rowAndMaximumOnes(S2SoSliceInt("[[0,0,0],[0,1,1]]")))
-		fmt.Println("Input: mat = [[0,0],[1,1],[0,0]]")
-		fmt.Println("Output:", rowAndMaximumOnes(S2SoSliceInt("[[0,0],[1,1],[0,0]]")))
+		fmt.Println(`Input: mat = [[0,0,0],[0,1,1]]`)
+		fmt.Println(`Output:`, rowAndMaximumOnes(S2SoSliceInt(`[[0,0,0],[0,1,1]]`)))
+		fmt.Println(`Input: mat = [[0,0],[1,1],[0,0]]`)
+		fmt.Println(`Output:`, rowAndMaximumOnes(S2SoSliceInt(`[[0,0],[1,1],[0,0]]`)))
 	}
 }
 

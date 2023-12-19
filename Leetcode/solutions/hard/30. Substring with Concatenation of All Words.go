@@ -4,15 +4,15 @@ import (
 	"fmt"
 )
 
-// Reference: https://leetcode.com/problems/number-of-1-bits/
+// Reference: https://leetcode.com/problems/substring-with-concatenation-of-all-words/
 func init() {
 	Solutions[30] = func() {
-		fmt.Println("n = s = 'barfoothefoobarman', words = ['foo','bar']")
-		fmt.Println("Output:", findSubstring("barfoothefoobarman", []string{"foo", "bar"}))
-		fmt.Println("n = s = 'wordgoodgoodgoodbestword', words = ['word','good','best','word']")
-		fmt.Println("Output:", findSubstring("wordgoodgoodgoodbestword", []string{"word", "good", "best", "word"}))
-		fmt.Println("n = s = 'barfoofoobarthefoobarman', words = ['bar','foo','the']")
-		fmt.Println("Output:", findSubstring("barfoofoobarthefoobarman", []string{"bar", "foo", "the"}))
+		fmt.Println(`Input: s = "barfoothefoobarman", words = ["foo","bar"]`)
+		fmt.Println(`Output:`, findSubstring(`barfoothefoobarman`, []string{`foo`, `bar`}))
+		fmt.Println(`Input: s = "wordgoodgoodgoodbestword", words = ["word","good","best","word"]`)
+		fmt.Println(`Output:`, findSubstring(`wordgoodgoodgoodbestword`, []string{`word`, `good`, `best`, `word`}))
+		fmt.Println(`Input: s = "barfoofoobarthefoobarman", words = ["bar","foo","the"]`)
+		fmt.Println(`Output:`, findSubstring(`barfoofoobarthefoobarman`, []string{`bar`, `foo`, `the`}))
 	}
 }
 

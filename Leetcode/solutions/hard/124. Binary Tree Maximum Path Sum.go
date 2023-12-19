@@ -8,10 +8,10 @@ import (
 // Reference: https://leetcode.com/problems/binary-tree-maximum-path-sum/
 func init() {
 	Solutions[124] = func() {
-		fmt.Println("Input: root = [1,2,3]")
-		fmt.Println("Output:", maxPathSum(S2TreeNode("[1,2,3]")))
-		fmt.Println("Input: root = [-10,9,20,null,null,15,7]")
-		fmt.Println("Output:", maxPathSum(S2TreeNode("[-10,9,20,null,null,15,7]")))
+		fmt.Println(`Input: root = [1,2,3]`)
+		fmt.Println(`Output:`, maxPathSum(S2TreeNode(`[1,2,3]`)))
+		fmt.Println(`Input: root = [-10,9,20,null,null,15,7]`)
+		fmt.Println(`Output:`, maxPathSum(S2TreeNode(`[-10,9,20,null,null,15,7]`)))
 	}
 }
 

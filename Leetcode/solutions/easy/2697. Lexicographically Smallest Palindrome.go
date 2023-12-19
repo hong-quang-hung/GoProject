@@ -5,10 +5,10 @@ import "fmt"
 // Reference: https://leetcode.com/problems/lexicographically-smallest-palindrome/
 func init() {
 	Solutions[2697] = func() {
-		fmt.Println("Input: s = 'egcfe'")
-		fmt.Println("Output:", makeSmallestPalindrome("egcfe"))
-		fmt.Println("Input: s = 'abcd'")
-		fmt.Println("Output:", makeSmallestPalindrome("abcd"))
+		fmt.Println(`Input: s = "egcfe"`)
+		fmt.Println(`Output:`, makeSmallestPalindrome(`egcfe`))
+		fmt.Println(`Input: s = "abcd"`)
+		fmt.Println(`Output:`, makeSmallestPalindrome(`abcd`))
 	}
 }
 

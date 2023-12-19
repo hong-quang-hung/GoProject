@@ -8,10 +8,10 @@ import (
 // Reference: https://leetcode.com/problems/buy-two-chocolates/
 func init() {
 	Solutions[2706] = func() {
-		fmt.Println("Input: prices = [1,2,2], money = 3")
-		fmt.Println("Output:", buyChoco([]int{1, 2, 2}, 3))
-		fmt.Println("Input: prices = [3,2,3], money = 3")
-		fmt.Println("Output:", buyChoco([]int{3, 2, 3}, 3))
+		fmt.Println(`Input: prices = [1,2,2], money = 3`)
+		fmt.Println(`Output:`, buyChoco([]int{1, 2, 2}, 3))
+		fmt.Println(`Input: prices = [3,2,3], money = 3`)
+		fmt.Println(`Output:`, buyChoco([]int{3, 2, 3}, 3))
 	}
 }
 

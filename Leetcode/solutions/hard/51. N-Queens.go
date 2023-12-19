@@ -7,10 +7,10 @@ import (
 // Reference: https://leetcode.com/problems/n-queens/
 func init() {
 	Solutions[51] = func() {
-		fmt.Println("Input: n = 4")
-		fmt.Println("Output:", solveNQueens(4))
-		fmt.Println("Input: n = 1")
-		fmt.Println("Output:", solveNQueens(1))
+		fmt.Println(`Input: n = 4`)
+		fmt.Println(`Output:`, solveNQueens(4))
+		fmt.Println(`Input: n = 1`)
+		fmt.Println(`Output:`, solveNQueens(1))
 	}
 }
 

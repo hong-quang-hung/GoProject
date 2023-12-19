@@ -5,12 +5,12 @@ import "fmt"
 // Reference: https://leetcode.com/problems/semi-ordered-permutation/
 func init() {
 	Solutions[2717] = func() {
-		fmt.Println("Input: nums = [2,1,4,3]")
-		fmt.Println("Output:", semiOrderedPermutation([]int{2, 1, 4, 3}))
-		fmt.Println("Input: nums = [2,4,1,3]")
-		fmt.Println("Output:", semiOrderedPermutation([]int{2, 4, 1, 3}))
-		fmt.Println("Input: nums = [1,3,4,2,5]")
-		fmt.Println("Output:", semiOrderedPermutation([]int{1, 3, 4, 2, 5}))
+		fmt.Println(`Input: nums = [2,1,4,3]`)
+		fmt.Println(`Output:`, semiOrderedPermutation([]int{2, 1, 4, 3}))
+		fmt.Println(`Input: nums = [2,4,1,3]`)
+		fmt.Println(`Output:`, semiOrderedPermutation([]int{2, 4, 1, 3}))
+		fmt.Println(`Input: nums = [1,3,4,2,5]`)
+		fmt.Println(`Output:`, semiOrderedPermutation([]int{1, 3, 4, 2, 5}))
 	}
 }
 

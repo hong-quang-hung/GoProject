@@ -5,10 +5,10 @@ import "fmt"
 // Reference: https://leetcode.com/problems/longest-valid-parentheses/
 func init() {
 	Solutions[32] = func() {
-		fmt.Println("Input: s = '(()'")
-		fmt.Println("Output:", longestValidParentheses("(()"))
-		fmt.Println("Input: s = ')()())'")
-		fmt.Println("Output:", longestValidParentheses(")()())"))
+		fmt.Println(`Input: s = "(()"`)
+		fmt.Println(`Output:`, longestValidParentheses(`(()`))
+		fmt.Println(`Input: s = ")()())"`)
+		fmt.Println(`Output:`, longestValidParentheses(`)()())`))
 	}
 }
 

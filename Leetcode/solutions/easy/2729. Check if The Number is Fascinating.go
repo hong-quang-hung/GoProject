@@ -5,12 +5,12 @@ import "fmt"
 // Reference: https://leetcode.com/problems/check-if-the-number-is-fascinating/
 func init() {
 	Solutions[2729] = func() {
-		fmt.Println("Input: n = 192")
-		fmt.Println("Output:", isFascinating(192))
-		fmt.Println("Input: n = 783")
-		fmt.Println("Output:", isFascinating(783))
-		fmt.Println("Input: n = 267")
-		fmt.Println("Output:", isFascinating(267))
+		fmt.Println(`Input: n = 192`)
+		fmt.Println(`Output:`, isFascinating(192))
+		fmt.Println(`Input: n = 783`)
+		fmt.Println(`Output:`, isFascinating(783))
+		fmt.Println(`Input: n = 267`)
+		fmt.Println(`Output:`, isFascinating(267))
 	}
 }
 

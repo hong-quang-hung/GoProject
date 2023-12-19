@@ -8,10 +8,10 @@ import (
 // Reference: https://leetcode.com/problems/find-the-losers-of-the-circular-game/
 func init() {
 	Solutions[2682] = func() {
-		fmt.Println("Input: n = 5, k = 2")
-		fmt.Println("Output:", circularGameLosers(5, 2))
-		fmt.Println("Input: n = 4, k = 4")
-		fmt.Println("Output:", circularGameLosers(4, 4))
+		fmt.Println(`Input: n = 5, k = 2`)
+		fmt.Println(`Output:`, circularGameLosers(5, 2))
+		fmt.Println(`Input: n = 4, k = 4`)
+		fmt.Println(`Output:`, circularGameLosers(4, 4))
 	}
 }
 

@@ -5,10 +5,10 @@ import "fmt"
 // Reference: https://leetcode.com/problems/merge-k-sorted-lists/
 func init() {
 	Solutions[23] = func() {
-		fmt.Println("Input: lists = [[1,4,5],[1,3,4],[2,6]]")
-		fmt.Println("Output:", mergeKLists([]*ListNode{S2ListNode("[1,4,5]"), S2ListNode("[1,3,4]"), S2ListNode("[2,6]")}))
-		fmt.Println("Input: lists = [[]]")
-		fmt.Println("Output:", mergeKLists([]*ListNode{S2ListNode("[]")}))
+		fmt.Println(`Input: lists = [[1,4,5],[1,3,4],[2,6]]`)
+		fmt.Println(`Output:`, mergeKLists([]*ListNode{S2ListNode(`[1,4,5]`), S2ListNode(`[1,3,4]`), S2ListNode(`[2,6]`)}))
+		fmt.Println(`Input: lists = [[]]`)
+		fmt.Println(`Output:`, mergeKLists([]*ListNode{S2ListNode(`[]`)}))
 	}
 }
 

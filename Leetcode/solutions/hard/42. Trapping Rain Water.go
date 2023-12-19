@@ -5,12 +5,12 @@ import "fmt"
 // Reference: https://leetcode.com/problems/trapping-rain-water/
 func init() {
 	Solutions[42] = func() {
-		fmt.Println("Input: height = [0,1,0,2,1,0,1,3,2,1,2,1]")
-		fmt.Println("Output:", trap([]int{0, 1, 0, 2, 1, 0, 1, 3, 2, 1, 2, 1}))
-		fmt.Println("Input: height = [4,2,0,3,2,5]")
-		fmt.Println("Output:", trap([]int{4, 2, 0, 3, 2, 5}))
-		fmt.Println("Input: height = [4,2,3]")
-		fmt.Println("Output:", trap([]int{4, 2, 3}))
+		fmt.Println(`Input: height = [0,1,0,2,1,0,1,3,2,1,2,1]`)
+		fmt.Println(`Output:`, trap([]int{0, 1, 0, 2, 1, 0, 1, 3, 2, 1, 2, 1}))
+		fmt.Println(`Input: height = [4,2,0,3,2,5]`)
+		fmt.Println(`Output:`, trap([]int{4, 2, 0, 3, 2, 5}))
+		fmt.Println(`Input: height = [4,2,3]`)
+		fmt.Println(`Output:`, trap([]int{4, 2, 3}))
 	}
 }
 

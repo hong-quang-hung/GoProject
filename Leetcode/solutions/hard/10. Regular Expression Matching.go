@@ -5,12 +5,10 @@ import "fmt"
 // Reference: https://leetcode.com/problems/regular-expression-matching/
 func init() {
 	Solutions[10] = func() {
-		fmt.Println("Input: s = 'aa', p = 'a'")
-		fmt.Println("Output:", isMatch("aa", "a"))
-		fmt.Println("Input: s = 'aa', p = 'a*'")
-		fmt.Println("Output:", isMatch("aa", "a*"))
-		fmt.Println("Input: s = 'ab', p = '.*'")
-		fmt.Println("Output:", isMatch("ab", ".*"))
+		fmt.Println(`Input: s = "aa", p = "a"`)
+		fmt.Println(`Output:`, isMatch(`aa`, `a`))
+		fmt.Println(`Input: s = "aa", p = "a*"`)
+		fmt.Println(`Output:`, isMatch(`aa`, `a*`))
 	}
 }
 

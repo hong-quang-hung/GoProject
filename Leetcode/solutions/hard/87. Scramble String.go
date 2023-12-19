@@ -5,10 +5,10 @@ import "fmt"
 // Reference: https://leetcode.com/problems/scramble-string/
 func init() {
 	Solutions[87] = func() {
-		fmt.Println("Input: s1 = 'great', s2 = 'rgeat'")
-		fmt.Println("Output:", isScramble("great", "rgeat"))
-		fmt.Println("Input: s1 = 'abcde', s2 = 'caebd'")
-		fmt.Println("Output:", isScramble("abcde", "caebd"))
+		fmt.Println(`Input: s1 = "great", s2 = "rgeat"`)
+		fmt.Println(`Output:`, isScramble(`great`, `rgeat`))
+		fmt.Println(`Input: s1 = "abcde", s2 = "caebd"`)
+		fmt.Println(`Output:`, isScramble(`abcde`, `caebd`))
 	}
 }
 
