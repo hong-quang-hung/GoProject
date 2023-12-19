@@ -8,12 +8,12 @@ import (
 // Reference: https://leetcode.com/problems/repeated-substring-pattern/
 func init() {
 	Solutions[459] = func() {
-		fmt.Println("Input: s = 'abab'")
-		fmt.Println("Output:", repeatedSubstringPattern("abab"))
-		fmt.Println("Input: s = 'aba'")
-		fmt.Println("Output:", repeatedSubstringPattern("aba"))
-		fmt.Println("Input: s = 'abcabcabcabc'")
-		fmt.Println("Output:", repeatedSubstringPattern("abcabcabcabc"))
+		fmt.Println(`Input: s = "abab"`)
+		fmt.Println(`Output:`, repeatedSubstringPattern(`abab`))
+		fmt.Println(`Input: s = "aba"`)
+		fmt.Println(`Output:`, repeatedSubstringPattern(`aba`))
+		fmt.Println(`Input: s = "abcabcabcabc"`)
+		fmt.Println(`Output:`, repeatedSubstringPattern(`abcabcabcabc`))
 	}
 }
 

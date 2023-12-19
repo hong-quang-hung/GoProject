@@ -5,23 +5,23 @@ import "fmt"
 // Reference: https://leetcode.com/problems/design-hashmap/
 func init() {
 	Solutions[706] = func() {
-		fmt.Println("Input:")
-		fmt.Println("['MyHashMap', 'put', 'put', 'get', 'get', 'put', 'get', 'remove', 'get']")
-		fmt.Println("[[], [1, 1], [2, 2], [1], [3], [2, 1], [2], [2], [2]]")
-		fmt.Println("Output:")
+		fmt.Println(`Input:`)
+		fmt.Println(`["MyHashMap", "put", "put", "get", "get", "put", "get", "remove", "get"]`)
+		fmt.Println(`[[], [1, 1], [2, 2], [1], [3], [2, 1], [2], [2], [2]]`)
+		fmt.Println(`Output:`)
 		myHashMap := MyHashMapConstructor()
-		fmt.Println("myHashMap.put(1, 1)")
+		fmt.Println(`myHashMap.put(1, 1)`)
 		myHashMap.Put(1, 1)
-		fmt.Println("myHashMap.put(2, 2)")
+		fmt.Println(`myHashMap.put(2, 2)`)
 		myHashMap.Put(2, 2)
-		fmt.Println("myHashMap.get(1)", "// return", myHashMap.Get(1))
-		fmt.Println("myHashMap.get(3)", "// return", myHashMap.Get(3))
-		fmt.Println("myHashMap.put(2, 1)")
+		fmt.Println(`myHashMap.get(1)`, `// return`, myHashMap.Get(1))
+		fmt.Println(`myHashMap.get(3)`, `// return`, myHashMap.Get(3))
+		fmt.Println(`myHashMap.put(2, 1)`)
 		myHashMap.Put(2, 1)
-		fmt.Println("myHashMap.get(2)", "// return", myHashMap.Get(2))
-		fmt.Println("myHashMap.remove(2)")
+		fmt.Println(`myHashMap.get(2)`, `// return`, myHashMap.Get(2))
+		fmt.Println(`myHashMap.remove(2)`)
 		myHashMap.Remove(2)
-		fmt.Println("myHashMap.get(2)", "// return", myHashMap.Get(2))
+		fmt.Println(`myHashMap.get(2)`, `// return`, myHashMap.Get(2))
 	}
 }
 

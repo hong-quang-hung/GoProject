@@ -5,10 +5,10 @@ import "fmt"
 // Reference: https://leetcode.com/problems/diameter-of-binary-tree/
 func init() {
 	Solutions[543] = func() {
-		fmt.Println("Input: root = [1,2,3,4,5]")
-		fmt.Println("Output:", diameterOfBinaryTree(S2TreeNode("[1,2,3,4,5]")))
-		fmt.Println("Input: root = [1,2]")
-		fmt.Println("Output:", diameterOfBinaryTree(S2TreeNode("[1,2]")))
+		fmt.Println(`Input: root = [1,2,3,4,5]`)
+		fmt.Println(`Output:`, diameterOfBinaryTree(S2TreeNode(`[1,2,3,4,5]`)))
+		fmt.Println(`Input: root = [1,2]`)
+		fmt.Println(`Output:`, diameterOfBinaryTree(S2TreeNode(`[1,2]`)))
 	}
 }
 

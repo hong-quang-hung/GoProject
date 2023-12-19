@@ -5,10 +5,10 @@ import "fmt"
 // Reference: https://leetcode.com/problems/search-in-a-binary-search-tree/
 func init() {
 	Solutions[700] = func() {
-		fmt.Println("Input: root = [4,2,7,1,3], val = 2")
-		fmt.Println("Output:", STreeNode(searchBST(S2TreeNode("[4,2,7,1,3]"), 2)))
-		fmt.Println("Input: root = [4,2,7,1,3], val = 5")
-		fmt.Println("Output:", STreeNode(searchBST(S2TreeNode("[4,2,7,1,3]"), 5)))
+		fmt.Println(`Input: root = [4,2,7,1,3], val = 2`)
+		fmt.Println(`Output:`, STreeNode(searchBST(S2TreeNode(`[4,2,7,1,3]`), 2)))
+		fmt.Println(`Input: root = [4,2,7,1,3], val = 5`)
+		fmt.Println(`Output:`, STreeNode(searchBST(S2TreeNode(`[4,2,7,1,3]`), 5)))
 	}
 }
 

@@ -5,12 +5,10 @@ import "fmt"
 // Reference: https://leetcode.com/problems/is-subsequence/
 func init() {
 	Solutions[392] = func() {
-		fmt.Println("Input: s = 'abc', t = 'ahbgdc'")
-		fmt.Println("Output:", isSubsequence("abc", "ahbgdc"))
-		fmt.Println("Input: s = 'axc', t = 'ahbgdc'")
-		fmt.Println("Output:", isSubsequence("axc", "ahbgdc"))
-		fmt.Println("Input: s = 'acb', t = 'ahbgdc'")
-		fmt.Println("Output:", isSubsequence("acb", "ahbgdc"))
+		fmt.Println(`Input: s = "abc", t = "ahbgdc"`)
+		fmt.Println(`Output:`, isSubsequence(`abc`, `ahbgdc`))
+		fmt.Println(`Input: s = "axc", t = "ahbgdc"`)
+		fmt.Println(`Output:`, isSubsequence(`axc`, `ahbgdc`))
 	}
 }
 

@@ -5,8 +5,8 @@ import "fmt"
 // Reference: https://leetcode.com/problems/binary-search/
 func init() {
 	Solutions[704] = func() {
-		fmt.Println("Input: nums = [-1,0,3,5,9,12], target = 9")
-		fmt.Println("Output:", search([]int{-1, 0, 3, 5, 9, 12}, 9))
+		fmt.Println(`Input: nums = [-1,0,3,5,9,12], target = 9`)
+		fmt.Println(`Output:`, search([]int{-1, 0, 3, 5, 9, 12}, 9))
 	}
 }
 

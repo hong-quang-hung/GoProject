@@ -5,8 +5,8 @@ import "fmt"
 // Reference: https://leetcode.com/problems/can-place-flowers/
 func init() {
 	Solutions[605] = func() {
-		fmt.Println("Input: flowerbed = [1,0,0,0,1], n = 1")
-		fmt.Println("Output:", canPlaceFlowers([]int{1, 0, 0, 0, 1}, 1))
+		fmt.Println(`Input: flowerbed = [1,0,0,0,1], n = 1`)
+		fmt.Println(`Output:`, canPlaceFlowers([]int{1, 0, 0, 0, 1}, 1))
 	}
 }
 

@@ -8,8 +8,8 @@ import (
 // Reference: https://leetcode.com/problems/minimum-distance-between-bst-nodes
 func init() {
 	Solutions[783] = func() {
-		fmt.Println("Input: root = [4,2,6,1,3]")
-		fmt.Println("Output:", minDiffInBST(S2TreeNode("[4,2,6,1,3]")))
+		fmt.Println(`Input: root = [4,2,6,1,3]`)
+		fmt.Println(`Output:`, minDiffInBST(S2TreeNode(`[4,2,6,1,3]`)))
 	}
 }
 

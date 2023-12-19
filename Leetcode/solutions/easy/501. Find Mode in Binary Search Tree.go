@@ -5,10 +5,10 @@ import "fmt"
 // Reference: https://leetcode.com/problems/find-mode-in-binary-search-tree/
 func init() {
 	Solutions[501] = func() {
-		fmt.Println("Input: root = [1,null,2,2]")
-		fmt.Println("Output:", findMode(S2TreeNode("[1,null,2,2]")))
-		fmt.Println("Input: root = [0]")
-		fmt.Println("Output:", findMode(S2TreeNode("[0]")))
+		fmt.Println(`Input: root = [1,null,2,2]`)
+		fmt.Println(`Output:`, findMode(S2TreeNode(`[1,null,2,2]`)))
+		fmt.Println(`Input: root = [0]`)
+		fmt.Println(`Output:`, findMode(S2TreeNode(`[0]`)))
 	}
 }
 

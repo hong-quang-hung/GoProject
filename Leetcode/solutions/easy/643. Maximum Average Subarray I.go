@@ -5,10 +5,10 @@ import "fmt"
 // Reference: https://leetcode.com/problems/maximum-average-subarray-i/
 func init() {
 	Solutions[643] = func() {
-		fmt.Println("Input: nums = [1,12,-5,-6,50,3], k = 4")
-		fmt.Println("Output:", findMaxAverage([]int{1, 12, -5, -6, 50, 3}, 4))
-		fmt.Println("Input: nums = [5], k = 1")
-		fmt.Println("Output:", findMaxAverage([]int{5}, 1))
+		fmt.Println(`Input: nums = [1,12,-5,-6,50,3], k = 4`)
+		fmt.Println(`Output:`, findMaxAverage([]int{1, 12, -5, -6, 50, 3}, 4))
+		fmt.Println(`Input: nums = [5], k = 1`)
+		fmt.Println(`Output:`, findMaxAverage([]int{5}, 1))
 	}
 }
 

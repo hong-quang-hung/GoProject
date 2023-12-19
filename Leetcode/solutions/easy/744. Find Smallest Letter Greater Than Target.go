@@ -5,15 +5,15 @@ import (
 	"sort"
 )
 
-// Reference: https://leetcode.com/problems/shortest-common-supersequence/
+// Reference: https://leetcode.com/problems/find-smallest-letter-greater-than-target/
 func init() {
 	Solutions[744] = func() {
-		fmt.Println("Input: letters = ['c','f','j'], target = 'a'")
-		fmt.Println("Output:", nextGreatestLetter([]byte{'c', 'f', 'j'}, 'a'))
-		fmt.Println("Input: letters = ['c','f','j'], target = 'c'")
-		fmt.Println("Output:", nextGreatestLetter([]byte{'c', 'f', 'j'}, 'c'))
-		fmt.Println("Input: letters = ['x','x','y','y'], target = 'z'")
-		fmt.Println("Output:", nextGreatestLetter([]byte{'x', 'x', 'y', 'y'}, 'z'))
+		fmt.Println(`Input: letters = ["c","f","j"], target = "a"`)
+		fmt.Println(`Output:`, nextGreatestLetter([]byte{'c', 'f', 'j'}, 'a'))
+		fmt.Println(`Input: letters = ["c","f","j"], target = "c"`)
+		fmt.Println(`Output:`, nextGreatestLetter([]byte{'c', 'f', 'j'}, 'c'))
+		fmt.Println(`Input: letters = ["x","x","y","y"], target = "z"`)
+		fmt.Println(`Output:`, nextGreatestLetter([]byte{'x', 'x', 'y', 'y'}, 'z'))
 	}
 }
 

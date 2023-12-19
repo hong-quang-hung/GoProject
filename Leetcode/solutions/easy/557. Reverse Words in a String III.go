@@ -8,15 +8,15 @@ import (
 // Reference: https://leetcode.com/problems/reverse-words-in-a-string-iii/
 func init() {
 	Solutions[557] = func() {
-		fmt.Println("Input: s = \"Let's take LeetCode contest\"")
-		fmt.Println("Output:", reverseWords("Let's take LeetCode contest"))
-		fmt.Println("Input: s = \"God Ding\"")
-		fmt.Println("Output:", reverseWords("God Ding"))
+		fmt.Println(`Input: s = "Let's take LeetCode contest"`)
+		fmt.Println(`Output:`, reverseWords(`Let's take LeetCode contest`))
+		fmt.Println(`Input: s = "Mr Ding"`)
+		fmt.Println(`Output:`, reverseWords(`God Ding`))
 	}
 }
 
 func reverseWords(s string) string {
-	words := strings.Split(s, " ")
+	words := strings.Split(s, ` `)
 	res := []string{}
 	for _, word := range words {
 		temp := []byte(word)
@@ -27,5 +27,5 @@ func reverseWords(s string) string {
 		}
 		res = append(res, string(temp))
 	}
-	return strings.Join(res, " ")
+	return strings.Join(res, ` `)
 }

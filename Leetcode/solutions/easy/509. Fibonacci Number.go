@@ -5,10 +5,10 @@ import "fmt"
 // Reference: https://leetcode.com/problems/fibonacci-number/
 func init() {
 	Solutions[509] = func() {
-		fmt.Println("Input: n = 2")
-		fmt.Println("Output:", fib(2))
-		fmt.Println("Input: n = 4")
-		fmt.Println("Output:", fib(4))
+		fmt.Println(`Input: n = 2`)
+		fmt.Println(`Output:`, fib(2))
+		fmt.Println(`Input: n = 4`)
+		fmt.Println(`Output:`, fib(4))
 	}
 }
 

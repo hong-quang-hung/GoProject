@@ -5,10 +5,10 @@ import "fmt"
 // Reference: https://leetcode.com/problems/average-of-levels-in-binary-tree/
 func init() {
 	Solutions[637] = func() {
-		fmt.Println("Input: root = [3,9,20,null,null,15,7]")
-		fmt.Println("Output:", averageOfLevels(S2TreeNode("[3,9,20,null,null,15,7]")))
-		fmt.Println("Input: root = [3,9,20,15,7]")
-		fmt.Println("Output:", averageOfLevels(S2TreeNode("[3,9,20,15,7]")))
+		fmt.Println(`Input: root = [3,9,20,null,null,15,7]`)
+		fmt.Println(`Output:`, averageOfLevels(S2TreeNode(`[3,9,20,null,null,15,7]`)))
+		fmt.Println(`Input: root = [3,9,20,15,7]`)
+		fmt.Println(`Output:`, averageOfLevels(S2TreeNode(`[3,9,20,15,7]`)))
 	}
 }
 

@@ -5,10 +5,10 @@ import "fmt"
 // Reference: https://leetcode.com/problems/find-the-difference/
 func init() {
 	Solutions[389] = func() {
-		fmt.Println("Input: s = 'abcd', t = 'abcde'")
-		fmt.Println("Output:", findTheDifference("abcd", "abcde"))
-		fmt.Println("Input: s = '', t = 'y'")
-		fmt.Println("Output:", findTheDifference("", "y"))
+		fmt.Println(`Input: s = "abcd", t = "abcde"`)
+		fmt.Println(`Output:`, findTheDifference(`abcd`, `abcde`))
+		fmt.Println(`Input: s = "", t = "y"`)
+		fmt.Println(`Output:`, findTheDifference(``, `y`))
 	}
 }
 

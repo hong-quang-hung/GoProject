@@ -7,12 +7,12 @@ import (
 // Reference: https://leetcode.com/problems/backspace-string-compare/
 func init() {
 	Solutions[844] = func() {
-		fmt.Println("Input: s = 'ab#c', t = 'ad#c'")
-		fmt.Println("Output:", backspaceCompare("ab#c", "ad#c"))
-		fmt.Println("Input: s = 'ab##', t = 'c#d#'")
-		fmt.Println("Output:", backspaceCompare("ab##", "c#d#"))
-		fmt.Println("Input: s = 'a#c', t = 'b'")
-		fmt.Println("Output:", backspaceCompare("a#c", "b"))
+		fmt.Println(`Input: s = "ab#c", t = "ad#c"`)
+		fmt.Println(`Output:`, backspaceCompare(`ab#c`, `ad#c`))
+		fmt.Println(`Input: s = "ab##", t = "c#d#"`)
+		fmt.Println(`Output:`, backspaceCompare(`ab##`, `c#d#`))
+		fmt.Println(`Input: s = "a#c", t = "b"`)
+		fmt.Println(`Output:`, backspaceCompare(`a#c`, `b`))
 	}
 }
 

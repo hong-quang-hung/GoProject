@@ -8,8 +8,8 @@ import (
 // Reference: https://leetcode.com/problems/binary-watch/
 func init() {
 	Solutions[401] = func() {
-		fmt.Println("Input: turnedOn = 1")
-		fmt.Println("Output:", readBinaryWatch(1))
+		fmt.Println(`Input: turnedOn = 1`)
+		fmt.Println(`Output:`, readBinaryWatch(1))
 	}
 }
 
