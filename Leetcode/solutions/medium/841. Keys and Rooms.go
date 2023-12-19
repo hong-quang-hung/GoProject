@@ -5,10 +5,10 @@ import "fmt"
 // Reference: https://leetcode.com/problems/keys-and-rooms/
 func init() {
 	Solutions[841] = func() {
-		fmt.Println("Input: rooms = [[1],[2],[3],[]]")
-		fmt.Println("Output:", canVisitAllRooms(S2SoSliceInt("[[1],[2],[3],[]]")))
-		fmt.Println("Input: rooms = [[1,3],[3,0,1],[2],[0]]")
-		fmt.Println("Output:", canVisitAllRooms(S2SoSliceInt("[[1,3],[3,0,1],[2],[0]]")))
+		fmt.Println(`Input: rooms = [[1],[2],[3],[]]`)
+		fmt.Println(`Output:`, canVisitAllRooms(S2SoSliceInt(`[[1],[2],[3],[]]`)))
+		fmt.Println(`Input: rooms = [[1,3],[3,0,1],[2],[0]]`)
+		fmt.Println(`Output:`, canVisitAllRooms(S2SoSliceInt(`[[1,3],[3,0,1],[2],[0]]`)))
 	}
 }
 

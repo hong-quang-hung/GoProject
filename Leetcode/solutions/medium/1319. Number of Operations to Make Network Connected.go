@@ -5,8 +5,8 @@ import "fmt"
 // Reference: https://leetcode.com/problems/number-of-operations-to-make-network-connected/
 func init() {
 	Solutions[1319] = func() {
-		fmt.Println("Input: n = 4, connections = [[0,1],[0,2],[1,2]]")
-		fmt.Println("Output:", makeConnected(4, S2SoSliceInt("[[0,1],[0,2],[1,2]]")))
+		fmt.Println(`Input: n = 4, connections = [[0,1],[0,2],[1,2]]`)
+		fmt.Println(`Output:`, makeConnected(4, S2SoSliceInt(`[[0,1],[0,2],[1,2]]`)))
 	}
 }
 

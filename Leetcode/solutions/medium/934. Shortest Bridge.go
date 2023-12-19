@@ -5,11 +5,11 @@ import "fmt"
 // Reference: https://leetcode.com/problems/shortest-bridge/
 func init() {
 	Solutions[934] = func() {
-		fmt.Println("Input: grid = [[0,1],[1,0]]")
-		fmt.Println("Output:", shortestBridge(S2SoSliceInt("[[0,1],[1,0]]")))
-		fmt.Println("Input: grid = [[0,1,0],[0,0,0],[0,0,1]]")
-		fmt.Println("Output:", shortestBridge(S2SoSliceInt("[[0,1,0],[0,0,0],[0,0,1]]")))
-		fmt.Println("Input: grid = [[1,1,1,1,1],[1,0,0,0,1],[1,0,1,0,1],[1,0,0,0,1],[1,1,1,1,1]]")
+		fmt.Println(`Input: grid = [[0,1],[1,0]]`)
+		fmt.Println(`Output:`, shortestBridge(S2SoSliceInt(`[[0,1],[1,0]]`)))
+		fmt.Println(`Input: grid = [[0,1,0],[0,0,0],[0,0,1]]`)
+		fmt.Println(`Output:`, shortestBridge(S2SoSliceInt(`[[0,1,0],[0,0,0],[0,0,1]]`)))
+		fmt.Println(`Input: grid = [[1,1,1,1,1],[1,0,0,0,1],[1,0,1,0,1],[1,0,0,0,1],[1,1,1,1,1]]`)
 	}
 }
 

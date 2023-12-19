@@ -9,12 +9,12 @@ import (
 // Reference: https://leetcode.com/problems/maximum-number-of-events-that-can-be-attended/
 func init() {
 	Solutions[1353] = func() {
-		fmt.Println("Input: events = [[1,2],[2,3],[3,4]]")
-		fmt.Println("Output:", maxEvents(S2SoSliceInt("[[1,2],[2,3],[3,4]]")))
-		fmt.Println("Input: events = [[1,2],[2,3],[3,4],[1,2]]")
-		fmt.Println("Output:", maxEvents(S2SoSliceInt("[[1,2],[2,3],[3,4],[1,2]]")))
-		fmt.Println("Input: events = [[1,4],[4,4],[2,2],[3,4],[1,1]]")
-		fmt.Println("Output:", maxEvents(S2SoSliceInt("[[1,4],[4,4],[2,2],[3,4],[1,1]]")))
+		fmt.Println(`Input: events = [[1,2],[2,3],[3,4]]`)
+		fmt.Println(`Output:`, maxEvents(S2SoSliceInt(`[[1,2],[2,3],[3,4]]`)))
+		fmt.Println(`Input: events = [[1,2],[2,3],[3,4],[1,2]]`)
+		fmt.Println(`Output:`, maxEvents(S2SoSliceInt(`[[1,2],[2,3],[3,4],[1,2]]`)))
+		fmt.Println(`Input: events = [[1,4],[4,4],[2,2],[3,4],[1,1]]`)
+		fmt.Println(`Output:`, maxEvents(S2SoSliceInt(`[[1,4],[4,4],[2,2],[3,4],[1,1]]`)))
 	}
 }
 

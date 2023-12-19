@@ -5,10 +5,10 @@ import "fmt"
 // Reference: https://leetcode.com/problems/delete-operation-for-two-strings/
 func init() {
 	Solutions[583] = func() {
-		fmt.Println("Input: word1 = 'sea', word2 = 'eat'")
-		fmt.Println("Output:", minDistance("sea", "eat"))
-		fmt.Println("Input: word1 = 'leetcode', word2 = 'etco'")
-		fmt.Println("Output:", minDistance("leetcode", "etco"))
+		fmt.Println(`Input: word1 = "sea", word2 = "eat"`)
+		fmt.Println(`Output:`, minDistance(`sea`, `eat`))
+		fmt.Println(`Input: word1 = "leetcode", word2 = "etco"`)
+		fmt.Println(`Output:`, minDistance(`leetcode`, `etco`))
 	}
 }
 

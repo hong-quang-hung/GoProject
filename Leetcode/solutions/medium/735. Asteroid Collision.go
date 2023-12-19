@@ -5,10 +5,10 @@ import "fmt"
 // Reference: https://leetcode.com/problems/asteroid-collision/
 func init() {
 	Solutions[735] = func() {
-		fmt.Println("Input: nums = [5,10,-5]")
-		fmt.Println("Output:", asteroidCollision([]int{5, 10, -5}))
-		fmt.Println("Input: nums = [-2,-1,1,2]")
-		fmt.Println("Output:", asteroidCollision([]int{-2, -1, 1, 2}))
+		fmt.Println(`Input: nums = [5,10,-5]`)
+		fmt.Println(`Output:`, asteroidCollision([]int{5, 10, -5}))
+		fmt.Println(`Input: nums = [-2,-1,1,2]`)
+		fmt.Println(`Output:`, asteroidCollision([]int{-2, -1, 1, 2}))
 	}
 }
 

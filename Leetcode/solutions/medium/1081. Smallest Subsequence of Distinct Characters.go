@@ -5,10 +5,10 @@ import "fmt"
 // Reference: https://leetcode.com/problems/smallest-subsequence-of-distinct-characters/
 func init() {
 	Solutions[1081] = func() {
-		fmt.Println("Input: s = 'bcabc'")
-		fmt.Println("Output:", smallestSubsequence("bcabc"))
-		fmt.Println("Input: s = 'cbacdcbc'")
-		fmt.Println("Output:", smallestSubsequence("cbacdcbc"))
+		fmt.Println(`Input: s = "bcabc"`)
+		fmt.Println(`Output:`, smallestSubsequence(`bcabc`))
+		fmt.Println(`Input: s = "cbacdcbc"`)
+		fmt.Println(`Output:`, smallestSubsequence(`cbacdcbc`))
 	}
 }
 

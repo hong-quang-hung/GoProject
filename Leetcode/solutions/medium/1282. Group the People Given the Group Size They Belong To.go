@@ -5,10 +5,10 @@ import "fmt"
 // Reference: https://leetcode.com/problems/group-the-people-given-the-group-size-they-belong-to/
 func init() {
 	Solutions[1282] = func() {
-		fmt.Println("Input: groupSizes = [3,3,3,3,3,1,3]")
-		fmt.Println("Output:", groupThePeople([]int{3, 3, 3, 3, 3, 1, 3}))
-		fmt.Println("Input: groupSizes = [2,1,3,3,3,2]")
-		fmt.Println("Output:", groupThePeople([]int{2, 1, 3, 3, 3, 2}))
+		fmt.Println(`Input: groupSizes = [3,3,3,3,3,1,3]`)
+		fmt.Println(`Output:`, groupThePeople([]int{3, 3, 3, 3, 3, 1, 3}))
+		fmt.Println(`Input: groupSizes = [2,1,3,3,3,2]`)
+		fmt.Println(`Output:`, groupThePeople([]int{2, 1, 3, 3, 3, 2}))
 	}
 }
 

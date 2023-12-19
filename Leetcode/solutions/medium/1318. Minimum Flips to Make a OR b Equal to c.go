@@ -8,12 +8,12 @@ import (
 // Reference: https://leetcode.com/problems/minimum-flips-to-make-a-or-b-equal-to-c/
 func init() {
 	Solutions[1318] = func() {
-		fmt.Println("Input: a = 2, b = 6, c = 5")
-		fmt.Println("Output:", minFlips(2, 6, 5))
-		fmt.Println("Input: a = 4, b = 2, c = 7")
-		fmt.Println("Output:", minFlips(4, 2, 7))
-		fmt.Println("Input: a = 1, b = 2, c = 3")
-		fmt.Println("Output:", minFlips(1, 2, 3))
+		fmt.Println(`Input: a = 2, b = 6, c = 5`)
+		fmt.Println(`Output:`, minFlips(2, 6, 5))
+		fmt.Println(`Input: a = 4, b = 2, c = 7`)
+		fmt.Println(`Output:`, minFlips(4, 2, 7))
+		fmt.Println(`Input: a = 1, b = 2, c = 3`)
+		fmt.Println(`Output:`, minFlips(1, 2, 3))
 	}
 }
 

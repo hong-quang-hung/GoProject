@@ -5,12 +5,12 @@ import "fmt"
 // Reference: https://leetcode.com/problems/longest-arithmetic-subsequence-of-given-difference/
 func init() {
 	Solutions[1218] = func() {
-		fmt.Println("Input: arr = [1,2,3,4], difference = 1")
-		fmt.Println("Output:", longestSubsequence([]int{1, 2, 3, 4}, 1))
-		fmt.Println("Input: arr = [1,3,5,7], difference = 1")
-		fmt.Println("Output:", longestSubsequence([]int{1, 3, 5, 7}, 1))
-		fmt.Println("Input: arr = [1,5,7,8,5,3,4,2,1], difference = -2")
-		fmt.Println("Output:", longestSubsequence([]int{1, 5, 7, 8, 5, 3, 4, 2, 1}, 2))
+		fmt.Println(`Input: arr = [1,2,3,4], difference = 1`)
+		fmt.Println(`Output:`, longestSubsequence([]int{1, 2, 3, 4}, 1))
+		fmt.Println(`Input: arr = [1,3,5,7], difference = 1`)
+		fmt.Println(`Output:`, longestSubsequence([]int{1, 3, 5, 7}, 1))
+		fmt.Println(`Input: arr = [1,5,7,8,5,3,4,2,1], difference = -2`)
+		fmt.Println(`Output:`, longestSubsequence([]int{1, 5, 7, 8, 5, 3, 4, 2, 1}, 2))
 	}
 }
 

@@ -8,10 +8,10 @@ import (
 // Reference: https://leetcode.com/problems/soup-servings/
 func init() {
 	Solutions[808] = func() {
-		fmt.Println("Input: n = 50")
-		fmt.Println("Output:", soupServings(50))
-		fmt.Println("Input: n = 100")
-		fmt.Println("Output:", soupServings(100))
+		fmt.Println(`Input: n = 50`)
+		fmt.Println(`Output:`, soupServings(50))
+		fmt.Println(`Input: n = 100`)
+		fmt.Println(`Output:`, soupServings(100))
 	}
 }
 

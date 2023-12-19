@@ -8,8 +8,8 @@ import (
 // Reference: https://leetcode.com/problems/shortest-path-with-alternating-colors/
 func init() {
 	Solutions[1129] = func() {
-		fmt.Println("Input: n = 3, redEdges = [[0,1]], blueEdges = [[2,1]]")
-		fmt.Println("Output:", shortestAlternatingPaths(3, [][]int{{0, 1}}, [][]int{{2, 1}}))
+		fmt.Println(`Input: n = 3, redEdges = [[0,1]], blueEdges = [[2,1]]`)
+		fmt.Println(`Output:`, shortestAlternatingPaths(3, [][]int{{0, 1}}, [][]int{{2, 1}}))
 	}
 }
 

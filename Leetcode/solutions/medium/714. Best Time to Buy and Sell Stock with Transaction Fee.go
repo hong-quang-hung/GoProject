@@ -5,10 +5,10 @@ import "fmt"
 // Reference: https://leetcode.com/problems/best-time-to-buy-and-sell-stock-with-transaction-fee/
 func init() {
 	Solutions[714] = func() {
-		fmt.Println("Input: prices = [1,3,2,8,4,9], fee = 2")
-		fmt.Println("Output:", maxProfit3([]int{1, 3, 2, 8, 4, 9}, 2))
-		fmt.Println("Input: prices = [1,3,7,5,10,3], fee = 3")
-		fmt.Println("Output:", maxProfit3([]int{1, 3, 7, 5, 10, 3}, 3))
+		fmt.Println(`Input: prices = [1,3,2,8,4,9], fee = 2`)
+		fmt.Println(`Output:`, maxProfit3([]int{1, 3, 2, 8, 4, 9}, 2))
+		fmt.Println(`Input: prices = [1,3,7,5,10,3], fee = 3`)
+		fmt.Println(`Output:`, maxProfit3([]int{1, 3, 7, 5, 10, 3}, 3))
 	}
 }
 

@@ -5,10 +5,10 @@ import "fmt"
 // Reference: https://leetcode.com/problems/minimum-ascii-delete-sum-for-two-strings/
 func init() {
 	Solutions[712] = func() {
-		fmt.Println("Input: s1 = 'sea', s2 = 'eat'")
-		fmt.Println("Output:", minimumDeleteSum("sea", "eat"))
-		fmt.Println("Input: s1 = 'delete', s2 = 'leet'")
-		fmt.Println("Output:", minimumDeleteSum("delete", "leet"))
+		fmt.Println(`Input: s1 = "sea", s2 = "eat"`)
+		fmt.Println(`Output:`, minimumDeleteSum(`sea`, `eat`))
+		fmt.Println(`Input: s1 = "delete", s2 = "leet"`)
+		fmt.Println(`Output:`, minimumDeleteSum(`delete`, `leet`))
 	}
 }
 

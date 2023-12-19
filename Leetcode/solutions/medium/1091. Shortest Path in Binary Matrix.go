@@ -5,12 +5,10 @@ import "fmt"
 // Reference: https://leetcode.com/problems/shortest-path-in-binary-matrix/
 func init() {
 	Solutions[1091] = func() {
-		fmt.Println("Input: grid = [[0,1],[1,0]]")
-		fmt.Println("Output:", shortestPathBinaryMatrix(S2SoSliceInt("[[0,1],[1,0]]")))
-		fmt.Println("Input: grid = [[0,0,0],[1,1,0],[1,1,0]]")
-		fmt.Println("Output:", shortestPathBinaryMatrix(S2SoSliceInt("[[0,0,0],[1,1,0],[1,1,0]]")))
-		fmt.Println("Input: grid = [[1,0,0],[1,1,0],[1,1,0]]")
-		fmt.Println("Output:", shortestPathBinaryMatrix(S2SoSliceInt("[[1,0,0],[1,1,0],[1,1,0]]")))
+		fmt.Println(`Input: grid = [[0,0,0],[1,1,0],[1,1,0]]`)
+		fmt.Println(`Output:`, shortestPathBinaryMatrix(S2SoSliceInt(`[[0,0,0],[1,1,0],[1,1,0]]`)))
+		fmt.Println(`Input: grid = [[1,0,0],[1,1,0],[1,1,0]]`)
+		fmt.Println(`Output:`, shortestPathBinaryMatrix(S2SoSliceInt(`[[1,0,0],[1,1,0],[1,1,0]]`)))
 	}
 }
 

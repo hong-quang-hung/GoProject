@@ -5,10 +5,10 @@ import "fmt"
 // Reference: https://leetcode.com/problems/longest-zigzag-path-in-a-binary-tree/
 func init() {
 	Solutions[1372] = func() {
-		fmt.Println("Input: root = [1,null,1,1,1,null,null,1,1,null,1,null,null,null,1,null,1]")
-		fmt.Println("Output:", longestZigZag(S2TreeNode("[1,null,1,1,1,null,null,1,1,null,1,null,null,null,1,null,1]")))
-		fmt.Println("Input: root = [1,1,1,null,1,null,null,1,1,null,1]")
-		fmt.Println("Output:", longestZigZag(S2TreeNode("[1,1,1,null,1,null,null,1,1,null,1]")))
+		fmt.Println(`Input: root = [1,null,1,1,1,null,null,1,1,null,1,null,null,null,1,null,1]`)
+		fmt.Println(`Output:`, longestZigZag(S2TreeNode(`[1,null,1,1,1,null,null,1,1,null,1,null,null,null,1,null,1]`)))
+		fmt.Println(`Input: root = [1,1,1,null,1,null,null,1,1,null,1]`)
+		fmt.Println(`Output:`, longestZigZag(S2TreeNode(`[1,1,1,null,1,null,null,1,1,null,1]`)))
 	}
 }
 

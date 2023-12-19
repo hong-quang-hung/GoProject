@@ -8,10 +8,10 @@ import (
 // Reference: https://leetcode.com/problems/diagonal-traverse-ii/
 func init() {
 	Solutions[1424] = func() {
-		fmt.Println("Input: nums = [[1,2,3],[4,5,6],[7,8,9]]")
-		fmt.Println("Output:", findDiagonalOrder(S2SoSliceInt("[[1,2,3],[4,5,6],[7,8,9]]")))
-		fmt.Println("Input: nums = [[1,2,3,4,5],[6,7],[8],[9,10,11],[12,13,14,15,16]]")
-		fmt.Println("Output:", findDiagonalOrder(S2SoSliceInt("[[1,2,3,4,5],[6,7],[8],[9,10,11],[12,13,14,15,16]]")))
+		fmt.Println(`Input: nums = [[1,2,3],[4,5,6],[7,8,9]]`)
+		fmt.Println(`Output:`, findDiagonalOrder(S2SoSliceInt(`[[1,2,3],[4,5,6],[7,8,9]]`)))
+		fmt.Println(`Input: nums = [[1,2,3,4,5],[6,7],[8],[9,10,11],[12,13,14,15,16]]`)
+		fmt.Println(`Output:`, findDiagonalOrder(S2SoSliceInt(`[[1,2,3,4,5],[6,7],[8],[9,10,11],[12,13,14,15,16]]`)))
 	}
 }
 

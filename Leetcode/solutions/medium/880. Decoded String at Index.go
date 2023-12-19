@@ -5,10 +5,10 @@ import "fmt"
 // Reference: https://leetcode.com/problems/decoded-string-at-index/
 func init() {
 	Solutions[880] = func() {
-		fmt.Println("Input: s = 'leet2code3', k = 10")
-		fmt.Println("Output:", decodeAtIndex("leet2code3", 10))
-		fmt.Println("Input: s = 'a2345678999999999999999', k = 1")
-		fmt.Println("Output:", decodeAtIndex("a2345678999999999999999", 1))
+		fmt.Println(`Input: s = "leet2code3", k = 10`)
+		fmt.Println(`Output:`, decodeAtIndex(`leet2code3`, 10))
+		fmt.Println(`Input: s = "a2345678999999999999999", k = 1`)
+		fmt.Println(`Output:`, decodeAtIndex(`a2345678999999999999999`, 1))
 	}
 }
 
@@ -35,5 +35,5 @@ func decodeAtIndex(s string, k int) string {
 			l--
 		}
 	}
-	return ""
+	return ``
 }

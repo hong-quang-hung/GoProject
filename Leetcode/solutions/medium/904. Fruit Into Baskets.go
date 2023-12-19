@@ -5,12 +5,12 @@ import "fmt"
 // Reference: https://leetcode.com/problems/fruit-into-baskets/
 func init() {
 	Solutions[904] = func() {
-		fmt.Println("Input: fruits = [1,2,1]")
-		fmt.Println("Output:", totalFruit([]int{1, 2, 1}))
-		fmt.Println("Input: fruits = [0,1,2,2]")
-		fmt.Println("Output:", totalFruit([]int{0, 1, 2, 2}))
-		fmt.Println("Input: fruits = [1,2,3,2,2]")
-		fmt.Println("Output:", totalFruit([]int{1, 2, 3, 2, 2}))
+		fmt.Println(`Input: fruits = [1,2,1]`)
+		fmt.Println(`Output:`, totalFruit([]int{1, 2, 1}))
+		fmt.Println(`Input: fruits = [0,1,2,2]`)
+		fmt.Println(`Output:`, totalFruit([]int{0, 1, 2, 2}))
+		fmt.Println(`Input: fruits = [1,2,3,2,2]`)
+		fmt.Println(`Output:`, totalFruit([]int{1, 2, 3, 2, 2}))
 	}
 }
 

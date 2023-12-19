@@ -5,10 +5,10 @@ import "fmt"
 // Reference: https://leetcode.com/problems/stone-game-ii/
 func init() {
 	Solutions[1140] = func() {
-		fmt.Println("Input: piles = [2,7,9,4,4]")
-		fmt.Println("Output:", stoneGameII([]int{2, 7, 9, 4, 4}))
-		fmt.Println("Input: piles = [1,2,3,4,5,100]")
-		fmt.Println("Output:", stoneGameII([]int{1, 2, 3, 4, 5, 100}))
+		fmt.Println(`Input: piles = [2,7,9,4,4]`)
+		fmt.Println(`Output:`, stoneGameII([]int{2, 7, 9, 4, 4}))
+		fmt.Println(`Input: piles = [1,2,3,4,5,100]`)
+		fmt.Println(`Output:`, stoneGameII([]int{1, 2, 3, 4, 5, 100}))
 	}
 }
 

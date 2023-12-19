@@ -5,10 +5,10 @@ import "fmt"
 // Reference: https://leetcode.com/problems/maximize-distance-to-closest-person/
 func init() {
 	Solutions[849] = func() {
-		fmt.Println("Input: seats = [1,0,0,0,1,0,1]")
-		fmt.Println("Output:", maxDistToClosest([]int{1, 0, 0, 0, 1, 0, 1}))
-		fmt.Println("Input: seats = [1,0,0,0]")
-		fmt.Println("Output:", maxDistToClosest([]int{1, 0, 0, 0}))
+		fmt.Println(`Input: seats = [1,0,0,0,1,0,1]`)
+		fmt.Println(`Output:`, maxDistToClosest([]int{1, 0, 0, 0, 1, 0, 1}))
+		fmt.Println(`Input: seats = [1,0,0,0]`)
+		fmt.Println(`Output:`, maxDistToClosest([]int{1, 0, 0, 0}))
 	}
 }
 

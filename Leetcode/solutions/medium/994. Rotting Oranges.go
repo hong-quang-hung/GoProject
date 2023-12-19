@@ -5,14 +5,14 @@ import "fmt"
 // Reference: https://leetcode.com/problems/rotting-oranges/
 func init() {
 	Solutions[944] = func() {
-		fmt.Println("Input: grid = [[2,1,1],[1,1,0],[0,1,1]]")
-		fmt.Println("Output:", orangesRotting(S2SoSliceInt("[[2,1,1],[1,1,0],[0,1,1]]")))
-		fmt.Println("Input: grid = [[2,1,1],[0,1,1],[1,0,1]]")
-		fmt.Println("Output:", orangesRotting(S2SoSliceInt("[[2,1,1],[0,1,1],[1,0,1]]")))
-		fmt.Println("Input: grid = [[0,2]]")
-		fmt.Println("Output:", orangesRotting(S2SoSliceInt("[[0,2]]")))
-		fmt.Println("Input: grid = [[2,2],[1,1],[0,0],[2,0]]")
-		fmt.Println("Output:", orangesRotting(S2SoSliceInt("[[2,2],[1,1],[0,0],[2,0]]")))
+		fmt.Println(`Input: grid = [[2,1,1],[1,1,0],[0,1,1]]`)
+		fmt.Println(`Output:`, orangesRotting(S2SoSliceInt(`[[2,1,1],[1,1,0],[0,1,1]]`)))
+		fmt.Println(`Input: grid = [[2,1,1],[0,1,1],[1,0,1]]`)
+		fmt.Println(`Output:`, orangesRotting(S2SoSliceInt(`[[2,1,1],[0,1,1],[1,0,1]]`)))
+		fmt.Println(`Input: grid = [[0,2]]`)
+		fmt.Println(`Output:`, orangesRotting(S2SoSliceInt(`[[0,2]]`)))
+		fmt.Println(`Input: grid = [[2,2],[1,1],[0,0],[2,0]]`)
+		fmt.Println(`Output:`, orangesRotting(S2SoSliceInt(`[[2,2],[1,1],[0,0],[2,0]]`)))
 	}
 }
 

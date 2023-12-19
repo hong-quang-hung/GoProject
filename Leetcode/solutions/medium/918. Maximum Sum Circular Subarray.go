@@ -5,12 +5,12 @@ import "fmt"
 // Reference: https://leetcode.com/problems/maximum-sum-circular-subarray/
 func init() {
 	Solutions[918] = func() {
-		fmt.Println("Input: nums = [1,-2,3,-2]")
-		fmt.Println("Output:", maxSubarraySumCircular([]int{1, -2, 3, -2}))
-		fmt.Println("Input: nums = [5,-3,5]")
-		fmt.Println("Output:", maxSubarraySumCircular([]int{5, -3, 5}))
-		fmt.Println("Input: nums = [-3,-2,-3]")
-		fmt.Println("Output:", maxSubarraySumCircular([]int{-3, -2, -3}))
+		fmt.Println(`Input: nums = [1,-2,3,-2]`)
+		fmt.Println(`Output:`, maxSubarraySumCircular([]int{1, -2, 3, -2}))
+		fmt.Println(`Input: nums = [5,-3,5]`)
+		fmt.Println(`Output:`, maxSubarraySumCircular([]int{5, -3, 5}))
+		fmt.Println(`Input: nums = [-3,-2,-3]`)
+		fmt.Println(`Output:`, maxSubarraySumCircular([]int{-3, -2, -3}))
 	}
 }
 

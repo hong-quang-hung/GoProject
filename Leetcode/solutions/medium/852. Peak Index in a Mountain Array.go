@@ -5,12 +5,12 @@ import "fmt"
 // Reference: https://leetcode.com/problems/peak-index-in-a-mountain-array/
 func init() {
 	Solutions[852] = func() {
-		fmt.Println("Input: arr = [3,4,5,1]")
-		fmt.Println("Output:", peakIndexInMountainArray([]int{3, 4, 5, 1}))
-		fmt.Println("Input: arr = [0,2,1,0]")
-		fmt.Println("Output:", peakIndexInMountainArray([]int{0, 2, 1, 0}))
-		fmt.Println("Input: arr = [0,10,5,2]")
-		fmt.Println("Output:", peakIndexInMountainArray([]int{0, 10, 5, 2}))
+		fmt.Println(`Input: arr = [3,4,5,1]`)
+		fmt.Println(`Output:`, peakIndexInMountainArray([]int{3, 4, 5, 1}))
+		fmt.Println(`Input: arr = [0,2,1,0]`)
+		fmt.Println(`Output:`, peakIndexInMountainArray([]int{0, 2, 1, 0}))
+		fmt.Println(`Input: arr = [0,10,5,2]`)
+		fmt.Println(`Output:`, peakIndexInMountainArray([]int{0, 10, 5, 2}))
 	}
 }
 

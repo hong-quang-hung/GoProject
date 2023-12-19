@@ -5,12 +5,12 @@ import "fmt"
 // Reference: https://leetcode.com/problems/bus-routes/
 func init() {
 	Solutions[935] = func() {
-		fmt.Println("Input: n = 1")
-		fmt.Println("Output:", knightDialer(1))
-		fmt.Println("Input: n = 2")
-		fmt.Println("Output:", knightDialer(2))
-		fmt.Println("Input: n = 3131")
-		fmt.Println("Output:", knightDialer(3131))
+		fmt.Println(`Input: n = 1`)
+		fmt.Println(`Output:`, knightDialer(1))
+		fmt.Println(`Input: n = 2`)
+		fmt.Println(`Output:`, knightDialer(2))
+		fmt.Println(`Input: n = 3131`)
+		fmt.Println(`Output:`, knightDialer(3131))
 	}
 }
 

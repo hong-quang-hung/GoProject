@@ -5,12 +5,12 @@ import "fmt"
 // Reference: https://leetcode.com/problems/capacity-to-ship-packages-within-d-days/
 func init() {
 	Solutions[1011] = func() {
-		fmt.Println("Input: weights = [1,2,3,4,5,6,7,8,9,10], days = 5")
-		fmt.Println("Output:", shipWithinDays([]int{1, 2, 3, 4, 5, 6, 7, 8, 9, 10}, 5))
-		fmt.Println("Input: weights = [3,2,2,4,1,4], days = 3")
-		fmt.Println("Output:", shipWithinDays([]int{3, 2, 2, 4, 1, 4}, 3))
-		fmt.Println("Input: weights = [1,2,3,1,1], days = 4")
-		fmt.Println("Output:", shipWithinDays([]int{1, 2, 3, 1, 1}, 4))
+		fmt.Println(`Input: weights = [1,2,3,4,5,6,7,8,9,10], days = 5`)
+		fmt.Println(`Output:`, shipWithinDays([]int{1, 2, 3, 4, 5, 6, 7, 8, 9, 10}, 5))
+		fmt.Println(`Input: weights = [3,2,2,4,1,4], days = 3`)
+		fmt.Println(`Output:`, shipWithinDays([]int{3, 2, 2, 4, 1, 4}, 3))
+		fmt.Println(`Input: weights = [1,2,3,1,1], days = 4`)
+		fmt.Println(`Output:`, shipWithinDays([]int{1, 2, 3, 1, 1}, 4))
 	}
 }
 

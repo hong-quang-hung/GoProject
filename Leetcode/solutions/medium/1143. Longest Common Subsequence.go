@@ -5,12 +5,12 @@ import "fmt"
 // Reference: https://leetcode.com/problems/longest-common-subsequence/
 func init() {
 	Solutions[1143] = func() {
-		fmt.Println("Input: text1 = 'abcde', text2 = 'ace'")
-		fmt.Println("Output:", longestCommonSubsequence("abcde", "ace"))
-		fmt.Println("Input: text1 = 'abc', text2 = 'abc'")
-		fmt.Println("Output:", longestCommonSubsequence("abc", "abc"))
-		fmt.Println("Input: text1 = 'abc', text2 = 'def'")
-		fmt.Println("Output:", longestCommonSubsequence("abc", "def"))
+		fmt.Println(`Input: text1 = "abcde", text2 = "ace"`)
+		fmt.Println(`Output:`, longestCommonSubsequence(`abcde`, `ace`))
+		fmt.Println(`Input: text1 = "abc", text2 = "abc"`)
+		fmt.Println(`Output:`, longestCommonSubsequence(`abc`, `abc`))
+		fmt.Println(`Input: text1 = "abc", text2 = "def"`)
+		fmt.Println(`Output:`, longestCommonSubsequence(`abc`, `def`))
 	}
 }
 

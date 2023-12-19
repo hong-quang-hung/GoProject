@@ -5,10 +5,10 @@ import "fmt"
 // Reference: https://leetcode.com/problems/find-eventual-safe-states/
 func init() {
 	Solutions[802] = func() {
-		fmt.Println("Input: graph = [[1,2],[2,3],[5],[0],[5],[],[]]")
-		fmt.Println("Output:", eventualSafeNodes(S2SoSliceInt("[[1,2],[2,3],[5],[0],[5],[],[]]")))
-		fmt.Println("Input: graph = [[1,2,3,4],[1,2],[3,4],[0,4],[]]")
-		fmt.Println("Output:", eventualSafeNodes(S2SoSliceInt("[[1,2,3,4],[1,2],[3,4],[0,4],[]]")))
+		fmt.Println(`Input: graph = [[1,2],[2,3],[5],[0],[5],[],[]]`)
+		fmt.Println(`Output:`, eventualSafeNodes(S2SoSliceInt(`[[1,2],[2,3],[5],[0],[5],[],[]]`)))
+		fmt.Println(`Input: graph = [[1,2,3,4],[1,2],[3,4],[0,4],[]]`)
+		fmt.Println(`Output:`, eventualSafeNodes(S2SoSliceInt(`[[1,2,3,4],[1,2],[3,4],[0,4],[]]`)))
 	}
 }
 

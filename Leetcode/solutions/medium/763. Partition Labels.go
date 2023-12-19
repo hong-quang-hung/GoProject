@@ -5,12 +5,12 @@ import "fmt"
 // Reference: https://leetcode.com/problems/partition-labels/
 func init() {
 	Solutions[763] = func() {
-		fmt.Println("Input: s = 'ababcbacadefegdehijhklij'")
-		fmt.Println("Output:", partitionLabels("ababcbacadefegdehijhklij"))
-		fmt.Println("Input: s = 'eccbbbbdec'")
-		fmt.Println("Output:", partitionLabels("eccbbbbdec"))
-		fmt.Println("Input: s = 'caedbdedda'")
-		fmt.Println("Output:", partitionLabels("caedbdedda"))
+		fmt.Println(`Input: s = "ababcbacadefegdehijhklij"`)
+		fmt.Println(`Output:`, partitionLabels(`ababcbacadefegdehijhklij`))
+		fmt.Println(`Input: s = "eccbbbbdec"`)
+		fmt.Println(`Output:`, partitionLabels(`eccbbbbdec`))
+		fmt.Println(`Input: s = "caedbdedda"`)
+		fmt.Println(`Output:`, partitionLabels(`caedbdedda`))
 	}
 }
 

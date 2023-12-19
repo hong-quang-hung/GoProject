@@ -5,10 +5,10 @@ import "fmt"
 // Reference: https://leetcode.com/problems/domino-and-tromino-tiling/
 func init() {
 	Solutions[790] = func() {
-		fmt.Println("Input: n = 3")
-		fmt.Println("Output:", numTilings(3))
-		fmt.Println("Input: n = 1")
-		fmt.Println("Output:", numTilings(1))
+		fmt.Println(`Input: n = 3`)
+		fmt.Println(`Output:`, numTilings(3))
+		fmt.Println(`Input: n = 1`)
+		fmt.Println(`Output:`, numTilings(1))
 	}
 }
 

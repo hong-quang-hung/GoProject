@@ -8,12 +8,12 @@ import (
 // Reference: https://leetcode.com/problems/binary-trees-with-factors/
 func init() {
 	Solutions[823] = func() {
-		fmt.Println("Input: arr = [2,4]")
-		fmt.Println("Output:", numFactoredBinaryTrees([]int{2, 4}))
-		fmt.Println("Input: arr = [2,4,5,10]")
-		fmt.Println("Output:", numFactoredBinaryTrees([]int{2, 4, 5, 10}))
-		fmt.Println("Input: arr = [2,4,8]")
-		fmt.Println("Output:", numFactoredBinaryTrees([]int{2, 4, 8}))
+		fmt.Println(`Input: arr = [2,4]`)
+		fmt.Println(`Output:`, numFactoredBinaryTrees([]int{2, 4}))
+		fmt.Println(`Input: arr = [2,4,5,10]`)
+		fmt.Println(`Output:`, numFactoredBinaryTrees([]int{2, 4, 5, 10}))
+		fmt.Println(`Input: arr = [2,4,8]`)
+		fmt.Println(`Output:`, numFactoredBinaryTrees([]int{2, 4, 8}))
 	}
 }
 

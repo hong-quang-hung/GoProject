@@ -5,10 +5,10 @@ import "fmt"
 // Reference: https://leetcode.com/problems/max-chunks-to-make-sorted/
 func init() {
 	Solutions[769] = func() {
-		fmt.Println("Input: arr = [4,3,2,1,0]")
-		fmt.Println("Output:", maxChunksToSorted([]int{4, 3, 2, 1, 0}))
-		fmt.Println("Input: arr = [1,0,2,3,4]")
-		fmt.Println("Output:", maxChunksToSorted([]int{1, 0, 2, 3, 4}))
+		fmt.Println(`Input: arr = [4,3,2,1,0]`)
+		fmt.Println(`Output:`, maxChunksToSorted([]int{4, 3, 2, 1, 0}))
+		fmt.Println(`Input: arr = [1,0,2,3,4]`)
+		fmt.Println(`Output:`, maxChunksToSorted([]int{1, 0, 2, 3, 4}))
 	}
 }
 

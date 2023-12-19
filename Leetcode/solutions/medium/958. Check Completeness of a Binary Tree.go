@@ -5,8 +5,8 @@ import "fmt"
 // Reference: https://leetcode.com/problems/check-completeness-of-a-binary-tree/
 func init() {
 	Solutions[958] = func() {
-		fmt.Println("Input: root = [1,2,3,5,null,7,8]")
-		fmt.Println("Output:", isCompleteTree(S2TreeNode("[1,2,3,5,null,7,8]")))
+		fmt.Println(`Input: root = [1,2,3,5,null,7,8]`)
+		fmt.Println(`Output:`, isCompleteTree(S2TreeNode(`[1,2,3,5,null,7,8]`)))
 	}
 }
 

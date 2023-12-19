@@ -5,12 +5,12 @@ import "fmt"
 // Reference: https://leetcode.com/problems/longest-string-chain/
 func init() {
 	Solutions[799] = func() {
-		fmt.Println("Input: poured = 1, query_row = 1, query_glass = 1")
-		fmt.Println("Output:", champagneTower(1, 1, 1))
-		fmt.Println("Input: poured = 2, query_row = 1, query_glass = 1")
-		fmt.Println("Output:", champagneTower(2, 1, 1))
-		fmt.Println("Input: poured = 100000009, query_row = 33, query_glass = 17")
-		fmt.Println("Output:", champagneTower(100000009, 33, 17))
+		fmt.Println(`Input: poured = 1, query_row = 1, query_glass = 1`)
+		fmt.Println(`Output:`, champagneTower(1, 1, 1))
+		fmt.Println(`Input: poured = 2, query_row = 1, query_glass = 1`)
+		fmt.Println(`Output:`, champagneTower(2, 1, 1))
+		fmt.Println(`Input: poured = 100000009, query_row = 33, query_glass = 17`)
+		fmt.Println(`Output:`, champagneTower(100000009, 33, 17))
 	}
 }
 

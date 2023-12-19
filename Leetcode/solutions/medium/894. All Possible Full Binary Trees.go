@@ -5,11 +5,11 @@ import "fmt"
 // Reference: https://leetcode.com/problems/all-possible-full-binary-trees/
 func init() {
 	Solutions[894] = func() {
-		fmt.Println("Input: n = 7")
-		fmt.Println("Output:", allPossibleFBT(7))
+		fmt.Println(`Input: n = 7`)
+		fmt.Println(`Output:`, allPossibleFBT(7))
 
-		fmt.Println("Input: n = 3")
-		fmt.Println("Output:", allPossibleFBT(3))
+		fmt.Println(`Input: n = 3`)
+		fmt.Println(`Output:`, allPossibleFBT(3))
 	}
 }
 

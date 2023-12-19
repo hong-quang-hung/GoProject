@@ -5,11 +5,10 @@ import "fmt"
 // Reference: https://leetcode.com/problems/number-of-longest-increasing-subsequence/
 func init() {
 	Solutions[673] = func() {
-		fmt.Println("Input: nums = [1,3,5,4,7]")
-		fmt.Println("Output:", findNumberOfLIS([]int{1, 3, 5, 4, 7}))
-
-		fmt.Println("Input: nums = [2,2,2,2,2]")
-		fmt.Println("Output:", findNumberOfLIS([]int{2, 2, 2, 2, 2}))
+		fmt.Println(`Input: nums = [1,3,5,4,7]`)
+		fmt.Println(`Output:`, findNumberOfLIS([]int{1, 3, 5, 4, 7}))
+		fmt.Println(`Input: nums = [2,2,2,2,2]`)
+		fmt.Println(`Output:`, findNumberOfLIS([]int{2, 2, 2, 2, 2}))
 	}
 }
 

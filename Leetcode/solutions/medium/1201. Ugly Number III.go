@@ -5,12 +5,12 @@ import "fmt"
 // Reference: https://leetcode.com/problems/ugly-number-iii/
 func init() {
 	Solutions[1201] = func() {
-		fmt.Println("Input: n = 3, a = 2, b = 3, c = 5")
-		fmt.Println("Output:", nthUglyNumber_iii(3, 2, 3, 5))
-		fmt.Println("Input: n = 4, a = 2, b = 3, c = 4")
-		fmt.Println("Output:", nthUglyNumber_iii(4, 2, 3, 4))
-		fmt.Println("Input: n = 5, a = 2, b = 11, c = 13")
-		fmt.Println("Output:", nthUglyNumber_iii(5, 2, 11, 13))
+		fmt.Println(`Input: n = 3, a = 2, b = 3, c = 5`)
+		fmt.Println(`Output:`, nthUglyNumber_iii(3, 2, 3, 5))
+		fmt.Println(`Input: n = 4, a = 2, b = 3, c = 4`)
+		fmt.Println(`Output:`, nthUglyNumber_iii(4, 2, 3, 4))
+		fmt.Println(`Input: n = 5, a = 2, b = 11, c = 13`)
+		fmt.Println(`Output:`, nthUglyNumber_iii(5, 2, 11, 13))
 	}
 }
 

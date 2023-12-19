@@ -8,10 +8,10 @@ import (
 // Reference: https://leetcode.com/problems/maximum-level-sum-of-a-binary-tree/
 func init() {
 	Solutions[1161] = func() {
-		fmt.Println("Input: root = [1,7,0,7,-8,null,null]")
-		fmt.Println("Output:", maxLevelSum(S2TreeNode("[1,7,0,7,-8,null,null]")))
-		fmt.Println("Input: root = [989,null,10250,98693,-89388,null,null,null,-32127]")
-		fmt.Println("Output:", maxLevelSum(S2TreeNode("[989,null,10250,98693,-89388,null,null,null,-32127]")))
+		fmt.Println(`Input: root = [1,7,0,7,-8,null,null]`)
+		fmt.Println(`Output:`, maxLevelSum(S2TreeNode(`[1,7,0,7,-8,null,null]`)))
+		fmt.Println(`Input: root = [989,null,10250,98693,-89388,null,null,null,-32127]`)
+		fmt.Println(`Output:`, maxLevelSum(S2TreeNode(`[989,null,10250,98693,-89388,null,null,null,-32127]`)))
 	}
 }
 

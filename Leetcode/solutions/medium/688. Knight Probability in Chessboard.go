@@ -5,12 +5,12 @@ import "fmt"
 // Reference: https://leetcode.com/problems/knight-probability-in-chessboard/
 func init() {
 	Solutions[688] = func() {
-		fmt.Println("Input: n = 3, k = 2, row = 0, column = 0")
-		fmt.Println("Output:", knightProbability(3, 2, 0, 0))
-		fmt.Println("Input: n = 8, k = 30, row = 6, column = 4")
-		fmt.Println("Output:", knightProbability(8, 30, 6, 4))
-		fmt.Println("Input: n = 3, k = 3, row = 0, column = 0")
-		fmt.Println("Output:", knightProbability(3, 3, 0, 0))
+		fmt.Println(`Input: n = 3, k = 2, row = 0, column = 0`)
+		fmt.Println(`Output:`, knightProbability(3, 2, 0, 0))
+		fmt.Println(`Input: n = 8, k = 30, row = 6, column = 4`)
+		fmt.Println(`Output:`, knightProbability(8, 30, 6, 4))
+		fmt.Println(`Input: n = 3, k = 3, row = 0, column = 0`)
+		fmt.Println(`Output:`, knightProbability(3, 3, 0, 0))
 	}
 }
 

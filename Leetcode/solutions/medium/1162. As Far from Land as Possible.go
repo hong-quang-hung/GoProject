@@ -5,8 +5,8 @@ import "fmt"
 // Reference: https://leetcode.com/problems/as-far-from-land-as-possible/
 func init() {
 	Solutions[1162] = func() {
-		fmt.Println("Input: grid = [[1,0,0],[0,0,0],[0,0,0]]")
-		fmt.Println("Output:", maxVDistance(S2SoSliceInt("[[1,0,0],[0,0,0],[0,0,0]]")))
+		fmt.Println(`Input: grid = [[1,0,0],[0,0,0],[0,0,0]]`)
+		fmt.Println(`Output:`, maxVDistance(S2SoSliceInt(`[[1,0,0],[0,0,0],[0,0,0]]`)))
 	}
 }
 
