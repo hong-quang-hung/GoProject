@@ -8,10 +8,10 @@ import (
 // Reference: https://leetcode.com/problems/longest-common-prefix/
 func init() {
 	Solutions[14] = func() {
-		fmt.Println("Input: strs = ['flower','flow','flight']")
-		fmt.Println("Output:", longestCommonPrefix([]string{"flower", "flow", "flight"}))
-		fmt.Println("Input: strs = ['dog','racecar','car']")
-		fmt.Println("Output:", longestCommonPrefix([]string{"dog", "racecar", "car"}))
+		fmt.Println(`Input: strs = ["flower","flow","flight"]`)
+		fmt.Println(`Output:`, longestCommonPrefix([]string{"flower", "flow", "flight"}))
+		fmt.Println(`Input: strs = ["dog","racecar","car"]`)
+		fmt.Println(`Output:`, longestCommonPrefix([]string{"dog", "racecar", "car"}))
 	}
 }
 

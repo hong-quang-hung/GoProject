@@ -5,12 +5,12 @@ import "fmt"
 // Reference: https://leetcode.com/problems/roman-to-integer/
 func init() {
 	Solutions[13] = func() {
-		fmt.Println("Input: s = 'III'")
-		fmt.Println("Output:", romanToInt("III"))
-		fmt.Println("Input: s = 'LVIII'")
-		fmt.Println("Output:", romanToInt("LVIII"))
-		fmt.Println("Input: s = 'MCMXCIV'")
-		fmt.Println("Output:", romanToInt("MCMXCIV"))
+		fmt.Println(`Input: s = "III"`)
+		fmt.Println(`Output:`, romanToInt(`III`))
+		fmt.Println(`Input: s = "LVIII"`)
+		fmt.Println(`Output:`, romanToInt(`LVIII`))
+		fmt.Println(`Input: s = "MCMXCIV"`)
+		fmt.Println(`Output:`, romanToInt(`MCMXCIV`))
 	}
 }
 

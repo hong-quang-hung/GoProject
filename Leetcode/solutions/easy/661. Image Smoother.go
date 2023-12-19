@@ -5,10 +5,10 @@ import "fmt"
 // Reference: https://leetcode.com/problems/image-smoother/
 func init() {
 	Solutions[661] = func() {
-		fmt.Println("Input: img = [[1,1,1],[1,0,1],[1,1,1]]")
-		fmt.Println("Output:", imageSmoother(S2SoSliceInt("[[1,1,1],[1,0,1],[1,1,1]]")))
-		fmt.Println("Input: img = [[100,200,100],[200,50,200],[100,200,100]]")
-		fmt.Println("Output:", imageSmoother(S2SoSliceInt("[[100,200,100],[200,50,200],[100,200,100]]")))
+		fmt.Println(`Input: img = [[1,1,1],[1,0,1],[1,1,1]]`)
+		fmt.Println(`Output:`, imageSmoother(S2SoSliceInt("[[1,1,1],[1,0,1],[1,1,1]]")))
+		fmt.Println(`Input: img = [[100,200,100],[200,50,200],[100,200,100]]`)
+		fmt.Println(`Output:`, imageSmoother(S2SoSliceInt("[[100,200,100],[200,50,200],[100,200,100]]")))
 	}
 }
 

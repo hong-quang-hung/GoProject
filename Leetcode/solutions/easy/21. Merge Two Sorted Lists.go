@@ -5,8 +5,8 @@ import "fmt"
 // Reference: https://leetcode.com/problems/merge-two-sorted-lists/
 func init() {
 	Solutions[21] = func() {
-		fmt.Println("Input: list1 = [1,2,4], list2 = [1,3,4]")
-		fmt.Println("Output:", mergeTwoLists(S2ListNode("1,2,4"), S2ListNode("1,3,4")))
+		fmt.Println(`Input: list1 = [1,2,4], list2 = [1,3,4]`)
+		fmt.Println(`Output:`, mergeTwoLists(S2ListNode(`1,2,4`), S2ListNode(`1,3,4`)))
 	}
 }
 

@@ -5,10 +5,10 @@ import "fmt"
 // Reference: https://leetcode.com/problems/sqrtx/
 func init() {
 	Solutions[69] = func() {
-		fmt.Println("Input: x = 4")
-		fmt.Println("Output:", mySqrt(4))
-		fmt.Println("Input: x = 8")
-		fmt.Println("Output:", mySqrt(8))
+		fmt.Println(`Input: x = 4`)
+		fmt.Println(`Output:`, mySqrt(4))
+		fmt.Println(`Input: x = 8`)
+		fmt.Println(`Output:`, mySqrt(8))
 	}
 }
 

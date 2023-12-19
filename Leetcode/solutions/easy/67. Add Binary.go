@@ -5,21 +5,21 @@ import "fmt"
 // Reference: https://leetcode.com/problems/add-binary/
 func init() {
 	Solutions[67] = func() {
-		fmt.Println("Input: a = '1010', b = '1011'")
-		fmt.Println("Output:", addBinary("1010", "1011"))
+		fmt.Println(`Input: a = '1010', b = '1011'`)
+		fmt.Println(`Output:`, addBinary(`1010`, `1011`))
 	}
 }
 
 func addBinary(a string, b string) string {
-	s, c := "", false
+	s, c := ``, false
 	for len(a) > 0 || len(b) > 0 {
 		bitA := len(a) > 0 && a[len(a)-1] == '1'
 		bitB := len(b) > 0 && b[len(b)-1] == '1'
 
 		if xor := c != bitA; xor != bitB {
-			s = "1" + s
+			s = `1` + s
 		} else {
-			s = "0" + s
+			s = `0` + s
 		}
 		c = (bitA && bitB) || (c && (bitA || bitB))
 		if len(a) > 0 {
@@ -30,7 +30,7 @@ func addBinary(a string, b string) string {
 		}
 	}
 	if c {
-		return "1" + s
+		return `1` + s
 	}
 	return s
 }

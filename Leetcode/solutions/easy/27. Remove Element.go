@@ -5,8 +5,8 @@ import "fmt"
 // Reference: https://leetcode.com/problems/remove-element/
 func init() {
 	Solutions[27] = func() {
-		fmt.Println("Input: nums = [3,2,2,3], val = 3")
-		fmt.Println("Output:", removeElement([]int{3, 2, 2, 3}, 3))
+		fmt.Println(`Input: nums = [3,2,2,3], val = 3`)
+		fmt.Println(`Output:`, removeElement([]int{3, 2, 2, 3}, 3))
 	}
 }
 

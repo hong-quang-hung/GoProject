@@ -7,10 +7,10 @@ import (
 // Reference: https://leetcode.com/problems/course-schedule-ii/
 func init() {
 	Solutions[210] = func() {
-		fmt.Println("Input: numCourses = 2, prerequisites = [[1,0]]")
-		fmt.Println("Output:", findOrder(2, S2SoSliceInt("[[1,0]]")))
-		fmt.Println("Input: numCourses = 4, prerequisites = [[1,0],[2,0],[3,1],[3,2]]")
-		fmt.Println("Output:", findOrder(4, S2SoSliceInt("[[1,0],[2,0],[3,1],[3,2]]")))
+		fmt.Println(`Input: numCourses = 2, prerequisites = [[1,0]]`)
+		fmt.Println(`Output:`, findOrder(2, S2SoSliceInt(`[[1,0]]`)))
+		fmt.Println(`Input: numCourses = 4, prerequisites = [[1,0],[2,0],[3,1],[3,2]]`)
+		fmt.Println(`Output:`, findOrder(4, S2SoSliceInt(`[[1,0],[2,0],[3,1],[3,2]]`)))
 	}
 }
 

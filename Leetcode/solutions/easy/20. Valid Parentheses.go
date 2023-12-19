@@ -5,8 +5,8 @@ import "fmt"
 // Reference: https://leetcode.com/problems/valid-parentheses/
 func init() {
 	Solutions[20] = func() {
-		fmt.Println("Input: s = '()[]{}'")
-		fmt.Println("Output:", isValid("()[]{}"))
+		fmt.Println(`Input: s = "()[]{}"`)
+		fmt.Println(`Output:`, isValid(`()[]{}`))
 	}
 }
 

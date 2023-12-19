@@ -8,8 +8,8 @@ import (
 // Reference: https://leetcode.com/problems/search-insert-position/
 func init() {
 	Solutions[35] = func() {
-		fmt.Println("Input: nums = [1,3,5,6], target = 7")
-		fmt.Println("Output:", searchInsert([]int{1, 3, 5, 6}, 7))
+		fmt.Println(`Input: nums = [1,3,5,6], target = 7`)
+		fmt.Println(`Output:`, searchInsert([]int{1, 3, 5, 6}, 7))
 	}
 }
 

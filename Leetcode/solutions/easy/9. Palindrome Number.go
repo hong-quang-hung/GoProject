@@ -5,8 +5,8 @@ import "fmt"
 // Reference: https://leetcode.com/problems/palindrome-number/
 func init() {
 	Solutions[9] = func() {
-		fmt.Println("Input: x = 0")
-		fmt.Println("Output:", isPalindrome(0))
+		fmt.Println(`Input: x = 0`)
+		fmt.Println(`Output:`, isPalindrome(0))
 	}
 }
 

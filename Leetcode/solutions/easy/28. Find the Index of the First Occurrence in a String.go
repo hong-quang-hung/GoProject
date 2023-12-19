@@ -5,8 +5,8 @@ import "fmt"
 // Reference: https://leetcode.com/problems/find-the-index-of-the-first-occurrence-in-a-string/
 func init() {
 	Solutions[28] = func() {
-		fmt.Println("Input: haystack = \"sadbutsad\", needle = \"sad\"")
-		fmt.Println("Output:", strStr("sadbutsad", "sad"))
+		fmt.Println(`Input: haystack = "sadbutsad", needle = "sad"`)
+		fmt.Println(`Output:`, strStr(`sadbutsad`, `sad`))
 	}
 }
 

@@ -5,12 +5,10 @@ import "fmt"
 // Reference: https://leetcode.com/problems/plus-one/
 func init() {
 	Solutions[66] = func() {
-		fmt.Println("Input: digits = [1,2,3]")
-		fmt.Println("Output:", plusOne([]int{1, 2, 3}))
-		fmt.Println("Input: digits = [4,3,2,1]")
-		fmt.Println("Output:", plusOne([]int{4, 3, 2, 1}))
-		fmt.Println("Input: digits = [9]")
-		fmt.Println("Output:", plusOne([]int{9}))
+		fmt.Println(`Input: digits = [1,2,3]`)
+		fmt.Println(`Output:`, plusOne([]int{1, 2, 3}))
+		fmt.Println(`Input: digits = [4,3,2,1]`)
+		fmt.Println(`Output:`, plusOne([]int{4, 3, 2, 1}))
 	}
 }
 
