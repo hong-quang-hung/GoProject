@@ -5,10 +5,10 @@ import "fmt"
 // Reference: https://leetcode.com/problems/pascals-triangle-ii/
 func init() {
 	Solutions[119] = func() {
-		fmt.Println("Input: numRows = 3")
-		fmt.Println("Output:", getRow(3))
-		fmt.Println("Input: numRows = 1")
-		fmt.Println("Output:", getRow(1))
+		fmt.Println(`Input: numRows = 3`)
+		fmt.Println(`Output:`, getRow(3))
+		fmt.Println(`Input: numRows = 1`)
+		fmt.Println(`Output:`, getRow(1))
 	}
 }
 

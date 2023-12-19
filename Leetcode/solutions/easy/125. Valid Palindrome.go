@@ -9,12 +9,10 @@ import (
 // Reference: https://leetcode.com/problems/valid-palindrome/
 func init() {
 	Solutions[125] = func() {
-		fmt.Println("Input: s = 'A man, a plan, a canal: Panama'")
-		fmt.Println("Output:", isPalindromeII("A man, a plan, a canal: Panama"))
-		fmt.Println("Input: s = 'race a car'")
-		fmt.Println("Output:", isPalindromeII("race a car"))
-		fmt.Println("Input: s = '0P'")
-		fmt.Println("Output:", isPalindromeII("0P"))
+		fmt.Println(`Input: s = "A man, a plan, a canal: Panama"`)
+		fmt.Println(`Output:`, isPalindromeII(`A man, a plan, a canal: Panama`))
+		fmt.Println(`Input: s = "race a car"`)
+		fmt.Println(`Output:`, isPalindromeII(`race a car`))
 	}
 }
 

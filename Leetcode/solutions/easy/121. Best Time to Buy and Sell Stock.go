@@ -5,8 +5,8 @@ import "fmt"
 // Reference: https://leetcode.com/problems/best-time-to-buy-and-sell-stock/
 func init() {
 	Solutions[121] = func() {
-		fmt.Println("Input: x = [2,1,2,1,0,1,2]")
-		fmt.Println("Output:", maxProfit([]int{2, 1, 2, 1, 0, 1, 2}))
+		fmt.Println(`Input: x = [2,1,2,1,0,1,2]`)
+		fmt.Println(`Output:`, maxProfit([]int{2, 1, 2, 1, 0, 1, 2}))
 	}
 }
 

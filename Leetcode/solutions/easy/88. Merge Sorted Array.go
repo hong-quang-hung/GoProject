@@ -8,10 +8,10 @@ import (
 // Reference: https://leetcode.com/problems/merge-sorted-array/
 func init() {
 	Solutions[88] = func() {
-		fmt.Println("Input: nums1 = [1,2,3,0,0,0], m = 3, nums2 = [2,5,6], n = 3")
+		fmt.Println(`Input: nums1 = [1,2,3,0,0,0], m = 3, nums2 = [2,5,6], n = 3`)
 		nums1 := []int{1, 2, 3, 0, 0, 0}
 		merge(nums1, 3, []int{2, 5, 6}, 3)
-		fmt.Println("Output:", nums1)
+		fmt.Println(`Output:`, nums1)
 	}
 }
 

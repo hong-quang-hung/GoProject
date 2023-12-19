@@ -5,10 +5,10 @@ import "fmt"
 // Reference: https://leetcode.com/problems/climbing-stairs/
 func init() {
 	Solutions[70] = func() {
-		fmt.Println("Input: n = 2")
-		fmt.Println("Output:", climbStairs(2))
-		fmt.Println("Input: n = 3")
-		fmt.Println("Output:", climbStairs(3))
+		fmt.Println(`Input: n = 2`)
+		fmt.Println(`Output:`, climbStairs(2))
+		fmt.Println(`Input: n = 3`)
+		fmt.Println(`Output:`, climbStairs(3))
 	}
 }
 
