@@ -5,12 +5,12 @@ import "fmt"
 // Reference: https://leetcode.com/problems/neighboring-bitwise-xor/
 func init() {
 	Solutions[2683] = func() {
-		fmt.Println("Input: derived = [1,1,0]")
-		fmt.Println("Output:", doesValidArrayExist([]int{1, 1, 0}))
-		fmt.Println("Input: derived = [1,1]")
-		fmt.Println("Output:", doesValidArrayExist([]int{1, 1}))
-		fmt.Println("Input: derived = [1,0]")
-		fmt.Println("Output:", doesValidArrayExist([]int{1, 0}))
+		fmt.Println(`Input: derived = [1,1,0]`)
+		fmt.Println(`Output:`, doesValidArrayExist([]int{1, 1, 0}))
+		fmt.Println(`Input: derived = [1,1]`)
+		fmt.Println(`Output:`, doesValidArrayExist([]int{1, 1}))
+		fmt.Println(`Input: derived = [1,0]`)
+		fmt.Println(`Output:`, doesValidArrayExist([]int{1, 0}))
 	}
 }
 

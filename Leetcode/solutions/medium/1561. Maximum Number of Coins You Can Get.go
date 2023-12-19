@@ -8,12 +8,12 @@ import (
 // Reference: https://leetcode.com/problems/maximum-number-of-coins-you-can-get/
 func init() {
 	Solutions[1561] = func() {
-		fmt.Println("Input: piles = [2,4,1,2,7,8]")
-		fmt.Println("Output:", maxCoins([]int{2, 4, 1, 2, 7, 8}))
-		fmt.Println("Input: piles = [2,4,5")
-		fmt.Println("Output:", maxCoins([]int{2, 4, 5}))
-		fmt.Println("Input: piles = [9,8,7,6,5,1,2,3,4]")
-		fmt.Println("Output:", maxCoins([]int{9, 8, 7, 6, 5, 1, 2, 3, 4}))
+		fmt.Println(`Input: piles = [2,4,1,2,7,8]`)
+		fmt.Println(`Output:`, maxCoins([]int{2, 4, 1, 2, 7, 8}))
+		fmt.Println(`Input: piles = [2,4,5`)
+		fmt.Println(`Output:`, maxCoins([]int{2, 4, 5}))
+		fmt.Println(`Input: piles = [9,8,7,6,5,1,2,3,4]`)
+		fmt.Println(`Output:`, maxCoins([]int{9, 8, 7, 6, 5, 1, 2, 3, 4}))
 	}
 }
 

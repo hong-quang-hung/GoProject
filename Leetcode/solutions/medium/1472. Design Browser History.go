@@ -5,22 +5,22 @@ import "fmt"
 // Reference: https://leetcode.com/problems/design-browser-history/
 func init() {
 	Solutions[1472] = func() {
-		fmt.Println("Input:")
-		fmt.Println("['BrowserHistory','visit','visit','visit','back','back','forward','visit','forward','back','back']")
-		fmt.Println("[['leetcode.com'],['google.com'],['facebook.com'],['youtube.com'],[1],[1],[1],['linkedin.com'],[2],[2],[7]]")
+		fmt.Println(`Input:`)
+		fmt.Println(`["BrowserHistory","visit","visit","visit","back","back","forward","visit","forward","back","back"]`)
+		fmt.Println(`[["leetcode.com"],["google.com"],["facebook.com"],["youtube.com"],[1],[1],[1],["linkedin.com"],[2],[2],[7]]`)
 
-		fmt.Println("Output:")
-		browserHistory := BrowserHistoryConstructor("leetcode.com")
-		browserHistory.Visit("google.com")
-		browserHistory.Visit("facebook.com")
-		browserHistory.Visit("youtube.com")
-		fmt.Println("browserHistory.Back(1)\t", browserHistory.Back(1))
-		fmt.Println("browserHistory.Back(1)\t", browserHistory.Back(1))
-		fmt.Println("browserHistory.Forward(1)\t", browserHistory.Forward(1))
-		browserHistory.Visit("linkedin.com")
-		fmt.Println("browserHistory.Forward(2)\t", browserHistory.Forward(2))
-		fmt.Println("browserHistory.Back(2)\t", browserHistory.Back(2))
-		fmt.Println("browserHistory.Back(7)\t", browserHistory.Back(7))
+		fmt.Println(`Output:`)
+		browserHistory := BrowserHistoryConstructor(`leetcode.com`)
+		browserHistory.Visit(`google.com`)
+		browserHistory.Visit(`facebook.com`)
+		browserHistory.Visit(`youtube.com`)
+		fmt.Println(`browserHistory.Back(1)`, "// return", browserHistory.Back(1))
+		fmt.Println(`browserHistory.Back(1)`, "// return", browserHistory.Back(1))
+		fmt.Println(`browserHistory.Forward(1)`, "// return", browserHistory.Forward(1))
+		browserHistory.Visit(`linkedin.com`)
+		fmt.Println(`browserHistory.Forward(2)`, "// return", browserHistory.Forward(2))
+		fmt.Println(`browserHistory.Back(2)`, "// return", browserHistory.Back(2))
+		fmt.Println(`browserHistory.Back(7)`, "// return", browserHistory.Back(7))
 	}
 }
 

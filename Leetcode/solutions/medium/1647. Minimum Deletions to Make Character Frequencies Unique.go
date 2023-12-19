@@ -8,12 +8,12 @@ import (
 // Reference: https://leetcode.com/problems/minimum-deletions-to-make-character-frequencies-unique/
 func init() {
 	Solutions[1647] = func() {
-		fmt.Println("Input: s = 'aaabbbcc'")
-		fmt.Println("Output:", minDeletions("aaabbbcc"))
-		fmt.Println("Input: s = 'ceabaacb'")
-		fmt.Println("Output:", minDeletions("ceabaacb"))
-		fmt.Println("Input: s = 'bbcebab'")
-		fmt.Println("Output:", minDeletions("bbcebab"))
+		fmt.Println(`Input: s = "aaabbbcc"`)
+		fmt.Println(`Output:`, minDeletions(`aaabbbcc`))
+		fmt.Println(`Input: s = "ceabaacb"`)
+		fmt.Println(`Output:`, minDeletions(`ceabaacb`))
+		fmt.Println(`Input: s = "bbcebab"`)
+		fmt.Println(`Output:`, minDeletions(`bbcebab`))
 	}
 }
 

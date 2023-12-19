@@ -5,12 +5,12 @@ import "fmt"
 // Reference: https://leetcode.com/problems/count-number-of-homogenous-substrings/
 func init() {
 	Solutions[1759] = func() {
-		fmt.Println("Input: s = \"abbcccaa\"")
-		fmt.Println("Output:", countHomogenous("abbcccaa"))
-		fmt.Println("Input: s = \"xy\"")
-		fmt.Println("Output:", countHomogenous("xy"))
-		fmt.Println("Input: s = \"zzzzz\"")
-		fmt.Println("Output:", countHomogenous("zzzzz"))
+		fmt.Println(`Input: s = "abbcccaa"`)
+		fmt.Println(`Output:`, countHomogenous(`abbcccaa`))
+		fmt.Println(`Input: s = "xy"`)
+		fmt.Println(`Output:`, countHomogenous(`xy`))
+		fmt.Println(`Input: s = "zzzzz"`)
+		fmt.Println(`Output:`, countHomogenous(`zzzzz`))
 	}
 }
 

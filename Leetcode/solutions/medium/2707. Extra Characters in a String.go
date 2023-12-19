@@ -5,10 +5,10 @@ import "fmt"
 // Reference: https://leetcode.com/problems/extra-characters-in-a-string/
 func init() {
 	Solutions[2707] = func() {
-		fmt.Println("Input: s = 'leetscode', dictionary = ['leet','code','leetcode']")
-		fmt.Println("Output:", minExtraChar("leetscode", []string{"leet", "code", "leetcode"}))
-		fmt.Println("Input: s = 'sayhelloworld', dictionary = ['hello','world']")
-		fmt.Println("Output:", minExtraChar("sayhelloworld", []string{"hello", "world"}))
+		fmt.Println(`Input: s = "leetscode", dictionary = ["leet","code","leetcode"]`)
+		fmt.Println(`Output:`, minExtraChar(`leetscode`, []string{`leet`, `code`, `leetcode`}))
+		fmt.Println(`Input: s = "sayhelloworld", dictionary = ["hello","world"]`)
+		fmt.Println(`Output:`, minExtraChar(`sayhelloworld`, []string{`hello`, `world`}))
 	}
 }
 

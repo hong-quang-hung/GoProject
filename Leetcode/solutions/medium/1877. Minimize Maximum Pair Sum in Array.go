@@ -8,10 +8,10 @@ import (
 // Reference: https://leetcode.com/problems/minimize-maximum-pair-sum-in-array/
 func init() {
 	Solutions[1877] = func() {
-		fmt.Println("Input: nums = [3,5,2,3]")
-		fmt.Println("Output:", minPairSum([]int{3, 5, 2, 3}))
-		fmt.Println("Input: nums = [3,5,4,2,4,6]")
-		fmt.Println("Output:", minPairSum([]int{3, 5, 4, 2, 4, 6}))
+		fmt.Println(`Input: nums = [3,5,2,3]`)
+		fmt.Println(`Output:`, minPairSum([]int{3, 5, 2, 3}))
+		fmt.Println(`Input: nums = [3,5,4,2,4,6]`)
+		fmt.Println(`Output:`, minPairSum([]int{3, 5, 4, 2, 4, 6}))
 	}
 }
 

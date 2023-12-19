@@ -5,10 +5,10 @@ import "fmt"
 // Reference: https://leetcode.com/problems/difference-of-number-of-distinct-values-on-diagonals/
 func init() {
 	Solutions[2711] = func() {
-		fmt.Println("Input: grid = [[1,2,3],[3,1,5],[3,2,1]]")
-		fmt.Println("Output:", differenceOfDistinctValues(S2SoSliceInt("[[1,2,3],[3,1,5],[3,2,1]]")))
-		fmt.Println("Input: grid = [[1]]")
-		fmt.Println("Output:", differenceOfDistinctValues(S2SoSliceInt("[[1]]")))
+		fmt.Println(`Input: grid = [[1,2,3],[3,1,5],[3,2,1]]`)
+		fmt.Println(`Output:`, differenceOfDistinctValues(S2SoSliceInt(`[[1,2,3],[3,1,5],[3,2,1]]`)))
+		fmt.Println(`Input: grid = [[1]]`)
+		fmt.Println(`Output:`, differenceOfDistinctValues(S2SoSliceInt(`[[1]]`)))
 	}
 }
 

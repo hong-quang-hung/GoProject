@@ -8,10 +8,10 @@ import (
 // Reference: https://leetcode.com/problems/movement-of-robots/
 func init() {
 	Solutions[2731] = func() {
-		fmt.Println("Input: nums = [-2,0,2], s = 'RLL', d = 3")
-		fmt.Println("Output:", sumDistance([]int{-2, 0, 2}, "RLL", 3))
-		fmt.Println("Input: nums = [1,0], s = 'RL', d = 2")
-		fmt.Println("Output:", sumDistance([]int{1, 0}, "RL", 2))
+		fmt.Println(`Input: nums = [-2,0,2], s = "RLL", d = 3`)
+		fmt.Println(`Output:`, sumDistance([]int{-2, 0, 2}, `RLL`, 3))
+		fmt.Println(`Input: nums = [1,0], s = "RL", d = 2`)
+		fmt.Println(`Output:`, sumDistance([]int{1, 0}, `RL`, 2))
 	}
 }
 

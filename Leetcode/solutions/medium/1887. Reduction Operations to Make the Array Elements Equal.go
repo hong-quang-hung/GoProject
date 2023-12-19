@@ -8,12 +8,12 @@ import (
 // Reference: https://leetcode.com/problems/reduction-operations-to-make-the-array-elements-equal/
 func init() {
 	Solutions[1887] = func() {
-		fmt.Println("Input: nums = [5,1,3]")
-		fmt.Println("Output:", reductionOperations([]int{5, 1, 3}))
-		fmt.Println("Input: nums = [1,1,1]")
-		fmt.Println("Output:", reductionOperations([]int{1, 1, 1}))
-		fmt.Println("Input: nums = [1,1,2,2,3]")
-		fmt.Println("Output:", reductionOperations([]int{1, 1, 2, 2, 3}))
+		fmt.Println(`Input: nums = [5,1,3]`)
+		fmt.Println(`Output:`, reductionOperations([]int{5, 1, 3}))
+		fmt.Println(`Input: nums = [1,1,1]`)
+		fmt.Println(`Output:`, reductionOperations([]int{1, 1, 1}))
+		fmt.Println(`Input: nums = [1,1,2,2,3]`)
+		fmt.Println(`Output:`, reductionOperations([]int{1, 1, 2, 2, 3}))
 	}
 }
 

@@ -8,12 +8,12 @@ import (
 // Reference: https://leetcode.com/problems/number-of-subsequences-that-satisfy-the-given-sum-condition/
 func init() {
 	Solutions[1498] = func() {
-		fmt.Println("Input: nums = [3,5,6,7], target = 9")
-		fmt.Println("Output:", numSubseq([]int{3, 5, 6, 7}, 9))
-		fmt.Println("Input: nums = [3,3,6,8], target = 10")
-		fmt.Println("Output:", numSubseq([]int{3, 3, 6, 8}, 10))
-		fmt.Println("Input: nums = [2,3,3,4,6,7], target = 12")
-		fmt.Println("Output:", numSubseq([]int{2, 3, 3, 4, 6, 7}, 12))
+		fmt.Println(`Input: nums = [3,5,6,7], target = 9`)
+		fmt.Println(`Output:`, numSubseq([]int{3, 5, 6, 7}, 9))
+		fmt.Println(`Input: nums = [3,3,6,8], target = 10`)
+		fmt.Println(`Output:`, numSubseq([]int{3, 3, 6, 8}, 10))
+		fmt.Println(`Input: nums = [2,3,3,4,6,7], target = 12`)
+		fmt.Println(`Output:`, numSubseq([]int{2, 3, 3, 4, 6, 7}, 12))
 	}
 }
 

@@ -5,12 +5,12 @@ import "fmt"
 // Reference: https://leetcode.com/problems/find-the-longest-semi-repetitive-substring/
 func init() {
 	Solutions[2730] = func() {
-		fmt.Println("Input: s = '52233'")
-		fmt.Println("Output:", longestSemiRepetitiveSubstring("52233"))
-		fmt.Println("Input: s = '5494'")
-		fmt.Println("Output:", longestSemiRepetitiveSubstring("5494"))
-		fmt.Println("Input: s = '52233256'")
-		fmt.Println("Output:", longestSemiRepetitiveSubstring("52233256"))
+		fmt.Println(`Input: s = "52233"`)
+		fmt.Println(`Output:`, longestSemiRepetitiveSubstring(`52233`))
+		fmt.Println(`Input: s = "5494"`)
+		fmt.Println(`Output:`, longestSemiRepetitiveSubstring(`5494`))
+		fmt.Println(`Input: s = "52233256"`)
+		fmt.Println(`Output:`, longestSemiRepetitiveSubstring(`52233256`))
 	}
 }
 

@@ -8,10 +8,10 @@ import (
 // Reference: https://leetcode.com/problems/sum-of-absolute-differences-in-a-sorted-array/
 func init() {
 	Solutions[1727] = func() {
-		fmt.Println("Input: matrix = [[0,0,1],[1,1,1],[1,0,1]]")
-		fmt.Println("Output:", largestSubmatrix(S2SoSliceInt("[[0,0,1],[1,1,1],[1,0,1]]")))
-		fmt.Println("Input: matrix = [[1,1,0],[1,0,1]]")
-		fmt.Println("Output:", largestSubmatrix(S2SoSliceInt("[[1,1,0],[1,0,1]]")))
+		fmt.Println(`Input: matrix = [[0,0,1],[1,1,1],[1,0,1]]`)
+		fmt.Println(`Output:`, largestSubmatrix(S2SoSliceInt(`[[0,0,1],[1,1,1],[1,0,1]]`)))
+		fmt.Println(`Input: matrix = [[1,1,0],[1,0,1]]`)
+		fmt.Println(`Output:`, largestSubmatrix(S2SoSliceInt(`[[1,1,0],[1,0,1]]`)))
 	}
 }
 

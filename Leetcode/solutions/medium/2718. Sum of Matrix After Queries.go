@@ -5,10 +5,10 @@ import "fmt"
 // Reference: https://leetcode.com/problems/sum-of-matrix-after-queries/
 func init() {
 	Solutions[2718] = func() {
-		fmt.Println("Input: n = 3, queries = [[0,0,1],[1,2,2],[0,2,3],[1,0,4]]")
-		fmt.Println("Output:", matrixSumQueries(3, S2SoSliceInt("[[0,0,1],[1,2,2],[0,2,3],[1,0,4]]")))
-		fmt.Println("Input: n = 3, queries = [[0,0,4],[0,1,2],[1,0,1],[0,2,3],[1,2,1]]")
-		fmt.Println("Output:", matrixSumQueries(3, S2SoSliceInt("[[0,0,4],[0,1,2],[1,0,1],[0,2,3],[1,2,1]]")))
+		fmt.Println(`Input: n = 3, queries = [[0,0,1],[1,2,2],[0,2,3],[1,0,4]]`)
+		fmt.Println(`Output:`, matrixSumQueries(3, S2SoSliceInt(`[[0,0,1],[1,2,2],[0,2,3],[1,0,4]]`)))
+		fmt.Println(`Input: n = 3, queries = [[0,0,4],[0,1,2],[1,0,1],[0,2,3],[1,2,1]]`)
+		fmt.Println(`Output:`, matrixSumQueries(3, S2SoSliceInt(`[[0,0,4],[0,1,2],[1,0,1],[0,2,3],[1,2,1]]`)))
 	}
 }
 

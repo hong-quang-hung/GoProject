@@ -8,12 +8,12 @@ import (
 // Reference: https://leetcode.com/problems/path-with-maximum-probability/
 func init() {
 	Solutions[1514] = func() {
-		fmt.Println("Input:  n = 3, edges = [[0,1],[1,2],[0,2]], succProb = [0.5,0.5,0.2], start = 0, end = 2")
-		fmt.Println("Output:", maxProbability(3, S2SoSliceInt("[[0,1],[1,2],[0,2]]"), []float64{0.5, 0.5, 0.2}, 0, 2))
-		fmt.Println("Input:  n = 3, edges = [[0,1],[1,2],[0,2]], succProb = [0.5,0.5,0.3], start = 0, end = 2")
-		fmt.Println("Output:", maxProbability(3, S2SoSliceInt("[[0,1],[1,2],[0,2]]"), []float64{0.5, 0.5, 0.3}, 0, 2))
-		fmt.Println("Input:  n = 3, edges = [[0,1]], succProb = [0.5], start = 0, end = 2")
-		fmt.Println("Output:", maxProbability(3, S2SoSliceInt("[[0,1]]"), []float64{0.5}, 0, 2))
+		fmt.Println(`Input:  n = 3, edges = [[0,1],[1,2],[0,2]], succProb = [0.5,0.5,0.2], start = 0, end = 2`)
+		fmt.Println(`Output:`, maxProbability(3, S2SoSliceInt(`[[0,1],[1,2],[0,2]]`), []float64{0.5, 0.5, 0.2}, 0, 2))
+		fmt.Println(`Input:  n = 3, edges = [[0,1],[1,2],[0,2]], succProb = [0.5,0.5,0.3], start = 0, end = 2`)
+		fmt.Println(`Output:`, maxProbability(3, S2SoSliceInt(`[[0,1],[1,2],[0,2]]`), []float64{0.5, 0.5, 0.3}, 0, 2))
+		fmt.Println(`Input:  n = 3, edges = [[0,1]], succProb = [0.5], start = 0, end = 2`)
+		fmt.Println(`Output:`, maxProbability(3, S2SoSliceInt(`[[0,1]]`), []float64{0.5}, 0, 2))
 	}
 }
 

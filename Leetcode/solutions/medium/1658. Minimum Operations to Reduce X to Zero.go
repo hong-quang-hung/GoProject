@@ -5,12 +5,12 @@ import "fmt"
 // Reference: https://leetcode.com/problems/minimum-operations-to-reduce-x-to-zero/
 func init() {
 	Solutions[1658] = func() {
-		fmt.Println("Input: nums = [1,1,4,2,3], x = 5")
-		fmt.Println("Output:", minOperations([]int{1, 1, 4, 2, 3}, 5))
-		fmt.Println("Input: nums = [5,6,7,8,9], x = 4")
-		fmt.Println("Output:", minOperations([]int{5, 6, 7, 8, 9}, 4))
-		fmt.Println("Input: nums = [3,2,20,1,1,3], x = 10")
-		fmt.Println("Output:", minOperations([]int{3, 2, 20, 1, 1, 3}, 10))
+		fmt.Println(`Input: nums = [1,1,4,2,3], x = 5`)
+		fmt.Println(`Output:`, minOperations([]int{1, 1, 4, 2, 3}, 5))
+		fmt.Println(`Input: nums = [5,6,7,8,9], x = 4`)
+		fmt.Println(`Output:`, minOperations([]int{5, 6, 7, 8, 9}, 4))
+		fmt.Println(`Input: nums = [3,2,20,1,1,3], x = 10`)
+		fmt.Println(`Output:`, minOperations([]int{3, 2, 20, 1, 1, 3}, 10))
 	}
 }
 

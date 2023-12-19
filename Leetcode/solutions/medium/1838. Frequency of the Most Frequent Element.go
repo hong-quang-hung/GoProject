@@ -8,12 +8,12 @@ import (
 // Reference: https://leetcode.com/problems/frequency-of-the-most-frequent-element/
 func init() {
 	Solutions[1838] = func() {
-		fmt.Println("Input: nums = [1,2,4], k = 5")
-		fmt.Println("Output:", maxFrequency([]int{1, 2, 4}, 5))
-		fmt.Println("Input: nums = [1,4,8,13], k = 5")
-		fmt.Println("Output:", maxFrequency([]int{1, 4, 8, 13}, 5))
-		fmt.Println("Input: nums = [3,9,6], k = 2")
-		fmt.Println("Output:", maxFrequency([]int{3, 9, 6}, 2))
+		fmt.Println(`Input: nums = [1,2,4], k = 5`)
+		fmt.Println(`Output:`, maxFrequency([]int{1, 2, 4}, 5))
+		fmt.Println(`Input: nums = [1,4,8,13], k = 5`)
+		fmt.Println(`Output:`, maxFrequency([]int{1, 4, 8, 13}, 5))
+		fmt.Println(`Input: nums = [3,9,6], k = 2`)
+		fmt.Println(`Output:`, maxFrequency([]int{3, 9, 6}, 2))
 	}
 }
 

@@ -8,12 +8,10 @@ import (
 // Reference: https://leetcode.com/problems/determine-if-two-strings-are-close/
 func init() {
 	Solutions[1657] = func() {
-		fmt.Println("Input: word1 = 'abc', word2 = 'bca'")
-		fmt.Println("Output:", closeStrings("abc", "bca"))
-		fmt.Println("Input: word1 = 'cabbba', word2 = 'abbccc'")
-		fmt.Println("Output:", closeStrings("cabbba", "abbccc"))
-		fmt.Println("Input: word1 = 'cabbb', word2 = 'abbcc'")
-		fmt.Println("Output:", closeStrings("cabbb", "abbcc"))
+		fmt.Println(`Input: word1 = "abc", word2 = "bca"`)
+		fmt.Println(`Output:`, closeStrings(`abc`, `bca`))
+		fmt.Println(`Input: word1 = "cabbba", word2 = "abbccc"`)
+		fmt.Println(`Output:`, closeStrings(`cabbba`, `abbccc`))
 	}
 }
 

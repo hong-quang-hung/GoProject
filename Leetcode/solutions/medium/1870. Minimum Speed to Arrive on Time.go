@@ -8,12 +8,12 @@ import (
 // Reference: https://leetcode.com/problems/minimum-speed-to-arrive-on-time/
 func init() {
 	Solutions[1870] = func() {
-		fmt.Println("Input: dist = [1,3,2], hour = 6")
-		fmt.Println("Output:", minSpeedOnTime([]int{1, 3, 2}, 6))
-		fmt.Println("Input: dist = [1,3,2], hour = 2.7")
-		fmt.Println("Output:", minSpeedOnTime([]int{1, 3, 2}, 2.7))
-		fmt.Println("Input: dist = [1,3,2], hour = 1.9")
-		fmt.Println("Output:", minSpeedOnTime([]int{1, 3, 2}, 1.9))
+		fmt.Println(`Input: dist = [1,3,2], hour = 6`)
+		fmt.Println(`Output:`, minSpeedOnTime([]int{1, 3, 2}, 6))
+		fmt.Println(`Input: dist = [1,3,2], hour = 2.7`)
+		fmt.Println(`Output:`, minSpeedOnTime([]int{1, 3, 2}, 2.7))
+		fmt.Println(`Input: dist = [1,3,2], hour = 1.9`)
+		fmt.Println(`Output:`, minSpeedOnTime([]int{1, 3, 2}, 1.9))
 	}
 }
 

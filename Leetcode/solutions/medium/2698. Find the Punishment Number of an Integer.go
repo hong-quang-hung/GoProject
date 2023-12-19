@@ -8,10 +8,10 @@ import (
 // Reference: https://leetcode.com/problems/find-the-punishment-number-of-an-integer/
 func init() {
 	Solutions[2698] = func() {
-		fmt.Println("Input: n = 10")
-		fmt.Println("Output:", punishmentNumber(10))
-		fmt.Println("Input: n = 37")
-		fmt.Println("Output:", punishmentNumber(37))
+		fmt.Println(`Input: n = 10`)
+		fmt.Println(`Output:`, punishmentNumber(10))
+		fmt.Println(`Input: n = 37`)
+		fmt.Println(`Output:`, punishmentNumber(37))
 	}
 }
 

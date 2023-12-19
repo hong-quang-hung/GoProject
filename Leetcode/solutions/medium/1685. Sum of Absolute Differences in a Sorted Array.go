@@ -5,10 +5,10 @@ import "fmt"
 // Reference: https://leetcode.com/problems/sum-of-absolute-differences-in-a-sorted-array/
 func init() {
 	Solutions[1685] = func() {
-		fmt.Println("Input: nums = [2,3,5]")
-		fmt.Println("Output:", getSumAbsoluteDifferences([]int{2, 3, 5}))
-		fmt.Println("Input: nums = [1,4,6,8,10]")
-		fmt.Println("Output:", getSumAbsoluteDifferences([]int{1, 4, 6, 8, 10}))
+		fmt.Println(`Input: nums = [2,3,5]`)
+		fmt.Println(`Output:`, getSumAbsoluteDifferences([]int{2, 3, 5}))
+		fmt.Println(`Input: nums = [1,4,6,8,10]`)
+		fmt.Println(`Output:`, getSumAbsoluteDifferences([]int{1, 4, 6, 8, 10}))
 	}
 }
 

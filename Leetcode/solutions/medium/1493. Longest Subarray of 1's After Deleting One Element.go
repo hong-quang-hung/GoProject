@@ -5,12 +5,12 @@ import "fmt"
 // Reference: https://leetcode.com/problems/longest-subarray-of-1s-after-deleting-one-element/
 func init() {
 	Solutions[1493] = func() {
-		fmt.Println("Input: nums = [1,1,0,1]")
-		fmt.Println("Output:", longestSubarray([]int{1, 1, 0, 1}))
-		fmt.Println("Input: nums = [0,1,1,1,0,1,1,0,1]")
-		fmt.Println("Output:", longestSubarray([]int{0, 1, 1, 1, 0, 1, 1, 0, 1}))
-		fmt.Println("Input: nums = [1,1,1]")
-		fmt.Println("Output:", longestSubarray([]int{1, 1, 1}))
+		fmt.Println(`Input: nums = [1,1,0,1]`)
+		fmt.Println(`Output:`, longestSubarray([]int{1, 1, 0, 1}))
+		fmt.Println(`Input: nums = [0,1,1,1,0,1,1,0,1]`)
+		fmt.Println(`Output:`, longestSubarray([]int{0, 1, 1, 1, 0, 1, 1, 0, 1}))
+		fmt.Println(`Input: nums = [1,1,1]`)
+		fmt.Println(`Output:`, longestSubarray([]int{1, 1, 1}))
 	}
 }
 

@@ -8,20 +8,20 @@ import (
 // Reference: https://leetcode.com/problems/seat-reservation-manager/
 func init() {
 	Solutions[1845] = func() {
-		fmt.Println("Input:")
-		fmt.Println("['SeatManager', 'reserve', 'reserve', 'unreserve', 'reserve', 'reserve', 'reserve', 'reserve', 'unreserve']")
-		fmt.Println("[[5], [], [], [2], [], [], [], [], [5]]")
-		fmt.Println("Output:")
+		fmt.Println(`Input:`)
+		fmt.Println(`["SeatManager", "reserve", "reserve", "unreserve", "reserve", "reserve", "reserve", "reserve", "unreserve"]`)
+		fmt.Println(`[[5], [], [], [2], [], [], [], [], [5]]`)
+		fmt.Println(`Output:`)
 
 		seatManager := SeatManagerConstructor(5)
-		fmt.Println("seatManager.reserve();", "//", "return", seatManager.Reserve())
-		fmt.Println("seatManager.reserve();", "//", "return", seatManager.Reserve())
-		fmt.Println("seatManager.unreserve(2);")
+		fmt.Println(`seatManager.reserve();`, `//`, `return`, seatManager.Reserve())
+		fmt.Println(`seatManager.reserve();`, `//`, `return`, seatManager.Reserve())
+		fmt.Println(`seatManager.unreserve(2);`)
 		seatManager.Unreserve(2)
-		fmt.Println("seatManager.reserve();", "//", "return", seatManager.Reserve())
-		fmt.Println("seatManager.reserve();", "//", "return", seatManager.Reserve())
-		fmt.Println("seatManager.reserve();", "//", "return", seatManager.Reserve())
-		fmt.Println("seatManager.unreserve(5);")
+		fmt.Println(`seatManager.reserve();`, `//`, `return`, seatManager.Reserve())
+		fmt.Println(`seatManager.reserve();`, `//`, `return`, seatManager.Reserve())
+		fmt.Println(`seatManager.reserve();`, `//`, `return`, seatManager.Reserve())
+		fmt.Println(`seatManager.unreserve(5);`)
 		seatManager.Unreserve(5)
 	}
 }

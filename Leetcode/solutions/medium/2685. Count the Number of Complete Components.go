@@ -5,10 +5,10 @@ import "fmt"
 // Reference: https://leetcode.com/problems/count-the-number-of-complete-components/
 func init() {
 	Solutions[2685] = func() {
-		fmt.Println("Input: n = 6, edges = [[0,1],[0,2],[1,2],[3,4]]")
-		fmt.Println("Output:", countCompleteComponents(6, S2SoSliceInt("[[0,1],[0,2],[1,2],[3,4]]")))
-		fmt.Println("Input: n = 6, edges = [[0,1],[0,2],[1,2],[3,4],[3,5]]")
-		fmt.Println("Output:", countCompleteComponents(6, S2SoSliceInt("[[0,1],[0,2],[1,2],[3,4],[3,5]]")))
+		fmt.Println(`Input: n = 6, edges = [[0,1],[0,2],[1,2],[3,4]]`)
+		fmt.Println(`Output:`, countCompleteComponents(6, S2SoSliceInt(`[[0,1],[0,2],[1,2],[3,4]]`)))
+		fmt.Println(`Input: n = 6, edges = [[0,1],[0,2],[1,2],[3,4],[3,5]]`)
+		fmt.Println(`Output:`, countCompleteComponents(6, S2SoSliceInt(`[[0,1],[0,2],[1,2],[3,4],[3,5]]`)))
 	}
 }
 

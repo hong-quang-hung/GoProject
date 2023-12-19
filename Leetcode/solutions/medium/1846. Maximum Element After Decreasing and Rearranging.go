@@ -7,12 +7,12 @@ import (
 // Reference: https://leetcode.com/problems/maximum-element-after-decreasing-and-rearranging/
 func init() {
 	Solutions[1846] = func() {
-		fmt.Println("Input: arr = [2,2,1,2,1]")
-		fmt.Println("Output:", maximumElementAfterDecrementingAndRearranging([]int{2, 2, 1, 2, 1}))
-		fmt.Println("Input: arr = [100,1,1000]")
-		fmt.Println("Output:", maximumElementAfterDecrementingAndRearranging([]int{100, 1, 1000}))
-		fmt.Println("Input: arr = [1,2,3,4,5]")
-		fmt.Println("Output:", maximumElementAfterDecrementingAndRearranging([]int{1, 2, 3, 4, 5}))
+		fmt.Println(`Input: arr = [2,2,1,2,1]`)
+		fmt.Println(`Output:`, maximumElementAfterDecrementingAndRearranging([]int{2, 2, 1, 2, 1}))
+		fmt.Println(`Input: arr = [100,1,1000]`)
+		fmt.Println(`Output:`, maximumElementAfterDecrementingAndRearranging([]int{100, 1, 1000}))
+		fmt.Println(`Input: arr = [1,2,3,4,5]`)
+		fmt.Println(`Output:`, maximumElementAfterDecrementingAndRearranging([]int{1, 2, 3, 4, 5}))
 	}
 }
 

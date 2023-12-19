@@ -8,10 +8,10 @@ import (
 // Reference: https://leetcode.com/problems/max-number-of-k-sum-pairs/
 func init() {
 	Solutions[1679] = func() {
-		fmt.Println("Input: nums = [1,2,3,4], k = 5")
-		fmt.Println("Output:", maxOperations([]int{1, 2, 3, 4}, 5))
-		fmt.Println("Input: nums = [3,1,3,4,3], k = 6")
-		fmt.Println("Output:", maxOperations([]int{3, 1, 3, 4, 3}, 6))
+		fmt.Println(`Input: nums = [1,2,3,4], k = 5`)
+		fmt.Println(`Output:`, maxOperations([]int{1, 2, 3, 4}, 5))
+		fmt.Println(`Input: nums = [3,1,3,4,3], k = 6`)
+		fmt.Println(`Output:`, maxOperations([]int{3, 1, 3, 4, 3}, 6))
 	}
 }
 

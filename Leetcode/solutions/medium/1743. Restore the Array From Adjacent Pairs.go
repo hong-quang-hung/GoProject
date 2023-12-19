@@ -5,12 +5,12 @@ import "fmt"
 // Reference: https://leetcode.com/problems/restore-the-array-from-adjacent-pairs/
 func init() {
 	Solutions[1743] = func() {
-		fmt.Println("Input: adjacentPairs = [[2,1],[3,4],[3,2]]")
-		fmt.Println("Output:", restoreArray(S2SoSliceInt("[[2,1],[3,4],[3,2]]")))
-		fmt.Println("Input: adjacentPairs = [[4,-2],[1,4],[-3,1]]")
-		fmt.Println("Output:", restoreArray(S2SoSliceInt("[[4,-2],[1,4],[-3,1]]")))
-		fmt.Println("Input: adjacentPairs = [[100000,-100000]]")
-		fmt.Println("Output:", restoreArray(S2SoSliceInt("[[100000,-100000]]")))
+		fmt.Println(`Input: adjacentPairs = [[2,1],[3,4],[3,2]]`)
+		fmt.Println(`Output:`, restoreArray(S2SoSliceInt(`[[2,1],[3,4],[3,2]]`)))
+		fmt.Println(`Input: adjacentPairs = [[4,-2],[1,4],[-3,1]]`)
+		fmt.Println(`Output:`, restoreArray(S2SoSliceInt(`[[4,-2],[1,4],[-3,1]]`)))
+		fmt.Println(`Input: adjacentPairs = [[100000,-100000]]`)
+		fmt.Println(`Output:`, restoreArray(S2SoSliceInt(`[[100000,-100000]]`)))
 	}
 }
 

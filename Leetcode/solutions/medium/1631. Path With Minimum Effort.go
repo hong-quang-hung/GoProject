@@ -8,10 +8,10 @@ import (
 // Reference: https://leetcode.com/problems/path-with-minimum-effort/
 func init() {
 	Solutions[1631] = func() {
-		fmt.Println("Input: heights = [[1,2,2],[3,8,2],[5,3,5]]")
-		fmt.Println("Output:", minimumEffortPath(S2SoSliceInt("[[1,2,2],[3,8,2],[5,3,5]]")))
-		fmt.Println("Input: heights = [[1,2,3],[3,8,4],[5,3,5]]")
-		fmt.Println("Output:", minimumEffortPath(S2SoSliceInt("[[1,2,3],[3,8,4],[5,3,5]]")))
+		fmt.Println(`Input: heights = [[1,2,2],[3,8,2],[5,3,5]]`)
+		fmt.Println(`Output:`, minimumEffortPath(S2SoSliceInt(`[[1,2,2],[3,8,2],[5,3,5]]`)))
+		fmt.Println(`Input: heights = [[1,2,3],[3,8,4],[5,3,5]]`)
+		fmt.Println(`Output:`, minimumEffortPath(S2SoSliceInt(`[[1,2,3],[3,8,4],[5,3,5]]`)))
 	}
 }
 

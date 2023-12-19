@@ -5,10 +5,10 @@ import "fmt"
 // Reference: https://leetcode.com/problems/count-nice-pairs-in-an-array/
 func init() {
 	Solutions[1814] = func() {
-		fmt.Println("Input: nums = [42,11,1,97]")
-		fmt.Println("Output:", countNicePairs([]int{42, 11, 1, 97}))
-		fmt.Println("Input: nums = [13,10,35,24,76]")
-		fmt.Println("Output:", countNicePairs([]int{13, 10, 35, 24, 76}))
+		fmt.Println(`Input: nums = [42,11,1,97]`)
+		fmt.Println(`Output:`, countNicePairs([]int{42, 11, 1, 97}))
+		fmt.Println(`Input: nums = [13,10,35,24,76]`)
+		fmt.Println(`Output:`, countNicePairs([]int{13, 10, 35, 24, 76}))
 	}
 }
 

@@ -8,12 +8,12 @@ import (
 // Reference: https://leetcode.com/problems/minimum-number-of-operations-to-make-all-array-elements-equal-to-1/
 func init() {
 	Solutions[2654] = func() {
-		fmt.Println("Input: nums = [2,6,3,4]")
-		fmt.Println("Output:", minOperations_ii([]int{2, 6, 3, 4}))
-		fmt.Println("Input: nums = [2,10,6,14]")
-		fmt.Println("Output:", minOperations_ii([]int{2, 10, 6, 14}))
-		fmt.Println("Input: nums = [6,10,15]")
-		fmt.Println("Output:", minOperations_ii([]int{6, 10, 15}))
+		fmt.Println(`Input: nums = [2,6,3,4]`)
+		fmt.Println(`Output:`, minOperations_ii([]int{2, 6, 3, 4}))
+		fmt.Println(`Input: nums = [2,10,6,14]`)
+		fmt.Println(`Output:`, minOperations_ii([]int{2, 10, 6, 14}))
+		fmt.Println(`Input: nums = [6,10,15]`)
+		fmt.Println(`Output:`, minOperations_ii([]int{6, 10, 15}))
 	}
 }
 

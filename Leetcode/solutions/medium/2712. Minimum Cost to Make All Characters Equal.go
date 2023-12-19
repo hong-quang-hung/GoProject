@@ -5,10 +5,10 @@ import "fmt"
 // Reference: https://leetcode.com/problems/minimum-cost-to-make-all-characters-equal/
 func init() {
 	Solutions[2712] = func() {
-		fmt.Println("Input: num = '0011'")
-		fmt.Println("Output:", minimumCost_ii("0011"))
-		fmt.Println("Input: num = '010101'")
-		fmt.Println("Output:", minimumCost_ii("010101"))
+		fmt.Println(`Input: num = "0011"`)
+		fmt.Println(`Output:`, minimumCost_ii(`0011`))
+		fmt.Println(`Input: num = "010101"`)
+		fmt.Println(`Output:`, minimumCost_ii(`010101`))
 	}
 }
 
