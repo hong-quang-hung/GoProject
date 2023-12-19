@@ -8,8 +8,8 @@ import (
 // Reference: https://leetcode.com/problems/left-and-right-sum-differences/
 func init() {
 	Solutions[2574] = func() {
-		fmt.Println("Input: nums = [10,4,8,3]")
-		fmt.Println("Output:", leftRigthDifference(S2SliceInt("[10,4,8,3]")))
+		fmt.Println(`Input: nums = [10,4,8,3]`)
+		fmt.Println(`Output:`, leftRigthDifference(S2SliceInt(`[10,4,8,3]`)))
 	}
 }
 

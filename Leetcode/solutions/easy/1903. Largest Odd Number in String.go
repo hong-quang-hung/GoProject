@@ -2,15 +2,15 @@ package easy
 
 import "fmt"
 
-// Reference: https://leetcode.com/problems/minimum-amount-of-time-to-collect-garbage/
+// Reference: https://leetcode.com/problems/largest-odd-number-in-string/
 func init() {
 	Solutions[1903] = func() {
-		fmt.Println("Input: num = \"52\"")
-		fmt.Println("Output:", largestOddNumber("52"))
-		fmt.Println("Input: num = \"4206\"")
-		fmt.Println("Output:", largestOddNumber("4206"))
-		fmt.Println("Input: num = \"35427\"")
-		fmt.Println("Output:", largestOddNumber("35427"))
+		fmt.Println(`Input: num = "52"`)
+		fmt.Println(`Output:`, largestOddNumber(`52`))
+		fmt.Println(`Input: num = "4206"`)
+		fmt.Println(`Output:`, largestOddNumber(`4206`))
+		fmt.Println(`Input: num = "35427"`)
+		fmt.Println(`Output:`, largestOddNumber(`35427`))
 	}
 }
 

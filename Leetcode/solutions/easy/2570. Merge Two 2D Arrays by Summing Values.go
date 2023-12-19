@@ -8,8 +8,8 @@ import (
 // Reference: https://leetcode.com/problems/merge-two-2d-arrays-by-summing-values/
 func init() {
 	Solutions[2570] = func() {
-		fmt.Println("Input: nums1 = [[1,2],[2,3],[4,5]], nums2 = [[1,4],[3,2],[4,1]]")
-		fmt.Println("Output:", mergeArrays(S2SoSliceInt("[[1,2],[2,3],[4,5]]"), S2SoSliceInt("[[1,4],[3,2],[4,1]]")))
+		fmt.Println(`Input: nums1 = [[1,2],[2,3],[4,5]], nums2 = [[1,4],[3,2],[4,1]]`)
+		fmt.Println(`Output:`, mergeArrays(S2SoSliceInt(`[[1,2],[2,3],[4,5]]`), S2SoSliceInt(`[[1,4],[3,2],[4,1]]`)))
 	}
 }
 

@@ -5,8 +5,8 @@ import "fmt"
 // Reference: https://leetcode.com/problems/number-of-even-and-odd-bits/
 func init() {
 	Solutions[2595] = func() {
-		fmt.Println("Input: n = 11")
-		fmt.Println("Output:", evenOddBit(11))
+		fmt.Println(`Input: n = 11`)
+		fmt.Println(`Output:`, evenOddBit(11))
 	}
 }
 

@@ -8,10 +8,10 @@ import (
 // Reference: https://leetcode.com/problems/can-make-arithmetic-progression-from-sequence/
 func init() {
 	Solutions[1502] = func() {
-		fmt.Println("Input: arr = [3,5,1]")
-		fmt.Println("Output:", canMakeArithmeticProgression([]int{3, 5, 1}))
-		fmt.Println("Input: arr = [1,2,4]")
-		fmt.Println("Output:", canMakeArithmeticProgression([]int{1, 2, 4}))
+		fmt.Println(`Input: arr = [3,5,1]`)
+		fmt.Println(`Output:`, canMakeArithmeticProgression([]int{3, 5, 1}))
+		fmt.Println(`Input: arr = [1,2,4]`)
+		fmt.Println(`Output:`, canMakeArithmeticProgression([]int{1, 2, 4}))
 	}
 }
 

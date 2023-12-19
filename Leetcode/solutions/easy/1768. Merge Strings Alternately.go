@@ -5,12 +5,12 @@ import "fmt"
 // Reference: https://leetcode.com/problems/merge-strings-alternately/
 func init() {
 	Solutions[1768] = func() {
-		fmt.Println("Input: word1 = 'abc', word2 = 'pqr'")
-		fmt.Println("Output:", mergeAlternately("abc", "pqr"))
-		fmt.Println("Input: word1 = 'ab', word2 = 'pqrs'")
-		fmt.Println("Output:", mergeAlternately("ab", "pqrs"))
-		fmt.Println("Input: word1 = 'abcd', word2 = 'pq'")
-		fmt.Println("Output:", mergeAlternately("abcd", "pq"))
+		fmt.Println(`Input:  word1 = "abc", word2 = "pqr"`)
+		fmt.Println(`Output:`, mergeAlternately(`abc`, `pqr`))
+		fmt.Println(`Input: word1 = "ab", word2 = "pqrs"`)
+		fmt.Println(`Output:`, mergeAlternately(`ab`, `pqrs`))
+		fmt.Println(`Input: word1 = "abcd", word2 = "pq"`)
+		fmt.Println(`Output:`, mergeAlternately(`abcd`, `pq`))
 	}
 }
 

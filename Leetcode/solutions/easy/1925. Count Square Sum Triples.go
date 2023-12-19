@@ -8,12 +8,12 @@ import (
 // Reference: https://leetcode.com/problems/count-square-sum-triples/
 func init() {
 	Solutions[1925] = func() {
-		fmt.Println("Input: n = 5")
-		fmt.Println("Output:", countTriples(5))
-		fmt.Println("Input: n = 10")
-		fmt.Println("Output:", countTriples(10))
-		fmt.Println("Input: n = 41")
-		fmt.Println("Output:", countTriples(41))
+		fmt.Println(`Input: n = 5`)
+		fmt.Println(`Output:`, countTriples(5))
+		fmt.Println(`Input: n = 10`)
+		fmt.Println(`Output:`, countTriples(10))
+		fmt.Println(`Input: n = 41`)
+		fmt.Println(`Output:`, countTriples(41))
 	}
 }
 

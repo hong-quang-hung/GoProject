@@ -5,10 +5,10 @@ import "fmt"
 // Reference: https://leetcode.com/problems/pass-the-pillow/
 func init() {
 	Solutions[2582] = func() {
-		fmt.Println("Input: n = 4, time = 5")
-		fmt.Println("Output:", passThePillow(4, 5))
-		fmt.Println("Input: n = 3, time = 2")
-		fmt.Println("Output:", passThePillow(3, 2))
+		fmt.Println(`Input: n = 4, time = 5`)
+		fmt.Println(`Output:`, passThePillow(4, 5))
+		fmt.Println(`Input: n = 3, time = 2`)
+		fmt.Println(`Output:`, passThePillow(3, 2))
 	}
 }
 

@@ -5,12 +5,12 @@ import "fmt"
 // Reference: https://leetcode.com/problems/sign-of-the-product-of-an-array/
 func init() {
 	Solutions[1822] = func() {
-		fmt.Println("Input: nums = [-1,-2,-3,-4,3,2,1]")
-		fmt.Println("Output:", arraySign([]int{-1, -2, -3, -4, 3, 2, 1}))
-		fmt.Println("Input: nums = [1,5,0,2,-3]")
-		fmt.Println("Output:", arraySign([]int{1, 5, 0, 2, -3}))
-		fmt.Println("Input: nums = [-1,1,-1,1,-1]")
-		fmt.Println("Output:", arraySign([]int{-1, 1, -1, 1, -1}))
+		fmt.Println(`Input: nums = [-1,-2,-3,-4,3,2,1]`)
+		fmt.Println(`Output:`, arraySign([]int{-1, -2, -3, -4, 3, 2, 1}))
+		fmt.Println(`Input: nums = [1,5,0,2,-3]`)
+		fmt.Println(`Output:`, arraySign([]int{1, 5, 0, 2, -3}))
+		fmt.Println(`Input: nums = [-1,1,-1,1,-1]`)
+		fmt.Println(`Output:`, arraySign([]int{-1, 1, -1, 1, -1}))
 	}
 }
 

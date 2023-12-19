@@ -8,10 +8,10 @@ import (
 // Reference: https://leetcode.com/problems/maximum-product-difference-between-two-pairs/
 func init() {
 	Solutions[1913] = func() {
-		fmt.Println("Input: nums = [5,6,2,7,4]")
-		fmt.Println("Output:", maxProductDifference([]int{5, 6, 2, 7, 4}))
-		fmt.Println("Input: nums = [4,2,5,9,7,4,8]")
-		fmt.Println("Output:", maxProductDifference([]int{4, 2, 5, 9, 7, 4, 8}))
+		fmt.Println(`Input: nums = [5,6,2,7,4]`)
+		fmt.Println(`Output:`, maxProductDifference([]int{5, 6, 2, 7, 4}))
+		fmt.Println(`Input: nums = [4,2,5,9,7,4,8]`)
+		fmt.Println(`Output:`, maxProductDifference([]int{4, 2, 5, 9, 7, 4, 8}))
 	}
 }
 

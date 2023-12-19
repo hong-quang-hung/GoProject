@@ -5,10 +5,10 @@ import "fmt"
 // Reference: https://leetcode.com/problems/count-the-digits-that-divide-a-number/
 func init() {
 	Solutions[2520] = func() {
-		fmt.Println("Input: num = 121")
-		fmt.Println("Output:", countDigits(121))
-		fmt.Println("Input: num = 1248")
-		fmt.Println("Output:", countDigits(1248))
+		fmt.Println(`Input: num = 121`)
+		fmt.Println(`Output:`, countDigits(121))
+		fmt.Println(`Input: num = 1248`)
+		fmt.Println(`Output:`, countDigits(1248))
 	}
 }
 

@@ -5,15 +5,15 @@ import "fmt"
 // Reference: https://leetcode.com/problems/design-parking-system/
 func init() {
 	Solutions[1603] = func() {
-		fmt.Println("Input:")
-		fmt.Println("['ParkingSystem', 'addCar', 'addCar', 'addCar', 'addCar']")
-		fmt.Println("[[1, 1, 0], [1], [2], [3], [1]]")
-		fmt.Println("Output:")
+		fmt.Println(`Input:`)
+		fmt.Println(`["ParkingSystem", "addCar", "addCar", "addCar", "addCar"]`)
+		fmt.Println(`[[1, 1, 0], [1], [2], [3], [1]]`)
+		fmt.Println(`Output:`)
 		parkingSystem := ParkingSystemConstructor(1, 1, 0)
-		fmt.Println("parkingSystem.AddCar(1)", "-->", parkingSystem.AddCar(1))
-		fmt.Println("parkingSystem.AddCar(2)", "-->", parkingSystem.AddCar(2))
-		fmt.Println("parkingSystem.AddCar(3)", "-->", parkingSystem.AddCar(3))
-		fmt.Println("parkingSystem.AddCar(1)", "-->", parkingSystem.AddCar(1))
+		fmt.Println(`parkingSystem.AddCar(1)`, `-->`, parkingSystem.AddCar(1))
+		fmt.Println(`parkingSystem.AddCar(2)`, `-->`, parkingSystem.AddCar(2))
+		fmt.Println(`parkingSystem.AddCar(3)`, `-->`, parkingSystem.AddCar(3))
+		fmt.Println(`parkingSystem.AddCar(1)`, `-->`, parkingSystem.AddCar(1))
 	}
 }
 

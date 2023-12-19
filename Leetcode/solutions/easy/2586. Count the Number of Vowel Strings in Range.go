@@ -5,8 +5,8 @@ import "fmt"
 // Reference: https://leetcode.com/problems/count-the-number-of-vowel-strings-in-range/
 func init() {
 	Solutions[2586] = func() {
-		fmt.Println("Input: words = ['hey', 'aeo', 'mu', 'ooo', 'artro'], left = 1, right = 4")
-		fmt.Println("Output:", vowelStrings([]string{"hey", "aeo", "mu", "ooo", "artro"}, 1, 4))
+		fmt.Println(`Input: words = ["are","amy","u"], left = 0, right = 2`)
+		fmt.Println(`Output:`, vowelStrings([]string{`hey`, `aeo`, `mu`, `ooo`, `artro`}, 1, 4))
 	}
 }
 

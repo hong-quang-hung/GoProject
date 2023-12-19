@@ -5,12 +5,10 @@ import "fmt"
 // Reference: https://leetcode.com/problems/number-of-different-integers-in-a-string/
 func init() {
 	Solutions[1805] = func() {
-		fmt.Println("Input: word = 'a123bc34d8ef34'")
-		fmt.Println("Output:", numDifferentIntegers("a123bc34d8ef34"))
-		fmt.Println("Input: word = 'leet1234code234'")
-		fmt.Println("Output:", numDifferentIntegers("leet1234code234"))
-		fmt.Println("Input: word = 'a1b01c001'")
-		fmt.Println("Output:", numDifferentIntegers("a1b01c001"))
+		fmt.Println(`Input: word = "a123bc34d8ef34"`)
+		fmt.Println(`Output:`, numDifferentIntegers(`a123bc34d8ef34`))
+		fmt.Println(`Input: word = "leet1234code234"`)
+		fmt.Println(`Output:`, numDifferentIntegers(`leet1234code234`))
 	}
 }
 

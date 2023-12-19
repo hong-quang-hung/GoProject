@@ -5,12 +5,10 @@ import "fmt"
 // Reference: https://leetcode.com/problems/calculate-money-in-leetcode-bank/
 func init() {
 	Solutions[1716] = func() {
-		fmt.Println("Input: n = 4")
-		fmt.Println("Output:", totalMoney(4))
-		fmt.Println("Input: n = 10")
-		fmt.Println("Output:", totalMoney(10))
-		fmt.Println("Input: n = 20")
-		fmt.Println("Output:", totalMoney(20))
+		fmt.Println(`Input: n = 10`)
+		fmt.Println(`Output:`, totalMoney(10))
+		fmt.Println(`Input: n = 20`)
+		fmt.Println(`Output:`, totalMoney(20))
 	}
 }
 

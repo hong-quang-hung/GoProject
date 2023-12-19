@@ -5,10 +5,10 @@ import "fmt"
 // Reference: https://leetcode.com/problems/find-the-difference-of-two-arrays/
 func init() {
 	Solutions[2215] = func() {
-		fmt.Println("Input: nums1 = [1,2,3], nums2 = [2,4,6]")
-		fmt.Println("Output:", findDifference([]int{1, 2, 3}, []int{2, 4, 6}))
-		fmt.Println("Input: nums1 = [1,2,3,3], nums2 = [1,1,2,2]")
-		fmt.Println("Output:", findDifference([]int{1, 2, 3, 3}, []int{1, 1, 2, 2}))
+		fmt.Println(`Input: nums1 = [1,2,3], nums2 = [2,4,6]`)
+		fmt.Println(`Output:`, findDifference([]int{1, 2, 3}, []int{2, 4, 6}))
+		fmt.Println(`Input: nums1 = [1,2,3,3], nums2 = [1,1,2,2]`)
+		fmt.Println(`Output:`, findDifference([]int{1, 2, 3, 3}, []int{1, 1, 2, 2}))
 	}
 }
 

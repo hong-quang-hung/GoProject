@@ -9,8 +9,8 @@ import (
 // Reference: https://leetcode.com/problems/split-with-minimum-sum/
 func init() {
 	Solutions[2578] = func() {
-		fmt.Println("Input: num = 4325")
-		fmt.Println("Output:", splitNum(4325))
+		fmt.Println(`Input: num = 4325`)
+		fmt.Println(`Output:`, splitNum(4325))
 	}
 }
 

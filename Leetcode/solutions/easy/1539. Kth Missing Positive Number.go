@@ -5,10 +5,10 @@ import "fmt"
 // Reference: https://leetcode.com/problems/kth-missing-positive-number/
 func init() {
 	Solutions[1539] = func() {
-		fmt.Println("Input: arr = [2,3,4,7,11], k = 5")
-		fmt.Println("Output:", findKthPositive([]int{2, 3, 4, 7, 11}, 5))
-		fmt.Println("Input: arr = [1,2,3,4], k = 2")
-		fmt.Println("Output:", findKthPositive([]int{1, 2, 3, 4}, 2))
+		fmt.Println(`Input: arr = [2,3,4,7,11], k = 5`)
+		fmt.Println(`Output:`, findKthPositive([]int{2, 3, 4, 7, 11}, 5))
+		fmt.Println(`Input: arr = [1,2,3,4], k = 2`)
+		fmt.Println(`Output:`, findKthPositive([]int{1, 2, 3, 4}, 2))
 	}
 }
 

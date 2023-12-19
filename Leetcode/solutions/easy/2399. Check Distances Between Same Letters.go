@@ -5,10 +5,10 @@ import "fmt"
 // Reference: https://leetcode.com/problems/check-distances-between-same-letters/
 func init() {
 	Solutions[2399] = func() {
-		fmt.Println("Input: s = 'aa', distance = [1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]")
-		fmt.Println("Output:", checkDistances("aa", []int{1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0}))
-		fmt.Println("Input: s = 'adaccd', distance = [1,0,0,5,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]")
-		fmt.Println("Output:", checkDistances("adaccd", []int{1, 0, 0, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0}))
+		fmt.Println(`Input: s = "aa", distance = [1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]`)
+		fmt.Println(`Output:`, checkDistances(`aa`, []int{1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0}))
+		fmt.Println(`Input: s = "adaccd", distance = [1,0,0,5,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]`)
+		fmt.Println(`Output:`, checkDistances(`adaccd`, []int{1, 0, 0, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0}))
 	}
 }
 
