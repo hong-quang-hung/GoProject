@@ -5,10 +5,10 @@ import "fmt"
 // Reference: https://leetcode.com/problems/substring-with-largest-variance/
 func init() {
 	Solutions[2272] = func() {
-		fmt.Println("Input: s = 'aababbb'")
-		fmt.Println("Output:", largestVariance("aababbb"))
-		fmt.Println("Input: s = 'abcde'")
-		fmt.Println("Output:", largestVariance("abcde"))
+		fmt.Println(`Input: s = "aababbb"`)
+		fmt.Println(`Output:`, largestVariance(`aababbb`))
+		fmt.Println(`Input: s = "abcde"`)
+		fmt.Println(`Output:`, largestVariance(`abcde`))
 	}
 }
 

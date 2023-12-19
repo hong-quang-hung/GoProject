@@ -5,14 +5,14 @@ import "fmt"
 // Reference: https://leetcode.com/problems/longest-palindromic-substring/
 func init() {
 	Solutions[5] = func() {
-		fmt.Println("Input: s = 'babad'")
-		fmt.Println("Output:", longestPalindrome("babad"))
+		fmt.Println(`Input: s = "babad"`)
+		fmt.Println(`Output:`, longestPalindrome(`babad`))
 	}
 }
 
 func longestPalindrome(s string) string {
 	if len(s) < 1 {
-		return ""
+		return ``
 	}
 
 	start, end := 0, 0

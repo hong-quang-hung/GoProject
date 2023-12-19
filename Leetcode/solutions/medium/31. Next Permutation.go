@@ -8,18 +8,18 @@ import (
 func init() {
 	Solutions[31] = func() {
 		var nums []int
-		fmt.Println("Input: nums = [1,2,3]")
+		fmt.Println(`Input: nums = [1,2,3]`)
 		nums = []int{1, 2, 3}
 		nextPermutation(nums)
-		fmt.Println("Output:", nums)
-		fmt.Println("Input: nums = [3,2,1]")
+		fmt.Println(`Output:`, nums)
+		fmt.Println(`Input: nums = [3,2,1]`)
 		nums = []int{3, 2, 1}
 		nextPermutation(nums)
-		fmt.Println("Output:", nums)
-		fmt.Println("Input: nums = [1,3,2]")
+		fmt.Println(`Output:`, nums)
+		fmt.Println(`Input: nums = [1,3,2]`)
 		nums = []int{1, 3, 2}
 		nextPermutation(nums)
-		fmt.Println("Output:", nums)
+		fmt.Println(`Output:`, nums)
 	}
 }
 

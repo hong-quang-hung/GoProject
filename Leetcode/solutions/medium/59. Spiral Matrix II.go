@@ -5,10 +5,10 @@ import "fmt"
 // Reference: https://leetcode.com/problems/spiral-matrix-ii/
 func init() {
 	Solutions[59] = func() {
-		fmt.Println("Input: n = 3")
-		fmt.Println("Output:", generateMatrix(3))
-		fmt.Println("Input: n = 1")
-		fmt.Println("Output:", generateMatrix(1))
+		fmt.Println(`Input: n = 3`)
+		fmt.Println(`Output:`, generateMatrix(3))
+		fmt.Println(`Input: n = 1`)
+		fmt.Println(`Output:`, generateMatrix(1))
 	}
 }
 

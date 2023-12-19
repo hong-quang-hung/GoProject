@@ -5,10 +5,10 @@ import "fmt"
 // Reference: https://leetcode.com/problems/powx-n/
 func init() {
 	Solutions[50] = func() {
-		fmt.Println("Input: x = 2.00000, n = 10")
-		fmt.Println("Output:", myPow(2.00000, 10))
-		fmt.Println("Input: x = 2.00000, n = -1")
-		fmt.Println("Output:", myPow(2.00000, -1))
+		fmt.Println(`Input: x = 2.00000, n = 10`)
+		fmt.Println(`Output:`, myPow(2.00000, 10))
+		fmt.Println(`Input: x = 2.00000, n = -1`)
+		fmt.Println(`Output:`, myPow(2.00000, -1))
 	}
 }
 

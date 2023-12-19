@@ -5,12 +5,10 @@ import "fmt"
 // Reference: https://leetcode.com/problems/find-a-good-subset-of-the-matrix/
 func init() {
 	Solutions[2732] = func() {
-		fmt.Println("Input: grid = [[0,1,1,0],[0,0,0,1],[1,1,1,1]]")
-		fmt.Println("Output:", goodSubsetofBinaryMatrix(S2SoSliceInt("[[0,1,1,0],[0,0,0,1],[1,1,1,1]]")))
-		fmt.Println("Input: grid = [[0]]")
-		fmt.Println("Output:", goodSubsetofBinaryMatrix(S2SoSliceInt("[[0]]")))
-		fmt.Println("Input: grid = [[1,1,1],[1,1,1]]")
-		fmt.Println("Output:", goodSubsetofBinaryMatrix(S2SoSliceInt("[[1,1,1],[1,1,1]]")))
+		fmt.Println(`Input: grid = [[0,1,1,0],[0,0,0,1],[1,1,1,1]]`)
+		fmt.Println(`Output:`, goodSubsetofBinaryMatrix(S2SoSliceInt(`[[0,1,1,0],[0,0,0,1],[1,1,1,1]]`)))
+		fmt.Println(`Input: grid = [[1,1,1],[1,1,1]]`)
+		fmt.Println(`Output:`, goodSubsetofBinaryMatrix(S2SoSliceInt(`[[1,1,1],[1,1,1]]`)))
 	}
 }
 

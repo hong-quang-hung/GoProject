@@ -8,12 +8,12 @@ import (
 // Reference: https://leetcode.com/problems/make-array-empty/
 func init() {
 	Solutions[2659] = func() {
-		fmt.Println("Input: nums = [3,4,-1]")
-		fmt.Println("Output:", countOperationsToEmptyArray([]int{3, 4, -1}))
-		fmt.Println("Input: nums = [1,2,4,3]")
-		fmt.Println("Output:", countOperationsToEmptyArray([]int{1, 2, 4, 3}))
-		fmt.Println("Input: nums = [1,2,3]")
-		fmt.Println("Output:", countOperationsToEmptyArray([]int{1, 2, 3}))
+		fmt.Println(`Input: nums = [3,4,-1]`)
+		fmt.Println(`Output:`, countOperationsToEmptyArray([]int{3, 4, -1}))
+		fmt.Println(`Input: nums = [1,2,4,3]`)
+		fmt.Println(`Output:`, countOperationsToEmptyArray([]int{1, 2, 4, 3}))
+		fmt.Println(`Input: nums = [1,2,3]`)
+		fmt.Println(`Output:`, countOperationsToEmptyArray([]int{1, 2, 3}))
 	}
 }
 

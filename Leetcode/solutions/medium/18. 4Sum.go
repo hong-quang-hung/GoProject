@@ -8,10 +8,10 @@ import (
 // Reference: https://leetcode.com/problems/4sum/
 func init() {
 	Solutions[18] = func() {
-		fmt.Println("Input: nums = [1,0,-1,0,-2,2], target = 0")
-		fmt.Println("Output:", fourSum([]int{1, 0, -1, 0, -2, 2}, 0))
-		fmt.Println("Input: nums = [2,2,2,2,2], target = 8")
-		fmt.Println("Output:", fourSum([]int{2, 2, 2, 2, 2}, 8))
+		fmt.Println(`Input: nums = [1,0,-1,0,-2,2], target = 0`)
+		fmt.Println(`Output:`, fourSum([]int{1, 0, -1, 0, -2, 2}, 0))
+		fmt.Println(`Input: nums = [2,2,2,2,2], target = 8`)
+		fmt.Println(`Output:`, fourSum([]int{2, 2, 2, 2, 2}, 8))
 	}
 }
 

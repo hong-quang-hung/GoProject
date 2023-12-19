@@ -5,10 +5,10 @@ import "fmt"
 // Reference: https://leetcode.com/problems/minimum-replacements-to-sort-the-array/
 func init() {
 	Solutions[2366] = func() {
-		fmt.Println("Input: nums = [3,9,3]")
-		fmt.Println("Output:", minimumReplacement([]int{3, 9, 3}))
-		fmt.Println("Input: nums = [1,2,3,4,5]")
-		fmt.Println("Output:", minimumReplacement([]int{1, 2, 3, 4, 5}))
+		fmt.Println(`Input: nums = [3,9,3]`)
+		fmt.Println(`Output:`, minimumReplacement([]int{3, 9, 3}))
+		fmt.Println(`Input: nums = [1,2,3,4,5]`)
+		fmt.Println(`Output:`, minimumReplacement([]int{1, 2, 3, 4, 5}))
 	}
 }
 

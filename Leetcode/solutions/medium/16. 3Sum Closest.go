@@ -8,12 +8,12 @@ import (
 // Reference: https://leetcode.com/problems/3sum-closest/
 func init() {
 	Solutions[16] = func() {
-		fmt.Println("Input: nums = [-1,2,1,-4], target = 1")
-		fmt.Println("Output:", threeSumClosest([]int{-1, 2, 1, -4}, 1))
-		fmt.Println("Input: nums = [4,0,5,-5,3,3,0,-4,-5], target = -2")
-		fmt.Println("Output:", threeSumClosest([]int{4, 0, 5, -5, 3, 3, 0, -4, -5}, -2))
-		fmt.Println("Input: nums = [1,1,1,0], target = 100")
-		fmt.Println("Output:", threeSumClosest([]int{1, 1, 1, 0}, 100))
+		fmt.Println(`Input: nums = [-1,2,1,-4], target = 1`)
+		fmt.Println(`Output:`, threeSumClosest([]int{-1, 2, 1, -4}, 1))
+		fmt.Println(`Input: nums = [4,0,5,-5,3,3,0,-4,-5], target = -2`)
+		fmt.Println(`Output:`, threeSumClosest([]int{4, 0, 5, -5, 3, 3, 0, -4, -5}, -2))
+		fmt.Println(`Input: nums = [1,1,1,0], target = 100`)
+		fmt.Println(`Output:`, threeSumClosest([]int{1, 1, 1, 0}, 100))
 	}
 }
 

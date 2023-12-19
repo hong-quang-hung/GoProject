@@ -5,10 +5,10 @@ import "fmt"
 // Reference: https://leetcode.com/problems/naming-a-company/
 func init() {
 	Solutions[2306] = func() {
-		fmt.Println("Input: ideas = ['coffee','donuts','time','toffee']")
-		fmt.Println("Output:", distinctNames([]string{"coffee", "donuts", "time", "toffee"}))
-		fmt.Println("Input: ideas = ['aaa','baa', 'caa', 'bbb', 'cbb', 'dbb']")
-		fmt.Println("Output:", distinctNames([]string{"aaa", "baa", "caa", "bbb", "cbb", "dbb"}))
+		fmt.Println(`Input: ideas = ["coffee","donuts","time","toffee"]`)
+		fmt.Println(`Output:`, distinctNames([]string{`coffee`, `donuts`, `time`, `toffee`}))
+		fmt.Println(`Input: ideas = ["aaa","baa","caa","bbb","cbb,"dbb"]`)
+		fmt.Println(`Output:`, distinctNames([]string{`aaa`, `baa`, `caa`, `bbb`, `cbb`, `dbb`}))
 	}
 }
 

@@ -5,10 +5,10 @@ import "fmt"
 // Reference: https://leetcode.com/problems/permutations/
 func init() {
 	Solutions[46] = func() {
-		fmt.Println("Input: nums = [1,2,3]")
-		fmt.Println("Output:", permute([]int{1, 2, 3}))
-		fmt.Println("Input: nums = [0,1]")
-		fmt.Println("Output:", permute([]int{0, 1}))
+		fmt.Println(`Input: nums = [1,2,3]`)
+		fmt.Println(`Output:`, permute([]int{1, 2, 3}))
+		fmt.Println(`Input: nums = [0,1]`)
+		fmt.Println(`Output:`, permute([]int{0, 1}))
 	}
 }
 

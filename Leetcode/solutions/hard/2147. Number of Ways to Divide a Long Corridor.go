@@ -7,12 +7,12 @@ import (
 // Reference: https://leetcode.com/problems/number-of-ways-to-divide-a-long-corridor/
 func init() {
 	Solutions[2147] = func() {
-		fmt.Println("Input: corridor = \"SSPPSPS\"")
-		fmt.Println("Output:", numberOfWays("SSPPSPS"))
-		fmt.Println("Input: corridor = \"PPSPSP\"")
-		fmt.Println("Output:", numberOfWays("PPSPSP"))
-		fmt.Println("Input: corridor = \"SSS\"")
-		fmt.Println("Output:", numberOfWays("SSS"))
+		fmt.Println(`Input: corridor = "SSPPSPS"`)
+		fmt.Println(`Output:`, numberOfWays(`SSPPSPS`))
+		fmt.Println(`Input: corridor = "PPSPSP"`)
+		fmt.Println(`Output:`, numberOfWays(`PPSPSP`))
+		fmt.Println(`Input: corridor = "SSS"`)
+		fmt.Println(`Output:`, numberOfWays(`SSS`))
 	}
 }
 

@@ -5,12 +5,12 @@ import "fmt"
 // Reference: https://leetcode.com/problems/reverse-integer/
 func init() {
 	Solutions[7] = func() {
-		fmt.Println("Input: x = 123")
-		fmt.Println("Output:", reverse(123))
-		fmt.Println("Input: x = -123")
-		fmt.Println("Output:", reverse(-123))
-		fmt.Println("Input: x = 120")
-		fmt.Println("Output:", reverse(120))
+		fmt.Println(`Input: x = 123`)
+		fmt.Println(`Output:`, reverse(123))
+		fmt.Println(`Input: x = -123`)
+		fmt.Println(`Output:`, reverse(-123))
+		fmt.Println(`Input: x = 120`)
+		fmt.Println(`Output:`, reverse(120))
 	}
 }
 

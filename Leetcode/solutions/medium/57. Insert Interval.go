@@ -8,10 +8,10 @@ import (
 // Reference: https://leetcode.com/problems/insert-interval/
 func init() {
 	Solutions[57] = func() {
-		fmt.Println("Input: intervals = [[1,1],[6,9]], newInterval = [2,5]")
-		fmt.Println("Output:", insert(S2SoSliceInt("[[1,1],[6,9]]"), []int{2, 5}))
-		fmt.Println("Input: intervals = [[1,2],[3,5],[6,7],[8,10],[12,16]], newInterval = [4,8]")
-		fmt.Println("Output:", insert(S2SoSliceInt("[[1,2],[3,5],[6,7],[8,10],[12,16]]"), []int{4, 8}))
+		fmt.Println(`Input: intervals = [[1,1],[6,9]], newInterval = [2,5]`)
+		fmt.Println(`Output:`, insert(S2SoSliceInt(`[[1,1],[6,9]]`), []int{2, 5}))
+		fmt.Println(`Input: intervals = [[1,2],[3,5],[6,7],[8,10],[12,16]], newInterval = [4,8]`)
+		fmt.Println(`Output:`, insert(S2SoSliceInt(`[[1,2],[3,5],[6,7],[8,10],[12,16]]`), []int{4, 8}))
 	}
 }
 

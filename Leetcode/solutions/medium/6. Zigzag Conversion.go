@@ -8,10 +8,10 @@ import (
 // Reference: https://leetcode.com/problems/zigzag-conversion/
 func init() {
 	Solutions[6] = func() {
-		fmt.Println("Input: x = 'PAYPALISHIRING', numRows = 3")
-		fmt.Println("Output:", convert("PAYPALISHIRING", 3))
-		fmt.Println("Input: x = 'PAYPALISHIRING', numRows = 4")
-		fmt.Println("Output:", convert("PAYPALISHIRING", 4))
+		fmt.Println(`Input: x = "PAYPALISHIRING", numRows = 3`)
+		fmt.Println(`Output:`, convert(`PAYPALISHIRING`, 3))
+		fmt.Println(`Input: x = "PAYPALISHIRING", numRows = 4`)
+		fmt.Println(`Output:`, convert(`PAYPALISHIRING`, 4))
 	}
 }
 

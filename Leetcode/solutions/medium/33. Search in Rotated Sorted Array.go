@@ -5,12 +5,10 @@ import "fmt"
 // Reference: https://leetcode.com/problems/search-in-rotated-sorted-array/
 func init() {
 	Solutions[33] = func() {
-		fmt.Println("Input: nums = [4,5,6,7,0,1,2], target = 0")
-		fmt.Println("Output:", search([]int{4, 5, 6, 7, 0, 1, 2}, 0))
-		fmt.Println("Input: nums = [4,5,6,7,0,1,2], target = 3")
-		fmt.Println("Output:", search([]int{4, 5, 6, 7, 0, 1, 2}, 3))
-		fmt.Println("Input: nums = [1], target = 0")
-		fmt.Println("Output:", search([]int{1}, 0))
+		fmt.Println(`Input: nums = [4,5,6,7,0,1,2], target = 0`)
+		fmt.Println(`Output:`, search([]int{4, 5, 6, 7, 0, 1, 2}, 0))
+		fmt.Println(`Input: nums = [4,5,6,7,0,1,2], target = 3`)
+		fmt.Println(`Output:`, search([]int{4, 5, 6, 7, 0, 1, 2}, 3))
 	}
 }
 

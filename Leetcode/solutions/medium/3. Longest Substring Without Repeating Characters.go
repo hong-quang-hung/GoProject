@@ -5,10 +5,10 @@ import "fmt"
 // Reference: https://leetcode.com/problems/longest-substring-without-repeating-characters/
 func init() {
 	Solutions[3] = func() {
-		fmt.Println("Input: s = 'abcabcbb'")
-		fmt.Println("Output:", lengthOfLongestSubstring("abcabcbb"))
-		fmt.Println("Input: s = 'abcdc'")
-		fmt.Println("Output:", lengthOfLongestSubstring("abcdc"))
+		fmt.Println(`Input: s = "abcabcbb"`)
+		fmt.Println(`Output:`, lengthOfLongestSubstring(`abcabcbb`))
+		fmt.Println(`Input: s = "abcdc"`)
+		fmt.Println(`Output:`, lengthOfLongestSubstring(`abcdc`))
 	}
 }
 

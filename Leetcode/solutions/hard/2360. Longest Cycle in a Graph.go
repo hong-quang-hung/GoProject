@@ -5,10 +5,10 @@ import "fmt"
 // Reference: https://leetcode.com/problems/longest-cycle-in-a-graph/
 func init() {
 	Solutions[2360] = func() {
-		fmt.Println("Input: edges = [3,3,4,2,3]")
-		fmt.Println("Output:", longestCycle([]int{3, 3, 4, 2, 3}))
-		fmt.Println("Input: edges = [2,-1,3,1]")
-		fmt.Println("Output:", longestCycle([]int{2, -1, 3, 1}))
+		fmt.Println(`Input: edges = [3,3,4,2,3]`)
+		fmt.Println(`Output:`, longestCycle([]int{3, 3, 4, 2, 3}))
+		fmt.Println(`Input: edges = [2,-1,3,1]`)
+		fmt.Println(`Output:`, longestCycle([]int{2, -1, 3, 1}))
 	}
 }
 

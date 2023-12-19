@@ -5,10 +5,10 @@ import "fmt"
 // Reference: https://leetcode.com/problems/add-two-numbers/
 func init() {
 	Solutions[2] = func() {
-		fmt.Println("Input: l1 = [2,4,3], l2 = [5,6,4]")
-		fmt.Println("Output:", addTwoNumbers(S2ListNode("[2,4,3]"), S2ListNode("[5,6,4]")))
-		fmt.Println("Input: l1 = [9,9,9,9,9,9,9], l2 = [9,9,9,9]")
-		fmt.Println("Output:", addTwoNumbers(S2ListNode("[9,9,9,9,9,9,9]"), S2ListNode("[9,9,9,9]")))
+		fmt.Println(`Input: l1 = [2,4,3], l2 = [5,6,4]`)
+		fmt.Println(`Output:`, addTwoNumbers(S2ListNode(`[2,4,3]`), S2ListNode(`[5,6,4]`)))
+		fmt.Println(`Input: l1 = [9,9,9,9,9,9,9], l2 = [9,9,9,9]`)
+		fmt.Println(`Output:`, addTwoNumbers(S2ListNode(`[9,9,9,9,9,9,9]`), S2ListNode(`[9,9,9,9]`)))
 	}
 }
 

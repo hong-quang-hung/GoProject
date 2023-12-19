@@ -8,10 +8,10 @@ import (
 // Reference: https://leetcode.com/problems/merge-intervals/
 func init() {
 	Solutions[56] = func() {
-		fmt.Println("Input: intervals = [[1,3],[2,6],[8,10],[15,18]]")
-		fmt.Println("Output:", merge(S2SoSliceInt("[[1,3],[2,6],[8,10],[15,18]]")))
-		fmt.Println("Input: intervals = [[1,4],[4,5]]")
-		fmt.Println("Output:", merge(S2SoSliceInt("[[1,4],[4,5]]")))
+		fmt.Println(`Input: intervals = [[1,3],[2,6],[8,10],[15,18]]`)
+		fmt.Println(`Output:`, merge(S2SoSliceInt(`[[1,3],[2,6],[8,10],[15,18]]`)))
+		fmt.Println(`Input: intervals = [[1,4],[4,5]]`)
+		fmt.Println(`Output:`, merge(S2SoSliceInt(`[[1,4],[4,5]]`)))
 	}
 }
 

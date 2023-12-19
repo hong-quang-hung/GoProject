@@ -8,10 +8,10 @@ import (
 // Reference: https://leetcode.com/problems/number-of-flowers-in-full-bloom/
 func init() {
 	Solutions[2251] = func() {
-		fmt.Println("Input: flowers = [[1,6],[3,7],[9,12],[4,13]], people = [2,3,7,11]")
-		fmt.Println("Output:", fullBloomFlowers(S2SoSliceInt("[[1,6],[3,7],[9,12],[4,13]]"), []int{2, 3, 7, 11}))
-		fmt.Println("Input: flowers = [[1,10],[3,3]], people = [3,3,2]")
-		fmt.Println("Output:", fullBloomFlowers(S2SoSliceInt("[[1,10],[3,3]]"), []int{3, 3, 2}))
+		fmt.Println(`Input: flowers = [[1,6],[3,7],[9,12],[4,13]], people = [2,3,7,11]`)
+		fmt.Println(`Output:`, fullBloomFlowers(S2SoSliceInt(`[[1,6],[3,7],[9,12],[4,13]]`), []int{2, 3, 7, 11}))
+		fmt.Println(`Input: flowers = [[1,10],[3,3]], people = [3,3,2]`)
+		fmt.Println(`Output:`, fullBloomFlowers(S2SoSliceInt(`[[1,10],[3,3]]`), []int{3, 3, 2}))
 	}
 }
 

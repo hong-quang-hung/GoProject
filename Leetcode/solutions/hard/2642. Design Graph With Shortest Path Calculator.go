@@ -5,16 +5,16 @@ import "fmt"
 // https://leetcode.com/problems/design-graph-with-shortest-path-calculator/
 func init() {
 	Solutions[2642] = func() {
-		fmt.Println("Input:")
-		fmt.Println("[\"Graph\", \"shortestPath\", \"shortestPath\", \"addEdge\", \"shortestPath\"]")
-		fmt.Println("[[4, [[0, 2, 5], [0, 1, 2], [1, 2, 1], [3, 0, 3]]], [3, 2], [0, 3], [[1, 3, 4]], [0, 3]]")
-		fmt.Println("OutPut:")
-		g := GraphConstructor(4, S2SoSliceInt("[[0, 2, 5], [0, 1, 2], [1, 2, 1], [3, 0, 3]]"))
-		fmt.Println("g.shortestPath(3, 2)", "// return", g.ShortestPath(3, 2))
-		fmt.Println("g.shortestPath(0, 3)", "// return", g.ShortestPath(0, 3))
+		fmt.Println(`Input:`)
+		fmt.Println(`["Graph", "shortestPath", "shortestPath", "addEdge", "shortestPath"]`)
+		fmt.Println(`[[4, [[0, 2, 5], [0, 1, 2], [1, 2, 1], [3, 0, 3]]], [3, 2], [0, 3], [[1, 3, 4]], [0, 3]]`)
+		fmt.Println(`OutPut:`)
+		g := GraphConstructor(4, S2SoSliceInt(`[[0, 2, 5], [0, 1, 2], [1, 2, 1], [3, 0, 3]]`))
+		fmt.Println(`g.shortestPath(3, 2)`, `// return`, g.ShortestPath(3, 2))
+		fmt.Println(`g.shortestPath(0, 3)`, `// return`, g.ShortestPath(0, 3))
 		g.AddEdge([]int{1, 3, 4})
-		fmt.Println("g.addEdge([1, 3, 4])", "// return", "null")
-		fmt.Println("g.shortestPath(0, 3)", "// return", g.ShortestPath(0, 3))
+		fmt.Println(`g.addEdge([1, 3, 4])`, `// return`, `null`)
+		fmt.Println(`g.shortestPath(0, 3)`, `// return`, g.ShortestPath(0, 3))
 	}
 }
 
@@ -22,7 +22,7 @@ type Graph struct {
 	g    [][][2]int
 	h    *Heap[[2]int]
 	n    int
-	MAX  int
+	max  int
 	dist []int
 }
 
@@ -31,7 +31,7 @@ func GraphConstructor(n int, edges [][]int) Graph {
 		g:    make([][][2]int, n),
 		h:    NewHeap[[2]int](CompareEdges),
 		n:    n,
-		MAX:  n * int(1e6),
+		max:  n * int(1e6),
 		dist: make([]int, n),
 	}
 	for _, e := range edges {
@@ -46,7 +46,7 @@ func (g *Graph) AddEdge(e []int) {
 
 func (g *Graph) ShortestPath(s int, e int) int {
 	for i := 0; i < g.n; i++ {
-		g.dist[i] = g.MAX
+		g.dist[i] = g.max
 	}
 	g.dist[s] = 0
 	g.h.Clear()
@@ -64,7 +64,7 @@ func (g *Graph) ShortestPath(s int, e int) int {
 			}
 		}
 	}
-	if g.dist[e] == g.MAX {
+	if g.dist[e] == g.max {
 		return -1
 	}
 	return g.dist[e]
@@ -131,11 +131,6 @@ func (h *Heap[T]) down(i int) {
 		h.a[i], h.a[j] = h.a[j], h.a[i]
 		i = j
 	}
-}
-
-func (h *Heap[T]) Print() {
-	fmt.Println("Size:", h.sz)
-	fmt.Println("Elem:", h.a[:h.sz])
 }
 
 func CompareInts(a, b int) int {

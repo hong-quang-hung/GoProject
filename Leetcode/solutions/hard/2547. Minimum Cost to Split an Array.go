@@ -8,10 +8,10 @@ import (
 // Reference: https://leetcode.com/problems/minimum-cost-to-split-an-array/
 func init() {
 	Solutions[2547] = func() {
-		fmt.Println("Input: nums = [1,2,1,2,1], k = 2")
-		fmt.Println("Output:", minCost([]int{1, 2, 1, 2, 1}, 2))
-		fmt.Println("Input: nums = [1,2,1,2,1], k = 5")
-		fmt.Println("Output:", minCost([]int{1, 2, 1, 2, 1}, 5))
+		fmt.Println(`Input: nums = [1,2,1,2,1], k = 2`)
+		fmt.Println(`Output:`, minCost([]int{1, 2, 1, 2, 1}, 2))
+		fmt.Println(`Input: nums = [1,2,1,2,1], k = 5`)
+		fmt.Println(`Output:`, minCost([]int{1, 2, 1, 2, 1}, 5))
 	}
 }
 

@@ -8,12 +8,12 @@ import (
 // Reference: https://leetcode.com/problems/maximum-running-time-of-n-computers/
 func init() {
 	Solutions[2141] = func() {
-		fmt.Println("Input: n = 2, batteries = [3,3,3]")
-		fmt.Println("Output:", maxRunTime(2, []int{3, 3, 3}))
-		fmt.Println("Input: n = 2, batteries = [1,1,1,1]")
-		fmt.Println("Output:", maxRunTime(2, []int{1, 1, 1, 1}))
-		fmt.Println("Input: n = 3, batteries = [10,10,3,5]")
-		fmt.Println("Output:", maxRunTime(3, []int{10, 10, 3, 5}))
+		fmt.Println(`Input: n = 2, batteries = [3,3,3]`)
+		fmt.Println(`Output:`, maxRunTime(2, []int{3, 3, 3}))
+		fmt.Println(`Input: n = 2, batteries = [1,1,1,1]`)
+		fmt.Println(`Output:`, maxRunTime(2, []int{1, 1, 1, 1}))
+		fmt.Println(`Input: n = 3, batteries = [10,10,3,5]`)
+		fmt.Println(`Output:`, maxRunTime(3, []int{10, 10, 3, 5}))
 	}
 }
 

@@ -8,10 +8,10 @@ import (
 // Reference: https://leetcode.com/problems/minimum-cost-to-make-array-equal/
 func init() {
 	Solutions[2448] = func() {
-		fmt.Println("Input: nums = [1,3,5,2], cost = [2,3,1,14]")
-		fmt.Println("Output:", minCost_iii([]int{1, 3, 5, 2}, []int{2, 3, 1, 14}))
-		fmt.Println("Input: nums = [2,2,2,2,2], cost = [4,2,8,1,3]")
-		fmt.Println("Output:", minCost_iii([]int{2, 2, 2, 2, 2}, []int{4, 2, 8, 1, 3}))
+		fmt.Println(`Input: nums = [1,3,5,2], cost = [2,3,1,14]`)
+		fmt.Println(`Output:`, minCost_iii([]int{1, 3, 5, 2}, []int{2, 3, 1, 14}))
+		fmt.Println(`Input: nums = [2,2,2,2,2], cost = [4,2,8,1,3]`)
+		fmt.Println(`Output:`, minCost_iii([]int{2, 2, 2, 2, 2}, []int{4, 2, 8, 1, 3}))
 	}
 }
 

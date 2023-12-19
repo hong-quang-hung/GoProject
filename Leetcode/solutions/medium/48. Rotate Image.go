@@ -5,10 +5,10 @@ import "fmt"
 // Reference: https://leetcode.com/problems/rotate-image/
 func init() {
 	Solutions[48] = func() {
-		fmt.Println("Input: matrix = [[1,2,3],[4,5,6],[7,8,9]]")
-		matrix := S2SoSliceInt("[[1,2,3],[4,5,6],[7,8,9]]")
+		fmt.Println(`Input: matrix = [[1,2,3],[4,5,6],[7,8,9]]`)
+		matrix := S2SoSliceInt(`[[1,2,3],[4,5,6],[7,8,9]]`)
 		rotate(matrix)
-		fmt.Println("Output:", matrix)
+		fmt.Println(`Output:`, matrix)
 	}
 }
 

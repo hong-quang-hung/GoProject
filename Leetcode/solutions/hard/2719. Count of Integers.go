@@ -5,10 +5,10 @@ import "fmt"
 // Reference: https://leetcode.com/problems/count-of-integers/
 func init() {
 	Solutions[2719] = func() {
-		fmt.Println("Input: num1 = '1', num2 = '12', min_num = 1, max_num = 8")
-		fmt.Println("Output:", count("1", "12", 1, 8))
-		fmt.Println("Input: num1 = '1', num2 = '5', min_num = 1, max_num = 5")
-		fmt.Println("Output:", count("1", "5", 1, 5))
+		fmt.Println(`Input: num1 = '1', num2 = '12', min_num = 1, max_num = 8`)
+		fmt.Println(`Output:`, count(`1`, `12`, 1, 8))
+		fmt.Println(`Input: num1 = '1', num2 = '5', min_num = 1, max_num = 5`)
+		fmt.Println(`Output:`, count(`1`, `5`, 1, 5))
 	}
 }
 

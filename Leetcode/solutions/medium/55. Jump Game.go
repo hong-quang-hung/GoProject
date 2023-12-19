@@ -5,10 +5,10 @@ import "fmt"
 // Reference: https://leetcode.com/problems/jump-game/
 func init() {
 	Solutions[55] = func() {
-		fmt.Println("Input: nums = [2,3,1,1,4]")
-		fmt.Println("Output:", canJump([]int{2, 3, 1, 1, 4}))
-		fmt.Println("Input: nums = [3,2,1,0,4]")
-		fmt.Println("Output:", canJump([]int{3, 2, 1, 0, 4}))
+		fmt.Println(`Input: nums = [2,3,1,1,4]`)
+		fmt.Println(`Output:`, canJump([]int{2, 3, 1, 1, 4}))
+		fmt.Println(`Input: nums = [3,2,1,0,4]`)
+		fmt.Println(`Output:`, canJump([]int{3, 2, 1, 0, 4}))
 	}
 }
 
