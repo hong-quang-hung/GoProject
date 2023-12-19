@@ -5,10 +5,10 @@ import "fmt"
 // Reference: https://leetcode.com/problems/longest-subarray-with-maximum-bitwise-and/
 func init() {
 	Solutions[2419] = func() {
-		fmt.Println("Input: nums = [1,2,3,3,2,2]")
-		fmt.Println("Output:", longestSubarray_ii([]int{1, 2, 3, 3, 2, 2}))
-		fmt.Println("Input: nums = [1,2,3,3,2,2,2,4]")
-		fmt.Println("Output:", longestSubarray_ii([]int{1, 2, 3, 3, 2, 2, 2, 4}))
+		fmt.Println(`Input: nums = [1,2,3,3,2,2]`)
+		fmt.Println(`Output:`, longestSubarray_ii([]int{1, 2, 3, 3, 2, 2}))
+		fmt.Println(`Input: nums = [1,2,3,3,2,2,2,4]`)
+		fmt.Println(`Output:`, longestSubarray_ii([]int{1, 2, 3, 3, 2, 2, 2, 4}))
 	}
 }
 

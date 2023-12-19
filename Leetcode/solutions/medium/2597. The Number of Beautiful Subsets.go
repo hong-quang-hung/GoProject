@@ -8,8 +8,8 @@ import (
 // Reference: https://leetcode.com/problems/the-number-of-beautiful-subsets/
 func init() {
 	Solutions[2597] = func() {
-		fmt.Println("Input: nums = [10,4,5,7,2,1], k = 3")
-		fmt.Println("Output:", beautifulSubsets([]int{10, 4, 5, 7, 2, 1}, 3))
+		fmt.Println(`Input: nums = [10,4,5,7,2,1], k = 3`)
+		fmt.Println(`Output:`, beautifulSubsets([]int{10, 4, 5, 7, 2, 1}, 3))
 	}
 }
 

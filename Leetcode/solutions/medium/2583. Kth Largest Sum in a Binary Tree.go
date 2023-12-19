@@ -8,8 +8,8 @@ import (
 // Reference: https://leetcode.com/problems/kth-largest-sum-in-a-binary-tree/
 func init() {
 	Solutions[2583] = func() {
-		fmt.Println("Input: root = [5,8,9,2,1,3,7,4,6], k = 2")
-		fmt.Println("Output:", kthLargestLevelSum(S2TreeNode("[5,8,9,2,1,3,7,4,6]"), 2))
+		fmt.Println(`Input: root = [5,8,9,2,1,3,7,4,6], k = 2`)
+		fmt.Println(`Output:`, kthLargestLevelSum(S2TreeNode(`[5,8,9,2,1,3,7,4,6]`), 2))
 	}
 }
 

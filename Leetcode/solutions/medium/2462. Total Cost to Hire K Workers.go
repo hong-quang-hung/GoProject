@@ -8,10 +8,10 @@ import (
 // Reference: https://leetcode.com/problems/total-cost-to-hire-k-workers/
 func init() {
 	Solutions[2462] = func() {
-		fmt.Println("Input: costs = [17,12,10,2,7,2,11,20,8], k = 3, candidates = 4")
-		fmt.Println("Output:", totalCost([]int{17, 12, 10, 2, 7, 2, 11, 20, 8}, 3, 4))
-		fmt.Println("Input: costs = [2,2,2,2,2,2,1,4,5,5,5,5,5,2,2,2,2,2,2,2,2,2,2,2,2,2], k = 7, candidates = 3")
-		fmt.Println("Output:", totalCost([]int{2, 2, 2, 2, 2, 2, 1, 4, 5, 5, 5, 5, 5, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2}, 7, 3))
+		fmt.Println(`Input: costs = [17,12,10,2,7,2,11,20,8], k = 3, candidates = 4`)
+		fmt.Println(`Output:`, totalCost([]int{17, 12, 10, 2, 7, 2, 11, 20, 8}, 3, 4))
+		fmt.Println(`Input: costs = [2,2,2,2,2,2,1,4,5,5,5,5,5,2,2,2,2,2,2,2,2,2,2,2,2,2], k = 7, candidates = 3`)
+		fmt.Println(`Output:`, totalCost([]int{2, 2, 2, 2, 2, 2, 1, 4, 5, 5, 5, 5, 5, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2}, 7, 3))
 	}
 }
 

@@ -5,10 +5,10 @@ import "fmt"
 // Reference: https://leetcode.com/problems/find-the-original-array-of-prefix-xor/
 func init() {
 	Solutions[2433] = func() {
-		fmt.Println("Input: pref = [5,2,0,3,1]")
-		fmt.Println("Output:", findArray([]int{5, 2, 0, 3, 1}))
-		fmt.Println("Input: pref = [13]")
-		fmt.Println("Output:", findArray([]int{13}))
+		fmt.Println(`Input: pref = [5,2,0,3,1]`)
+		fmt.Println(`Output:`, findArray([]int{5, 2, 0, 3, 1}))
+		fmt.Println(`Input: pref = [13]`)
+		fmt.Println(`Output:`, findArray([]int{13}))
 	}
 }
 

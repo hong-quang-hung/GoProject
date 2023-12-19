@@ -8,8 +8,8 @@ import (
 // Reference: https://leetcode.com/problems/maximize-greatness-of-an-array/
 func init() {
 	Solutions[2592] = func() {
-		fmt.Println("Input: nums = [42,8,75,28,35,21,13,21]")
-		fmt.Println("Output:", maximizeGreatness([]int{42, 8, 75, 28, 35, 21, 13, 21}))
+		fmt.Println(`Input: nums = [42,8,75,28,35,21,13,21]`)
+		fmt.Println(`Output:`, maximizeGreatness([]int{42, 8, 75, 28, 35, 21, 13, 21}))
 	}
 }
 

@@ -5,14 +5,14 @@ import "fmt"
 // Reference: https://leetcode.com/problems/prime-subtraction-operation/
 func init() {
 	Solutions[2601] = func() {
-		fmt.Println("Input: nums = [4,9,6,10]")
-		fmt.Println("Output:", primeSubOperation([]int{4, 9, 6, 10}))
+		fmt.Println(`Input: nums = [4,9,6,10]`)
+		fmt.Println(`Output:`, primeSubOperation([]int{4, 9, 6, 10}))
 	}
 }
 
 func Leetcode_Prime_Sub_Operation() {
-	fmt.Println("Input: nums = [4,9,6,10]")
-	fmt.Println("Output:", primeSubOperation([]int{4, 9, 6, 10}))
+	fmt.Println(`Input: nums = [4,9,6,10]`)
+	fmt.Println(`Output:`, primeSubOperation([]int{4, 9, 6, 10}))
 }
 
 func primeSubOperation(nums []int) bool {

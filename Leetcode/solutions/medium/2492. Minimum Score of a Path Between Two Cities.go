@@ -8,8 +8,8 @@ import (
 // Reference: https://leetcode.com/problems/minimum-score-of-a-path-between-two-cities/
 func init() {
 	Solutions[2492] = func() {
-		fmt.Println("Input: n = 4, roads = [[1,2,9],[2,3,6],[2,4,5],[1,4,7]]")
-		fmt.Println("Output:", minScore(4, S2SoSliceInt("[[1,2,9],[2,3,6],[2,4,5],[1,4,7]]")))
+		fmt.Println(`Input: n = 4, roads = [[1,2,9],[2,3,6],[2,4,5],[1,4,7]]`)
+		fmt.Println(`Output:`, minScore(4, S2SoSliceInt(`[[1,2,9],[2,3,6],[2,4,5],[1,4,7]]`)))
 	}
 }
 

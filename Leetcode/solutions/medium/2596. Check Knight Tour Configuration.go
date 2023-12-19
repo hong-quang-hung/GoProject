@@ -5,8 +5,8 @@ import "fmt"
 // Reference: https://leetcode.com/problems/check-knight-tour-configuration/
 func init() {
 	Solutions[2596] = func() {
-		fmt.Println("Input: grid = [[8,3,6],[5,0,1],[2,7,4]]")
-		fmt.Println("Output:", checkValidGrid(S2SoSliceInt("[[8,3,6],[5,0,1],[2,7,4]]")))
+		fmt.Println(`Input: grid = [[8,3,6],[5,0,1],[2,7,4]]`)
+		fmt.Println(`Output:`, checkValidGrid(S2SoSliceInt(`[[8,3,6],[5,0,1],[2,7,4]]`)))
 	}
 }
 

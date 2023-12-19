@@ -5,10 +5,10 @@ import "fmt"
 // Reference: https://leetcode.com/problems/difference-between-ones-and-zeros-in-row-and-column/
 func init() {
 	Solutions[2482] = func() {
-		fmt.Println("Input: grid = [[0,1,1],[1,0,1],[0,0,1]]")
-		fmt.Println("Output:", onesMinusZeros(S2SoSliceInt("[[0,1,1],[1,0,1],[0,0,1]]")))
-		fmt.Println("Input: grid = [[1,1,1],[1,1,1]]")
-		fmt.Println("Output:", onesMinusZeros(S2SoSliceInt("[[1,1,1],[1,1,1]]")))
+		fmt.Println(`Input: grid = [[0,1,1],[1,0,1],[0,0,1]]`)
+		fmt.Println(`Output:`, onesMinusZeros(S2SoSliceInt(`[[0,1,1],[1,0,1],[0,0,1]]`)))
+		fmt.Println(`Input: grid = [[1,1,1],[1,1,1]]`)
+		fmt.Println(`Output:`, onesMinusZeros(S2SoSliceInt(`[[1,1,1],[1,1,1]]`)))
 	}
 }
 

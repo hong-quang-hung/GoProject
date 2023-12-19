@@ -9,12 +9,12 @@ import (
 // Reference: https://leetcode.com/problems/maximum-subsequence-score/
 func init() {
 	Solutions[2542] = func() {
-		fmt.Println("Input: nums1 = [1,3,3,2], nums2 = [2,1,3,4], k = 3")
-		fmt.Println("Output:", maxScore_ii([]int{1, 3, 3, 2}, []int{2, 1, 3, 4}, 3))
-		fmt.Println("Input: nums1 = [4,2,3,1,1], nums2 = [7,5,10,9,6], k = 1")
-		fmt.Println("Output:", maxScore_ii([]int{4, 2, 3, 1, 1}, []int{7, 5, 10, 9, 6}, 1))
-		fmt.Println("Input: nums1 = [22,5,25,15,28,1], nums2 = [11,7,13,6], k = 3")
-		fmt.Println("Output:", maxScore_ii([]int{22, 5, 25, 15, 28, 1}, []int{22, 30, 25, 25, 9, 18}, 3))
+		fmt.Println(`Input: nums1 = [1,3,3,2], nums2 = [2,1,3,4], k = 3`)
+		fmt.Println(`Output:`, maxScore_ii([]int{1, 3, 3, 2}, []int{2, 1, 3, 4}, 3))
+		fmt.Println(`Input: nums1 = [4,2,3,1,1], nums2 = [7,5,10,9,6], k = 1`)
+		fmt.Println(`Output:`, maxScore_ii([]int{4, 2, 3, 1, 1}, []int{7, 5, 10, 9, 6}, 1))
+		fmt.Println(`Input: nums1 = [22,5,25,15,28,1], nums2 = [11,7,13,6], k = 3`)
+		fmt.Println(`Output:`, maxScore_ii([]int{22, 5, 25, 15, 28, 1}, []int{22, 30, 25, 25, 9, 18}, 3))
 	}
 }
 

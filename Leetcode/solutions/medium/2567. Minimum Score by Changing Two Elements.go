@@ -8,10 +8,10 @@ import (
 // Reference: https://leetcode.com/problems/minimum-score-by-changing-two-elements/
 func init() {
 	Solutions[2567] = func() {
-		fmt.Println("Input: nums = [1,4,3]")
-		fmt.Println("Output:", minimizeSum([]int{1, 4, 3}))
-		fmt.Println("Input: nums = [1,4,7,8,5]")
-		fmt.Println("Output:", minimizeSum([]int{1, 4, 7, 8, 5}))
+		fmt.Println(`Input: nums = [1,4,3]`)
+		fmt.Println(`Output:`, minimizeSum([]int{1, 4, 3}))
+		fmt.Println(`Input: nums = [1,4,7,8,5]`)
+		fmt.Println(`Output:`, minimizeSum([]int{1, 4, 7, 8, 5}))
 	}
 }
 

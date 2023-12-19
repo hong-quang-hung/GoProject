@@ -5,10 +5,10 @@ import "fmt"
 // Reference: https://leetcode.com/problems/optimal-partition-of-string/
 func init() {
 	Solutions[2405] = func() {
-		fmt.Println("Input: s = 'gizfdfri'")
-		fmt.Println("Output:", partitionString("gizfdfri"))
-		fmt.Println("Input: s = 'hdklqkcssgxlvehva'")
-		fmt.Println("Output:", partitionString("hdklqkcssgxlvehva"))
+		fmt.Println(`Input: s = "gizfdfri"`)
+		fmt.Println(`Output:`, partitionString(`gizfdfri`))
+		fmt.Println(`Input: s = "hdklqkcssgxlvehva"`)
+		fmt.Println(`Output:`, partitionString(`hdklqkcssgxlvehva`))
 	}
 }
 

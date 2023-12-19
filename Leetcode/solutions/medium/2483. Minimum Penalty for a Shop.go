@@ -5,12 +5,12 @@ import "fmt"
 // Reference: https://leetcode.com/problems/minimum-penalty-for-a-shop/
 func init() {
 	Solutions[2483] = func() {
-		fmt.Println("Input: customers = 'YYNY'")
-		fmt.Println("Output:", bestClosingTime("YYNY"))
-		fmt.Println("Input: customers = 'NNNNN'")
-		fmt.Println("Output:", bestClosingTime("NNNNN"))
-		fmt.Println("Input: customers = 'YYYY'")
-		fmt.Println("Output:", bestClosingTime("YYYY"))
+		fmt.Println(`Input: customers = "YYNY"`)
+		fmt.Println(`Output:`, bestClosingTime(`YYNY`))
+		fmt.Println(`Input: customers = "NNNNN"`)
+		fmt.Println(`Output:`, bestClosingTime(`NNNNN`))
+		fmt.Println(`Input: customers = "YYYY"`)
+		fmt.Println(`Output:`, bestClosingTime(`YYYY`))
 	}
 }
 

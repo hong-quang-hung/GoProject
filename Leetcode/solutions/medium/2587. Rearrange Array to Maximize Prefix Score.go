@@ -8,8 +8,8 @@ import (
 // Reference: https://leetcode.com/problems/rearrange-array-to-maximize-prefix-score/
 func init() {
 	Solutions[2587] = func() {
-		fmt.Println("Input: nums = [2,-1,0,1,-3,3,-3]")
-		fmt.Println("Output:", maxScore([]int{2, -1, 0, 1, -3, 3, -3}))
+		fmt.Println(`Input: nums = [2,-1,0,1,-3,3,-3]`)
+		fmt.Println(`Output:`, maxScore([]int{2, -1, 0, 1, -3, 3, -3}))
 	}
 }
 

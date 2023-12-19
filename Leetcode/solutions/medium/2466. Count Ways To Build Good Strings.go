@@ -5,10 +5,10 @@ import "fmt"
 // Reference: https://leetcode.com/problems/count-ways-to-build-good-strings/
 func init() {
 	Solutions[2466] = func() {
-		fmt.Println("Input: low = 3, high = 3, zero = 1, one = 1")
-		fmt.Println("Output:", countGoodStrings(3, 3, 1, 1))
-		fmt.Println("Input: low = 2, high = 3, zero = 1, one = 2")
-		fmt.Println("Output:", countGoodStrings(2, 3, 1, 2))
+		fmt.Println(`Input: low = 3, high = 3, zero = 1, one = 1`)
+		fmt.Println(`Output:`, countGoodStrings(3, 3, 1, 1))
+		fmt.Println(`Input: low = 2, high = 3, zero = 1, one = 2`)
+		fmt.Println(`Output:`, countGoodStrings(2, 3, 1, 2))
 	}
 }
 
