@@ -8,10 +8,10 @@ import (
 // Reference: https://leetcode.com/problems/last-stone-weight/
 func init() {
 	Solutions[1046] = func() {
-		fmt.Println("Input: stones = [2,7,4,1,8,1]")
-		fmt.Println("Output:", lastStoneWeight([]int{2, 7, 4, 1, 8, 1}))
-		fmt.Println("Input: heights = [5,5]")
-		fmt.Println("Output:", lastStoneWeight([]int{5, 5}))
+		fmt.Println(`Input: stones = [2,7,4,1,8,1]`)
+		fmt.Println(`Output:`, lastStoneWeight([]int{2, 7, 4, 1, 8, 1}))
+		fmt.Println(`Input: heights = [5,5]`)
+		fmt.Println(`Output:`, lastStoneWeight([]int{5, 5}))
 	}
 }
 

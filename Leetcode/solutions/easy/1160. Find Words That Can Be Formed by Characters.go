@@ -2,13 +2,13 @@ package easy
 
 import "fmt"
 
-// Reference: https://leetcode.com/problems/sum-of-absolute-differences-in-a-sorted-array/
+// Reference: https://leetcode.com/problems/find-words-that-can-be-formed-by-characters/
 func init() {
 	Solutions[1160] = func() {
-		fmt.Println("Input: words = [\"cat\",\"bt\",\"hat\",\"tree\"], chars = \"atach\"")
-		fmt.Println("Output:", countCharacters([]string{"cat", "bt", "hat", "tree"}, "atach"))
-		fmt.Println("Input: words = [\"hello\",\"world\",\"leetcode\"], chars = \"welldonehoneyr\"")
-		fmt.Println("Output:", countCharacters([]string{"hello", "world", "leetcode"}, "welldonehoneyr"))
+		fmt.Println(`Input: words = ["cat","bt","hat","tree"], chars = "atach"`)
+		fmt.Println(`Output:`, countCharacters([]string{`cat`, `bt`, `hat`, `tree`}, `atach`))
+		fmt.Println(`Input: words = ["hello","world","leetcode"], chars = "welldonehoneyr"`)
+		fmt.Println(`Output:`, countCharacters([]string{`hello`, `world`, `leetcode`}, `welldonehoneyr`))
 	}
 }
 

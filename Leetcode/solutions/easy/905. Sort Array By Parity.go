@@ -5,10 +5,10 @@ import "fmt"
 // Reference: https://leetcode.com/problems/sort-array-by-parity/
 func init() {
 	Solutions[905] = func() {
-		fmt.Println("Input: nums = [3,1,2,4]")
-		fmt.Println("Output:", sortArrayByParity([]int{3, 1, 2, 4}))
-		fmt.Println("Input: nums = [0]")
-		fmt.Println("Output:", sortArrayByParity([]int{0}))
+		fmt.Println(`Input: nums = [3,1,2,4]`)
+		fmt.Println(`Output:`, sortArrayByParity([]int{3, 1, 2, 4}))
+		fmt.Println(`Input: nums = [0]`)
+		fmt.Println(`Output:`, sortArrayByParity([]int{0}))
 	}
 }
 

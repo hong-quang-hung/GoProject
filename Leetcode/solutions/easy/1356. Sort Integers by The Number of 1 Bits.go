@@ -9,10 +9,10 @@ import (
 // Reference: https://leetcode.com/problems/sort-integers-by-the-number-of-1-bits/
 func init() {
 	Solutions[1356] = func() {
-		fmt.Println("Input: arr = [0,1,2,3,4,5,6,7,8]")
-		fmt.Println("Output:", sortByBits([]int{0, 1, 2, 3, 4, 5, 6, 7, 8}))
-		fmt.Println("Input: arr = [1024,512,256,128,64,32,16,8,4,2,1]")
-		fmt.Println("Output:", sortByBits([]int{1024, 512, 256, 128, 64, 32, 16, 8, 4, 2, 1}))
+		fmt.Println(`Input: arr = [0,1,2,3,4,5,6,7,8]`)
+		fmt.Println(`Output:`, sortByBits([]int{0, 1, 2, 3, 4, 5, 6, 7, 8}))
+		fmt.Println(`Input: arr = [1024,512,256,128,64,32,16,8,4,2,1]`)
+		fmt.Println(`Output:`, sortByBits([]int{1024, 512, 256, 128, 64, 32, 16, 8, 4, 2, 1}))
 	}
 }
 

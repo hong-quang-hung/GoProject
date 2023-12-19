@@ -5,8 +5,8 @@ import "fmt"
 // Reference: https://leetcode.com/problems/the-k-weakest-rows-in-a-matrix/
 func init() {
 	Solutions[1337] = func() {
-		fmt.Println("Input: mat = [[1,1,0,0,0],[1,1,1,1,0],[1,0,0,0,0],[1,1,0,0,0],[1,1,1,1,1]], k = 3")
-		fmt.Println("Output:", kWeakestRows(S2SoSliceInt("[[1,1,0,0,0],[1,1,1,1,0],[1,0,0,0,0],[1,1,0,0,0],[1,1,1,1,1]]"), 3))
+		fmt.Println(`Input: mat = [[1,1,0,0,0],[1,1,1,1,0],[1,0,0,0,0],[1,1,0,0,0],[1,1,1,1,1]], k = 3`)
+		fmt.Println(`Output:`, kWeakestRows(S2SoSliceInt(`[[1,1,0,0,0],[1,1,1,1,0],[1,0,0,0,0],[1,1,0,0,0],[1,1,1,1,1]]`), 3))
 	}
 }
 

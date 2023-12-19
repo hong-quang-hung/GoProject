@@ -5,8 +5,8 @@ import "fmt"
 // Reference: https://leetcode.com/problems/long-pressed-name/
 func init() {
 	Solutions[925] = func() {
-		fmt.Println("Input: name = 'pyplrz', typed = 'ppyypllr'")
-		fmt.Println("Output:", isLongPressedName("pyplrz", "ppyypllr"))
+		fmt.Println(`Input: name = "pyplrz", typed = "ppyypllr"`)
+		fmt.Println(`Output:`, isLongPressedName(`pyplrz`, `ppyypllr`))
 	}
 }
 

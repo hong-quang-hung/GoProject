@@ -7,12 +7,12 @@ import (
 // Reference: https://leetcode.com/problems/monotonic-array/
 func init() {
 	Solutions[896] = func() {
-		fmt.Println("Input: nums = [1,2,2,3]")
-		fmt.Println("Output:", isMonotonic([]int{1, 2, 2, 3}))
-		fmt.Println("Input: nums = [1,3,2]")
-		fmt.Println("Output:", isMonotonic([]int{1, 3, 2}))
-		fmt.Println("Input: nums = [3,4,2,3]")
-		fmt.Println("Output:", isMonotonic([]int{3, 4, 2, 3}))
+		fmt.Println(`Input: nums = [1,2,2,3]`)
+		fmt.Println(`Output:`, isMonotonic([]int{1, 2, 2, 3}))
+		fmt.Println(`Input: nums = [1,3,2]`)
+		fmt.Println(`Output:`, isMonotonic([]int{1, 3, 2}))
+		fmt.Println(`Input: nums = [3,4,2,3]`)
+		fmt.Println(`Output:`, isMonotonic([]int{3, 4, 2, 3}))
 	}
 }
 

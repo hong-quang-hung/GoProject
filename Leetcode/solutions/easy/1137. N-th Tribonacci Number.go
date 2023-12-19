@@ -5,10 +5,10 @@ import "fmt"
 // Reference: https://leetcode.com/problems/n-th-tribonacci-number/
 func init() {
 	Solutions[1137] = func() {
-		fmt.Println("Input: n = 4")
-		fmt.Println("Output:", tribonacci(4))
-		fmt.Println("Input: n = 25")
-		fmt.Println("Output:", tribonacci(25))
+		fmt.Println(`Input: n = 4`)
+		fmt.Println(`Output:`, tribonacci(4))
+		fmt.Println(`Input: n = 25`)
+		fmt.Println(`Output:`, tribonacci(25))
 	}
 }
 

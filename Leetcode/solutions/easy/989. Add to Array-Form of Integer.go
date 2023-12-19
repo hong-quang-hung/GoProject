@@ -5,8 +5,8 @@ import "fmt"
 // Reference: https://leetcode.com/problems/add-to-array-form-of-integer/
 func init() {
 	Solutions[989] = func() {
-		fmt.Println("Input: num = [1,2,0,0], k = 34")
-		fmt.Println("Output:", addToArrayForm([]int{1, 2, 0, 0}, 34))
+		fmt.Println(`Input: num = [1,2,0,0], k = 34`)
+		fmt.Println(`Output:`, addToArrayForm([]int{1, 2, 0, 0}, 34))
 	}
 }
 

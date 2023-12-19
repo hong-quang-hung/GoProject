@@ -5,12 +5,10 @@ import "fmt"
 // Reference: https://leetcode.com/problems/destination-city/
 func init() {
 	Solutions[1436] = func() {
-		fmt.Println("Input: paths = [[\"London\",\"New York\"],[\"New York\",\"Lima\"],[\"Lima\",\"Sao Paulo\"]]")
-		fmt.Println("Output:", destCity([][]string{{"London", "New York"}, {"New York", "Lima"}, {"Lima", "Sao Paulo"}}))
-		fmt.Println("Input: paths = [[\"B\",\"C\"],[\"D\",\"B\"],[\"C\",\"A\"]]")
-		fmt.Println("Output:", destCity([][]string{{"B", "C"}, {"D", "B"}, {"C", "A"}}))
-		fmt.Println("Input: paths = [[\"A\",\"Z\"]]")
-		fmt.Println("Output:", destCity([][]string{{"A", "Z"}}))
+		fmt.Println(`Input: paths = [["London","New York"],["New York","Lima"],["Lima","Sao Paulo"]]`)
+		fmt.Println(`Output:`, destCity([][]string{{`London`, `New York`}, {`New York`, `Lima`}, {`Lima`, `Sao Paulo`}}))
+		fmt.Println(`Input: paths = [["B","C"],["D","B"],["C","A"]]`)
+		fmt.Println(`Output:`, destCity([][]string{{`B`, `C`}, {`D`, `B`}, {`C`, `A`}}))
 	}
 }
 
@@ -25,5 +23,5 @@ func destCity(paths [][]string) string {
 			return path[1]
 		}
 	}
-	return ""
+	return ``
 }

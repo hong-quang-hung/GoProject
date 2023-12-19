@@ -5,8 +5,8 @@ import "fmt"
 // Reference: https://leetcode.com/problems/verifying-an-alien-dictionary/
 func init() {
 	Solutions[953] = func() {
-		fmt.Println("Input: words = ['hello','leetcode'], order = 'hlabcdefgijkmnopqrstuvwxyz'")
-		fmt.Println("Output:", isAlienSorted([]string{"hello", "leetcode"}, "hlabcdefgijkmnopqrstuvwxyz"))
+		fmt.Println(`Input: words = ["hello","leetcode"], order = "hlabcdefgijkmnopqrstuvwxyz"`)
+		fmt.Println(`Output:`, isAlienSorted([]string{`hello`, `leetcode`}, `hlabcdefgijkmnopqrstuvwxyz`))
 	}
 }
 

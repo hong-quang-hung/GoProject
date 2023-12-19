@@ -5,8 +5,8 @@ import "fmt"
 // Reference: https://leetcode.com/problems/remove-all-adjacent-duplicates-in-string/
 func init() {
 	Solutions[1047] = func() {
-		fmt.Println("Input: s = 'azxxzy'")
-		fmt.Println("Output:", removeAdjacentDuplicates("azxxzy"))
+		fmt.Println(`Input: s = "azxxzy"`)
+		fmt.Println(`Output:`, removeAdjacentDuplicates(`azxxzy`))
 	}
 }
 

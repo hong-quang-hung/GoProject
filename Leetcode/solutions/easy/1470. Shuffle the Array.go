@@ -5,8 +5,8 @@ import "fmt"
 // Reference: https://leetcode.com/problems/shuffle-the-array/
 func init() {
 	Solutions[1470] = func() {
-		fmt.Println("Input: nums = [1,2,3,4,4,3,2,1], n = 4")
-		fmt.Println("Output:", shuffle([]int{1, 2, 3, 4, 4, 3, 2, 1}, 4))
+		fmt.Println(`Input: nums = [1,2,3,4,4,3,2,1], n = 4`)
+		fmt.Println(`Output:`, shuffle([]int{1, 2, 3, 4, 4, 3, 2, 1}, 4))
 	}
 }
 

@@ -5,12 +5,10 @@ import "fmt"
 // Reference: https://leetcode.com/problems/buddy-strings/
 func init() {
 	Solutions[859] = func() {
-		fmt.Println("Input: s = 'ab', goal = 'ba'")
-		fmt.Println("Output:", buddyStrings("ab", "ba"))
-		fmt.Println("Input: s = 'aa', goal = 'aa'")
-		fmt.Println("Output:", buddyStrings("aa", "aa"))
-		fmt.Println("Input: s = 'abcaa', goal = 'abcbb'")
-		fmt.Println("Output:", buddyStrings("abcd", "abcbb"))
+		fmt.Println(`Input: s = "ab", goal = "ba"`)
+		fmt.Println(`Output:`, buddyStrings(`ab`, `ba`))
+		fmt.Println(`Input: s = 'abcaa', goal = 'abcbb'`)
+		fmt.Println(`Output:`, buddyStrings(`abcd`, `abcbb`))
 	}
 }
 

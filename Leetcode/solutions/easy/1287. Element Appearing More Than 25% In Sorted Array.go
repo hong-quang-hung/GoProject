@@ -8,10 +8,10 @@ import (
 // Reference: https://leetcode.com/problems/bus-routes/
 func init() {
 	Solutions[1287] = func() {
-		fmt.Println("Input: arr = [1,2,2,6,6,6,6,7,10]")
-		fmt.Println("Output:", findSpecialInteger([]int{1, 2, 2, 6, 6, 6, 6, 7, 10}))
-		fmt.Println("Input: arr = [1,1]")
-		fmt.Println("Output:", findSpecialInteger([]int{1, 1}))
+		fmt.Println(`Input: arr = [1,2,2,6,6,6,6,7,10]`)
+		fmt.Println(`Output:`, findSpecialInteger([]int{1, 2, 2, 6, 6, 6, 6, 7, 10}))
+		fmt.Println(`Input: arr = [1,1]`)
+		fmt.Println(`Output:`, findSpecialInteger([]int{1, 1}))
 	}
 }
 

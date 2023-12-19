@@ -8,16 +8,16 @@ import (
 // Reference: https://leetcode.com/problems/number-of-recent-calls/
 func init() {
 	Solutions[933] = func() {
-		fmt.Println("Input:")
-		fmt.Println("['RecentCounter', 'ping', 'ping', 'ping', 'ping']")
-		fmt.Println("[[], [1], [100], [3001], [3002]]")
-		fmt.Println("Output:")
+		fmt.Println(`Input:`)
+		fmt.Println(`["RecentCounter", "ping", "ping", "ping", "ping"]`)
+		fmt.Println(`[[], [1], [100], [3001], [3002]]`)
+		fmt.Println(`Output:`)
 
 		recentCounter := RecentCounterConstructor()
-		fmt.Println("recentCounter.ping(1)", "-->", recentCounter.Ping(1))
-		fmt.Println("recentCounter.ping(100)", "-->", recentCounter.Ping(100))
-		fmt.Println("recentCounter.ping(3001)", "-->", recentCounter.Ping(3001))
-		fmt.Println("recentCounter.ping(3002)", "-->", recentCounter.Ping(3002))
+		fmt.Println(`recentCounter.ping(1)`, `-->`, recentCounter.Ping(1))
+		fmt.Println(`recentCounter.ping(100)`, `-->`, recentCounter.Ping(100))
+		fmt.Println(`recentCounter.ping(3001)`, `-->`, recentCounter.Ping(3001))
+		fmt.Println(`recentCounter.ping(3002)`, `-->`, recentCounter.Ping(3002))
 	}
 }
 

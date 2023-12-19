@@ -5,12 +5,10 @@ import "fmt"
 // Reference: https://leetcode.com/problems/maximum-product-of-two-elements-in-an-array/
 func init() {
 	Solutions[1464] = func() {
-		fmt.Println("Input: nums = [3,4,5,2]")
-		fmt.Println("Output:", maxProduct([]int{3, 4, 5, 2}))
-		fmt.Println("Input: nums = [1,5,4,5]")
-		fmt.Println("Output:", maxProduct([]int{1, 5, 4, 5}))
-		fmt.Println("Input: nums = [3,7]")
-		fmt.Println("Output:", maxProduct([]int{3, 7}))
+		fmt.Println(`Input: nums = [3,4,5,2]`)
+		fmt.Println(`Output:`, maxProduct([]int{3, 4, 5, 2}))
+		fmt.Println(`Input: nums = [1,5,4,5]`)
+		fmt.Println(`Output:`, maxProduct([]int{1, 5, 4, 5}))
 	}
 }
 
