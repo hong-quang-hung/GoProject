@@ -5,12 +5,12 @@ import "fmt"
 // Reference: https://leetcode.com/problems/isomorphic-strings/
 func init() {
 	Solutions[205] = func() {
-		fmt.Println("Input: s = 'egg', t = 'add'")
-		fmt.Println("Output:", isIsomorphic("egg", "add"))
-		fmt.Println("Input: s = 'foo', t = 'bar'")
-		fmt.Println("Output:", isIsomorphic("foo", "bar"))
-		fmt.Println("Input: s = 'paper', t = 'title'")
-		fmt.Println("Output:", isIsomorphic("paper", "title"))
+		fmt.Println(`Input: s = 'egg', t = 'add'`)
+		fmt.Println(`Output:`, isIsomorphic(`egg`, `add`))
+		fmt.Println(`Input: s = 'foo', t = 'bar'`)
+		fmt.Println(`Output:`, isIsomorphic(`foo`, `bar`))
+		fmt.Println(`Input: s = 'paper', t = 'title'`)
+		fmt.Println(`Output:`, isIsomorphic(`paper`, `title`))
 	}
 }
 

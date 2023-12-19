@@ -5,10 +5,10 @@ import "fmt"
 // Reference: https://leetcode.com/problems/power-of-two/
 func init() {
 	Solutions[231] = func() {
-		fmt.Println("Input: n = 16")
-		fmt.Println("Output:", isPowerOfTwo(16))
-		fmt.Println("Input: n = 3")
-		fmt.Println("Output:", isPowerOfTwo(3))
+		fmt.Println(`Input: n = 16`)
+		fmt.Println(`Output:`, isPowerOfTwo(16))
+		fmt.Println(`Input: n = 3`)
+		fmt.Println(`Output:`, isPowerOfTwo(3))
 	}
 }
 

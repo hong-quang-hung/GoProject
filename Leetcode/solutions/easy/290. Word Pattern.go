@@ -8,13 +8,13 @@ import (
 // Reference: https://leetcode.com/problems/word-pattern/
 func init() {
 	Solutions[290] = func() {
-		fmt.Println("Input: pattern = 'abba', s = 'dog cat cat dog'")
-		fmt.Println("Output:", wordPattern("abba", "dog cat cat dog"))
+		fmt.Println(`Input: pattern = "abba", s = "dog cat cat dog"`)
+		fmt.Println(`Output:`, wordPattern(`abba`, `dog cat cat dog`))
 	}
 }
 
 func wordPattern(pattern string, s string) bool {
-	arr := strings.Split(s, " ")
+	arr := strings.Split(s, ` `)
 	if len(arr) != len(pattern) {
 		return false
 	}

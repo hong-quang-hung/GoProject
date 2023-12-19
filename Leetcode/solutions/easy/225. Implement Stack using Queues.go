@@ -5,16 +5,16 @@ import "fmt"
 // Reference: https://leetcode.com/problems/implement-stack-using-queues/
 func init() {
 	Solutions[225] = func() {
-		fmt.Println("Input:")
-		fmt.Println("['MyStack', 'push', 'push', 'top', 'pop', 'empty']")
-		fmt.Println("[[], [1], [2], [], [], []]")
-		fmt.Println("Output:")
+		fmt.Println(`Input:`)
+		fmt.Println(`["MyStack","push","push","top","pop","empty"]`)
+		fmt.Println(`[[], [1], [2], [], [], []]`)
+		fmt.Println(`Output:`)
 		myStack := MyStackConstructor()
 		myStack.Push(1)
 		myStack.Push(2)
-		fmt.Println("myStack.top()", "// return", myStack.Top())
-		fmt.Println("myStack.pop()", "// return", myStack.Pop())
-		fmt.Println("myStack.empty()", "// return", myStack.Empty())
+		fmt.Println(`myStack.top()`, `// return`, myStack.Top())
+		fmt.Println(`myStack.pop()`, `// return`, myStack.Pop())
+		fmt.Println(`myStack.empty()`, `// return`, myStack.Empty())
 	}
 }
 

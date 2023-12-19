@@ -5,8 +5,8 @@ import "fmt"
 // Reference: https://leetcode.com/problems/contains-duplicate-ii/
 func init() {
 	Solutions[219] = func() {
-		fmt.Println("Input: nums = [1,2,3,1,2,3], k = 2")
-		fmt.Println("Output:", containsNearbyDuplicate([]int{1, 2, 3, 1, 2, 3}, 2))
+		fmt.Println(`Input: nums = [1,2,3,1,2,3], k = 2`)
+		fmt.Println(`Output:`, containsNearbyDuplicate([]int{1, 2, 3, 1, 2, 3}, 2))
 	}
 }
 

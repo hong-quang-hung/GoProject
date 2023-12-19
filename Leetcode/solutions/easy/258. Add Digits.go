@@ -5,12 +5,10 @@ import "fmt"
 // Reference: https://leetcode.com/problems/add-digits/
 func init() {
 	Solutions[258] = func() {
-		fmt.Println("Input: num = 38")
-		fmt.Println("Output:", addDigits(38))
-		fmt.Println("Input: num = 5")
-		fmt.Println("Output:", addDigits(5))
-		fmt.Println("Input: num = 38")
-		fmt.Println("Output:", addDigits(578))
+		fmt.Println(`Input: num = 38`)
+		fmt.Println(`Output:`, addDigits(38))
+		fmt.Println(`Input: num = 38`)
+		fmt.Println(`Output:`, addDigits(578))
 	}
 }
 

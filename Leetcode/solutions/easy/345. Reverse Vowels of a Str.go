@@ -5,12 +5,10 @@ import "fmt"
 // Reference: https://leetcode.com/problems/reverse-vowels-of-a-string/
 func init() {
 	Solutions[345] = func() {
-		fmt.Println("Input: s = 'hello'")
-		fmt.Println("Output:", reverseVowels("hello"))
-		fmt.Println("Input: s = 'leetcode'")
-		fmt.Println("Output:", reverseVowels("leetcode"))
-		fmt.Println("Input: s = 'aA'")
-		fmt.Println("Output:", reverseVowels("aA"))
+		fmt.Println(`Input: s = 'hello'`)
+		fmt.Println(`Output:`, reverseVowels(`hello`))
+		fmt.Println(`Input: s = 'leetcode'`)
+		fmt.Println(`Output:`, reverseVowels(`leetcode`))
 	}
 }
 

@@ -7,10 +7,10 @@ import (
 // Reference: https://leetcode.com/problems/palindrome-linked-list/
 func init() {
 	Solutions[234] = func() {
-		fmt.Println("Input: head = [1,2,2,1]")
-		fmt.Println("Output:", isPalindromeIII(S2ListNode("[1,2,2,1]")))
-		fmt.Println("Input: head = [1,2]")
-		fmt.Println("Output:", isPalindromeIII(S2ListNode("[1,2]")))
+		fmt.Println(`Input: head = [1,2,2,1]`)
+		fmt.Println(`Output:`, isPalindromeIII(S2ListNode(`[1,2,2,1]`)))
+		fmt.Println(`Input: head = [1,2]`)
+		fmt.Println(`Output:`, isPalindromeIII(S2ListNode(`[1,2]`)))
 	}
 }
 

@@ -5,10 +5,10 @@ import "fmt"
 // Reference: https://leetcode.com/problems/counting-bits/
 func init() {
 	Solutions[338] = func() {
-		fmt.Println("Input: n = 2")
-		fmt.Println("Output:", countBits(2))
-		fmt.Println("Input: n = 5")
-		fmt.Println("Output:", countBits(5))
+		fmt.Println(`Input: n = 2`)
+		fmt.Println(`Output:`, countBits(2))
+		fmt.Println(`Input: n = 5`)
+		fmt.Println(`Output:`, countBits(5))
 	}
 }
 

@@ -8,12 +8,10 @@ import (
 // Reference: https://leetcode.com/problems/happy-number/
 func init() {
 	Solutions[202] = func() {
-		fmt.Println("Input: num = 19")
-		fmt.Println("Output:", isHappy(19))
-		fmt.Println("Input: num = 2")
-		fmt.Println("Output:", isHappy(2))
-		fmt.Println("Input: num = 3")
-		fmt.Println("Output:", isHappy(3))
+		fmt.Println(`Input: num = 19`)
+		fmt.Println(`Output:`, isHappy(19))
+		fmt.Println(`Input: num = 2`)
+		fmt.Println(`Output:`, isHappy(2))
 	}
 }
 

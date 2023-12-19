@@ -5,12 +5,12 @@ import "fmt"
 // Reference: https://leetcode.com/problems/ugly-number/
 func init() {
 	Solutions[263] = func() {
-		fmt.Println("Input: n = 6")
-		fmt.Println("Output:", isUgly(6))
-		fmt.Println("Input: n = 14")
-		fmt.Println("Output:", isUgly(14))
-		fmt.Println("Input: n = 40")
-		fmt.Println("Output:", isUgly(40))
+		fmt.Println(`Input: n = 6`)
+		fmt.Println(`Output:`, isUgly(6))
+		fmt.Println(`Input: n = 14`)
+		fmt.Println(`Output:`, isUgly(14))
+		fmt.Println(`Input: n = 40`)
+		fmt.Println(`Output:`, isUgly(40))
 	}
 }
 
