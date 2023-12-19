@@ -5,10 +5,10 @@ import "fmt"
 // Reference: https://leetcode.com/problems/smallest-sufficient-team/
 func init() {
 	Solutions[1125] = func() {
-		fmt.Println("Input: req_skills = ['java','nodejs','reactjs'], people = [['java'],['nodejs'],['nodejs','reactjs']]")
-		fmt.Println("Output:", smallestSufficientTeam([]string{"java", "nodejs", "reactjs"}, [][]string{{"java"}, {"nodejs"}, {"nodejs", "reactjs"}}))
-		fmt.Println("Input: req_skills = ['algorithms','math','java','reactjs','csharp','aws'], people = [['algorithms','math','java'],['algorithms','math','reactjs'],['java','csharp','aws'],['reactjs','csharp'],['csharp','math'],['aws','java']]")
-		fmt.Println("Output:", smallestSufficientTeam([]string{"algorithms", "math", "java", "reactjs", "csharp", "aws"}, [][]string{{"algorithms", "math", "java"}, {"algorithms", "math", "reactjs"}, {"java", "csharp", "aws"}, {"reactjs", "csharp"}, {"csharp", "math"}, {"aws", "java"}}))
+		fmt.Println(`Input: req_skills = ["java","nodejs","reactjs"], people = [["java"],["nodejs"],["nodejs","reactjs"]]`)
+		fmt.Println(`Output:`, smallestSufficientTeam([]string{`java`, `nodejs`, `reactjs`}, [][]string{{`java`}, {`nodejs`}, {`nodejs`, `reactjs`}}))
+		fmt.Println(`Input: req_skills = ["algorithms","math","java","reactjs","csharp","aws"], people = [["algorithms","math","java"],["algorithms","math","reactjs"],["java","csharp","aws"],["reactjs","csharp"],["csharp","math"],["aws","java"]]`)
+		fmt.Println(`Output:`, smallestSufficientTeam([]string{`algorithms`, `math`, `java`, `reactjs`, `csharp`, `aws`}, [][]string{{`algorithms`, `math`, `java`}, {`algorithms`, `math`, `reactjs`}, {`java`, `csharp`, `aws`}, {`reactjs`, `csharp`}, {`csharp`, `math`}, {`aws`, `java`}}))
 	}
 }
 

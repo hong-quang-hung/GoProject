@@ -9,12 +9,12 @@ import (
 // Reference: https://leetcode.com/problems/make-array-strictly-increasing/
 func init() {
 	Solutions[1187] = func() {
-		fmt.Println("Input: arr1 = [1,5,3,6,7], arr2 = [1,3,2,4]")
-		fmt.Println("Output:", makeArrayIncreasing([]int{1, 5, 3, 6, 7}, []int{1, 3, 2, 4}))
-		fmt.Println("Input: arr1 = [1,5,3,6,7], arr2 = [4,3,1]")
-		fmt.Println("Output:", makeArrayIncreasing([]int{1, 5, 3, 6, 7}, []int{4, 3, 1}))
-		fmt.Println("Input: arr1 = [1,5,3,6,7], arr2 = [1,6,3,3]")
-		fmt.Println("Output:", makeArrayIncreasing([]int{1, 5, 3, 6, 7}, []int{1, 6, 3, 3}))
+		fmt.Println(`Input: arr1 = [1,5,3,6,7], arr2 = [1,3,2,4]`)
+		fmt.Println(`Output:`, makeArrayIncreasing([]int{1, 5, 3, 6, 7}, []int{1, 3, 2, 4}))
+		fmt.Println(`Input: arr1 = [1,5,3,6,7], arr2 = [4,3,1]`)
+		fmt.Println(`Output:`, makeArrayIncreasing([]int{1, 5, 3, 6, 7}, []int{4, 3, 1}))
+		fmt.Println(`Input: arr1 = [1,5,3,6,7], arr2 = [1,6,3,3]`)
+		fmt.Println(`Output:`, makeArrayIncreasing([]int{1, 5, 3, 6, 7}, []int{1, 6, 3, 3}))
 	}
 }
 

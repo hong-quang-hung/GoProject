@@ -8,12 +8,12 @@ import (
 // Reference: https://leetcode.com/problems/stone-game-iii/
 func init() {
 	Solutions[1406] = func() {
-		fmt.Println("Input: values = [1,2,3,7]")
-		fmt.Println("Output:", stoneGameIII([]int{1, 2, 3, 7}))
-		fmt.Println("Input: values = [1,2,3,-9]")
-		fmt.Println("Output:", stoneGameIII([]int{1, 2, 3, -9}))
-		fmt.Println("Input: values = [1,2,3,6]")
-		fmt.Println("Output:", stoneGameIII([]int{1, 2, 3, 6}))
+		fmt.Println(`Input: values = [1,2,3,7]`)
+		fmt.Println(`Output:`, stoneGameIII([]int{1, 2, 3, 7}))
+		fmt.Println(`Input: values = [1,2,3,-9]`)
+		fmt.Println(`Output:`, stoneGameIII([]int{1, 2, 3, -9}))
+		fmt.Println(`Input: values = [1,2,3,6]`)
+		fmt.Println(`Output:`, stoneGameIII([]int{1, 2, 3, 6}))
 	}
 }
 
@@ -25,11 +25,11 @@ func stoneGameIII(stoneValue []int) string {
 
 	switch d0 := stoneGameIIISolved(stoneValue, dp, 0); {
 	case d0 > 0:
-		return "Alice"
+		return `Alice`
 	case d0 < 0:
-		return "Bob"
+		return `Bob`
 	default:
-		return "Tie"
+		return `Tie`
 	}
 }
 

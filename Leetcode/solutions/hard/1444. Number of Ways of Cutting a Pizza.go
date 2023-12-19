@@ -5,10 +5,10 @@ import "fmt"
 // Reference: https://leetcode.com/problems/number-of-ways-of-cutting-a-pizza/
 func init() {
 	Solutions[1444] = func() {
-		fmt.Println("Input: pizza = ['A..','AAA,'...'], k = 3")
-		fmt.Println("Output:", ways([]string{"A..", "AAA", "..."}, 3))
-		fmt.Println("Input: pizza = ['A..','AA.,'...'], k = 3")
-		fmt.Println("Output:", ways([]string{"A..", "AA.", "..."}, 3))
+		fmt.Println(`Input: pizza = ["A..","AAA","..."], k = 3`)
+		fmt.Println(`Output:`, ways([]string{`A..`, `AAA`, `...`}, 3))
+		fmt.Println(`Input: pizza = ["A..","AA.","..."], k = 3`)
+		fmt.Println(`Output:`, ways([]string{`A..`, `AA.`, `...`}, 3))
 	}
 }
 

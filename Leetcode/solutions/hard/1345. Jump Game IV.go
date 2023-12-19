@@ -5,10 +5,10 @@ import "fmt"
 // Reference: https://leetcode.com/problems/jump-game-iv/
 func init() {
 	Solutions[1345] = func() {
-		fmt.Println("Input: arr = [100,-23,-23,404,100,23,23,23,3,404]")
-		fmt.Println("Output:", minJumps([]int{100, -23, -23, 404, 100, 23, 23, 23, 3, 404}))
-		fmt.Println("Input: arr = [7,6,9,6,9,6,9,7]")
-		fmt.Println("Output:", minJumps([]int{7, 6, 9, 6, 9, 6, 9, 7}))
+		fmt.Println(`Input: arr = [100,-23,-23,404,100,23,23,23,3,404]`)
+		fmt.Println(`Output:`, minJumps([]int{100, -23, -23, 404, 100, 23, 23, 23, 3, 404}))
+		fmt.Println(`Input: arr = [7,6,9,6,9,6,9,7]`)
+		fmt.Println(`Output:`, minJumps([]int{7, 6, 9, 6, 9, 6, 9, 7}))
 	}
 }
 

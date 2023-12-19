@@ -8,12 +8,12 @@ import (
 // Reference: https://leetcode.com/problems/restore-the-array/
 func init() {
 	Solutions[1416] = func() {
-		fmt.Println("Input: s = '1000', k = 10000")
-		fmt.Println("Output:", numberOfArrays("1000", 10000))
-		fmt.Println("Input: s = '1000', k = 10")
-		fmt.Println("Output:", numberOfArrays("1000", 10))
-		fmt.Println("Input: s = '1317', k = 2000")
-		fmt.Println("Output:", numberOfArrays("1317", 2000))
+		fmt.Println(`Input: s = "1000", k = 10000`)
+		fmt.Println(`Output:`, numberOfArrays(`1000`, 10000))
+		fmt.Println(`Input: s = "1000", k = 10`)
+		fmt.Println(`Output:`, numberOfArrays(`1000`, 10))
+		fmt.Println(`Input: s = "1317", k = 2000`)
+		fmt.Println(`Output:`, numberOfArrays(`1317`, 2000))
 	}
 }
 

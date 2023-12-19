@@ -5,12 +5,12 @@ import "fmt"
 // Reference: https://leetcode.com/problems/find-the-longest-valid-obstacle-course-at-each-position/
 func init() {
 	Solutions[1964] = func() {
-		fmt.Println("Input: obstacles = [1,2,3,2]")
-		fmt.Println("Output:", longestObstacleCourseAtEachPosition([]int{1, 2, 3, 2}))
-		fmt.Println("Input: obstacles = [2,2,1]")
-		fmt.Println("Output:", longestObstacleCourseAtEachPosition([]int{2, 2, 1}))
-		fmt.Println("Input: obstacles = [3,1,5,6,4,2]")
-		fmt.Println("Output:", longestObstacleCourseAtEachPosition([]int{3, 1, 5, 6, 4, 2}))
+		fmt.Println(`Input: obstacles = [1,2,3,2]`)
+		fmt.Println(`Output:`, longestObstacleCourseAtEachPosition([]int{1, 2, 3, 2}))
+		fmt.Println(`Input: obstacles = [2,2,1]`)
+		fmt.Println(`Output:`, longestObstacleCourseAtEachPosition([]int{2, 2, 1}))
+		fmt.Println(`Input: obstacles = [3,1,5,6,4,2]`)
+		fmt.Println(`Output:`, longestObstacleCourseAtEachPosition([]int{3, 1, 5, 6, 4, 2}))
 	}
 }
 

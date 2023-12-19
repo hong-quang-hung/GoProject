@@ -2,15 +2,15 @@ package hard
 
 import "fmt"
 
-// Reference: https://leetcode.com/problems/binary-trees-with-factors/
+// Reference: https://leetcode.com/problems/count-vowels-permutation/
 func init() {
 	Solutions[1220] = func() {
-		fmt.Println("Input: n = 1")
-		fmt.Println("Output:", countVowelPermutation(1))
-		fmt.Println("Input: n = 2")
-		fmt.Println("Output:", countVowelPermutation(2))
-		fmt.Println("Input: n = 5")
-		fmt.Println("Output:", countVowelPermutation(5))
+		fmt.Println(`Input: n = 1`)
+		fmt.Println(`Output:`, countVowelPermutation(1))
+		fmt.Println(`Input: n = 2`)
+		fmt.Println(`Output:`, countVowelPermutation(2))
+		fmt.Println(`Input: n = 5`)
+		fmt.Println(`Output:`, countVowelPermutation(5))
 	}
 }
 

@@ -9,10 +9,10 @@ import (
 // Reference: https://leetcode.com/problems/minimum-cost-to-cut-a-stick/
 func init() {
 	Solutions[1547] = func() {
-		fmt.Println("Input: n = 7, cuts = [1,3,4,5]")
-		fmt.Println("Output:", minCostCut(7, []int{1, 3, 4, 5}))
-		fmt.Println("Input: n = 9, cuts = [5,6,1,4,2]")
-		fmt.Println("Output:", minCostCut(9, []int{5, 6, 1, 4, 2}))
+		fmt.Println(`Input: n = 7, cuts = [1,3,4,5]`)
+		fmt.Println(`Output:`, minCostCut(7, []int{1, 3, 4, 5}))
+		fmt.Println(`Input: n = 9, cuts = [5,6,1,4,2]`)
+		fmt.Println(`Output:`, minCostCut(9, []int{5, 6, 1, 4, 2}))
 	}
 }
 

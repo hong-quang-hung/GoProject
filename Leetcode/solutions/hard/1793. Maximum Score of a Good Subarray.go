@@ -5,12 +5,10 @@ import "fmt"
 // Reference: https://leetcode.com/problems/maximum-score-of-a-good-subarray/
 func init() {
 	Solutions[1793] = func() {
-		fmt.Println("Input: nums = [1,4,3,7,4,5], k = 3")
-		fmt.Println("Output:", maximumScore([]int{1, 4, 3, 7, 4, 5}, 3))
-		fmt.Println("Input: nums = [5,5,4,5,4,1,1,1], k = 0")
-		fmt.Println("Output:", maximumScore([]int{5, 5, 4, 5, 4, 1, 1, 1}, 0))
-		fmt.Println("Input: nums = [6569,9667,3148,7698,1622,2194,793,9041,1670,1872], k = 5")
-		fmt.Println("Output:", maximumScore([]int{6569, 9667, 3148, 7698, 1622, 2194, 793, 9041, 1670, 1872}, 5))
+		fmt.Println(`Input: nums = [1,4,3,7,4,5], k = 3`)
+		fmt.Println(`Output:`, maximumScore([]int{1, 4, 3, 7, 4, 5}, 3))
+		fmt.Println(`Input: nums = [5,5,4,5,4,1,1,1], k = 0`)
+		fmt.Println(`Output:`, maximumScore([]int{5, 5, 4, 5, 4, 1, 1, 1}, 0))
 	}
 }
 

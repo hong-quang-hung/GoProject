@@ -5,10 +5,10 @@ import "fmt"
 // Reference: https://leetcode.com/problems/number-of-ways-to-form-a-target-string-given-a-dictionary/
 func init() {
 	Solutions[1639] = func() {
-		fmt.Println("Input: words = ['acca','bbbb','caca'], target = 'aba'")
-		fmt.Println("Output:", numWaysII([]string{"acca", "bbbb", "caca"}, "aba"))
-		fmt.Println("Input: words = ['abba','baab'], target = 'bab'")
-		fmt.Println("Output:", numWaysII([]string{"abba", "baab"}, "bab"))
+		fmt.Println(`Input: words = ["acca","bbbb","caca"], target = "aba"`)
+		fmt.Println(`Output:`, numWaysII([]string{`acca`, `bbbb`, `caca`}, `aba`))
+		fmt.Println(`Input: words = ["abba","baab"], target = "bab"`)
+		fmt.Println(`Output:`, numWaysII([]string{`abba`, `baab`}, `bab`))
 	}
 }
 

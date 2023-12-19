@@ -5,12 +5,12 @@ import "fmt"
 // Reference: https://leetcode.com/problems/number-of-ways-to-stay-in-the-same-place-after-some-steps/
 func init() {
 	Solutions[1269] = func() {
-		fmt.Println("Input: steps = 3, arrLen = 2")
-		fmt.Println("Output:", numWays(3, 2))
-		fmt.Println("Input: steps = 2, arrLen = 4")
-		fmt.Println("Output:", numWays(2, 4))
-		fmt.Println("Input: steps = 4, arrLen = 2")
-		fmt.Println("Output:", numWays(4, 2))
+		fmt.Println(`Input: steps = 3, arrLen = 2`)
+		fmt.Println(`Output:`, numWays(3, 2))
+		fmt.Println(`Input: steps = 2, arrLen = 4`)
+		fmt.Println(`Output:`, numWays(2, 4))
+		fmt.Println(`Input: steps = 4, arrLen = 2`)
+		fmt.Println(`Output:`, numWays(4, 2))
 	}
 }
 

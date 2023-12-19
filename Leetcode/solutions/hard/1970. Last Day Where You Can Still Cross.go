@@ -5,12 +5,12 @@ import "fmt"
 // Reference: https://leetcode.com/problems/last-day-where-you-can-still-cross/
 func init() {
 	Solutions[1970] = func() {
-		fmt.Println("Input: row = 2, col = 2, cells = [[1,1],[2,1],[1,2],[2,2]]")
-		fmt.Println("Output:", latestDayToCross(2, 2, S2SoSliceInt("[[1,1],[2,1],[1,2],[2,2]]")))
-		fmt.Println("Input: row = 2, col = 2, cells = [[1,1],[1,2],[2,1],[2,2]]")
-		fmt.Println("Output:", latestDayToCross(2, 2, S2SoSliceInt("[[1,1],[1,2],[2,1],[2,2]]")))
-		fmt.Println("Input: row = 3, col = 3, cells = [[1,2],[2,1],[3,3],[2,2],[1,1],[1,3],[2,3],[3,2],[3,1]]")
-		fmt.Println("Output:", latestDayToCross(3, 3, S2SoSliceInt("[[1,2],[2,1],[3,3],[2,2],[1,1],[1,3],[2,3],[3,2],[3,1]]")))
+		fmt.Println(`Input: row = 2, col = 2, cells = [[1,1],[2,1],[1,2],[2,2]]`)
+		fmt.Println(`Output:`, latestDayToCross(2, 2, S2SoSliceInt(`[[1,1],[2,1],[1,2],[2,2]]`)))
+		fmt.Println(`Input: row = 2, col = 2, cells = [[1,1],[1,2],[2,1],[2,2]]`)
+		fmt.Println(`Output:`, latestDayToCross(2, 2, S2SoSliceInt(`[[1,1],[1,2],[2,1],[2,2]]`)))
+		fmt.Println(`Input: row = 3, col = 3, cells = [[1,2],[2,1],[3,3],[2,2],[1,1],[1,3],[2,3],[3,2],[3,1]]`)
+		fmt.Println(`Output:`, latestDayToCross(3, 3, S2SoSliceInt(`[[1,2],[2,1],[3,3],[2,2],[1,1],[1,3],[2,3],[3,2],[3,1]]`)))
 	}
 }
 

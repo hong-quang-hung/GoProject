@@ -8,10 +8,10 @@ import (
 // Reference: https://leetcode.com/problems/find-critical-and-pseudo-critical-edges-in-minimum-spanning-tree/
 func init() {
 	Solutions[1489] = func() {
-		fmt.Println("Input: n = 5, edges = [[0,1,1],[1,2,1],[2,3,2],[0,3,2],[0,4,3],[3,4,3],[1,4,6]]")
-		fmt.Println("Output:", findCriticalAndPseudoCriticalEdges(5, S2SoSliceInt("[[0,1,1],[1,2,1],[2,3,2],[0,3,2],[0,4,3],[3,4,3],[1,4,6]]")))
-		fmt.Println("Input: n = 4, edges = [[0,1,1],[1,2,1],[2,3,1],[0,3,1]]")
-		fmt.Println("Output:", findCriticalAndPseudoCriticalEdges(4, S2SoSliceInt("[[0,1,1],[1,2,1],[2,3,1],[0,3,1]]")))
+		fmt.Println(`Input: n = 5, edges = [[0,1,1],[1,2,1],[2,3,2],[0,3,2],[0,4,3],[3,4,3],[1,4,6]]`)
+		fmt.Println(`Output:`, findCriticalAndPseudoCriticalEdges(5, S2SoSliceInt(`[[0,1,1],[1,2,1],[2,3,2],[0,3,2],[0,4,3],[3,4,3],[1,4,6]]`)))
+		fmt.Println(`Input: n = 4, edges = [[0,1,1],[1,2,1],[2,3,1],[0,3,1]]`)
+		fmt.Println(`Output:`, findCriticalAndPseudoCriticalEdges(4, S2SoSliceInt(`[[0,1,1],[1,2,1],[2,3,1],[0,3,1]]`)))
 	}
 }
 

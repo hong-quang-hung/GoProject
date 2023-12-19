@@ -5,10 +5,10 @@ import "fmt"
 // Reference: https://leetcode.com/problems/shortest-path-to-get-all-keys/
 func init() {
 	Solutions[864] = func() {
-		fmt.Println("Input: grid = ['@.a..','###.#','b.A.B']")
-		fmt.Println("Output:", shortestPathAllKeys([]string{"@.a..", "###.#", "b.A.B"}))
-		fmt.Println("Input: grid = ['@..aA','..B#.','....b']")
-		fmt.Println("Output:", shortestPathAllKeys([]string{"@..aA", "..B#.", "....b"}))
+		fmt.Println(`Input: grid = ["@.a..","###.#","b.A.B"]`)
+		fmt.Println(`Output:`, shortestPathAllKeys([]string{`@.a..`, `###.#`, `b.A.B`}))
+		fmt.Println(`Input: grid = ["@..aA","..B#.","....b"]`)
+		fmt.Println(`Output:`, shortestPathAllKeys([]string{`@..aA`, `..B#.`, `....b`}))
 	}
 }
 

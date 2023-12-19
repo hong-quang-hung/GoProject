@@ -5,12 +5,12 @@ import "fmt"
 // Reference: https://leetcode.com/problems/shortest-common-supersequence/
 func init() {
 	Solutions[1092] = func() {
-		fmt.Println("Input: str1 = 'abac', str2 = 'cab'")
-		fmt.Println("Output:", shortestCommonSupersequence("abac", "cab"))
-		fmt.Println("Input: str1 = 'aaaaaaaa', str2 = 'aaaaaaaa'")
-		fmt.Println("Output:", shortestCommonSupersequence("aaaaaaaa", "aaaaaaaa"))
-		fmt.Println("Input: str1 = 'cddb', str2 = 'cab'")
-		fmt.Println("Output:", shortestCommonSupersequence("cddb", "cab"))
+		fmt.Println(`Input: str1 = "abac", str2 = "cab"`)
+		fmt.Println(`Output:`, shortestCommonSupersequence(`abac`, `cab`))
+		fmt.Println(`Input: str1 = "aaaaaaaa", str2 = "aaaaaaaa"`)
+		fmt.Println(`Output:`, shortestCommonSupersequence(`aaaaaaaa`, `aaaaaaaa`))
+		fmt.Println(`Input: str1 = "cddb", str2 = "cab"`)
+		fmt.Println(`Output:`, shortestCommonSupersequence(`cddb`, `cab`))
 	}
 }
 

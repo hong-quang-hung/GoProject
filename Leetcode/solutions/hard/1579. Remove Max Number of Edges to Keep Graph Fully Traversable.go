@@ -5,12 +5,12 @@ import "fmt"
 // Reference: https://leetcode.com/problems/remove-max-number-of-edges-to-keep-graph-fully-traversable/
 func init() {
 	Solutions[1579] = func() {
-		fmt.Println("Input: n = 4, edges = [[3,1,2],[3,2,3],[1,1,3],[1,2,4],[1,1,2],[2,3,4]]")
-		fmt.Println("Output:", maxNumEdgesToRemove(4, S2SoSliceInt("[[3,1,2],[3,2,3],[1,1,3],[1,2,4],[1,1,2],[2,3,4]]")))
-		fmt.Println("Input: n = 4, edges = [[3,1,2],[3,2,3],[1,1,4],[2,1,4]]")
-		fmt.Println("Output:", maxNumEdgesToRemove(4, S2SoSliceInt("[[3,1,2],[3,2,3],[1,1,4],[2,1,4]]")))
-		fmt.Println("Input: n = 4, edges = [[3,2,3],[1,1,2],[2,3,4]]")
-		fmt.Println("Output:", maxNumEdgesToRemove(4, S2SoSliceInt("[[3,2,3],[1,1,2],[2,3,4]]")))
+		fmt.Println(`Input: n = 4, edges = [[3,1,2],[3,2,3],[1,1,3],[1,2,4],[1,1,2],[2,3,4]]`)
+		fmt.Println(`Output:`, maxNumEdgesToRemove(4, S2SoSliceInt(`[[3,1,2],[3,2,3],[1,1,3],[1,2,4],[1,1,2],[2,3,4]]`)))
+		fmt.Println(`Input: n = 4, edges = [[3,1,2],[3,2,3],[1,1,4],[2,1,4]]`)
+		fmt.Println(`Output:`, maxNumEdgesToRemove(4, S2SoSliceInt(`[[3,1,2],[3,2,3],[1,1,4],[2,1,4]]`)))
+		fmt.Println(`Input: n = 4, edges = [[3,2,3],[1,1,2],[2,3,4]]`)
+		fmt.Println(`Output:`, maxNumEdgesToRemove(4, S2SoSliceInt(`[[3,2,3],[1,1,2],[2,3,4]]`)))
 	}
 }
 

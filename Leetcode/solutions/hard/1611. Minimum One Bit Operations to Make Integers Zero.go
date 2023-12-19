@@ -7,10 +7,10 @@ import (
 // Reference: https://leetcode.com/problems/minimum-one-bit-operations-to-make-integers-zero/
 func init() {
 	Solutions[1611] = func() {
-		fmt.Println("Input: n = 5")
-		fmt.Println("Output:", minimumOneBitOperations(5))
-		fmt.Println("Input: n = 6")
-		fmt.Println("Output:", minimumOneBitOperations(6))
+		fmt.Println(`Input: n = 5`)
+		fmt.Println(`Output:`, minimumOneBitOperations(5))
+		fmt.Println(`Input: n = 6`)
+		fmt.Println(`Output:`, minimumOneBitOperations(6))
 	}
 }
 

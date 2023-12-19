@@ -5,10 +5,10 @@ import "fmt"
 // Reference: https://leetcode.com/problems/parallel-courses-iii/
 func init() {
 	Solutions[2050] = func() {
-		fmt.Println("Input: n = 3, relations = [[1,3],[2,3]], time = [3,2,5]")
-		fmt.Println("Output:", minimumTime(3, S2SoSliceInt("[[1,3],[2,3]]"), []int{1, 2, 3, 2}))
-		fmt.Println("Input: n = 5, relations = [[1,5],[2,5],[3,5],[3,4],[4,5]], time = [1,2,3,4,5]")
-		fmt.Println("Output:", minimumTime(5, S2SoSliceInt("[[1,5],[2,5],[3,5],[3,4],[4,5]]"), []int{1, 2, 3, 4, 5}))
+		fmt.Println(`Input: n = 3, relations = [[1,3],[2,3]], time = [3,2,5]`)
+		fmt.Println(`Output:`, minimumTime(3, S2SoSliceInt(`[[1,3],[2,3]]`), []int{1, 2, 3, 2}))
+		fmt.Println(`Input: n = 5, relations = [[1,5],[2,5],[3,5],[3,4],[4,5]], time = [1,2,3,4,5]`)
+		fmt.Println(`Output:`, minimumTime(5, S2SoSliceInt(`[[1,5],[2,5],[3,5],[3,4],[4,5]]`), []int{1, 2, 3, 4, 5}))
 	}
 }
 

@@ -8,10 +8,10 @@ import (
 // Reference: hhttps://leetcode.com/problems/maximize-score-after-n-operations/
 func init() {
 	Solutions[1799] = func() {
-		fmt.Println("Input: nums = [3,4,6,8]")
-		fmt.Println("Output:", maxScore([]int{3, 4, 6, 8}))
-		fmt.Println("Input: nums = [1,2,3,4,5,6]")
-		fmt.Println("Output:", maxScore([]int{1, 2, 3, 4, 5, 6}))
+		fmt.Println(`Input: nums = [3,4,6,8]`)
+		fmt.Println(`Output:`, maxScore([]int{3, 4, 6, 8}))
+		fmt.Println(`Input: nums = [1,2,3,4,5,6]`)
+		fmt.Println(`Output:`, maxScore([]int{1, 2, 3, 4, 5, 6}))
 	}
 }
 

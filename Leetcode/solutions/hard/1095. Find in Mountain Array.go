@@ -8,12 +8,12 @@ import (
 // Reference: https://leetcode.com/problems/find-in-mountain-array/
 func init() {
 	Solutions[1095] = func() {
-		fmt.Println("Input: array = [1,2,3,4,5,3,1], target = 3")
-		fmt.Println("Output:", findInMountainArray(3, MountainArrayConstructor([]int{1, 2, 3, 4, 5, 3, 1})))
-		fmt.Println("Input: array = [0,1,2,4,2,1], target = 3")
-		fmt.Println("Output:", findInMountainArray(3, MountainArrayConstructor([]int{0, 1, 2, 4, 2, 1})))
-		fmt.Println("Input: array = [0,5,3,1], target = 1")
-		fmt.Println("Output:", findInMountainArray(1, MountainArrayConstructor([]int{0, 5, 3, 1})))
+		fmt.Println(`Input: array = [1,2,3,4,5,3,1], target = 3`)
+		fmt.Println(`Output:`, findInMountainArray(3, MountainArrayConstructor([]int{1, 2, 3, 4, 5, 3, 1})))
+		fmt.Println(`Input: array = [0,1,2,4,2,1], target = 3`)
+		fmt.Println(`Output:`, findInMountainArray(3, MountainArrayConstructor([]int{0, 1, 2, 4, 2, 1})))
+		fmt.Println(`Input: array = [0,5,3,1], target = 1`)
+		fmt.Println(`Output:`, findInMountainArray(1, MountainArrayConstructor([]int{0, 5, 3, 1})))
 	}
 }
 

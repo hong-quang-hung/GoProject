@@ -8,12 +8,12 @@ import (
 // Reference: https://leetcode.com/problems/constrained-subsequence-sum/
 func init() {
 	Solutions[1425] = func() {
-		fmt.Println("Input: nums = [10,2,-10,5,20], k = 2")
-		fmt.Println("Output:", constrainedSubsetSum([]int{10, 2, -10, 5, 20}, 2))
-		fmt.Println("Input: nums = [-1,-2,-3], k = 1")
-		fmt.Println("Output:", constrainedSubsetSum([]int{-1, -2, -3}, 1))
-		fmt.Println("Input: nums = [10,-2,-10,-5,20], k = 2")
-		fmt.Println("Output:", constrainedSubsetSum([]int{10, -2, -10, -5, 20}, 2))
+		fmt.Println(`Input: nums = [10,2,-10,5,20], k = 2`)
+		fmt.Println(`Output:`, constrainedSubsetSum([]int{10, 2, -10, 5, 20}, 2))
+		fmt.Println(`Input: nums = [-1,-2,-3], k = 1`)
+		fmt.Println(`Output:`, constrainedSubsetSum([]int{-1, -2, -3}, 1))
+		fmt.Println(`Input: nums = [10,-2,-10,-5,20], k = 2`)
+		fmt.Println(`Output:`, constrainedSubsetSum([]int{10, -2, -10, -5, 20}, 2))
 	}
 }
 

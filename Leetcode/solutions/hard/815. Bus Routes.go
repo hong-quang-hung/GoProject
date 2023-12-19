@@ -5,10 +5,10 @@ import "fmt"
 // Reference: https://leetcode.com/problems/bus-routes/
 func init() {
 	Solutions[815] = func() {
-		fmt.Println("Input: routes = [[1,2,7],[3,6,7]], source = 1, target = 6")
-		fmt.Println("Output:", numBusesToDestination(S2SoSliceInt("[[1,2,7],[3,6,7]]"), 1, 6))
-		fmt.Println("Input: routes = [[7,12],[4,5,15],[6],[15,19],[9,12,13]], source = 15, target = 12")
-		fmt.Println("Output:", numBusesToDestination(S2SoSliceInt("[[7,12],[4,5,15],[6],[15,19],[9,12,13]]"), 15, 12))
+		fmt.Println(`Input: routes = [[1,2,7],[3,6,7]], source = 1, target = 6`)
+		fmt.Println(`Output:`, numBusesToDestination(S2SoSliceInt(`[[1,2,7],[3,6,7]]`), 1, 6))
+		fmt.Println(`Input: routes = [[7,12],[4,5,15],[6],[15,19],[9,12,13]], source = 15, target = 12`)
+		fmt.Println(`Output:`, numBusesToDestination(S2SoSliceInt(`[[7,12],[4,5,15],[6],[15,19],[9,12,13]]`), 15, 12))
 	}
 }
 

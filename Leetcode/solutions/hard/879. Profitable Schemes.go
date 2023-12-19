@@ -5,10 +5,10 @@ import "fmt"
 // Reference: https://leetcode.com/problems/profitable-schemes/
 func init() {
 	Solutions[879] = func() {
-		fmt.Println("Input: n = 5, minProfit = 3, group = [2,2], profit = [2,3]")
-		fmt.Println("Output:", profitableSchemes(5, 3, []int{2, 2}, []int{2, 3}))
-		fmt.Println("Input: n = 10, minProfit = 5, group = [2,3,5], profit = [6,7,8]")
-		fmt.Println("Output:", profitableSchemes(10, 5, []int{2, 3, 5}, []int{6, 7, 8}))
+		fmt.Println(`Input: n = 5, minProfit = 3, group = [2,2], profit = [2,3]`)
+		fmt.Println(`Output:`, profitableSchemes(5, 3, []int{2, 2}, []int{2, 3}))
+		fmt.Println(`Input: n = 10, minProfit = 5, group = [2,3,5], profit = [6,7,8]`)
+		fmt.Println(`Output:`, profitableSchemes(10, 5, []int{2, 3, 5}, []int{6, 7, 8}))
 	}
 }
 

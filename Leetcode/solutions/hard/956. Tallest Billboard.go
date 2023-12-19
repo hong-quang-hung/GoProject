@@ -5,10 +5,10 @@ import "fmt"
 // Reference: https://leetcode.com/problems/tallest-billboard/
 func init() {
 	Solutions[956] = func() {
-		fmt.Println("Input: nums = [1, 2, 3, 6]")
-		fmt.Println("Output:", tallestBillboard([]int{1, 2, 3, 6}))
-		fmt.Println("Input: nums = [1,2,3,4,5,6]")
-		fmt.Println("Output:", tallestBillboard([]int{1, 2, 3, 4, 5, 6}))
+		fmt.Println(`Input: nums = [1, 2, 3, 6]`)
+		fmt.Println(`Output:`, tallestBillboard([]int{1, 2, 3, 6}))
+		fmt.Println(`Input: nums = [1,2,3,4,5,6]`)
+		fmt.Println(`Output:`, tallestBillboard([]int{1, 2, 3, 4, 5, 6}))
 	}
 }
 

@@ -5,10 +5,10 @@ import "fmt"
 // Reference: https://leetcode.com/problems/frog-jump/
 func init() {
 	Solutions[403] = func() {
-		fmt.Println("Input: stones = [0,1,3,5,6,8,12,17]")
-		fmt.Println("Output:", canCross([]int{0, 1, 3, 5, 6, 8, 12, 17}))
-		fmt.Println("Input: stones = [0,1,2,3,4,8,9,11]")
-		fmt.Println("Output:", canCross([]int{0, 1, 2, 3, 4, 8, 9, 11}))
+		fmt.Println(`Input: stones = [0,1,3,5,6,8,12,17]`)
+		fmt.Println(`Output:`, canCross([]int{0, 1, 3, 5, 6, 8, 12, 17}))
+		fmt.Println(`Input: stones = [0,1,2,3,4,8,9,11]`)
+		fmt.Println(`Output:`, canCross([]int{0, 1, 2, 3, 4, 8, 9, 11}))
 	}
 }
 

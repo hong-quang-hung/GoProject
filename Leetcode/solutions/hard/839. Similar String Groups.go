@@ -5,10 +5,10 @@ import "fmt"
 // Reference: https://leetcode.com/problems/similar-string-groups/
 func init() {
 	Solutions[839] = func() {
-		fmt.Println("Input: strs = ['tars','rats','arts','star']")
-		fmt.Println("Output:", numSimilarGroups([]string{"tars", "rats", "arts", "star"}))
-		fmt.Println("Input: strs = ['omv','ovm']")
-		fmt.Println("Output:", numSimilarGroups([]string{"omv", "ovm"}))
+		fmt.Println(`Input: strs = ["tars","rats","arts","star"]`)
+		fmt.Println(`Output:`, numSimilarGroups([]string{`tars`, `rats`, `arts`, `star`}))
+		fmt.Println(`Input: strs = ["omv","ovm"]`)
+		fmt.Println(`Output:`, numSimilarGroups([]string{`omv`, `ovm`}))
 	}
 }
 

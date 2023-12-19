@@ -5,12 +5,12 @@ import "fmt"
 // Reference: https://leetcode.com/problems/minimum-insertion-steps-to-make-a-string-palindrome/
 func init() {
 	Solutions[1312] = func() {
-		fmt.Println("Input: s = 'zzazz'")
-		fmt.Println("Output:", minInsertions("zzazz"))
-		fmt.Println("Input: s = 'mbadm'")
-		fmt.Println("Output:", minInsertions("mbadm"))
-		fmt.Println("Input: s = 'leetcode'")
-		fmt.Println("Output:", minInsertions("leetcode"))
+		fmt.Println(`Input: s = "zzazz"`)
+		fmt.Println(`Output:`, minInsertions(`zzazz`))
+		fmt.Println(`Input: s = "mbadm"`)
+		fmt.Println(`Output:`, minInsertions(`mbadm`))
+		fmt.Println(`Input: s = "leetcode"`)
+		fmt.Println(`Output:`, minInsertions(`leetcode`))
 	}
 }
 

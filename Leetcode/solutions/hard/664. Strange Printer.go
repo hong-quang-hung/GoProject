@@ -8,10 +8,10 @@ import (
 // Reference: https://leetcode.com/problems/strange-printer/
 func init() {
 	Solutions[664] = func() {
-		fmt.Println("Input: s = 'aaabbb'")
-		fmt.Println("Output:", strangePrinter("aaabbb"))
-		fmt.Println("Input: s = 'aba'")
-		fmt.Println("Output:", strangePrinter("aba"))
+		fmt.Println(`Input: s = "aaabbb"`)
+		fmt.Println(`Output:`, strangePrinter(`aaabbb`))
+		fmt.Println(`Input: s = "aba"`)
+		fmt.Println(`Output:`, strangePrinter(`aba`))
 	}
 }
 
