@@ -5,10 +5,10 @@ import "fmt"
 // Reference: https://leetcode.com/problems/reverse-linked-list-ii/
 func init() {
 	Solutions[92] = func() {
-		fmt.Println("Input: head = [1,2,3,4,5], left = 2, right = 4")
-		fmt.Println("Output:", SListNode(reverseBetween(S2ListNode("[1,2,3,4,5]"), 2, 4)))
-		fmt.Println("Input: head = [5], left = 1, right = 1")
-		fmt.Println("Output:", SListNode(reverseBetween(S2ListNode("[	5]"), 1, 1)))
+		fmt.Println(`Input: head = [1,2,3,4,5], left = 2, right = 4`)
+		fmt.Println(`Output:`, SListNode(reverseBetween(S2ListNode(`[1,2,3,4,5]`), 2, 4)))
+		fmt.Println(`Input: head = [5], left = 1, right = 1`)
+		fmt.Println(`Output:`, SListNode(reverseBetween(S2ListNode(`[	5]`), 1, 1)))
 	}
 }
 

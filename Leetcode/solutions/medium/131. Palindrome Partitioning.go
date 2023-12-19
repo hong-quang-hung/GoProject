@@ -5,12 +5,12 @@ import "fmt"
 // Reference: https://leetcode.com/problems/palindrome-partitioning/
 func init() {
 	Solutions[131] = func() {
-		fmt.Println("Input: s = 'aab'")
-		fmt.Println("Output:", partitionII("aab"))
-		fmt.Println("Input: s = 'a'")
-		fmt.Println("Output:", partitionII("a"))
-		fmt.Println("Input: s = 'aabb'")
-		fmt.Println("Output:", partitionII("aabb"))
+		fmt.Println(`Input: s = "aab"`)
+		fmt.Println(`Output:`, partitionII(`aab`))
+		fmt.Println(`Input: s = "a"`)
+		fmt.Println(`Output:`, partitionII(`a`))
+		fmt.Println(`Input: s = "aabb"`)
+		fmt.Println(`Output:`, partitionII(`aabb`))
 	}
 }
 

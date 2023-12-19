@@ -5,7 +5,7 @@ import "fmt"
 // Reference: https://leetcode.com/problems/clone-graph/
 func init() {
 	Solutions[133] = func() {
-		fmt.Println("Input: adjList = [[2,4],[1,3],[2,4],[1,3]]")
+		fmt.Println(`Input: adjList = [[2,4],[1,3],[2,4],[1,3]]`)
 		adjList1 := new(Node)
 		adjList2 := new(Node)
 		adjList3 := new(Node)
@@ -19,7 +19,7 @@ func init() {
 		adjList3.Neighbors = []*Node{adjList2, adjList4}
 		adjList4.Val = 4
 		adjList3.Neighbors = []*Node{adjList1, adjList3}
-		fmt.Println("Output:", cloneGraph(adjList1))
+		fmt.Println(`Output:`, cloneGraph(adjList1))
 	}
 }
 

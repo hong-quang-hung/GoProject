@@ -5,21 +5,21 @@ import "fmt"
 // Reference: https://leetcode.com/problems/binary-search-tree-iterator/
 func init() {
 	Solutions[173] = func() {
-		fmt.Println("Input:")
-		fmt.Println("[\"BSTIterator\", \"next\", \"next\", \"hasNext\", \"next\", \"hasNext\", \"next\", \"hasNext\", \"next\", \"hasNext\"]")
-		fmt.Println("[[[7, 3, 15, null, null, 9, 20]], [], [], [], [], [], [], [], [], []]")
+		fmt.Println(`Input:`)
+		fmt.Println(`["BSTIterator", "next", "next", "hasNext", "next", "hasNext", "next", "hasNext", "next", "hasNext"]`)
+		fmt.Println(`[[[7, 3, 15, null, null, 9, 20]], [], [], [], [], [], [], [], [], []]`)
 
-		fmt.Println("Output:")
-		bSTIterator := BSTIteratorConstructor(S2TreeNode("[7,3,15,null,null,9,20]"))
-		fmt.Println("bSTIterator.next();", "// return", bSTIterator.Next())
-		fmt.Println("bSTIterator.next();", "// return", bSTIterator.Next())
-		fmt.Println("bSTIterator.hasNext();", "// return", bSTIterator.HasNext())
-		fmt.Println("bSTIterator.next();", "// return", bSTIterator.Next())
-		fmt.Println("bSTIterator.hasNext();", "// return", bSTIterator.HasNext())
-		fmt.Println("bSTIterator.next();", "// return", bSTIterator.Next())
-		fmt.Println("bSTIterator.hasNext();", "// return", bSTIterator.HasNext())
-		fmt.Println("bSTIterator.next();", "// return", bSTIterator.Next())
-		fmt.Println("bSTIterator.hasNext();", "// return", bSTIterator.HasNext())
+		fmt.Println(`Output:`)
+		bSTIterator := BSTIteratorConstructor(S2TreeNode(`[7,3,15,null,null,9,20]`))
+		fmt.Println(`bSTIterator.next();`, `// return`, bSTIterator.Next())
+		fmt.Println(`bSTIterator.next();`, `// return`, bSTIterator.Next())
+		fmt.Println(`bSTIterator.hasNext();`, `// return`, bSTIterator.HasNext())
+		fmt.Println(`bSTIterator.next();`, `// return`, bSTIterator.Next())
+		fmt.Println(`bSTIterator.hasNext();`, `// return`, bSTIterator.HasNext())
+		fmt.Println(`bSTIterator.next();`, `// return`, bSTIterator.Next())
+		fmt.Println(`bSTIterator.hasNext();`, `// return`, bSTIterator.HasNext())
+		fmt.Println(`bSTIterator.next();`, `// return`, bSTIterator.Next())
+		fmt.Println(`bSTIterator.hasNext();`, `// return`, bSTIterator.HasNext())
 	}
 }
 

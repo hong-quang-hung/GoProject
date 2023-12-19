@@ -5,10 +5,10 @@ import "fmt"
 // Reference: https://leetcode.com/problems/subsets/
 func init() {
 	Solutions[78] = func() {
-		fmt.Println("Input: nums = [1,2,3]")
-		fmt.Println("Output:", subsets([]int{1, 2, 3}))
-		fmt.Println("Input: nums = [2,2,2]")
-		fmt.Println("Output:", subsets([]int{2, 2, 2}))
+		fmt.Println(`Input: nums = [1,2,3]`)
+		fmt.Println(`Output:`, subsets([]int{1, 2, 3}))
+		fmt.Println(`Input: nums = [2,2,2]`)
+		fmt.Println(`Output:`, subsets([]int{2, 2, 2}))
 	}
 }
 

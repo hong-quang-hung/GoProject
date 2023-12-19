@@ -5,10 +5,10 @@ import "fmt"
 // Reference: https://leetcode.com/problems/unique-binary-search-trees-ii/
 func init() {
 	Solutions[95] = func() {
-		fmt.Println("Input: n = 3")
-		fmt.Println("Output:", SAny(generateTrees(3)))
-		fmt.Println("Input: n = 1")
-		fmt.Println("Output:", SAny(generateTrees(1)))
+		fmt.Println(`Input: n = 3`)
+		fmt.Println(`Output:`, SAny(generateTrees(3)))
+		fmt.Println(`Input: n = 1`)
+		fmt.Println(`Output:`, SAny(generateTrees(1)))
 	}
 }
 

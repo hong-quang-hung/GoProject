@@ -5,7 +5,7 @@ import "fmt"
 // Reference: https://leetcode.com/problems/populating-next-right-pointers-in-each-node-ii/
 func init() {
 	Solutions[117] = func() {
-		fmt.Println("Input: root = [1,2,3,4,5,null,7]")
+		fmt.Println(`Input: root = [1,2,3,4,5,null,7]`)
 		root := new(NodeII)
 		root.Val = 1
 		root.Left = new(NodeII)
@@ -19,7 +19,7 @@ func init() {
 		root.Right.Left = nil
 		root.Right.Right = new(NodeII)
 		root.Right.Right.Val = 7
-		fmt.Println("Output:", connect(root))
+		fmt.Println(`Output:`, connect(root))
 	}
 }
 

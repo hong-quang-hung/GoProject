@@ -5,10 +5,10 @@ import "fmt"
 // Reference: https://leetcode.com/problems/convert-sorted-list-to-binary-search-tree/
 func init() {
 	Solutions[109] = func() {
-		fmt.Println("Input: head = [-10,-3,0,5,9]")
-		fmt.Print("Output:", STreeNode(sortedListToBST(S2ListNode("[-10,-3,0,5,9]"))))
-		fmt.Println("Input: head = []")
-		fmt.Print("Output:", STreeNode(sortedListToBST(S2ListNode("[]"))))
+		fmt.Println(`Input: head = [-10,-3,0,5,9]`)
+		fmt.Print(`Output:`, STreeNode(sortedListToBST(S2ListNode(`[-10,-3,0,5,9]`))))
+		fmt.Println(`Input: head = []`)
+		fmt.Print(`Output:`, STreeNode(sortedListToBST(S2ListNode(`[]`))))
 	}
 }
 

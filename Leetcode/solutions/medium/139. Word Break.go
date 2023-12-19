@@ -5,12 +5,12 @@ import "fmt"
 // Reference: https://leetcode.com/problems/word-break/
 func init() {
 	Solutions[139] = func() {
-		fmt.Println("Input: s = 'leetcode', wordDict = ['leet','code']")
-		fmt.Println("Output:", wordBreak("leetcode", []string{"leet", "code"}))
-		fmt.Println("Input: s = 'applepenapple', wordDict = ['apple','pen']")
-		fmt.Println("Output:", wordBreak("applepenapple", []string{"apple", "pen"}))
-		fmt.Println("Input: s = 'catsandog', wordDict = ['cats','dog','sand','and','cat']")
-		fmt.Println("Output:", wordBreak("catsandog", []string{"cats", "dog", "sand", "and", "cat"}))
+		fmt.Println(`Input: s = "leetcode", wordDict = ["leet","code"]`)
+		fmt.Println(`Output:`, wordBreak(`leetcode`, []string{`leet`, `code`}))
+		fmt.Println(`Input: s = "applepenapple", wordDict = ["apple","pen"]`)
+		fmt.Println(`Output:`, wordBreak(`applepenapple`, []string{`apple`, `pen`}))
+		fmt.Println(`Input: s = "catsandog", wordDict = ["cats","dog","sand","and","cat"]`)
+		fmt.Println(`Output:`, wordBreak(`catsandog`, []string{`cats`, `dog`, `sand`, `and`, `cat`}))
 	}
 }
 

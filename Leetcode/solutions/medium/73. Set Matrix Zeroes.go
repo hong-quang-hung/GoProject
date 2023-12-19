@@ -6,12 +6,12 @@ import "fmt"
 func init() {
 	Solutions[73] = func() {
 		var matrix [][]int
-		fmt.Println("Input: matrix = [[1,1,1],[1,0,1],[1,1,1]]")
-		matrix = S2SoSliceInt("[[1,1,1],[1,0,1],[1,1,1]]")
+		fmt.Println(`Input: matrix = [[1,1,1],[1,0,1],[1,1,1]]`)
+		matrix = S2SoSliceInt(`[[1,1,1],[1,0,1],[1,1,1]]`)
 		setZeroes(matrix)
 
-		fmt.Println("Input: matrix = [[0,1,2,0],[3,4,5,2],[1,3,1,5]]")
-		matrix = S2SoSliceInt("[[0,1,2,0],[3,4,5,2],[1,3,1,5]]")
+		fmt.Println(`Input: matrix = [[0,1,2,0],[3,4,5,2],[1,3,1,5]]`)
+		matrix = S2SoSliceInt(`[[0,1,2,0],[3,4,5,2],[1,3,1,5]]`)
 		setZeroes(matrix)
 	}
 }

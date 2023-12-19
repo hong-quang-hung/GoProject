@@ -8,10 +8,10 @@ import (
 // Reference: https://leetcode.com/problems/search-a-2d-matrix/
 func init() {
 	Solutions[74] = func() {
-		fmt.Println("Input: matrix = [[1,3,5,7],[10,11,16,20],[23,30,34,60]], target = 3")
-		fmt.Println("Output:", searchMatrix(S2SoSliceInt("[[1,3,5,7],[10,11,16,20],[23,30,34,60]]"), 3))
-		fmt.Println("Input: matrix = [[1,3,5,7],[10,11,16,20],[23,30,34,60]], target = 13")
-		fmt.Println("Output:", searchMatrix(S2SoSliceInt("[[1,3,5,7],[10,11,16,20],[23,30,34,60]]"), 13))
+		fmt.Println(`Input: matrix = [[1,3,5,7],[10,11,16,20],[23,30,34,60]], target = 3`)
+		fmt.Println(`Output:`, searchMatrix(S2SoSliceInt(`[[1,3,5,7],[10,11,16,20],[23,30,34,60]]`), 3))
+		fmt.Println(`Input: matrix = [[1,3,5,7],[10,11,16,20],[23,30,34,60]], target = 13`)
+		fmt.Println(`Output:`, searchMatrix(S2SoSliceInt(`[[1,3,5,7],[10,11,16,20],[23,30,34,60]]`), 13))
 	}
 }
 

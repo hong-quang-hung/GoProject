@@ -7,10 +7,10 @@ import (
 // Reference: https://leetcode.com/problems/maximum-product-subarray/
 func init() {
 	Solutions[152] = func() {
-		fmt.Println("Input: nums = [2,3,-2,4]")
-		fmt.Println("Output:", maxProduct([]int{2, 3, -2, 4}))
-		fmt.Println("Input: nums = [-2,0,-1]")
-		fmt.Println("Output:", maxProduct([]int{-2, 0, -1}))
+		fmt.Println(`Input: nums = [2,3,-2,4]`)
+		fmt.Println(`Output:`, maxProduct([]int{2, 3, -2, 4}))
+		fmt.Println(`Input: nums = [-2,0,-1]`)
+		fmt.Println(`Output:`, maxProduct([]int{-2, 0, -1}))
 	}
 }
 

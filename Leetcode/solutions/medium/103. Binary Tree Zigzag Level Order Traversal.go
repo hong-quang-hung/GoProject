@@ -5,8 +5,8 @@ import "fmt"
 // Reference: https://leetcode.com/problems/binary-tree-zigzag-level-order-traversal/
 func init() {
 	Solutions[103] = func() {
-		fmt.Println("Input: root = [3,9,20,null,null,15,7]")
-		fmt.Println("Output:", zigzagLevelOrder(S2TreeNode("[3,9,20,null,null,15,7]")))
+		fmt.Println(`Input: root = [3,9,20,null,null,15,7]`)
+		fmt.Println(`Output:`, zigzagLevelOrder(S2TreeNode(`[3,9,20,null,null,15,7]`)))
 	}
 }
 

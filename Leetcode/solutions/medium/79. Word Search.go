@@ -5,12 +5,12 @@ import "fmt"
 // Reference: https://leetcode.com/problems/word-search/
 func init() {
 	Solutions[79] = func() {
-		fmt.Println("Input: board = [['A','B','C','E'],['S','F','C','S'],['A','D','E','E']], word = 'ABCCED'")
-		fmt.Println("Output:", exist([][]byte{{'A', 'B', 'C', 'E'}, {'S', 'F', 'C', 'S'}, {'A', 'D', 'E', 'E'}}, "ABCCED"))
-		fmt.Println("Input: board = [['A','B','C','E'],['S','F','C','S'],['A','D','E','E']], word = 'SEE'")
-		fmt.Println("Output:", exist([][]byte{{'A', 'B', 'C', 'E'}, {'S', 'F', 'C', 'S'}, {'A', 'D', 'E', 'E'}}, "SEE"))
-		fmt.Println("Input: board = [['A','B','C','E'],['S','F','C','S'],['A','D','E','E']], word = 'ABCB'")
-		fmt.Println("Output:", exist([][]byte{{'A', 'B', 'C', 'E'}, {'S', 'F', 'C', 'S'}, {'A', 'D', 'E', 'E'}}, "ABCB"))
+		fmt.Println(`Input: board = [['A','B','C','E'],['S','F','C','S'],['A','D','E','E']], word = "ABCCED"`)
+		fmt.Println(`Output:`, exist([][]byte{{'A', 'B', 'C', 'E'}, {'S', 'F', 'C', 'S'}, {'A', 'D', 'E', 'E'}}, `ABCCED`))
+		fmt.Println(`Input: board = [['A','B','C','E'],['S','F','C','S'],['A','D','E','E']], word = "SEE"`)
+		fmt.Println(`Output:`, exist([][]byte{{'A', 'B', 'C', 'E'}, {'S', 'F', 'C', 'S'}, {'A', 'D', 'E', 'E'}}, `SEE`))
+		fmt.Println(`Input: board = [['A','B','C','E'],['S','F','C','S'],['A','D','E','E']], word = "ABCB"`)
+		fmt.Println(`Output:`, exist([][]byte{{'A', 'B', 'C', 'E'}, {'S', 'F', 'C', 'S'}, {'A', 'D', 'E', 'E'}}, `ABCB`))
 	}
 }
 

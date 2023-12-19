@@ -5,10 +5,10 @@ import "fmt"
 // Reference: https://leetcode.com/problems/combinations/
 func init() {
 	Solutions[77] = func() {
-		fmt.Println("Input: n = 4, k = 2")
-		fmt.Println("Output:", combine(4, 2))
-		fmt.Println("Input: n = 1, k = 1")
-		fmt.Println("Output:", combine(1, 1))
+		fmt.Println(`Input: n = 4, k = 2`)
+		fmt.Println(`Output:`, combine(4, 2))
+		fmt.Println(`Input: n = 1, k = 1`)
+		fmt.Println(`Output:`, combine(1, 1))
 	}
 }
 

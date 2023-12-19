@@ -5,10 +5,10 @@ import "fmt"
 // Reference: https://leetcode.com/problems/rotate-list/
 func init() {
 	Solutions[61] = func() {
-		fmt.Println("Input: head = [1,2,3,4,5], k = 2")
-		fmt.Println("Output:", SListNode(rotateRight(S2ListNode("[1,2,3,4,5]"), 2)))
-		fmt.Println("Input: head = [0,1,2], k = 4")
-		fmt.Println("Output:", SListNode(rotateRight(S2ListNode("[0,1,2]"), 4)))
+		fmt.Println(`Input: head = [1,2,3,4,5], k = 2`)
+		fmt.Println(`Output:`, SListNode(rotateRight(S2ListNode(`[1,2,3,4,5]`), 2)))
+		fmt.Println(`Input: head = [0,1,2], k = 4`)
+		fmt.Println(`Output:`, SListNode(rotateRight(S2ListNode(`[0,1,2]`), 4)))
 	}
 }
 

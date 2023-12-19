@@ -5,10 +5,10 @@ import "fmt"
 // Reference: https://leetcode.com/problems/binary-tree-level-order-traversal/
 func init() {
 	Solutions[102] = func() {
-		fmt.Println("Input: root = [3,9,20,null,null,15,7]")
-		fmt.Println("Output:", levelOrder(S2TreeNode("[3,9,20,null,null,15,7]")))
-		fmt.Println("Input: root = [1]")
-		fmt.Println("Output:", levelOrder(S2TreeNode("[1]")))
+		fmt.Println(`Input: root = [3,9,20,null,null,15,7]`)
+		fmt.Println(`Output:`, levelOrder(S2TreeNode(`[3,9,20,null,null,15,7]`)))
+		fmt.Println(`Input: root = [1]`)
+		fmt.Println(`Output:`, levelOrder(S2TreeNode(`[1]`)))
 	}
 }
 

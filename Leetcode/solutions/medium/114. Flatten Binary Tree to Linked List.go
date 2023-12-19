@@ -7,15 +7,15 @@ func init() {
 	Solutions[114] = func() {
 		var root *TreeNode
 
-		fmt.Println("Input: root = [1,2,5,3,4,null,6]")
-		root = S2TreeNode("[1,2,5,3,4,null,6]")
+		fmt.Println(`Input: root = [1,2,5,3,4,null,6]`)
+		root = S2TreeNode(`[1,2,5,3,4,null,6]`)
 		flatten(root)
-		fmt.Println("Output:", STreeNode(root))
+		fmt.Println(`Output:`, STreeNode(root))
 
-		fmt.Println("Input: root = [0]")
-		root = S2TreeNode("[0]")
+		fmt.Println(`Input: root = [0]`)
+		root = S2TreeNode(`[0]`)
 		flatten(root)
-		fmt.Println("Output:", STreeNode(root))
+		fmt.Println(`Output:`, STreeNode(root))
 	}
 }
 

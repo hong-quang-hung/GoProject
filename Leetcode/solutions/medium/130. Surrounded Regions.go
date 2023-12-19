@@ -7,10 +7,10 @@ func init() {
 	Solutions[130] = func() {
 		var grid [][]byte
 
-		fmt.Println("Input: board = [[\"X\",\"X\",\"X\",\"X\"],[\"X\",\"O\",\"O\",\"X\"],[\"X\",\"X\",\"O\",\"X\"],[\"X\",\"O\",\"X\",\"X\"]]")
+		fmt.Println(`Input: board = [["X","X","X","X"],["X","O","O","X"],["X","X","O","X"],["X","O","X","X"]]`)
 		grid = [][]byte{{'X', 'X', 'X', 'X'}, {'X', 'O', 'O', 'X'}, {'X', 'X', 'O', 'X'}, {'X', 'O', 'X', 'X'}}
 		solve(grid)
-		fmt.Println("Output:", grid)
+		fmt.Println(`Output:`, grid)
 	}
 }
 

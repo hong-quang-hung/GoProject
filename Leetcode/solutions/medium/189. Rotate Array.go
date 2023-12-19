@@ -6,14 +6,14 @@ import "fmt"
 func init() {
 	Solutions[189] = func() {
 		var nums []int
-		fmt.Println("Input: nums = [1,2,3,4,5,6,7], k = 3")
+		fmt.Println(`Input: nums = [1,2,3,4,5,6,7], k = 3`)
 		nums = []int{1, 2, 3, 4, 5, 6, 7}
 		rotateII(nums, 3)
-		fmt.Println("Output:", nums)
-		fmt.Println("Input: nums = [-1,-100,3,99], k = 2")
+		fmt.Println(`Output:`, nums)
+		fmt.Println(`Input: nums = [-1,-100,3,99], k = 2`)
 		nums = []int{-1, -100, 3, 99}
 		rotateII(nums, 2)
-		fmt.Println("Output:", nums)
+		fmt.Println(`Output:`, nums)
 	}
 }
 

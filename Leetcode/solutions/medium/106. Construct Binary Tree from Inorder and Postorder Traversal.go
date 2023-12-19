@@ -5,8 +5,8 @@ import "fmt"
 // Reference: https://leetcode.com/problems/construct-binary-tree-from-inorder-and-postorder-traversal/
 func init() {
 	Solutions[106] = func() {
-		fmt.Println("Input: inorder = [9,3,15,20,7], postorder = [9,15,7,20,3]")
-		fmt.Println("Output:", STreeNode(buildTree_ii([]int{9, 3, 15, 20, 7}, []int{9, 15, 7, 20, 3})))
+		fmt.Println(`Input: inorder = [9,3,15,20,7], postorder = [9,15,7,20,3]`)
+		fmt.Println(`Output:`, STreeNode(buildTree_ii([]int{9, 3, 15, 20, 7}, []int{9, 15, 7, 20, 3})))
 	}
 }
 

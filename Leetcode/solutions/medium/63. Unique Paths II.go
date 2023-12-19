@@ -5,10 +5,10 @@ import "fmt"
 // Reference: https://leetcode.com/problems/unique-paths-ii/
 func init() {
 	Solutions[63] = func() {
-		fmt.Println("Input: obstacleGrid = [[0,0,0],[0,1,0],[0,0,0]]")
-		fmt.Println("Output:", uniquePathsWithObstacles(S2SoSliceInt("[[0,0,0],[0,1,0],[0,0,0]]")))
-		fmt.Println("Input: obstacleGrid = [[0,1],[0,0]]")
-		fmt.Println("Output:", uniquePathsWithObstacles(S2SoSliceInt("[[0,1],[0,0]]")))
+		fmt.Println(`Input: obstacleGrid = [[0,0,0],[0,1,0],[0,0,0]]`)
+		fmt.Println(`Output:`, uniquePathsWithObstacles(S2SoSliceInt(`[[0,0,0],[0,1,0],[0,0,0]]`)))
+		fmt.Println(`Input: obstacleGrid = [[0,1],[0,0]]`)
+		fmt.Println(`Output:`, uniquePathsWithObstacles(S2SoSliceInt(`[[0,1],[0,0]]`)))
 	}
 }
 

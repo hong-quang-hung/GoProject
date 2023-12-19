@@ -5,12 +5,12 @@ import "fmt"
 // Reference: https://leetcode.com/problems/single-number-ii/
 func init() {
 	Solutions[137] = func() {
-		fmt.Println("Input: nums = [2,2,3,2]")
-		fmt.Println("Output:", singleNumber([]int{2, 2, 3, 2}))
-		fmt.Println("Input: nums = [0,1,0,1,0,1,99]")
-		fmt.Println("Output:", singleNumber([]int{0, 1, 0, 1, 0, 1, 99}))
-		fmt.Println("Input: nums = [2,5,2,11,11,3,2,5,5,11]")
-		fmt.Println("Output:", singleNumber([]int{2, 5, 2, 11, 11, 3, 2, 5, 5, 11}))
+		fmt.Println(`Input: nums = [2,2,3,2]`)
+		fmt.Println(`Output:`, singleNumber([]int{2, 2, 3, 2}))
+		fmt.Println(`Input: nums = [0,1,0,1,0,1,99]`)
+		fmt.Println(`Output:`, singleNumber([]int{0, 1, 0, 1, 0, 1, 99}))
+		fmt.Println(`Input: nums = [2,5,2,11,11,3,2,5,5,11]`)
+		fmt.Println(`Output:`, singleNumber([]int{2, 5, 2, 11, 11, 3, 2, 5, 5, 11}))
 	}
 }
 

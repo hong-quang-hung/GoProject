@@ -8,10 +8,10 @@ import (
 // Reference: https://leetcode.com/problems/triangle/
 func init() {
 	Solutions[120] = func() {
-		fmt.Println("Input: triangle = [[2],[3,4],[6,5,7],[4,1,8,3]]")
-		fmt.Println("Output:", minimumTotal(S2SoSliceInt("[[2],[3,4],[6,5,7],[4,1,8,3]]")))
-		fmt.Println("Input: triangle = [[-10]]")
-		fmt.Println("Output:", minimumTotal(S2SoSliceInt(" [[-10]]")))
+		fmt.Println(`Input: triangle = [[2],[3,4],[6,5,7],[4,1,8,3]]`)
+		fmt.Println(`Output:`, minimumTotal(S2SoSliceInt(`[[2],[3,4],[6,5,7],[4,1,8,3]]`)))
+		fmt.Println(`Input: triangle = [[-10]]`)
+		fmt.Println(`Output:`, minimumTotal(S2SoSliceInt(` [[-10]]`)))
 	}
 }
 

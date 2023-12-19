@@ -8,12 +8,12 @@ import (
 // Reference: https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/
 func init() {
 	Solutions[167] = func() {
-		fmt.Println("Input: numbers = [2,7,11,15], target = 9")
-		fmt.Println("Output:", twoSumII([]int{2, 7, 11, 15}, 9))
-		fmt.Println("Input: numbers = [2,3,4], target = 6")
-		fmt.Println("Output:", twoSumII([]int{2, 3, 4}, 6))
-		fmt.Println("Input: numbers = [-1,0], target = -1")
-		fmt.Println("Output:", twoSumII([]int{-1, 0}, -1))
+		fmt.Println(`Input: numbers = [2,7,11,15], target = 9`)
+		fmt.Println(`Output:`, twoSumII([]int{2, 7, 11, 15}, 9))
+		fmt.Println(`Input: numbers = [2,3,4], target = 6`)
+		fmt.Println(`Output:`, twoSumII([]int{2, 3, 4}, 6))
+		fmt.Println(`Input: numbers = [-1,0], target = -1`)
+		fmt.Println(`Output:`, twoSumII([]int{-1, 0}, -1))
 	}
 }
 

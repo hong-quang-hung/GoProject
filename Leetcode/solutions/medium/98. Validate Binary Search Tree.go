@@ -8,12 +8,12 @@ import (
 // Reference: https://leetcode.com/problems/validate-binary-search-tree/
 func init() {
 	Solutions[98] = func() {
-		fmt.Println("Input: root = [2,1,3]")
-		fmt.Println("Output:", isValidBST(S2TreeNode("[2,1,3]")))
-		fmt.Println("Input: root = [5,1,4,null,null,3,6]")
-		fmt.Println("Output:", isValidBST(S2TreeNode("[5,1,4,null,null,3,6]")))
-		fmt.Println("Input: root = [5,4,6,null,null,3,7]")
-		fmt.Println("Output:", isValidBST(S2TreeNode("[5,4,6,null,null,3,7]")))
+		fmt.Println(`Input: root = [2,1,3]`)
+		fmt.Println(`Output:`, isValidBST(S2TreeNode(`[2,1,3]`)))
+		fmt.Println(`Input: root = [5,1,4,null,null,3,6]`)
+		fmt.Println(`Output:`, isValidBST(S2TreeNode(`[5,1,4,null,null,3,6]`)))
+		fmt.Println(`Input: root = [5,4,6,null,null,3,7]`)
+		fmt.Println(`Output:`, isValidBST(S2TreeNode(`[5,4,6,null,null,3,7]`)))
 	}
 }
 

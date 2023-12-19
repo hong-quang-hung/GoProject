@@ -8,12 +8,12 @@ import (
 // Reference: https://leetcode.com/problems/reverse-words-in-a-string/
 func init() {
 	Solutions[151] = func() {
-		fmt.Println("Input: s = 'the sky is blue'")
-		fmt.Println("Output:", reverseWords("the sky is blue"))
-		fmt.Println("Input: s = '  hello world  '")
-		fmt.Println("Output:", reverseWords("  hello world  "))
-		fmt.Println("Input: s = 'a good   example'")
-		fmt.Println("Output:", reverseWords("a good   example"))
+		fmt.Println(`Input: s = "the sky is blue"`)
+		fmt.Println(`Output:`, reverseWords(`the sky is blue`))
+		fmt.Println(`Input: s = "  hello world  "`)
+		fmt.Println(`Output:`, reverseWords(`  hello world  `))
+		fmt.Println(`Input: s = "a good   example"`)
+		fmt.Println(`Output:`, reverseWords(`a good   example`))
 	}
 }
 
@@ -25,5 +25,5 @@ func reverseWords(s string) string {
 		left++
 		right--
 	}
-	return strings.Join(res, " ")
+	return strings.Join(res, ` `)
 }

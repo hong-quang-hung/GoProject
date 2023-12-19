@@ -6,14 +6,14 @@ import "fmt"
 func init() {
 	Solutions[75] = func() {
 		var nums []int
-		fmt.Println("Input: nums = [2,0,2,1,1,0]")
+		fmt.Println(`Input: nums = [2,0,2,1,1,0]`)
 		nums = []int{2, 0, 2, 1, 1, 0}
 		sortColors(nums)
-		fmt.Println("Output:", nums)
-		fmt.Println("Input: nums = [2,0,1]")
+		fmt.Println(`Output:`, nums)
+		fmt.Println(`Input: nums = [2,0,1]`)
 		nums = []int{2, 0, 1}
 		sortColors(nums)
-		fmt.Println("Output:", nums)
+		fmt.Println(`Output:`, nums)
 	}
 }
 

@@ -5,11 +5,11 @@ import "fmt"
 // Reference: https://leetcode.com/problems/linked-list-cycle-ii/
 func init() {
 	Solutions[142] = func() {
-		fmt.Println("Input: head = [3,2,0,-4], pos = 1")
-		node := S2ListNode("[3,2,0,-4]")
+		fmt.Println(`Input: head = [3,2,0,-4], pos = 1`)
+		node := S2ListNode(`[3,2,0,-4]`)
 		pos := node.Next
 		node.Next.Next.Next = pos
-		fmt.Println("Output:", detectCycle(node))
+		fmt.Println(`Output:`, detectCycle(node))
 	}
 }
 

@@ -5,12 +5,12 @@ import "fmt"
 // Reference: https://leetcode.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal/
 func init() {
 	Solutions[105] = func() {
-		fmt.Println("Input: preorder = [3,9,20,15,7], inorder = [9,3,15,20,7]")
-		fmt.Println("Output:", STreeNode(buildTree([]int{3, 9, 20, 15, 7}, []int{9, 3, 15, 20, 7})))
-		fmt.Println("Input: preorder = [-1], inorder = [-1]")
-		fmt.Println("Output:", STreeNode(buildTree([]int{-1}, []int{-1})))
-		fmt.Println("Input: preorder = [1,4,2,3], inorder = [1,2,3,4]")
-		fmt.Println("Output:", STreeNode(buildTree([]int{1, 4, 2, 3}, []int{1, 2, 3, 4})))
+		fmt.Println(`Input: preorder = [3,9,20,15,7], inorder = [9,3,15,20,7]`)
+		fmt.Println(`Output:`, STreeNode(buildTree([]int{3, 9, 20, 15, 7}, []int{9, 3, 15, 20, 7})))
+		fmt.Println(`Input: preorder = [-1], inorder = [-1]`)
+		fmt.Println(`Output:`, STreeNode(buildTree([]int{-1}, []int{-1})))
+		fmt.Println(`Input: preorder = [1,4,2,3], inorder = [1,2,3,4]`)
+		fmt.Println(`Output:`, STreeNode(buildTree([]int{1, 4, 2, 3}, []int{1, 2, 3, 4})))
 	}
 }
 
