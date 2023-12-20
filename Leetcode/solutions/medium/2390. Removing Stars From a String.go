@@ -5,10 +5,10 @@ import "fmt"
 // Reference: https://leetcode.com/problems/removing-stars-from-a-string/
 func init() {
 	Solutions[2390] = func() {
-		fmt.Println("Input: s = 'leet**cod*e'")
-		fmt.Println("Output:", removeStars("leet**cod*e"))
-		fmt.Println("Input: s = 'erase*****'")
-		fmt.Println("Output:", removeStars("erase*****"))
+		fmt.Println(`Input: s = 'leet**cod*e'`)
+		fmt.Println(`Output:`, removeStars(`leet**cod*e`))
+		fmt.Println(`Input: s = 'erase*****'`)
+		fmt.Println(`Output:`, removeStars(`erase*****`))
 	}
 }
 

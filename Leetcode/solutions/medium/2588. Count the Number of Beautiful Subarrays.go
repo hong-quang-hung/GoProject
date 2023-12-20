@@ -5,8 +5,8 @@ import "fmt"
 // Reference: https://leetcode.com/problems/count-the-number-of-beautiful-subarrays/
 func init() {
 	Solutions[2588] = func() {
-		fmt.Println("Input: nums = [4,3,1,2,4]")
-		fmt.Println("Output:", beautifulSubarrays([]int{4, 3, 1, 2, 4}))
+		fmt.Println(`Input: nums = [4,3,1,2,4]`)
+		fmt.Println(`Output:`, beautifulSubarrays([]int{4, 3, 1, 2, 4}))
 	}
 }
 

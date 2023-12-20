@@ -5,10 +5,10 @@ import "fmt"
 // Reference: https://leetcode.com/problems/convert-an-array-into-a-2d-array-with-conditions/
 func init() {
 	Solutions[2610] = func() {
-		fmt.Println("Input: nums = [1,3,4,1,2,3,1]")
-		fmt.Println("Output:", findMatrix([]int{1, 3, 4, 1, 2, 3, 1}))
-		fmt.Println("Input: nums = [1,2,3,4]")
-		fmt.Println("Output:", findMatrix([]int{1, 2, 3, 4}))
+		fmt.Println(`Input: nums = [1,3,4,1,2,3,1]`)
+		fmt.Println(`Output:`, findMatrix([]int{1, 3, 4, 1, 2, 3, 1}))
+		fmt.Println(`Input: nums = [1,2,3,4]`)
+		fmt.Println(`Output:`, findMatrix([]int{1, 2, 3, 4}))
 	}
 }
 

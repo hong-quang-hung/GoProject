@@ -5,10 +5,10 @@ import "fmt"
 // Reference: https://leetcode.com/problems/maximize-the-confusion-of-an-exam/
 func init() {
 	Solutions[2024] = func() {
-		fmt.Println("Input: answerKey = 'TTFF', k = 2")
-		fmt.Println("Output:", maxConsecutiveAnswers("TTFF", 2))
-		fmt.Println("Input: answerKey = 'TTFTTFTT', k = 1")
-		fmt.Println("Output:", maxConsecutiveAnswers("TTFTTFTT", 1))
+		fmt.Println(`Input: answerKey = "TTFF", k = 2`)
+		fmt.Println(`Output:`, maxConsecutiveAnswers(`TTFF`, 2))
+		fmt.Println(`Input: answerKey = "TTFTTFTT", k = 1`)
+		fmt.Println(`Output:`, maxConsecutiveAnswers(`TTFTTFTT`, 1))
 	}
 }
 

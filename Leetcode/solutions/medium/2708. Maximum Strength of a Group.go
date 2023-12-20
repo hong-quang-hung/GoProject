@@ -8,10 +8,10 @@ import (
 // Reference: https://leetcode.com/problems/maximum-strength-of-a-group/
 func init() {
 	Solutions[2708] = func() {
-		fmt.Println("Input: nums = [3,-1,-5,2,5,-9]")
-		fmt.Println("Output:", maxStrength([]int{3, -1, -5, 2, 5, -9}))
-		fmt.Println("Input: nums = [-4,-5,-4]")
-		fmt.Println("Output:", maxStrength([]int{-4, -5, -4}))
+		fmt.Println(`Input: nums = [3,-1,-5,2,5,-9]`)
+		fmt.Println(`Output:`, maxStrength([]int{3, -1, -5, 2, 5, -9}))
+		fmt.Println(`Input: nums = [-4,-5,-4]`)
+		fmt.Println(`Output:`, maxStrength([]int{-4, -5, -4}))
 	}
 }
 

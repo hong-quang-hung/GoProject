@@ -5,10 +5,10 @@ import "fmt"
 // Reference: https://leetcode.com/problems/largest-combination-with-bitwise-and-greater-than-zero/
 func init() {
 	Solutions[2275] = func() {
-		fmt.Println("Input: candidates = [16,17,71,62,12,24,14]")
-		fmt.Println("Output:", largestCombination([]int{16, 17, 71, 62, 12, 24, 14}))
-		fmt.Println("Input: candidates = [8,8]")
-		fmt.Println("Output:", largestCombination([]int{8, 8}))
+		fmt.Println(`Input: candidates = [16,17,71,62,12,24,14]`)
+		fmt.Println(`Output:`, largestCombination([]int{16, 17, 71, 62, 12, 24, 14}))
+		fmt.Println(`Input: candidates = [8,8]`)
+		fmt.Println(`Output:`, largestCombination([]int{8, 8}))
 	}
 }
 

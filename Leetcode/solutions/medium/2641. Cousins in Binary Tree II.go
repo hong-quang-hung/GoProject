@@ -5,10 +5,10 @@ import "fmt"
 // Reference: https://leetcode.com/problems/cousins-in-binary-tree-ii/
 func init() {
 	Solutions[2641] = func() {
-		fmt.Println("Input: root = [5,4,9,1,10,null,7]")
-		fmt.Println("Output:", STreeNode(replaceValueInTree(S2TreeNode("[5,4,9,1,10,null,7]"))))
-		fmt.Println("Input: root = [3,1,2]")
-		fmt.Println("Output:", STreeNode(replaceValueInTree(S2TreeNode("[3,1,2]"))))
+		fmt.Println(`Input: root = [5,4,9,1,10,null,7]`)
+		fmt.Println(`Output:`, STreeNode(replaceValueInTree(S2TreeNode(`[5,4,9,1,10,null,7]`))))
+		fmt.Println(`Input: root = [3,1,2]`)
+		fmt.Println(`Output:`, STreeNode(replaceValueInTree(S2TreeNode(`[3,1,2]`))))
 	}
 }
 

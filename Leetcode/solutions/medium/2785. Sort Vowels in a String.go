@@ -8,10 +8,10 @@ import (
 // Reference: https://leetcode.com/problems/sort-vowels-in-a-string/
 func init() {
 	Solutions[2785] = func() {
-		fmt.Println("Input: s = \"lEetcOde\"")
-		fmt.Println("Output:", sortVowels("lEetcOde"))
-		fmt.Println("Input: s = \"lYmpH\"")
-		fmt.Println("Output:", sortVowels("lYmpH"))
+		fmt.Println(`Input: s = "lEetcOde"`)
+		fmt.Println(`Output:`, sortVowels(`lEetcOde`))
+		fmt.Println(`Input: s = "lYmpH"`)
+		fmt.Println(`Output:`, sortVowels(`lYmpH`))
 	}
 }
 

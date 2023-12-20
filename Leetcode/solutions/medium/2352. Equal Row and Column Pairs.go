@@ -5,10 +5,10 @@ import "fmt"
 // Reference: https://leetcode.com/problems/equal-row-and-column-pairs/
 func init() {
 	Solutions[2352] = func() {
-		fmt.Println("Input: grid = [[3,2,1],[1,7,6],[2,7,7]]")
-		fmt.Println("Output:", equalPairs(S2SoSliceInt("[[3,2,1],[1,7,6],[2,7,7]]")))
-		fmt.Println("Input: grid = [[3,1,2,2],[1,4,4,5],[2,4,2,2],[2,4,2,2]]")
-		fmt.Println("Output:", equalPairs(S2SoSliceInt("[[3,1,2,2],[1,4,4,5],[2,4,2,2],[2,4,2,2]]")))
+		fmt.Println(`Input: grid = [[3,2,1],[1,7,6],[2,7,7]]`)
+		fmt.Println(`Output:`, equalPairs(S2SoSliceInt(`[[3,2,1],[1,7,6],[2,7,7]]`)))
+		fmt.Println(`Input: grid = [[3,1,2,2],[1,4,4,5],[2,4,2,2],[2,4,2,2]]`)
+		fmt.Println(`Output:`, equalPairs(S2SoSliceInt(`[[3,1,2,2],[1,4,4,5],[2,4,2,2],[2,4,2,2]]`)))
 	}
 }
 

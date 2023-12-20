@@ -9,8 +9,8 @@ import (
 // Reference: https://leetcode.com/problems/minimum-operations-to-make-all-array-elements-equal/
 func init() {
 	Solutions[2602] = func() {
-		fmt.Println("Input: nums = [3,1,6,8], queries = [1,5]")
-		fmt.Println("Output:", minOperations_i([]int{3, 1, 6, 8}, []int{1, 5}))
+		fmt.Println(`Input: nums = [3,1,6,8], queries = [1,5]`)
+		fmt.Println(`Output:`, minOperations_i([]int{3, 1, 6, 8}, []int{1, 5}))
 	}
 }
 

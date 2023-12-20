@@ -5,10 +5,10 @@ import "fmt"
 // Reference: https://leetcode.com/problems/find-the-score-of-all-prefixes-of-an-array/
 func init() {
 	Solutions[2640] = func() {
-		fmt.Println("Input: nums = [2,3,7,5,10]")
-		fmt.Println("Output:", findPrefixScore(S2SliceInt("[2,3,7,5,10]")))
-		fmt.Println("Input: nums = [1,1,2,4,8,16]")
-		fmt.Println("Output:", findPrefixScore(S2SliceInt("[1,1,2,4,8,16]")))
+		fmt.Println(`Input: nums = [2,3,7,5,10]`)
+		fmt.Println(`Output:`, findPrefixScore(S2SliceInt(`[2,3,7,5,10]`)))
+		fmt.Println(`Input: nums = [1,1,2,4,8,16]`)
+		fmt.Println(`Output:`, findPrefixScore(S2SliceInt(`[1,1,2,4,8,16]`)))
 	}
 }
 

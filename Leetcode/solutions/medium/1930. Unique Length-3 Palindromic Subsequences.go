@@ -5,12 +5,12 @@ import "fmt"
 // Reference: https://leetcode.com/problems/unique-length-3-palindromic-subsequences/
 func init() {
 	Solutions[1930] = func() {
-		fmt.Println("Input: s = \"aabca\"")
-		fmt.Println("Output:", countPalindromicSubsequence("aabca"))
-		fmt.Println("Input: s = \"adc\"")
-		fmt.Println("Output:", countPalindromicSubsequence("adc"))
-		fmt.Println("Input: s = \"bbcbaba\"")
-		fmt.Println("Output:", countPalindromicSubsequence("bbcbaba"))
+		fmt.Println(`Input: s = "aabca"`)
+		fmt.Println(`Output:`, countPalindromicSubsequence(`aabca`))
+		fmt.Println(`Input: s = "adc"`)
+		fmt.Println(`Output:`, countPalindromicSubsequence(`adc`))
+		fmt.Println(`Input: s = "bbcbaba"`)
+		fmt.Println(`Output:`, countPalindromicSubsequence(`bbcbaba`))
 	}
 }
 

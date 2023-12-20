@@ -5,10 +5,10 @@ import "fmt"
 // Reference: https://leetcode.com/problems/special-permutations/
 func init() {
 	Solutions[2741] = func() {
-		fmt.Println("Input: nums = [2,3,6]")
-		fmt.Println("Output:", specialPerm([]int{2, 3, 6}))
-		fmt.Println("Input: nums = [20,100,50,5,10,70,7]")
-		fmt.Println("Output:", specialPerm([]int{20, 100, 50, 5, 10, 70, 7}))
+		fmt.Println(`Input: nums = [2,3,6]`)
+		fmt.Println(`Output:`, specialPerm([]int{2, 3, 6}))
+		fmt.Println(`Input: nums = [20,100,50,5,10,70,7]`)
+		fmt.Println(`Output:`, specialPerm([]int{20, 100, 50, 5, 10, 70, 7}))
 	}
 }
 

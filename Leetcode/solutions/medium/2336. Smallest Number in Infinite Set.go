@@ -8,20 +8,20 @@ import (
 // Reference: https://leetcode.com/problems/smallest-number-in-infinite-set/
 func init() {
 	Solutions[2336] = func() {
-		fmt.Println("Input:")
-		fmt.Println("['SmallestInfiniteSet', 'addBack', 'popSmallest', 'popSmallest', 'popSmallest', 'addBack', 'popSmallest', 'popSmallest', 'popSmallest']")
-		fmt.Println("[[], [2], [], [], [], [1], [], [], []]")
-		fmt.Println("Output:")
+		fmt.Println(`Input:`)
+		fmt.Println(`["SmallestInfiniteSet", "addBack", "popSmallest", "popSmallest", "popSmallest", "addBack", "popSmallest", "popSmallest", "popSmallest"]`)
+		fmt.Println(`[[], [2], [], [], [], [1], [], [], []]`)
+		fmt.Println(`Output:`)
 
 		smallestInfiniteSet := SmallestInfiniteSetConstructor()
 		smallestInfiniteSet.AddBack(2)
-		fmt.Println("smallestInfiniteSet.popSmallest() :", smallestInfiniteSet.PopSmallest())
-		fmt.Println("smallestInfiniteSet.popSmallest() :", smallestInfiniteSet.PopSmallest())
-		fmt.Println("smallestInfiniteSet.popSmallest() :", smallestInfiniteSet.PopSmallest())
+		fmt.Println(`smallestInfiniteSet.popSmallest() :`, smallestInfiniteSet.PopSmallest())
+		fmt.Println(`smallestInfiniteSet.popSmallest() :`, smallestInfiniteSet.PopSmallest())
+		fmt.Println(`smallestInfiniteSet.popSmallest() :`, smallestInfiniteSet.PopSmallest())
 		smallestInfiniteSet.AddBack(1)
-		fmt.Println("smallestInfiniteSet.popSmallest() :", smallestInfiniteSet.PopSmallest())
-		fmt.Println("smallestInfiniteSet.popSmallest() :", smallestInfiniteSet.PopSmallest())
-		fmt.Println("smallestInfiniteSet.popSmallest() :", smallestInfiniteSet.PopSmallest())
+		fmt.Println(`smallestInfiniteSet.popSmallest() :`, smallestInfiniteSet.PopSmallest())
+		fmt.Println(`smallestInfiniteSet.popSmallest() :`, smallestInfiniteSet.PopSmallest())
+		fmt.Println(`smallestInfiniteSet.popSmallest() :`, smallestInfiniteSet.PopSmallest())
 	}
 }
 

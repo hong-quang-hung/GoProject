@@ -8,19 +8,19 @@ import (
 // Reference: https://leetcode.com/problems/design-a-food-rating-system/
 func init() {
 	Solutions[2353] = func() {
-		fmt.Println("Input:")
-		fmt.Println("[\"FoodRatings\", \"highestRated\", \"highestRated\", \"changeRating\", \"highestRated\", \"changeRating\", \"highestRated\"]")
-		fmt.Println("[[[\"kimchi\", \"miso\", \"sushi\", \"moussaka\", \"ramen\", \"bulgogi\"], [\"korean\", \"japanese\", \"japanese\", \"greek\", \"japanese\", \"korean\"], [9, 12, 8, 15, 14, 7]], [\"korean\"], [\"japanese\"], [\"sushi\", 16], [\"japanese\"], [\"ramen\", 16], [\"japanese\"]]")
-		fmt.Println("Output:")
-		foodRatings := FoodRatingsConstructor([]string{"kimchi", "miso", "sushi", "moussaka", "ramen", "bulgogi"}, []string{"korean", "japanese", "japanese", "greek", "japanese", "korean"}, []int{9, 12, 8, 15, 14, 7})
-		fmt.Println("foodRatings.HighestRated(\"korean\");", "// return", foodRatings.HighestRated("korean"))
-		fmt.Println("foodRatings.HighestRated(\"japanese\");", "// return", foodRatings.HighestRated("japanese"))
-		fmt.Println("foodRatings.changeRating(\"sushi\", 16);")
-		foodRatings.ChangeRating("sushi", 16)
-		fmt.Println("foodRatings.HighestRated(\"japanese\");", "// return", foodRatings.HighestRated("japanese"))
-		fmt.Println("foodRatings.changeRating(\"ramen\", 16);")
-		foodRatings.ChangeRating("ramen", 16)
-		fmt.Println("foodRatings.HighestRated(\"japanese\");", "// return", foodRatings.HighestRated("japanese"))
+		fmt.Println(`Input:`)
+		fmt.Println(`["FoodRatings", "highestRated", "highestRated", "changeRating", "highestRated", "changeRating", "highestRated"]`)
+		fmt.Println(`[[["kimchi", "miso", "sushi", "moussaka", "ramen", "bulgogi"], ["korean", "japanese", "japanese", "greek", "japanese", "korean"], [9, 12, 8, 15, 14, 7]], ["korean"], ["japanese"], ["sushi", 16], ["japanese"], ["ramen", 16], ["japanese"]]`)
+		fmt.Println(`Output:`)
+		foodRatings := FoodRatingsConstructor([]string{`kimchi`, `miso`, `sushi`, `moussaka`, `ramen`, `bulgogi`}, []string{`korean`, `japanese`, `japanese`, `greek`, `japanese`, `korean`}, []int{9, 12, 8, 15, 14, 7})
+		fmt.Println(`foodRatings.HighestRated("korean");`, `// return`, foodRatings.HighestRated(`korean`))
+		fmt.Println(`foodRatings.HighestRated("japanese");`, `// return`, foodRatings.HighestRated(`japanese`))
+		fmt.Println(`foodRatings.changeRating("sushi", 16);`)
+		foodRatings.ChangeRating(`sushi`, 16)
+		fmt.Println(`foodRatings.HighestRated("japanese");`, `// return`, foodRatings.HighestRated(`japanese`))
+		fmt.Println(`foodRatings.changeRating("ramen", 16);`)
+		foodRatings.ChangeRating(`ramen`, 16)
+		fmt.Println(`foodRatings.HighestRated("japanese");`, `// return`, foodRatings.HighestRated(`japanese`))
 	}
 }
 
@@ -97,5 +97,5 @@ func (f *FoodRatings) HighestRated(cuisine string) string {
 	if _, ok := f.heaps[cuisine]; ok {
 		return f.heaps[cuisine].Peek().name
 	}
-	return ""
+	return ``
 }

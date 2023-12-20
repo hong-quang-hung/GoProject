@@ -5,10 +5,10 @@ import "fmt"
 // Reference: https://leetcode.com/problems/count-nodes-equal-to-average-of-subtree/
 func init() {
 	Solutions[2265] = func() {
-		fmt.Println("Input: root = [4,8,5,0,1,null,6]")
-		fmt.Println("Output:", averageOfSubtree(S2TreeNode("[4,8,5,0,1,null,6]")))
-		fmt.Println("Input: root = [1]")
-		fmt.Println("Output:", averageOfSubtree(S2TreeNode("[1]")))
+		fmt.Println(`Input: root = [4,8,5,0,1,null,6]`)
+		fmt.Println(`Output:`, averageOfSubtree(S2TreeNode(`[4,8,5,0,1,null,6]`)))
+		fmt.Println(`Input: root = [1]`)
+		fmt.Println(`Output:`, averageOfSubtree(S2TreeNode(`[1]`)))
 	}
 }
 

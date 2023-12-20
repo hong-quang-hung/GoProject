@@ -5,12 +5,12 @@ import "fmt"
 // Reference: https://leetcode.com/problems/find-unique-binary-string/
 func init() {
 	Solutions[1980] = func() {
-		fmt.Println("Input: nums = [\"01\",\"10\"]")
-		fmt.Println("Output:", findDifferentBinaryString([]string{"01", "10"}))
-		fmt.Println("Input: nums = [\"00\",\"01\"]")
-		fmt.Println("Output:", findDifferentBinaryString([]string{"00", "01"}))
-		fmt.Println("Input: nums = [\"111\",\"011\",\"001\"]")
-		fmt.Println("Output:", findDifferentBinaryString([]string{"111", "011", "001"}))
+		fmt.Println(`Input: nums = ["01","10"]`)
+		fmt.Println(`Output:`, findDifferentBinaryString([]string{`01`, `10`}))
+		fmt.Println(`Input: nums = ["00","01"]`)
+		fmt.Println(`Output:`, findDifferentBinaryString([]string{`00`, `01`}))
+		fmt.Println(`Input: nums = ["111","011","001"]`)
+		fmt.Println(`Output:`, findDifferentBinaryString([]string{`111`, `011`, `001`}))
 	}
 }
 

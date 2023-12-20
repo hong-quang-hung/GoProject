@@ -8,10 +8,10 @@ import (
 // Reference: https://leetcode.com/problems/minimize-the-maximum-difference-of-pairs/
 func init() {
 	Solutions[2616] = func() {
-		fmt.Println("Input: nums = [10,1,2,7,1,3], p = 2")
-		fmt.Println("Output:", minimizeMax([]int{10, 1, 2, 7, 1, 3}, 2))
-		fmt.Println("Input: nums = [4,2,1,2], p = 1")
-		fmt.Println("Output:", minimizeMax([]int{4, 2, 1, 2}, 1))
+		fmt.Println(`Input: nums = [10,1,2,7,1,3], p = 2`)
+		fmt.Println(`Output:`, minimizeMax([]int{10, 1, 2, 7, 1, 3}, 2))
+		fmt.Println(`Input: nums = [4,2,1,2], p = 1`)
+		fmt.Println(`Output:`, minimizeMax([]int{4, 2, 1, 2}, 1))
 	}
 }
 

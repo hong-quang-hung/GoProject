@@ -8,10 +8,10 @@ import (
 // Reference: https://leetcode.com/problems/fair-distribution-of-cookies/
 func init() {
 	Solutions[2305] = func() {
-		fmt.Println("Input: cookies = [8,15,10,20,8], k = 2")
-		fmt.Println("Output:", distributeCookies([]int{8, 15, 10, 20, 8}, 2))
-		fmt.Println("Input: cookies = [6,1,3,2,2,4,1,2], k = 3")
-		fmt.Println("Output:", distributeCookies([]int{6, 1, 3, 2, 2, 4, 1, 2}, 3))
+		fmt.Println(`Input: cookies = [8,15,10,20,8], k = 2`)
+		fmt.Println(`Output:`, distributeCookies([]int{8, 15, 10, 20, 8}, 2))
+		fmt.Println(`Input: cookies = [6,1,3,2,2,4,1,2], k = 3`)
+		fmt.Println(`Output:`, distributeCookies([]int{6, 1, 3, 2, 2, 4, 1, 2}, 3))
 	}
 }
 

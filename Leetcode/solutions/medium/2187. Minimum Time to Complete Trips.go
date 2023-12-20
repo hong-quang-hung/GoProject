@@ -8,8 +8,8 @@ import (
 // Reference: https://leetcode.com/problems/minimum-time-to-complete-trips/
 func init() {
 	Solutions[2187] = func() {
-		fmt.Println("Input: time = [1,2,3], totalTrips = 5")
-		fmt.Println("Output:", minimumTime([]int{1, 2, 3}, 5))
+		fmt.Println(`Input: time = [1,2,3], totalTrips = 5`)
+		fmt.Println(`Output:`, minimumTime([]int{1, 2, 3}, 5))
 	}
 }
 

@@ -5,8 +5,8 @@ import "fmt"
 // Reference: https://leetcode.com/problems/number-of-zero-filled-subarrays/
 func init() {
 	Solutions[2348] = func() {
-		fmt.Println("Input: nums = [0,0,0,2,0,0]")
-		fmt.Println("Output:", zeroFilledSubarray([]int{0, 0, 0, 2, 0, 0}))
+		fmt.Println(`Input: nums = [0,0,0,2,0,0]`)
+		fmt.Println(`Output:`, zeroFilledSubarray([]int{0, 0, 0, 2, 0, 0}))
 	}
 }
 

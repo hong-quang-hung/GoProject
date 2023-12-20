@@ -5,8 +5,8 @@ import "fmt"
 // Reference: https://leetcode.com/problems/count-unreachable-pairs-of-nodes-in-an-undirected-graph/
 func init() {
 	Solutions[2316] = func() {
-		fmt.Println("Input: n = 7, edges = [[0,2],[0,5],[2,4],[1,6],[5,4]]")
-		fmt.Println("Output:", countPairs(7, S2SoSliceInt("[[0,2],[0,5],[2,4],[1,6],[5,4]]")))
+		fmt.Println(`Input: n = 7, edges = [[0,2],[0,5],[2,4],[1,6],[5,4]]`)
+		fmt.Println(`Output:`, countPairs(7, S2SoSliceInt(`[[0,2],[0,5],[2,4],[1,6],[5,4]]`)))
 	}
 }
 

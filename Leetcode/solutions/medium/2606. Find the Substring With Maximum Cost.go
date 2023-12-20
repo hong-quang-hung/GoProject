@@ -5,10 +5,10 @@ import "fmt"
 // Reference: https://leetcode.com/problems/find-the-seubstring-with-maximum-cost/
 func init() {
 	Solutions[2606] = func() {
-		fmt.Println("Input: s = 'adaa', chars = 'd', vals = [-1000]")
-		fmt.Println("Output:", maximumCostSubstring("adaa", "d", []int{-1000}))
-		fmt.Println("Input: s = 'abc', chars = 'abc', vals = [-1,-1,-1]")
-		fmt.Println("Output:", maximumCostSubstring("abc", "abc", []int{-1, -1, -1}))
+		fmt.Println(`Input: s = "adaa", chars = "d", vals = [-1000]`)
+		fmt.Println(`Output:`, maximumCostSubstring(`adaa`, `d`, []int{-1000}))
+		fmt.Println(`Input: s = "abc", chars = "abc", vals = [-1,-1,-1]`)
+		fmt.Println(`Output:`, maximumCostSubstring(`abc`, `abc`, []int{-1, -1, -1}))
 	}
 }
 

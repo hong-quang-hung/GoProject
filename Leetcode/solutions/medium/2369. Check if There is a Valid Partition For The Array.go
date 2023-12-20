@@ -5,10 +5,10 @@ import "fmt"
 // Reference: https://leetcode.com/problems/check-if-there-is-a-valid-partition-for-the-array/
 func init() {
 	Solutions[2369] = func() {
-		fmt.Println("Input: nums = [4,4,4,5,6]")
-		fmt.Println("Output:", validPartition([]int{4, 4, 4, 5, 6}))
-		fmt.Println("Input: nums = [1,1,1,2]")
-		fmt.Println("Output:", validPartition([]int{1, 1, 1, 2}))
+		fmt.Println(`Input: nums = [4,4,4,5,6]`)
+		fmt.Println(`Output:`, validPartition([]int{4, 4, 4, 5, 6}))
+		fmt.Println(`Input: nums = [1,1,1,2]`)
+		fmt.Println(`Output:`, validPartition([]int{1, 1, 1, 2}))
 	}
 }
 
