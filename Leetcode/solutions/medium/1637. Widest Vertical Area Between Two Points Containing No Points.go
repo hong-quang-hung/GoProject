@@ -5,7 +5,7 @@ import (
 	"sort"
 )
 
-// Reference: https://leetcode.com/problems/course-schedule-ii/
+// Reference: https://leetcode.com/problems/widest-vertical-area-between-two-points-containing-no-points/
 func init() {
 	Solutions[1637] = func() {
 		fmt.Println(`Input: points = [[8,7],[9,9],[7,4],[9,7]]`)
