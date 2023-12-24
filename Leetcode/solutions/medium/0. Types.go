@@ -57,6 +57,10 @@ func S2SoSliceInt(s string) [][]int {
 	return utils.S2SoSliceInt(s)
 }
 
+func S2SoSliceByte(s string) [][]byte {
+	return utils.S2SoSliceByte(s)
+}
+
 func NewUnionFind(n int) *UnionFind {
 	return types.NewUnionFind(n)
 }

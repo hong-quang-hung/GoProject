@@ -55,7 +55,6 @@ func snakesAndLadders(board [][]int) int {
 				queue = append(queue, j)
 				dp[j] = dp[i] + 1
 			}
-
 		}
 	}
 

@@ -73,6 +73,15 @@ func S2SliceInt(s string) []int {
 	return SSplitInt(matched[0][1])
 }
 
+func S2SliceByte(s string) []byte {
+	re := regexp.MustCompile(`^\[(.+)\]$`)
+	matched := re.FindAllStringSubmatch(s, -1)
+	if len(matched) == 0 || len(strings.TrimSpace(matched[0][1])) == 0 {
+		return []byte{}
+	}
+	return SSplitByte(matched[0][1])
+}
+
 func SSplitInt(s string) []int {
 	arr := strings.Split(s, commaSpaceString)
 	res := make([]int, len(arr))
@@ -80,6 +89,17 @@ func SSplitInt(s string) []int {
 		a = strings.Trim(a, " ")
 		val, _ := strconv.ParseInt(a, 10, 0)
 		res[i] = int(val)
+	}
+	return res
+}
+
+func SSplitByte(s string) []byte {
+	arr := strings.Split(s, commaSpaceString)
+	res := make([]byte, len(arr))
+	for i, a := range arr {
+		if len(a) >= 1 {
+			res[i] = a[1]
+		}
 	}
 	return res
 }
@@ -92,6 +112,18 @@ func S2SoSliceInt(s string) [][]int {
 	res := make([][]int, len(arr))
 	for i, a := range arr {
 		res[i] = S2SliceInt(a[1])
+	}
+	return res
+}
+
+func S2SoSliceByte(s string) [][]byte {
+	s = strings.Trim(s, " ")
+	s = s[1 : len(s)-1]
+	re := regexp.MustCompile(`(\[[^\[]*\])`)
+	arr := re.FindAllStringSubmatch(s, -1)
+	res := make([][]byte, len(arr))
+	for i, a := range arr {
+		res[i] = S2SliceByte(a[1])
 	}
 	return res
 }
