@@ -15,5 +15,19 @@ func init() {
 }
 
 func numRollsToTarget(n int, k int, target int) int {
-	return 0
+	dp := make([]int, target+1)
+	for i := 1; i <= k && i <= target; i++ {
+		dp[i] = 1
+	}
+
+	for x := 2; x <= n; x++ {
+		next := make([]int, target+1)
+		for i := x; i <= x*k && i <= target; i++ {
+			for j := i - 1; j >= i-k && j >= 0; j-- {
+				next[i] = (next[i] + dp[j]) % mod
+			}
+		}
+		dp = next
+	}
+	return dp[target]
 }
