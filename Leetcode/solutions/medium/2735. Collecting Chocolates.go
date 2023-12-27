@@ -6,13 +6,13 @@ import "fmt"
 func init() {
 	Solutions[2735] = func() {
 		fmt.Println(`Input: nums = [20,1,15], x = 5`)
-		fmt.Println(`Output:`, minCost([]int{20, 1, 15}, 5))
+		fmt.Println(`Output:`, minCost2([]int{20, 1, 15}, 5))
 		fmt.Println(`Input: nums = [1,2,3], x = 4`)
-		fmt.Println(`Output:`, minCost([]int{1, 2, 3}, 4))
+		fmt.Println(`Output:`, minCost2([]int{1, 2, 3}, 4))
 	}
 }
 
-func minCost(nums []int, x int) int64 {
+func minCost2(nums []int, x int) int64 {
 	n := len(nums)
 	dp := make([]int64, n)
 	res := int64(0)
