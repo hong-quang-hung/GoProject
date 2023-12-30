@@ -1,6 +1,9 @@
 package hard
 
-import "fmt"
+import (
+	"fmt"
+	"math"
+)
 
 // Reference: https://leetcode.com/problems/minimum-difficulty-of-a-job-schedule/
 func init() {
@@ -15,5 +18,44 @@ func init() {
 }
 
 func minDifficulty(jobDifficulty []int, d int) int {
-	return 0
+	n := len(jobDifficulty)
+	if n < d {
+		return -1
+	}
+
+	dp := make([][]int, n+1)
+	for i := 0; i < n; i++ {
+		dp[i] = make([]int, d+1)
+		for j := 0; j <= d; j++ {
+			dp[i][j] = -1
+		}
+	}
+
+	maxJob := make([]int, n)
+	maxJob[n-1] = jobDifficulty[n-1]
+	for i := n - 2; i >= 0; i-- {
+		maxJob[i] = max(maxJob[i+1], jobDifficulty[i])
+	}
+
+	var f func(i, j int) int
+	f = func(i, j int) int {
+		if j == 1 {
+			return maxJob[i]
+		}
+
+		if dp[i][j] != -1 {
+			return dp[i][j]
+		}
+
+		res := math.MaxInt
+		maxDifficulty := 0
+		for k := i; k < n+1-j; k++ {
+			maxDifficulty = max(maxDifficulty, jobDifficulty[k])
+			res = min(res, maxDifficulty+f(k+1, j-1))
+		}
+
+		dp[i][j] = res
+		return res
+	}
+	return f(0, d)
 }
