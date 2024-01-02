@@ -1,6 +1,8 @@
 package hard
 
-import "fmt"
+import (
+	"fmt"
+)
 
 // Reference: https://leetcode.com/problems/word-search-ii/
 func init() {
@@ -12,6 +14,72 @@ func init() {
 	}
 }
 
+type WordSearchTrieNode struct {
+	data map[byte]*WordSearchTrieNode
+	tail bool
+}
+
+type WordSearchTrie struct {
+	root *WordSearchTrieNode
+}
+
+func NewWordSearchTrie() *WordSearchTrie {
+	return &WordSearchTrie{root: &WordSearchTrieNode{data: make(map[byte]*WordSearchTrieNode)}}
+}
+
+func (t *WordSearchTrie) InsertWord(word string) {
+	current := t.root
+	for i := range word {
+		if _, ok := current.data[word[i]]; !ok {
+			current.data[word[i]] = &WordSearchTrieNode{data: make(map[byte]*WordSearchTrieNode)}
+		}
+		current = current.data[word[i]]
+	}
+	current.tail = true
+}
+
 func findWords(board [][]byte, words []string) []string {
-	return nil
+	trie := NewWordSearchTrie()
+	for _, word := range words {
+		trie.InsertWord(word)
+	}
+
+	m, n := len(board), len(board[0])
+	wordsFound := make(map[string]interface{}, 0)
+
+	var f func(r, c int, s string, node *WordSearchTrieNode)
+	f = func(r, c int, s string, node *WordSearchTrieNode) {
+		if node.tail {
+			wordsFound[s] = struct{}{}
+		}
+
+		if r < 0 || r >= m || c < 0 || c >= n || board[r][c] == '*' {
+			return
+		}
+
+		if _, ok := node.data[board[r][c]]; !ok {
+			return
+		}
+
+		next := s + string(board[r][c])
+		visited := board[r][c]
+		board[r][c] = '*'
+		f(r-1, c, next, node)
+		f(r+1, c, next, node)
+		f(r, c-1, next, node)
+		f(r, c+1, next, node)
+		board[r][c] = visited
+	}
+
+	for i := range board {
+		for j := range board[0] {
+			f(i, j, "", trie.root)
+		}
+	}
+
+	res := make([]string, 0, len(wordsFound))
+	for word := range wordsFound {
+		res = append(res, word)
+	}
+	return res
 }
