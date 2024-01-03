@@ -20,9 +20,7 @@ func maxProfit(prices []int) int {
 	n := len(prices)
 	res := 0
 	for i := 1; i < n; i++ {
-		if prices[i] > prices[i-1] {
-			res += prices[i] - prices[i-1]
-		}
+		res += max(0, prices[i]-prices[i-1])
 	}
 	return res
 }
