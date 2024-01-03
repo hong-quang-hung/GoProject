@@ -16,7 +16,7 @@ func numberOfBeams(bank []string) int {
 	m := len(bank)
 	oneCount := func(s string) int {
 		counter := 0
-		for _, ch := range bank[0] {
+		for _, ch := range s {
 			if ch == '1' {
 				counter++
 			}
@@ -24,15 +24,24 @@ func numberOfBeams(bank []string) int {
 		return counter
 	}
 
-	count := oneCount(bank[0])
-	res := count
-	for i := 1; i < m; i++ {
-		if count == 0 {
-			return 0
+	left, leftVal := 0, 0
+	for left < m {
+		leftVal = oneCount(bank[left])
+		if leftVal != 0 {
+			break
 		}
+		left++
+	}
 
-		count = oneCount(bank[i])
-		res *= count
+	res := 0
+	right := left + 1
+	for right < m {
+		rightVal := oneCount(bank[right])
+		if rightVal != 0 {
+			res += rightVal * leftVal
+			leftVal = rightVal
+		}
+		right++
 	}
 	return res
 }
