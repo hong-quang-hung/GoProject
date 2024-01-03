@@ -51,6 +51,7 @@ func findWords(board [][]byte, words []string) []string {
 	f = func(r, c int, s string, node *WordSearchTrieNode) {
 		if node.tail {
 			wordsFound[s] = struct{}{}
+			node.tail = false
 		}
 
 		if r < 0 || r >= m || c < 0 || c >= n || board[r][c] == '*' {
@@ -64,20 +65,20 @@ func findWords(board [][]byte, words []string) []string {
 		next := s + string(board[r][c])
 		visited := board[r][c]
 		board[r][c] = '*'
-		f(r-1, c, next, node)
-		f(r+1, c, next, node)
-		f(r, c-1, next, node)
-		f(r, c+1, next, node)
+		f(r-1, c, next, node.data[visited])
+		f(r+1, c, next, node.data[visited])
+		f(r, c-1, next, node.data[visited])
+		f(r, c+1, next, node.data[visited])
 		board[r][c] = visited
 	}
 
-	for i := range board {
-		for j := range board[0] {
+	res := make([]string, 0, len(wordsFound))
+	for i := 0; i < m; i++ {
+		for j := 0; j < n; j++ {
 			f(i, j, "", trie.root)
 		}
 	}
 
-	res := make([]string, 0, len(wordsFound))
 	for word := range wordsFound {
 		res = append(res, word)
 	}
