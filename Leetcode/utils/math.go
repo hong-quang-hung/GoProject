@@ -14,34 +14,6 @@ func Min[T Number](a, b T) T {
 	return b
 }
 
-func MaxInt(a, b int) int {
-	if a > b {
-		return a
-	}
-	return b
-}
-
-func MaxInt64(a, b int64) int64 {
-	if a > b {
-		return a
-	}
-	return b
-}
-
-func MinInt(a, b int) int {
-	if a < b {
-		return a
-	}
-	return b
-}
-
-func MinInt64(a, b int64) int64 {
-	if a < b {
-		return a
-	}
-	return b
-}
-
 func AbsInt(x int) int {
 	if x >= 0 {
 		return x
@@ -56,10 +28,10 @@ func ManhattanInt(p1, p2 []int) int {
 // Calculate the Chebyshev distance(https://en.wikipedia.org/wiki/Chebyshev_distance) between two points
 func ChebyshevInt(a, b []int) int {
 	res := 0
-	size := MaxInt(len(a), len(b))
+	size := max(len(a), len(b))
 	for i := 0; i < size; i++ {
 		distance := AbsInt(b[i] - a[i])
-		res = MaxInt(res, distance)
+		res = max(res, distance)
 	}
 	return res
 }

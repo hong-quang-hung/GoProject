@@ -37,7 +37,7 @@ func minCost_iii(nums []int, cost []int) int64 {
 
 	for i := 1; i < n; i++ {
 		jump := int64(arr[i][0] - arr[i-1][0])
-		res = min64(res, res-jump*prefixCost[n-1]+2*jump*int64(prefixCost[i-1]))
+		res = min(res, res-jump*prefixCost[n-1]+2*jump*int64(prefixCost[i-1]))
 	}
 	return res
 }

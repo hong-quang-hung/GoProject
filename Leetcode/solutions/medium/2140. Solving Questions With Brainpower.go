@@ -31,6 +31,6 @@ func mostPointsSolve(questions [][]int, dp []int64, i int, n int) int64 {
 		return dp[i]
 	}
 
-	dp[i] = max64(int64(questions[i][0])+mostPointsSolve(questions, dp, i+questions[i][1]+1, n), mostPointsSolve(questions, dp, i+1, n))
+	dp[i] = max(int64(questions[i][0])+mostPointsSolve(questions, dp, i+questions[i][1]+1, n), mostPointsSolve(questions, dp, i+1, n))
 	return dp[i]
 }

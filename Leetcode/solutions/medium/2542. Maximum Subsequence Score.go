@@ -38,7 +38,7 @@ func maxScore_ii(nums1 []int, nums2 []int, k int) int64 {
 	res := int64(topKSum) * int64(item[k-1][1])
 	for i := k; i < n; i++ {
 		topKSum += int64(item[i][0]) - int64(heap.Pop(h).(int))
-		res = max64(res, topKSum*int64(item[i][1]))
+		res = max(res, topKSum*int64(item[i][1]))
 		heap.Push(h, item[i][0])
 	}
 	return res

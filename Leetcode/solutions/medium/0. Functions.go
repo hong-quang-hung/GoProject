@@ -6,22 +6,6 @@ import (
 	"leetcode.com/Leetcode/utils"
 )
 
-func min(a, b int) int {
-	return utils.MinInt(a, b)
-}
-
-func max(a, b int) int {
-	return utils.MaxInt(a, b)
-}
-
-func min64(a, b int64) int64 {
-	return utils.MinInt64(a, b)
-}
-
-func max64(a, b int64) int64 {
-	return utils.MaxInt64(a, b)
-}
-
 func abs(x int) int {
 	return utils.AbsInt(x)
 }

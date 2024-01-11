@@ -29,7 +29,7 @@ func maximumOr(nums []int, k int) int64 {
 
 	p := int64(1) << k
 	for i := 0; i < n; i++ {
-		res = max64(res, pre[i]|(int64(nums[i])*p)|suf[i+1])
+		res = max(res, pre[i]|(int64(nums[i])*p)|suf[i+1])
 	}
 	return res
 }

@@ -29,10 +29,10 @@ func minCost2(nums []int, x int) int64 {
 				cur = j + i
 			}
 
-			dp[j] = min64(dp[j], int64(nums[cur]))
+			dp[j] = min(dp[j], int64(nums[cur]))
 			sum += int64(dp[j])
 		}
-		res = min64(res, sum)
+		res = min(res, sum)
 	}
 	return res
 }
