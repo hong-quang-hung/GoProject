@@ -2,7 +2,6 @@ package medium
 
 import (
 	"fmt"
-	"math"
 )
 
 // Reference: https://leetcode.com/problems/delete-and-earn/
@@ -22,14 +21,8 @@ func deleteAndEarn(nums []int) int {
 	}
 
 	dp := make([]int, 10003)
-	for i := 1; i < 10003; i++ {
-		dp[i] = math.MaxInt
-	}
-
-	dp[1] = m[1]
-	dp[2] = 2 * m[2]
 	for i := 3; i < 10003; i++ {
-		dp[i] = min(dp[i-1], dp[i-2]+(i-2)*m[i-2])
+		dp[i] = max(dp[i-1], dp[i-2]+(i-2)*m[i-2])
 	}
 	return dp[10002]
 }
