@@ -17,19 +17,18 @@ func init() {
 }
 
 func minSteps(s string, t string) int {
-	n := len(s)
-	ms, mt := make([]int, 26), make([]int, 26)
-	for i := 0; i < n; i++ {
-		ms[int(s[i]-'a')]++
-		mt[int(t[i]-'a')]++
+	m := make([]int, 26)
+	for i := range s {
+		m[s[i]-'a']++
 	}
 
-	fmt.Println(ms)
-	fmt.Println(mt)
-
 	res := 0
-	for i := 0; i < 26; i++ {
-
+	for i := range t {
+		if m[t[i]-'a'] == 0 {
+			res++
+			continue
+		}
+		m[t[i]-'a']--
 	}
 	return res
 }
