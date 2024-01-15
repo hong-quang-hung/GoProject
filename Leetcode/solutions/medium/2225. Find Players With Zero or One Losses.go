@@ -2,7 +2,6 @@ package medium
 
 import (
 	"fmt"
-	"sort"
 )
 
 // Reference: https://leetcode.com/problems/find-players-with-zero-or-one-losses/
@@ -16,26 +15,26 @@ func init() {
 }
 
 func findWinners(matches [][]int) [][]int {
-	m := make(map[int]int)
-	for _, match := range matches {
-		m[match[1]]++
-		if _, ok := m[match[0]]; ok {
-			continue
-		} else {
-			m[match[0]] = 0
+	m := make([]int, 100001)
+	for i := 0; i < len(matches); i++ {
+		if m[matches[i][0]] == 0 {
+			m[matches[i][0]] = 1
 		}
+
+		if m[matches[i][1]] == 0 {
+			m[matches[i][1]] = 1
+		}
+
+		m[matches[i][1]]++
 	}
 
 	res := make([][]int, 2)
-	for k, v := range m {
-		if v == 0 {
-			res[0] = append(res[0], k)
-		} else if v == 1 {
-			res[1] = append(res[1], k)
+	for i := 0; i < len(m); i++ {
+		if m[i] == 1 {
+			res[0] = append(res[0], i)
+		} else if m[i] == 2 {
+			res[1] = append(res[1], i)
 		}
 	}
-
-	sort.Ints(res[0])
-	sort.Ints(res[1])
 	return res
 }
