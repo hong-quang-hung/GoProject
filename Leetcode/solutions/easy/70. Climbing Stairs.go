@@ -17,9 +17,9 @@ func climbStairs(n int) int {
 		return n
 	}
 
-	res, next := 2, 3
-	for i := 3; i < n+1; i++ {
-		res, next = next, res+next
+	curr, res := 2, 3
+	for i := 3; i < n; i++ {
+		curr, res = res, curr+res
 	}
 	return res
 }
