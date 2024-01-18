@@ -13,27 +13,13 @@ func init() {
 }
 
 func climbStairs(n int) int {
-	dp := make([]int, n+1)
-	for i := 0; i <= n; i++ {
-		dp[i] = -1
+	if n < 3 {
+		return n
 	}
 
-	var f func(i int) int
-	f = func(i int) int {
-		if i > n {
-			return 0
-		}
-
-		if i == n {
-			return 1
-		}
-
-		if dp[i] != -1 {
-			return dp[i]
-		}
-
-		dp[i] = f(i+1) + f(i+2)
-		return dp[i]
+	res, next := 2, 3
+	for i := 3; i < n+1; i++ {
+		res, next = next, res+next
 	}
-	return f(0)
+	return res
 }
