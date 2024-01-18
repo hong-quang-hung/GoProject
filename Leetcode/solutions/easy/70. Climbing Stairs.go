@@ -13,16 +13,27 @@ func init() {
 }
 
 func climbStairs(n int) int {
-	if n <= 2 {
-		return n
+	dp := make([]int, n+1)
+	for i := 0; i <= n; i++ {
+		dp[i] = -1
 	}
-	// To avoid using a slice, use two pointers to keep track
-	// of the previous two numbers.
-	vals := make([]int, n)
-	vals[0] = 1
-	vals[1] = 2
-	for i := 2; i < n; i++ {
-		vals[i] = vals[i-1] + vals[i-2]
+
+	var f func(i int) int
+	f = func(i int) int {
+		if i > n {
+			return 0
+		}
+
+		if i == n {
+			return 1
+		}
+
+		if dp[i] != -1 {
+			return dp[i]
+		}
+
+		dp[i] = f(i+1) + f(i+2)
+		return dp[i]
 	}
-	return vals[n-1]
+	return f(0)
 }
