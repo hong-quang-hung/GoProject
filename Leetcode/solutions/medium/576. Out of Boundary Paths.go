@@ -26,25 +26,26 @@ func findPaths(m int, n int, maxMove int, startRow int, startColumn int) int {
 
 	var f func(row, col, remain int) int
 	f = func(row, col, remain int) int {
-		if remain < 0 {
-			return 0
-		}
-
 		if row >= m || row < 0 || col >= n || col < 0 {
 			return 1
+		}
+
+		if remain < 0 {
+			return 0
 		}
 
 		if dp[row][col][remain] != -1 {
 			return dp[row][col][remain]
 		}
 
-		res := 0
+		counter := 0
 		for _, dir := range BoardDirection {
-			res += f(row+dir[0], col+dir[1], remain-1)
+			counter += f(row+dir[0], col+dir[1], remain-1)
+			counter = counter % mod
 		}
 
-		dp[row][col][remain] = res
-		return res
+		dp[row][col][remain] = counter
+		return counter
 	}
 	return f(startRow, startColumn, maxMove-1)
 }
