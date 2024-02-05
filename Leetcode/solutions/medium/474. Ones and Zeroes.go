@@ -9,22 +9,13 @@ func init() {
 		fmt.Println(`Output:`, findMaxForm([]string{"10", "0001", "111001", "1", "0"}, 5, 3))
 		fmt.Println(`Input: strs = ["10","0","1"], m = 1, n = 1`)
 		fmt.Println(`Output:`, findMaxForm([]string{"10", "0", "1"}, 1, 1))
+		fmt.Println(`Input: strs = ["10","0001","111001","1","0"], m = 4, n = 3`)
+		fmt.Println(`Output:`, findMaxForm([]string{"10", "0001", "111001", "1", "0"}, 4, 3))
 	}
 }
 
 func findMaxForm(strs []string, m int, n int) int {
 	l := len(strs)
-	dp := make([][][]int, l)
-	for i := 0; i < l; i++ {
-		dp[i] = make([][]int, m+1)
-		for j := 0; j <= m; j++ {
-			dp[i][j] = make([]int, n+1)
-			for z := 0; z <= n; z++ {
-				dp[i][j][z] = -1
-			}
-		}
-	}
-
 	zero := make(map[int]int, l)
 	one := make(map[int]int, l)
 	for i, s := range strs {
@@ -39,22 +30,18 @@ func findMaxForm(strs []string, m int, n int) int {
 		zero[i], one[i] = ch0, ch1
 	}
 
-	var f func(i, z, o int) int
-	f = func(i, z, o int) int {
-		if z < 0 || o < 0 || i >= l {
-			return 0
-		}
-
-		if z == 0 && o == 0 {
-			return 1
-		}
-
-		if dp[i][z][o] != -1 {
-			return dp[i][z][o]
-		}
-
-		dp[i][z][o] = max(f(i+1, z, o), f(i+1, z-zero[i], o-one[i])+1)
-		return dp[i][z][o]
+	dp := make([][]int, m+1)
+	for i := 0; i < m+1; i++ {
+		dp[i] = make([]int, n+1)
 	}
-	return f(0, m, n)
+
+	for i := range strs {
+		zeros, ones := zero[i], one[i]
+		for i := m; i >= zeros; i-- {
+			for j := n; j >= ones; j-- {
+				dp[i][j] = max(dp[i][j], 1+dp[i-zeros][j-ones])
+			}
+		}
+	}
+	return dp[m][n]
 }
