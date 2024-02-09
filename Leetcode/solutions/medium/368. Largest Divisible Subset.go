@@ -16,7 +16,6 @@ func init() {
 }
 
 func largestDivisibleSubset(nums []int) []int {
-
 	sort.Ints(nums)
 
 	res := []int{}
