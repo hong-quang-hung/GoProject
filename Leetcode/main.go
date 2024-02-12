@@ -34,10 +34,9 @@ func init() {
 	problemDebug = 1239
 	problemDebug = 1074
 	problemDebug = 1043
-	problemDebug = 1247
 	problemDebug = 474
 	problemDebug = 368
-	problemDebug = 1463
+	problemDebug = 1247
 
 	problemTotal = 3036
 }
