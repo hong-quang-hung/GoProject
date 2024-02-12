@@ -15,15 +15,20 @@ func init() {
 }
 
 func minimumSwap(s1 string, s2 string) int {
-	m1 := make([]int, 2)
-	for i := range s1 {
-		m1[int(s1[i]-'x')]++
+	n := len(s1)
+	x, y := 0, 0
+	for i := 0; i < n; i++ {
+		if s1[i] != s2[i] {
+			if s1[i] == 'x' {
+				x++
+			} else {
+				y++
+			}
+		}
 	}
 
-	fmt.Println(m1)
-
-	for i := range s2 {
-		_ = i
+	if (x+y)%2 == 1 {
+		return -1
 	}
-	return 0
+	return x/2 + y/2 + x%2 + y%2
 }
