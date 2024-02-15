@@ -13,5 +13,21 @@ func init() {
 }
 
 func sortArrayByParityII(nums []int) []int {
-	return nums
+	n := len(nums)
+	res := make([]int, n)
+	even, odd := 0, 0
+	for i := 0; i < n; i += 2 {
+		for even < n && nums[even]&1 == 1 {
+			even++
+		}
+
+		for odd < n && nums[odd]&1 == 0 {
+			odd++
+		}
+
+		res[i], res[i+1] = nums[even], nums[odd]
+		even++
+		odd++
+	}
+	return res
 }
