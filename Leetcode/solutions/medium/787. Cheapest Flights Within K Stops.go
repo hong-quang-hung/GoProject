@@ -15,5 +15,25 @@ func init() {
 }
 
 func findCheapestPrice(n int, flights [][]int, src int, dst int, k int) int {
-	return 0
+	const maxVal = 100000
+
+	dp := make([]int, n)
+	for i := range dp {
+		dp[i] = maxVal
+	}
+
+	dp[src] = 0
+	for i := 0; i <= k; i++ {
+		next := make([]int, n)
+		copy(next, dp)
+		for _, flight := range flights {
+			next[flight[1]] = min(next[flight[1]], dp[flight[0]]+flight[2])
+		}
+		dp = next
+	}
+
+	if dp[dst] == maxVal {
+		return -1
+	}
+	return dp[dst]
 }
