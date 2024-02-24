@@ -48,3 +48,8 @@ func (u *UnionFind) UnionSet(x int, y int) bool {
 	}
 	return true
 }
+
+func (u *UnionFind) Reset(a int) {
+	u.Rank[a] = 0
+	u.Parent[a] = a
+}
