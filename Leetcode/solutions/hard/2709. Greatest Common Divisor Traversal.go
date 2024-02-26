@@ -15,12 +15,12 @@ func init() {
 }
 
 func canTraverseAllPairs(nums []int) bool {
-	n := len(nums)
-	if n == 1 {
+	if len(nums) == 1 {
 		return true
 	}
 
-	m := make([]bool, 100001)
+	MAX := 100000
+	m := make([]bool, MAX+1)
 	for _, num := range nums {
 		m[num] = true
 	}
@@ -29,21 +29,21 @@ func canTraverseAllPairs(nums []int) bool {
 		return false
 	}
 
-	sieve := make([]int, 100001)
-	for i := 2; i < len(sieve); i++ {
+	sieve := make([]int, MAX+1)
+	for i := 2; i <= MAX; i++ {
 		if sieve[i] == 0 {
-			for j := i; j <= 100000; j += i {
+			for j := i; j <= MAX; j += i {
 				sieve[j] = i
 			}
 		}
 	}
 
-	union := NewCanTraverseAllPairsDSU(2*100000 + 1)
+	union := NewCanTraverseAllPairsDSU(2*MAX + 1)
 	for num := range nums {
 		val := num
 		for val > 1 {
 			prime := sieve[val]
-			root := prime + 100000
+			root := prime + MAX
 			if union.Find(root) != union.Find(num) {
 				union.UnionSet(root, num)
 			}
@@ -54,7 +54,7 @@ func canTraverseAllPairs(nums []int) bool {
 	}
 
 	count := 0
-	for i := 2; i <= 100000; i++ {
+	for i := 2; i <= MAX; i++ {
 		if m[i] && union.Find(i) == i {
 			count++
 		}
