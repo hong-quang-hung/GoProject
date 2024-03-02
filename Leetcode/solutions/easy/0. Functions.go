@@ -6,6 +6,10 @@ import (
 	"leetcode.com/Leetcode/utils"
 )
 
+func abs(x int) int {
+	return utils.AbsInt(x)
+}
+
 func gcd(a, b int) int {
 	return utils.GcdInt(a, b)
 }
