@@ -42,9 +42,9 @@ func init() {
 	problemDebug = 2709
 	problemDebug = 115
 	problemDebug = 948
-	problemDebug = 930
+	problemDebug = 525
 
-	problemTotal = 3077
+	problemTotal = 3078
 }
 
 func main() {
