@@ -29,6 +29,5 @@ func leastInterval(tasks []byte, n int) int {
 			time++
 		}
 	}
-
 	return max(len(tasks), time)
 }
